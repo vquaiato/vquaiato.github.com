@@ -53,6 +53,7 @@ ul.posts li p span.date{
 h2.post_title{
 	color:#3168B3;
 	text-shadow: 1px 1px 1px #ababab;
+	letter-spacing:1px;
 }
 /*LISTA CATEGORIAS HOME*/
 div#categories ul {
