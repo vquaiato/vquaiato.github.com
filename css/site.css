@@ -3,6 +3,13 @@ body{
 	color: #333;
 	font-family: Helvetica, Arial, sans-serif;
 }
+ul{
+	margin:0;
+	padding:0;	
+}
+ul li{
+	list-style-type:none;
+}
 
 section#title{
 	text-align: center;
@@ -10,23 +17,23 @@ section#title{
 h1.title, h1.title a, h1.title a:visited{
 	font-family: 'Open Sans', sans-serif;
 	font-size:64px;
-	text-shadow: 1px 1px 1px #999;
+	text-shadow: 1px 1px 1px #ababab;
 	color:#333;
 	text-decoration:none;
 }
 p.title_contents{
 	margin-top:-50px;
-	/*text-shadow: 1px 1px 1px #ababab;*/
 }
 
+/*LISTA POSTS HOME*/
 section#blog_content{
 	width: 940px;
 	margin: auto;
-	padding-top:20px;
+	margin-bottom:50px;
 }
-ul.posts{
-	margin:0;
-	padding:0;
+div#posts_home{
+	float:left;
+	width:700px
 }
 ul.posts li{
 	list-style-type:none;
@@ -37,6 +44,7 @@ ul.posts li a, ul.posts li a:visited{
 ul.posts li p{
 	margin: 5px 0;
 	font-size: 20px;
+	text-shadow: 1px 1px 1px #ababab;
 }
 ul.posts li p span.date{
 	color:#3168B3;
@@ -46,9 +54,32 @@ h2.post_title{
 	color:#3168B3;
 	text-shadow: 1px 1px 1px #ababab;
 }
+/*LISTA CATEGORIAS HOME*/
+div#categories ul {
+	padding-top:20px;
+}
+div#categories{
+	float:left;
+	width:190px;
+	margin-left:50px;
+}
+div#categories a, div#categories a:visited{
+	color:#333;
+	line-height:22px;
+}
 
+/*POSTS SINGLE*/
+div#post{
+	margin-bottom:30px;
+}
+div#post p{
+	margin-top: -10px;
+}
+div#post p span.date{
+	text-shadow: 1px 1px 1px #ababab;
+}
 
-
+/*FOOTER*/
 section#footer div.footer {
    position:fixed;
    left:0px;
@@ -67,7 +98,6 @@ div.footer .footer_content{
 }
 div.footer ul{
 	color: #fff;
-	margin:0;
 	padding:20px 0;
 }
 div.footer ul li{

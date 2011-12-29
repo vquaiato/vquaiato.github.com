@@ -4,9 +4,10 @@ layout: default
 
 <div id="post">
 	<h2 class="post_title">{{ page.title}}</h2>
-{{ content }}
+	<p><span class="date">{{ page.date | date: "%d/%m/%Y" }}</span></p>
+	{{ content }}
 </div>
-
+<br /><br />
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'viniciusquaiato';
