@@ -17,7 +17,7 @@ section#title{
 h1.title, h1.title a, h1.title a:visited{
 	font-family: 'Open Sans', sans-serif;
 	font-size:64px;
-	text-shadow: 1px 1px 1px #ababab;
+	text-shadow: 2px 2px 2px #ababab;
 	color:#333;
 	text-decoration:none;
 }
