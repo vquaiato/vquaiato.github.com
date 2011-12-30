@@ -15,10 +15,14 @@ tags:
   slug: ironruby-1-1-2
   autoslug: ironruby-1.1.2
 ---
-Dia 07/02/2011 foi liberada a versão 1.1.2 do [IronRuby](http://ironruby.net/). Esta versão traz algumas melhorias e correções de bugs.Podemos conferir abaixo alguns destes itens, conforme detalhados no site do [IronRuby no Codeplex](http://ironruby.codeplex.com/):### Major Issues
+Dia 07/02/2011 foi liberada a versão 1.1.2 do [IronRuby](http://ironruby.net/). Esta versão traz algumas melhorias e correções de bugs.Podemos conferir abaixo alguns destes itens, conforme detalhados no site do [IronRuby no Codeplex](http://ironruby.codeplex.com/):
+
+### Major Issues
 - problems that blocked Gem installation in certain cases
 - regex syntax: the parser was replaced with a new one that is much more compatible with Ruby 1.9.2
 - crashes or incorrect behavior on Windows Phone 7
+
+
 ### Bug Fixes
 - 5728Unable to create Ruby on Rails project using Visual Studio 2010, error: can't convert NilClass into String
 - 5638IronRuby 1.1.1 + VS2010 Tools Installer does not include Windows bins
@@ -34,5 +38,7 @@ Dia 07/02/2011 foi liberada a versão 1.1.2 do [IronRuby](http://ironruby.net/).
 - 4433WP7 support
 - 5117Regexp not compat with MRI (failing REXML specs)
 - 5316 Build failing on OS X using Mono
+
+
 ### Downloads
 Façam o download diretamente aqui: [http://ironruby.codeplex.com/releases/view/55250](http://ironruby.codeplex.com/releases/view/55250)É isso aê galera, o pessoal não parou não! Faça seus downloads, atualizem suas versão e let's ruby!Abraços,Vinicius Quaiato.
