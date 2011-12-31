@@ -21,4 +21,16 @@ tags:
   slug: html-action
   autoslug: html.action
 ---
-Fala galera, um amigo me chamou aqui no gtalk para tentar entender por que não estava conseguindo usar o seguinte código:<pre lang="csharp">@Html.RenderAction("MinhaActionQueRetornaPartial")</pre>Este código resulta no seguinte erro:<blockquote>Compiler Error Message: CS1502: The best overloaded method match for 'System.Web.WebPages.WebPageExecutingBase.Write(System.Web.WebPages.HelperResult)' has some invalid arguments</blockquote>[caption id="attachment_2157" align="aligncenter" width="300" caption="Compilation Error - Html.RenderAction"][![Compilation Error - Html.RenderAction](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/Compilation-Error-Html.RenderAction-300x252.png "Compilation Error - Html.RenderAction")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/Compilation-Error-Html.RenderAction.png)[/caption]Isso acontece por que se observarmos o método RenderAction é void, e no Razor quando utilizamos o @ estamos pedindo para que o conteúdo seja escrito no response. Mas não é possível escrever um conteúdo void.A saída para isso é utilizar:<pre lang="csharp">@Html.Action("MinhaActionQueRetornaPartial")</pre>ou ainda (evite isso, é feio!)<pre lang="csharp">@{Html.RenderAction("MinhaActionQueRetornaPartial");}</pre>Isso tudo acaba gerando uma grande confusão. Até faz sentido o RenderAction ser void e internamente renderizar o conteúdo, mas isso fica feio, principalmente agora trabalhando com Razor. Seria melhor se, assim como o método Action ele também retornasse algo parecido com o MvcHtmlString, e então utilizaríamos o @ para renderizar.Bom, fica aí a dica.Att,Vinicius Quaiato.
+Fala galera, um amigo me chamou aqui no gtalk para tentar entender por que não estava conseguindo usar o seguinte código:
+{% highlight csharp %}
+@Html.RenderAction("MinhaActionQueRetornaPartial")
+{% endhighlight %}
+Este código resulta no seguinte erro:<blockquote>Compiler Error Message: CS1502: The best overloaded method match for 'System.Web.WebPages.WebPageExecutingBase.Write(System.Web.WebPages.HelperResult)' has some invalid arguments</blockquote>[caption id="attachment_2157" align="aligncenter" width="300" caption="Compilation Error - Html.RenderAction"][![Compilation Error - Html.RenderAction](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/Compilation-Error-Html.RenderAction-300x252.png "Compilation Error - Html.RenderAction")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/Compilation-Error-Html.RenderAction.png)[/caption]Isso acontece por que se observarmos o método RenderAction é void, e no Razor quando utilizamos o @ estamos pedindo para que o conteúdo seja escrito no response. Mas não é possível escrever um conteúdo void.A saída para isso é utilizar:
+{% highlight csharp %}
+@Html.Action("MinhaActionQueRetornaPartial")
+{% endhighlight %}
+ou ainda (evite isso, é feio!)
+{% highlight csharp %}
+@{Html.RenderAction("MinhaActionQueRetornaPartial");}
+{% endhighlight %}
+Isso tudo acaba gerando uma grande confusão. Até faz sentido o RenderAction ser void e internamente renderizar o conteúdo, mas isso fica feio, principalmente agora trabalhando com Razor. Seria melhor se, assim como o método Action ele também retornasse algo parecido com o MvcHtmlString, e então utilizaríamos o @ para renderizar.Bom, fica aí a dica.Att,Vinicius Quaiato.

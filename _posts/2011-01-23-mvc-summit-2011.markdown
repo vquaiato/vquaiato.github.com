@@ -18,19 +18,9 @@ tags:
   slug: asp-net-mvc-summit
   autoslug: asp.net-mvc-summit
 ---
-[![MVC Summit](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/mvcsummit_logo.png "MVC Summit")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/mvcsummit_logo.png)Em dezembro comecei a organizar o primeiro evento focado em ASP.NET MVC do Brasil: [MVC Summit](http://www.mvcsummit.net/).A idéia era fazer um evento simples, online, contando com a presença da galera que tem se empenhado em divulgar o ASP.NET MVC.A empolgação foi tanta e o feedback está sendo tão positivo, que já há um planejamento para que o evento ocorra também em uma edição presencial.
-
-### Palestrantes
-O evento conta hoje com [11 palestrantes](http://mvcsummit.net/2011/Palestrantes), alguns deles tidos como os caras que mais conhecem de ASP.NET MVC no país. Sendo 4 deles Microsoft MVPs.
-
-### Palestras
-Serão [14 apresentações online](http://mvcsummit.net/2011/Grade), totalmente gratuitas divididas em duas trilhas. Sendo que uma das trilhas é focada no público iniciante.São temas bem diversificados: Domain Driven Design, Validações, Testes de interface e integração, Comunicação com Sharepoint, Boas práticas e princípios OO, Webstandards, Desenvolvimento para Windows Azure, MVC Scaffolding, TDD, Introdução ao ASP.NET MVC, Nuget, Json, e muito mais.
-
-### O valor e o local
-O evento é gratuito, e você poderá conferir não importando de onde você seja, pois tudo será transmitido via web.
-
-### As inscrições
-Ainda não disponibilizamos as inscrições, mas não se preocupem em alguns dias elas serão abertas e haverá lugar para todos :D
-
-### Windows Azure
+[![MVC Summit](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/mvcsummit_logo.png "MVC Summit")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/mvcsummit_logo.png)Em dezembro comecei a organizar o primeiro evento focado em ASP.NET MVC do Brasil: [MVC Summit](http://www.mvcsummit.net/).A idéia era fazer um evento simples, online, contando com a presença da galera que tem se empenhado em divulgar o ASP.NET MVC.A empolgação foi tanta e o feedback está sendo tão positivo, que já há um planejamento para que o evento ocorra também em uma edição presencial.### Palestrantes
+O evento conta hoje com [11 palestrantes](http://mvcsummit.net/2011/Palestrantes), alguns deles tidos como os caras que mais conhecem de ASP.NET MVC no país. Sendo 4 deles Microsoft MVPs.### Palestras
+Serão [14 apresentações online](http://mvcsummit.net/2011/Grade), totalmente gratuitas divididas em duas trilhas. Sendo que uma das trilhas é focada no público iniciante.São temas bem diversificados: Domain Driven Design, Validações, Testes de interface e integração, Comunicação com Sharepoint, Boas práticas e princípios OO, Webstandards, Desenvolvimento para Windows Azure, MVC Scaffolding, TDD, Introdução ao ASP.NET MVC, Nuget, Json, e muito mais.### O valor e o local
+O evento é gratuito, e você poderá conferir não importando de onde você seja, pois tudo será transmitido via web.### As inscrições
+Ainda não disponibilizamos as inscrições, mas não se preocupem em alguns dias elas serão abertas e haverá lugar para todos :D### Windows Azure
 E para quem não viu no twitter o site do MVC Summit está no Windows Azure \o/Acompanhe o processo de [deploy no Windows Azure nestes posts](http://viniciusquaiato.com/blog/tag/deploying-windows-azure/).Espero que todos apreciem o evento, ajudem a divulgar e nos dêem seu feedback.Abraços e nos vemos no MVC Summit,Vinicius Quaiato.

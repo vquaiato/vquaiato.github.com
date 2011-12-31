@@ -30,9 +30,7 @@ tags:
   slug: palestras
   autoslug: palestras
 ---
-Dia 20 de março, à partir das 09h, a Microsoft realizará um grande evento com o apoio da comunidade para divulgar e apresentar diversas tecnologias.O evento ocorrerá simultaneamente em diversas cidades do país. Em São Paulo, nós do .NET Architects participaremos do lançamento das seguintes tecnologias:
-
-### Visual Studio 2010 e .NET Framework 4.0
+Dia 20 de março, à partir das 09h, a Microsoft realizará um grande evento com o apoio da comunidade para divulgar e apresentar diversas tecnologias.O evento ocorrerá simultaneamente em diversas cidades do país. Em São Paulo, nós do .NET Architects participaremos do lançamento das seguintes tecnologias:### Visual Studio 2010 e .NET Framework 4.0
 **Palestras práticas e dinâmicas cobrindo as novas funcionalidades através de demos:**- Novidades da IDE Visual Studio 2010
 - Novidades do .NET Framework 4.0
 - ASP.NET Web Forms 4

@@ -24,4 +24,12 @@ tags:
   slug: windows-azure-queues
   autoslug: windows-azure-queues
 ---
-Fala galera, beleza? Esta dica rápida vai para um "problema" que eu estava tendo ao criar Queues no Windows Azure. Vejam abaixo o código com problemas:<pre lang="csharp">queueClient = storageAccount.CreateCloudQueueClient();  this.namespacesQueue = this.queueClient.GetQueueReference("Namespaces");this.namespacesQueue.CreateIfNotExist();</pre>Este código estava lançando uma Exception:<blockquote>One of the request inputs is out of range.</blockquote>Com o código de erro 400. Mas o código abaixo funciona:<pre lang="csharp">queueClient = storageAccount.CreateCloudQueueClient();  this.namespacesQueue = this.queueClient.GetQueueReference("namespaces");this.namespacesQueue.CreateIfNotExist();</pre>Isto quer dizer que não se devem usar letras maiúsculas nos nomes das Queues. Aqui há uma documentação sobre os nomes permitidos: [http://msdn.microsoft.com/en-us/library/dd135715.aspx](http://msdn.microsoft.com/en-us/library/dd135715.aspx).O bacana é que a exception lançada não faz nenhuma menção ao erro que de fato estava acontecendo. É isso aew.Abraços,Vinicius Quaiato.
+Fala galera, beleza? Esta dica rápida vai para um "problema" que eu estava tendo ao criar Queues no Windows Azure. Vejam abaixo o código com problemas:
+{% highlight csharp %}
+queueClient = storageAccount.CreateCloudQueueClient();  this.namespacesQueue = this.queueClient.GetQueueReference("Namespaces");this.namespacesQueue.CreateIfNotExist();
+{% endhighlight %}
+Este código estava lançando uma Exception:<blockquote>One of the request inputs is out of range.</blockquote>Com o código de erro 400. Mas o código abaixo funciona:
+{% highlight csharp %}
+queueClient = storageAccount.CreateCloudQueueClient();  this.namespacesQueue = this.queueClient.GetQueueReference("namespaces");this.namespacesQueue.CreateIfNotExist();
+{% endhighlight %}
+Isto quer dizer que não se devem usar letras maiúsculas nos nomes das Queues. Aqui há uma documentação sobre os nomes permitidos: [http://msdn.microsoft.com/en-us/library/dd135715.aspx](http://msdn.microsoft.com/en-us/library/dd135715.aspx).O bacana é que a exception lançada não faz nenhuma menção ao erro que de fato estava acontecendo. É isso aew.Abraços,Vinicius Quaiato.
