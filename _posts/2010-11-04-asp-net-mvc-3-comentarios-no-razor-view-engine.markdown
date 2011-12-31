@@ -18,7 +18,9 @@ tags:
   slug: asp-net-mvc-3-beta
   autoslug: asp.net-mvc-3-beta
 ---
-Fala galera, essa é apenas uma dica simples e rápida.## Comentando código no Razor
+Fala galera, essa é apenas uma dica simples e rápida.
+
+## Comentando código no Razor
 Eu definitivamente não gosto de comentários no código, nem no HTML, mas se isso for útil para vocês:
 {% highlight csharp %}
 

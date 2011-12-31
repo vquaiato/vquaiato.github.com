@@ -18,7 +18,9 @@ tags:
   slug: node-exe
   autoslug: node.exe
 ---
-Fala galera está disponível o primeiro release do [Nodejs](http://nodejs.org/) com suporte nativo para rodar no Windows.O post oficial no blog do [Nodejs](http://blog.nodejs.org/) pode ser conferido aqui: [http://blog.nodejs.org/2011/07/14/node-v0-5-1/](http://blog.nodejs.org/2011/07/14/node-v0-5-1/).Este post também traz o executável para o windows: node.exe. Exatamente como havia sido prometido há algum tempo pelo time do Node: [Porting Node to Windows with Microsoft's help](http://blog.nodejs.org/2011/06/23/porting-node-to-windows-with-microsoft%e2%80%99s-help/).## Executando Nodejs no Windows
+Fala galera está disponível o primeiro release do [Nodejs](http://nodejs.org/) com suporte nativo para rodar no Windows.O post oficial no blog do [Nodejs](http://blog.nodejs.org/) pode ser conferido aqui: [http://blog.nodejs.org/2011/07/14/node-v0-5-1/](http://blog.nodejs.org/2011/07/14/node-v0-5-1/).Este post também traz o executável para o windows: node.exe. Exatamente como havia sido prometido há algum tempo pelo time do Node: [Porting Node to Windows with Microsoft's help](http://blog.nodejs.org/2011/06/23/porting-node-to-windows-with-microsoft%e2%80%99s-help/).
+
+## Executando Nodejs no Windows
 Após realizar o download do [node.exe aqui](http://nodejs.org/dist/v0.5.1/node.exe) vamos criar uma aplicação simples.Crie um arquivo windows.js com o seguinte código:
 {% highlight csharp %}
 var http = require('http');http.createServer(function (req, res) {  res.writeHead(200, {'Content-Type': 'text/plain'});  res.end('Hello World\n');}).listen(1234, "127.0.0.1");console.log('Server running at http://127.0.0.1:1234/');

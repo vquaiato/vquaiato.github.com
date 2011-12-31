@@ -21,7 +21,9 @@ tags:
   slug: metodos
   autoslug: "m\xC3\xA9todos"
 ---
-Continuando a falar sobre código claro, legível e compreensível, falarei um pouco sobre minhas percepções com relação aos nomes dos métodos.Precisamos entender que o método é uma ação. Realiza algum tipo de operação, por mais simples que seja. É o comportamento de um objeto. E ao meu ver, acima de tudo, é a descrição deste objeto. É sua própria documentação. Sendo assim, devemos tomar cuidado ao dar nome para os métodos. Não vou falar aqui sobre coesão e responsabilidade única, são assuntos para outros posts. Aqui estou apenas falando da nomenclatura.### O nome que não diz nada...
+Continuando a falar sobre código claro, legível e compreensível, falarei um pouco sobre minhas percepções com relação aos nomes dos métodos.Precisamos entender que o método é uma ação. Realiza algum tipo de operação, por mais simples que seja. É o comportamento de um objeto. E ao meu ver, acima de tudo, é a descrição deste objeto. É sua própria documentação. Sendo assim, devemos tomar cuidado ao dar nome para os métodos. Não vou falar aqui sobre coesão e responsabilidade única, são assuntos para outros posts. Aqui estou apenas falando da nomenclatura.
+
+### O nome que não diz nada...
 Vejamos o seguinte exemplo:
 {% highlight csharp %}
 public bool Permite(int idEmp, string caminho){    //faz alguma coisa}
@@ -30,7 +32,9 @@ Ok! Tudo que eu consigo saber é que este método retorna um booleano. O que ele
 {% highlight csharp %}
 public bool VerificaEmpresaAcessaPasta(int idEmpresa, string caminhoPasta){    //faz alguma coisa}
 {% endhighlight %}
-Poxa, muito mais claro! Agora o método me diz tudo que eu preciso saber. Sim, o nome ficou um pouco mais extenso, mas qual o problema disso? Nenhum!### O método 'faz tudo'...
+Poxa, muito mais claro! Agora o método me diz tudo que eu preciso saber. Sim, o nome ficou um pouco mais extenso, mas qual o problema disso? Nenhum!
+
+### O método 'faz tudo'...
 É muito comum criarmos um método simples. Que recebe ali seu parametrozinho, e faz seu trabalho. No entanto com o passar do tempo, qualquer necessidade que surge e <i>parece</i> estar relacionada com o método, vamos jogando parâmetros nele. Resultado: bagunça, falta de clareza, falta de coesão.Nasce assim>
 {% highlight csharp %}
 public object[] FiltraEmpresa(int id){    //traz a empresa por id}
@@ -43,7 +47,9 @@ Completamente bagunçado!Podemos tornar as coisas mais claras assim:
 {% highlight csharp %}
 public object ObterEmpresaPorId(int id){ }public object ObterEmpresaPorCnpj(string cnpj){ }public object[] ObterEmpresaPeloNome(string nome, bool ativa){ }public object[] ObterEmpresaPorUf(string uf, bool ativa){ }public object[] ObterEmpresaPorUfECidade(string uf, string cidade, bool ativa){ }
 {% endhighlight %}
-Você deve estar pensando "Mas agora eu escrevi muito mais código!". E eu respondo: "Mentira!".Esse código todo já estava dentro do método <i>FiltraEmpresa</i>, só que estava 'escondido' debaixo dos panos. Agora eles estão expostos de forma clara, coesa, e <b>documentada</b>.Agora estão claras as formas de obter uma empresa.### As sobrecargas que não revelam nada...
+Você deve estar pensando "Mas agora eu escrevi muito mais código!". E eu respondo: "Mentira!".Esse código todo já estava dentro do método <i>FiltraEmpresa</i>, só que estava 'escondido' debaixo dos panos. Agora eles estão expostos de forma clara, coesa, e <b>documentada</b>.Agora estão claras as formas de obter uma empresa.
+
+### As sobrecargas que não revelam nada...
 Um outro caso, que é um pouco polêmico, é com relação a sobrecargas. Confesso que não sou muito fã delas.Calma. Calma. Explicarei.Sobrecargas, no geral, acabam extrapolando o limite do aceitável. Já vi situações onde mais de 13 sobrecargas existiam, e o problema é que o método já estava começando a realizar diferentes funções, baseado nos parâmetros que recebia.Por isso, na maioria dos casos, eu prefiro métodos com nomes bem definidos do que sobrecargas. Vamos utilizar o cenário anterior, mas ao invés dos nomes bem definidos, vamos utilizar assim:
 {% highlight csharp %}
 public object PesquisaEmpresa(int id){ }public object PesquisaEmpresa(string cnpj){ }

@@ -18,7 +18,9 @@ tags:
   slug: poco
   autoslug: poco
 ---
-Nos últimos meses tem-se falado muito de classes POCO. É POCO pra cá e POCO pra lá. Mas o que são classes POCO?### O termo POCO
+Nos últimos meses tem-se falado muito de classes POCO. É POCO pra cá e POCO pra lá. Mas o que são classes POCO?
+
+### O termo POCO
 POCO - Plain Old CLR Object - diz respeito a uma classe que não depende e não conhece frameworks externos ao .net framework.O termo POCO vem do termo POJO - Plain Old Java Object - utilizado pela comunidade Java.Atualmente classes POCO estão bastante associadas ao trabalho com ferramentas [ORM](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx). No geral estas ferramentas definem classes para serem herdadas, interfaces implementadas ou atributos para serem utilizados nas classes ou propriedades. São estas dependências que as classes POCOs não criam, elas ficam independentes destes frameworks externos.Veja abaixo uma classe utilizada pelo WCF em conjunto com o LinqToSql:
 {% highlight csharp %}
 [DataContract][Table(Name="Usuarios")]public class Usuario{    [DataMember]    [Column]    public int Id {get; set;}    [DataMember]    [Column]    public string Nome {get; set;}    [DataMember]    [Column]    public string Email {get; set;}        private bool EmailValido(){return false;}}
@@ -27,5 +29,7 @@ Na classe acima temos a dependência de dois frameworks distintos: o WCF e o Lin
 {% highlight csharp %}
 public class Usuario{    public int Id {get; set;}    public string Nome {get; set;}    public string Email {get; set;}    private bool EmailValido(){return false;}}
 {% endhighlight %}
-O Entity Framework 4 permite trabalhar com classes POCO, e o WCF também permite trabalhar com classes POCO usando o [DataContractSerializer](http://msdn.microsoft.com/en-us/library/system.runtime.serialization.datacontractserializer.aspx).### Não confunda com classes anêmicas/DTOs
+O Entity Framework 4 permite trabalhar com classes POCO, e o WCF também permite trabalhar com classes POCO usando o [DataContractSerializer](http://msdn.microsoft.com/en-us/library/system.runtime.serialization.datacontractserializer.aspx).
+
+### Não confunda com classes anêmicas/DTOs
 É importante não confundir POCO com uma [classe anêmica](http://en.wikipedia.org/wiki/Anemic_Domain_Model) ou [DTO](http://en.wikipedia.org/wiki/Data_transfer_object). Apesar de uma classe anêmica poder ser uma classe POCO, o conceito de POCO não diz que a classe deva ser anêmica. As classes POCO podem sim ter métodos e comportamentos, elas apenas não possuem dependências de outros frameworks e não alteram seu comportamento/estrutura em razão destes.Qualquer dúvida, estou à disposição.Att,Vinicius Quaiato.

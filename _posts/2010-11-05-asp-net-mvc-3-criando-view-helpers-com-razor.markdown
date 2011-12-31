@@ -24,7 +24,9 @@ tags:
   slug: razor-helpers
   autoslug: razor-helpers
 ---
-Fala galera, pois é, não canso de falar do [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3/), temos muitas novidades interessantes.Hoje quero mostrar mais uma delas, bastante interessante e simples: A criação de Helpers no [Razor](http://viniciusquaiato.com/blog/?s=razor&x=0&y=0).Agora é possível criar Helpers de forma mais simples utilizando Razor. Isso quer dizer que temos uma amneira fácil de criar helpers mesclando HTML e C#, afinal o Razor nos permite isso.Não precisamos mais criar uma classe puramente C# e ficar trabalhando com Response.Write. Já que a transição do código C# para o código HTML é simples, vamos utilizar isso.## Criando um helper com Razor
+Fala galera, pois é, não canso de falar do [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3/), temos muitas novidades interessantes.Hoje quero mostrar mais uma delas, bastante interessante e simples: A criação de Helpers no [Razor](http://viniciusquaiato.com/blog/?s=razor&x=0&y=0).Agora é possível criar Helpers de forma mais simples utilizando Razor. Isso quer dizer que temos uma amneira fácil de criar helpers mesclando HTML e C#, afinal o Razor nos permite isso.Não precisamos mais criar uma classe puramente C# e ficar trabalhando com Response.Write. Já que a transição do código C# para o código HTML é simples, vamos utilizar isso.
+
+## Criando um helper com Razor
 Primeiramente precisamos criar a pasta "App_Code". Os helpers do Razor precisam estar neste folder:[caption id="attachment_2006" align="aligncenter" width="298" caption="Criar pasta App_Code para usar Razor helpers"][![Criar pasta App_Code para usar Razor helpers](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Razor-helpers-298x300.png "Criar pasta App_Code para usar Razor helpers")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Razor-helpers.png)[/caption]Agora basta criarmos um arquivo Razor nesta pasta. Vou criar um arquivo chamado "MeuHelper.cshtml" e colocar o código abaixo:**Este código NÃO funciona mais!**
 {% highlight csharp %}
 @helper PrintBlogAddress(){Visite: http://viniciusquaiato.com}

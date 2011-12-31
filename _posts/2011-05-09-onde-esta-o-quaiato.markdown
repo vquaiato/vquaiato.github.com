@@ -20,6 +20,8 @@ tags:
 ---
 [![](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/conheca-o-livro-onde-esta-o-wally.jpg "conheca-o-livro-onde-esta-o-wally")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/conheca-o-livro-onde-esta-o-wally.jpg)Fala galera, beleza?Bom eu ando um pouco afastado aqui do blog então resolvi mandar notícias de onde estou e por onde estarei.Este post é mais para escrever sobre os meus próximos passos de trabalho com a comunidade e tudo o mais. Eu achei que esse ano passaria em branco, sem dar palestras mas as coisas mudaram.Já se foram: - uma "palestra virtual" no Virtual Developer Day
 - 3 apresentações online no MVCSummit (evento que organizei)
+
+
 ### E abaixo seguem alguns dos próximos passos:
 - [**24.05.2011** - Universidade Metodista de São Paulo](http://viniciusquaiato.com/blog/slides-e-demos-palestra-orientacao-a-objetos-e-design-patterns/) Feita!
 - [**28.05.2011** - MSTechDay em Lavras/MG](http://viniciusquaiato.com/blog/mstechday-orientacao-a-objetos-e-principios-solid-slides-e-demos/) Feita!

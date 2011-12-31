@@ -21,7 +21,9 @@ tags:
   slug: functions-razor
   autoslug: functions-razor
 ---
-E o [Razor](http://viniciusquaiato.com/blog/tag/razor/) não pára! Vários posts sobre [ASP.NET MVC 3](http://viniciusquaiato.com/blog/tag/asp-net-mvc-3/), e olhe que ainda estamos no beta!Desta vez vou mostrar como criar functions no Razor. As functions são um pouco diferentes dos helpers pois elas possuem tipo de retorno, e não possuem saída HTML.## Criando functions com Razor no ASP.NET MVC 3
+E o [Razor](http://viniciusquaiato.com/blog/tag/razor/) não pára! Vários posts sobre [ASP.NET MVC 3](http://viniciusquaiato.com/blog/tag/asp-net-mvc-3/), e olhe que ainda estamos no beta!Desta vez vou mostrar como criar functions no Razor. As functions são um pouco diferentes dos helpers pois elas possuem tipo de retorno, e não possuem saída HTML.
+
+## Criando functions com Razor no ASP.NET MVC 3
 Uma function é exatamente isso: uma função. Sem muito mistério. Para criar uma function seguimos a seguinte sintaxe:
 {% highlight csharp %}
 @functions{    tipo_retorno nome_da_function(parametros){        processamentos e operações        return algum retorno se houver    }}

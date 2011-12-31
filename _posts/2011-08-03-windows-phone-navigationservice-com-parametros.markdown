@@ -21,7 +21,9 @@ tags:
   slug: parametros-entre-paginas
   autoslug: "par\xC3\xA2metros-entre-p\xC3\xA1ginas"
 ---
-Fala galera, depois de vermos como realizar navegação entre páginas no Windows Phone usando NavigationService vamos ver agora como passar parâmetros para as páginas.## Passando parâmetros com NavigationService
+Fala galera, depois de vermos como realizar navegação entre páginas no Windows Phone usando NavigationService vamos ver agora como passar parâmetros para as páginas.
+
+## Passando parâmetros com NavigationService
 Como estamos trabalhando com URIs podemos passar os parâmetros em formato de querystring normalmente, e a classe NavigationContext nos dará o acesso a estes parâmetros.Vamos criar uma página na nossa aplicação Windows Phone e colocar uma caixa de texto e um botão, mais ou menos como abaixo:[caption id="attachment_3931" align="aligncenter" width="165" caption="Windows Phone NavigationService com parametros"][![Windows Phone NavigationService com parametros](http://viniciusquaiato.com/blog/wp-content/uploads/2011/08/Windows-Phone-NavigationService-com-parametros-exemplo-165x300.png "Windows Phone NavigationService com parametros")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/08/Windows-Phone-NavigationService-com-parametros-exemplo.png)[/caption]O evento click do botão desta página executa o código abaixo:
 {% highlight csharp %}
 private void Button_Click(object sender, RoutedEventArgs e){    NavigationService.Navigate(new Uri(string.Format("/BarPage.xaml?valor={0}", valor.Text), UriKind.Relative));}

@@ -24,8 +24,12 @@ tags:
   slug: ninject-mvc3
   autoslug: ninject.mvc3
 ---
-Fala galera [o post de ontem sobre DependencyResolver](http://viniciusquaiato.com/blog/asp-net-mvc-3-e-o-dependencyresolver/) foi um pouco mais pesado(e burro) não? Mostrei como criar um Service Locator **bem pobre** e o código ficou um pouco <del datetime="2011-02-02T16:14:00+00:00">pesado</del> ruim mesmo.A idéia é mostrar que não precisamos cair na tentação de resolver tudo por nós mesmos, que temos já boas soluções de mercado preparadas para nos auxiliar.## Ninject.MVC3
-Como dissemos o [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3) conta com a interface IDependencyResolver para atuar como um Service Locator. O [Ninject](http://ninject.org/) é um injetor de dependências open source, ou podemos chamá-lo também de container de IoC/DI. Estou falando do Ninject pois ele já possui uma implementação de IDependencyResolver que podemos utilizar e facilitar infinitamente nossas vidas.## Instalando o Ninject.MVC3
+Fala galera [o post de ontem sobre DependencyResolver](http://viniciusquaiato.com/blog/asp-net-mvc-3-e-o-dependencyresolver/) foi um pouco mais pesado(e burro) não? Mostrei como criar um Service Locator **bem pobre** e o código ficou um pouco <del datetime="2011-02-02T16:14:00+00:00">pesado</del> ruim mesmo.A idéia é mostrar que não precisamos cair na tentação de resolver tudo por nós mesmos, que temos já boas soluções de mercado preparadas para nos auxiliar.
+
+## Ninject.MVC3
+Como dissemos o [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3) conta com a interface IDependencyResolver para atuar como um Service Locator. O [Ninject](http://ninject.org/) é um injetor de dependências open source, ou podemos chamá-lo também de container de IoC/DI. Estou falando do Ninject pois ele já possui uma implementação de IDependencyResolver que podemos utilizar e facilitar infinitamente nossas vidas.
+
+## Instalando o Ninject.MVC3
 É óbvio que isso tudo já está disponível com o [NuGet](http://viniciusquaiato.com/blog/tag/nuget/), então vamos digitar o seguinte comando no Package Manager Console:
 {% highlight csharp %}
 Install-Package Ninject.MVC3 
@@ -38,6 +42,10 @@ Este código está pronto para utilizarmos. Ele configura o Ninject como sendo n
 {% highlight csharp %}
 
 {% endhighlight %}
-Pronto! Isso é tudo que precisamos! Não precisamos nem alterar o Global.asax para adicionar o DependencyResolver, pois esta classe criada pelo pacote do NuGet já faz esse trabalho.## Resumo
-Vimos que trabalhar com injeção de dependências em nossos controllers no ASP.NET MVC 3 é algo bastante trivial e simples quando utilizando o DependencyResolver. Se trabalharmos com Ninject então essa tarefa fica praticamente inexistente, afinal só precisamos configurar umas poucas linhas com a resolução das dependências.Chega de sofrer com soluções mirabolantes não é?!## Códifo fonte
+Pronto! Isso é tudo que precisamos! Não precisamos nem alterar o Global.asax para adicionar o DependencyResolver, pois esta classe criada pelo pacote do NuGet já faz esse trabalho.
+
+## Resumo
+Vimos que trabalhar com injeção de dependências em nossos controllers no ASP.NET MVC 3 é algo bastante trivial e simples quando utilizando o DependencyResolver. Se trabalharmos com Ninject então essa tarefa fica praticamente inexistente, afinal só precisamos configurar umas poucas linhas com a resolução das dependências.Chega de sofrer com soluções mirabolantes não é?!
+
+## Códifo fonte
 Confira o código fonte deste segundo exemplo aqui no github: [http://github.com/vquaiato/MVC3DependencyResolver](https://github.com/vquaiato/MVC3DependencyResolver/tree/master/src)Abraços,Vinicius Quaiato.

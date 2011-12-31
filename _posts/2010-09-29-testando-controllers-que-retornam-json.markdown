@@ -41,7 +41,9 @@ Bastante simples. Estamos apenas retornando 2 valores a serem transformados em J
 {% highlight csharp %}
 [TestMethod]public void TestMethod1(){    var controller = new HomeController();    var result = controller.DadosJson();    Assert.AreEqual(@"{""Id"":10,""Nome"":""Vinicius""}", result.Data);}
 {% endhighlight %}
-Isso é o que eu queria fazer, mas infelizmente não é possível.### JavaScriptSerializer
+Isso é o que eu queria fazer, mas infelizmente não é possível.
+
+### JavaScriptSerializer
 Uma das alternativas, a mais simples ao meu ver, é adicionar estas duas linhas de código ao teste:
 {% highlight csharp %}
 [TestMethod]public void TestMethod1(){    var controller = new HomeController();    var result = controller.DadosJson();    var serializer = new JavaScriptSerializer();    var output = serializer.Serialize(result.Data);    Assert.AreEqual(@"{""Id"":10,""Nome"":""Vinicius""}", output);}
@@ -54,6 +56,10 @@ _Reparem que este extension method será criado no projeto de testes, ou em uma 
 {% highlight csharp %}
 [TestMethod]public void TestMethod1(){    var controller = new HomeController();    var result = controller.DadosJson();    Assert.AreEqual(@"{""Id"":10,""Nome"":""Vinicius""}", result.GenerateOutputJson());}
 {% endhighlight %}
-Bem mais limpo!### Outras formas...
-Existem outras formas de realizar esta tarefa, no entanto esta me pareceu a mais simples. Uma outra envolve chamar o método ExecuteResult, porém para isso precisamos mockar 3 objetos e configurar callbacks, o que não fica muito intuitivo, sendo que o que precisamos é apenas executar aquelas duas linhas assim como o ASP.NET MVC fará.Se quiserem ver como seriam estas outras maneiras, podem dar uma olhada neste link [aqui](http://www.heartysoft.com/post/2010/05/25/ASPNET-MVC-Unit-Testing-JsonResult-Returning-Anonymous-Types.aspx).### Resuminho
+Bem mais limpo!
+
+### Outras formas...
+Existem outras formas de realizar esta tarefa, no entanto esta me pareceu a mais simples. Uma outra envolve chamar o método ExecuteResult, porém para isso precisamos mockar 3 objetos e configurar callbacks, o que não fica muito intuitivo, sendo que o que precisamos é apenas executar aquelas duas linhas assim como o ASP.NET MVC fará.Se quiserem ver como seriam estas outras maneiras, podem dar uma olhada neste link [aqui](http://www.heartysoft.com/post/2010/05/25/ASPNET-MVC-Unit-Testing-JsonResult-Returning-Anonymous-Types.aspx).
+
+### Resuminho
 Com isto conseguimos mais uma forma de testar nossas actions que retornam dados Json. Se precisamos de fato validar a estrutura Json destas informações, agora já temos uma maneira simples de fazer isso.Se precisarmos validar os dados, sem nos preocupar com o Json, podemos trabalhar conforme mostrado [neste post aqui](http://viniciusquaiato.com/blog/asp-net-mvc-testando-controllers-parte-ii/).O importante é escrevermos os testes, de forma que eles nos ajudem da melhor forma possível, e nos possibilitem deixar o sistema mais "previsível" quando futuras mudanças ocorrerem.Abraços, e espero que seja útil.Vinicius Quaiato.

@@ -24,8 +24,12 @@ tags:
   slug: output-cache-child-action
   autoslug: output-cache-child-action
 ---
-Hello there! Seguindo com as novidades do ASP.NET MVC 3 e do Release Candidate lançado dia 09/11, neste post mostrarei o output cache para pedaços de uma página, ou child actions.## Output cache no ASP.NET MVC
-O ASP.NET MVC já possuía output cache em suas versões anteriores, mas o cache era feito do output inteiro. Agora é possível especificar que o resultado de uma action deverá ser mantido em um cache de retorno, e quando esta action for renderizada utilizando Html.RenderAction ou Html.Action esse resultado poderá vir do cache.## Output cache no ASP.NET MVC 3 Release Candidate
+Hello there! Seguindo com as novidades do ASP.NET MVC 3 e do Release Candidate lançado dia 09/11, neste post mostrarei o output cache para pedaços de uma página, ou child actions.
+
+## Output cache no ASP.NET MVC
+O ASP.NET MVC já possuía output cache em suas versões anteriores, mas o cache era feito do output inteiro. Agora é possível especificar que o resultado de uma action deverá ser mantido em um cache de retorno, e quando esta action for renderizada utilizando Html.RenderAction ou Html.Action esse resultado poderá vir do cache.
+
+## Output cache no ASP.NET MVC 3 Release Candidate
 Agora no Release Candidate do ASP.NET MVC 3 foi disponibilizado um atributo para ser colocado nas actions que define se ela deve ser mantida no output cache.Vamos ver um exemplo:
 {% highlight csharp %}
 [OutputCache(Duration = 30, VaryByParam = "none")]public DateTime ActionComCache(){    return DateTime.Now;}

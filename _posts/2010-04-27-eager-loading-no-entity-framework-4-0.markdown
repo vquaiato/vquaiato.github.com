@@ -34,7 +34,9 @@ Tem se falado bastante sobre uma das novas funcionalidades do Entity Framework 4
 {% highlight csharp %}
 var ctx = new EF4Contexto();var lista = ctx.Listas.First();//neste momento a propriedade Itens ainda está vazia, nem foi carregadavar nome = lista.Nome;//neste exato momento é executada uma query//no banco de dados para preenhcer os Itensvar itens = lista.Itens;
 {% endhighlight %}
-Este é o comportamento padrão do EF4. O que acontece se desligarmos o Lazy Loading e quisermos trabalhar com Eager Loading? Resposta: Nada!Exatamente isso, nada acontece. Se você achou que a propriedade _Itens _seria carregada juntamente com o objeto Lista está enganado.Pois bem, não vou entrar no mérito da discussão deste comportamento### Eager Loading
+Este é o comportamento padrão do EF4. O que acontece se desligarmos o Lazy Loading e quisermos trabalhar com Eager Loading? Resposta: Nada!Exatamente isso, nada acontece. Se você achou que a propriedade _Itens _seria carregada juntamente com o objeto Lista está enganado.Pois bem, não vou entrar no mérito da discussão deste comportamento
+
+### Eager Loading
 Eager Loading, ou "carga prematura", diz respeito a carregar todas as relações de uma entidade no mesmo momento em que esta entidade é carregada. É o contrário do [Lazy Loading](http://viniciusquaiato.com/blog/lazy-loading-no-entity-framework-4-0/).Para trazer as propriedades de navegação(associação com outras entidades) que quisermos ao carregar a raiz, precisamos utilizar o método _[Include](http://msdn.microsoft.com/en-us/library/bb738708.aspx)_.Veja o exemplo:
 {% highlight csharp %}
 var ctx = new EF4Contexto();ctx.ContextOptions.LazyLoadingEnabled = false;var lista = ctx.Listas.First();//Não é carregada esta propriedadevar itens = lista.Itens;

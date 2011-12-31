@@ -24,7 +24,9 @@ tags:
   slug: blocks
   autoslug: blocks
 ---
-[![Blocos e Procs](http://viniciusquaiato.com/blog/wp-content/uploads/2010/07/132243417_39300a8258_m.jpg "Blocos e Procs")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/07/132243417_39300a8258_m.jpg)Já falamos um pouco sobre métodos, ["tipagem"](http://viniciusquaiato.com/blog/ironruby-basics-para-net-lovers-i/), [arrays e hash](http://viniciusquaiato.com/blog/ironruby-basics-para-net-lovers-ii/) no Ruby/IronRuby.Em .Net estamos acostumados a trabalhar com [delegates](http://msdn.microsoft.com/en-us/library/ms173171(VS.80).aspx) e [lambdas](http://msdn.microsoft.com/en-us/library/bb397687.aspx). Isto nos permite passar trechos de códigos como parâmetros para métodos e então operar com estes trechos de código.Esse comportamento nos permite realizar abstrações interessantes e escrever códigos interessantes. Não vou entrar nos detalhes, há muita informação sobre isso no google.### Usando delegates e lambdas no c#
+[![Blocos e Procs](http://viniciusquaiato.com/blog/wp-content/uploads/2010/07/132243417_39300a8258_m.jpg "Blocos e Procs")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/07/132243417_39300a8258_m.jpg)Já falamos um pouco sobre métodos, ["tipagem"](http://viniciusquaiato.com/blog/ironruby-basics-para-net-lovers-i/), [arrays e hash](http://viniciusquaiato.com/blog/ironruby-basics-para-net-lovers-ii/) no Ruby/IronRuby.Em .Net estamos acostumados a trabalhar com [delegates](http://msdn.microsoft.com/en-us/library/ms173171(VS.80).aspx) e [lambdas](http://msdn.microsoft.com/en-us/library/bb397687.aspx). Isto nos permite passar trechos de códigos como parâmetros para métodos e então operar com estes trechos de código.Esse comportamento nos permite realizar abstrações interessantes e escrever códigos interessantes. Não vou entrar nos detalhes, há muita informação sobre isso no google.
+
+### Usando delegates e lambdas no c#
 
 {% highlight csharp %}
  " + s.ToLower();};Console.WriteLine(impressorMinusculo("VINICIUS"));Console.WriteLine(impressorMaiusculo("vinicius"));
@@ -33,12 +35,16 @@ Poderíamos ainda ter um método que recebe um delegate:
 {% highlight csharp %}
  s.ToUpper(), "vinicius");
 {% endhighlight %}
-Agora as coisas começam a ficar um pouco mais interessantes. O Ruby trabalha muito com [blocks, Procs e lambdas](http://www.robertsosinski.com/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/). Os conceitos são bastante semelhantes e a diferença está nos detalhes.### |blocks|
+Agora as coisas começam a ficar um pouco mais interessantes. O Ruby trabalha muito com [blocks, Procs e lambdas](http://www.robertsosinski.com/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/). Os conceitos são bastante semelhantes e a diferença está nos detalhes.
+
+### |blocks|
 Blocks nada mais são do que blocos de código. Sua sintaxe é bastante simples:
 {% highlight csharp %}
 letras = ["a","b","c"]#para quem gosta de do endletras.each do |letra|    puts letra.upcaseend#para quem gosta de bracketsletras.each {|letra| puts letra.upcase}
 {% endhighlight %}
-O que acontece no código acima é que o método _[each](http://ruby-doc.org/core/classes/Array.html#M002173)_ recebe um block como argumento, ou seja, para cada item dentro do array ele executará o bloco de código informado. No exemplo acima, apenas exibimos o item em upper case.O código é bastante simples de entender. O método each passará como parâmetro para nosso bloco cada item do array. E dentro do bloco o que fazemos é colocar este item (que chamei de letra) em caixa alta, chamando o método _[upcase](http://ruby-doc.org/core/classes/String.html#M000793)_.### Proc.new
+O que acontece no código acima é que o método _[each](http://ruby-doc.org/core/classes/Array.html#M002173)_ recebe um block como argumento, ou seja, para cada item dentro do array ele executará o bloco de código informado. No exemplo acima, apenas exibimos o item em upper case.O código é bastante simples de entender. O método each passará como parâmetro para nosso bloco cada item do array. E dentro do bloco o que fazemos é colocar este item (que chamei de letra) em caixa alta, chamando o método _[upcase](http://ruby-doc.org/core/classes/String.html#M000793)_.
+
+### Proc.new
 Os blocks são bastante interessantes, e são uma das coisas que chamam por aí de "rubismo", que oferece um jeito "rubista" de resolver as coisas. Sintaxe simples, elegante, etc.No entanto, não conseguimos reaproveitar os blocks em vários lugares, precisamos reescrever o block toda vez. E aí que surge a [Proc](http://ruby-doc.org/core/classes/Proc.html).Relacionando com C#, poderia dizer que a Proc é um objeto contendo um delegate. Uma referência para uma função a ser executada. Vejamos:
 {% highlight csharp %}
 nomes = ["vinicius","janynne"]caixa_alta = Proc.new do |texto|    texto.upcaseendnomes.each  do |nome|     puts caixa_alta.call nomeend

@@ -21,11 +21,25 @@ tags:
   slug: singleton-ecologico
   autoslug: "singleton-ecol\xC3\xB3gico"
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/single-tree-150x150.jpg "single tree")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/single-tree.jpg)Continuando a falar sobre o problema dos Singletons ([que eu demonstrei aqui](http://viniciusquaiato.com/blog/singletons-sao-um-problema-veja/)) neste artigo demonstrarei como criarmos e utilizarmos Singletons de uma maneira mais sustentável, o que eu carinhosamente chamei de _**"Singletons ecológicos"**_.## O padrão Singleton x ciclo de vida Singleton
-O design pattern Singleton possui uma estrutura básica. De forma resumida uma classe que deve ser singleton precisa implementar um mecanismo interno que garanta um único ponto de acesso a uma única instância de si.Desta forma o [Design Pattern Singleton](http://pt.wikipedia.org/wiki/Singleton) garante que para esta class existe uma única interface conhecida para obter uma instância, um objeto desta classe.Um dos problemas acarretados por isso eu [mostrei aqui](http://viniciusquaiato.com/blog/singletons-sao-um-problema-veja/).O _"ciclo de vida Singleton"_ é um pouco diferente do padrão singleton. Na verdade quando falamos do ciclo de vida Singleton estamos falando que um objeto será singleton, sua existência será singleton, mas ele não implementa o padrão singleton. Ou seja, a forma de atingir este objetivo pode ser diferente. O objeto não precisa conhecer a infraestrutura do padrão.## Como criar Singletons ecológicos
-#### Utilização do pattern Factory*
-Uma outra alternativa para isso é trabalhar com uma fábrica, utilizar o Design Pattern Factory*, seja um Factory Method seja uma Abstract Factory. Desta forma quem deve garantir o ciclo de vida Singleton, ou seja, garantir uma única instância para objetos de um determinado tipo é a fábrica e não o próprio tipo. #### Conteiner de IoC/DI
-Uma das formas de trabalhar com Singletons ecológicos, ou seja, os singletons que não vão causar os problemas mencionados neste post aqui: violação de SRP, alto acoplamento, acoplamento oculto, dificuldade em testar, etc, é utilizando um conteiner de inversão de controle/injeção e dependências. Aqui quem garante o ciclo de vida singleton é o conteiner e não o objeto.(Veja mais sobre inversão de controle e injeção de dependências [aqui](http://viniciusquaiato.com/blog/injecao-de-dependencia/) e [aqui](http://viniciusquaiato.com/blog/injecao-de-dependencia-com-ms-unity/))## Utilizando Ninject para criar singletons ecológicos
+[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/single-tree-150x150.jpg "single tree")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/single-tree.jpg)Continuando a falar sobre o problema dos Singletons ([que eu demonstrei aqui](http://viniciusquaiato.com/blog/singletons-sao-um-problema-veja/)) neste artigo demonstrarei como criarmos e utilizarmos Singletons de uma maneira mais sustentável, o que eu carinhosamente chamei de _**"Singletons ecológicos"**_.
+
+## O padrão Singleton x ciclo de vida Singleton
+O design pattern Singleton possui uma estrutura básica. De forma resumida uma classe que deve ser singleton precisa implementar um mecanismo interno que garanta um único ponto de acesso a uma única instância de si.Desta forma o [Design Pattern Singleton](http://pt.wikipedia.org/wiki/Singleton) garante que para esta class existe uma única interface conhecida para obter uma instância, um objeto desta classe.Um dos problemas acarretados por isso eu [mostrei aqui](http://viniciusquaiato.com/blog/singletons-sao-um-problema-veja/).O _"ciclo de vida Singleton"_ é um pouco diferente do padrão singleton. Na verdade quando falamos do ciclo de vida Singleton estamos falando que um objeto será singleton, sua existência será singleton, mas ele não implementa o padrão singleton. Ou seja, a forma de atingir este objetivo pode ser diferente. O objeto não precisa conhecer a infraestrutura do padrão.
+
+## Como criar Singletons ecológicos
+
+
+##
+
+## Utilização do pattern Factory*
+Uma outra alternativa para isso é trabalhar com uma fábrica, utilizar o Design Pattern Factory*, seja um Factory Method seja uma Abstract Factory. Desta forma quem deve garantir o ciclo de vida Singleton, ou seja, garantir uma única instância para objetos de um determinado tipo é a fábrica e não o próprio tipo. 
+
+##
+
+## Conteiner de IoC/DI
+Uma das formas de trabalhar com Singletons ecológicos, ou seja, os singletons que não vão causar os problemas mencionados neste post aqui: violação de SRP, alto acoplamento, acoplamento oculto, dificuldade em testar, etc, é utilizando um conteiner de inversão de controle/injeção e dependências. Aqui quem garante o ciclo de vida singleton é o conteiner e não o objeto.(Veja mais sobre inversão de controle e injeção de dependências [aqui](http://viniciusquaiato.com/blog/injecao-de-dependencia/) e [aqui](http://viniciusquaiato.com/blog/injecao-de-dependencia-com-ms-unity/))
+
+## Utilizando Ninject para criar singletons ecológicos
 [Ninject](http://ninject.org/) é um framework open source para injeção de dependências. Como a maioria destas ferramentas, existe uma espécia de conteiner responsável por resolver as dependências, ou seja, injetar as dependências corretas nos objetos a serem criados.No geral estes conteiners possuem mecanismos para que digamos qual será o ciclo de vida dos objetos por eles criados, sendo assim podemos utilizá-los para gerenciar nossos objetos que devem ser singletons.
 {% highlight csharp %}
 
@@ -38,5 +52,7 @@ Notem que na **_linha 18_** temos a classe SomeClassThatNeedsASingleton. Na verd
 {% highlight csharp %}
 
 {% endhighlight %}
-O código fala por si só não é? Estamos pedindo ao conteiner(o Kernel) do Ninject para criar um objeto da classe SomeClassThatNeedsASingleton, que por sua vez depende de uma classe que o Ninject resolverá.Desta forma eliminamos completamente das nossas classes de domínio quaisquer informações sobre singletons ou o pattern singleton.Temos essa informação somente em uma classe mais de infraestrutura e configuração, que é o Kernel do Ninject. Neste nível acabo entendendo que esta informação não é tão ruim, pois de fato eu não vou testar o Ninject, confio que o framework esteja funcionando e espero que eles tenham testado o mesmo.## Resumindo...
+O código fala por si só não é? Estamos pedindo ao conteiner(o Kernel) do Ninject para criar um objeto da classe SomeClassThatNeedsASingleton, que por sua vez depende de uma classe que o Ninject resolverá.Desta forma eliminamos completamente das nossas classes de domínio quaisquer informações sobre singletons ou o pattern singleton.Temos essa informação somente em uma classe mais de infraestrutura e configuração, que é o Kernel do Ninject. Neste nível acabo entendendo que esta informação não é tão ruim, pois de fato eu não vou testar o Ninject, confio que o framework esteja funcionando e espero que eles tenham testado o mesmo.
+
+## Resumindo...
 Acabamos de ver uma forma simples de trabalhar com Singletons sem [todos os problemas que ele taz](http://viniciusquaiato.com/blog/singletons-sao-um-problema-veja/).Compreendemos a diferença entre o pattern singleton e o ciclo de vida singleton, e agora podemos tomar melhores decisões e entender quando precisamos de um e quando precisamos de outro.É evidente que em alguns casos precisaremos de um singleton, e quando estes casos surgirem precisamos compreender como vamos criá-lo: usando o pattern ou um "singleton ecológico"?Espero que tenha conseguido ajudar um pouco, deixem suas críticas e comentários, ajudarão a evoluir a idéia.Abraços,Vinicius Quaiato.

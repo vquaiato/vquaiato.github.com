@@ -28,6 +28,8 @@ Trabalhar com forms e ajax no ASP.NET MVC é algo relativamente bastante simples
 {% highlight csharp %}
 
 {% endhighlight %}
+
+
 ## Criando o formulário na View
 Nosso formulário será criado com a utilização do helper BeginForm:
 {% highlight csharp %}
@@ -37,5 +39,7 @@ Notem que criamos o form passando o nome da action e um objeto do tipo [AjaxOpti
 {% highlight csharp %}
 public ActionResult AjaxAction(string nome, string sobrenome){    var ti = new CultureInfo("pt-BR").TextInfo;    var nomeFormatado = string.Format("{0} {1}", ti.ToTitleCase(nome), ti.ToTitleCase(sobrenome));    return PartialView("PartialNomes", nomeFormatado);}
 {% endhighlight %}
-Não existe nenhum segredo nessa action. Ela recebe 2 parâmetros e tudo que faz é renderizar uma Partial View com os parâmetros em capital case.Como resultado teremos uma página com um form que será executado com ajax:[caption id="attachment_3171" align="aligncenter" width="300" caption="ASP.NET MVC Ajax.BeginForm"][![ASP.NET MVC Ajax.BeginForm](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-BeginForm-300x243.png "ASP.NET MVC Ajax.BeginForm")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-BeginForm.png)[/caption]É isso galera, essa é uma das maneiras de carregar dados do servidor em uma div específica utilizando o helper Ajax.BeginForm do ASP.NET MVC em conjunto com o JQuery.### Código fonte
+Não existe nenhum segredo nessa action. Ela recebe 2 parâmetros e tudo que faz é renderizar uma Partial View com os parâmetros em capital case.Como resultado teremos uma página com um form que será executado com ajax:[caption id="attachment_3171" align="aligncenter" width="300" caption="ASP.NET MVC Ajax.BeginForm"][![ASP.NET MVC Ajax.BeginForm](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-BeginForm-300x243.png "ASP.NET MVC Ajax.BeginForm")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-BeginForm.png)[/caption]É isso galera, essa é uma das maneiras de carregar dados do servidor em uma div específica utilizando o helper Ajax.BeginForm do ASP.NET MVC em conjunto com o JQuery.
+
+### Código fonte
 O fonte deste e outros exemplos estão no Github: [https://github.com/vquaiato/ajaxhelpersamples](https://github.com/vquaiato/ajaxhelpersamples)Abraços,Vinicius Quaiato.

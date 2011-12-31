@@ -15,7 +15,9 @@ tags:
   slug: ruby
   autoslug: ruby
 ---
-[![Ruby Ring](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/ruby-ring-150x150.jpg "Ruby => simplicidade e elegância")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/ruby-ring.jpg)Continuando a falar sobre Ruby/IronRuby para apaixonados por .net c# ou vb.net.Quando comecei a estudar Ruby eu senti uma grande resistência pois estava tentando, a todo momento, compará-la com C#. Esta é uma postura complicada, pois as duas linguagens seguem abordagens bem distintas. Então deixo a dica de estarem abertos ao estudo desta linguagem. Não é pecado estudar uma enquanto se trabalha com a outra.Uma das coisas que mais me chamou a atenção em Ruby é sua simplicidade. Um programa em Ruby pode ser feito com apenas uma linha, incrível.E desta forma, simples e clean, segue todo o trabalho com Ruby.### :Array
+[![Ruby Ring](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/ruby-ring-150x150.jpg "Ruby => simplicidade e elegância")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/ruby-ring.jpg)Continuando a falar sobre Ruby/IronRuby para apaixonados por .net c# ou vb.net.Quando comecei a estudar Ruby eu senti uma grande resistência pois estava tentando, a todo momento, compará-la com C#. Esta é uma postura complicada, pois as duas linguagens seguem abordagens bem distintas. Então deixo a dica de estarem abertos ao estudo desta linguagem. Não é pecado estudar uma enquanto se trabalha com a outra.Uma das coisas que mais me chamou a atenção em Ruby é sua simplicidade. Um programa em Ruby pode ser feito com apenas uma linha, incrível.E desta forma, simples e clean, segue todo o trabalho com Ruby.
+
+### :Array
 No nosso dia-a-dia com .Net trabalhamos muito com coleções. 
 {% highlight csharp %}
 array = Array.new
@@ -32,7 +34,9 @@ Agora a coisa começa a ficar interessante. Temos métodos muito bons para utili
 {% highlight csharp %}
 array = ["Vinicius", "Quaiato", "Janynne", "Gomes", ".Net", "Ruby"]#obtendo o primeiro e o último elementos do arrayputs array.firstputs array.last#obtendo um range de elementosputs array[0..3]#obtendo o índice através de um valorputs array.index(".Net")
 {% endhighlight %}
-Na **_linha 1_** criamos um objeto utilizando a inicialização "automagica" de arrays.Nas _**linhas 4 e 5**_ invocamos os métodos _first_ e _last_. Não precisamos explicar estes métodos né? =DNa **_linha 8_** temos algo interessante. Ao invés de acessarmos um único índice do array, nós acessamos um range de valores. Neste caso estamos dizendo "me dê os elementos que vão dos índices 0 até 3", sendo que tanto o índice 0 quanto o índice 3 estão inclusos.Na **_linha 11_** o método index retorna o índice no qual o elemento ".Net" está. Caso não exista o elemento informado, retorna _**nil**_.### :Hash => Dictionary
+Na **_linha 1_** criamos um objeto utilizando a inicialização "automagica" de arrays.Nas _**linhas 4 e 5**_ invocamos os métodos _first_ e _last_. Não precisamos explicar estes métodos né? =DNa **_linha 8_** temos algo interessante. Ao invés de acessarmos um único índice do array, nós acessamos um range de valores. Neste caso estamos dizendo "me dê os elementos que vão dos índices 0 até 3", sendo que tanto o índice 0 quanto o índice 3 estão inclusos.Na **_linha 11_** o método index retorna o índice no qual o elemento ".Net" está. Caso não exista o elemento informado, retorna _**nil**_.
+
+### :Hash => Dictionary
 Nem sempre um array resolve todos os problemas. Podemos precisar de uma coleção indexada por chaves. Em .net chamamos isso de dicionários, em Ruby chamaremos isso de Hash.
 {% highlight csharp %}
 hash = {}hash["nome"] = "Vinicius"hash["sobrenome"] = "Quaiato"
