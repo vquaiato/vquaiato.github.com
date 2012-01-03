@@ -1,5 +1,7 @@
 _drafts/
-_site/
+!_site/
+_site/*
+!_site/categories/
 .rvmrc
 raque.rb
 raque2.rb
