@@ -42,15 +42,21 @@ Já existe conteúdo
 {% endhighlight %}
 O código para nosso form irá varias como mostra abaixo com InsertBefore:
 {% highlight csharp %}
-}
+@using (Ajax.BeginForm(    "AjaxAction",    new AjaxOptions { UpdateTargetId = "div_nome", InsertionMode = InsertionMode.InsertBefore}
+)){    @Html.TextBox("nome")<br />    @Html.TextBox("sobrenome")    <input type="submit" value="ajax" />}
+
 {% endhighlight %}
 Com InsertAfter:
 {% highlight csharp %}
-}
+@using (Ajax.BeginForm(    "AjaxAction",    new AjaxOptions { UpdateTargetId = "div_nome", InsertionMode = InsertionMode.InsertAfter}
+)){    @Html.TextBox("nome")<br />    @Html.TextBox("sobrenome")    <input type="submit" value="ajax" />}
+
 {% endhighlight %}
 E com Replace:
 {% highlight csharp %}
-}
+@using (Ajax.BeginForm(    "AjaxAction",    new AjaxOptions { UpdateTargetId = "div_nome", InsertionMode = InsertionMode.Replace}
+)){    @Html.TextBox("nome")<br />    @Html.TextBox("sobrenome")    <input type="submit" value="ajax" />}
+
 {% endhighlight %}
 Os resultados podem ser vistos, na mesma ordem, abaixo:[caption id="attachment_3215" align="aligncenter" width="300" caption="ASP.NET MVC AjaxHelper InsertionMode.InsertBefore"][![ASP.NET MVC AjaxHelper InsertionMode.InsertBefore](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-InsertionMode.InsertBefore-300x239.png "ASP.NET MVC AjaxHelper InsertionMode.InsertBefore")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-InsertionMode.InsertBefore.png)[/caption]Insertion.InsertAfter:[caption id="attachment_3216" align="aligncenter" width="300" caption="ASP.NET MVC AjaxHelper InsertionMode.InsertAfter"][![ASP.NET MVC AjaxHelper InsertionMode.InsertAfter](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-InsertionMode.InsertAfter-300x239.png "ASP.NET MVC AjaxHelper InsertionMode.InsertAfter")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-InsertionMode.InsertAfter.png)[/caption]Replace:[caption id="attachment_3217" align="aligncenter" width="300" caption="ASP.NET MVC AjaxHelper InsertionMode.Replace"][![ASP.NET MVC AjaxHelper InsertionMode.Replace](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-InsertionMode.Replace-300x239.png "ASP.NET MVC AjaxHelper InsertionMode.Replace")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-InsertionMode.Replace.png)[/caption]É isso aê galera, simples não? Definimos o comportamento de como e onde as coisas serão carregadas na página. Vale ressaltar que o comportamento padrão, caso nenhuma seja informado, é Replace.
 

@@ -36,4 +36,7 @@ Após termos sido aprovados e nosso login liberado podemos acessar a aba contrib
 O projeto que eu submeti é o MVCTestsEx, um projeto Open Source que eu estou desenvolvendo. Este projeto tem por intuito facilitar a escrita de testes de unidade no ASP.NET MVC, fornecendo uma série de helpers para trabalharmos.Mais informações podem ser encontradas no [github](http://github.com) do projeto: [http://github.com/vquaiato/MVCTestsEx](https://github.com/vquaiato/MVCTestsEx).
 
 ## Resumo
-Vimos como ficou fácil adicionar um pacote no NuGet. Não é mais necessário fazer um fork do projeto, etc, agora basta gerarmos o pacote e submetermos na NuGet Gallery.Em poucos segundos o projeto já está disponível tanto no site quanto no Package Manager Console no Visual Studio.Espero que isso incentive mais e mais devs da plataforma .NET a contirbuírem com projetos Open Source.Abraços,Vinicius Quaiato.
+Vimos como ficou fácil adicionar um pacote no NuGet. Não é mais necessário fazer um fork do projeto, etc, agora basta gerarmos o pacote e submetermos na NuGet Gallery.Em poucos segundos o projeto já está disponível tanto no site quanto no Package Manager Console no Visual Studio.Espero que isso incentive mais e mais devs da plataforma .NET a contirbuírem com projetos Open Source.
+
+Abraços,
+Vinicius Quaiato.

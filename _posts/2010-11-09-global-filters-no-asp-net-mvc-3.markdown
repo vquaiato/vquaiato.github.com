@@ -27,11 +27,35 @@ Global Filters são filtros que podemos definir para todos os nossos controllers
 ## Criando Global Filters ASP.NET MVC 3
 Vamos criar um filtro que interceptará todas as nossas actions, acrescentando no nosso response a data e hora em que a execução da action começou, e o tempo total de execução da action.Para isso precisamos criar uma classe que herde de [ActionFilterAttribute](http://msdn.microsoft.com/en-us/library/system.web.mvc.actionfilterattribute.aspx), veja:
 {% highlight csharp %}
-", tempoDoRequest.Elapsed));    }}
+
+public class MeuGlobalFilter : ActionFilterAttribute{    
+
+private Stopwatch tempoDoRequest = new Stopwatch();
+    
+public override void OnActionExecuting(ActionExecutingContext filterContext)    {        filterContext.HttpContext            .Response.Write(string.Format("Execução começou em: {
+}
+", DateTime.Now));
+    base.OnActionExecuting(filterContext);
+    tempoDoRequest.Start();
+    }
+    
+public override void OnActionExecuted(ActionExecutedContext filterContext)    {        base.OnActionExecuted(filterContext);
+    tempoDoRequest.Stop();
+    filterContext.HttpContext            .Response.Write(string.Format("<br />Tempo de execução: {
+}
+<br /><br />", tempoDoRequest.Elapsed));
+    }
+}
+
 {% endhighlight %}
 Este código é bastante simples, e fala por si só. O que precisamos notar são os métodos em que fizemos o override. São métodos definidos na classe [ActionFilterAttribute](http://msdn.microsoft.com/en-us/library/system.web.mvc.actionfilterattribute.aspx). Como o nome dos métodos são bem claros, neste caso um deles é disparado quando a action está executando, ou começa a executar. E o outro é disparado quando a action terminou de executar.O argumento passado, _filterContext_ dos tipos [ActionExecutingContext](http://msdn.microsoft.com/en-us/library/dd505190(v=VS.90).aspx) e [ActionExecutedContext](http://msdn.microsoft.com/en-us/library/system.web.mvc.actionexecutedcontext.aspx), contém informações necessárias para realizarmos algum processamento: nome da action, argumentos enviados, result, execptions, controller contexto, etc.Para que este Global Filter esteja disponível é necessário que adicionemos ele a lista de Global Filters no arquivo Global.asax:
 {% highlight csharp %}
-public static void RegisterGlobalFilters(GlobalFilterCollection filters){    filters.Add(new HandleErrorAttribute());    filters.Add(new MeuGlobalFilter());}
+
+public 
+static void RegisterGlobalFilters(GlobalFilterCollection filters){    filters.Add(new HandleErrorAttribute());
+    filters.Add(new MeuGlobalFilter());
+    }
+
 {% endhighlight %}
 Bastante simples não?!E quando executarmos nossa aplicação:[caption id="attachment_2081" align="aligncenter" width="300" caption="executando aplicacao com globalfilters asp.net mvc 3"][![executando aplicacao com globalfilters asp.net mvc 3](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/executando-aplicacao-com-globalfilters-300x181.png "executando aplicacao com globalfilters asp.net mvc 3")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/executando-aplicacao-com-globalfilters.png)[/caption]
 

@@ -41,15 +41,62 @@ tags:
 ### Os exemplos
 Bem, abaixo segue uma série de exemplos de como utilizar a biblioteca. Não vou detalhar cada um dos testes, pois na verdade eles são muito explicativos. A leitura é bastante simples.
 {% highlight csharp %}
-[TestClass]public class Dado_Um_Novo_Pedido{    [TestMethod]    public void Items_Deve_Conter_Zero_Elementos()    {        var pedido = new Pedido();        pedido.Items.Count            .Should()            .Be            .EqualTo(0);    }    [TestMethod]    public void Quando_Adiciono_Item_Ao_Pedido_Deve_Conter_Mais_que_Zero_Elementos()    {        var pedido = new Pedido();        pedido.AddItem(new ItemPedido(new Produto("prod")));        pedido.Items.Count            .Should()            .Be            .GreaterThan(0);    }    [TestMethod]    public void EstaFaturado_Deve_Ser_Falso()    {        var pedido = new Pedido();        pedido.EstaFaturado            .Should()            .Be            .False();    }    [TestMethod]    public void Quando_Adiciono_Produto_Bola_Deve_Conter_Produto_Bola()    {        var pedido = new Pedido();        var bola = new Produto("Bola");        pedido.AddItem(new ItemPedido(bola));        pedido.Produtos            .Should()            .Contain(bola);    }}
+[TestClass]
+public class Dado_Um_Novo_Pedido{    [TestMethod]    
+public void Items_Deve_Conter_Zero_Elementos()    {
+var pedido = new Pedido();
+    pedido.Items.Count            .Should()            .Be            .EqualTo(0);
+    }
+    [TestMethod]    
+public void Quando_Adiciono_Item_Ao_Pedido_Deve_Conter_Mais_que_Zero_Elementos()    {
+var pedido = new Pedido();
+    pedido.AddItem(new ItemPedido(new Produto("prod")));
+    pedido.Items.Count            .Should()            .Be            .GreaterThan(0);
+    }
+    [TestMethod]    
+public void EstaFaturado_Deve_Ser_Falso()    {
+var pedido = new Pedido();
+    pedido.EstaFaturado            .Should()            .Be            .False();
+    }
+    [TestMethod]    
+public void Quando_Adiciono_Produto_Bola_Deve_Conter_Produto_Bola()    {
+var pedido = new Pedido();
+var bola = new Produto("Bola");
+    pedido.AddItem(new ItemPedido(bola));
+    pedido.Produtos            .Should()            .Contain(bola);
+    }
+}
+
 {% endhighlight %}
 Veja que o código fica mais fluido e legível. Achei bastante interessante.Outra detalhe bacana é o trabalho com coleções, como pode ser visto no exemplo abaixo:
 {% highlight csharp %}
-
+[TestMethod]
+public void Os5_primeiros_impares_devem_ser_1_3_5_7_9(){
+var impares = ObterImpares();
+    impares.Should()        .Have        .SameSequenceAs(new List<int> { 1, 3, 5, 7, 9 }
+);
+    }
+[TestMethod]
+public void Os5_primeiros_impares_nao_devem_ser_3_5_7_9_11(){
+var impares = ObterImpares();
+    impares.Should()        .Not        .Have        .SameSequenceAs(new List<int> { 3, 5, 7, 9, 11 }
+);
+    }
+[TestMethod]
+public void Os5_primeiros_primos_nao_devem_ser_1_3_5_7_9(){
+var primos = ObterPrimos();
+    primos.Should()        .Not        .Have        .SameSequenceAs(ObterImpares());
+    }
+</int></int>
 {% endhighlight %}
 Vejam como é simples e interessante trabalhar com coleções. Verificar os valores que devem ou não estar presentes em uma coleção, etc.Outro exemplo de trabalho com coleções pode ser visto abaixo, onde verificamos que um valor deve estar presente e outro não:
 {% highlight csharp %}
-[TestMethod]public void Divisiveis_por_3_impares_menores_que_15(){    var multiplos = ObterDivisiveisPor3ImparesMenoresQue15();    multiplos.Should()        .Contain(3)        .And        .Contain(9)        .And        .Not        .Contain(6);}
+[TestMethod]
+public void Divisiveis_por_3_impares_menores_que_15(){
+var multiplos = ObterDivisiveisPor3ImparesMenoresQue15();
+    multiplos.Should()        .Contain(3)        .And        .Contain(9)        .And        .Not        .Contain(6);
+    }
+
 {% endhighlight %}
 Bastante interessante não? Podemos dizer "Essa coleção deve conter 3 e deve conter 9 e não deve conter 6". Isso fica bastante legível hein.É isso galera. A dica desta biblioteca me foi passada pelo Juan Lopes ([@juanplopes](http://twitter.com/juanplopes)).[Baixe a solution completa aqui](http://viniciusquaiato.com/files/codesamples/TDD/TDDWithSharpTestsEx.zip).
 

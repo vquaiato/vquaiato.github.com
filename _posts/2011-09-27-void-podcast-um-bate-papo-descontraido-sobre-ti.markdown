@@ -54,4 +54,7 @@ Você pode se inscrever para receber diretamente pelo iTunes: [http://itunes.app
 ##
 
 ### Zune
-Dizem que dá para usar o Zune para gerenciar também. [![Void Podcast](http://viniciusquaiato.com/blog/wp-content/uploads/2011/09/Void-Podcast-300x139.jpg "Void Podcast")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/09/Void-Podcast.jpg)Bom galera é isso. Espero que curtam, espero que gostem. E se quiserem dar algum feedback o Eleonor os adora.Abraços,Vinicius Quaiato.
+Dizem que dá para usar o Zune para gerenciar também. [![Void Podcast](http://viniciusquaiato.com/blog/wp-content/uploads/2011/09/Void-Podcast-300x139.jpg "Void Podcast")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/09/Void-Podcast.jpg)Bom galera é isso. Espero que curtam, espero que gostem. E se quiserem dar algum feedback o Eleonor os adora.
+
+Abraços,
+Vinicius Quaiato.

@@ -26,4 +26,7 @@ Fala galera! dia 09/03 foi lançado o SDK 1.4 do Windows Azure :DO link para dow
 - Windows Azure Connect para versões Windows que não estejam em inglês
 - Web Roles e VM Roles podem servir como CDN
 - Windows Azure CDN pode servir conteúdo via HTTPs a um simples marcar de checkbox no portal
-[Confira aqui alguns fixes](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=7a1089b6-4050-4307-86c4-9dadaa5ed018&displaylang=en#QuickDetails) que foram efetuados também nesta versão 1.4 do Windows Azure SDK.Mais infos [aqui](http://blogs.msdn.com/b/cesardelatorre/archive/2011/03/10/updated-windows-azure-sdk-v-1-4-and-windows-azure-management-portal.aspx) também.É issaê. Let's play.Abraços,Vinicius Quaiato.
+[Confira aqui alguns fixes](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=7a1089b6-4050-4307-86c4-9dadaa5ed018&displaylang=en#QuickDetails) que foram efetuados também nesta versão 1.4 do Windows Azure SDK.Mais infos [aqui](http://blogs.msdn.com/b/cesardelatorre/archive/2011/03/10/updated-windows-azure-sdk-v-1-4-and-windows-azure-management-portal.aspx) também.É issaê. Let's play.
+
+Abraços,
+Vinicius Quaiato.

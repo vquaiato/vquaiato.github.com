@@ -45,7 +45,9 @@ class MinhaClasse    def meu_metodo        puts "Este é o retorno do método"  
 {% endhighlight %}
 Para criarmos um método utilizados a keyword **_def_**. A convenção de nomes de métodos em Ruby é a que foi utilizada, com underscore.O comando puts é um comando básico para printar um valor. É uma abreviação de "put string".Reparem que não definimos tipo de retorno no nosso método, não definimos parâmetros e não utilizamos ponto-e-vírgula. Na _**linha 8**_ fazemos uma chamada para o nosso método.Se quisermos receber parâmetros:
 {% highlight csharp %}
-class MinhaClasse    def meu_metodo(nome)        puts "Este é seu nome: '#{nome}'?"    endendobjeto = MinhaClasse.newvar.meu_metodo "Vinicius"var.meu_metodo("Vinicius")
+class MinhaClasse    def meu_metodo(nome)        puts "Este é seu nome: '#{
+ome}
+'?"    endendobjeto = MinhaClasse.newvar.meu_metodo "Vinicius"var.meu_metodo("Vinicius")
 {% endhighlight %}
 Na **_linha 2_** deifnimos o método para receber um parâmetro. Notem novamente que não há tipagem, eu apenas informo que será um parâmetro e nada mais.Na **_linha 3_** eu utilizo esse parâmetro montando uma string para ser exibida.Nas linhas 8 e 9 realizamos chamadas para o método passando um parâmetro. Podemos chamar o método com ou sem os parênteses, o resultado é o mesmo.Se não passarmos o parâmetro, no entanto, teremos erro.Se quisermos definir um retorno para o nosso método podemos fazer isso das formas abaixo:
 {% highlight csharp %}
@@ -65,4 +67,7 @@ E para finalizar os comentários em Ruby podem ser feitos destas duas maneiras:
 {% highlight csharp %}
 # comentário de linha=beginIsto é um comentário de blocoposso ter várias linhas aquietc=endputs "Um valor" #isto é um comentário após o comando
 {% endhighlight %}
-Nem há necessidade de explicar mais não é?Para executar estes códigos, façam a instalação do IronRuby: [http://ironruby.codeplex.com/](http://ironruby.codeplex.com/)Abram a pasta da instalação/bin e executem o ir.exe.[Veja mais informações aqui.](http://viniciusquaiato.com/blog/ironruby-rodando-ruby-dentro-do-net/)Qualquer dúvida, estou às ordens.Att,Vinicius Quaiato.
+Nem há necessidade de explicar mais não é?Para executar estes códigos, façam a instalação do IronRuby: [http://ironruby.codeplex.com/](http://ironruby.codeplex.com/)Abram a pasta da instalação/bin e executem o ir.exe.[Veja mais informações aqui.](http://viniciusquaiato.com/blog/ironruby-rodando-ruby-dentro-do-net/)Qualquer dúvida, estou às ordens.
+
+Att,
+Vinicius Quaiato.

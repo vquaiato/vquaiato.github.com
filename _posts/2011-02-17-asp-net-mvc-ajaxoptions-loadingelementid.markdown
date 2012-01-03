@@ -31,11 +31,14 @@ Continuando a [falar sobre os AjaxOptions](http://viniciusquaiato.com/blog/tag/a
 - [Confirm message](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-confirm-message/)
 A propriedade LoadingElementId configura um id de elemento DOM para ser exibido enquanto a requisição ajax está sendo executada. Ou seja, vamos mostrar uma imagem de progresso enquanto a requisição ajax não é finalizada.Vamos continuar usando o mesmo exemplo dos posts anteriores mas com pequenas mudanças. Nosso formulário ficará da seguinte maneira:
 {% highlight csharp %}
-}
+@using (Ajax.BeginForm("AjaxAction",    new AjaxOptions { UpdateTargetId = "div_nome", LoadingElementId = "div_loading" }
+)){    @Html.TextBox("nome")<br />    @Html.TextBox("sobrenome")    <input type="submit" value="ajax" />}
+
 {% endhighlight %}
 Vejam que na linha 2 passo o nome de uma div "div_loading" como valor desta propriedade do objeto AjaxOptions. Esta div possui uma imagem e está com estilo para não ser exibida:
 {% highlight csharp %}
-
+<div id="div_loading" style="display:none;
+    ">    <img src="@Url.Content("~/Content/loading.gif")" /></div>
 {% endhighlight %}
 Coloquei também um Thread.Sleep(3000) na action no HomeController, mas não preciso mostrar esse código né?!Quando executarmos nosso formulário teremos o seguinte comportamento:[caption id="attachment_3192" align="aligncenter" width="300" caption="ASP.NET MVC AjaxHelper LoadingElementId"][![ASP.NET MVC AjaxHelper LoadingElementId](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-LoadingElementId-300x242.png "ASP.NET MVC AjaxHelper LoadingElementId")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-LoadingElementId.png)[/caption]Podemos ver que a imagem de progresso é exibida durante a requisição ajax.Ao término da mesma, o elemento "div_loading" é ocultado novamente:[caption id="attachment_3193" align="aligncenter" width="300" caption="ASP.NET MVC AjaxHelper LoadingElementId loading completo"][![ASP.NET MVC AjaxHelper LoadingElementId loading completo](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-LoadingElementId-loading-completo-300x242.png "ASP.NET MVC AjaxHelper LoadingElementId loading completo")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-LoadingElementId-loading-completo.png)[/caption]Simples hein?!Lembrando novamente que este código faz uso do JQuery e do JQuery Unobtrusive, [conforme mostrei no primeiro artigo aqui](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-updatetargetid/).
 

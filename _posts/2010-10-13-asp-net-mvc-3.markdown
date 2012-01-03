@@ -36,4 +36,7 @@ tags:
 - Razor agora suporta VBHTML
 - Dynamic ViewModels
 - Novos ActionResult types
-Há muitas novidades dentro de cada um destes tópicos, e aos poucos tentarei esclarecer e demonstrar todas elas de forma prática.Você pode fazer o [download do ASP.NET MVC 3 Beta aqui, utilizando o Web Platform Installer](http://www.microsoft.com/web/gallery/install.aspx?appid=MVC3).Abraços, e fiquem ligados!Vinicius Quaiato.
+Há muitas novidades dentro de cada um destes tópicos, e aos poucos tentarei esclarecer e demonstrar todas elas de forma prática.Você pode fazer o [download do ASP.NET MVC 3 Beta aqui, utilizando o Web Platform Installer](http://www.microsoft.com/web/gallery/install.aspx?appid=MVC3).
+
+Abraços,
+ e fiquem ligados!Vinicius Quaiato.

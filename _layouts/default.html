@@ -42,7 +42,19 @@
 			</p>
 		</section>
 		<section id="blog_content">
-			{{ content }}
+			<div id="posts_home">
+				{{ content }}
+			</div>
+		  <div id="categories">
+	      <ul>
+	        {% for category in site.categories %}
+	          <li>
+	            <a href="/categories/{{ category | first | map: 'to_liquid' | map: 'slug' }}/index.html">{{ category | first | map: 'to_liquid' | map: 'title' }}</a>
+	          </li>
+	        {% endfor %} 
+	      </ul>
+		  </div>
+		  <div style="clear:both;"></div>
 		</section>
 		<section id="footer">
 			<div class="footer">

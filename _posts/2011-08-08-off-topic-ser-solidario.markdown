@@ -30,4 +30,7 @@ Tenho a certeza de que falta para muita gente no mercado de TI um pouco mais de 
 Sangue é algo que podemos doar, e muitas pessoas precisam receber. É um processo indolor, rápido e gratificante.Minha proposta é começar com isso pois é algo que não exige organização prévia. Basta ir até um posto de doação e doar. Eles farão todos os exames necessários com o seu sangue (veja aqui quando você **não** poderá doar [http://www.prosangue.sp.gov.br/doacao-de-sangue/quem-nao-pode-doar.htm](http://www.prosangue.sp.gov.br/doacao-de-sangue/quem-nao-pode-doar.htm))Isso também nos faze pensar que independente das tecnologias que conhecemos e com as quais trabalhamos ainda somos pessoas.
 
 ## Quando?
-Pensei no **dia 03/09, sábado, aqui em São Paulo**. Quem estiver afim vou tentar organizar para irmos ao Posto de Coleta no Hospital das Clínicas. A galera de outras cidades pode organizar com seus grupos e tentar fazer algo semelhante. Bom é isso. Quem tiver interesse, curiosidade ou algo do tipo é só entrar em contato.Abraços,Vinicius Quaiato.
+Pensei no **dia 03/09, sábado, aqui em São Paulo**. Quem estiver afim vou tentar organizar para irmos ao Posto de Coleta no Hospital das Clínicas. A galera de outras cidades pode organizar com seus grupos e tentar fazer algo semelhante. Bom é isso. Quem tiver interesse, curiosidade ou algo do tipo é só entrar em contato.
+
+Abraços,
+Vinicius Quaiato.

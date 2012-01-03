@@ -18,4 +18,7 @@ tags:
   slug: pluralsight-asp-net-mvc-3
   autoslug: pluralsight-asp.net-mvc-3
 ---
-Fala galera, está diponível um treinamento online em ASP.NET MVC 3 oferecido pela Pluralsight. Parece que é válido nas próximas 24h apenas:[http://www.pluralsight-training.net/microsoft/olt/course/toc.aspx?n=aspdotnet-mvc3](http://www.pluralsight-training.net/microsoft/olt/course/toc.aspx?n=aspdotnet-mvc3)O tempo total do treinamento é de 3h e 17min. Vale a pena.Abraços,Vinicius Quaiato.
+Fala galera, está diponível um treinamento online em ASP.NET MVC 3 oferecido pela Pluralsight. Parece que é válido nas próximas 24h apenas:[http://www.pluralsight-training.net/microsoft/olt/course/toc.aspx?n=aspdotnet-mvc3](http://www.pluralsight-training.net/microsoft/olt/course/toc.aspx?n=aspdotnet-mvc3)O tempo total do treinamento é de 3h e 17min. Vale a pena.
+
+Abraços,
+Vinicius Quaiato.

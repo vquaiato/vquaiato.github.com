@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1 class="category">{{ page.category["title"] }}</h1>
+
+<ul class="posts">
+	{% for post in site.categories[page.category] %}
+          <li>
+          	<p>
+          		<span class="date">{{ post.date | date_to_string }}</span> &raquo; 
+          		<a href="{{ post.url }}">{{ post.title }}</a>
+          	</p>
+          	</li>
+	{% endfor %}
+</ul> 

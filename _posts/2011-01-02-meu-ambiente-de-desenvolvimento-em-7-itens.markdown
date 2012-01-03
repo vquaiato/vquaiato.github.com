@@ -39,4 +39,7 @@ Por alguns anos utilizei o Firefox como meu browser padrão, mas há mais de 1 a
 Eu não utilizo SVN apesar de já ter utilizado. Não utilizo TFS apesar de saber utilizar e já ter trabalhado com ele. Atualmente tenho utilizado apenas Git. E querem saber? Estou muito feliz.
 
 ## Música
-É não tem jeito: dev que é dev trabalha ouvindo música, e se não for rock não é dev!Eu escuto bastante metal: Metallica, Slayer, Pantera, Megadeth, Anthrax e coisas do tipo. Mas confesso que The Smiths, Depeche Mode e Los Hermanos nunca saem do meu repertório.Agora vou passar a bola para o @giovannibassi.Abraços,Vinicius Quaiato.
+É não tem jeito: dev que é dev trabalha ouvindo música, e se não for rock não é dev!Eu escuto bastante metal: Metallica, Slayer, Pantera, Megadeth, Anthrax e coisas do tipo. Mas confesso que The Smiths, Depeche Mode e Los Hermanos nunca saem do meu repertório.Agora vou passar a bola para o @giovannibassi.
+
+Abraços,
+Vinicius Quaiato.

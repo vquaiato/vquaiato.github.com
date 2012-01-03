@@ -21,7 +21,8 @@ tags:
   slug: net-architects-day
   autoslug: .net-architects-day
 ---
-[![DNAD2010](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/calendario.jpg "DNAD2010")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/calendario.jpg)Fala galera, estão abertas as inscrições para o **<span style="color:#680000;">DNAD 2010 - .NET Architects Day 2010.</span>**
+[![DNAD2010](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/calendario.jpg "DNAD2010")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/calendario.jpg)Fala galera, estão abertas as inscrições para o **<span style="color:#680000;
+    ">DNAD 2010 - .NET Architects Day 2010.</span>**
 
 ### O que é isso?
 Este é o evento organizado pela comunidade [.NET Architects](http://dotnetarchitects.net/) e esta já é sua segunda edição.

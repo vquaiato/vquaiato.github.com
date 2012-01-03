@@ -39,15 +39,22 @@ Na **_linha 1_** criamos um objeto utilizando a inicialização "automagica" de 
 ### :Hash => Dictionary
 Nem sempre um array resolve todos os problemas. Podemos precisar de uma coleção indexada por chaves. Em .net chamamos isso de dicionários, em Ruby chamaremos isso de Hash.
 {% highlight csharp %}
-hash = {}hash["nome"] = "Vinicius"hash["sobrenome"] = "Quaiato"
+hash = {
+
+hash["nome"] = "Vinicius"hash["sobrenome"] = "Quaiato"
 {% endhighlight %}
-Assim como criamos um array com [] (colchetes) podemos criar um hash com {} (chaves).Definimos então duas chaves (que podem ser objetos de qualquer tipo), e seus valores. Simples!Poderíamos ter feito isso também:
+Assim como criamos um array com [] (colchetes) podemos criar um hash com {
+
+ (chaves).Definimos então duas chaves (que podem ser objetos de qualquer tipo), e seus valores. Simples!Poderíamos ter feito isso também:
 {% highlight csharp %}
- "Quaiato"}
+hash = {
+nome" => "Vinicius", "sobrenome" => "Quaiato"}
+
 {% endhighlight %}
 O código é bem simples. Do lado esquerdo da "flexa" está a chave, e do lado direito o valor.Podemos ainda trabalhar com uma espécie de "enum":
 {% highlight csharp %}
- "Quaiato"}
+hash = { :nome => "Vinicius", :sobrenome => "Quaiato"}
+
 {% endhighlight %}
 Na verdade isso é chamado de Symbol. é criado utilizando a sintaxe :alguma_coisa ou :"alguma coisa".E para tornar a brincadeira interessante, vamos ver alguns métodos de um hash:
 {% highlight csharp %}
@@ -55,7 +62,10 @@ Na verdade isso é chamado de Symbol. é criado utilizando a sintaxe :alguma_coi
 {% endhighlight %}
 Os métodos tem nomes bem explicativos, nem preciso dizer mais nada. =DTemos ainda algumas operações interessantes que podem ser realizadas como a comparação de dois hashes:
 {% highlight csharp %}
-"verde"}#retornará falseputs hash1 == hash2
+hash1 = { :a=>"maçã", :cor=>"verde", :preco=>10}
+hash2 = { :preco=>10, :a=>"maçã", :cor=>"verde"}
+#retornará trueputs hash1 == hash2hash2 = { :preco=>10, :a=>"Abacaxi", :cor=>"verde"}
+#retornará falseputs hash1 == hash2
 {% endhighlight %}
 Quando comparamos dois hash desta maneira o resultado será verdadeiro(igualdade) quando ambos possuírem a mesma quantidade de itens, e quando todas as chaves e todos os valores forem iguais, neste caso, indepente da ordem.Podemos definir um valor default para um hash. Este valor funciona no caso de tentarmos obter algo que não existe, uma chave inexistente por exemplo.Há algumas formas de fazer isso:
 {% highlight csharp %}
@@ -63,10 +73,14 @@ Quando comparamos dois hash desta maneira o resultado será verdadeiro(igualdade
 {% endhighlight %}
 Podemos deletar um item assim:
 {% highlight csharp %}
-Object.new}#exibe 3puts hash.sizehash.delete(:a)#exibe 2puts hash.size
+hash = { :a=>"a", :b=>10, :c=>Object.new}
+#exibe 3puts hash.sizehash.delete(:a)#exibe 2puts hash.size
 {% endhighlight %}
 Para saber se um hash está vazio ou para limpá-lo:
 {% highlight csharp %}
-Object.new}#exibirá falseputs hash.empty?#limpamos todos elementoshash.clear#exibirá trueputs hash.empty?
+hash = {
+
+#exibirá trueputs hash.empty?hash = { :a=>"a", :b=>10, :c=>Object.new}
+#exibirá falseputs hash.empty?#limpamos todos elementoshash.clear#exibirá trueputs hash.empty?
 {% endhighlight %}
 Notem que interessante o método _empty_. ele possui um ponto de interrogação. Fica muito mais claro e inteligente sabermos que se trata de uma "pergunta" que estamos fazendo ao objeto. Simplesmente incrível.Ainda temos alguns outros métodos bem interessantes, porém mostrarei em uma próxima parte, onde começaremos a falar de blocos de código, algo equivalente a nossas lambda expressions.Ainda voltaremos a falar de classes, propriedades, herança, parâmetros, etc. Há muito post a ser feito =DAbraços, e lembrem-se: feedback é bem vindo!Vinicius Quaiato.

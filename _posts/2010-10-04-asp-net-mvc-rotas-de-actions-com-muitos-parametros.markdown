@@ -32,18 +32,57 @@ tags:
 ### Os recursos com vários parâmetros
 Se quisermos responder a requisições do tipo _"minhaempresa/setor/controller/action/param1/param2/param3"_ não conseguimos isso por default, e é então que entra a configuração de rotas.Responder a uma requisição com mais de um parâmetro desta forma não é complexo, na verdade é algo bastante simples.Para um primeiro exemplo vamos imaginar que temos uma action que "mistura cores". Queremos poder escrever uma url assim no browser: _"estudio/misturar/azul/vermelho/verde"_.Este é nosso controller:
 {% highlight csharp %}
-public class EstudioController : Controller{    [HttpGet]    public ActionResult Misturar(string cor1, string cor2, string cor3)    {        object corMisturada = string.Format("{0} + {1} + {2}", cor1, cor2, cor3);        return View("NovaCor", corMisturada);    }}
+
+public class EstudioController : Controller{    [HttpGet]    
+public ActionResult Misturar(string cor1, string cor2, string cor3)    {        object corMisturada = string.Format("{
+}
+ + {
+}
+ + {
+}
+", cor1, cor2, cor3);
+    return View("NovaCor", corMisturada);
+    }
+}
+
 {% endhighlight %}
 Se simplesmente acessarmos a url no browser, obteremos:[caption id="attachment_1666" align="aligncenter" width="300" caption="Erro de rota: recurso não encontrado"][![Erro de rota: recurso não encontrado](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/erro-de-rota-300x152.png "Erro de rota: recurso não encontrado")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/erro-de-rota.png)[/caption]
 
 ### Adicionando uma rota no Global.asax
 Para que possamos realizar a chamada a este recurso, e receber em nossa action os valores desejados, precisamos adicionar uma rota em nossa tabela.A configuração de rotas no ASP.NET MVC é feita no arquivo Global.asax, de uma maneira bastante simples.Nosso arquivo Global.asax deve estar assim:
 {% highlight csharp %}
-public static void RegisterRoutes(RouteCollection routes){    routes.IgnoreRoute("{resource}.axd/{*pathInfo}");    routes.MapRoute(        "Default", // Route name        "{controller}/{action}/{id}", // URL with parameters        new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults    );}
+
+public 
+static void RegisterRoutes(RouteCollection routes){    routes.IgnoreRoute("{
+esource}
+.axd/{
+pathInfo}
+");
+    routes.MapRoute(        "Default", // Route name        "{
+ontroller}
+/{
+ction}
+/{
+d}
+", // URL with parameters        new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+ // Parameter defaults    );
+    }
+
 {% endhighlight %}
 Este código adiciona uma rota a nossa tabela de roteamento. Vamos ver então como rotear para conseguirmos responder a nossas requisições precisamos do código a seguir:
 {% highlight csharp %}
-routes.MapRoute(    "MisturarCores",    "{controller}/{action}/{cor1}/{cor2}/{cor3}");
+routes.MapRoute(    "MisturarCores",    "{
+ontroller}
+/{
+ction}
+/{
+or1}
+/{
+or2}
+/{
+or3}
+");
+    
 {% endhighlight %}
 Com a adição desta rota, conseguimos responder então ao nosso recurso e chegar a nossa action com todos os parâmetros preenchidos.
 

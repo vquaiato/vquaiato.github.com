@@ -35,7 +35,7 @@ Continuando a [falar sobre o Razor](http://viniciusquaiato.com/blog/asp-net-mvc-
 ### Criando uma Layout Page para o Razor
 Podemos criar uma Layout Page utilizando o menu de contexto. Clique sobre a pasta Shared por exemplo: Add New Item (ou Ctrl + shift + A):[caption id="attachment_1820" align="aligncenter" width="300" caption="Criando uma Master Page no Razor"][![Criando uma Master Page no Razor](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Criando-uma-Master-Page-no-Razor-300x190.png "Criando uma Master Page no Razor")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Criando-uma-Master-Page-no-Razor.png)[/caption]Feito isso teremos um arquivo adicionado com o seguinte contéudo:
 {% highlight csharp %}
-
+<head><title>@View.Title</title></head><body><div>@RenderBody()</div></body></html>
 {% endhighlight %}
 Esta é nossa MasterPage ou Layout Page no Razor.Tudo que fizermos aí será geral para todas as páginas que utilizam esta MasterPage/Layout Page.O conteúdo das páginas será exibido no lugar do método "RenderBody()". Ou seja, nossas páginas serão renderizadas aí dentro deste template.Vou modificar esta página adicionando o seguinte código após o body:
 {% highlight csharp %}
@@ -47,19 +47,28 @@ Esta é nossa MasterPage ou Layout Page no Razor.Tudo que fizermos aí será ger
 ### Criando uma view com Razor que utiliza a MasterPage
 Vamos criar uma view normalmente e marcar que ela utiliza a nossa MasterPage:[caption id="attachment_1821" align="aligncenter" width="300" caption="Utilizando uma Master Page no Razor"][![Utilizando uma Master Page no Razor](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Utilizando-uma-Master-Page-no-Razor-300x118.png "Utilizando uma Master Page no Razor")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Utilizando-uma-Master-Page-no-Razor.png)[/caption]Com isso nossa view criada terá o código abaixo:
 {% highlight csharp %}
-@model dynamic@{    View.Title = "Index";    Layout = "~/Views/Shared/_LayoutPage1.cshtml";}    
+@model dynamic@{    View.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    }
+    
 
 ## Index
 
 {% endhighlight %}
 Reparem que na **_linha 5_** está sendo setada a informação sobre qual LayoutPage/MasterPage utilizar.Vou alterar nossa view adicionando o código semelhante ao do [post do artigo anterior sobre Razor](http://viniciusquaiato.com/blog/asp-net-mvc-3-razor-view-engine/):
 {% highlight csharp %}
-@model dynamic@{View.Title = "Index";Layout = "~/Views/Shared/_LayoutPage1.cshtml";}
+@model dynamic@{
+iew.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    }
+
 
 ## Olá @Model.Nome
 <div>
 Você foi cadastrado em: @Model.DataQualquer.ToString("dd/MMM/yyyy")
-Sua sequência fibonacci é:@foreach(var num in Model.ListaInteiros){<span>@num,</span>}</div>
+Sua sequência fibonacci é:@foreach(var num in Model.ListaInteiros){
+span>@num,</span>}
+</div>
 {% endhighlight %}
 Desta forma quando executarmos nossa aplicação, nossa view será renderizada assim:[caption id="attachment_1825" align="aligncenter" width="300" caption="Aplicacao em execucao com MasterPages e Razor"][![Aplicacao em execucao com MasterPages e Razor](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Aplicacao-em-execucao-com-MasterPages-e-Razor-300x259.png "Aplicacao em execucao com MasterPages e Razor")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Aplicacao-em-execucao-com-MasterPages-e-Razor.png)[/caption]E se eu criar uma view que apenas exibe "Olá" utilizando a MasterPage teremos o mesmo resultado:[caption id="attachment_1826" align="aligncenter" width="300" caption="Outra view em execucao com MasterPages e Razor"][![Outra view em execucao com MasterPages e Razor](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Outra-view-em-execucao-com-MasterPages-e-Razor-300x237.png "Outra view em execucao com MasterPages e Razor")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Outra-view-em-execucao-com-MasterPages-e-Razor.png)[/caption]
 

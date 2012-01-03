@@ -41,4 +41,7 @@ Dia 07/02/2011 foi liberada a versão 1.1.2 do [IronRuby](http://ironruby.net/).
 
 
 ### Downloads
-Façam o download diretamente aqui: [http://ironruby.codeplex.com/releases/view/55250](http://ironruby.codeplex.com/releases/view/55250)É isso aê galera, o pessoal não parou não! Faça seus downloads, atualizem suas versão e let's ruby!Abraços,Vinicius Quaiato.
+Façam o download diretamente aqui: [http://ironruby.codeplex.com/releases/view/55250](http://ironruby.codeplex.com/releases/view/55250)É isso aê galera, o pessoal não parou não! Faça seus downloads, atualizem suas versão e let's ruby!
+
+Abraços,
+Vinicius Quaiato.

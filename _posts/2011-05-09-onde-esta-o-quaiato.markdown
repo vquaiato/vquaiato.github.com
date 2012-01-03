@@ -34,4 +34,7 @@ tags:
 - **10.09.2011** - QConSP (onde sou host da track .NET)
 - **13 e 14.09.2011** - VII Seminário de Computação na UEL/PR
 - **17.09.2011** - DevDay Curtiba
-_**(se eu esqueci algum evento por favor me lembrem, hahaha)**_Eu acho que no momento é isso. Talvez surjam mais eventos vamos ver. Boa parte do meu esforço vai se concentrar na preparação de materiais e organização dos eventos nos quais estou participando.Aos poucos estou retomando o ritmo aqui no blog. Assim que eu estiver com uma descrição mais detalhada sobre os temas de cada palestra eu adiciono aqui, bem como o link para todos os eventos.Abraços,Vinicius Quaiato.
+_**(se eu esqueci algum evento por favor me lembrem, hahaha)**_Eu acho que no momento é isso. Talvez surjam mais eventos vamos ver. Boa parte do meu esforço vai se concentrar na preparação de materiais e organização dos eventos nos quais estou participando.Aos poucos estou retomando o ritmo aqui no blog. Assim que eu estiver com uma descrição mais detalhada sobre os temas de cada palestra eu adiciono aqui, bem como o link para todos os eventos.
+
+Abraços,
+Vinicius Quaiato.

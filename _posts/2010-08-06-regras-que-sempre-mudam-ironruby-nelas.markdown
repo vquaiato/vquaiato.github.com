@@ -26,7 +26,18 @@ tags:
 ### O cenário
 Apenas para exemplificar nosso cenário é bem simples. Temos que realizar o cálculo de desconto para um Pedido. Este cálculo varia de acordo com a forma de pagamento escolhida. No momento a regra é que se o pagamento for à vista, desconto de 10%. Caso o pagamento seja parcelado há acréscimo de 5%.Para a utilização de código IronRuby vou utilizar o [RubyEngineCreator](http://viniciusquaiato.com/blog/programacao-dinamica-com-c-e-ironruby/) que postei [neste artigo aqui](http://viniciusquaiato.com/blog/programacao-dinamica-com-c-e-ironruby/).No meu código C# tenho esta chamada:
 {% highlight csharp %}
-public static class CalculadorDeDesconto{    public static decimal ParaPedido(Pedido pedido)    {        var ruby = RubyEngineCreator            .GetRubyObject(rubyFileName: "calculador", rubyClassName: "CalculadorDeDescontos");        var desconto = ruby.calcular(pedido);        return desconto;    }}
+
+public 
+static class CalculadorDeDesconto{    
+
+public 
+static decimal ParaPedido(Pedido pedido)    {
+var ruby = RubyEngineCreator            .GetRubyObject(rubyFileName: "calculador", rubyClassName: "CalculadorDeDescontos");
+var desconto = ruby.calcular(pedido);
+    return desconto;
+    }
+}
+
 {% endhighlight %}
 O que este código faz é criar um objeto Ruby que está no arquivo calculador.rb. A classe deste objeto é ClaculadorDeDescontos.Nossa regra está nesta classe Ruby:
 {% highlight csharp %}
@@ -38,4 +49,7 @@ Uma classe Ruby bem simples. Com uma variável fator_desconto, inicializada no c
 Este é um exemplo bastante simples, e o próprio EngineCreator é bem simples. Podemos fazer coisas incríveis com o IronRuby, compartilhar instâncias de objetos, passar código Ruby para o C# e passar código C# para o Ruby, mesmo que as classes tenham sido criadas no arquivo Ruby.Existe um grande poder de flexibilidade na utilização de Ruby para pontos dinâmicos em nossos sistemas, e inevitavelmente temos pontos dinâmicos em nossos sistemas. Desta forma conhecer técnicas, ferramentas e linguagens para sabermos tratá-los é apenas benéfico, tanto para nós quanto para o código e a vida útil do projeto.
 
 ### Download
-[Baixe o projeto aqui](http://viniciusquaiato.com/files/codesamples/dynamic/ConsoleRegrasComIronRuby.zip).Abraços,Vinicius Quaiato.
+[Baixe o projeto aqui](http://viniciusquaiato.com/files/codesamples/dynamic/ConsoleRegrasComIronRuby.zip).
+
+Abraços,
+Vinicius Quaiato.

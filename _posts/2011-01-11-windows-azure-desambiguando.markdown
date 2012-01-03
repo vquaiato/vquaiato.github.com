@@ -33,4 +33,7 @@ O outro significado para Windows Azure é o próprio sistema operacional. Não �
 No livro Azure in Action temos uma metáfora bem interessante para ilustrar esses significados. Não vou copiar aqui na íntegra mas vou descrever.A rede ESPN de canais possui uma variedade de canais (ESPN, ESPN2, ESPN News, etc). Quando falamos ESPN podemos nos referir a um destes canais como a toda a rede de canais.Desta forma é preciso se atentar ao contexto para saber exatamente de "qual" Windows Azure estamos falando.
 
 ## Resumo
-Quando falamos em Windows Azure podemos nos referir a toda plataforma oferecida para execução de aplicativos na nuvem, como ao conjunto de operações/componentes que executam uma aplicação, o SO. A diferença às vezes é sutil mas pode ajudar bastante. Entender e tentar diferenciar os dois pode ser algo bastante importante (tem me ajudado).Tendo isso em mente podemos então continuar, e no próximo post iremos olhar para o Fabric e o Fabric Controller.Abraços,Vinicius Quaiato.
+Quando falamos em Windows Azure podemos nos referir a toda plataforma oferecida para execução de aplicativos na nuvem, como ao conjunto de operações/componentes que executam uma aplicação, o SO. A diferença às vezes é sutil mas pode ajudar bastante. Entender e tentar diferenciar os dois pode ser algo bastante importante (tem me ajudado).Tendo isso em mente podemos então continuar, e no próximo post iremos olhar para o Fabric e o Fabric Controller.
+
+Abraços,
+Vinicius Quaiato.

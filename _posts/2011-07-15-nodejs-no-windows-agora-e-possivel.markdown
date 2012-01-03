@@ -23,7 +23,15 @@ Fala galera está disponível o primeiro release do [Nodejs](http://nodejs.org/)
 ## Executando Nodejs no Windows
 Após realizar o download do [node.exe aqui](http://nodejs.org/dist/v0.5.1/node.exe) vamos criar uma aplicação simples.Crie um arquivo windows.js com o seguinte código:
 {% highlight csharp %}
-var http = require('http');http.createServer(function (req, res) {  res.writeHead(200, {'Content-Type': 'text/plain'});  res.end('Hello World\n');}).listen(1234, "127.0.0.1");console.log('Server running at http://127.0.0.1:1234/');
+var http = require('http');
+    http.createServer(function (req, res) {  res.writeHead(200, {
+Content-Type': 'text/plain'}
+);
+    res.end('Hello World\n');
+    }
+).listen(1234, "127.0.0.1");
+    console.log('Server running at http://127.0.0.1:1234/');
+    
 {% endhighlight %}
 Isto criará um servidor na porta 1234 respondendo com "Hello World" para todos os requests.Para iniciar o servidor node execute o comando abaixo no cmd ou no powershell:
 {% highlight csharp %}

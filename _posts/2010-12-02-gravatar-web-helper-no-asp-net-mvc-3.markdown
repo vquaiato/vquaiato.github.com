@@ -30,6 +30,11 @@ Install-Package Microsoft-Web-Helpers
 {% endhighlight %}
 Feito isso adicione o seguinte código na sua view onde você deseja exibir o Gravatar:
 {% highlight csharp %}
-@using Microsoft.Web.Helpers;@Gravatar.GetHtml("seuemail@provedor.com");
+@using Microsoft.Web.Helpers;
+    @Gravatar.GetHtml("seuemail@provedor.com");
+    
 {% endhighlight %}
-Pronto, esse é o código necessário para exibir a imagem do Gravatar usando o helper. Precisamos incluir uma referência para o namespace como visto na **_linha 1_**. E depois fazemos a chamada para o helper Gravatar na **_linha 3_**, informando o e-mail associado a uma imagem.O resultado pode ser visto na imagem abaixo:[caption id="attachment_2267" align="aligncenter" width="300" caption="Gravatar no ASP.NET MVC 3"][![Gravatar no ASP.NET MVC 3](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/Gravatar-300x133.png "Gravatar no ASP.NET MVC 3")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/Gravatar.png)[/caption]É isso galera. Esta é uma forma bastante simples de consumir o serviço do Gravatar.Abraços,Vinicius Quaiato.
+Pronto, esse é o código necessário para exibir a imagem do Gravatar usando o helper. Precisamos incluir uma referência para o namespace como visto na **_linha 1_**. E depois fazemos a chamada para o helper Gravatar na **_linha 3_**, informando o e-mail associado a uma imagem.O resultado pode ser visto na imagem abaixo:[caption id="attachment_2267" align="aligncenter" width="300" caption="Gravatar no ASP.NET MVC 3"][![Gravatar no ASP.NET MVC 3](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/Gravatar-300x133.png "Gravatar no ASP.NET MVC 3")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/Gravatar.png)[/caption]É isso galera. Esta é uma forma bastante simples de consumir o serviço do Gravatar.
+
+Abraços,
+Vinicius Quaiato.

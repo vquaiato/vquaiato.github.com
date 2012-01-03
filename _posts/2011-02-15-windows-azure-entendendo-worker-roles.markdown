@@ -43,4 +43,7 @@ Quando estamos trabalhando com Worker Roles temos a possibilidade de executar e 
 Não podemos deixar de mencionar que com isso criamos uma espécie de separação lógica e até mesmo física de entre algumas partes de nossa aplicação. Deixando as coisas mais simples e evidenciadas, cada uma com sua responsabilidade mais bem delineada.
 
 ## Resumo
-Entendemos aqui algumas das motivações por detrás do uso de Worker Roles no Windows Azure. Vimos quando e por que é interessante fazer uso deste recurso ao invés de simplesmente criar aplicações web repletas de instâncias.Entender a motivação e os usos é muitas vezes mais importante do que simplesmente entendermos como criar: isso é muito fácil.Em posts que virão mostrarei como criar Worker Roles e trabalhar com eles em diferentes aspectos.Para mais informações consultem o MSDN para um ["Overview of Worker Roles"](http://msdn.microsoft.com/en-us/library/gg433065.aspx).Deixem suas dúvidas, feedbacks e considerações/críticas.Abraços,Vinicius Quaiato.
+Entendemos aqui algumas das motivações por detrás do uso de Worker Roles no Windows Azure. Vimos quando e por que é interessante fazer uso deste recurso ao invés de simplesmente criar aplicações web repletas de instâncias.Entender a motivação e os usos é muitas vezes mais importante do que simplesmente entendermos como criar: isso é muito fácil.Em posts que virão mostrarei como criar Worker Roles e trabalhar com eles em diferentes aspectos.Para mais informações consultem o MSDN para um ["Overview of Worker Roles"](http://msdn.microsoft.com/en-us/library/gg433065.aspx).Deixem suas dúvidas, feedbacks e considerações/críticas.
+
+Abraços,
+Vinicius Quaiato.

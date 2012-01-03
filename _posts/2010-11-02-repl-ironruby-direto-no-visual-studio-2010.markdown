@@ -31,4 +31,7 @@ Fala galera, é apenas uma "quick tip" das ferramentas do IronRuby para o Visual
 - "Limpar o conteúdo do REPL"
 - "Resetar para um ambiente novo, mas manter o histórico de comandos"
 - 
-É isso galera, espero que vocês consigam utilizar e aproveitar mais um pouco do IronRuby no Visual Studio 2010 e continuem explorando esta linguagem fenomenal que é o Ruby em conjunto com o .NET.Abraços,Vinicius Quaiato.
+É isso galera, espero que vocês consigam utilizar e aproveitar mais um pouco do IronRuby no Visual Studio 2010 e continuem explorando esta linguagem fenomenal que é o Ruby em conjunto com o .NET.
+
+Abraços,
+Vinicius Quaiato.

@@ -36,11 +36,35 @@ Install-Package Ninject.MVC3
 {% endhighlight %}
 Feito isso teremos as referências do [Ninject](http://viniciusquaiato.com/blog/singletons-ecologicos/) e Ninject.MVC3 adicionadas ao nosso projeto. Teremos também um arquivo criado, com o código abaixo:
 {% highlight csharp %}
+using System.Web.Mvc;
+    using Ninject;
+    using Ninject.Mvc3;
+    [assembly: WebActivator.PreApplicationStartMethod(typeof(ExemploDependencyResolver.AppStart_NinjectMVC3), "Start")]namespace ExemploDependencyResolver{    
 
+public 
+static class AppStart_NinjectMVC3    {        
+
+public 
+static void RegisterServices(IKernel kernel)        {            //kernel.Bind<ithingrepository>().To<sqlthingrepository>();
+    }
+        
+public 
+static void Start()        {            // Create Ninject DI Kernel             IKernel kernel = new StandardKernel();
+    // Register services with our Ninject DI Container            RegisterServices(kernel);
+    // Tell ASP.NET MVC 3 to use our Ninject DI Container             DependencyResolver.SetResolver(new NinjectServiceLocator(kernel));
+    }
+    }
+}
+</sqlthingrepository></ithingrepository>
 {% endhighlight %}
 Este código está pronto para utilizarmos. Ele configura o Ninject como sendo nossa implementação de [IDependencyResolver ](http://viniciusquaiato.com/blog/asp-net-mvc-3-e-o-dependencyresolver/)e já configura o mesmo para o ASP.NET MVC. Tudo que precisamos fazer é registrar nossas dependências utilizando o código da linha 13. Algo mais ou menos assim:
 {% highlight csharp %}
 
+public 
+static void RegisterServices(IKernel kernel){    kernel.Bind<idependencia1>().To<dummydependencia1>();
+    kernel.Bind<idependencia2>().To<dummydependencia2>();
+    }
+</dummydependencia2></idependencia2></dummydependencia1></idependencia1>
 {% endhighlight %}
 Pronto! Isso é tudo que precisamos! Não precisamos nem alterar o Global.asax para adicionar o DependencyResolver, pois esta classe criada pelo pacote do NuGet já faz esse trabalho.
 

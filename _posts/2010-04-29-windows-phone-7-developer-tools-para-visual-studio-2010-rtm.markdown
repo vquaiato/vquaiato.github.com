@@ -32,4 +32,7 @@ Fala galera!Acaba de sair um update para o [Windows Phone 7 Developer Tools](htt
 - Algumas APIs foram adicionadas ou modificadas. Mais informações no MSDN
 - A documentação foi alterada com a inclusão ou acreéscimo de tópicos.
 - Eventos de Pause/Resume agora estão disponíveis.
-E outras melhorias também estão presentes, confira os release notes para mais informações ou este post no blog do time do windows: [http://windowsteamblog.com/blogs/wpdev/archive/2010/04/29/windows-phone-developer-tools-ctp-refresh.aspx](http://windowsteamblog.com/blogs/wpdev/archive/2010/04/29/windows-phone-developer-tools-ctp-refresh.aspx)Ainda estou terminando de instalar, mas tão logo tenha novidades posto aqui.Att,Vinicius Quaiato.
+E outras melhorias também estão presentes, confira os release notes para mais informações ou este post no blog do time do windows: [http://windowsteamblog.com/blogs/wpdev/archive/2010/04/29/windows-phone-developer-tools-ctp-refresh.aspx](http://windowsteamblog.com/blogs/wpdev/archive/2010/04/29/windows-phone-developer-tools-ctp-refresh.aspx)Ainda estou terminando de instalar, mas tão logo tenha novidades posto aqui.
+
+Att,
+Vinicius Quaiato.

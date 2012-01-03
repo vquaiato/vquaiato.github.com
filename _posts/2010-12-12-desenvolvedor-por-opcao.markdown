@@ -31,4 +31,7 @@ Arquitetura de software não é um estágio depois de senior! Tenho visto divers
 Quando você é um desenvolvedor, e gosta disso, sente tesão e prazer por isso a sua escalada não é galgando outros cargos, papéis e postos dentro de uma empresa.Sua escalada tem como objetivo atingir níveis mais avançados em desenvolvimento. Seu objetivo deve ser um desenvolvedor melhor. Com mais firmeza nas tomadas técnicas de decisões. Maior propriedade nas tuas escolhas. Maior clareza nas tuas linhas de código.Pode até ser que você tenha como sonho de carreira tornar-se um gerente de projeto, mas lembre-se: isso não tem nada a ver com ser um desenvolvedor.Eu conheço bons desenvolvedores, que estão entre os melhores nomes técnicos do país e são ainda desenvolvedores.Então se você acha que para ganhar dinheiro você precisa se prostituir para algum papel/cargo que não é o que você gosta, saiba que isso é uma mentira!Se você gosta do que faz, e faz isso bem, vai ser bem pago para fazer isso.Agora, se você é apenas um ["garoto de programa"](http://viniciusquaiato.com/blog/off-topic-nao-sou-garoto-de-programa/) que está em busca de qualquer cargo que lhe pague R$500,00 a mais: você está fadado ao fracasso!Se você acha que não consegue mais evoluir financeiramente provavelmente está é uma imposição feita pela tua mediocridade, e você precisa de outros papéis e cargos para tentar sair desta mediocridade.Antes de projetar nos outros as tuas frustrações como desenvolvedor, entenda que ninguém é culpado pelo teu fracasso!<blockquote>
 
 ## Eu sou desenvolvedor por opção, e não por que sou incapaz de fazer outras coisas!
-</blockquote>Pense nisso!Abraços,Vinicius Quaiato.
+</blockquote>Pense nisso!
+
+Abraços,
+Vinicius Quaiato.

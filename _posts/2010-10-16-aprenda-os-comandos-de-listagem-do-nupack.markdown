@@ -68,4 +68,7 @@ Ou ainda podemos mesclar estes comandos:
 {% highlight csharp %}
 List-Package -Update | select id,UpdateAvailable
 {% endhighlight %}
-Ou seja estou pedindo a listagem de pacotes para saber se há atualizações, mas não quero visualizar todos os campos, quero ver apenas o Id(nome do pacote) e a informação dizendo se há atualização ou não.Bom, estes são os comandos de listagem para utilização no console Powershell do NuPack. Ok Vinicius, mas de onde saíram estes comandos? Simples: [da documentação](http://nupack.codeplex.com/documentation?title=Package%20Manager%20Console%20Command%20Reference)!É bastante importante, e interessante até, lermos a documentação dos projetos que utilizamos. Principalmente as novidades, afinal é a forma de obtermos conhecimento sobre elas.Continuarei "traduzindo" estas informações aqui, até cobrir todo "set" de comandos disponíveis.Abraços, e até a próxima.Vinicius Quaiato.
+Ou seja estou pedindo a listagem de pacotes para saber se há atualizações, mas não quero visualizar todos os campos, quero ver apenas o Id(nome do pacote) e a informação dizendo se há atualização ou não.Bom, estes são os comandos de listagem para utilização no console Powershell do NuPack. Ok Vinicius, mas de onde saíram estes comandos? Simples: [da documentação](http://nupack.codeplex.com/documentation?title=Package%20Manager%20Console%20Command%20Reference)!É bastante importante, e interessante até, lermos a documentação dos projetos que utilizamos. Principalmente as novidades, afinal é a forma de obtermos conhecimento sobre elas.Continuarei "traduzindo" estas informações aqui, até cobrir todo "set" de comandos disponíveis.
+
+Abraços,
+ e até a próxima.Vinicius Quaiato.

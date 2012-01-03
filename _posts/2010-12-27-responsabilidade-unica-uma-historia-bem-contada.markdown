@@ -32,10 +32,27 @@ Uma classe deve possuir um conjunto coeso de propriedades e métodos, que em um 
 ### Pequena metáfora para ilustrar
 Imagine ler um texto assim:<blockquote>Era uma linda manhã de domingo. O trânsito estava muito ruim em São Paulo. Era um sábado bastante tranquilo apesar de chuvoso. Enquanto tomava banho.</blockquote>Não há coesão alguma!Vamos ver um exemplo de código(utilizado com permissão de um sistema do Juan Lopes[não foi ele quem produziu este código!]):
 {% highlight csharp %}
-public BalancaResponse GetWeight(){    BalancaResponse response = new BalancaResponse();    response.Peso = -1d;    Double peso = this.AbrePorta();    if (peso == 0d)        response.Message = "Não foi possível abri a porta " + Enum.GetName(typeof(Balanca.Port), _port);    else    {        peso = this.LePeso();        if (peso == -9999)            response.Message = "Erro generico de comunicacao - caracteres nao numericos recebidos.";        else if (peso == -9997)            response.Message = "Nao conseguiu abrir a comunicacao com a porta serial.";        else if (peso == -9996)            response.Message = "Tempo de 2 segundos esgotado (time out).";        else            response.Peso = peso;        this.FechaPorta();    }    return response;}
+
+public BalancaResponse GetWeight(){    BalancaResponse response = new BalancaResponse();
+    response.Peso = -1d;
+    Double peso = this.AbrePorta();
+    if (peso == 0d)        response.Message = "Não foi possível abri a porta " + Enum.GetName(typeof(Balanca.Port), _port);
+    else    {        peso = this.LePeso();
+    if (peso == -9999)            response.Message = "Erro generico de comunicacao - caracteres nao numericos recebidos.";
+    else if (peso == -9997)            response.Message = "Nao conseguiu abrir a comunicacao com a porta serial.";
+    else if (peso == -9996)            response.Message = "Tempo de 2 segundos esgotado (time out).";
+    else            response.Peso = peso;
+    this.FechaPorta();
+    }
+    return response;
+    }
+
 {% endhighlight %}
 Bom, não temos o código completo da classe, mas este método vai bastar para nossa explicação pois os problemas deste método podem ser extrapolados para a classe.Primeiro: Qual a razão deste método existir?Resposta: Algo relacionado com obter o peso de alguma coisa(pelo menos é isso que o nome dele diz).Parece bastante óbvio que este método está realizando mais do que uma operação e nitidamente possui mais de uma razão para mudar. Vamos listar algumas:1. Esta classe pode mudar caso a forma de obter um peso mude(abrir porta)
 2. Esta classe pode mudar caso os valores de peso mudem
 3. Esta classe pode mudar caso as mensagens de resposta mudem
 4. Esta classe pode mudar caso a forma como uma porta é fechada mude
-São responsabilidade demais! É uma história mal contada. Uma forma bastante simples é perguntar para a classe/método o que ele/ela faz:<blockquote>Hey, o que você faz?</blockquote>Se como resposta você tiver algo parecido com: "Eu faço isso, e aquilo, e aquilo mais" algo está claramente errado.Se você faz uso de [conjunções](http://pt.wikipedia.org/wiki/Conjun%C3%A7%C3%A3o) para explicar uma classe/método ela claramente tem mais de uma responsabilidade.Então lembre-se que não é a quantidade de métodos que diz quantas responsabilidades uma classe possui, mas sim a coesão entre estes métodos.Uma classe deve mudar apenas se sua razão de existir solicitar uma mudança.Abraços,Vinicius Quaiato.
+São responsabilidade demais! É uma história mal contada. Uma forma bastante simples é perguntar para a classe/método o que ele/ela faz:<blockquote>Hey, o que você faz?</blockquote>Se como resposta você tiver algo parecido com: "Eu faço isso, e aquilo, e aquilo mais" algo está claramente errado.Se você faz uso de [conjunções](http://pt.wikipedia.org/wiki/Conjun%C3%A7%C3%A3o) para explicar uma classe/método ela claramente tem mais de uma responsabilidade.Então lembre-se que não é a quantidade de métodos que diz quantas responsabilidades uma classe possui, mas sim a coesão entre estes métodos.Uma classe deve mudar apenas se sua razão de existir solicitar uma mudança.
+
+Abraços,
+Vinicius Quaiato.

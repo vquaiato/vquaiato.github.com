@@ -32,7 +32,7 @@ Fala galera, continuando a falar de testes automatizados de interface com Seleni
 ### O exemplo
 Neste primeiro exemplo estou trabalhando com uma "calculadora" em ASP.NET MVC.Criei uma view bem simples que pode ser vista na listagem abaixo:
 {% highlight csharp %}
-        # Calculadora
+    <title>Calculadora</title></head><body>    <div>        # Calculadora
         <%: Html.TextBox("numero1") %>        <%: Html.TextBox("numero2") %>        <input type="button" value="Calcular" id="calcular" />        <span id="resultado"></span>    </div></body>
 {% endhighlight %}
 
@@ -45,11 +45,28 @@ Como pode ser visto no vídeo, eu gravo minha interação com a página(digitand
 ### Codificando a calculadora no ASP.NET MVC
 Tudo que vou fazer é criar uma action no meu controller, como mostra o código abaixo:
 {% highlight csharp %}
-[HttpPost]public JsonResult Somar(int numero1, int numero2){    var resultado = numero1 + numero2;    return Json(new { resultado = resultado });}
+[HttpPost]
+public JsonResult Somar(int numero1, int numero2){
+var resultado = numero1 + numero2;
+    return Json(new { resultado = resultado }
+);
+    }
+
 {% endhighlight %}
 Feito isso, vou chamar essa action via Ajax na minha viu, com o seguinte código:
 {% highlight csharp %}
-
+<script>    $(document).ready(function () {        $("#calcular").click(function () {
+var num1 = $("#numero1").val();
+var num2 = $("#numero2").val();
+    $.post("Calculadora/Somar/", { numero1: num1, numero2: num2 }
+, function (data) {                $("#resultado").html("Resultado: " + data.resultado);
+    }
+, "json");
+    }
+);
+    }
+);
+    </script>
 {% endhighlight %}
 
 

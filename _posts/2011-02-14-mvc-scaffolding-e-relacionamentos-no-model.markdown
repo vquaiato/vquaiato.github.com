@@ -26,13 +26,41 @@ tags:
 ## Definindo uma relação simples
 Vamos trabalhar com a idéia de Receita e Categorias. Abaixo temos a classe para representar nossas categorias:
 {% highlight csharp %}
-public class Categoria{    public string Nome { get; set; }    public int CategoriaId { get; set; }}
+
+public class Categoria{    
+
+public string Nome { get;
+    set;
+    }
+    
+public int CategoriaId { get;
+    set;
+    }
+}
+
 {% endhighlight %}
 Vamos criar uma classe para representar nossas receitas:
 {% highlight csharp %}
-public class Receita{    public string Nome { get; set; }    public int TempoPreparo { get; set; }    public int CategoriaId { get; set; }}
+
+public class Receita{    
+
+public string Nome { get;
+    set;
+    }
+    
+public int TempoPreparo { get;
+    set;
+    }
+    
+public int CategoriaId { get;
+    set;
+    }
+}
+
 {% endhighlight %}
-Se as classes acima precisam de explicação: [http://bit.ly/hvQQ7f](http://bit.ly/hvQQ7f)Reparem na **_linha 5_**. Esta é a mágica de um relacionamento para o MVC Scafolding. Uma propriedade do tipo &lt;Model&gt;Id define uma relação. No exemplo acima uma receita possui uma relação com uma categoria.Vamos então executar o scaffolding:
+Se as classes acima precisam de explicação: [http://bit.ly/hvQQ7f](http://bit.ly/hvQQ7f)Reparem na **_linha 5_**. Esta é a mágica de um relacionamento para o MVC Scafolding. Uma propriedade do tipo &lt;
+    Model&gt;
+    Id define uma relação. No exemplo acima uma receita possui uma relação com uma categoria.Vamos então executar o scaffolding:
 {% highlight csharp %}
 Scaffold Controller ReceitaScaffold Controller Categoria
 {% endhighlight %}
@@ -42,10 +70,51 @@ Isso irá criar nossos controllers, contextos do EF4 e views.[caption id="attach
 Para exibirmos as relações nas views de listagem(index) vamos modificar um pouco nosso model para conter informações além de simplesmente o id.Ficaremos com classes assim:
 {% highlight csharp %}
 
+public class Categoria{    
+
+public string Nome { get;
+    set;
+    }
+    
+public int CategoriaId { get;
+    set;
+    }
+    
+public virtual ICollection<receita> Receitas { get;
+    set;
+    }
+    
+public override string ToString()    {        return this.Nome;
+    }
+}
+</receita>
 {% endhighlight %}
 Vejam na **_linha 6_** podemos ver que temos uma coleção de receitas. Desta forma é possível saber quais as receitas estão presentes em uma categoria.O override do método ToString é apenas para facilitar as views.
 {% highlight csharp %}
-public class Receita{    public string Nome { get; set; }    public int TempoPreparo { get; set; }    public int ReceitaId { get; set; }    public int CategoriaId { get; set; }    public virtual Categoria Categoria { get; set; }}
+
+public class Receita{    
+
+public string Nome { get;
+    set;
+    }
+    
+public int TempoPreparo { get;
+    set;
+    }
+    
+public int ReceitaId { get;
+    set;
+    }
+    
+public int CategoriaId { get;
+    set;
+    }
+    
+public virtual Categoria Categoria { get;
+    set;
+    }
+}
+
 {% endhighlight %}
 Aqui apenas uma alteração na **_linha 8_** onde criamos uma propriedade do tipo Receita.Vamos executar os comandos de scaffolding novamente, desta vez com o parâmetro -Force, para sobrescrever o código já usado antes:
 {% highlight csharp %}
@@ -54,4 +123,7 @@ Scaffold Controller Receita -ForceScaffold Controller Categoria -Force
 Com isso temos como resultado:[caption id="attachment_3122" align="aligncenter" width="300" caption="MVC Scaffolding index views"][![MVC Scaffolding index views](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/MVc-Scaffolding-index-views-300x227.png "MVC Scaffolding index views")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/MVc-Scaffolding-index-views.png)[/caption][caption id="attachment_3123" align="aligncenter" width="300" caption="MVC Scaffolding index views 2"][![MVC Scaffolding index views 2](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/MVc-Scaffolding-index-views-2-300x227.png "MVC Scaffolding index views 2")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/MVc-Scaffolding-index-views-2.png)[/caption]
 
 ## Resumindo...
-O MVC Scaffolding vai ajudar muito nestas atividades mais "braçais" e vale muito acompanhar e utilizar o projeto.O blog do Steve Sanderson possui muitas informações mais detalhadas sobre a ferramenta. [Confira aqui](http://blog.stevensanderson.com/2011/01/28/mvcscaffolding-one-to-many-relationships/).Abraços,Vinicius Quaiato.
+O MVC Scaffolding vai ajudar muito nestas atividades mais "braçais" e vale muito acompanhar e utilizar o projeto.O blog do Steve Sanderson possui muitas informações mais detalhadas sobre a ferramenta. [Confira aqui](http://blog.stevensanderson.com/2011/01/28/mvcscaffolding-one-to-many-relationships/).
+
+Abraços,
+Vinicius Quaiato.

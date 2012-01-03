@@ -32,11 +32,11 @@ tags:
 ## Especificando models no MVC2
 No ASP.NET MVC 2 para especificar o model de uma view nós utilizamos algo parecido com:
 {% highlight csharp %}
-
+<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<minhaclasse>" %></minhaclasse>
 {% endhighlight %}
 Já quando queremos um model dinâmico, ou seja um dynamic model utilizamos:
 {% highlight csharp %}
-
+<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<dynamic>" %></dynamic>
 {% endhighlight %}
 Não é nada complexo, mas é bem feio. Cheio de sujeira, ruído e tudo o mais. E nós não gostamos do nosso código sujo não é?!
 
@@ -52,4 +52,7 @@ No ASP.NET MVC 2 no entando não tínhamos a facilidade da diretiva **@model** q
 \o/
 
 ## Html helpers e dynamic models
-Importante dizer que na utilização de dynamic models não conseguimos utilizamos Html helpers como:Html.LabelFor(model => model.Propriedade)Para isso precisaríamos de um ViewModel(ou o model mesmo).É isso galera, com isso estamos vendo novamente simplicidade do Razor. Espero que aproveitem.Abraços,Vinicius Quaiato.
+Importante dizer que na utilização de dynamic models não conseguimos utilizamos Html helpers como:Html.LabelFor(model => model.Propriedade)Para isso precisaríamos de um ViewModel(ou o model mesmo).É isso galera, com isso estamos vendo novamente simplicidade do Razor. Espero que aproveitem.
+
+Abraços,
+Vinicius Quaiato.

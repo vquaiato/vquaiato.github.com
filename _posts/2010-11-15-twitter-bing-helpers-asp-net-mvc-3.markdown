@@ -48,7 +48,9 @@ Install-Package Microsoft-Web-Helpers
 ## Utilizando o WebHelper do Twitter no ASP.NET MVC 3
 Após adicionarmos o pacote com o NuGet, basta realizarmos a chamada para o helper.Na sua View Index coloque o seguinte código para realizar uma pesquisa no Twitter:
 {% highlight csharp %}
-@{ Layout = "~/Views/Shared/_Layout.cshtml";}
+@{ Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
 
 ## WebHelpers ASP.NET MVC 3
 
@@ -60,7 +62,9 @@ E o resultado:[caption id="attachment_2138" align="aligncenter" width="273" capt
 ## Utilizando o WebHelper do Bing no ASP.NET MVC 3
 Também podemos disponibilizar em nossa página uma chamada para uma pesquisa utilizando o Bing de forma bastante simples, vejamos:
 {% highlight csharp %}
-@{ Layout = "~/Views/Shared/_Layout.cshtml";}
+@{ Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
 
 ## WebHelpers ASP.NET MVC 3
 
@@ -70,4 +74,7 @@ Isto é uma pesquisa no Bing
 Repare que utilizei o método "AdvancedSearchBox" o outro método "SearchBox" está retornando erro.Como resultado deste helper temos a seguinte página:[caption id="attachment_2139" align="aligncenter" width="292" caption="Bing helper no ASP.NET MVC 3"][![Bing helper no ASP.NET MVC 3](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/Bing-helper-292x300.png "Bing helper no ASP.NET MVC 3")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/Bing-helper.png)[/caption]Novamente o html gerado inclui chamadas JavaScript para o Bing. 
 
 ## Resumo
-Existem ainda vários outros helpers nesta dll: LinkShare, Gravatr, Analytics, Facebook, ReCaptcha, etc. De fato a utilização de helpers desta maneira nos ajuda bastante a evitar uma série de retrabalhos. É preciso, no entanto, compreender o que estes helpers estão renderizando e como eles estão atuando.Ainda não verifiquei se estes helpers são de fato disponibilizados pela Microsoft, e não pesquisei para encontrar seu código fonte.Fica aí a dica, e quem tiver mais informações, é só compartilhar.Abraços,Vinicius Quaiato.
+Existem ainda vários outros helpers nesta dll: LinkShare, Gravatr, Analytics, Facebook, ReCaptcha, etc. De fato a utilização de helpers desta maneira nos ajuda bastante a evitar uma série de retrabalhos. É preciso, no entanto, compreender o que estes helpers estão renderizando e como eles estão atuando.Ainda não verifiquei se estes helpers são de fato disponibilizados pela Microsoft, e não pesquisei para encontrar seu código fonte.Fica aí a dica, e quem tiver mais informações, é só compartilhar.
+
+Abraços,
+Vinicius Quaiato.

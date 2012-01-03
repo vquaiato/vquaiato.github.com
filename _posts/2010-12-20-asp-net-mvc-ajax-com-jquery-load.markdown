@@ -35,7 +35,7 @@ Vamos ver um exemplo para ficar mais claro: Nossa página deverá carregar em um
 ### A view
 A view é bastante simples neste exemplo. Temos inicialmente 2 divs para exibir nossas informações:
 {% highlight csharp %}
-        # Página inicial
+<!DOCTYPE html SYSTEM><html><head>    <title>Index</title></head><body>    <div>        # Página inicial
     </div>    
 
 ### Últimos posts
@@ -46,22 +46,31 @@ A view é bastante simples neste exemplo. Temos inicialmente 2 divs para exibir 
 {% endhighlight %}
 Vamos então adicionar a referência para o Jquery e criar o código para chamar a function load adicionando o seguinte script:
 {% highlight csharp %}
-
+</script><script>    $(function () {
+var url = "@Url.Action("Recent", "Posts")";
+    $("#ultimos_posts").load(url);
+    }
+);
+    </script>
 {% endhighlight %}
 Wow! É muito simples!Na **_linha 4_** estou definindo a url para a action que retorna os posts mais recents. Notem que eu não estou usando a url hardcoded, ao invés disso utilizo o helper Url.Acion do ASP.NET MVC. Faço isso pois caso o esquema de rotas mude eu não preciso sair caçando minhas urls na aplicação. É uma boa prática.Na **_linha 5_** chamamos a function load na div "ultimos_posts". Isso quer dizer que vamos fazer um request assíncrono para a url informada e o HTML resultante deste request será inserido na nossa div. É muito fácil!
 
 ### A action
 Vamos agora espiar como está a action Recent no controller Posts:
 {% highlight csharp %}
-public ActionResult Recent(){    return PartialView("RecentPosts", new Posts().GetAll());}
+
+public ActionResult Recent(){    return PartialView("RecentPosts", new Posts().GetAll());
+    }
+
 {% endhighlight %}
 Nice! Código bastante enxuto e limpo. Estamos retornando uma Partial View e passando como model a listagem dos últimos posts vindas do repositório(em uma app real esse repositório seria injetado via DI ou obtido através de um SL).
 
 ### A partial view
  E para finalizar a tarefa temos a partial view que faz a renderização de uma listagem de posts. É um código muito simples, apliquei algum estilo CSS apenas para deixar menos feio:
 {% highlight csharp %}
-        
-    }</aspnetmvc_jquery_load.controllers.post>
+@post.Body.Substring(0, 25)...</span>            </div>        
+    }
+</aspnetmvc_jquery_load.controllers.post>
 {% endhighlight %}
 O comportamento de ambas as actions é igual, então devemos ter nossa view mais ou menos assim:[caption id="attachment_2456" align="aligncenter" width="300" caption="asp.net mvc executando jquery load"][![asp.net mvc executando jquery load](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/asp.net-mvc-executando-jquery-load-300x226.png "asp.net mvc executando jquery load")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/asp.net-mvc-executando-jquery-load.png)[/caption]
 

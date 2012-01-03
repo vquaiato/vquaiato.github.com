@@ -29,15 +29,34 @@ Para criar uma aplicação utilizando o [ASP.NET MVC 3](http://viniciusquaiato.c
 ## Configurando o ASP.NET MVC 3 como um Web Role
 Agora precisamos fazer com que nosso projeto ASP.NET MVC 3 se torne um Web Role do Windows Azure. Isso é extremamente simples.Precisamos adicionar algumas referências do Windows Azure no projeto ASP.NET MVC 3:[caption id="attachment_2729" align="aligncenter" width="300" caption="Adicionando referencias do Azure no projeto ASP.NET MVC 3"][![Adicionando referencias do Azure no projeto ASP.NET MVC 3](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Adicionando-referencias-do-Azure-no-projeto-MVC-3-300x172.png "Adicionando referencias do Azure no projeto ASP.NET MVC 3")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Adicionando-referencias-do-Azure-no-projeto-MVC-3.png)[/caption]Além de adicionar estas referências precisamos criar uma classe que herde de [RoleEntryPoint](http://msdn.microsoft.com/en-us/library/microsoft.windowsazure.serviceruntime.roleentrypoint.aspx) para sinalizar que este projeto é um Web Role. Esta classe é bastante simples e pode ser criada com o seguinte código:
 {% highlight csharp %}
-using Microsoft.WindowsAzure.ServiceRuntime;namespace SiteMVC3{    public class WebRole : RoleEntryPoint    {        public override bool OnStart()        {            // For information on handling configuration changes            // see the MSDN topic at http://go.microsoft.com/fwlink/?LinkId=166357.            return base.OnStart();        }    }}
+using Microsoft.WindowsAzure.ServiceRuntime;
+    namespace SiteMVC3{    
+
+public class WebRole : RoleEntryPoint    {        
+
+public override bool OnStart()        {            // For information on handling configuration changes            // see the MSDN topic at http://go.microsoft.com/fwlink/?LinkId=166357.            return base.OnStart();
+    }
+    }
+}
+
 {% endhighlight %}
 Pronto! Vamos então adicionar nossa aplicação como um Web Role no projeto Azure:Agora vamos criar um controller e uma view utilizando Razor!
 {% highlight csharp %}
-using System.Web.Mvc;namespace SiteMVC3.Controllers{    public class HomeController : Controller    {        public ActionResult Index()        {            return View(new[] { "ASP.NET MVC 3 no Windows Azure", "Vinicius Quaiato" });        }    }}
+using System.Web.Mvc;
+    namespace SiteMVC3.Controllers{    
+
+public class HomeController : Controller    {        
+
+public ActionResult Index()        {            return View(new[] { "ASP.NET MVC 3 no Windows Azure", "Vinicius Quaiato" }
+);
+    }
+    }
+}
+
 {% endhighlight %}
 E a View:
 {% highlight csharp %}
-        # @Model[0]
+@model string[]<!DOCTYPE html SYSTEM><html><head>    <title>Index</title></head><body>    <div>        # @Model[0]
         
 
 ### Por: @Model[1]
@@ -55,4 +74,7 @@ Agora basta incluir a aplicação ASP.NET MVC 3 como sendo um Web Role no projet
 - System.Web.Razor.dll
 - WebMatrix.Data.dll
 - Microsoft.Web.Infrastructure.dll
-E também System.Web.MVC versão 3.0.0.0.Estas Dll's podem ser encontradas em: _C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies_.[Veja mais aqui](http://code-inside.de/blog/2011/01/01/howto-windows-azure-asp-net-mvc-3-was-braucht-man-fr-dlls/).Abraços,Vinicius Quaiato.
+E também System.Web.MVC versão 3.0.0.0.Estas Dll's podem ser encontradas em: _C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies_.[Veja mais aqui](http://code-inside.de/blog/2011/01/01/howto-windows-azure-asp-net-mvc-3-was-braucht-man-fr-dlls/).
+
+Abraços,
+Vinicius Quaiato.

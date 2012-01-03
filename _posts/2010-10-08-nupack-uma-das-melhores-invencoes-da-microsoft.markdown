@@ -44,7 +44,7 @@ No Package Manager Console digite:_**Add-Package Nunit**_[caption id="attachment
 ### Gerenciando os pacotes
 Após adicionar uma referência para um pacote o NuPack cria um arquivo packages.config onde ele armazena o pacote e a versão que foi adicionada ao projeto. Ainda não testei isso, mas imagino que ele consiga ver a disponibilidade de uma versão mais recente para fazer um upgrade.
 {% highlight csharp %}
-
+<?xml version="1.0" encoding="utf-8"?><packages>  <package id="NUnit" version="2.5.7.10213" /></packages>
 {% endhighlight %}
 
 
@@ -52,4 +52,7 @@ Após adicionar uma referência para um pacote o NuPack cria um arquivo packages
 Para remover um pacote adicionado com o NuPack você pode usar o comando:_**Remove-Package NomePacote**_[caption id="attachment_1735" align="aligncenter" width="300" caption="NuPack Remove-Package"][![NuPack Remove-Package](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Remove-Package-300x300.png "NuPack Remove-Package")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Remove-Package.png)[/caption]
 
 ### Alguns vídeos sobre NuPack
-Alguns vídeos sobre o NuPack podem ser vistos aqui: [http://nupack.codeplex.com/wikipage?title=Screencasts](http://nupack.codeplex.com/wikipage?title=Screencasts)É isso aê, vamos usar, dar feedback, e curtir esse projeto que realmente é MUITO bom!!!Abraços,Vinicius Quaiato
+Alguns vídeos sobre o NuPack podem ser vistos aqui: [http://nupack.codeplex.com/wikipage?title=Screencasts](http://nupack.codeplex.com/wikipage?title=Screencasts)É isso aê, vamos usar, dar feedback, e curtir esse projeto que realmente é MUITO bom!!!
+
+Abraços,
+Vinicius Quaiato

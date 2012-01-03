@@ -31,4 +31,7 @@ tags:
 - WPF para aplicações comerciais – Parte 2 
 - SQL Azure com NHibernate e Entity Framework 
 - Processo Unificado Aberto
-É isso galera, sintam-se livres para dar seu feedback.Abraços,Vinicius Quaiato.
+É isso galera, sintam-se livres para dar seu feedback.
+
+Abraços,
+Vinicius Quaiato.

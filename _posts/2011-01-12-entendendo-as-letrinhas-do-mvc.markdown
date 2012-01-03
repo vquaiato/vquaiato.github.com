@@ -46,8 +46,8 @@ Os Controllers são responsáveis por receber as interações entre os usuários
 
 ## Os diagramas
 Vejo diversos diagramas sobre o padrão MVC na internet, em livros, etc. Confesso que não gosto da maioria deles. Eles dão a impressão de que a View conhece o Controller, que o Model conhece a View: é confuso!Acho que a representação que eu mais gosto é esta aqui obtida do [Patterns & Practices](http://msdn.microsoft.com/en-us/library/ff649643.aspx):[caption id="attachment_2788" align="aligncenter" width="318" caption="Representação MVC"][![Representação MVC](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Diagrama.gif "Representação MVC")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Diagrama.gif)[/caption]Eu gosto deste diagrama pois:- A View só conhece o Model;
-- O Controller conhece a View e o Model;
-- O Model é totalmente ignorante da View e o Controller
+    - O Controller conhece a View e o Model;
+    - O Model é totalmente ignorante da View e o Controller
 Este desenho é apenas uma ilustração do padrão. Não é um diagrama de sequência, interação, etc. Pense nele como uma visualização(uma View) do Modelo(o padrão).
 
 ## Resumo

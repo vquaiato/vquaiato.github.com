@@ -32,23 +32,39 @@ Fala galera, [neste por aqui](http://viniciusquaiato.com/blog/asp-net-mvc-jquery
 ### O form html
 
 {% highlight csharp %}
-        
+@using (Html.BeginForm("SubmitForm", "Home", FormMethod.Post, new { id = "login" }
+)){    @Html.ValidationSummary(true)    <fieldset>        <legend>Fields</legend>        <div class="editor-label">            @Html.LabelFor(model => model.Usuario)        </div>        <div class="editor-field">            @Html.EditorFor(model => model.Usuario)        </div>        <div class="editor-label">            @Html.LabelFor(model => model.Senha)        </div>        <div class="editor-field">            @Html.EditorFor(model => model.Senha)        </div>        
                     
     </fieldset>}
+
 {% endhighlight %}
 Bastante simples né?!Reparem apenas que para colocar um id no form eu passei alguns parâmetros: Action, Controller, método(Get ou Post) e no final um objeto anônimo contendo a propriedade id, que é o id do elemento.
 
 ### O código jquery
 Feito isso vamos criar o código JavaScript para dar o comportamento assíncrono:
 {% highlight csharp %}
-$(function () {    $("#login").submit(function (e) {        e.preventDefault();        $.post($(this).attr("action"), $(this).serialize(), function (retorno) {            $("#login")[0].reset();            alert(retorno.Resultado);        });    });});
+$(function () {    $("#login").submit(function (e) {        e.preventDefault();
+    $.post($(this).attr("action"), $(this).serialize(), function (retorno) {            $("#login")[0].reset();
+    alert(retorno.Resultado);
+    }
+);
+    }
+);
+    }
+);
+    
 {% endhighlight %}
 Tudo que esse código faz é um post assíncrono para a action definida no form, passando seus campos como parâmetros.Na função de callback limpamos o form e exibimos um alerta com a reposta do servidor.Poderíamos fazer um monte de outras coisas, mas para não alongar muito o exemplo, apenas exibimos uma alert.
 
 ### A action MVC
 A grande sacada da brincadeira está na action no nosso controller:
 {% highlight csharp %}
-[HttpPost]public ActionResult SubmitForm(Login login){    if (Request.IsAjaxRequest())        return Json(new { Resultado = "Você está logado!" });    return RedirectToAction("Index");}
+[HttpPost]
+public ActionResult SubmitForm(Login login){    if (Request.IsAjaxRequest())        return Json(new { Resultado = "Você está logado!" }
+);
+    return RedirectToAction("Index");
+    }
+
 {% endhighlight %}
 A action verifica se a requisição é uma requisição ajax utilizando o método IsAjaxRequest do objeto de Request.Caso seja uma requisição ajax o comportamento e o fluxo são diferentes de uma requisição comum. Neste caso apenas retornamos um Json com uma mensagem.Quando não é uma requisição ajax fazemos um redirecionamento para uma action. Desta forma nosso formulário funciona tanto quando o cliente possui javascript habilitado como quando não está.
 
@@ -59,4 +75,7 @@ A action verifica se a requisição é uma requisição ajax utilizando o métod
 [caption id="attachment_2407" align="aligncenter" width="300" caption="ASP.NET MVC form submit sem jquery"][![ASP.NET MVC form submit sem jquery](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/sem-jquery-300x190.png "ASP.NET MVC form submit sem jquery")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/sem-jquery.png)[/caption]
 
 ### Quem não teria javascript habilitado?
-Simples: muitos dispositivos mobile tem um péssimo suporte a javascript. E hoje é muito comum acessar a internet com browser limitado destes dispositivos.Abraços,Vinicius Quaiato.
+Simples: muitos dispositivos mobile tem um péssimo suporte a javascript. E hoje é muito comum acessar a internet com browser limitado destes dispositivos.
+
+Abraços,
+Vinicius Quaiato.

@@ -45,10 +45,12 @@ Precisamos adicionar a referência para a DLL do Selenium RC ao nosso projeto de
 O Selenium Server vem junto com o Selenium RC. Como mostrado no post anterior [(veja aqui](http://viniciusquaiato.com/blog/testes-de-interfaces-com-selenium-em-net-parte-ii/)), vamos executar nosso bat para iniciar o Selenium Server.Feito isso podemos rodar nossos testes novamente:[caption id="attachment_1792" align="aligncenter" width="300" caption="Executando testes com Selenium RC e Selenium Server"][![Executando testes com Selenium RC e Selenium Server](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Executando-testes-com-Selenium-RC-e-Selenium-Server-300x145.png "Executando testes com Selenium RC e Selenium Server")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Executando-testes-com-Selenium-RC-e-Selenium-Server.png)[/caption]Caso você obtenha um erro pedindo para adicionar o Firefox 3 ao Path, faça isso.O Selenium por padrão inicia o Firefox utilizando o chrome launcher. E se não encontra o firefox retorna este erro.Você pode especificar um browser de sua escolha alterando a linha abaixo:
 {% highlight csharp %}
 selenium = new DefaultSelenium("localhost", 4444, "*chrome", "http://localhost:1115");
+    
 {% endhighlight %}
 para
 {% highlight csharp %}
 selenium = new DefaultSelenium("localhost", 4444, "*custom C:\Program Files (x86)\Mozila Firefox\firefox.exe", "http://localhost:1115");
+    
 {% endhighlight %}
 Isto funcionará para qualquer browser que você tenha, e que o Selenium RC suporte.No [trunk do Selenium Server](http://svn.openqa.org/fisheye/browse/selenium-rc/trunk/server-coreless/src/main/java/org/openqa/selenium/server/browserlaunchers/BrowserLauncherFactory.java?r=2703) podemos ver uma lista dos browsers suportados:- firefoxproxy
 - firefox
@@ -70,4 +72,7 @@ Isto funcionará para qualquer browser que você tenha, e que o Selenium RC supo
 
 
 ### Em resumo
-Desta forma vimos como executar nossos testes utilizando Selenium RC e Selenium Server. Ainda estamos com uma parte manual em nossos testes que é iniciar o Selenium Server. Veremos como resolver isso em um próximo post.Com a utilização do Selenium RC, e o conhecimento da API, os comandos e métodos disponíveis, a escrita dos testes começa a ficar mais simples. Podemos "abandonar" o Selenium IDE e passar a escrever os testes já através do nosso projeto .NET. É apenas uma questão de obter alguma fluência na tecnologia.É importante lembrar que testes de interface são frágeis. Talvez demore um pouco para entender os pormenores, compreender os detalhes e os pontos de fragilidade, e começar a escrever bons testes. Mas é para isso que somos pagos: escrever bons softwares, que são possíveis passando por bons testes.É isso galera, tão logo eu experimente mais do Selenium colocarei mais novidades aqui. Se tudo der certo o próximo post será sobre o [Selenium Grid](http://selenium-grid.seleniumhq.org/).Abraços,Vinicius Quaiato.
+Desta forma vimos como executar nossos testes utilizando Selenium RC e Selenium Server. Ainda estamos com uma parte manual em nossos testes que é iniciar o Selenium Server. Veremos como resolver isso em um próximo post.Com a utilização do Selenium RC, e o conhecimento da API, os comandos e métodos disponíveis, a escrita dos testes começa a ficar mais simples. Podemos "abandonar" o Selenium IDE e passar a escrever os testes já através do nosso projeto .NET. É apenas uma questão de obter alguma fluência na tecnologia.É importante lembrar que testes de interface são frágeis. Talvez demore um pouco para entender os pormenores, compreender os detalhes e os pontos de fragilidade, e começar a escrever bons testes. Mas é para isso que somos pagos: escrever bons softwares, que são possíveis passando por bons testes.É isso galera, tão logo eu experimente mais do Selenium colocarei mais novidades aqui. Se tudo der certo o próximo post será sobre o [Selenium Grid](http://selenium-grid.seleniumhq.org/).
+
+Abraços,
+Vinicius Quaiato.

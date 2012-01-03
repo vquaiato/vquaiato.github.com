@@ -29,18 +29,38 @@ tags:
 ### Usando delegates e lambdas no c#
 
 {% highlight csharp %}
- " + s.ToLower();};Console.WriteLine(impressorMinusculo("VINICIUS"));Console.WriteLine(impressorMaiusculo("vinicius"));
+delegate string Impressor(string algo);
+    Impressor impressorMaiusculo = delegate(String s){    return "Upper -> " + s.ToUpper();
+    }
+;
+    Impressor impressorMinusculo = delegate(String s){    return "Lower -> " + s.ToLower();
+    }
+;
+    Console.WriteLine(impressorMinusculo("VINICIUS"));
+    Console.WriteLine(impressorMaiusculo("vinicius"));
+    
 {% endhighlight %}
 Poderíamos ainda ter um método que recebe um delegate:
 {% highlight csharp %}
- s.ToUpper(), "vinicius");
+void MetodoQueImprimeNoConsole(Impressor impressor, string imprimir){    Console.WriteLine(impressor(imprimir));
+    }
+MetodoQueImprimeNoConsole(    delegate(String s)    {
+string reversed = string.Empty;
+    s.Reverse().ToList().ForEach(c => reversed += c.ToString());
+    return reversed;
+    }
+, "Vinicius");
+    MetodoQueImprimeNoConsole(s => s.ToUpper(), "vinicius");
+    
 {% endhighlight %}
 Agora as coisas começam a ficar um pouco mais interessantes. O Ruby trabalha muito com [blocks, Procs e lambdas](http://www.robertsosinski.com/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/). Os conceitos são bastante semelhantes e a diferença está nos detalhes.
 
 ### |blocks|
 Blocks nada mais são do que blocos de código. Sua sintaxe é bastante simples:
 {% highlight csharp %}
-letras = ["a","b","c"]#para quem gosta de do endletras.each do |letra|    puts letra.upcaseend#para quem gosta de bracketsletras.each {|letra| puts letra.upcase}
+letras = ["a","b","c"]#para quem gosta de do endletras.each do |letra|    puts letra.upcaseend#para quem gosta de bracketsletras.each {
+letra| puts letra.upcase}
+
 {% endhighlight %}
 O que acontece no código acima é que o método _[each](http://ruby-doc.org/core/classes/Array.html#M002173)_ recebe um block como argumento, ou seja, para cada item dentro do array ele executará o bloco de código informado. No exemplo acima, apenas exibimos o item em upper case.O código é bastante simples de entender. O método each passará como parâmetro para nosso bloco cada item do array. E dentro do bloco o que fazemos é colocar este item (que chamei de letra) em caixa alta, chamando o método _[upcase](http://ruby-doc.org/core/classes/String.html#M000793)_.
 
@@ -57,4 +77,7 @@ Novidade nesse código podemos ver na _**linha 2**_ onde usamos o _[attr_accesso
 {% highlight csharp %}
 def listar(bloco1,bloco2)  @telefones.each do |telefone|    bloco1.call telefone    bloco2.call telefone  endendagenda.listar(separado_por_hifen, separado_por_virgula)agenda.listar(separado_por_virgula, separado_por_hifen)
 {% endhighlight %}
-Interessante não é?Bem, vou deixar a parte de lambdas para um post futuro, para não tornar esse muito mais extenso, pois farei as comparações entre as diferenças entre lambdas e Procs.E mostrarei também como criar os eventos por exemplo de botões em uma aplicação [Windows Forms](http://viniciusquaiato.com/blog/sharpdevelop-ide-para-trabalhar-com-ironruby/) e [WPF com IronRuby](http://viniciusquaiato.com/blog/ironruby-rodando-ruby-dentro-do-net/).Espero que tenham gostado, e aguardo feedbacks, dúvidas, etc.Abraços,Vinicius Quaiato.
+Interessante não é?Bem, vou deixar a parte de lambdas para um post futuro, para não tornar esse muito mais extenso, pois farei as comparações entre as diferenças entre lambdas e Procs.E mostrarei também como criar os eventos por exemplo de botões em uma aplicação [Windows Forms](http://viniciusquaiato.com/blog/sharpdevelop-ide-para-trabalhar-com-ironruby/) e [WPF com IronRuby](http://viniciusquaiato.com/blog/ironruby-rodando-ruby-dentro-do-net/).Espero que tenham gostado, e aguardo feedbacks, dúvidas, etc.
+
+Abraços,
+Vinicius Quaiato.

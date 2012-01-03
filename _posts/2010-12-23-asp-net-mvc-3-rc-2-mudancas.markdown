@@ -45,4 +45,7 @@ O atributo **<del datetime="2010-12-23T14:50:25+00:00">SkipRequestValidationAttr
 Uma mellhoria no ValidationMessage faz com que agora seja retornada a primeira mensagem de erro utilizável. Se houver mensagem de erro proveniente de exceptions elas não serão exibidas e caso sejam as únicas, então uma mensagem padrão é mostrada, evitando exibir exceptions ao usuário da aplicação.
 
 ### LabelFor
-Agora o helper Html.LabelFor aponta para o id de um elemento e não para o seu name. Isto está de acordo com a W3C.É isso galera, esse é um resumo das alterações que estão contempladas na versão RC 2 do ASP.NET MVC 3. Em um próximo post eu comentarei sobre as features adicionadas.Muitas das novidades do ASP.NET MVC 3 você pode conferir aqui: [http://viniciusquaiato.com/blog/asp-net-mvc-3/](http://viniciusquaiato.com/blog/asp-net-mvc-3/)E à partir de janeiro em uma série de 3 artigos para a revista .NET Magazine também.Abraços,Vinicius Quaiato.
+Agora o helper Html.LabelFor aponta para o id de um elemento e não para o seu name. Isto está de acordo com a W3C.É isso galera, esse é um resumo das alterações que estão contempladas na versão RC 2 do ASP.NET MVC 3. Em um próximo post eu comentarei sobre as features adicionadas.Muitas das novidades do ASP.NET MVC 3 você pode conferir aqui: [http://viniciusquaiato.com/blog/asp-net-mvc-3/](http://viniciusquaiato.com/blog/asp-net-mvc-3/)E à partir de janeiro em uma série de 3 artigos para a revista .NET Magazine também.
+
+Abraços,
+Vinicius Quaiato.

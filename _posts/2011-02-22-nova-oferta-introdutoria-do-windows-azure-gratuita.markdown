@@ -26,4 +26,7 @@ tags:
 - 500MB de Azure Storage
 - 10.000 transações de Storage
 - 1GB de Sql Azure
-Existem ainda outras vantagens nesta oferta que você pode conferir [aqui na página de ofertas do Windows Azure](http://www.microsoft.com/windowsazure/offers/).Experimente, avalie, conheça.Abraços,Vinicius Quaiato.
+Existem ainda outras vantagens nesta oferta que você pode conferir [aqui na página de ofertas do Windows Azure](http://www.microsoft.com/windowsazure/offers/).Experimente, avalie, conheça.
+
+Abraços,
+Vinicius Quaiato.

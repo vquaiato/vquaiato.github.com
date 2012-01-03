@@ -36,7 +36,26 @@ Install-Package MvcScaffolding
 ## Criando nosso primeiro Scaffold
 Agora já temos o MVCScaffolding instalado vamos criar uma classe para realizarmos o Scaffolding da mesma. Neste caso, aproveitando o gancho do MVC Summit vou criar uma classe palestra:
 {% highlight csharp %}
-public class Palestra{    public int PalestraId { get; set; }    public string Titulo { get; set; }    public string Resumo { get; set; }    public DateTime Data { get; set; }}
+
+public class Palestra{    
+
+public int PalestraId { get;
+    set;
+    }
+    
+public string Titulo { get;
+    set;
+    }
+    
+public string Resumo { get;
+    set;
+    }
+    
+public DateTime Data { get;
+    set;
+    }
+}
+
 {% endhighlight %}
 Criamos esta classe pois é ela que será utilizada para o Scaffolding, ou seja, vamos pedir para que o MVCScaffolding crie o controller, as views, e um contexto do Entity Framework para esta classe. É importante lembrar que antes de executar o comando de scaffolding é preciso compilar o projeto.Para executarmos o Scaffolding precisamos apenas do comando abaixo:
 {% highlight csharp %}
@@ -45,4 +64,7 @@ Scaffold Controller Palestra
 [caption id="attachment_2837" align="aligncenter" width="300" caption="Comando de Scaffolding executado"][![Comando de Scaffolding executado](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Comando-de-Scaffolding-executado-300x113.png "Comando de Scaffolding executado")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Comando-de-Scaffolding-executado.png)[/caption]Podemos reparar que como resultado do comando temos os arquivos criados e adicionados ao nosso projeto:[caption id="attachment_2829" align="aligncenter" width="181" caption="Arquivos gerados pelos MVCScaffolding"][![Arquivos gerados pelos MVCScaffolding](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Arquivos-gerados-pelos-MVCScaffolding-181x300.png "Arquivos gerados pelos MVCScaffolding")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Arquivos-gerados-pelos-MVCScaffolding.png)[/caption]O controller já é criado com todas as actions de CRUD preparadas, inclusive já contendo uma referência para um container do EF 4. O contexto do EF que é criado utiliza as novas feastures de Code First, ou seja, não é preciso criar um arquivo EDMX nem nada do tipo.E pasmem que o banco de dados também será criado!Por padrão o DbContext criado irá utilizar uma instância padrão do SqlExpress que esteja instalada na máquina. Em um próximo post mostrarei como mudar isso.Agora já podemos executar nossa aplicação e teremos as actions no nosso controller, as views e a persistência já criados e implementados, sem nenhum esforço adicional.Abaixo podemos ver algumas imagens das views que foram geradas. Reparem que estas views possuem comportamentos, mesmo aqueles que são comportamentos de banco de dados.[caption id="attachment_2834" align="aligncenter" width="300" caption="View Index gerada pelo MVCScaffolding"][![View Index gerada pelo MVCScaffolding](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/View-Index-gerada-pelo-MVCScaffolding-300x222.png "View Index gerada pelo MVCScaffolding")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/View-Index-gerada-pelo-MVCScaffolding.png)[/caption][caption id="attachment_2831" align="aligncenter" width="300" caption="View Create gerada pelo MVCScaffolding"][![View Create gerada pelo MVCScaffolding](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/View-Create-gerada-pelo-MVCScaffolding-300x222.png "View Create gerada pelo MVCScaffolding")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/View-Create-gerada-pelo-MVCScaffolding.png)[/caption][caption id="attachment_2830" align="aligncenter" width="300" caption="Index com conteudo persistido no banco pelo MVCScaffolding"][![Index com conteudo persistido no banco pelo MVCScaffolding](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Index-com-conteudo-persistido-no-banco-pelo-MVCScaffolding-300x222.png "Index com conteudo persistido no banco pelo MVCScaffolding")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Index-com-conteudo-persistido-no-banco-pelo-MVCScaffolding.png)[/caption][caption id="attachment_2832" align="aligncenter" width="300" caption="View de Detalhes gerada pelo MVCScaffolding"][![View de Detalhes gerada pelo MVCScaffolding](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/View-de-Detalhes-gerada-pelo-MVCScaffolding-300x222.png "View de Detalhes gerada pelo MVCScaffolding")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/View-de-Detalhes-gerada-pelo-MVCScaffolding.png)[/caption][caption id="attachment_2833" align="aligncenter" width="300" caption="View de Exclusao gerada pelo MVCScaffolding"][![View de Exclusao gerada pelo MVCScaffolding](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/View-de-Exclusao-gerada-pelo-MVCScaffolding-300x222.png "View de Exclusao gerada pelo MVCScaffolding")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/View-de-Exclusao-gerada-pelo-MVCScaffolding.png)[/caption]E se você não acredita que o banco já está criado e os dados foram persistidos:[caption id="attachment_2835" align="aligncenter" width="300" caption="Banco de Dados gerado pelo MVCScaffolding"][![Banco de Dados gerado pelo MVCScaffolding](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Bando-de-Dados-gerado-pelo-MVCScaffolding-300x205.png "Banco de Dados gerado pelo MVCScaffolding")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Bando-de-Dados-gerado-pelo-MVCScaffolding.png)[/caption]
 
 ## Resumo
-Bom, por enquanto é isso galera. Há muito mais coisas no MVCScaffolding do que pude mostrar nesse primeiro post. Mas como vocês podem imaginar, não vou parar por aqui. Em breve publicarei mais algumas informações sobre como trabalhar e tirar o melhor proveito do MVCScaffolding.Enquanto isso podem conferir o código fonte todo desta pequena aplicação gerada aqui no github.Abraços,Vinicius Quaiato.
+Bom, por enquanto é isso galera. Há muito mais coisas no MVCScaffolding do que pude mostrar nesse primeiro post. Mas como vocês podem imaginar, não vou parar por aqui. Em breve publicarei mais algumas informações sobre como trabalhar e tirar o melhor proveito do MVCScaffolding.Enquanto isso podem conferir o código fonte todo desta pequena aplicação gerada aqui no github.
+
+Abraços,
+Vinicius Quaiato.

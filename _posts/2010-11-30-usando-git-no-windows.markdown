@@ -50,13 +50,18 @@ Enter file in which to save the key (/c/Users/SeuUser/.ssh/id_rsa):
 {% endhighlight %}
 Apenas pressione Enter.Feito isso você será solicitado para informar uma senha (passphrase). Digite uma senha(que você se lembre!) e depois confirme.Pronto você deverá ver a uma mensagem parecida com esta:
 {% highlight csharp %}
-Your identification has been saved in /c/Users/SeuUser/.ssh/id_rsa.Your public key has been saved in /c/Users/SeuUser/.ssh/id_rsa.pub.The key fingerprint is:e8:ae:60:8f:38:c2:98:1d:6d:84:60:8c:9e:dd:47:81 seuemail@provedor.com
+Your identification has been saved in /c/Users/SeuUser/.ssh/id_rsa.Your 
+public key has been saved in /c/Users/SeuUser/.ssh/id_rsa.pub.The key fingerprint is:e8:ae:60:8f:38:c2:98:1d:6d:84:60:8c:9e:dd:47:81 seuemail@provedor.com
 {% endhighlight %}
-Agora abra o arquivo id_rsa.pub gerado (abrir com -> Notepad) e copie todo o conteúdo dele.Vá ao **_GitHub -> Account Settings -> SSH Public Keys_**.Clique em "Add another public key". Dê um título para ela (eu uso id_rsa mesmo). E o conteúdo do arquivo id_rsa.pub que você copiou cole ele todo no campo key.Pronto pode salvar.Este processo só precisa ser feito uma vez. Bastante simples.Você pode testar se tudo está ok abrindo bash e digitando:
+Agora abra o arquivo id_rsa.pub gerado (abrir com -> Notepad) e copie todo o conteúdo dele.Vá ao **_GitHub -> Account Settings -> SSH Public Keys_**.Clique em "Add another 
+public key". Dê um título para ela (eu uso id_rsa mesmo). E o conteúdo do arquivo id_rsa.pub que você copiou cole ele todo no campo key.Pronto pode salvar.Este processo só precisa ser feito uma vez. Bastante simples.Você pode testar se tudo está ok abrindo bash e digitando:
 {% highlight csharp %}
 ssh git@github.com
 {% endhighlight %}
 Se tudo der certo sua senha(passphrase) será solicitada e você receberá uma mensagem semelhante a esta:[caption id="attachment_2265" align="aligncenter" width="300" caption="github ssh"][![github ssh](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/ssh-300x39.png "github ssh")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/ssh.png)[/caption](se você tiver problemas, pode conferir este [tutorial sobre a geração da key](http://help.github.com/msysgit-key-setup/) também.)Agora você só precisa criar um repositório no GitHub e logo em seguida ele lhe dará as informações sobre como enviar do seu repositório local para o repositório do GitHub.Você pode aprender um pouco mais sobre Git [aqui](http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html).Existem alguns [livros sobre Git](http://www.amazon.co.uk/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=git&x=0&y=0) na Amazon também.
 
 ## Resuminho
-O Git é um DVCS muito bacana. Aliado ao GitHub chega a ser fantástico (confesso que estou gostando muito de trabalhar mais e mais com ele).É MUITO legal trabalhar com bash (depois postarei sobre Git + Powershell). Recomendo fortemente que vocês exercitem um pouco a linha de comando: É produtiva!Olhem um pouco além do TFS e do SVN: vale a pena! É bom conhecer coisas novas e questionar o que já conhecemos. Isso nos faz crescer.Espero que vocês curtam a experiência, pois é muito bacana!Meu usuário lá é vquaiato: [https://github.com/vquaiato](https://github.com/vquaiato). Dá pra ver meus projetos, fazer fork, contribuir, etc.Abraços,Vinicius Quaiato.
+O Git é um DVCS muito bacana. Aliado ao GitHub chega a ser fantástico (confesso que estou gostando muito de trabalhar mais e mais com ele).É MUITO legal trabalhar com bash (depois postarei sobre Git + Powershell). Recomendo fortemente que vocês exercitem um pouco a linha de comando: É produtiva!Olhem um pouco além do TFS e do SVN: vale a pena! É bom conhecer coisas novas e questionar o que já conhecemos. Isso nos faz crescer.Espero que vocês curtam a experiência, pois é muito bacana!Meu usuário lá é vquaiato: [https://github.com/vquaiato](https://github.com/vquaiato). Dá pra ver meus projetos, fazer fork, contribuir, etc.
+
+Abraços,
+Vinicius Quaiato.

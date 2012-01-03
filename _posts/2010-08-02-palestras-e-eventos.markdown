@@ -45,4 +45,7 @@ Ainda em agosto falo sobre Orientação a Objetos, Design Patterns e também sob
 Dia 02 de setembro darei uma [palestra sobre ASP.NET MVC](http://conio.com.br/ssi2010/?page_id=100) na [SSI2010 - Semana de Sistemas de Informação](http://ssiunilago.com.br/ssi2010/) na Unilago (União das Faculdades dos Grandes Lagos) de São José do Rio Preto.
 
 ### .NET Architects Day - DNAD 2010
-Além disso estou envolvido até o pescoço com a organização do .NET Architects Day 2010, conhecido como DNAD 2010.Sendo assim, até eu conseguir desenrolar estas atividades darei uma pausa aqui no blog (se eu conseguir, é claro).Espero que compreendam, e na medida do possível, compareçam a estes eventos, que serão incríveis!Abraços,Vinicius Quaiato.
+Além disso estou envolvido até o pescoço com a organização do .NET Architects Day 2010, conhecido como DNAD 2010.Sendo assim, até eu conseguir desenrolar estas atividades darei uma pausa aqui no blog (se eu conseguir, é claro).Espero que compreendam, e na medida do possível, compareçam a estes eventos, que serão incríveis!
+
+Abraços,
+Vinicius Quaiato.

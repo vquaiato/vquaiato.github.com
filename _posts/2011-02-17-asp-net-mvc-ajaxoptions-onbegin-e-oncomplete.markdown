@@ -35,11 +35,17 @@ Dando continuidade aos exemplos de manipulação do [AjaxOptions com o AjaxHelpe
 - [LoadingElementId](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-loadingelementid/)
 Estas propriedades do objeto [AjaxOptions](http://msdn.microsoft.com/en-us/library/system.web.mvc.ajax.ajaxoptions.aspx) são configuradas com nomes de funções javascript que serão executadas uma no início da requisição, e a outra ao término da mesma.Vamos continuar utilizando o mesmo exemplo dos posts anteriores. Desta vez vamos fazer com que nossa página fique com um background azul no momento em que o request for iniciado, e volte para o normal ao término:
 {% highlight csharp %}
-}
+@using (Ajax.BeginForm(    "AjaxAction",    new AjaxOptions { UpdateTargetId = "div_nome", OnBegin = "init", OnComplete = "complete" }
+)){    @Html.TextBox("nome")<br />    @Html.TextBox("sobrenome")    <input type="submit" value="ajax" />}
+
 {% endhighlight %}
 Nada de novo, apenas a configuração das duas propriedades OnBegin e OnComplete. As funções javascript a que elas se referem estão aqui:
 {% highlight csharp %}
-function init() {    $("body").addClass("azul");}function complete() {    $("body").removeClass("azul");}
+function init() {    $("body").addClass("azul");
+    }
+function complete() {    $("body").removeClass("azul");
+    }
+
 {% endhighlight %}
 Bastante simples hein?! Sem necessidade de maiores explicações.Bom o efeito pode ser visto abaixo:[caption id="attachment_3206" align="aligncenter" width="300" caption="ASP.NET MVC AjaxHelper OnBegin e OnComplete"][![ASP.NET MVC AjaxHelper OnBegin e OnComplete](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-OnBegin-e-OnComplete-300x256.png "ASP.NET MVC AjaxHelper OnBegin e OnComplete")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-OnBegin-e-OnComplete.png)[/caption]Quando a requisição é iniciada o fundo da página é mudado para azul, conforme a função javascript definida.Já ao término da requisição, tudo volta ao normal:[caption id="attachment_3207" align="aligncenter" width="300" caption="ASP.NET MVC AjaxHelper OnBegin e OnComplete completo"][![ASP.NET MVC AjaxHelper OnBegin e OnComplete completo](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-OnBegin-e-OnComplete-2-300x256.png "ASP.NET MVC AjaxHelper OnBegin e OnComplete completo")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-Helper-OnBegin-e-OnComplete-2.png)[/caption]É isso aê galera, mais simples que isso só usando updatepanel hein?! #NOT
 

@@ -47,4 +47,7 @@ O download pode ser feito [aqui neste link](http://entlib.codeplex.com/wikipage?
 A documentação pode ser obtida [aqui](http://entlib.codeplex.com/releases/view/43135).
 
 ### Hands-On
-Uma série de Hands-On pode ser conferida [aqui](http://entlib.codeplex.com/wikipage?title=Hands-on%20Labs&referringTitle=Home), explicando e demonstrando os Application Blocks contidos na EntLib.Espero que baixem e dêem uma estudada, de fato suas vidas ficarão mais simples, e assim poderemos focar no core business das aplicações e não tanto nos "periféricos".[Aqui temos um WebCast](https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032423380&culture=pt-BR) do [Luciano Condé](http://blogs.msdn.com/conde/default.aspx) sobre a EntLib 5.0.Em breve posts de demonstrações.Att,Vinicius Quaiato.
+Uma série de Hands-On pode ser conferida [aqui](http://entlib.codeplex.com/wikipage?title=Hands-on%20Labs&referringTitle=Home), explicando e demonstrando os Application Blocks contidos na EntLib.Espero que baixem e dêem uma estudada, de fato suas vidas ficarão mais simples, e assim poderemos focar no core business das aplicações e não tanto nos "periféricos".[Aqui temos um WebCast](https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032423380&culture=pt-BR) do [Luciano Condé](http://blogs.msdn.com/conde/default.aspx) sobre a EntLib 5.0.Em breve posts de demonstrações.
+
+Att,
+Vinicius Quaiato.

@@ -36,4 +36,7 @@ tags:
 Claro que toda esta estrutura é monstruosa, porém quando estamos trabalhando localmente para desenvolver nossos serviços temos à nossa disposição o Development Fabric que está disponível com o SDK do Azure.Com o Development Fabric podemos "emular" uma estrutura parecida com a que teríamos na nuvem para que possamos desenvolver nossas aplicações.É claro que quando trabalhamos localmente não temos redundância, alta disponibilidade, etc, mas é possível simular algumas coisas.O Development Fabric é iniciado quando executamos uma aplicação Azure local([veja mais aqui nesse post](http://azure.snagy.name/blog/?p=84)).E confira [aqui no MSDN](http://msdn.microsoft.com/en-us/library/dd179455.aspx) como usar o Development Fabric.
 
 ## Resumo
-Então é isso galera, espero que tenha colaborado um pouco no entendimento destes termos que são frequentes em literatura Azure.Abraços,Vinicius Quaiato.
+Então é isso galera, espero que tenha colaborado um pouco no entendimento destes termos que são frequentes em literatura Azure.
+
+Abraços,
+Vinicius Quaiato.

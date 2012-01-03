@@ -38,11 +38,84 @@ A idéia principal do [Pattern Decorator](http://en.wikipedia.org/wiki/Decorator
 ### O exemplo
 Como exemplo vamos imaginar que temos um editor de textos html qualquer. Precisamos implementar funcionalidades de exibir texto plano, negrito, itálico e sublinhado. Podemos ainda ter qualquer combinação destes textos. Ou seja: Só plano. Só Itálico. Itálico e Negrito. Negrito e Sublinhado, etc.Não vou detalhar o passo a passo que eu segui (sim, utilizei TDD), seguem os testes e abaixo a implementação:
 {% highlight csharp %}
-",                 new Sublinhado(new Italico(texto)).Exibir());        }    }
+        [TestMethod]        
+public void Texto_Vinicius_Deve_Exibir_Vinicius()        {
+var texto = new TextoPlano("Vinicius");
+    Assert.AreEqual("Vinicius", texto.Exibir());
+    }
+        [TestMethod]        
+public void Texto_Vinicius_Decorado_Com_Negrito_Deve_Exibir_bViniciusb()        {
+var texto = new TextoPlano("Vinicius");
+    Assert.AreEqual("<b>Vinicius</b>", new Negrito(texto).Exibir());
+    }
+        [TestMethod]        
+public void Texto_Vinicius_Decorado_Com_Negrito_Decorado_Com_italico_Deve_Exibir_ibViniciusbi()        {
+var texto = new TextoPlano("Vinicius");
+    Assert.AreEqual("<i><b>Vinicius</b></i>",                 new Italico(new Negrito(texto)).Exibir());
+    }
+        [TestMethod]        
+public void Texto_Vinicius_Decorado_Com_Italico_Decorado_Com_Sublinhado_Deve_Exibir_uiViniciusiu()        {
+var texto = new TextoPlano("Vinicius");
+    Assert.AreEqual("<u><i>Vinicius</i></u>",                 new Sublinhado(new Italico(texto)).Exibir());
+    }
+    }
+
 {% endhighlight %}
 O comportamento do nosso código é bastante simples. Percebam como criamos um texto plano. E então decoramos este texto plano com qualquer uma das funcionalidades que queremos. Este é o intuito do padrão Decorator.A implementação disso é bastante simples, como vemos abaixo:
 {% highlight csharp %}
-";    }}
+
+public interface ITexto{
+string Exibir();
+    }
+
+
+public class TextoPlano : ITexto{    
+
+private string text;
+    
+public TextoPlano(string text)    {        this.text = text;
+    }
+    
+public string Exibir()    {        return this.text;
+    }
+}
+
+
+public class Sublinhado : ITexto{    
+
+private ITexto text;
+    
+public Sublinhado(ITexto text)    {        this.text = text;
+    }
+    
+public string Exibir()    {        return "<u>" + this.text.Exibir() + "</u>";
+    }
+}
+
+
+public class Italico : ITexto{    
+
+private ITexto text;
+    
+public Italico(ITexto text)    {        this.text = text;
+    }
+    
+public string Exibir()    {        return "<i>" + this.text.Exibir() + "</i>";
+    }
+}
+
+
+public class Negrito : ITexto{    
+
+private ITexto texto;
+    
+public Negrito(ITexto texto)    {        this.texto = texto;
+    }
+    
+public string Exibir()    {        return "<b>" + this.texto.Exibir() + "</b>";
+    }
+}
+
 {% endhighlight %}
 Acho que deu pra entender que a mágica toda está na interface ITexto não é? Graças a esta abstração conseguimos decorar nossos textos da maneira que quisermos.Se amanhã surgir a necessidade de criar um "FormatoBizarroDeTexto" será simples trabalhar com ele, visto que ele apenas decorará algum objeto.Stay SOLID guys. E não se esqueçam:
 

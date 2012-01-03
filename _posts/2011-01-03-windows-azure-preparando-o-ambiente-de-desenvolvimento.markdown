@@ -46,4 +46,7 @@ Agora vamos instalar as ferramentas do Azure para trabalharmos com Visual Studio
 ##
 
 ## Standalone Windows Azure SDK
-Se você não quer trabalhar com Visual Studio você pode instalar apenas o SDK do Windows Azure: [Standalone SDK x64](http://download.microsoft.com/download/3/3/2/3321A9FA-64C3-463F-981A-4E17FC29B15B/WindowsAzureSDK-x64.exe) ou [Standalone SDK x86](http://download.microsoft.com/download/3/3/2/3321A9FA-64C3-463F-981A-4E17FC29B15B/WindowsAzureSDK-x86.exe).Pronto, agora você está com o ambiente configurado para começar a acompanhar os posts que virão.Abraços,Vinicius Quaiato.
+Se você não quer trabalhar com Visual Studio você pode instalar apenas o SDK do Windows Azure: [Standalone SDK x64](http://download.microsoft.com/download/3/3/2/3321A9FA-64C3-463F-981A-4E17FC29B15B/WindowsAzureSDK-x64.exe) ou [Standalone SDK x86](http://download.microsoft.com/download/3/3/2/3321A9FA-64C3-463F-981A-4E17FC29B15B/WindowsAzureSDK-x86.exe).Pronto, agora você está com o ambiente configurado para começar a acompanhar os posts que virão.
+
+Abraços,
+Vinicius Quaiato.

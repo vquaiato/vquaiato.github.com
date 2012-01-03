@@ -32,25 +32,65 @@ Uma amiga ([@lekaverta](http://twitter.com/lekaverta)) me perguntou se havia uma
 ### Juntando duas List com AddRange
 
 {% highlight csharp %}
-
+[TestMethod]
+public void Deve_Juntar_Duas_Listas_Com_AddRange(){
+var lista1 = new List<string> { "a", "b", "c" }
+;
+var lista2 = new List<string> { "e", "d", "f" }
+;
+    lista1.AddRange(lista2);
+    CollectionAssert.IsSubsetOf(lista2, lista1);
+    }
+</string></string>
 {% endhighlight %}
 Acima adicionamos a lista2 inteira dentro da lista1. Nos certificamos disso na linha 9, verificando que a lista2 é um subset da lista1, ou seja, a lista1 contém a lista2.Notem que AddRange é um membro da classe List<t> e não da interface IList<t>.
 
 ### Juntando duas List com Union
 
 {% highlight csharp %}
-
+[TestMethod]
+public void Deve_Juntar_Duas_Listas_Com_Union(){
+var lista1 = new List<string> { "a", "b", "c" }
+;
+var lista2 = new List<string> { "e", "d", "f" }
+;
+var merged = lista1.Union(lista2).ToList();
+    CollectionAssert.IsSubsetOf(lista2, merged);
+    CollectionAssert.IsSubsetOf(lista1, merged);
+    }
+</string></string>
 {% endhighlight %}
 Union, do Linq, nos permite fazer a união de duas listas, resultando em um novo IEnumerable. Desta vez eu verifico que as duas listas são um subset desta nova lista gerada.É importante ressaltar que o Union não duplica elementos iguais presentes nas duas listas, como vemos abaixo:
 {% highlight csharp %}
-
+[TestMethod]
+public void Deve_Juntar_Duas_Listas_Com_Union(){
+var lista1 = new List<string> { "a", "b", "c" }
+;
+var lista2 = new List<string> { "e", "b", "f" }
+;
+var merged = lista1.Union(lista2).ToList();
+    CollectionAssert.IsSubsetOf(lista2, merged);
+    CollectionAssert.IsSubsetOf(lista1, merged);
+    CollectionAssert.AllItemsAreUnique(merged);
+    }
+</string></string>
 {% endhighlight %}
 No código acima o elemento "b" está presente nas duas listas, mas na linha 12 garantimos que todos os itens da nova lista são únicos.
 
 ### Juntando duas List com Concat
 
 {% highlight csharp %}
-
+[TestMethod]
+public void Deve_Juntar_Duas_Listas_Com_Concat(){
+var lista1 = new List<string> { "a", "b", "c" }
+;
+var lista2 = new List<string> { "e", "b", "f" }
+;
+var merged = lista1.Concat(lista2).ToList();
+    CollectionAssert.IsSubsetOf(lista2, merged);
+    CollectionAssert.IsSubsetOf(lista1, merged);
+    }
+</string></string>
 {% endhighlight %}
 Aqui novamente uma nova lista é gerada, no entanto itens iguais são mantidos. O Concat também faz parte do Linq.
 

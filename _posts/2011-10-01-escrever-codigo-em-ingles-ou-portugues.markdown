@@ -34,35 +34,74 @@ Dado que não somos os especialistas no problema por que motivos saímos de uma 
 2. Pegamos um problema que não entendemos e o colocamos em uma língua que não é nossa especialidade
 Qual o problema de traduzir as coisas para o inglês? Sejamos simples: você já pegou um texto em português e traduziu para o inglês? Quando você é **muito bom** em inglês você até consegue fazer isso mesmo sabendo que não ficou 100% como você queria, afinal o português é mais rico, possui peculiaridades, etc. Mas ainda assim você fica relendo o texto e vendo se está de acordo com o texto em português original.O seu cérebro fica fazendo esse mapeamento e esse "de-para" constantemente.
 {% highlight csharp %}
-public class User{    public Shop Finish(Request aRequest){...}}public class Request{...}public class Shop{...}
+
+public class User{    
+
+public Shop Finish(Request aRequest){...}
+}
+
+
+public class Request{...}
+
+
+public class Shop{...}
+
 {% endhighlight %}
 Acima fica bem nítido que Request será constantemente mapeado mentalmente para Pedido. O termo se perde em meio ao código. Request não me faz pensar em Pedido por mais que eu mesmo tenha escrito isso.
 
 ## As dificuldades de comunicação
 Dado que agora você traduziu tudo isso, para o inglês por exemplo, as comunicações entre a equipe começam a ter [atrito](http://pt.wikipedia.org/wiki/Atrito). Todos no time vão começar a fazer um "de-para" dos termos de negócio para os termos do código. Quando ocorrem reuniões de entendimento com o especialista do problema a coisa é pior ainda. Pois o especialista entra em detalhes que você não domina e para tentar chegar até este ponto de entendimento você tenta mapear o que ele diz com o código mas o código está em outra língua, outros termos. O raciocínio começa a ficar prejudicado.<blockquote>Todas as compras possuem pelo menos um pedido e possuem pelo menos um pagamento. Quando o pagamento é à vista as compras só possuem um pagamento.</blockquote>Então o time fica pensando... :
 {% highlight csharp %}
-//pagamento à vistapublic class InvoicePayment : Payment{...}public class CreditCardPayment : Payment{...}
+//pagamento à vista
+public class InvoicePayment : Payment{...}
+
+
+public class CreditCardPayment : Payment{...}
+
 {% endhighlight %}
 É claro que o cerébro é poderoso e consegue fazer isso mas isso não quer dizer que ele não precise trabalhar muito para isso.
 
 ## Buscando uma melhor comunicação entre a equipe
 Em geral não é um time inteiro que tem reuniões com o especialista de domínio (embora possamos achar que isso seria o ideal). Quando uma parte da equipe possui informações sobre o domínio e então traduz isso da forma como acha melhor isso vai gerar um enorme **ruído** no projeto.Para quem não está com o cenário todo desenhado na cabeça e está convivendo apenas com as traduções o entendimento do problema como um todo fica comprometido e parece que estas pessoas apenas escrevem código, por escrever. Se em algum momento estas pessoas precisarem questionar o especialista de domínio sobre algo provavelmente o farão de forma rasa e sem entendimento da resposta.
 {% highlight csharp %}
-public class ShopService{    private StockAvailability VerifyAvaialability(ShopItemCollection items){...}    private bool AcceptsMultiplePayments(Request aRequest){...}    ...}
+
+public class ShopService{    
+
+private StockAvailability VerifyAvaialability(ShopItemCollection items){...}
+    
+private bool AcceptsMultiplePayments(Request aRequest){...}
+    ...}
+
 {% endhighlight %}
 
 
 ## Mescla de idiomas
 Quando o domínio está traduzido e poucas pessoas do time de fato possuem uma visão geral do problema é normal que os outros membros do time comecem a implementar novas funcionalidades em português. Isso acontece pois eles sentem que a parte traduzida está complicada e não é de simples entendimento. O código metade inglês e metade português é uma tentativa de torná-lo mais expressivo.
 {% highlight csharp %}
-public class ShopService{    private StockAvailability VerifyAvaialability(ShopItemCollection items){...}    private bool AcceptsMultiplePayments(Request theRequest){...}    private bool PossuiPagamentoAVista(Request theRequest){...}    ...}
+
+public class ShopService{    
+
+private StockAvailability VerifyAvaialability(ShopItemCollection items){...}
+    
+private bool AcceptsMultiplePayments(Request theRequest){...}
+    
+private bool PossuiPagamentoAVista(Request theRequest){...}
+    ...}
+
 {% endhighlight %}
 
 
 ## Mas a linguagem é inglês
 Não há como comparar as instruções da linguagem (class, for, foreach, while, if, else, public, private, etc) com operações e conceitos de domínio. Eles representam apenas infraestrutura e suporte para todo o problema a ser resolvido. Não fazem parte do vocabulário cotidiano do software. Quando temos código claro esses detalhes de infra passam desapercebidos.
 {% highlight csharp %}
-    bool PERMITE = true;    bool NÃO_PERMITE = false;    private bool PermiteMultiplasFormasDePagamento(Pedido oPedido){        if(oPedido.PossuiPagamentoAVista)            return NÃO_PERMITE;        return PERMITE;    }
+
+bool PERMITE = true;
+bool NÃO_PERMITE = false;
+    
+private bool PermiteMultiplasFormasDePagamento(Pedido oPedido){        if(oPedido.PossuiPagamentoAVista)            return NÃO_PERMITE;
+    return PERMITE;
+    }
+
 {% endhighlight %}
 
 
@@ -70,4 +109,7 @@ Não há como comparar as instruções da linguagem (class, for, foreach, while,
 Na verdade eu <del datetime="2011-10-01T13:12:11+00:00">"estou me lixando" para o DDD neste caso</del> nem estou falando sobre DDD aqui. Não é por este motivo que eu tento escrever o código na linguagem do negócio. Isso pode me ajudar a ter uma "linguagem onipresente" em todo o projeto, mas essa não é a razão.
 
 ## Resumo
-Todos os motivos que citei acima, em principal o **atrito na comunicação** são problemas que eu vivenciei em diversos projetos. Sempre que passei por estas situações, por melhor que seja meu inglês e de outros membros do time, a conversa diária com o cliente não é em inglês e isso sempre se mostrou um problema. É importante ressaltar, porém, que esse problema não é fatal ele apenas gera dificuldade e demora no entendimento(principalmente quando é preciso explicar o domínio usando código para outros membros do time).No entanto se tivermos um domínio simples, ou que não seja extenso, esse atrito é menor ou pode passar a não existir (mas eu me arrisco a dizer que são poucos os sistemas que possuem domínios simples).No final das contas vai de cada um também. Escrever código em inglês é estética afinal ele não agrega estando em inglês. E mais importante que isso: **escrever código em inglês não prova em nada que você sabe falar inglês ok?!**Não é vergonha nenhuma preferir escrever código de domínio na língua natal. Não pense que fazer isso mostrará aos outros que você não sabe inglês. Escrever meia dúzia de palavra sem outro idioma não prova nada.É importante frisar também que o código será trabalhado por diversas pessoas e todas precisam estar confortáveis com a forma como ele está escrito. Todos precisam estar com pleno entendimento do domínio e ler código e ter reuniões no mesmo idioma auxiliam em muito nesta tarefa.Essa é apenas a minha opinião e experiência. Não é uma verdade para todos. E vocês o que acham? Como preferem? Por quais motivos?Abraços,Vinicius Quaiato.
+Todos os motivos que citei acima, em principal o **atrito na comunicação** são problemas que eu vivenciei em diversos projetos. Sempre que passei por estas situações, por melhor que seja meu inglês e de outros membros do time, a conversa diária com o cliente não é em inglês e isso sempre se mostrou um problema. É importante ressaltar, porém, que esse problema não é fatal ele apenas gera dificuldade e demora no entendimento(principalmente quando é preciso explicar o domínio usando código para outros membros do time).No entanto se tivermos um domínio simples, ou que não seja extenso, esse atrito é menor ou pode passar a não existir (mas eu me arrisco a dizer que são poucos os sistemas que possuem domínios simples).No final das contas vai de cada um também. Escrever código em inglês é estética afinal ele não agrega estando em inglês. E mais importante que isso: **escrever código em inglês não prova em nada que você sabe falar inglês ok?!**Não é vergonha nenhuma preferir escrever código de domínio na língua natal. Não pense que fazer isso mostrará aos outros que você não sabe inglês. Escrever meia dúzia de palavra sem outro idioma não prova nada.É importante frisar também que o código será trabalhado por diversas pessoas e todas precisam estar confortáveis com a forma como ele está escrito. Todos precisam estar com pleno entendimento do domínio e ler código e ter reuniões no mesmo idioma auxiliam em muito nesta tarefa.Essa é apenas a minha opinião e experiência. Não é uma verdade para todos. E vocês o que acham? Como preferem? Por quais motivos?
+
+Abraços,
+Vinicius Quaiato.

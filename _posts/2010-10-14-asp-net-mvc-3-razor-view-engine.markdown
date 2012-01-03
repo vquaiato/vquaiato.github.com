@@ -50,8 +50,10 @@ Não! Razor não é uma nova linguagem. É apenas uma forma diferente de escreve
 ### Razor é inteligente!
 Razor realmente é muito podereso. Seu parser é muito inteligente, ele conhece C#, conhece VB, e é claro conhece HTML. Desta forma podemos escrever um código como este:
 {% highlight csharp %}
-            @foreach(var pessoa in Model){- @pessoa.Nome (@pessoa.Sexo) - @pessoa.Idade anos
-}    </div>
+<div>            @foreach(var pessoa in Model){
+ @pessoa.Nome (@pessoa.Sexo) - @pessoa.Idade anos
+}
+    </div>
 {% endhighlight %}
 E podemos ver que o resultado está correto:[caption id="attachment_1807" align="aligncenter" width="300" caption="Resultado do uso do Razor"][![Resultado do uso do Razor](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/syntax-result-300x116.png "Resultado do uso do Razor")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/syntax-result.png)[/caption]Ou seja: não há diferença no resultado final! O Razor se integra muito bem ao código HTML, você não fica com muito ruído no código.
 
@@ -66,7 +68,17 @@ Vamos criar um novo projeto ASP.NET MVC 3:[caption id="attachment_1809" align="a
 ## Criando um controller
 Vamos criar um controller bem simples, como pode ser visto abaixo:
 {% highlight csharp %}
-public class HomeController : Controller{    public ActionResult Index()    {        var viewModel = new SimpleViewModel                            {                                DataQualquer = DateTime.Now.AddDays(3),                                Nome = "Quaiato ASP.NET MVC Razor",                                ListaInteiros = new[] { 1, 1, 2, 3, 5, 8 }                            };        return View(viewModel);    }}
+
+public class HomeController : Controller{    
+
+public ActionResult Index()    {
+var viewModel = new SimpleViewModel                            {                                DataQualquer = DateTime.Now.AddDays(3),                                Nome = "Quaiato ASP.NET MVC Razor",                                ListaInteiros = new[] { 1, 1, 2, 3, 5, 8 }
+                            }
+;
+    return View(viewModel);
+    }
+}
+
 {% endhighlight %}
 Apenas criei uma classe com as propriedades acima, para servir como meu "view model" (veja mais sobre ViewModels aqui).Com o ASP.NET MVC 3 temos views com model dynamic, ou seja, o model type da nossa view é dynamic, e podemos passar qualquer objeto para ela, desde que seus membros existam, pois serão avaliados em runtime.
 
@@ -75,10 +87,12 @@ Apenas criei uma classe com as propriedades acima, para servir como meu "view mo
 ## Criando a view com Razor
 Abaixo temos a view de exemplo:
 {% highlight csharp %}
-# Olá @Model.Nome
+<head><title>Index</title></head><body># Olá @Model.Nome
 <div>
 Você foi cadastrado em: @Model.DataQualquer.ToString("dd/MMM/yyyy")
-Sua sequência fibonacci é:@foreach(var num in Model.ListaInteiros){<span>@num,</span>}</div></body></html>
+Sua sequência fibonacci é:@foreach(var num in Model.ListaInteiros){
+span>@num,</span>}
+</div></body></html>
 {% endhighlight %}
 O código da view é bastante simples. Reparem na **_linha 12_** que podemos formatar nossa data, assim como faríamos em um código C# mesmo. Este é o poder do Razor: simplicidade e flexibilidade, sem dores.E o resultado podemos conferir aqui:[caption id="attachment_1816" align="aligncenter" width="300" caption="Resultado da aplicacao ASP.NET MVC 3 com Razor"][![Resultado da aplicacao ASP.NET MVC 3 com Razor](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/resultado-da-aplicacao-MVC-3-com-Razor-300x171.png "Resultado da aplicacao ASP.NET MVC 3 com Razor")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/resultado-da-aplicacao-MVC-3-com-Razor.png)[/caption]
 

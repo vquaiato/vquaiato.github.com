@@ -38,4 +38,7 @@ Sim, no momento as vagas que temos são para São Paulo, capital. Algumas pessoa
 Mande seu CV, blog, github, etc para: **patricia.belda[at]gonow.com.br** ou diretamente para mim: **vinicius.quaiato[at]gonow.com.br**.
 
 ### Saiba mais sobre a Gonow
-[Veja este post aqui no blog (muitas fotos)](http://viniciusquaiato.com/blog/gonow-tecnologia/).[Confira este post feito pelo Fábio Akita](http://akitaonrails.com/2010/08/16/off-topic-minha-carreira-rails-fase-4-agora-na-gonow).[Confira o site da Gonow](http://www.gonow.com.br).Ficamos no aguardo. Se puderem, divulguem as vagas também.Abraços,Vinicius Quaiato.
+[Veja este post aqui no blog (muitas fotos)](http://viniciusquaiato.com/blog/gonow-tecnologia/).[Confira este post feito pelo Fábio Akita](http://akitaonrails.com/2010/08/16/off-topic-minha-carreira-rails-fase-4-agora-na-gonow).[Confira o site da Gonow](http://www.gonow.com.br).Ficamos no aguardo. Se puderem, divulguem as vagas também.
+
+Abraços,
+Vinicius Quaiato.

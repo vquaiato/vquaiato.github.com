@@ -55,4 +55,7 @@ Quando o ano começou eu nem imaginava que daria alguma palestra e fiquei muito 
 
 
 ## Resumo
-Bom galera, todo esse trabalho foi feito para vocês. Para que juntos possamos crescer, trocar experiências e nos aperfeiçoarmos ainda mais.E bora nessa que o ano já começou!Abraços,Vinicius Quaiato.
+Bom galera, todo esse trabalho foi feito para vocês. Para que juntos possamos crescer, trocar experiências e nos aperfeiçoarmos ainda mais.E bora nessa que o ano já começou!
+
+Abraços,
+Vinicius Quaiato.

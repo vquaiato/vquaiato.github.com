@@ -35,7 +35,7 @@ O processo via [Powershell](http://pt-br.wordpress.com/tag/powershell/) pode ser
 ## Criando um novo deploy Windows Azure no Powershell
 Como ainda não estamos automatizando nosso build vamos compilar uma solution [Azure](http://azure.com) no Visual Studio que será utilizada para o deploy.Para todos os scripts que executaremos precisaremos de algumas informações repetidamente. Para isso vamos criar variáveis no Powershell e armazenar alguns valores:
 {% highlight csharp %}
-
+$nome_servico = "meu_servico"$subs_id = "a123bc12a-a123-1234-1234-a12b123c1234"$cert = Get-Item cert:\CurrentUser\My\<thumbprint />
 {% endhighlight %}
 (os dados acima são fictícios hein! :P)Após definirmos estes dados vamos então começar a criar o deploy. Para isso vou definir mais três variáveis uma para o label da nossa publicação, uma para o caminho do pacote e uma para o caminho do arquivo de configuração.
 {% highlight csharp %}
@@ -59,10 +59,14 @@ Get-HostedService -ServiceName $service_name -SubscriptionId $subscription_id -C
 {% endhighlight %}
 Pronto! Isso é tudo que você precisa fazer para "automatizar" seu deploy com o Windows Azure.Eu criei um script powershell que já faz tudo isso e é possível chamá-lo com passagem de parâmetros, isso deve facilitar um pouco as coisas.[O script completo está no gist](https://gist.github.com/817052)(github) e aqui:
 {% highlight csharp %}
-Param($S,$I,$Cert,$L,$P,$Cfg)$start = Get-Date$service_name = $S$subscription_id = $I$certificate = $Cert$label = $L$package = $P$config_file = $Cfgif(-not(Get-PSSnapin AzureManagementToolsSnapIn)){    Add-PSSnapin AzureManagementToolsSnapIn}New-Deployment -ServiceName $service_name -SubscriptionId $subscription_id -Certificate $certificate -Slot staging -Package $package -Configuration $config_file -Label $label |Get-OperationStatus -WaitToCompleteGet-HostedService -ServiceName $service_name -SubscriptionId $subscription_id -Certificate $certificate | Get-Deployment -Slot staging |Set-DeploymentStatus running |Get-OperationStatus -WaitToCompleteGet-HostedService -ServiceName $service_name -SubscriptionId $subscription_id -Certificate $certificate |Get-Deployment -Slot staging |Move-Deployment |Get-OperationStatus -WaitToCompleteGet-HostedService -ServiceName $service_name -SubscriptionId $subscription_id -Certificate $certificate | Get-Deployment -Slot staging |Set-DeploymentStatus suspended |Get-OperationStatus -WaitToCompleteGet-HostedService -ServiceName $service_name -SubscriptionId $subscription_id -Certificate $certificate | Get-Deployment -Slot staging |Remove-Deployment |Get-OperationStatus -WaitToComplete$end = Get-Date"Deploy finished in " + ($end-$start).TotalSeconds + " secs."
+Param($S,$I,$Cert,$L,$P,$Cfg)$start = Get-Date$service_name = $S$subscription_id = $I$certificate = $Cert$label = $L$package = $P$config_file = $Cfgif(-not(Get-PSSnapin AzureManagementToolsSnapIn)){    Add-PSSnapin AzureManagementToolsSnapIn}
+New-Deployment -ServiceName $service_name -SubscriptionId $subscription_id -Certificate $certificate -Slot staging -Package $package -Configuration $config_file -Label $label |Get-OperationStatus -WaitToCompleteGet-HostedService -ServiceName $service_name -SubscriptionId $subscription_id -Certificate $certificate | Get-Deployment -Slot staging |Set-DeploymentStatus running |Get-OperationStatus -WaitToCompleteGet-HostedService -ServiceName $service_name -SubscriptionId $subscription_id -Certificate $certificate |Get-Deployment -Slot staging |Move-Deployment |Get-OperationStatus -WaitToCompleteGet-HostedService -ServiceName $service_name -SubscriptionId $subscription_id -Certificate $certificate | Get-Deployment -Slot staging |Set-DeploymentStatus suspended |Get-OperationStatus -WaitToCompleteGet-HostedService -ServiceName $service_name -SubscriptionId $subscription_id -Certificate $certificate | Get-Deployment -Slot staging |Remove-Deployment |Get-OperationStatus -WaitToComplete$end = Get-Date"Deploy finished in " + ($end-$start).TotalSeconds + " secs."
 {% endhighlight %}
 O uso deste script é algo mais ou menos assim:
 {% highlight csharp %}
-
+.'.\push.ps1' -S "service_name" -I "your_subscription_id" -Cert (Get-Item cert:\CurrentUser\My\<thumb_print>) -L "label_name" -P ".cspkg local" -Cfg ".cscfg local"</thumb_print>
 {% endhighlight %}
-A idéia é transformar isso em cmdlets do powershell para facilitar um pouco as coisas e depois disso criar build tasks para o [MS-Build](http://viniciusquaiato.com/blog/msbuild-nuget/).Abraços,Vinicius Quaiato.
+A idéia é transformar isso em cmdlets do powershell para facilitar um pouco as coisas e depois disso criar build tasks para o [MS-Build](http://viniciusquaiato.com/blog/msbuild-nuget/).
+
+Abraços,
+Vinicius Quaiato.

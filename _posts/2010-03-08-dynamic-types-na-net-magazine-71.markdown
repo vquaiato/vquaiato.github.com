@@ -44,4 +44,7 @@ tags:
 - Produtividade com T4 - Por: Rodrigo Sendin
 - Desenvolvimento Desktop no .NET - Por: Everton Coimbra de Araújo
 - ASP.NET e ADO.NET - Por: Erysson Batista Barros de Souz
-Deve chegar nas bancas nos próximos dias!Por favor dêem seu feedback, é realmente muito importante!Abraços,Vinicius Quaiato.
+Deve chegar nas bancas nos próximos dias!Por favor dêem seu feedback, é realmente muito importante!
+
+Abraços,
+Vinicius Quaiato.

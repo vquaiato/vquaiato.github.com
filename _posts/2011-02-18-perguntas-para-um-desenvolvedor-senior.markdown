@@ -53,4 +53,7 @@ tags:
 - Are you still writing code? Do you love it?
 - You've just been assigned to a project in a new technology how would you get started?
 - How does the addition of Service Orientation change systems? When is it appropriate to use?
-Your thoughts? I'll add good questions from the comments throughout the day.E aí? Quantas googladas você deu?Abraços,Vinicius Quaiato.
+Your thoughts? I'll add good questions from the comments throughout the day.E aí? Quantas googladas você deu?
+
+Abraços,
+Vinicius Quaiato.

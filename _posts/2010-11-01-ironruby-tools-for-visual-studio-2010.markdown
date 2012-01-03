@@ -48,4 +48,7 @@ Com a integração do IronRuby no VS2010 podemos ver quando estamos cometendo al
 Este foi um primeiro olhar sobre as ferramentas do IronRuby para o VS2010. Continuaremos a explorar as mesmas e acompanhar seu desenvolvimento.Confesso que estou fazendo um esforço para olhar o os fontes e tentar de alguma maneira contribuir como committer, quem sabe.
 
 ## IronPython Tools
-Não poderia ter deixado de dizer que também já existem ferramentas para trabalhar com IronPython no Visual Studio 2010. As ferramentas do IronPython já haviam sido lançadas antes dos projetos Iron* serem entregues para as comunidaes, portanto está mais estável e funcional que a versão do IronRuby.Confira aqui: [http://ironpython.net/tools/](http://ironpython.net/tools/)Sugestões e críticas são bem vindas, façam seus comentários.Abraços,Vinicius Quaiato.
+Não poderia ter deixado de dizer que também já existem ferramentas para trabalhar com IronPython no Visual Studio 2010. As ferramentas do IronPython já haviam sido lançadas antes dos projetos Iron* serem entregues para as comunidaes, portanto está mais estável e funcional que a versão do IronRuby.Confira aqui: [http://ironpython.net/tools/](http://ironpython.net/tools/)Sugestões e críticas são bem vindas, façam seus comentários.
+
+Abraços,
+Vinicius Quaiato.

@@ -31,6 +31,12 @@ Este código resulta no seguinte erro:<blockquote>Compiler Error Message: CS1502
 {% endhighlight %}
 ou ainda (evite isso, é feio!)
 {% highlight csharp %}
-@{Html.RenderAction("MinhaActionQueRetornaPartial");}
+@{
+tml.RenderAction("MinhaActionQueRetornaPartial");
+    }
+
 {% endhighlight %}
-Isso tudo acaba gerando uma grande confusão. Até faz sentido o RenderAction ser void e internamente renderizar o conteúdo, mas isso fica feio, principalmente agora trabalhando com Razor. Seria melhor se, assim como o método Action ele também retornasse algo parecido com o MvcHtmlString, e então utilizaríamos o @ para renderizar.Bom, fica aí a dica.Att,Vinicius Quaiato.
+Isso tudo acaba gerando uma grande confusão. Até faz sentido o RenderAction ser void e internamente renderizar o conteúdo, mas isso fica feio, principalmente agora trabalhando com Razor. Seria melhor se, assim como o método Action ele também retornasse algo parecido com o MvcHtmlString, e então utilizaríamos o @ para renderizar.Bom, fica aí a dica.
+
+Att,
+Vinicius Quaiato.

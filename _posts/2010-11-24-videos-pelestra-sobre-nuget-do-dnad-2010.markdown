@@ -30,4 +30,7 @@ Fala galera, dia 20/11/2010 apresentei uma palestra sobre o NuGet no DNAD 2010.O
 <object width="640" height="390"><param name="movie" value="http://www.youtube.com/v/8WdcGGswlZc&hl=pt_BR&feature=player_embedded&version=3" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://www.youtube.com/v/8WdcGGswlZc&hl=pt_BR&feature=player_embedded&version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed></object>
 
 ### Parte 3
-<object width="640" height="390"><param name="movie" value="http://www.youtube.com/v/c1DMRjioR6E&hl=pt_BR&feature=player_embedded&version=3" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://www.youtube.com/v/c1DMRjioR6E&hl=pt_BR&feature=player_embedded&version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed></object>Espero que curtam, e qualquer dúvida estou à disposição!Abraços,Vinicius Quaiato.
+<object width="640" height="390"><param name="movie" value="http://www.youtube.com/v/c1DMRjioR6E&hl=pt_BR&feature=player_embedded&version=3" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://www.youtube.com/v/c1DMRjioR6E&hl=pt_BR&feature=player_embedded&version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed></object>Espero que curtam, e qualquer dúvida estou à disposição!
+
+Abraços,
+Vinicius Quaiato.

@@ -50,7 +50,10 @@ Service Locator é um padrão. Que basicamente encapsula o processo de obtençã
 ## Service Locator para Setter Injection
 Se tirarmos dos construtores as dependências não obrigatórias isso significa que vamos injetá-las via setter, e somente no momento em que elas realmente forem utilizadas(se forem!).Com isso o Service Locator cumpre bem o papel de resolver estas dependências. E ainda que você diga: "Ah mas eu uso um container de IoC", meu amigo, você está usando um Service Locator no final das contas, veja:
 {% highlight csharp %}
-
+//container de IoC 1objeto.DependenciaOpcional = meuContainer.Resolve<tipo>();
+    //container de IoC 2objeto.DependenciaOpcional = meuContainer2.Get<tipo>();
+    //service locatorobjeto.DependenciaOpcional = serviceLocator.DependenciaOpcional();
+    </tipo></tipo>
 {% endhighlight %}
 Oras, as três linhas de código são praticamente iguais, e não são maléficas! Se a dependência é opcional não faz sentido passá-la no construtor do objeto! 
 
@@ -58,4 +61,7 @@ Oras, as três linhas de código são praticamente iguais, e não são maléfica
 Muitos vão dizer: <blockquote>Ah, mas assim a dependência não está explícita!</blockquote>Meu Deus! Como não está? Não é só dependência no construtor que é explícita. O que diz que uma dependência **não** é explícita é o fato de que quem está externo ao objeto não saber que ele faz uso de um terceiro. O setter deixa isso bastante claro: _"Olha, em algum momento eu faço uso dessa dependência, se você quiser você pode me passar, senão ok!"_.E isso é **exatamente a mesma coisa que acontece com o construtor**, pois não sabemos quando e nem onde a dependência será utilizada (e nem se será!).Oras por que então não colocamos no construtor dos objetos TODAS as suas propriedades? Por que muitas delas são opcionais, e o objeto pode conviver sem elas!
 
 ## Em resumo...
-Service Locator tem seu papel na resolução de dependências.. Não confunda IoC com DI e não confunda DI com constructor injection.É importante separar as ferramentas dos conceitos e dos padrões. É importante aprofundar um pouco nestes conceitos e tentar enxergar as coisas de diferentes maneiras. Tentar compreender os cenários, ver se eles existem e como as coisas funcionam em cada cenário.Se você é daqueles que gosta de citar o Martin Fowler para tudo, aí vai:<blockquote>I've often heard the complaint that these kinds of **service locators** are a bad thing because they aren't testable because you can't substitute implementations for them. **Certainly you can design them badly to get into this kind of trouble, but you don't have to**. In this case the service locator instance is just a simple data holder. I can easily create the locator with test implementations of my services.</blockquote>O negrito é por minha conta.Abraços,Vinicius Quaiato.
+Service Locator tem seu papel na resolução de dependências.. Não confunda IoC com DI e não confunda DI com constructor injection.É importante separar as ferramentas dos conceitos e dos padrões. É importante aprofundar um pouco nestes conceitos e tentar enxergar as coisas de diferentes maneiras. Tentar compreender os cenários, ver se eles existem e como as coisas funcionam em cada cenário.Se você é daqueles que gosta de citar o Martin Fowler para tudo, aí vai:<blockquote>I've often heard the complaint that these kinds of **service locators** are a bad thing because they aren't testable because you can't substitute implementations for them. **Certainly you can design them badly to get into this kind of trouble, but you don't have to**. In this case the service locator instance is just a simple data holder. I can easily create the locator with test implementations of my services.</blockquote>O negrito é por minha conta.
+
+Abraços,
+Vinicius Quaiato.

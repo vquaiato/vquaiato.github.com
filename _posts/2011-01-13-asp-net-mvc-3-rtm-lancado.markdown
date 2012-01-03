@@ -25,4 +25,7 @@ Foram poucas as mudanças e correções, pelo menos as relatadas no [Release Not
 - ModelMetadataProvider padrão voltou a ser DataAnnotationsModelMetadataProvider em virtudes de bugs com o CachedDataAnnotationsMetadataProvider que entrou para o MVC Futures
 - Copiar e colar um trecho de expressão Razor que continha espaços está corrigido.
 - Renomear arquivo Razor aberto no editor tinha bugs, e também foi corrigido
-Estas informações estão disponíveis no arquivo Release Notes, e até o momento são as únicas mudanças relatadas.Confesso que não verifiquei o fonte do projeto(não sei se já está no codeplex o fonte mais atual).Abraços,Vinicius Quaiato.
+Estas informações estão disponíveis no arquivo Release Notes, e até o momento são as únicas mudanças relatadas.Confesso que não verifiquei o fonte do projeto(não sei se já está no codeplex o fonte mais atual).
+
+Abraços,
+Vinicius Quaiato.
