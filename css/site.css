@@ -10,7 +10,9 @@ ul{
 ul li{
 	list-style-type:none;
 }
-
+h2, h3 {
+	text-shadow: 1px 1px 1px #ababab;
+}
 section#title{
 	text-align: center;
 }
