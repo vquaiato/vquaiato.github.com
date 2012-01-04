@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Silverlight
-keywords: [Silverlight]
+title: Posts tagged silverlight
+keywords: [silverlight]
 ---
 <h2 class="category">Silverlight</h2>
 <ul class="posts">

@@ -1,16 +1,10 @@
 ---
 layout: default
-title: Posts tagged visual-studio-2010
-keywords: [visual-studio-2010]
+title: Posts tagged net-4-0
+keywords: [net-4-0]
 ---
-<h2 class="category">Visual Studio 2010</h2>
+<h2 class="category">.NET 4.0</h2>
 <ul class="posts">
-<li>
-<p>
-<span class="date">12/11/2009</span> &raquo; 
-<a href="/blog/visual-studio-2010-novas-features-docking-janelas">Visual Studio 2010 - Novas Features - Docking Janelas</a>
-</p>
-</li> 
 <li>
 <p>
 <span class="date">12/11/2009</span> &raquo; 
@@ -21,18 +15,6 @@ keywords: [visual-studio-2010]
 <p>
 <span class="date">12/11/2009</span> &raquo; 
 <a href="/blog/visual-studio-2010-novas-features-parallel-for">Visual Studio 2010 - Novas Features - Parallel For</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">21/11/2009</span> &raquo; 
-<a href="/blog/silverlight-4-capturando-webcam">Silverlight 4 beta - Novas Features - Capturando Webcam</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">26/11/2009</span> &raquo; 
-<a href="/blog/silverlight-4-beta-%25e2%2580%2593-novas-features-%25e2%2580%2593-acessando-arquivos">Silverlight 4 beta - Novas Features - Acessando Arquivos</a>
 </p>
 </li> 
 <li>
@@ -49,8 +31,8 @@ keywords: [visual-studio-2010]
 </li> 
 <li>
 <p>
-<span class="date">25/01/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-jquery">ASP.NET MVC + JQuery</a>
+<span class="date">21/01/2010</span> &raquo; 
+<a href="/blog/ironruby-rodando-ruby-dentro-do-net">IronRuby: Rodando Ruby dentro do .NET</a>
 </p>
 </li> 
 <li>
@@ -73,26 +55,26 @@ keywords: [visual-studio-2010]
 </li> 
 <li>
 <p>
+<span class="date">26/02/2010</span> &raquo; 
+<a href="/blog/asp-net-ajax-library-nova-biblioteca-do-asp-net-4-0">Asp.Net Ajax Library: Nova biblioteca do Asp.Net 4.0</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">01/03/2010</span> &raquo; 
+<a href="/blog/entity-framework-4-0-utilizando-many-to-many-com-pocos">Entity Framework 4.0: Utilizando many-to-many com POCOs</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">08/03/2010</span> &raquo; 
 <a href="/blog/dynamic-types-na-net-magazine-71">Dynamic Types na .Net Magazine #71</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">09/03/2010</span> &raquo; 
-<a href="/blog/code-snippet-para-testmethods-no-visualstudio">Code Snippet para TestMethods no VisualStudio</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">11/03/2010</span> &raquo; 
 <a href="/blog/microsoft-community-launch-2010-sao-paulo-sp">Microsoft Community Launch 2010 - São Paulo - SP</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">16/03/2010</span> &raquo; 
-<a href="/blog/site-community-launch-sp-faca-sua-inscricao">Site Community Launch SP - Faça sua inscrição!</a>
 </p>
 </li> 
 <li>
@@ -109,14 +91,32 @@ keywords: [visual-studio-2010]
 </li> 
 <li>
 <p>
-<span class="date">29/03/2010</span> &raquo; 
-<a href="/blog/windows-phone-7-criando-um-leitor-de-rss">Windows Phone 7 - Criando um leitor de RSS</a>
+<span class="date">22/03/2010</span> &raquo; 
+<a href="/blog/apresentacao-dynamic-types-no-net-4">Apresentação Dynamic Types no .NET 4</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">04/04/2010</span> &raquo; 
-<a href="/blog/windows-phone-7-trabalhando-com-touchscreen">Windows Phone 7: trabalhando com touchscreen</a>
+<span class="date">25/03/2010</span> &raquo; 
+<a href="/blog/programacao-dinamica-com-c-e-ironruby">Programação dinâmica com C# e IronRuby</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">30/03/2010</span> &raquo; 
+<a href="/blog/ziptfirst-tsecond-tresult-novo-extension-do-linq">Zip&lt; TFirst, TSecond, TResult&gt; novo extension do LINQ</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">01/04/2010</span> &raquo; 
+<a href="/blog/community-launch-rj-1704-palestra-sobre-ef4">Community Launch RJ - 17/04 - Palestra sobre EF4</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">14/04/2010</span> &raquo; 
+<a href="/blog/net-4-lancado">.NET 4 lançado</a>
 </p>
 </li> 
 <li>
@@ -133,6 +133,24 @@ keywords: [visual-studio-2010]
 </li> 
 <li>
 <p>
+<span class="date">22/04/2010</span> &raquo; 
+<a href="/blog/enterprise-library-5-0-lancada">Enterprise Library 5.0 - Lançada!</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">22/04/2010</span> &raquo; 
+<a href="/blog/guia-de-boas-praticas-com-enterprise-library-5-0">Guia de boas práticas com Enterprise Library 5.0</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">26/04/2010</span> &raquo; 
+<a href="/blog/lazy-loading-no-entity-framework-4-0">Lazy Loading no Entity Framework 4.0</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">27/04/2010</span> &raquo; 
 <a href="/blog/eager-loading-no-entity-framework-4-0">Eager Loading no Entity Framework 4.0 </a>
 </p>
@@ -141,6 +159,12 @@ keywords: [visual-studio-2010]
 <p>
 <span class="date">29/04/2010</span> &raquo; 
 <a href="/blog/windows-phone-7-developer-tools-para-visual-studio-2010-rtm">Windows Phone 7 Developer Tools para Visual Studio 2010 RTM</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">06/05/2010</span> &raquo; 
+<a href="/blog/mef-managed-extensibility-framework-no-net-4">MEF - Managed Extensibility Framework no .NET 4</a>
 </p>
 </li> 
 <li>
@@ -181,38 +205,44 @@ keywords: [visual-studio-2010]
 </li> 
 <li>
 <p>
+<span class="date">05/07/2010</span> &raquo; 
+<a href="/blog/ironruby-basics-para-net-lovers-iii">:IronRuby Basics para .Net Lovers => III</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">17/07/2010</span> &raquo; 
+<a href="/blog/eval-em-c-com-ironruby">Eval em C# com IronRuby</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">06/08/2010</span> &raquo; 
+<a href="/blog/regras-que-sempre-mudam-ironruby-nelas">Regras que sempre mudam? IronRuby nelas!</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">11/08/2010</span> &raquo; 
+<a href="/blog/ironruby-wpf-abrindo-janelas-de-dialogo">IronRuby + WPF: Abrindo janelas de diálogo</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">22/08/2010</span> &raquo; 
 <a href="/blog/teched-brasil-2010-minha-agenda">TechEd Brasil 2010 - Minha agenda</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">02/10/2010</span> &raquo; 
-<a href="/blog/quicktip-visual-studio-2010-wallpapers">QuickTip: Visual Studio 2010 Wallpapers</a>
+<span class="date">29/08/2010</span> &raquo; 
+<a href="/blog/tagcloud-em-asp-net-mvc">TagCloud em ASP.NET MVC </a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">08/10/2010</span> &raquo; 
-<a href="/blog/nupack-uma-das-melhores-invencoes-da-microsoft">NuPack: Uma das melhores invenções da Microsoft</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">02/11/2010</span> &raquo; 
-<a href="/blog/repl-ironruby-direto-no-visual-studio-2010">REPL IronRuby direto no Visual Studio 2010</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">22/11/2010</span> &raquo; 
-<a href="/blog/esquema-de-cores-visual-studio-e-razor">Esquema de cores Visual Studio e Razor</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">23/11/2010</span> &raquo; 
-<a href="/blog/alm-summit-brasil-voce-nao-pode-perder">ALM Summit Brasil: você vai perder?</a>
+<span class="date">01/10/2010</span> &raquo; 
+<a href="/blog/quicktip-nhibernate-em-projetos-net-4">QuickTip: NHibernate em projetos .NET 4</a>
 </p>
 </li> 
 </ul>

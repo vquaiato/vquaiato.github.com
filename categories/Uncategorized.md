@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Uncategorized
-keywords: [Uncategorized]
+title: Posts tagged uncategorized
+keywords: [uncategorized]
 ---
 <h2 class="category">Uncategorized</h2>
 <ul class="posts">

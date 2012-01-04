@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Dojos
-keywords: [Dojos]
+title: Posts tagged dojos
+keywords: [dojos]
 ---
 <h2 class="category">Dojos</h2>
 <ul class="posts">

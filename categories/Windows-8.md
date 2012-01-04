@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Windows 8
-keywords: [Windows 8]
+title: Posts tagged windows-8
+keywords: [windows-8]
 ---
 <h2 class="category">Windows 8</h2>
 <ul class="posts">

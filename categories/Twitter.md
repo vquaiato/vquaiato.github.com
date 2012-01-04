@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Twitter
-keywords: [Twitter]
+title: Posts tagged twitter
+keywords: [twitter]
 ---
 <h2 class="category">Twitter</h2>
 <ul class="posts">

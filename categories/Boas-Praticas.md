@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Boas Práticas
-keywords: [Boas Práticas]
+title: Posts tagged boas-praticas
+keywords: [boas-praticas]
 ---
 <h2 class="category">Boas Práticas</h2>
 <ul class="posts">

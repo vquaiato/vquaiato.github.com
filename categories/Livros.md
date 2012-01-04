@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Livros
-keywords: [Livros]
+title: Posts tagged livros
+keywords: [livros]
 ---
 <h2 class="category">Livros</h2>
 <ul class="posts">

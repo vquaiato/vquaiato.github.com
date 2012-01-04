@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Patterns
-keywords: [Patterns]
+title: Posts tagged patterns
+keywords: [patterns]
 ---
 <h2 class="category">Patterns</h2>
 <ul class="posts">

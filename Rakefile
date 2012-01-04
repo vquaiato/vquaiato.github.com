@@ -37,6 +37,7 @@ def clean(to_clean)
       }   
   str = String.new(to_clean.gsub /\s+/,'-')
   str.gsub! /--+/,'-'
+  str.downcase!
   mapping.each {|letter,accents|
     packed = accents.pack('U*')
     rxp = Regexp.new("[#{packed}]", nil)
@@ -61,7 +62,7 @@ namespace :categories do
     site = Jekyll::Site.new(options)
     site.read_posts('')
     site.categories.each do |kategory, posts|
-      category = kategory["title"]
+      category = kategory["slug"]
       keywords = aggregate_keywords(category, posts)
       html= <<-HTML
 ---
@@ -69,7 +70,7 @@ layout: default
 title: Posts tagged #{category}
 keywords: [#{keywords}]
 ---
-<h2 class="category">#{category}</h2>
+<h2 class="category">#{kategory["title"]}</h2>
 <ul class="posts">
 HTML
 posts.each do |post|

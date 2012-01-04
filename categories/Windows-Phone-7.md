@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Windows Phone 7
-keywords: [Windows Phone 7]
+title: Posts tagged windows-phone-7
+keywords: [windows-phone-7]
 ---
 <h2 class="category">Windows Phone 7</h2>
 <ul class="posts">

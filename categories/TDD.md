@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged TDD
-keywords: [TDD]
+title: Posts tagged tdd
+keywords: [tdd]
 ---
 <h2 class="category">TDD</h2>
 <ul class="posts">

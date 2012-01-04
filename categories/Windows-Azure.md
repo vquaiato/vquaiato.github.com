@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Windows Azure
-keywords: [Windows Azure]
+title: Posts tagged windows-azure
+keywords: [windows-azure]
 ---
 <h2 class="category">Windows Azure</h2>
 <ul class="posts">

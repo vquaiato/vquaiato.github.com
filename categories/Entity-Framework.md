@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Entity Framework
-keywords: [Entity Framework]
+title: Posts tagged entity-framework
+keywords: [entity-framework]
 ---
 <h2 class="category">Entity Framework</h2>
 <ul class="posts">

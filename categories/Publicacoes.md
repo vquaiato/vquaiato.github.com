@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Publicações
-keywords: [Publicações]
+title: Posts tagged publicacoes
+keywords: [publicacoes]
 ---
 <h2 class="category">Publicações</h2>
 <ul class="posts">

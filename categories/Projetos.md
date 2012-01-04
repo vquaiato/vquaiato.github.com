@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Projetos
-keywords: [Projetos]
+title: Posts tagged projetos
+keywords: [projetos]
 ---
 <h2 class="category">Projetos</h2>
 <ul class="posts">

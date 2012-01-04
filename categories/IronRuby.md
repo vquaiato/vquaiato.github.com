@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged IronRuby
-keywords: [IronRuby]
+title: Posts tagged ironruby
+keywords: [ironruby]
 ---
 <h2 class="category">IronRuby</h2>
 <ul class="posts">

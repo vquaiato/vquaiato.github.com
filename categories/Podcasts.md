@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged Podcasts
-keywords: [Podcasts]
+title: Posts tagged podcasts
+keywords: [podcasts]
 ---
 <h2 class="category">Podcasts</h2>
 <ul class="posts">
