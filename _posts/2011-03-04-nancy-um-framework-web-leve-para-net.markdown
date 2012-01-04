@@ -25,16 +25,16 @@ O que me espantou foi a facilidade de usar o framework. Acho que nem o [ASP.NET 
 - Nancy.Hosting.Aspnet
 - Nancy.ViewEngines.Razor
 Estas dlls você encontra no download que realizou. Adicione-as em um projeto ASP.NET vazio(ASP.NET Empty Web Application).É preciso adicionar uma configuração no web.config. Tudo o que fazemos aqui é configurar um IHttpModule do Nancy no nosso projeto. Adicione o seguinte código dentro da section configuration:
-{% highlight csharp %}
+{% highlight c# %}
   <system.webserver>    <modules runallmanagedmodulesforallrequests="true" />    <validation validateintegratedmodeconfiguration="false" />    <handlers>      <add name="Nancy" verb="*" type="Nancy.Hosting.Aspnet.NancyHttpRequestHandler" path="*" />    </handlers>  </system.webserver>
 {% endhighlight %}
 E adicione o seguinte código dentro de system.web:
-{% highlight csharp %}
+{% highlight c# %}
     <httphandlers>      <add verb="*" type="Nancy.Hosting.Aspnet.NancyHttpRequestHandler" path="*" />    </httphandlers>
 {% endhighlight %}
 Simples. O setup está tudo pronto! (você sabe realizar o setup de uma app ASP.NET MVC sem o Visual Studio?)# Primeiro site usando Nancy
 Tudo o que precisamos fazer é criar uma classe, um módulo Nancy. Isso é feito herdando nossa classe de NancyModule:
-{% highlight csharp %}
+{% highlight c# %}
 namespace MyNancyApp{    using Nancy;
     
 public class Module : NancyModule    {        
@@ -45,7 +45,7 @@ public Module() { }
 
 {% endhighlight %}
 Quando estivermos usando o Nancy um module será a chave para muitas coisas e um ponto central e bastante importante. Futuramente veremos mais detalhes sobre ele.Este módulo não faz nada. Vamos então definir algumas rotas para ele, bem simples claro (estamos apenas começando certo?):
-{% highlight csharp %}
+{% highlight c# %}
 
 public class Module : NancyModule{    
 
@@ -57,7 +57,7 @@ public Module()    {        Get["/"] = x => { return "Hey eu estou usando Nancy!
 
 {% endhighlight %}
 Ahn?! Simples assim!Este código está dizendo que quando recebermos uma requisição GET para a raiz será retornado o texto "Hey eu estou usando Nancy!!!".Executando temos a saída:[caption id="attachment_3276" align="aligncenter" width="367" caption="Site Nancy executando GET na raiz"][![Site Nancy executando GET na raiz](http://viniciusquaiato.com/blog/wp-content/uploads/2011/03/Site-Nancy-executando-GET-na-raiz.png "Site Nancy executando GET na raiz")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/03/Site-Nancy-executando-GET-na-raiz.png)[/caption]Vamos então adicionar uma rota que nos retornará uma view enviando para ela um objeto como model:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class Module : NancyModule{    
 
@@ -72,7 +72,7 @@ public Module()    {        Get["/"] = x => { return "Hey eu estou usando Nancy!
 
 {% endhighlight %}
 Reparem na **_linha 7_** que estamos informando que as requisições GET para "/usando view" devem retornar a view de nome "alguma_view" e enviar para ela a string "É nóis que voa bruxão!".Esta view está criada em uma pasta que eu chamei de Views e estou utilizando Razor para isso (você pode usar ndjango, spark, html, etc).O código da View é:
-{% highlight csharp %}
+{% highlight c# %}
 <html><head>    <title></title></head><body>    @Model</body></html>
 {% endhighlight %}
 Simples e direto. O resultado será:[caption id="attachment_3277" align="aligncenter" width="445" caption="Site Nancy executando GET e retornando View Razor"][![Site Nancy executando GET e retornando View Razor](http://viniciusquaiato.com/blog/wp-content/uploads/2011/03/Site-Nancy-executando-GET-e-retornando-View-Razor.png "Site Nancy executando GET e retornando View Razor")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/03/Site-Nancy-executando-GET-e-retornando-View-Razor.png)[/caption]# Enfim... resumindo...

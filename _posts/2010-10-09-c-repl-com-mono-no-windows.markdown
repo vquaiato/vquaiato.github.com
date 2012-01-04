@@ -25,7 +25,7 @@ tags:
   autoslug: mono-console
 ---
 [![REPL Feedback](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/feedback_repl-e1286637912523.png "feedback_repl")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/feedback_repl-e1286637912523.png)Uma das coisas que me fascinaram logo no VB6 foi o Immediate. Foi bem legal descobrir que poderia executar alguns comandos, criar e inspecionar valores, executar operações, etc, em uma janela de comando.No .NET isso continuou, e temos o Immediate Windows no Visual Studio. Uma das coisas que mais me frustraram foi a incapacidade de utilizar o Immediate sem estar em debug de uma aplicação(acho que hoje isso já é possível). Ainda assim o Immediate possui algumas limitações, não avalia query expression por exemplo:
-{% highlight csharp %}
+{% highlight c# %}
 var pares = from num in new[]{
 ,2,3,4,5}
     where num%2==0    select num;

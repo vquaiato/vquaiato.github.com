@@ -31,7 +31,7 @@ Não sei exatamente qual a proposta do WebMatrix. Ele nos permite desenvolver we
 
 ### Criando um simples Site bookmark com WebMatrix
 Após instalar o WebMatrix abra o mesmo. Vamos selecionar a opção "Site From Folder" conforme a imagem abaixo:[caption id="attachment_1246" align="aligncenter" width="300" caption="WebMatrix - Criando site"][![WebMatrix - Criando site](http://viniciusquaiato.com/blog/wp-content/uploads/2010/07/Inicial-300x220.jpg "WebMatrix - Criando site")](http://viniciusquaiato.com/blog/webmatrix-o-que-e-por-que-usar/inicial-2/)[/caption]Com isso criaremos uma pasta e utilizaremos ela para guardar os arquivos de nosso site. Eu criei a pasta no desktop mesmo. Como estamos trabalhando com a versão Express do IIS, não há problemas com isso. Cool han?!Como podemos ver abaixo, está o "Workspace" do WebMatrix. Na parte de cima podemos ver as opções relacionadas com a execução do website. Na parte inferior da tela vemos as opções de acesso aos arquivos e banco de dados do nosso website.[caption id="attachment_1247" align="aligncenter" width="300" caption="WebMatrix - Área de Trabalho"][![WebMatrix - Área de Trabalho](http://viniciusquaiato.com/blog/wp-content/uploads/2010/07/Workspace-300x181.jpg "WebMatrix - Área de Trabalho")](http://viniciusquaiato.com/blog/webmatrix-o-que-e-por-que-usar/workspace/)[/caption]Selecionando a opção "Files" na parte inferior, vamos então adicionar 2 arquivos conforme mostra a figura abaixo:[caption id="attachment_1248" align="aligncenter" width="300" caption="WebMatrix - Adicionando arquivos "][![WebMatrix - Adicionando arquivos ](http://viniciusquaiato.com/blog/wp-content/uploads/2010/07/fILES-300x216.jpg "WebMatrix - Adicionando arquivos ")](http://viniciusquaiato.com/blog/webmatrix-o-que-e-por-que-usar/files/)[/caption]O código destes 2 arquivos é bastante simples, segue nas listagens abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 @{
 var database = Database.OpenFile("Site.sdf");
     }
@@ -46,7 +46,7 @@ var database = Database.OpenFile("Site.sdf");
                </body></html>
 {% endhighlight %}
 
-{% highlight csharp %}
+{% highlight c# %}
 @{
 var database = Database.OpenFile("Site.sdf");
 var descricao = Request["descricao"];

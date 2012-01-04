@@ -28,7 +28,7 @@ O Windows Azure faz a coleta das informações e de tempos em tempos as envia pa
 
 ## Configurando o Diagnostics no Windows Azure SDK 1.3
 Tudo que precisamos fazer é adicionar o seguinte código no onStart de nossos roles:
-{% highlight csharp %}
+{% highlight c# %}
 string diagnosticsConnectionString = "Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString";
 var cloudStorageAccount = CloudStorageAccount.Parse(RoleEnvironment.GetConfigurationSettingValue(diagnosticsConnectionString));
 var roleInstanceDiagnosticManager = cloudStorageAccount.CreateRoleInstanceDiagnosticManager(RoleEnvironment.DeploymentId, RoleEnvironment.CurrentRoleInstance.Role.Name, RoleEnvironment.CurrentRoleInstance.Id);
@@ -41,7 +41,7 @@ Basicamente o que fazemos no código acima é definir uma variável com o nome d
 
 ## Configurando o Diagnostics no Windows Azure SDK 1.4
 Mesmo que o código acima funcione no SDK 1.4 me parece que é mais simples a forma como as coisas podem ser feitas no SDK 1.4, vejamos:
-{% highlight csharp %}
+{% highlight c# %}
 string diagnosticsConnectionString = "Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString";
 var cloudStorageAccount = CloudStorageAccount.Parse(RoleEnvironment.GetConfigurationSettingValue(diagnosticsConnectionString));
 var diagnosticMonitorConfiguration = DiagnosticMonitor.GetDefaultInitialConfiguration();
@@ -53,7 +53,7 @@ Basicamente fazemos o mesmo que no SDK 1.3 com a diferença de que não criamos 
 
 ## Registrando logs no Azure com Diagnostics
 O processo para gravarmos os logs é bastante simples. Temos alguns métodos na classe [Trace](http://msdn.microsoft.com/pt-br/library/system.diagnostics.trace.aspx) que nos auxiliam, veja abaixo como fica o exemplo:
-{% highlight csharp %}
+{% highlight c# %}
 
 protected void Page_Load(object sender, EventArgs e){    System.Diagnostics.Trace.TraceError("Erro/Exception ocorreu: " + DateTime.Now);
     System.Diagnostics.Trace.TraceInformation("Iniciando processamento: " + DateTime.Now);

@@ -19,7 +19,7 @@ tags:
   autoslug: testes-com-xml
 ---
 O problema de métodos que geram XML é que para testá-los precisamos ou formatar a string XML corretamente, ou deixar tudo em uma única linha, etc.Uma forma simples de evitar esse problema é trabalhando com objetos XML mesmo, como o XmlDocument e XmlElement, vejamos:
-{% highlight csharp %}
+{% highlight c# %}
 [TestMethod]
 public void TestMethod1(){
 var esperado = new XmlDocument();

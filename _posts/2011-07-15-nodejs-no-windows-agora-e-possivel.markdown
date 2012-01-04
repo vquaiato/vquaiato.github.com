@@ -22,7 +22,7 @@ Fala galera está disponível o primeiro release do [Nodejs](http://nodejs.org/)
 
 ## Executando Nodejs no Windows
 Após realizar o download do [node.exe aqui](http://nodejs.org/dist/v0.5.1/node.exe) vamos criar uma aplicação simples.Crie um arquivo windows.js com o seguinte código:
-{% highlight csharp %}
+{% highlight c# %}
 var http = require('http');
     http.createServer(function (req, res) {  res.writeHead(200, {
 Content-Type': 'text/plain'}
@@ -34,7 +34,7 @@ Content-Type': 'text/plain'}
     
 {% endhighlight %}
 Isto criará um servidor na porta 1234 respondendo com "Hello World" para todos os requests.Para iniciar o servidor node execute o comando abaixo no cmd ou no powershell:
-{% highlight csharp %}
+{% highlight c# %}
 .\node.exe windows.js
 {% endhighlight %}
 Você verá uma mensagem como a abaixo:[caption id="attachment_3794" align="aligncenter" width="300" caption="rodando nodejs no windows"][![rodando nodejs no windows](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/rodando-nodejs-no-windows-300x108.png "rodando nodejs no windows")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/rodando-nodejs-no-windows.png)[/caption]E quando acessarmos esta url receberemos a resposta do servidor node:[caption id="attachment_3795" align="aligncenter" width="300" caption="rodando nodejs no windows - browser"][![rodando nodejs no windows - browser](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/rodando-nodejs-no-windows-browser-300x138.png "rodando nodejs no windows - browser")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/rodando-nodejs-no-windows-browser.png)[/caption]É isso aew galera. Agora já podemos rodar Nodejs em servidores Windows de forma nativa e sem nenhuma trabalho de instalação, um simples executável. Notem que isso já torna o Nodejs facimente executável no [Windows Azure](http://viniciusquaiato.com/blog/tag/windows-azure/). <o/Para saber mais sobre o Nodejs: [http://www.nodebeginner.org/](http://www.nodebeginner.org/)Abraços,Vinicius Quaiato.

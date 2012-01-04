@@ -31,7 +31,7 @@ tags:
   autoslug: "m\xC3\xA9todos-privados"
 ---
 [![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/08/top-secret-150x150.jpg "top-secret")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/08/top-secret.jpg)Não sou fã de testar métodos privados. Na teoria deveríamos testar a interface pública de nossos objetos, porém em alguns casos é necessário testar a interface privada de um objeto.Em .NET isso está bastante simples coma a utilização da classe [PrivateObject](http://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.privateobject(VS.80).aspx).Vamos ver um exemplo de como isso funciona. Abaixo temos uma classe com 2 métodos e uma propriedade, todos privados:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class Privados{    
 
@@ -49,7 +49,7 @@ private world";
 
 {% endhighlight %}
 E aqui temos os métodos de teste utilizando o PrivateObject:
-{% highlight csharp %}
+{% highlight c# %}
 [TestMethod]
 public void Soma_2_e_2_Deve_Retornar_4(){    PrivateObject privateObj = new PrivateObject(new Privados());
 var res = privateObj.Invoke("Soma", 2, 2);

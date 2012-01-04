@@ -28,7 +28,7 @@ tags:
   autoslug: many-to-many
 ---
 Fala galera, recebi algumas dúvidas por e-mail e vamos resolver aqui.Vamos trabalhar com relações many-to-many utilizando POCO e o Entity Framework 4.0.Para ver como trabalhar com POCO no EF4 veja [este post aqui](http://viniciusquaiato.com/blog/entity-framework-4-model-first-com-pocos/).Vamos fazer um exemplo bem simples, trabalhando com produtos e lojas. Cada produto poderá estar em muitas lojas, e uma loja poderá conter muitos produtos.Abaixo temos o desenho de nosso modelo inicial:[caption id="attachment_634" align="aligncenter" width="300" caption="Modelo de Classes Entity Framework 4.0"][![Modelo de Classes Entity Framework 4.0](http://viniciusquaiato.com/blog/wp-content/uploads/2010/02/Modelo-300x175.jpg "Modelo de Classes Entity Framework 4.0")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/02/Modelo.jpg)[/caption]Feito isso vamos criar uma associação entre nossas entidades, como pode ser visto abaixo:[caption id="attachment_639" align="aligncenter" width="300" caption="Criando associação no modelo do EF 4.0"][![Criando associação no modelo do EF 4.0](http://viniciusquaiato.com/blog/wp-content/uploads/2010/02/Criando-associacao-no-modelo-300x194.jpg "Criando associação no modelo do EF 4.0")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/02/Criando-associacao-no-modelo.jpg)[/caption][caption id="attachment_642" align="aligncenter" width="268" caption="Definindo a Associacao Many-To_Many no EF 4.0"][![Definindo a Associacao Many-To_Many no EF 4.0](http://viniciusquaiato.com/blog/wp-content/uploads/2010/02/Definindo-a-Associacao-268x300.jpg "Definindo a Associacao Many-To_Many no EF 4.0")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/02/Definindo-a-Associacao.jpg)[/caption]Feito isso basta salvarmos nosso modelo e gerar o banco de dados. Lembrando de desmarcar a opção de geração de código no modelo ([veja aqui como fazer isso](http://viniciusquaiato.com/blog/entity-framework-4-model-first-com-pocos/)).Nossas classes ficarão simples, como não poderia deixar de ser.Abaixo vemos a classe Produto, que como pode-se notar não possui nenhuma dependência do entity Framework e nem conhece nada relacionado com banco de dados:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class Produto{    
 
@@ -55,7 +55,7 @@ public virtual IList<loja> LojasOndeVende    {        get        {            re
 </loja></loja></loja>
 {% endhighlight %}
 Abaixo temos a classe Loja:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class Loja{    
 
@@ -83,7 +83,7 @@ public virtual IList<produto> ProdutosQueVende    {        get        {         
 </produto></produto></produto>
 {% endhighlight %}
 E aqui temos nossa classe de contexto do Entity Framework, que também criamos, de forma bastante simples:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class EF4Context : ObjectContext{    
 
@@ -106,7 +106,7 @@ public IObjectSet<loja> Lojas    {        get        {            if (lojas == n
 </loja></loja></loja></produto></produto></produto>
 {% endhighlight %}
 E isto é tudo que precisamos. Já podemos trabalhar com nossas entidades de forma a terem a relação Many-to-Many feita e funcionando.Criei uma aplicação console para demonstrar isso. O método abaixo faz algumas inserções no banco, e o resultado da consulta pode ser visto na imagem a seguir:
-{% highlight csharp %}
+{% highlight c# %}
 
 private 
 static void InserirNovosProdutosELojas(){

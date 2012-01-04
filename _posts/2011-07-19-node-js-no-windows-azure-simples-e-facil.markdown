@@ -34,7 +34,7 @@ Executar o Node.js no [Windows Azure](http://www.microsoft.com/windowsazure/) é
 
 ### Criar um Blob Container no Windows Azure
 Vamos utilizar um [Blob Container](http://channel9.msdn.com/Blogs/smarx/Windows-Azure-Blob-Storage) no [Storage do Windows Azure](http://www.microsoft.com/windowsazure/storage/) para armazenar nosso _node.exe_ e os arquivos .js que serão executados por ele. Faça isso utilizando o Storage Explorer([que eu mostrei aqui](http://viniciusquaiato.com/blog/azure-storage-explorer-e-cerebrata-cloud-storage-studio/)). Eu criei um container chamado "nodestuff" e mandei os arquivos _node.exe_ e _nodeazure.js_:
-{% highlight csharp %}
+{% highlight c# %}
 ﻿var http = require('http');
     http.createServer(function (request, response) {    response.writeHead(200, { 'Content-Type': 'text/plain' }
 );
@@ -48,7 +48,7 @@ Reparem que não estamos fixando nem o ip e nem a porta nos quais o Node será e
 
 ### Copiando o node.exe para a instância do Windows Azure
 Vamos fazer com que nosso worker role copie o _node.exe_ e o _nodeazure.js_ para o [Local Storage](http://viniciusquaiato.com/blog/windows-azure-usando-local-storage/) da nossa instância. Isso nos dará mais velocidade e facilidade no start do processo do node. Vamos configurar um Local Storage de 10MB:[caption id="attachment_3818" align="aligncenter" width="300" caption="Local Storage para arquivos do nodejs"][![Local Storage para arquivos do nodejs](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Local-Storage-para-arquivos-do-nodejs-300x164.png "Local Storage para arquivos do nodejs")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Local-Storage-para-arquivos-do-nodejs.png)[/caption]Agora vamos copiar os arquivos do blob para o Local Storage:
-{% highlight csharp %}
+{% highlight c# %}
 var blobContainer = GetBlobContainer();
 var localStorage = RoleEnvironment.GetLocalResource("nodestuff");
     CopyFromBlobToLocal(blobContainer, localStorage, "node.exe");
@@ -78,7 +78,7 @@ Bastante simples hein? (Não se preocupe que no final do post está um link para
 
 ### Executando o Node.js no Windows Azure
 Tudo que precisamos agora é executar o Node.js de dentro do nosso Worker Role. Isso poderia ser feito através de uma [startup task](http://msdn.microsoft.com/en-us/library/gg456327.aspx) + powershell scripts? Poderia, mas acho que não é a melhor solução. Uma startup task não executará novamente caso o processo do Node morra, e aí? Desta forma podemos fazer tratamentos dentro do código e dar um restart no Node caso algo aconteça :D
-{% highlight csharp %}
+{% highlight c# %}
 
 private string roleIP = RoleEnvironment.CurrentRoleInstance.InstanceEndpoints["NodeEndpoint"].IPEndpoint.Address.ToString();
     

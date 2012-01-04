@@ -37,7 +37,7 @@ tags:
   autoslug: viewmodel
 ---
 [![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/08/tests-150x150.jpg "tests")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/08/tests.jpg)Fala-se muito que com a utilização do [ASP.NET MVC](http://www.asp.net/mvc) ganhamos maior controle sobre o projeto, existe facilidade na escrita e manutenção de testes, etc.Mas, afinal de contas: _C**omo é que eu testo os meus controllers**_?Essa é uma questão que não é muito falada, e por vezes nem muito exercitada. Neste primeiro post sobre o assunto vou falar um pouco sobre como testar controllers que trabalham puramente com dados, ou seja, quero enviar dados para uma fonte de dados, garantir que o controller está usando ModelState de forma correta, etc.Vou omitir algumas coisas aqui para manter o post breve (vou detalhar apenas os testes), mas o código fonte está completo e disponível: [TestesControllerI.zip](http://viniciusquaiato.com/files/codesamples/TDD/TestesControllerI.zip)Cenário 1: Controller recebe dados da view para adicionar na fonte de dados.
-{% highlight csharp %}
+{% highlight c# %}
 [TestMethod]
 public void E_UsuarioCriar_Valido_Entao_Adiciona_Ao_Repositório_E_Retorna_View_Sucesso(){
 var controller = new CriarUsuarioController();
@@ -52,7 +52,7 @@ var result = controller.Criar(usuarioCriar);
 </usuario></irepositoriousuarios>
 {% endhighlight %}
 O que fazemos neste teste é bastante simples. Primeiro instanciamos nosso controller, <strong_linha 4_.Após isso, fazemos um mock no nosso repositório, **_linha 5_**. (não sabe o que é mock? Veja [aqui](http://viniciusquaiato.com/blog/tdd-mock-objects-usando-moq/), e [aqui](http://viniciusquaiato.com/blog/tdd-mock-objects-com-rhino-mocks/)).Criado nosso mock, dizemos ao controller que é para utilizar este repositório de dados, **_linha 6_**. Reparem que poderíamos fazer isso via construtor, mas ainda assim estamos [IoC](http://viniciusquaiato.com/blog/tag/ioc/)!Na **_linha 8_** criamos uma instância do [ViewModel](http://geekswithblogs.net/michelotti/archive/2009/10/25/asp.net-mvc-view-model-patterns.aspx) de criação de usuários. Estou utilizando um ViewModel pois com ele eu faço uso dos DataAnnotations para validar esses dados, sem sujar minhas entidades. E também para representar os dados da View, afinal, poderia ter um campo de confirmação de senha, captcha, etc, e isso não tem relação com minha entidade Usuario.Na **_linha 14_** fazemos a chamada para nossa action, passando o ViewModel como parâmetro. Notem que eu tenho um retorno da minha action, e atribuí para a variável chamada result.Na **_linha 16_** fazemos a verificação do nosso mock. Neste caso estou verificando se o método Adicionar foi chamado, e recebeu como parâmetro um Usuario, com as propriedades iguais as do ViewModel. Isso para nós quer dizer que o controller soube mapear um ViewModel para um Usuario e então chamou o repositório passando este usuário.Por fim, na **_linha 19_** verifico se a View retornada é a view com nome "Sucesso", isto por que este teste diz que para um ViewModel preenchido corretamente, deve ser adicionado no repositório e então a view de sucesso deve ser exibida.Simples não é? Vamos garantir o cenário inverso agora:
-{% highlight csharp %}
+{% highlight c# %}
 [TestMethod]
 public void E_UsuarioCriar_Inalido_Entao_Nao_Adiciona_Ao_Repositório_E_Retorna_View_CriarUsuario(){
 var controller = new CriarUsuarioController();

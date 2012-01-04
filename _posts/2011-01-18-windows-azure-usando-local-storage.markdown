@@ -31,11 +31,11 @@ Cada role instance pode ter diversos Local Storages configurados. O tamanho limi
 
 ### Definindo Local Storage via XML 
 Para definir o Local Storage através do arquivo ServiceDefinition.csdef basta incluirmos o código abaixo dentro de webrole:
-{% highlight csharp %}
+{% highlight c# %}
 <localresources>  <localstorage name="LocalFiles" cleanonrolerecycle="false" sizeinmb="10" /></localresources>
 {% endhighlight %}
 É um código bastante simples. Definimos neste exemplo que teremos uma Local Storage, chamado LocalFiles. Que possui um tamanho de 10MB. O outro atributo, cleanOnRoleRecycle diz respeito a limpar o storage quando o role é reciclado, e isso pode ocorrer em caso de uma falha, um upgrade ou ainda quando você mesmo faça um recicle do role.Se quiséssemos definir mais de um stora bastaria adicionar uma outra linha com a definição, veja:
-{% highlight csharp %}
+{% highlight c# %}
 <localresources>  <localstorage name="LocalFiles" cleanonrolerecycle="false" sizeinmb="10" />  <localstorage name="LocalTextFiles" cleanonrolerecycle="false" sizeinmb="5" /></localresources>
 {% endhighlight %}
 Bem simples, não?
@@ -45,7 +45,7 @@ Para realizarmos esta definição diretamente dentro do Visual Studio basta um d
 
 ## Acessando o Local Storage no Windows Azure
 Acessar o Local Storage do Windows Azure é bastante simples. Precisamos apenas obter uma referência para o Storage e depois podemos utilizar normalmente as classes do System.IO, vejamos um simples exemplo abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 
 public ActionResult Index(){
 var storage = RoleEnvironment.GetLocalResource("LocalFiles");

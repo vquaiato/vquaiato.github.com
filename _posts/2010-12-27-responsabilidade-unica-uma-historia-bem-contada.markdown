@@ -31,7 +31,7 @@ Uma classe deve possuir um conjunto coeso de propriedades e métodos, que em um 
 
 ### Pequena metáfora para ilustrar
 Imagine ler um texto assim:<blockquote>Era uma linda manhã de domingo. O trânsito estava muito ruim em São Paulo. Era um sábado bastante tranquilo apesar de chuvoso. Enquanto tomava banho.</blockquote>Não há coesão alguma!Vamos ver um exemplo de código(utilizado com permissão de um sistema do Juan Lopes[não foi ele quem produziu este código!]):
-{% highlight csharp %}
+{% highlight c# %}
 
 public BalancaResponse GetWeight(){    BalancaResponse response = new BalancaResponse();
     response.Peso = -1d;

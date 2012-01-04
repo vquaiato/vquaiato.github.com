@@ -34,7 +34,7 @@ Durante o TechEd (ainda escreverei um post sobre o evento) comecei a desenvolver
 
 ### O exemplo (real)
 Para que tudo fosse simples, os campos seriam campos de texto e então os dados seriam separados por vírgula, algo mais ou menos assim:[caption id="attachment_1584" align="aligncenter" width="300" caption="View de criação"][![View de criação](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/tela-300x178.png "View de criação")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/tela.png)[/caption]Percebam que a idéia é que de forma simples se crie um "TechEd" pessoal.A questão aí é que essa View trabalha com uma forma diferente do model. A forma como um TechEd é representado no sistema é mais ou menos assim:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class MeuTechEd{    
 

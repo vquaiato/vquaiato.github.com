@@ -41,7 +41,7 @@ Uma das formas de trabalhar com Singletons ecológicos, ou seja, os singletons q
 
 ## Utilizando Ninject para criar singletons ecológicos
 [Ninject](http://ninject.org/) é um framework open source para injeção de dependências. Como a maioria destas ferramentas, existe uma espécia de conteiner responsável por resolver as dependências, ou seja, injetar as dependências corretas nos objetos a serem criados.No geral estes conteiners possuem mecanismos para que digamos qual será o ciclo de vida dos objetos por eles criados, sendo assim podemos utilizá-los para gerenciar nossos objetos que devem ser singletons.
-{% highlight csharp %}
+{% highlight c# %}
 
 public class Module : NinjectModule{    
 
@@ -51,7 +51,7 @@ public override void Load()    {        Bind<ishouldbesingleton>()            .T
 </shouldbesingleton></ishouldbesingleton>
 {% endhighlight %}
 Este não é um post sobre Ninject([veja mais sobre ele aqui no Wiki](http://github.com/ninject/ninject/wiki/_pages)), estou apenas mostrando como este framework pode nos ajudar a manter nossas classes independentes do acoplamento oculto dos Singletons.Nesta primeira classe fazemos uma espécie de configuração do Ninject. Dizemos que para o tipo IShouldBeSingleton deve ser criado um objeto da classe ShoulBeSingleton. Simples.Mas reparem que na **_linha 7_** estamos utilizando uma instrução para dizer que estes objetos devem ser criados de uma maneira que sejam singleton. Ou seja, estamos delegando ao conteiner de IoC/DI do Ninject a tarefa de gerenciar quando um objeto é singleton ou não. Não é mais responsabilidade de um objeto de domínio.Este é um importante passo para a sustentabilidade na utilização de singletons. \o/Abaixo vemos as outras classes necessárias para nosso pequeno exemplo:
-{% highlight csharp %}
+{% highlight c# %}
 
 public interface IShouldBeSingleton{    DateTime CreatedAt();
     }
@@ -84,7 +84,7 @@ public override string ToString()    {        return string.Format("My singleton
 
 {% endhighlight %}
 Notem que na **_linha 18_** temos a classe SomeClassThatNeedsASingleton. Na verdade essa classe tem uma dependência para um tipo (uma interface). Para ela na verdade NÃO interessa se esse tipo será trazido como singleton ou não, ela só quer saber que o objeto que ela receber seja do tipo que ela espera, e pronto. Removermos desta classe a obrigatoriedade de saber onde buscar suas dependências, e ainda removemos dela a idéia de conhecer o conceito singleton.Agora criei uma pequena consolle app apenas para demonstrar como isso funcionaria na prática:
-{% highlight csharp %}
+{% highlight c# %}
 
 static void Main(string[] args){    IKernel k = new StandardKernel(new Module());
 var someclass = k.Get<someclassthatneedsasingleton>();

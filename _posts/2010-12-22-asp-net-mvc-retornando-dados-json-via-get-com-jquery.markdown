@@ -25,7 +25,7 @@ Se você não sabe o que é GET, POST, PUT, DELETE, entre outros dê um pulinho 
 
 ## Criando o controller
 O controller que utilizaremos é bastante simples:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class HomeController : Controller{    
 
@@ -43,7 +43,7 @@ Vejam que temos uma action, que só pode ser acessa via GET e que simplesmente r
 
 ## A view
 A view que consome nossa action via GET usando Jquery é bastante simples também e todo o segredo está aqui neste trecho de código javascript usando Jquery:
-{% highlight csharp %}
+{% highlight c# %}
 $(function () {
 var url = '@Url.Action("DadosEmJson","Home")';
     $.get(url, function(dados){        $("#nome").append(dados.Nome);
@@ -61,7 +61,7 @@ Por razões de segurança não é possível retornar de forma automática dados 
 
 ## Habilitando Json via GET
 Para contornar esse problema basta permitir o retorno de dados Json em requisições do tipo GET. Fazemos isso alterando nossa action conforme abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 [HttpGet]
 public ActionResult DadosEmJson(){    return Json(new {
 ome = "Vinicius", Twitter = "@vquaiato"}
@@ -73,7 +73,7 @@ Pronto, agora tudo funciona![caption id="attachment_2491" align="aligncenter" wi
 
 ## Cuidado: Json hijacking!
 tudo está funcionando perfeitamente, o problema é que não é confiável e nem recomendável retornar dados Json via GET.Existe uma falha de segurança que pode ser explorada nesta situação: [Json Hijacking](http://haacked.com/archive/2009/06/25/json-hijacking.aspx).Estou mostrando como fazer, mas se possível evite esse tipo de uso para o Json.É possível retornar Json via POST normalmente e sem esses problemas todos.No geral esta é uma falha explorada quando se retornam coleções via Json. E ainda existe uma série de outros fatores que precisam ocorrer para que isso aconteça. Mas é bom não dar mole.Se você precisar mesmo retornar uma coleção via Json e precisar mesmo que ela seja retornada usando GET coloque seu conteúdo dentro de uma propriedade:
-{% highlight csharp %}
+{% highlight c# %}
 [HttpGet]
 public ActionResult DadosEmJsonPropriedade(){
 var dados = new[] { "ASP.NET MVC", "ASP.NET MVC 3", "Jquery" }

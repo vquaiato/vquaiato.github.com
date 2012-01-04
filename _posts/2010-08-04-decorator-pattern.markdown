@@ -37,7 +37,7 @@ A idéia principal do [Pattern Decorator](http://en.wikipedia.org/wiki/Decorator
 
 ### O exemplo
 Como exemplo vamos imaginar que temos um editor de textos html qualquer. Precisamos implementar funcionalidades de exibir texto plano, negrito, itálico e sublinhado. Podemos ainda ter qualquer combinação destes textos. Ou seja: Só plano. Só Itálico. Itálico e Negrito. Negrito e Sublinhado, etc.Não vou detalhar o passo a passo que eu segui (sim, utilizei TDD), seguem os testes e abaixo a implementação:
-{% highlight csharp %}
+{% highlight c# %}
         [TestMethod]        
 public void Texto_Vinicius_Deve_Exibir_Vinicius()        {
 var texto = new TextoPlano("Vinicius");
@@ -62,7 +62,7 @@ var texto = new TextoPlano("Vinicius");
 
 {% endhighlight %}
 O comportamento do nosso código é bastante simples. Percebam como criamos um texto plano. E então decoramos este texto plano com qualquer uma das funcionalidades que queremos. Este é o intuito do padrão Decorator.A implementação disso é bastante simples, como vemos abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 
 public interface ITexto{
 string Exibir();

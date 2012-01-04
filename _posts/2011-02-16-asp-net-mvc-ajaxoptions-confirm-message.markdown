@@ -25,7 +25,7 @@ tags:
   autoslug: confirm
 ---
 No [post anterior](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-e-updatetargetid/) mostrei como criar uma chamada ajax para carregar um pedaço específico da página utilizando o Ajax Helper com o AjaxOptions UpdateTargetId.Agora vou mostrar como podemos, de maneira bastante simples, exibir uma mensagem solicitando a confirmação da requisição a ser realizada.Vamos aproveitar todo [o código anterior](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-e-updatetargetid/) e apenas realizar uma modificação, como mostra o código abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 @using (Ajax.BeginForm("AjaxAction",    new AjaxOptions { UpdateTargetId = "div_nome", Confirm = "Você está certo disso?" }
 )){    @Html.TextBox("nome")<br />    @Html.TextBox("sobrenome")    <input type="submit" value="ajax" />}
 

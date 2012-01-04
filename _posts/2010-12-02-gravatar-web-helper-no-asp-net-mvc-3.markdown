@@ -25,11 +25,11 @@ tags:
   autoslug: gravatar-helper
 ---
 Fala galera, esta é uma feature bem legal disponível através de um web helper no [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3): Exibir a imagem do [Gravatar](http://pt.gravatar.com/).Primeiro você precisa baixar o pacote Microsoft.Web.Helpers com o [NuGet](http://viniciusquaiato.com/blog/tag/nuget/):
-{% highlight csharp %}
+{% highlight c# %}
 Install-Package Microsoft-Web-Helpers
 {% endhighlight %}
 Feito isso adicione o seguinte código na sua view onde você deseja exibir o Gravatar:
-{% highlight csharp %}
+{% highlight c# %}
 @using Microsoft.Web.Helpers;
     @Gravatar.GetHtml("seuemail@provedor.com");
     

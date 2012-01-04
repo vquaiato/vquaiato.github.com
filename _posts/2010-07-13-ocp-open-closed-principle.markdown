@@ -34,7 +34,7 @@ A motivação por detrás do OCP é justamente prover software reutilizável, ro
 
 ### O exemplo
 Confuso? Vamos ver um pequeno exemplo:
-{% highlight csharp %}
+{% highlight c# %}
 enum TipoDePagamento { A_VISTA, PARCELADO }
 class ItemDeCompra{    
 
@@ -80,7 +80,7 @@ O código acima retrata uma classe Compra, em um sistema qualquer de compras. O 
 
 ### Adequando ao OCP
 Observando um pouco nossas classes e as necessidades de negócio, e o modelo que fizemos e temos em mãos, podemos chegar a um desenho de classes parecido com este:
-{% highlight csharp %}
+{% highlight c# %}
 abstract class CompraBase{    
 
 protected IList<itemdecompra> itensDeCompra { get;

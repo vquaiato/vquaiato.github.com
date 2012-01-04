@@ -34,7 +34,7 @@ Vamos ver um exemplo para ficar mais claro: Nossa página deverá carregar em um
 
 ### A view
 A view é bastante simples neste exemplo. Temos inicialmente 2 divs para exibir nossas informações:
-{% highlight csharp %}
+{% highlight c# %}
 <!DOCTYPE html SYSTEM><html><head>    <title>Index</title></head><body>    <div>        # Página inicial
     </div>    
 
@@ -45,7 +45,7 @@ A view é bastante simples neste exemplo. Temos inicialmente 2 divs para exibir 
     <div class="box" id="ultimos_comments">    </div></body></html>
 {% endhighlight %}
 Vamos então adicionar a referência para o Jquery e criar o código para chamar a function load adicionando o seguinte script:
-{% highlight csharp %}
+{% highlight c# %}
 </script><script>    $(function () {
 var url = "@Url.Action("Recent", "Posts")";
     $("#ultimos_posts").load(url);
@@ -57,7 +57,7 @@ Wow! É muito simples!Na **_linha 4_** estou definindo a url para a action que r
 
 ### A action
 Vamos agora espiar como está a action Recent no controller Posts:
-{% highlight csharp %}
+{% highlight c# %}
 
 public ActionResult Recent(){    return PartialView("RecentPosts", new Posts().GetAll());
     }
@@ -67,7 +67,7 @@ Nice! Código bastante enxuto e limpo. Estamos retornando uma Partial View e pas
 
 ### A partial view
  E para finalizar a tarefa temos a partial view que faz a renderização de uma listagem de posts. É um código muito simples, apliquei algum estilo CSS apenas para deixar menos feio:
-{% highlight csharp %}
+{% highlight c# %}
 @post.Body.Substring(0, 25)...</span>            </div>        
     }
 </aspnetmvc_jquery_load.controllers.post>

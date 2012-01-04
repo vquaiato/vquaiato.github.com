@@ -22,7 +22,7 @@ tags:
   autoslug: testes
 ---
 [![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/07/macaco-reveillon-150x150.jpg "Unit Tests")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/07/macaco-reveillon.jpg)Bom, atualmente eu trabalho 90% do meu tempo com código legado. Legado no sentido de ser legado mesmo. Sem cobertura de testes, escrito de qualquer jeito, baseado no "achismo técnico". Resultado: impossível usar TDD sempre, e também impossível escrever testes depois. É necessário muita refatoração para conseguir escrever alguns testes. Mas... Sempre temos um mas...Isso não quer dizer que a culpa seja dos testes: não é!Hoje me deparei com um bug. Ao final de um processo demorado, cerca de 6min. para conseguir chegar em uma determinada parte do sistema, um valor obtido de um serviço de um parceiro deveria ser "36,00" e o sistema estava obtendo "3.600,00".Eu Identifiquei que o problema estava no parser, de string para decimal. Eu corrigi o parser? Não! Eu escrevi testes para o parser, e então corrigi o parser. Levei 2 minutos para criar uma classe de testes, e escrever 6 testes. Imaginem se eu levasse os 6 minutos (do teste do macaco, passando por 5 telas do sistema e umas 20 chamadas a webservices diferentes) em cada teste, e precisasse cobrir os 6 casos? Seriam pelos menos 35min "tentando" testar a pequena mudança que fiz. E o pior disso tudo é que eu acabaria não garantindo nada, afinal, os "testes do macaco" se perdem. No final das contas acabei com algo assim:
-{% highlight csharp %}
+{% highlight c# %}
 [TestClass]
 public class Dado_O_Valor_De_Retorno_Do_WS_Do_Parceiro_X{    [TestMethod]    
 public void Quando_Retorno_For_10ponto00_Devo_Obter_10()    {

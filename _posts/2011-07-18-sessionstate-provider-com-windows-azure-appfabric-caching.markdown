@@ -30,7 +30,7 @@ Quando estamos em um ambiente como o Windows Azure onde normalmente trabalharemo
 A primeira coisa que precisamos fazer é referenciar 3 DLLs do SDK do Windows Azure AppFabric. [Se você ainda não instalou faça o download aqui e instale](http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=19925).As 3 DLLs que precisaremos são: **Microsoft.ApplicationServer.Caching.Core**, **Microsoft.ApplicationServer.Caching.Client** e **Microsoft.Web.DistributedCache** que podem ser encontradas em: _Program Files\Windows Azure AppFabric SDK\V1.0\Assemblies\NET4.0\Cache_. Após adicionar estas DLLs altere sua propriedade "Copy Local" para true.[caption id="attachment_3805" align="aligncenter" width="228" caption="adicionando referencias Windows Azure AppFabric Caching"][![adicionando referencias Windows Azure AppFabric Caching](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/adicionando-referencias-Windows-Azure-AppFabric-Caching-228x300.png "adicionando referencias Windows Azure AppFabric Caching")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/adicionando-referencias-Windows-Azure-AppFabric-Caching.png)[/caption]Após adicionarmos as DLLs precisamos colocar algumas informações no web.config da nossa aplicação. Estas informações para o web.config dirão para a aplicação que estamos utilizando o Windows Azure AppFabric Caching e que estamos utilizando-o como Provider para o SessionState.O próprio portal do Windows Azure te fornece estar informações:[caption id="attachment_3807" align="aligncenter" width="300" caption="Informacoes client para o Windows Azure AppFabric Caching"][![Informacoes client para o Windows Azure AppFabric Caching](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Informacoes-client-para-o-Windows-Azure-AppFabric-Caching-300x181.png "Informacoes client para o Windows Azure AppFabric Caching")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Informacoes-client-para-o-Windows-Azure-AppFabric-Caching.png)[/caption]Agora vamos configurar tudo. Primeiro adicione as linhas abaixo logo após a tag &lt;
     configuration&gt;
     no seu web.config:
-{% highlight csharp %}
+{% highlight c# %}
 <configsections>  <section name="dataCacheClients" type="Microsoft.ApplicationServer.Caching.DataCacheClientsSection, Microsoft.ApplicationServer.Caching.Core" allowlocation="true" allowdefinition="Everywhere" /></configsections>
 {% endhighlight %}
 Se você já tiver uma área &lt;
@@ -38,23 +38,23 @@ Se você já tiver uma área &lt;
     apenas adicione a linha &lt;
     section&gt;
     :
-{% highlight csharp %}
+{% highlight c# %}
   <section name="dataCacheClients" type="Microsoft.ApplicationServer.Caching.DataCacheClientsSection, Microsoft.ApplicationServer.Caching.Core" allowlocation="true" allowdefinition="Everywhere" />
 {% endhighlight %}
 Isto apenas cria uma section para preenchermos informações do Windows Azure AppFabric Caching. É uma forma de estender as configurações do web.config.Agora adicione o seguinte trecho dentro de &lt;
     system.web&gt;
     :
-{% highlight csharp %}
+{% highlight c# %}
   <providers>    <add name="AppFabricCacheSessionStoreProvider" type="Microsoft.Web.DistributedCache.DistributedCacheSessionStateStoreProvider, Microsoft.Web.DistributedCache" cachename="default" useblobmode="true" datacacheclientname="default" />  </providers></sessionstate>
 {% endhighlight %}
 Este trecho diz pra o ASP.NET que deve utilziar o **_AppFabricCacheSessionStoreProvider_** que está no assembly _Microsoft.Web.DistributedCache_.E agora vamos inserir as informações da nossa conta no Windows Azure AppFabric Caching. Este trecho pode ser adicionado logo antes de &lt;
     /configuration&gt;
     :
-{% highlight csharp %}
+{% highlight c# %}
       </messagesecurity>    </securityproperties>  </datacacheclient></datacacheclients>
 {% endhighlight %}
 O Token pode ser obtido nas informações de Configuração de Cliente da imagem acima ou também através do botão:[caption id="attachment_3810" align="aligncenter" width="300" caption="Token do Windows Azure AppFabric Caching"][![Token do Windows Azure AppFabric Caching](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Token-do-Windows-Azure-AppFabric-Caching-300x162.png "Token do Windows Azure AppFabric Caching")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Token-do-Windows-Azure-AppFabric-Caching.png)[/caption]Pronto! Agora tudo está configurado e funcionando. Nada precisa ser alterado no seu código continue acessando o objeto Session da mesma forma:
-{% highlight csharp %}
+{% highlight c# %}
 
 protected void Page_Load(object sender, EventArgs e){    Session["AppFabricCaching"] = "Windows Azure AppFabric Caching para SessionState Provider";
     }

@@ -31,7 +31,7 @@ Como muitos sabem o [ASP.NET MVC](http://asp.net/mvc) é o framework web Microso
 
 ## ASP.NET MVC e Ajax com Jquery
 Vamos falar um pouco da [função ajax](http://api.jquery.com/jQuery.ajax/) do Jquery em conjunto com o ASP.NET MVC.Esta função ajax realiza requests http de forma assíncrona. Isso quer dizer que podemos realizar processamentos de partes de nossa aplicação fora do request principal da página, evitando assim requests da página inteira para processa pequenas ações.Vamos imaginar o seguinte cenário: Tela de listagem de produtos. Na mesma tela podemos fazer a inserção de um novo produto.A abordagem sem ajax é que o novo produto seja inserido e então toda a página seja recarregada com a listagem atualizada.Vou omitir algum código aqui para ser breve(todo fonte está disponível [aqui no github](https://github.com/vquaiato/ASP.NET-MVC-Jquery-Ajax).). Vamos ao controller:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class HomeController : Controller{    
 
@@ -48,7 +48,7 @@ var products = Session["products"] as List<product>;
 </product></product>
 {% endhighlight %}
 Este controller está atuando perfeitamente sem Ajax. É importante que tudo funcione sem ajax e então colocamos o novo comportamento com ajax. O código da view é bastante simples:
-{% highlight csharp %}
+{% highlight c# %}
 @model IEnumerable<aspnetmvc_jquery_ajax.controllers.product>
 
 ## Products
@@ -62,7 +62,7 @@ Este controller está atuando perfeitamente sem Ajax. É importante que tudo fun
 </table></aspnetmvc_jquery_ajax.controllers.product>
 {% endhighlight %}
 Tudo está funcionando perfeitamente. Mas cadê o ajax Vinicius?Ok, vamos lá!A primeira coisa a fazer é adicionar uma referência para o jquery na nossa view. O Jquery já vem por padrão na pasta Scripts das aplicações ASP.NET MVC. Arraste o arquivo para a view.Vamos então configurar nosso formulário para utilziar o Jquery submetendo as infromações através de ajax:
-{% highlight csharp %}
+{% highlight c# %}
 $(function () {    config_add_products();
     }
 );
@@ -77,7 +77,7 @@ $(function () {    config_add_products();
 
 {% endhighlight %}
 O que fazemo é bem simples. Na **_linha 1_** fazemos uma chamada para o Jquery configurar nosso formulário.Na **_linha 5_** estamos definindo o evento de submit do nosso form. Na **_linha 6_** cancelamos o submit padrão, ou seja, a página não será postada inteira para o servidor.Na **_linha 8_** começa a mágica onde fazemos uma chamada para a [função ajax do Jquery](http://api.jquery.com/jQuery.ajax/).Esta função recebe configurações através de chave-valor.A primeira informação que estamos enviando é a url e fazemos isso pegando o atributo action do nosso formulário na **_linha 9_**.Na **_linha 10_** estamos informando os dados que devem ser enviados para o servidor, neste caso os dois campos do nosso formulário serializados em Json.Na **_linha 11_** estamos informando uma função de callback, ou seja, uma função que será executada quando nossa requisição terminar com sucesso. E o que essa função faz é adicionar o resultado do servidor na nossa tabela de produtos.Sério, é tudo muito simples. E por que estamos adicionando o resultado do servidor direto no HTML? Veja você mesmo a alteração que fizemos no nosso controller:
-{% highlight csharp %}
+{% highlight c# %}
 
 public ActionResult AddProduct(Product newProduct){
 var products = Session["products"] as List<product>;
@@ -88,7 +88,7 @@ var products = Session["products"] as List<product>;
 </product>
 {% endhighlight %}
 Repare nas **_linhas 6 e 7_** que adicionamos uma verificação para saber se a chamada para a action veio de um contexto ajax. Caso tenha sido uma chamada Ajax não redirecionamos para a action Index, ao invés disso retornamos uma partial view com o resultado do novo produto. Isso nos permite ter uma mesma action atuando [com Ajax e sem Ajax](http://viniciusquaiato.com/blog/asp-net-mvc-submit-com-ou-sem-ajax/).A Partial View retornada e muito simples:
-{% highlight csharp %}
+{% highlight c# %}
 @model ASPNETMVC_Jquery_Ajax.Controllers.Product<tr>    <td>        @Model.Description    </td>    <td>        @String.Format("{
 :F}
 ", Model.Price)    </td></tr>
@@ -97,7 +97,7 @@ Apenas cria uma <tr> com os dados do produto, e é essa tr que damos append na n
 
 ### Tratando os erros
 É muito comum que só seja definida a callback para o sucesso da requisição, porém podem ocorrer erros e precisamos tratá-los de maneira adequada também.Para isso vamos definir um callback de erro na função ajax do Jquery:
-{% highlight csharp %}
+{% highlight c# %}
 function config_add_products() {    $("#novo_produto").submit(function (e) {        $("#progress").show();
     e.preventDefault();
     $.ajax({            url: $(this).attr("action"),            data: $(this).serialize(),            success: function (retorno) {                $("#products").append(retorno);
@@ -115,12 +115,12 @@ Desta forma daremos um alert informando o erro ocorrido. É preciso ficar atento
 
 ### Exibindo sinalização de progresso
 Podemos melhorar um pouco as coisas exibindo uma sinalização de que a requisição está sendo processada.Vamos criar uma div na nossa view contendo uma imagem de progesso:
-{% highlight csharp %}
+{% highlight c# %}
 <div id="progress" style="display: none;
     ">    ![](/images/progress.gif)</div>
 {% endhighlight %}
 Feito isso vamos alterar nosso código javascript para que fique assim:
-{% highlight csharp %}
+{% highlight c# %}
 function config_add_products() {    $("#novo_produto").submit(function (e) {        $("#progress").show();
     e.preventDefault();
     $.ajax({            url: $(this).attr("action"),            data: $(this).serialize(),            success: function (retorno) {                $("#products").append(retorno);
@@ -140,11 +140,11 @@ Reparem que na **_linha 3_** estamos exibindo nossa imagem de progresso. E na **
 
 ### Definindo requisição como GET ou POST
 É importante ainda poder configurar o request para ser feito via GET ou POST. A ação de incluir um novo produto não deveria ser feita via GET, no entando GET é o type default para as requisições feitas com a função ajax do Jquery.Para alterarmos isso podemos utilizar a configuração type, veja abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 type: "POST",
 {% endhighlight %}
 Adicionando essa configuração no nosso javascript finalizaremos com ele assim:
-{% highlight csharp %}
+{% highlight c# %}
 $.ajax({    url: $(this).attr("action"),    data: $(this).serialize(),    type: "POST",    success: function (retorno) {        $("#products").append(retorno);
     }
 ,    error: function (erro) {        alert(erro);

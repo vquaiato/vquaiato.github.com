@@ -35,19 +35,19 @@ Após instalarmos o Silverlight Toolkit para Windows Phone 7 precisamos referenc
 
 ## Utilizando o LongListSelector no Windows Phone 7
 Vamos criar uma aplicação Windows Phone 7 bem simples no Visual Studio que irá exibir uma coleção de items.No seu XAML principal adicione um LongListSelector conforme abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 <toolkit:longlistselector x:name="longList" isflatlist="True" itemtemplate="{
 taticResource itemTemplate}
 "></toolkit:longlistselector>
 {% endhighlight %}
 Feito isso vamos criar o recurso para este template:
-{% highlight csharp %}
+{% highlight c# %}
         <textblock text="{
 inding}
 " foreground="White" fontsize="30"></textblock>    </datatemplate>   </phone:phoneapplicationpage.resources>
 {% endhighlight %}
 Agora vamos apenas realizar o bind de uma lista ao nosso controle:
-{% highlight csharp %}
+{% highlight c# %}
 this.longList.ItemsSource = new List<string> { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7" }
 ;
     </string>

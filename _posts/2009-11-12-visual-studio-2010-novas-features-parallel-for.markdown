@@ -25,7 +25,7 @@ tags:
   autoslug: novidades
 ---
 Fala Galera!Alguns de vocês já conheciam os as Parallels Extensions do .NET que eram distribuídas para testes.Agora no Visual Studo 2010 as Parallels Extensions estão disponívels no framework 4.0.Vejam abaixo como é simples realizar um laço for de maneira paralela, ou seja, cada iteração do laço será disparada paralelamente à outra:
-{% highlight csharp %}
+{% highlight c# %}
 using System.Threading.Tasks;
     Parallel.For(0, 100,        (int i) =>        {            Console.WriteLine(i.ToString());
     }

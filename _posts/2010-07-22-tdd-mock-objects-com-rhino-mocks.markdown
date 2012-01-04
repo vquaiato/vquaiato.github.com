@@ -31,7 +31,7 @@ tags:
 
 ### Configurando expectativas
 Vamos para um exemplo simples. Neste caso temos uma "fila de pedidos" que quando um novo pedido for adicionado à fila o mesmo deve ser inserido em um repositório e um email enviado.Utilizaremos o Rhino Mocks para emular o repositório e também o objeto enviador de emails, vejamos:
-{% highlight csharp %}
+{% highlight c# %}
 [TestMethod]
 public void Quando_Adiciono_Produto_Na_Fila_Deve_Adicionar_No_Repositorio_E_Notificar_Por_Email(){
 var pedido = new Pedido { Email = "email", Produto = "produto" }
@@ -52,7 +52,7 @@ Rhino Mocks utiliza o conceito de repositório de mocks, e é com este repositó
 
 ### Chamando um método N vezes
 Assim como com o Moq podemos utilizar o Rhino para verificar se um método de um objeto mockado foi chamado N vezes, de acordo com as nossas configurações. Vou utilizar o mesmo exemplo do post do Moq:
-{% highlight csharp %}
+{% highlight c# %}
 [TestMethod]
 public void Dados_4_Emails_Para_Relatorio_De_Vendas_Deve_Enviar_Os_4(){
 var mocks = new MockRepository();
@@ -73,7 +73,7 @@ A diferença para o Moq é que aqui utilizamos _Repeat_ e configuramos quantas v
 
 ### Configurando valores de retorno
 Em diversas situações é necessário configurarmos valores de retornos para nossos objetos mockados, sendo assim o Rhino Mocks também nos dá essa possibilidade.É bastante parecido com o Moq:
-{% highlight csharp %}
+{% highlight c# %}
 [TestMethod][ExpectedException(typeof(AppErrorException))]
 public void Quando_LogError_Possui_Erro_LogMonitor_Deve_Lancar_Excecao(){
 var mocks = new MockRepository();

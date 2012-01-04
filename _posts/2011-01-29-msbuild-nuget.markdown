@@ -25,7 +25,7 @@ Já vimos que [criar pacotes para o NuGet](http://viniciusquaiato.com/blog/criar
 
 ## Criando script de build para MSBuild
 Um dos primeiros passos para automatizar o processo de build é a criação de um arquivo de build. Para este exemplo vamos utilizar um arquivo para o [MSBuild](http://msdn.microsoft.com/en-us/library/ms171452(v=vs.90).aspx) que é o utilitário de build que acompanha o .NET Framework.Com o MSBuild temos independência do Visual Studio, ou seja não precisamos do Visual Studio para "buildar" nossa aplicação. Com isso temos a possibilidade de criar um servidor de build (assunto para um próximo post).O arquivo de build que vamos utilizar pode ser visto abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 Release</configuration>      <basedir>$(MSBuildProjectDirectory)</basedir>        <builddir>$(BaseDir)\build</builddir>    <builddirbin>$(BaseDir)\build\bin</builddirbin>    <nugetspecdir>$(BaseDir)</nugetspecdir>    <packagedir>$(BuildDir)\Packages</packagedir>    <nugetspectempdir>$(PackageDir)\temp\MVCTestsEx\</nugetspectempdir>    <solutionfile>$(BaseDir)\src\mvctestsex\MVCTestsExSolution.sln</solutionfile>    <msbuildextensions>$(BaseDir)\lib\MSBuildCommunityTasks\msbuild.community.tasks.dll</msbuildextensions>  </propertygroup>   <usingtask assemblyfile="$(MSBuildExtensions)" taskname="MSBuild.Community.Tasks.XmlUpdate" />   <target name="default" dependsontargets="Compile;
     Copy;
     Package;
@@ -43,7 +43,7 @@ Se vocês repararem a geração do pacote NuGet não é feita com o [NuGet.exe](
 
 ## Executando o build
 Para executarmos este script de build e então obtermos a solução compilada e o pacote do NuGet gerado precisamos executar o seguinte comando no terminal:
-{% highlight csharp %}
+{% highlight c# %}
 msbuild build.proj
 {% endhighlight %}
 Onde estou na pasta contendo o msbuild e o script de build chama-se build.proj.Teremos um output como este:[caption id="attachment_3033" align="aligncenter" width="300" caption="Build gerando pacote NuGet"][![Build gerando pacote NuGet](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Build-gerando-pacote-NuGet-300x176.png "Build gerando pacote NuGet")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Build-gerando-pacote-NuGet.png)[/caption]

@@ -40,7 +40,7 @@ Como eu possuo o Visual Studio 2010 com todas as ferramentas de testes e mais ai
 
 ### Escrevendo os testes
 A escrita dos testes é bem simples. Vamos utilizar os atributos [[TestFixture]](http://www.nunit.org/index.php?p=testFixture&r=2.5.5) em uma classe, meio que para dizer que "aqui estão meus testes". E em cada método de teste vamos utilizar o atributo [[Test]](http://www.nunit.org/index.php?p=test&r=2.5.5). Diferença com o MSTests onde usávamos [[TestMethod]](http://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.testmethodattribute(VS.80).aspx).Existem vários métodos que podem ser utilizados para asserções. Abaixo vou demonstrar alguns deles, e acho que são bem explicativos. Notem que existem métodos assertivos que não existem no MSTests mas que facilitam bastante a vida. É o caso do [Contains](http://www.nunit.org/index.php?p=collectionAssert&r=2.5.5) para trabalharmos com coleções. [Greater](http://www.nunit.org/index.php?p=comparisonAsserts&r=2.5.5) e [Less](http://www.nunit.org/index.php?p=comparisonAsserts&r=2.5.5) para trabalharmos com comparação de valores. 
-{% highlight csharp %}
+{% highlight c# %}
 [TestFixture]
 public class UsandoNUnitTests{    [Test]    
 public void AreEqual()    {        Assert.AreEqual(0, 1 - 1);

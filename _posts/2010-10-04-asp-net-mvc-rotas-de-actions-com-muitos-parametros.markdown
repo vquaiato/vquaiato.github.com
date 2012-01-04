@@ -31,7 +31,7 @@ tags:
 
 ### Os recursos com vários parâmetros
 Se quisermos responder a requisições do tipo _"minhaempresa/setor/controller/action/param1/param2/param3"_ não conseguimos isso por default, e é então que entra a configuração de rotas.Responder a uma requisição com mais de um parâmetro desta forma não é complexo, na verdade é algo bastante simples.Para um primeiro exemplo vamos imaginar que temos uma action que "mistura cores". Queremos poder escrever uma url assim no browser: _"estudio/misturar/azul/vermelho/verde"_.Este é nosso controller:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class EstudioController : Controller{    [HttpGet]    
 public ActionResult Misturar(string cor1, string cor2, string cor3)    {        object corMisturada = string.Format("{
@@ -50,7 +50,7 @@ Se simplesmente acessarmos a url no browser, obteremos:[caption id="attachment_1
 
 ### Adicionando uma rota no Global.asax
 Para que possamos realizar a chamada a este recurso, e receber em nossa action os valores desejados, precisamos adicionar uma rota em nossa tabela.A configuração de rotas no ASP.NET MVC é feita no arquivo Global.asax, de uma maneira bastante simples.Nosso arquivo Global.asax deve estar assim:
-{% highlight csharp %}
+{% highlight c# %}
 
 public 
 static void RegisterRoutes(RouteCollection routes){    routes.IgnoreRoute("{
@@ -70,7 +70,7 @@ d}
 
 {% endhighlight %}
 Este código adiciona uma rota a nossa tabela de roteamento. Vamos ver então como rotear para conseguirmos responder a nossas requisições precisamos do código a seguir:
-{% highlight csharp %}
+{% highlight c# %}
 routes.MapRoute(    "MisturarCores",    "{
 ontroller}
 /{

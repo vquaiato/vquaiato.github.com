@@ -23,7 +23,7 @@ tags:
 Salve galera do mal!
 O Linq no .NET 4 traz uma nova extension: Zip. Ao contrário do que possa parecer Zip não é dos arquivos .zip compactados. Este extension method aplicado a qualquer IEnumerable<T> faz o merge de dois IEnumerable em um terceiro IEnumerable, e o resultado pode ser de um tipo diferente dos outros dois. A assinatura desta extension é:
 
-{% highlight csharp %}
+{% highlight c# %}
 
 
 
@@ -35,7 +35,7 @@ static IEnumerable<tresult> Zip<TFirst, TSecond, TResult>(this IEnumerable<tfirs
 # Usando o Zip
 Imaginem o seguinte caso:
 
-{% highlight csharp %}
+{% highlight c# %}
 
 string[] times = { "Santos", "Santo André", "Grêmio Prudente", "São Paulo", "Corinthians" }
 ;
@@ -46,7 +46,7 @@ string[] times = { "Santos", "Santo André", "Grêmio Prudente", "São Paulo", "
 
 Queremos que os 4 primeiros times se classifiquem, e queremos obter a posição de cada um deles. Com o Zip podemos fazer algo assim:
 
-{% highlight csharp %}
+{% highlight c# %}
 
 string[] times = { "Santos", "Santo André", "Grêmio Prudente", "São Paulo", "Corinthians" }
 ;
@@ -58,7 +58,7 @@ var timesClassificados = times.Zip(classifica, (t, c) => Tuple.Create(t, c));
 
 Na **_linha 3_** o que fizemos é chamar a extension Zip. Passamos então o IEnumerable classifica (1,2,3,4). O segundo argumento é uma Func que recebe 2 parâmetros. O primeiro deles vindo da coleção times, e o segundo vindo de classifica. Então o que fazemos é criar uma Tuple com eses dois valores.O objeto timesClassificados contém 4 items, como pode ser visto abaixo:[caption id="attachment_797" align="aligncenter" width="445" caption="Resultado da utilização do Zip"][![Resultado da utilização do Zip](http://viniciusquaiato.com/blog/wp-content/uploads/2010/03/Resultado1.jpg "Resultado da utilização do Zip")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/03/Resultado1.jpg)[/caption]Eu poderia não criar uma Tuple, poderia criar uma string simplesmente:
 
-{% highlight csharp %}
+{% highlight c# %}
 
 var timesClassificados = times.Zip(classifica, (t, c) => string.Format("{
 }
@@ -70,7 +70,7 @@ var timesClassificados = times.Zip(classifica, (t, c) => string.Format("{
 
 E teríamos o mesmo resultado.Ainda poderia usar Linq ao invés de extensions:
 
-{% highlight csharp %}
+{% highlight c# %}
 
 string[] times = { "Santos", "Santo André", "Grêmio Prudente", "São Paulo", "Corinthians", "Portuguesa" }
 ;

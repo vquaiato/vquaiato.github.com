@@ -22,14 +22,14 @@ Sabemos que devemos manter nossos testes isolados. Sabemos que os testes não de
 
 ## Enviando e-mails para um diretório
 Zapeando na internet descobri que há uma configuração no .NET que faz com que os e-mails sejam enviados para um diretório. É isso mesmo: ao invés de enviar via SMTP os emails são salvos em um diretório previamente configurado. Cool!Basta para isso informar esta opção no arquivo de configuração (App.config ou Web.config).No caso do meu projeto de testes o App.config:
-{% highlight csharp %}
+{% highlight c# %}
         <specifiedpickupdirectory pickupdirectorylocation="c:\users\vquaiato\desktop\" />      </smtp>    </mailsettings>  </system.net></configuration>
 {% endhighlight %}
 Precisamos apenas utilizar a opção deliveryMethod das configurações SMTP utilizando a opção "SpecifiedPickupDirectory". Especificando assim um diretório para onde serão enviados os emails.Minha idéia era poder criar testes que não fossem de unidade mas que ainda assim fossem automatizados.Se eu só estivesse utilizando SMTP não conseguiria automatizar meus testes, mas enviando os emails para um diretório posso começar a brincar com isso. 
 
 ## Automatizando testes de envio de e-mail
 A idéia é que eu pudesse chegar a escrever um código parecido com esse:
-{% highlight csharp %}
+{% highlight c# %}
 [Test]
 public void Send_Email(){
 var somesender = new SomeSender();
@@ -45,7 +45,7 @@ var somesender = new SomeSender();
 
 {% endhighlight %}
 Brincando nada mais do que 20min. cheguei em 2 classes simples que me permitiram escrever esse código.Uma delas é uma classe estática que desencadeia as chamadas de verificação e atende o primeiro dos testes:
-{% highlight csharp %}
+{% highlight c# %}
 
 public 
 static class Mail{    
@@ -66,7 +66,7 @@ var error = files == null || files.Length == 0;
 
 {% endhighlight %}
 Vou omitir algum código aqui pois na verdade não quero mostrar a criação de uma API de testes.A outra classe é a MailVerifier que é responsável por fornecer um método bacana que aceita lambdas:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class MailVerifier{    
 

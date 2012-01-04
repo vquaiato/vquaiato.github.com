@@ -31,7 +31,7 @@ tags:
 
 ### Um exemplo simples
 <blockquote>Uma compra pode estar em um de três estados diferentes. Cada um destes estados dá uma informação diferente sobre a situação da compra.</blockquote>Inicialmente temos isso:
-{% highlight csharp %}
+{% highlight c# %}
 
 public enum StatusDaCompra{    AguardandoConfirmacaoPagamento,    Enviada,    Entregue}
 
@@ -65,7 +65,7 @@ public string ObterInformacoes()    {        switch (Status)        {           
 
 ### O State Pattern
 Bom, a solução simples para evitar esse switch e seguir boas práticas OO é usar o [State Pattern](http://en.wikipedia.org/wiki/State_pattern).O [State Pattern](http://en.wikipedia.org/wiki/State_pattern) basicamente serve para "mudar" o comportamento de um objeto no momento de sua execução, baseado em seu estado. Oras, é tudo o que precisamos. Definir um estado que gerará um comportamento, e saberá se encaixar na cadeia de estados possíveis.Nosso enum StatusDaCompra não nos ajuda muito com isso. Em [Java o enum pode ter comportamento](http://download.oracle.com/javase/tutorial/java/javaOO/enum.html), o que nos permitiria facilmente implementar o [State Pattern](http://www.dofactory.com/Patterns/PatternState.aspx#_self2) diretamente no enum. No .NET não temos isso, então vamos mudar nosso código para algo assim:
-{% highlight csharp %}
+{% highlight c# %}
 
 public abstract class StatusDaCompra{    
 
@@ -105,7 +105,7 @@ public override void ProximoStatus(Compra compra)    {    }
 
 {% endhighlight %}
 A primeira coisa que fiz foi criar uma classe, um Value, que representa o Status da compra.(poderia ser uma interface)Reparem que agora a cadeia dos possíveis status é que sabe se alterar. Cada um dos status sabe para onde ir, e sabe o que ele significa, ou seja, ele representa um status com o comportamento pertinente a ele.Nossa classe Compra ficou assim:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class Compra{    
 
@@ -130,7 +130,7 @@ Com isso recuperamos o encapsulamento das informações do status da compra, afi
 
 ### A troca de Status
 Ainda não resolvemos o problema da troca de status. Uma forma de fazer isso seria com a utilização de eventos que sinalizam a Compra. A utilização de eventos faz sentido se a compra estiver em memória. Vamos então fornecer através da compra uma interface para atualizar seu status:
-{% highlight csharp %}
+{% highlight c# %}
 
 public void MudarStatus(){    this.Status.ProximoStatus(this);
     }

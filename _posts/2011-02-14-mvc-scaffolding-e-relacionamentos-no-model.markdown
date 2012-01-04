@@ -25,7 +25,7 @@ tags:
 
 ## Definindo uma relação simples
 Vamos trabalhar com a idéia de Receita e Categorias. Abaixo temos a classe para representar nossas categorias:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class Categoria{    
 
@@ -40,7 +40,7 @@ public int CategoriaId { get;
 
 {% endhighlight %}
 Vamos criar uma classe para representar nossas receitas:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class Receita{    
 
@@ -61,14 +61,14 @@ public int CategoriaId { get;
 Se as classes acima precisam de explicação: [http://bit.ly/hvQQ7f](http://bit.ly/hvQQ7f)Reparem na **_linha 5_**. Esta é a mágica de um relacionamento para o MVC Scafolding. Uma propriedade do tipo &lt;
     Model&gt;
     Id define uma relação. No exemplo acima uma receita possui uma relação com uma categoria.Vamos então executar o scaffolding:
-{% highlight csharp %}
+{% highlight c# %}
 Scaffold Controller ReceitaScaffold Controller Categoria
 {% endhighlight %}
 Isso irá criar nossos controllers, contextos do EF4 e views.[caption id="attachment_3113" align="aligncenter" width="177" caption="MVC Scaffolding relacionamento simples"][![MVC Scaffolding relacionamento simples](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/scaffolding-relacionamento-simples-177x300.png "MVC Scaffolding relacionamento simples")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/scaffolding-relacionamento-simples.png)[/caption]Agora podemos ver na view de criação de uma receita que o MVC Scaffolding já nos colocou um dropdown para selecionarmos a qual categoria esta receita pertence:[caption id="attachment_3114" align="aligncenter" width="282" caption="MVC Scaffolding view com relacionamento"][![MVC Scaffolding view com relacionamento](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/MVC-Scaffolding-view-282x300.png "MVC Scaffolding view com relacionamento")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/MVC-Scaffolding-view.png)[/caption]
 
 ## Exibindo as relações nas views de listagem
 Para exibirmos as relações nas views de listagem(index) vamos modificar um pouco nosso model para conter informações além de simplesmente o id.Ficaremos com classes assim:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class Categoria{    
 
@@ -90,7 +90,7 @@ public override string ToString()    {        return this.Nome;
 </receita>
 {% endhighlight %}
 Vejam na **_linha 6_** podemos ver que temos uma coleção de receitas. Desta forma é possível saber quais as receitas estão presentes em uma categoria.O override do método ToString é apenas para facilitar as views.
-{% highlight csharp %}
+{% highlight c# %}
 
 public class Receita{    
 
@@ -117,7 +117,7 @@ public virtual Categoria Categoria { get;
 
 {% endhighlight %}
 Aqui apenas uma alteração na **_linha 8_** onde criamos uma propriedade do tipo Receita.Vamos executar os comandos de scaffolding novamente, desta vez com o parâmetro -Force, para sobrescrever o código já usado antes:
-{% highlight csharp %}
+{% highlight c# %}
 Scaffold Controller Receita -ForceScaffold Controller Categoria -Force
 {% endhighlight %}
 Com isso temos como resultado:[caption id="attachment_3122" align="aligncenter" width="300" caption="MVC Scaffolding index views"][![MVC Scaffolding index views](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/MVc-Scaffolding-index-views-300x227.png "MVC Scaffolding index views")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/MVc-Scaffolding-index-views.png)[/caption][caption id="attachment_3123" align="aligncenter" width="300" caption="MVC Scaffolding index views 2"][![MVC Scaffolding index views 2](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/MVc-Scaffolding-index-views-2-300x227.png "MVC Scaffolding index views 2")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/MVc-Scaffolding-index-views-2.png)[/caption]

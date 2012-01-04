@@ -82,11 +82,11 @@ Shared
 
 ## Configurando instâncias e máquinas no Windows Azure via XML
 A edição e configuração da quantidade de instâncias e o tamanho das máquinas também podem ser feitas através de XMLs para quem não trabalhar com Visual Studio.Na nossa solution temos dois arquivos no projeto Azure que contém estas informações: **_Serviceconfiguration.cscfg_** e **_ServiceDefinition.csdef_** (cs no nome dos arquivos não é de C# e sim de Cloud Service).No arquivo **_ServiceConfiguration.cscfg_** configuramos quantas instâncias do nosso role(aplicação) queremos, veja abaixo na **_linha 4_**:
-{% highlight csharp %}
+{% highlight c# %}
     <instances count="4" />    <configurationsettings>      <setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />    </configurationsettings>  </role></serviceconfiguration>
 {% endhighlight %}
 E no arquivo **_ServiceDefinition.csdef_** configuramos entre outras informações o tamanho da máquina virtual, veja na **_linha 3_** o atributo vmsize.
-{% highlight csharp %}
+{% highlight c# %}
   <webrole name="SiteMVC3" vmsize="Small" /></servicedefinition>
 {% endhighlight %}
 (em outro post detalharemos mais estes arquivos e o Service Model do Windows Azure)

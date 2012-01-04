@@ -13,6 +13,10 @@ ul li{
 h2, h3 {
 	text-shadow: 1px 1px 1px #ababab;
 }
+blockquote{
+	border-left: solid 4px #666;
+	padding-left: 5px;
+}
 section#title{
 	text-align: center;
 }
@@ -35,7 +39,7 @@ section#blog_content{
 }
 div#posts_home{
 	float:left;
-	width:700px
+	width:720px
 }
 ul.posts li{
 	list-style-type:none;
@@ -61,10 +65,14 @@ h2.post_title{
 div#categories ul {
 	padding-top:20px;
 }
+div#categories ul li{
+	text-align:right;
+}
 div#categories{
 	float:left;
-	width:190px;
+	width:170px;
 	margin-left:50px;
+	/*border:solid 1px red;*/
 }
 div#categories a, div#categories a:visited{
 	color:#333;

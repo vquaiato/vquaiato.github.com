@@ -22,7 +22,7 @@ tags:
   autoslug: "submit-ass\xC3\xADncrono"
 ---
 Esta semana tivesse a necessidade de realizar o submit em um form de maneira assíncrona: [Hijax](http://domscripting.com/presentations/xtech2006/).Com [ASP.NET MVC](http://asp.net/mvc) e [JQuery](http://jquery.com) esta éuma tarefa bastante trivial. Então sem enrolar, vamos ao form:
-{% highlight csharp %}
+{% highlight c# %}
 <div>    @using (Html.BeginForm("cadastrar", "home", FormMethod.Post, new { id = "cadastro" }
 )) {                     <label for="Nome" style="display:block;
     ">Nome</label>        @Html.TextBox("Nome")<br />                    <label for="Email" style="display:block;
@@ -30,7 +30,7 @@ Esta semana tivesse a necessidade de realizar o submit em um form de maneira ass
 </div>
 {% endhighlight %}
 Eu preciso que este formulário seja postado para o servidor de forma assíncrona, em bizarrices no JavaScript (no projeto em que fiz isso este era um arquivo .html e não .cshtml).Para fazermos isso vamos utilizar jquery para submeter o formulário e serializar os dados a serem enviados, sem que precisemos ficar configurando tudo como parâmetros.O código JavaScript ficou mais ou menos assim:
-{% highlight csharp %}
+{% highlight c# %}
 $(function () {    $('#cadastrar').submit(function (e) {        e.preventDefault();
     $.post($(this).attr("action"), $(this).serialize(), function (retorno) {            if (retorno.Ok) {                alert("Ok!");
     }
@@ -43,7 +43,7 @@ $(function () {    $('#cadastrar').submit(function (e) {        e.preventDefault
     
 {% endhighlight %}
 A mágica é que atachamos um evento submit ao formulário, **_linha 2_**. Na **_linha 3_** cancelamos o evento que normalmente seria disparado pelo input submit.Na **_linha 5_** tudo o que fazemos é uma requisição [post](http://api.jquery.com/jQuery.post/). Vejam como não utilizamos "magic strings" para os parâmetros da chamada post. Ao invés disso utilizamos os próprios valores já definidos no form: sua action, serializamos os campos como parâmetros da requisição.Pronto! Simples assim. Na action no servidor eu optei por trabalhar com o request mesmo:
-{% highlight csharp %}
+{% highlight c# %}
 
 public ActionResult Cadastrar(){
 var ok = true;

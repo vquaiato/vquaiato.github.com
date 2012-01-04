@@ -30,12 +30,12 @@ Quando falamos em Orientação a Objetos e Objetos estamos nos referindo a: esta
 
 ### Objetos se comunicam
 Objetos falam(ou deveriam) falar uns com os outros através de métodos. Quando eles começam a se comunicar por meio de suas propriedades é um sinal(na maioria das vezes) de que as coisas estão indo mal: encapsulamento violado, criação de dependências e código procedural, afinal estamos tratando um objeto apenas como dados.Vi este código no twitter essa semana e vou usar como exemplo:
-{% highlight csharp %}
+{% highlight c# %}
 Me.Connection.Close();
     
 {% endhighlight %}
 Ha! Tenho certeza que vocês já identificaram qual o problema não?!Pois bem o que acontece neste código é que o mundo precisa conhecer a estrutura interna do objeto "Me" e além disso precisa saber como modificar seu estado. Estamos **pedindo** informações para ele ao invés de **dizer** o que precisamos.O problema com isso é que criamos dependências a este objeto. Se algo precisar ser alterado em sua estrutura interna isto está exposto ao mundo. Seria melhor termos algo como:
-{% highlight csharp %}
+{% highlight c# %}
 Me.FecharConexao();
     
 {% endhighlight %}

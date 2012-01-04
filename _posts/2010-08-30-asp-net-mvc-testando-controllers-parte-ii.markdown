@@ -40,7 +40,7 @@ tags:
 
 ### Testando uma action de listagem
 Este teste é um teste simples que mostra como verificar o comportamento de uma action que deve coordenar a listagem de Produtos.
-{% highlight csharp %}
+{% highlight c# %}
 [TestMethod]
 public void Action_Listar_Retorna_Todos_Produtos_Para_View_ListarProdutos(){
 var todosProdutos = new List<produto>                            {                                new Produto("Computador"),                                new Produto("Teclado"),                                new Produto("Mouse"),                            }
@@ -57,7 +57,7 @@ Neste teste criamos uma lista de produtos e configuramos o mock do nosso reposit
 
 ### Testando action que retorna 2 views diferentes
 Nossa action de listagem pode assumir um outro comportamento. Quando não existe nenhum produto para ser exibido ela deve retornar uma view diferente, uma view de NenhumProduto. Vejamos o teste:
-{% highlight csharp %}
+{% highlight c# %}
 [TestMethod]
 public void Action_Listar_Sem_Nenhum_Produto_Deve_Retornar_View_NenhumProduto(){    repositorio        .Setup(r => r.Todos())        .Returns(new List<produto>());
 var viewResult = controller.Listar();
@@ -69,7 +69,7 @@ Este é um teste bastante simples também. Configuramos o repositório para reto
 
 ### Testando action que retorna Json
 Agora faremos um pequeno teste em uma action que deve listar os produtos em formato Json. Esta action recebe 2 parâmetros, mais ou menos para realizar uma paginação via ajax.Vejamos como ficou o teste:
-{% highlight csharp %}
+{% highlight c# %}
 [TestMethod]
 public void Action_Obter_Deve_Retornar_Produtos_Em_Formato_Json(){
 var todosProdutos = new List<produto>                    {                        new Produto("Teclado"),                        new Produto("Monitor")                    }

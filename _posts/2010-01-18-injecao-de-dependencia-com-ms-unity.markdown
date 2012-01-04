@@ -34,7 +34,7 @@ Bom pessoal, pudemos ver os benefícios e alguns usos de Inversão de Controle e
 - Property Injection (injeção de propriedade)
 - Method Call Injection (injeção de chamada de métodos)
 Vamos usar como exemplo estas classes e interfaces:
-{% highlight csharp %}
+{% highlight c# %}
 
 public interface ILogger{
 void RegistrarMensagem(string mensagem);
@@ -64,7 +64,7 @@ public void EnviarEmail(string email, string mensagem)    {        //Envia email
 
 {% endhighlight %}
 Adicione as seguintes referências ao seu projeto: _Microsoft.Practices.ObjectBuilder2.dll_ e _Microsoft.Practices.Unity.dll_ que se encontram na pasta que você "instalou" o Unity, como pode ser visto na figura abaixo:![Incluindo Dlls do Unity](http://viniciusquaiato.com/blog/wp-content/uploads/2010/01/Incluindo-Dlls.jpg "Incluindo Dlls do Unity")As classes acima são bem simples, no final das contas o que faremos é com que o Unity crie um EnviadorDeEmails com a dependência de ILogger injetada e resolvida, ou seja, que ele crie um EnviadorDeEmails passando para ele um SqlLogger. Para isso vamos "ensinar" ao Unity como resolver a interface ILogger, como pode ser visto no código abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 
 var unityContainer = new UnityContainer();
     unityContainer.RegisterType<ILogger, SqlLogger>();
@@ -74,7 +74,7 @@ Na _**linha 1**_ criamos uma instância do contêiner do Unity. Na _**linha 2**_
 
 ## Constructor Injection
 Agora podemos mandar que o Unity construa nosso EnviadorDeEmails usando constructor injection, conforme visto abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 [TestMethod]
 public void Configurando_Unity_Para_Resolver_ILogger(){
 var unityContainer = new UnityContainer();
@@ -88,7 +88,7 @@ O grande segredo aí está na _**linha 7**_ onde dizemos para o Unity construir 
 
 ## Property Injection
 Poderíamos dizer que a dependência não deve ser resolvida via construtor, mas sim diretamente na propriedade, para isso alteraríamos a classe EnviadorDeEmails assim:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class EnviadorDeEmails{    [Dependency]    
 public ILogger Logger { get;
@@ -106,7 +106,7 @@ A única diferença aqui foi a utilização do DependencyAttribute na _**linha 3
 
 ## Method Call Injection
 A outra forma que o Unity tem para injetar nossas dependências é através da chamada de um método. Por exemplo, imaginem que temos um método Initialize na nossa classe, que é responsável por criar os objetos que nossa classe precisa. Podemos fazer com que o Unity execute este método resolvendo todas as dependências.Vejamos o código da classe EnviadorDeEmails utilizando um Method Call Injection:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class EnviadorDeEmails{    
 

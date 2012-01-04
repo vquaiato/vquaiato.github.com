@@ -37,21 +37,21 @@ Vamos então referenciar as dlls do driver e começar a trabalhar. Adicione refe
 
 ## Se preferir com o NuGet
 
-{% highlight csharp %}
+{% highlight c# %}
 Install-Package MongoDB.Driver
 {% endhighlight %}
 TODOS COMEMORA \o/
 
 ## Conectando no MongoDB com C#
 Vamos então conectar no nosso servidor MongoDB e acessar um banco de dados. (Para informações sobre [como instalar e executar o servidor MongoDB veja este post aqui](http://viniciusquaiato.com/blog/primeiros-passos-com-mongodb/))Após executar o servidor e ter as referências adicionadas ao nosso projeto vamos utilizar uma classe chamada MongoServer para nos conectarmos ao servidor MongoDB:
-{% highlight csharp %}
+{% highlight c# %}
 var server = MongoServer.Create("mongodb://localhost");
     server.Connect();
     server.Disconnect();
     
 {% endhighlight %}
 A classe MongoServer é a conexão com os servidores mongo que teremos. Por debaixo dos panos um pool de conexões é utilizado.Na **_linha 1_** informamos uma connection string para realizar a conexão com o server. A connection string possuirá um formato parecido com este:
-{% highlight csharp %}
+{% highlight c# %}
 mongodb://[username:password@]hostname[:port][/[database][?options]]
 {% endhighlight %}
 Reparem que obrigatório mesmo é o hostname, no nosso caso "localhost".Na **_linha 3_** temos o método Connect, que como se pode imaginar conecta ao server ;
@@ -59,7 +59,7 @@ Reparem que obrigatório mesmo é o hostname, no nosso caso "localhost".Na **_li
 
 ## Acessando um database MongoDB com C#
 Para acessarmos um database temos algumas opções de utilização do método GetDatabase. A mais simples é como segue:
-{% highlight csharp %}
+{% highlight c# %}
 var database = server.GetDatabase("nome_database");
     
 {% endhighlight %}
@@ -67,12 +67,12 @@ A classe MongoDatabase, como podemos "adivinhar", representa um database no serv
 
 ## Acessando uma collection MongoDB com C#
 Para acessar uma collection vamos utilizar o método GetCollection<t> da classe MongoDatabase:
-{% highlight csharp %}
+{% highlight c# %}
 var collection = database.GetCollection<usuario>("usuarios");
     </usuario>
 {% endhighlight %}
 Isso quer dizer que a collection "usuarios" vai nos retornar uma collection contendo documentos Usuario. Este é apenas o documento padrão para esta collection, que pode ter diversos tipos diferentes de documentos, que podem ser solicitados futuramente.Vamos então ver um código mais completo de conexão ao server do MongoDB, acesso a um database e então seleção de uma collection:
-{% highlight csharp %}
+{% highlight c# %}
 var server = MongoServer.Create ("mongodb://localhost");
     try {
 erver.Connect ();
@@ -96,7 +96,7 @@ erver.Disconnect ();
 </usuario>
 {% endhighlight %}
 Quando executarmos este código veremos que não temos nenhum usuário na collection usuarios. Precisamos então inserir algum usuário, vamos então adicionar o seguinte código dentro do try:
-{% highlight csharp %}
+{% highlight c# %}
 var usuario = new Usuario { Id = 10, Nome = "Vinicius no MongoDB", Email = "vinicius@blog" }
 ;
     usuarios.Insert<usuario> (usuario);

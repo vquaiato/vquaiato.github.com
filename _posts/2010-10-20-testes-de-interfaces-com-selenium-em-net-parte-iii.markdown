@@ -43,12 +43,12 @@ Precisamos adicionar a referência para a DLL do Selenium RC ao nosso projeto de
 
 ### Iniciando o Selenium Server e rodando os testes
 O Selenium Server vem junto com o Selenium RC. Como mostrado no post anterior [(veja aqui](http://viniciusquaiato.com/blog/testes-de-interfaces-com-selenium-em-net-parte-ii/)), vamos executar nosso bat para iniciar o Selenium Server.Feito isso podemos rodar nossos testes novamente:[caption id="attachment_1792" align="aligncenter" width="300" caption="Executando testes com Selenium RC e Selenium Server"][![Executando testes com Selenium RC e Selenium Server](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Executando-testes-com-Selenium-RC-e-Selenium-Server-300x145.png "Executando testes com Selenium RC e Selenium Server")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Executando-testes-com-Selenium-RC-e-Selenium-Server.png)[/caption]Caso você obtenha um erro pedindo para adicionar o Firefox 3 ao Path, faça isso.O Selenium por padrão inicia o Firefox utilizando o chrome launcher. E se não encontra o firefox retorna este erro.Você pode especificar um browser de sua escolha alterando a linha abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 selenium = new DefaultSelenium("localhost", 4444, "*chrome", "http://localhost:1115");
     
 {% endhighlight %}
 para
-{% highlight csharp %}
+{% highlight c# %}
 selenium = new DefaultSelenium("localhost", 4444, "*custom C:\Program Files (x86)\Mozila Firefox\firefox.exe", "http://localhost:1115");
     
 {% endhighlight %}

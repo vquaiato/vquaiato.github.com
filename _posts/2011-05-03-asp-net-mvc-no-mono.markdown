@@ -36,7 +36,7 @@ Primeiramente o que precisamos fazer é instalar o Mono (eu estou usando um Mac 
 ### Instalando o MonoDevelop
 O [MonoDevelop](http://monodevelop.com/) é a IDE que vamos utilizar para criar e trabalhar com nossos projetos. Faça o download do MonoDevelop para o seu ambiente(Windows, Linux, Mac, etc) na página de downloads do projeto: [http://monodevelop.com/Download](http://monodevelop.com/Download)Depois de terminar a instalação do Mono e do MonoDevelop vamos abrir a IDE.[caption id="attachment_3327" align="aligncenter" width="300" caption="MonoDevelop Mac"][![MonoDevelop Mac](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/Screen-shot-2011-05-01-at-9.53.50-PM-300x179.png "MonoDevelop Mac")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/Screen-shot-2011-05-01-at-9.53.50-PM.png)[/caption]# Criando o projeto ASP.NET MVC no Mono com MonoDevelop
 Vamos então criar um novo projeto ASP.NET MVC .[caption id="attachment_3328" align="aligncenter" width="300" caption="Criando projecto ASP.NET MVC no Mono com MonoDevelop"][![Criando projecto ASP.NET MVC no Mono com MonoDevelop](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/Screen-shot-2011-05-01-at-9.54.46-PM-300x235.png "Criando projecto ASP.NET MVC no Mono com MonoDevelop")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/Screen-shot-2011-05-01-at-9.54.46-PM.png)[/caption]Depois de criado um projeto vazio vamos adicionar um controller. Notem que a versão suportada totalmente é o ASP.NET MVC 2 ([saiba aqui por que a versão 3 ainda não é totalmente suportada](http://www.mono-project.com/Release_Notes_Mono_2.10#ASP.NET_MVC3_Support)).Criarei um controller com duas actions. Uma recebendo uma mensagem que será exibida em uma view. E a outra recebendo o nome de uma view a ser exibida.[caption id="attachment_3336" align="aligncenter" width="300" caption="Criando controllers ASP.NET MVC no Mono com MonoDevelop"][![Criando controllers ASP.NET MVC no Mono com MonoDevelop](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/Screen-shot-2011-05-02-at-11.53.28-PM-300x179.png "Criando controllers ASP.NET MVC no Mono com MonoDevelop")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/Screen-shot-2011-05-02-at-11.53.28-PM.png)[/caption]
-{% highlight csharp %}
+{% highlight c# %}
 
 public class HomeController : Controller{
 ublic ActionResult Say(string message){
@@ -52,7 +52,7 @@ eturn View(view);
 
 {% endhighlight %}
 As views não possuem nada além do normal. Vou apenas mostrar a view Message.aspx que acessa o ViewData:
-{% highlight csharp %}
+{% highlight c# %}
 <title></title></head><body><div># Hello Mono, seu lindo!
 
 
@@ -60,7 +60,7 @@ As views não possuem nada além do normal. Vou apenas mostrar a view Message.as
 </div></body></html>
 {% endhighlight %}
 E adicionei as rotas no Global.asax também para trabalhar com nossos parâmetros:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class MvcApplication : System.Web.HttpApplication{
 ublic 

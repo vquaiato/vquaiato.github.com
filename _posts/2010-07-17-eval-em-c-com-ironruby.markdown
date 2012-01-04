@@ -25,7 +25,7 @@ tags:
   autoslug: eval
 ---
 Fala galera, estava conversando com o [Bruno Kenj](http://www.brunokenj.net/) e ele estava com a necessidade realizar um Eval em C#.Bom, nem preciso dizer que minha resposta foi "Use IronRuby".Bom, segue abaixo o código que criei:
-{% highlight csharp %}
+{% highlight c# %}
 
 public 
 static class RubyEngineCreator{    
@@ -45,7 +45,7 @@ static dynamic GetRubyObject(string script)    {        return CreateEngine().Cr
 
 {% endhighlight %}
 Simples não?!Seguem alguns testes e um método Eval que criei pra facilitar:
-{% highlight csharp %}
+{% highlight c# %}
 [TestClass]
 public class UnitTest1{    
 

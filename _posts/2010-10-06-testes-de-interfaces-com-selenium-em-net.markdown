@@ -52,11 +52,11 @@ Para este pequeno exemplo utilizarei o google.com mesmo. [Baixe o Selenium IDE a
 
 ### Instalando Selenium RC
 O Selenium RC é na verdade um conjunto de bibliotecas que você utiliza com sua linguagem de programação preferida. No caso do .NET é um conjunto de Dlls. Além disso há um programa Java que é o Selenium Server, sem o qual o Selenium RC não funciona!Faça o [download do Selenium RC aqui](http://selenium.googlecode.com/files/selenium-remote-control-1.0.3.zip) e descompacte o arquivo .zip para um local de sua preferência.[caption id="attachment_1713" align="aligncenter" width="300" caption="Selenium RC e Server"][![Selenium RC e Server](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Selenium-RC-300x221.png "Selenium RC e Server")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Selenium-RC.png)[/caption]Para que possamos executar o Selenium Server precisamos do JDK instalado. Caso você não possua faça o [download do JDK aqui](http://www.oracle.com/technetwork/java/javase/downloads/jdk6-jsp-136632.html).Após o download apenas execute o instalador. Ao término da instalação verifique se o diretório do jdk\bin foi adicionado à variável path de ambiente:**_Meu computador >> propriedades >> configurações avançadas >> variáveis de ambiente_**Caso não tenha sido adicionada, adicione.Para que possamos executar o Selenium Server precisamos rodar a seguinte linha no prompt de comando:
-{% highlight csharp %}
+{% highlight c# %}
 java -jar LOCAL_DOWNLOAD_SELENIUM\selenium-server1.versao\selenium-server.jar
 {% endhighlight %}
 Você deve obter uma tela parecida com esta:[caption id="attachment_1704" align="aligncenter" width="300" caption="Selenium server running"][![Selenium server running](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Selenium-server-running-300x83.png "Selenium server running")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Selenium-server-running.png)[/caption]Para nos auxiliar com esta última etapa, vamos criar um arquivo .bat que fará o start do Selenium Server de forma mais automatizada. Crie um arquivo no notepad com o seguinte conteúdo e salve como selenium-server.bat:
-{% highlight csharp %}
+{% highlight c# %}
 @echo offjava -jar LOCAL_DOWNLOAD_SELENIUM_SERVER\selenium-server-1.0.3\selenium-server.jar
 {% endhighlight %}
 Feito isso, execute este arquivo para ver se o server sobe normalmente. Se subir, basta teclar ctrl + c para finalizar o server.

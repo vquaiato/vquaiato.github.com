@@ -25,14 +25,14 @@ tags:
   autoslug: windows-azure-queues
 ---
 Fala galera, beleza? Esta dica rápida vai para um "problema" que eu estava tendo ao criar Queues no Windows Azure. Vejam abaixo o código com problemas:
-{% highlight csharp %}
+{% highlight c# %}
 queueClient = storageAccount.CreateCloudQueueClient();
     this.namespacesQueue = this.queueClient.GetQueueReference("Namespaces");
     this.namespacesQueue.CreateIfNotExist();
     
 {% endhighlight %}
 Este código estava lançando uma Exception:<blockquote>One of the request inputs is out of range.</blockquote>Com o código de erro 400. Mas o código abaixo funciona:
-{% highlight csharp %}
+{% highlight c# %}
 queueClient = storageAccount.CreateCloudQueueClient();
     this.namespacesQueue = this.queueClient.GetQueueReference("namespaces");
     this.namespacesQueue.CreateIfNotExist();

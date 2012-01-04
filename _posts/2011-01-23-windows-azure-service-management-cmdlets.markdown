@@ -31,11 +31,11 @@ Há um pequeno problema em executar o download e instalação a partir do link a
 
 ### Utilizando os cmdlets
 Para utilizar os cmdlets basta digitar:
-{% highlight csharp %}
+{% highlight c# %}
 Add-PSSnapIn AzureManagementToolsSnapIn
 {% endhighlight %}
 Feito isso os cmdlets estarão disponíveis, confira com:
-{% highlight csharp %}
+{% highlight c# %}
 Get-Command -PSSnapIn AzureManagementToolsSnapIn
 {% endhighlight %}
 E assim veremos a listagem de comandos disponíveis:[caption id="attachment_2986" align="aligncenter" width="300" caption="Get-Command Azure Management Tools"][![Get-Command Azure Management Tools](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/get-command-300x157.png "Get-Command Azure Management Tools")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/get-command.png)[/caption]Em breve começarei a mostrar como fazer uso dos cmdlets para monitorar e manipular os serviços do Windows Azure.

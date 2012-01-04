@@ -31,11 +31,11 @@ Como dissemos o [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3) c
 
 ## Instalando o Ninject.MVC3
 É óbvio que isso tudo já está disponível com o [NuGet](http://viniciusquaiato.com/blog/tag/nuget/), então vamos digitar o seguinte comando no Package Manager Console:
-{% highlight csharp %}
+{% highlight c# %}
 Install-Package Ninject.MVC3 
 {% endhighlight %}
 Feito isso teremos as referências do [Ninject](http://viniciusquaiato.com/blog/singletons-ecologicos/) e Ninject.MVC3 adicionadas ao nosso projeto. Teremos também um arquivo criado, com o código abaixo:
-{% highlight csharp %}
+{% highlight c# %}
 using System.Web.Mvc;
     using Ninject;
     using Ninject.Mvc3;
@@ -58,7 +58,7 @@ static void Start()        {            // Create Ninject DI Kernel             
 </sqlthingrepository></ithingrepository>
 {% endhighlight %}
 Este código está pronto para utilizarmos. Ele configura o Ninject como sendo nossa implementação de [IDependencyResolver ](http://viniciusquaiato.com/blog/asp-net-mvc-3-e-o-dependencyresolver/)e já configura o mesmo para o ASP.NET MVC. Tudo que precisamos fazer é registrar nossas dependências utilizando o código da linha 13. Algo mais ou menos assim:
-{% highlight csharp %}
+{% highlight c# %}
 
 public 
 static void RegisterServices(IKernel kernel){    kernel.Bind<idependencia1>().To<dummydependencia1>();

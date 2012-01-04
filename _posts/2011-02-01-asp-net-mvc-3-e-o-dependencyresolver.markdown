@@ -43,7 +43,7 @@ A classe DependencyResolver atua como um Registry para os provedores de serviço
 
 ## Injetando dependências nos controllers
 Chega de falatório e vamos ver como podemos resolver dependências nos construtores de nossos controllers com um objeto do tipo IDependencyResolver.Vamos criar um controller bem simples:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class TemDependenciasController : Controller{    
 
@@ -68,7 +68,7 @@ var b = this.Dependencia1.Metodo("foo");
 
 {% endhighlight %}
 Este controller possui duas dependências em seu construtor. Este código compila porém não conseguimos executar esta aplicação pois no momento em que o ASP.NET MVC tentar instanciar o controller não conseguirá resolver as dependências do seu construtor.Vamos então criar uma classe que implemente IDependencyResolver que atuará como nosso SL:
-{% highlight csharp %}
+{% highlight c# %}
 
 public class MeuDependencyResolver : IDependencyResolver{    
 
@@ -108,7 +108,7 @@ public IEnumerable<object> GetServices(Type serviceType)    {        return new 
 
 ## Configurando o DependencyResolver
 Para configurarmos nossa classe para ser utilizada precisamos chamar o método SetResolver da classe DependencyResolver. O melhor para fazer isso neste caso é o Application_Start no Global.asax:
-{% highlight csharp %}
+{% highlight c# %}
 
 protected void Application_Start(){    AreaRegistration.RegisterAllAreas();
     RegisterGlobalFilters(GlobalFilters.Filters);
