@@ -25,13 +25,13 @@ Continuando a falar sobre código claro, legível e compreensível, falarei um p
 
 ### O nome que não diz nada...
 Vejamos o seguinte exemplo:
-{% highlight c# %}
+{% highlight csharp %}
 
 public bool Permite(int idEmp, string caminho){    //faz alguma coisa}
 
 {% endhighlight %}
 Ok! Tudo que eu consigo saber é que este método retorna um booleano. O que ele "permite"? E os parâmetros? Se ao menos isso estivesse bem escrito, facilitaria em algo.E se o método estivesse escrito assim:
-{% highlight c# %}
+{% highlight csharp %}
 
 public bool VerificaEmpresaAcessaPasta(int idEmpresa, string caminhoPasta){    //faz alguma coisa}
 
@@ -40,19 +40,21 @@ Poxa, muito mais claro! Agora o método me diz tudo que eu preciso saber. Sim, o
 
 ### O método 'faz tudo'...
 É muito comum criarmos um método simples. Que recebe ali seu parametrozinho, e faz seu trabalho. No entanto com o passar do tempo, qualquer necessidade que surge e <i>parece</i> estar relacionada com o método, vamos jogando parâmetros nele. Resultado: bagunça, falta de clareza, falta de coesão.Nasce assim>
-{% highlight c# %}
+{% highlight csharp %}
 
 public object[] FiltraEmpresa(int id){    //traz a empresa por id}
 
 {% endhighlight %}
 E morre assim:
-{% highlight c# %}
+{% highlight csharp %}
 
-public object[] FiltraEmpresa(int? id, string nome, string cnpj, string uf, string cidade, bool ativa){    if(id.HasValue)        //faz algo com id    if(!string.IsNullOrWhiteSpace(nome))        //faz algo com nome    //etc etc}
+public object[] FiltraEmpresa(int? id, string nome, string cnpj, string uf, string cidade, bool ativa){
+if(id.HasValue)        //faz algo com id
+if(!string.IsNullOrWhiteSpace(nome))        //faz algo com nome    //etc etc}
 
 {% endhighlight %}
 Completamente bagunçado!Podemos tornar as coisas mais claras assim:
-{% highlight c# %}
+{% highlight csharp %}
 
 public object ObterEmpresaPorId(int id){ }
 
@@ -73,7 +75,7 @@ Você deve estar pensando "Mas agora eu escrevi muito mais código!". E eu respo
 
 ### As sobrecargas que não revelam nada...
 Um outro caso, que é um pouco polêmico, é com relação a sobrecargas. Confesso que não sou muito fã delas.Calma. Calma. Explicarei.Sobrecargas, no geral, acabam extrapolando o limite do aceitável. Já vi situações onde mais de 13 sobrecargas existiam, e o problema é que o método já estava começando a realizar diferentes funções, baseado nos parâmetros que recebia.Por isso, na maioria dos casos, eu prefiro métodos com nomes bem definidos do que sobrecargas. Vamos utilizar o cenário anterior, mas ao invés dos nomes bem definidos, vamos utilizar assim:
-{% highlight c# %}
+{% highlight csharp %}
 
 public object PesquisaEmpresa(int id){ }
 
@@ -82,7 +84,7 @@ public object PesquisaEmpresa(string cnpj){ }
 
 {% endhighlight %}
 Até aí tudo bem. O nome dos parâmetros, se estiverem claros, revelam a intenção do método.Mas e este caso aqui:
-{% highlight c# %}
+{% highlight csharp %}
 
 public object[] PesquisaEmpresa(string nome, bool ativa){ }
 

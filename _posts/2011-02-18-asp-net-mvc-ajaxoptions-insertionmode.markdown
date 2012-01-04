@@ -35,25 +35,25 @@ Para acompanhar os outros posts sobre [AjaxOptions](http://viniciusquaiato.com/b
 - InsertionMode.InsertBefore
 - InsertionMode.Replace
 Vamos utilizar o exemplo cru do primeiro artigo, e vamos apenas trabalhar alterando o valor da propriedade InsertionMode do objeto AjaxOptions.Vou utilizar também uma div com um conteúdo já existente, para demonstrar as diferenças:
-{% highlight c# %}
+{% highlight csharp %}
     
 Já existe conteúdo
 </div>
 {% endhighlight %}
 O código para nosso form irá varias como mostra abaixo com InsertBefore:
-{% highlight c# %}
+{% highlight csharp %}
 @using (Ajax.BeginForm(    "AjaxAction",    new AjaxOptions { UpdateTargetId = "div_nome", InsertionMode = InsertionMode.InsertBefore}
 )){    @Html.TextBox("nome")<br />    @Html.TextBox("sobrenome")    <input type="submit" value="ajax" />}
 
 {% endhighlight %}
 Com InsertAfter:
-{% highlight c# %}
+{% highlight csharp %}
 @using (Ajax.BeginForm(    "AjaxAction",    new AjaxOptions { UpdateTargetId = "div_nome", InsertionMode = InsertionMode.InsertAfter}
 )){    @Html.TextBox("nome")<br />    @Html.TextBox("sobrenome")    <input type="submit" value="ajax" />}
 
 {% endhighlight %}
 E com Replace:
-{% highlight c# %}
+{% highlight csharp %}
 @using (Ajax.BeginForm(    "AjaxAction",    new AjaxOptions { UpdateTargetId = "div_nome", InsertionMode = InsertionMode.Replace}
 )){    @Html.TextBox("nome")<br />    @Html.TextBox("sobrenome")    <input type="submit" value="ajax" />}
 

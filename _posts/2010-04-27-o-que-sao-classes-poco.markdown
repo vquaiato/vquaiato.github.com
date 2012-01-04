@@ -22,7 +22,7 @@ Nos últimos meses tem-se falado muito de classes POCO. É POCO pra cá e POCO p
 
 ### O termo POCO
 POCO - Plain Old CLR Object - diz respeito a uma classe que não depende e não conhece frameworks externos ao .net framework.O termo POCO vem do termo POJO - Plain Old Java Object - utilizado pela comunidade Java.Atualmente classes POCO estão bastante associadas ao trabalho com ferramentas [ORM](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx). No geral estas ferramentas definem classes para serem herdadas, interfaces implementadas ou atributos para serem utilizados nas classes ou propriedades. São estas dependências que as classes POCOs não criam, elas ficam independentes destes frameworks externos.Veja abaixo uma classe utilizada pelo WCF em conjunto com o LinqToSql:
-{% highlight c# %}
+{% highlight csharp %}
 [DataContract][Table(Name="Usuarios")]
 public class Usuario{    [DataMember]    [Column]    
 public int Id {
@@ -47,7 +47,7 @@ eturn false;
 
 {% endhighlight %}
 Na classe acima temos a dependência de dois frameworks distintos: o WCF e o LinqToSql. E apesar destes dois frameworks serem parte do .Net, eles criam em nossa classe uma dependência direta para estas ferramentas que estão além do domínio do nosso software.O problema desta dependência é a dificuldade em testar estas classes, dar manutenção(em alguns casos é difícil entender o que a classe é ou faz), evoluir, e o principal é complicado utilizar estas classes em outros projetos.Na classe do exemplo acima poderíamos ter uma situação onde Usuario herdasse de uma classe de framework ORM, ou implementasse uma interface deste framework, alterando assim seu comportamento e estrutura, incluindo métodos que dizem respeito ao framework e não a classe Usuario, o que criaria um grande problema, como mencionado antes.Neste exemplo simples isso pode não parecer um grande problema, mas imagine todo um sistema de uma empresa. Ou então imagine todas as classes core dos sistemas de uma empresa. Como você vai reutilizar estas classes core em outros sistemas se elas dependem de frameworks que podem não estar relacionados com este novo desenvolvimento?O ideal é manter as classes de domínio o mais desacopladas possível. Procure por frameworks que permitam a utilização de classes POCO, ou desenhe suas aplicações de forma a manter seu core livre destas dependências ou com a menor quantidade delas.A classe POCO para o cenário acima, seria apenas removendo os atributos:
-{% highlight c# %}
+{% highlight csharp %}
 
 public class Usuario{    
 

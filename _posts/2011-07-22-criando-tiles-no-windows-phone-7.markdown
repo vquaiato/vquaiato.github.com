@@ -31,11 +31,11 @@ Primeiro vamos criar uma imagem para o nosso tile. As imagens para [tiles devem 
 
 ### Criando Tiles via C#
 Agora vamos criar uma app para Windows Phone 7 no Visual Studio.Primeiro adicione sua imagem ao projeto e marque suas propriedades como abaixo:[caption id="attachment_3836" align="aligncenter" width="300" caption="Configurando background tile no projeto WP7"][![Configurando background tile no projeto WP7](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Configurando-background-tile-no-projeto-300x264.png "Configurando background tile no projeto WP7")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Configurando-background-tile-no-projeto.png)[/caption]Feito isso só nos resta criar o código para configurar nosso tile. Insira o código abaixo no construtor da sua MainPage por exemplo:
-{% highlight c# %}
+{% highlight csharp %}
 
 public void CreateApplicationTile() {
 var meuTile= ShellTile.ActiveTiles.First();
-    if (meuTile!= null)    {
+if(meuTile!= null)    {
 var standardTile = new StandardTileData                                {                                    Title = "Título Tile",                                    BackgroundImage = new Uri("arroba.png", UriKind.Relative),                                    Count = 7        }
 ;
     meuTile.Update(standardTile);

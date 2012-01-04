@@ -34,7 +34,7 @@ tags:
   autoslug: testando-json-mvc
 ---
 Fala galera. Mostrei por alto um teste de controller [ASP.NET MVC](http://asp.net/mvc) que retornava [Json](http://www.json.org/) [aqui neste post](http://viniciusquaiato.com/blog/asp-net-mvc-testando-controllers-parte-ii/). A idéia agora é trabalhar um pouco mais este tipo de teste e deixar claro o que podemos fazer com isso.<blockquote>Quando estamos trabalhando com actions que retornam Json o problema que temos é que elas não retornam Json!</blockquote>O [JsonResult](http://msdn.microsoft.com/en-us/library/system.web.mvc.jsonresult.aspx) retornado possui um método [ExecuteResult](http://msdn.microsoft.com/en-us/library/system.web.mvc.jsonresult.executeresult.aspx), e é este o método responsável por gerar o Json e colocar no response. Se quisermos testar efetivamente o Json precisamos executar este método, ou de alguma maneira fazer o que ele faz.Vamos utilizar o seguinte Controller como exemplo:
-{% highlight c# %}
+{% highlight csharp %}
 
 public class HomeController : Controller{    
 
@@ -45,7 +45,7 @@ public JsonResult DadosJson()    {        return Json(new { Id = 10, Nome = "Vin
 
 {% endhighlight %}
 Bastante simples. Estamos apenas retornando 2 valores a serem transformados em Json.Vamos ao nosso teste:
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void TestMethod1(){
 var controller = new HomeController();
@@ -60,7 +60,7 @@ Isso é o que eu queria fazer, mas infelizmente não é possível.
 
 ### JavaScriptSerializer
 Uma das alternativas, a mais simples ao meu ver, é adicionar estas duas linhas de código ao teste:
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void TestMethod1(){
 var controller = new HomeController();
@@ -74,7 +74,7 @@ var output = serializer.Serialize(result.Data);
 
 {% endhighlight %}
 Com o código das **_linhas 7 e 8_** serializamos os nossos dados em forma Json, e podemos utilizá-los em nosso teste para a verificação.Eu achei que houvesse um problema com esse código. Em um primeiro momento pode parecer que este não é exatamente o código que o [ASP.NET MVC](http://aspnet.codeplex.com/) executa, então pode parecer um pouco falho. no entanto, se formos olhar o código fonte do ASP.NET MVC no CodePlex veremos que é basicamente isso mesmo que ele faz:[http://aspnet.codeplex.com/SourceControl/changeset/view/55373#266491](http://aspnet.codeplex.com/SourceControl/changeset/view/55373#266491)Desta forma fica bem claro que ao menos por enquanto este código pode ser utilizado com segurança para testar actions que retornam dados em formato Json.Podemos melhorar um pouco isso, e criar um extension method para o JsonResult e utilizar em nossos testes:
-{% highlight c# %}
+{% highlight csharp %}
 
 public 
 static class JsonResultTestExtensions{    
@@ -83,13 +83,13 @@ public
 static string GenerateOutputJson(this JsonResult result)    {
 var serializer = new JavaScriptSerializer();
 var output = serializer.Serialize(result.Data);
-    return output;
+return output;
     }
 }
 
 {% endhighlight %}
 _Reparem que este extension method será criado no projeto de testes, ou em uma DLL a ser referenciada apenas nos projetos de testes!_E nosso teste ficaria assim:
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void TestMethod1(){
 var controller = new HomeController();

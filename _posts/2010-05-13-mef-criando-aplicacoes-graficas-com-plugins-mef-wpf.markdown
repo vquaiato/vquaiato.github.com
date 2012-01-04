@@ -25,11 +25,11 @@ tags:
   autoslug: managed-extensibility
 ---
 Mais [MEF](http://viniciusquaiato.com/blog/mef-managed-extensibility-framework-no-net-4/) galera! O assunto é polêmico e controverso, mas antes de entrar no debate "MEF é um container de DI?" vou continuar mostrando o poder do mesmo.No [segundo post sobre o MEF](http://viniciusquaiato.com/blog/mef-criando-aplicacoes-plugaveis-no-net-4/) mostrei como criar um plugin simples para um logger, apenas código. Poderia ser uma regra de negócio, algo assim.Hoje vamos compor uma interface gráfica com o MEF. É isso mesmo, vamos lá.Criarei uma aplicação WPF com apenas uma janela. Essa aplicação contém 3 [StackPanel](http://msdn.microsoft.com/en-us/library/system.windows.controls.stackpanel.aspx). O primeiro deles contém controles criados dentro da aplicação, controles padrão.O segundo contém UserControls carregados através do MEF. E o terceiro contém um [TabControl](http://msdn.microsoft.com/en-us/library/system.windows.forms.tabcontrol.aspx) com algumas tabs criadas dentro da aplicação e outra inserida com o MEF.O projeto WPF é este abaixo:[caption id="attachment_944" align="aligncenter" width="270" caption="Wpf com MEF solution"][![Wpf com MEF solution](http://viniciusquaiato.com/blog/wp-content/uploads/2010/05/wpf-solution.jpg "Wpf com MEF solution")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/05/wpf-solution.jpg)[/caption]O código da nossa janela segue abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 </tabitem>            </tabcontrol>        </stackpanel>    
 {% endhighlight %}
 Não há nenhum mistério no código acima, e o resultado dele pode ser visto abaixo:[caption id="attachment_945" align="aligncenter" width="300" caption="Wpf com MEF window design"][![Wpf com MEF window design](http://viniciusquaiato.com/blog/wp-content/uploads/2010/05/wpf-solution-design-300x295.jpg "Wpf com MEF window design")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/05/wpf-solution-design.jpg)[/caption]Como pode ser visto os plugins serão carregados pelo MEF. Então vamos criar uma nova solution que conterá nossos plugins. Serão basicamente 2 UserControls simples e um TabItem, a nova solution pode ser vista abaixo:[caption id="attachment_948" align="aligncenter" width="296" caption="plugins mef wpf"][![plugins mef wpf](http://viniciusquaiato.com/blog/wp-content/uploads/2010/05/plugins-mef-wpf.jpg "plugins mef wpf")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/05/plugins-mef-wpf.jpg)[/caption]A imagem dos UserControls criados pode ser vista abaixo, e como são bem simples não vou colocar o código XAML aqui (estará disponível para download no final do post):[caption id="attachment_951" align="aligncenter" width="300" caption="user controls wpf mef"][![user controls wpf mef](http://viniciusquaiato.com/blog/wp-content/uploads/2010/05/user-controls-300x181.jpg "user controls wpf mef")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/05/user-controls.jpg)[/caption]O código para os 3 plugins está abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 [Export(typeof(UserControl))]
 public partial class UserControl1 : UserControl{    
 
@@ -39,7 +39,7 @@ public UserControl1()    {        InitializeComponent();
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight csharp %}
 [Export(typeof(UserControl))]
 public partial class UserControl2 : UserControl{    
 
@@ -49,7 +49,7 @@ public UserControl1()    {        InitializeComponent();
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight csharp %}
 [Export(typeof(TabItem))]
 public class TabPlugin1 : TabItem{    
 
@@ -60,7 +60,7 @@ public TabPlugin1()    {         this.Header = "Tab Plugin com MEF";
 
 {% endhighlight %}
 Notem na **_linha 1_** das 3 listagens acima que estamos utilizando o atributo Export, explicado [aqui neste post](http://viniciusquaiato.com/blog/mef-criando-aplicacoes-plugaveis-no-net-4/). As duas primeiras listagens criam UserControls que foram mostrados na figura acima. A terceira listagem cria um TabItem que é o tipo de objeto adicionado no TabControl, pois estamos criando uma tab em forma de plugin. Tudo muito simples.Agora para que tudo isso seja carregado na nossa aplicação, vamos compilar a solution dos plugins e copiar as DLLs para uma pasta na nossa aplicação WPF chamada plugins.Feito isso o código abaixo deve ser colocado no codebehinde da nossa janela wpf:
-{% highlight c# %}
+{% highlight csharp %}
 
 public partial class MainWindow : Window{    [ImportMany]    
 public List<usercontrol> pluginButtons;
@@ -75,8 +75,8 @@ var catalog = new DirectoryCatalog("../../plugins");
     catalog.Refresh();
 var container = new CompositionContainer(catalog);
     container.ComposeParts(this);
-    foreach (var b in this.pluginButtons)            this.stackPluginsContainer.Children.Add(b);
-    foreach (var t in this.tabPlugins)            this.tabComPlugins.Items.Add(t);
+foreach(var b in this.pluginButtons)            this.stackPluginsContainer.Children.Add(b);
+foreach(var t in this.tabPlugins)            this.tabComPlugins.Items.Add(t);
     }
 }
 </tabitem></usercontrol>

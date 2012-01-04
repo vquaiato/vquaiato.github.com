@@ -22,15 +22,15 @@ tags:
   autoslug: html.action
 ---
 Fala galera, um amigo me chamou aqui no gtalk para tentar entender por que não estava conseguindo usar o seguinte código:
-{% highlight c# %}
+{% highlight csharp %}
 @Html.RenderAction("MinhaActionQueRetornaPartial")
 {% endhighlight %}
 Este código resulta no seguinte erro:<blockquote>Compiler Error Message: CS1502: The best overloaded method match for 'System.Web.WebPages.WebPageExecutingBase.Write(System.Web.WebPages.HelperResult)' has some invalid arguments</blockquote>[caption id="attachment_2157" align="aligncenter" width="300" caption="Compilation Error - Html.RenderAction"][![Compilation Error - Html.RenderAction](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/Compilation-Error-Html.RenderAction-300x252.png "Compilation Error - Html.RenderAction")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/Compilation-Error-Html.RenderAction.png)[/caption]Isso acontece por que se observarmos o método RenderAction é void, e no Razor quando utilizamos o @ estamos pedindo para que o conteúdo seja escrito no response. Mas não é possível escrever um conteúdo void.A saída para isso é utilizar:
-{% highlight c# %}
+{% highlight csharp %}
 @Html.Action("MinhaActionQueRetornaPartial")
 {% endhighlight %}
 ou ainda (evite isso, é feio!)
-{% highlight c# %}
+{% highlight csharp %}
 @{
 tml.RenderAction("MinhaActionQueRetornaPartial");
     }

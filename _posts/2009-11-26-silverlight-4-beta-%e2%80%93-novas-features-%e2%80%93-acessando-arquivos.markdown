@@ -25,20 +25,20 @@ tags:
   autoslug: browser
 ---
 Fala galera, beleza?Silverlight 4 - Capturando WebCam - [http://viniciusquaiato.com/blog/silverlight-4-capturando-webcam/](http://viniciusquaiato.com/blog/silverlight-4-capturando-webcam/)Vamos falar mais um pouco do silverlight 4 beta, desta vez vamos acessar arquivose pastas da máquina utilizando uma aplicação Silverlight rodando fora do browser (Out of Browser).Vamos abrir o Visual Studio 2010 beta 2 e criar uma nova aplicação Silverlight:[caption id="attachment_223" align="aligncenter" width="330" height="190"  caption="Criando projeto Silverlight (ampliar)"][![Criando projeto Silverlight](http://viniciusquaiato.com/blog/wp-content/uploads/2009/11/Criando-projeto-Silverlight.jpg "Criando projeto Silverlight")](http://viniciusquaiato.com/blog/wp-content/uploads/2009/11/Criando-projeto-Silverlight.jpg)[/caption]A interface utilizada será bem simples como mostra a imagem e o código XAML abaixo:[caption id="attachment_229" align="aligncenter" width="324" caption="Interface Silverlight"][![Interface Silverlight](http://viniciusquaiato.com/blog/wp-content/uploads/2009/11/Interface-Silverlight.jpg "Interface Silverlight")](http://viniciusquaiato.com/blog/wp-content/uploads/2009/11/Interface-Silverlight.jpg)[/caption]Código XAML:
-{% highlight c# %}
+{% highlight csharp %}
             <textbox height="80" horizontalalignment="Left" margin="12,175,0,0" name="txtConteudoArquivo" verticalalignment="Top" width="263" acceptsreturn="True" />            </button>
 {% endhighlight %}
 Feito isso vamos implementar agora a listagem dos arquivos da pasta "Documents", como mostra a listagem do click do primeiro botão abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 
 private void btnListar_Click(object sender, RoutedEventArgs e){
 var files = Directory.EnumerateFiles(                    Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)                );
-    foreach (var item in files)        this.listBox1.Items.Add(item);
+foreach(var item in files)        this.listBox1.Items.Add(item);
     }
 
 {% endhighlight %}
 As linhas 3, 4 e 5 são as principais nesta listagem. Nelas estamos obtendo os nomes dos arquivos do diretório "Meus Documentos". Notem a utilização das classes Environment e Directory.Já nas linhas 7 e 8 estamos apenas adicionando os nomes dos arquivos à nossa ListBox.A listagem a seguir mostra como fazer a gravação de um arquivo texto também na pasta "Meus Documentos":
-{% highlight c# %}
+{% highlight csharp %}
 
 private void btnGravar_Click(object sender, RoutedEventArgs e){
 var streamWriter = File.CreateText(            System.IO.Path.Combine(                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Silverlight.txt")            );

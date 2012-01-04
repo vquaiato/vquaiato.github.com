@@ -33,7 +33,7 @@ Quando eu vou para uma reunião tentar compreender o problema que preciso resolv
 Dado que não somos os especialistas no problema por que motivos saímos de uma reunião onde acabamos de escutar um monte de coisas novas e complexas e traduzimos isso para uma língua que não é a nossa língua nativa?Temos dois pontos para observar aqui:1. Ainda não entendemos o problema por completo. Uma ou duas reuniões não são suficientes para isso.
 2. Pegamos um problema que não entendemos e o colocamos em uma língua que não é nossa especialidade
 Qual o problema de traduzir as coisas para o inglês? Sejamos simples: você já pegou um texto em português e traduziu para o inglês? Quando você é **muito bom** em inglês você até consegue fazer isso mesmo sabendo que não ficou 100% como você queria, afinal o português é mais rico, possui peculiaridades, etc. Mas ainda assim você fica relendo o texto e vendo se está de acordo com o texto em português original.O seu cérebro fica fazendo esse mapeamento e esse "de-para" constantemente.
-{% highlight c# %}
+{% highlight csharp %}
 
 public class User{    
 
@@ -51,7 +51,7 @@ Acima fica bem nítido que Request será constantemente mapeado mentalmente para
 
 ## As dificuldades de comunicação
 Dado que agora você traduziu tudo isso, para o inglês por exemplo, as comunicações entre a equipe começam a ter [atrito](http://pt.wikipedia.org/wiki/Atrito). Todos no time vão começar a fazer um "de-para" dos termos de negócio para os termos do código. Quando ocorrem reuniões de entendimento com o especialista do problema a coisa é pior ainda. Pois o especialista entra em detalhes que você não domina e para tentar chegar até este ponto de entendimento você tenta mapear o que ele diz com o código mas o código está em outra língua, outros termos. O raciocínio começa a ficar prejudicado.<blockquote>Todas as compras possuem pelo menos um pedido e possuem pelo menos um pagamento. Quando o pagamento é à vista as compras só possuem um pagamento.</blockquote>Então o time fica pensando... :
-{% highlight c# %}
+{% highlight csharp %}
 //pagamento à vista
 public class InvoicePayment : Payment{...}
 
@@ -63,7 +63,7 @@ public class CreditCardPayment : Payment{...}
 
 ## Buscando uma melhor comunicação entre a equipe
 Em geral não é um time inteiro que tem reuniões com o especialista de domínio (embora possamos achar que isso seria o ideal). Quando uma parte da equipe possui informações sobre o domínio e então traduz isso da forma como acha melhor isso vai gerar um enorme **ruído** no projeto.Para quem não está com o cenário todo desenhado na cabeça e está convivendo apenas com as traduções o entendimento do problema como um todo fica comprometido e parece que estas pessoas apenas escrevem código, por escrever. Se em algum momento estas pessoas precisarem questionar o especialista de domínio sobre algo provavelmente o farão de forma rasa e sem entendimento da resposta.
-{% highlight c# %}
+{% highlight csharp %}
 
 public class ShopService{    
 
@@ -77,7 +77,7 @@ private bool AcceptsMultiplePayments(Request aRequest){...}
 
 ## Mescla de idiomas
 Quando o domínio está traduzido e poucas pessoas do time de fato possuem uma visão geral do problema é normal que os outros membros do time comecem a implementar novas funcionalidades em português. Isso acontece pois eles sentem que a parte traduzida está complicada e não é de simples entendimento. O código metade inglês e metade português é uma tentativa de torná-lo mais expressivo.
-{% highlight c# %}
+{% highlight csharp %}
 
 public class ShopService{    
 
@@ -93,13 +93,15 @@ private bool PossuiPagamentoAVista(Request theRequest){...}
 
 ## Mas a linguagem é inglês
 Não há como comparar as instruções da linguagem (class, for, foreach, while, if, else, public, private, etc) com operações e conceitos de domínio. Eles representam apenas infraestrutura e suporte para todo o problema a ser resolvido. Não fazem parte do vocabulário cotidiano do software. Quando temos código claro esses detalhes de infra passam desapercebidos.
-{% highlight c# %}
+{% highlight csharp %}
 
 bool PERMITE = true;
 bool NÃO_PERMITE = false;
     
-private bool PermiteMultiplasFormasDePagamento(Pedido oPedido){        if(oPedido.PossuiPagamentoAVista)            return NÃO_PERMITE;
-    return PERMITE;
+private bool PermiteMultiplasFormasDePagamento(Pedido oPedido){
+if(oPedido.PossuiPagamentoAVista)
+return NÃO_PERMITE;
+return PERMITE;
     }
 
 {% endhighlight %}

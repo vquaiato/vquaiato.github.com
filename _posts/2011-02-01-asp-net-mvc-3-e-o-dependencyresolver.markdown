@@ -43,7 +43,7 @@ A classe DependencyResolver atua como um Registry para os provedores de serviço
 
 ## Injetando dependências nos controllers
 Chega de falatório e vamos ver como podemos resolver dependências nos construtores de nossos controllers com um objeto do tipo IDependencyResolver.Vamos criar um controller bem simples:
-{% highlight c# %}
+{% highlight csharp %}
 
 public class TemDependenciasController : Controller{    
 
@@ -62,13 +62,13 @@ public TemDependenciasController(IDependencia1 dependencia1, IDependencia2 depen
 public ActionResult Index()    {
 var b = this.Dependencia1.Metodo("foo");
     this.Dependencia2.AlgumMetodo();
-    return View();
+return View();
     }
 }
 
 {% endhighlight %}
 Este controller possui duas dependências em seu construtor. Este código compila porém não conseguimos executar esta aplicação pois no momento em que o ASP.NET MVC tentar instanciar o controller não conseguirá resolver as dependências do seu construtor.Vamos então criar uma classe que implemente IDependencyResolver que atuará como nosso SL:
-{% highlight c# %}
+{% highlight csharp %}
 
 public class MeuDependencyResolver : IDependencyResolver{    
 
@@ -78,28 +78,36 @@ static ILookup<Type, object> lookup;
 public MeuDependencyResolver()    {        lookup = AsDependencias().ToLookup(l => l.GetType().GetInterfaces().FirstOrDefault());
     }
     
-public IEnumerable<object> AsDependencias()    {        yield return new DummyDependencia1();
-    yield return new DummyDependencia2();
-    yield return new DummyDependencia2_2();
+public IEnumerable<object> AsDependencias()    {        yield
+return new DummyDependencia1();
+    yield
+return new DummyDependencia2();
+    yield
+return new DummyDependencia2_2();
     }
     
 public object GetService(Type serviceType)    {
 var ctorInfo = serviceType.GetConstructors().FirstOrDefault();
-    if (ctorInfo == null) return null;
+if(ctorInfo == null)
+return null;
 var paramInfo = ctorInfo.GetParameters();
 var resolvedParams = ResolveParamTypes(paramInfo);
 var resolvedParamDependencies = ResolveDependencies(resolvedParams).ToList();
-    return Activator.CreateInstance(serviceType, resolvedParamDependencies.ToArray());
+return Activator.CreateInstance(serviceType, resolvedParamDependencies.ToArray());
     }
     
-private IEnumerable<object> ResolveDependencies(IEnumerable<type> resolvedParams)    {             return resolvedParams            .Select(paramType => lookup[paramType].FirstOrDefault());
+private IEnumerable<object> ResolveDependencies(IEnumerable<type> resolvedParams)    {
+return resolvedParams            .Select(paramType => lookup[paramType].FirstOrDefault());
     }
     
-private IEnumerable<type> ResolveParamTypes(ParameterInfo[] paramInfo)    {        foreach (var param in paramInfo)        {            yield return param.ParameterType;
+private IEnumerable<type> ResolveParamTypes(ParameterInfo[] paramInfo)    {
+foreach(var param in paramInfo)        {            yield
+return param.ParameterType;
     }
     }
     
-public IEnumerable<object> GetServices(Type serviceType)    {        return new List<object>();
+public IEnumerable<object> GetServices(Type serviceType)    {
+return new List<object>();
     }
 }
 </object></object></type></type></object></object>
@@ -108,7 +116,7 @@ public IEnumerable<object> GetServices(Type serviceType)    {        return new 
 
 ## Configurando o DependencyResolver
 Para configurarmos nossa classe para ser utilizada precisamos chamar o método SetResolver da classe DependencyResolver. O melhor para fazer isso neste caso é o Application_Start no Global.asax:
-{% highlight c# %}
+{% highlight csharp %}
 
 protected void Application_Start(){    AreaRegistration.RegisterAllAreas();
     RegisterGlobalFilters(GlobalFilters.Filters);

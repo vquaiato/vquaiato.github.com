@@ -34,7 +34,7 @@ Executar o Node.js no [Windows Azure](http://www.microsoft.com/windowsazure/) é
 
 ### Criar um Blob Container no Windows Azure
 Vamos utilizar um [Blob Container](http://channel9.msdn.com/Blogs/smarx/Windows-Azure-Blob-Storage) no [Storage do Windows Azure](http://www.microsoft.com/windowsazure/storage/) para armazenar nosso _node.exe_ e os arquivos .js que serão executados por ele. Faça isso utilizando o Storage Explorer([que eu mostrei aqui](http://viniciusquaiato.com/blog/azure-storage-explorer-e-cerebrata-cloud-storage-studio/)). Eu criei um container chamado "nodestuff" e mandei os arquivos _node.exe_ e _nodeazure.js_:
-{% highlight c# %}
+{% highlight csharp %}
 ﻿var http = require('http');
     http.createServer(function (request, response) {    response.writeHead(200, { 'Content-Type': 'text/plain' }
 );
@@ -48,7 +48,7 @@ Reparem que não estamos fixando nem o ip e nem a porta nos quais o Node será e
 
 ### Copiando o node.exe para a instância do Windows Azure
 Vamos fazer com que nosso worker role copie o _node.exe_ e o _nodeazure.js_ para o [Local Storage](http://viniciusquaiato.com/blog/windows-azure-usando-local-storage/) da nossa instância. Isso nos dará mais velocidade e facilidade no start do processo do node. Vamos configurar um Local Storage de 10MB:[caption id="attachment_3818" align="aligncenter" width="300" caption="Local Storage para arquivos do nodejs"][![Local Storage para arquivos do nodejs](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Local-Storage-para-arquivos-do-nodejs-300x164.png "Local Storage para arquivos do nodejs")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Local-Storage-para-arquivos-do-nodejs.png)[/caption]Agora vamos copiar os arquivos do blob para o Local Storage:
-{% highlight c# %}
+{% highlight csharp %}
 var blobContainer = GetBlobContainer();
 var localStorage = RoleEnvironment.GetLocalResource("nodestuff");
     CopyFromBlobToLocal(blobContainer, localStorage, "node.exe");
@@ -58,14 +58,14 @@ private CloudBlobContainer GetBlobContainer() {    CloudStorageAccount objStorag
     CloudBlobClient objClient = new CloudBlobClient(objStorage.BlobEndpoint, objStorage.Credentials);
     CloudBlobContainer objContainer = objClient.GetContainerReference("nodestuff");
     objContainer.CreateIfNotExist();
-    return objContainer;
+return objContainer;
     }
 
 
 private void CopyFromBlobToLocal(CloudBlobContainer blobContainer, LocalResource localStorage, string blobName) {    CloudBlob node = blobContainer.GetBlobReference(blobName);
     using (BlobStream nodestream = node.OpenRead())    {
 var nodefile = Path.Combine(localStorage.RootPath, blobName);
-    if (!System.IO.File.Exists(nodefile))        {            using (var fileStream = new FileStream(nodefile, FileMode.CreateNew))            {                nodestream.CopyTo(fileStream);
+if(!System.IO.File.Exists(nodefile))        {            using (var fileStream = new FileStream(nodefile, FileMode.CreateNew))            {                nodestream.CopyTo(fileStream);
     fileStream.Flush();
     fileStream.Close();
     }
@@ -78,12 +78,12 @@ Bastante simples hein? (Não se preocupe que no final do post está um link para
 
 ### Executando o Node.js no Windows Azure
 Tudo que precisamos agora é executar o Node.js de dentro do nosso Worker Role. Isso poderia ser feito através de uma [startup task](http://msdn.microsoft.com/en-us/library/gg456327.aspx) + powershell scripts? Poderia, mas acho que não é a melhor solução. Uma startup task não executará novamente caso o processo do Node morra, e aí? Desta forma podemos fazer tratamentos dentro do código e dar um restart no Node caso algo aconteça :D
-{% highlight c# %}
+{% highlight csharp %}
 
 private string roleIP = RoleEnvironment.CurrentRoleInstance.InstanceEndpoints["NodeEndpoint"].IPEndpoint.Address.ToString();
     
 private string rolePort = RoleEnvironment.CurrentRoleInstance.InstanceEndpoints["NodeEndpoint"].IPEndpoint.Port.ToString();
-    while (true) {
+while(true) {
 var nodeProcess = new Process();
     try {        nodeProcess.StartInfo.UseShellExecute = false;
     nodeProcess.StartInfo.RedirectStandardOutput = false;
@@ -107,7 +107,8 @@ var nodeProcess = new Process();
     }
 
 {% endhighlight %}
-Easy! Basicamente o que este código faz é criar um processo com o node.exe passando como argumentos o arquivo js a ser executado, o ip e a porta do servidor no Windows Azure. Reparem que eu coloquei isso dentro do laço while(true) do worker role e desta maneira sempre que o processo do node morrer ele será iniciado novamente :PE o resultado já rodando no Azure:[caption id="attachment_3820" align="aligncenter" width="300" caption="Nodejs running on Windows Azure"][![Nodejs running on Windows Azure](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Nodejs-running-on-Windows-Azure-300x58.png "Nodejs running on Windows Azure")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Nodejs-running-on-Windows-Azure.png)[/caption]
+Easy! Basicamente o que este código faz é criar um processo com o node.exe passando como argumentos o arquivo js a ser executado, o ip e a porta do servidor no Windows Azure. Reparem que eu coloquei isso dentro do laço
+while(true) do worker role e desta maneira sempre que o processo do node morrer ele será iniciado novamente :PE o resultado já rodando no Azure:[caption id="attachment_3820" align="aligncenter" width="300" caption="Nodejs running on Windows Azure"][![Nodejs running on Windows Azure](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Nodejs-running-on-Windows-Azure-300x58.png "Nodejs running on Windows Azure")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/07/Nodejs-running-on-Windows-Azure.png)[/caption]
 
 ## Resumo
 Bom galera e assim rodamos o Node.js no Windows Azure. Esse é o resumo de algumas pesquisas misturando os resultado do Steve Marx com o resultado do Paul OFallon e mais algumas pesquisas sobre Startup Tasks no Windows Azure.Este não é um exemplo complexo, mas isso mostra como é simples realizar o deploy. Tendo feito isso uma vez você está pronto para rodar isso em 1.000.000 de máquinas no Azure caso precise :DAgora basta você incrementar seu código JavaScript e tudo estará pronto <o/Outra dica é coletar melhor as informações sobre cada um dos passos sendo executados e também trabalhar com performance counters para monitorar a saúde da aplicação.Confira o código fonte completo aqui: [https://github.com/vquaiato/nodeonazure](https://github.com/vquaiato/nodeonazure) (Se você não usa git tem um botão de download onde você pode baixar um .zip com o projeto).

@@ -25,7 +25,7 @@ tags:
 
 ### Comandos para listagem de pacotes do NuPack
 Listar os pacotes disponíveis no NuPack é algo simples, o comando é:
-{% highlight c# %}
+{% highlight csharp %}
 List-Package
 {% endhighlight %}
 Apesar de termos este comando, podemos "brincar" com ele utilizando parâmetros ou trabalhando com sua saída. 
@@ -34,7 +34,7 @@ Apesar de termos este comando, podemos "brincar" com ele utilizando parâmetros 
 
 ## Listando pacotes instalados no projeto
 Para listarmos os pacotes instalados/inclusos no projeto basta fazermos:
-{% highlight c# %}
+{% highlight csharp %}
 List-Package -Installed
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ List-Package -Installed
 
 ## Listando pacotes de um local específico
 Para listarmos pacotes presentes em um local específico, um repositório local por exemplo, podemos fazer:
-{% highlight c# %}
+{% highlight csharp %}
 List-Package -Source c:\repositorio-pacotes
 {% endhighlight %}
 Importante notar que Source deve ser uma URI, podendo serum diretório com pacotes ou um Atom Feed contendo a descrição dos pacotes.
@@ -52,7 +52,7 @@ Importante notar que Source deve ser uma URI, podendo serum diretório com pacot
 
 ## Verificando se existem updates disponíveis para um pacote
 Para verificarmos se há atualizações disponíveis para um pacote que temos adicionado ao nosso projeto basta utilizarmos o comando:
-{% highlight c# %}
+{% highlight csharp %}
 List-Package -Update
 {% endhighlight %}
 Este comando **não** irá instalar astualizações, mas sim mostrará se há ou não uma atualização disponível.
@@ -61,11 +61,11 @@ Este comando **não** irá instalar astualizações, mas sim mostrará se há ou
 
 ## Filtrando a listagem de pacotes
 Para filtrarmos a listagem dos pacotes podemos brincar com os comandos abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 List-Package | select idList-Package | select version
 {% endhighlight %}
 Ou ainda podemos mesclar estes comandos:
-{% highlight c# %}
+{% highlight csharp %}
 List-Package -Update | select id,UpdateAvailable
 {% endhighlight %}
 Ou seja estou pedindo a listagem de pacotes para saber se há atualizações, mas não quero visualizar todos os campos, quero ver apenas o Id(nome do pacote) e a informação dizendo se há atualização ou não.Bom, estes são os comandos de listagem para utilização no console Powershell do NuPack. Ok Vinicius, mas de onde saíram estes comandos? Simples: [da documentação](http://nupack.codeplex.com/documentation?title=Package%20Manager%20Console%20Command%20Reference)!É bastante importante, e interessante até, lermos a documentação dos projetos que utilizamos. Principalmente as novidades, afinal é a forma de obtermos conhecimento sobre elas.Continuarei "traduzindo" estas informações aqui, até cobrir todo "set" de comandos disponíveis.

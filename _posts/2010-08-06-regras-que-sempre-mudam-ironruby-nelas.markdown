@@ -25,7 +25,7 @@ tags:
 
 ### O cenário
 Apenas para exemplificar nosso cenário é bem simples. Temos que realizar o cálculo de desconto para um Pedido. Este cálculo varia de acordo com a forma de pagamento escolhida. No momento a regra é que se o pagamento for à vista, desconto de 10%. Caso o pagamento seja parcelado há acréscimo de 5%.Para a utilização de código IronRuby vou utilizar o [RubyEngineCreator](http://viniciusquaiato.com/blog/programacao-dinamica-com-c-e-ironruby/) que postei [neste artigo aqui](http://viniciusquaiato.com/blog/programacao-dinamica-com-c-e-ironruby/).No meu código C# tenho esta chamada:
-{% highlight c# %}
+{% highlight csharp %}
 
 public 
 static class CalculadorDeDesconto{    
@@ -34,13 +34,13 @@ public
 static decimal ParaPedido(Pedido pedido)    {
 var ruby = RubyEngineCreator            .GetRubyObject(rubyFileName: "calculador", rubyClassName: "CalculadorDeDescontos");
 var desconto = ruby.calcular(pedido);
-    return desconto;
+return desconto;
     }
 }
 
 {% endhighlight %}
 O que este código faz é criar um objeto Ruby que está no arquivo calculador.rb. A classe deste objeto é ClaculadorDeDescontos.Nossa regra está nesta classe Ruby:
-{% highlight c# %}
+{% highlight csharp %}
 class CalculadorDeDescontos@fator_descontodef initialize@fator_desconto = 0.10enddef calcular(pedido)@fator_desconto = 0.05 unless pedido.Pagamento.to_s == "AVista"pedido.Total * @fator_descontoendend
 {% endhighlight %}
 Uma classe Ruby bem simples. Com uma variável fator_desconto, inicializada no construtor com o valor 0.10, como pode ser visto na _**linha 5**_.Nas **_linhas 8 a 12_** temos o método calcular, que recebe um pedido (notem que este pedido está definido e foi criado no nosso código C#). Na _**linha 9**_ alteramos o valor do fator de desconto para 0.05 caso não seja um pedido pago à vista. Fiz desta forma para mostrar mais uma "novidade" do Ruby que é o modifier unless. Ou seja, a primeira parte do código será executada somente se a segunda parte for falsa. Bem interessante.E na **_linha 11_** realizamos a conta multiplicando o total do pedido pelo fato de desconto. Lembrando que a última instrução do método será o retorno, isto é retornado como resultado deste método. Aqui podemos ver uma saída do nosso programa:[caption id="attachment_1449" align="aligncenter" width="300" caption="Resultado C# regras em IronRuby"][![Resultado C# regras em IronRuby](http://viniciusquaiato.com/blog/wp-content/uploads/2010/08/resultado-300x121.jpg "Resultado C# regras em IronRuby")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/08/resultado.jpg)[/caption]Agora veja o que acontece quando alteramos o nosso script Ruby durante a execução do programa:[caption id="attachment_1450" align="aligncenter" width="300" caption="Alterando as regras Ruby"][![Alterando as regras Ruby](http://viniciusquaiato.com/blog/wp-content/uploads/2010/08/resultado-2-300x137.jpg "Alterando as regras Ruby")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/08/resultado-2.jpg)[/caption]Como podemos ver, durante a execução do programa alteramos as regras de cálculo do desconto sem precisar parar ou recompilar o projeto.

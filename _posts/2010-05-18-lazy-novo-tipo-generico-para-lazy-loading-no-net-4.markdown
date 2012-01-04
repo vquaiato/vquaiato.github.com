@@ -26,9 +26,9 @@ Fala galera, lendo algumas coisas sobre MEF acabei conhecendo um novo tipo dispo
     ](http://msdn.microsoft.com/en-us/library/dd642331(v=VS.100).aspx).Este novo tipo, Lazy&lt;
     T&gt;
     , nos possibilita adiar a inicialização do seu valor até o momento do uso.Imagine que o tipo T é um tipo complexo que demanda muito processamento para ser criado, utilizando o Lazy é possível que esta inicialização seja adiada o máximo possível, até o momento da chamada ao valor.Vejamos no exemplo abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 Lazy<string> lazy = new Lazy<string>(() =>{    Thread.Sleep(3000);
-    return "Conteúdo";
+return "Conteúdo";
     }
 );
     Console.WriteLine("Criado: {

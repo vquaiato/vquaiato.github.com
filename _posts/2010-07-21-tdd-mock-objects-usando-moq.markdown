@@ -37,7 +37,7 @@ tags:
 
 ### Verificando se um método foi chamado
 Se eu quero garantir que meu objeto chamou um método de outro objeto:
-{% highlight c# %}
+{% highlight csharp %}
 [TestClass]
 public class TesteQualquer{    [TestMethod]    
 public void Quando_Autentica_Tem_Que_Logar_Login_E_Senha()    {
@@ -53,7 +53,7 @@ Nexte exemplo, criamos um Mock para a interface ILogger, ou seja, o Moq criará 
 
 ### Garantindo que um método seja chamado N vezes
 Em algumas situações queremos saber quantas vezes um determinado método foi chamado. Ou seja, queremos garantir que ele não foi chamado, ou foi chamado uma vez, chamado pelo menos uma vez, ou muitas vezes.
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void Dados_4_Emails_Para_Relatorio_De_Vendas_Deve_Enviar_Os_4(){
 var enviadorEmails = new Mock<ienviadoremail>();
@@ -71,7 +71,7 @@ Neste caso temos um Relatório de Vendas, que será enviado por email. Para que 
 
 ### Configurando um valor de retorno
 Imagine a situação onde queremos que na chamada de um objeto mockado desejamos ter um valor de retorno. Podemos fazer isso de forma simples, garantindo assim que o desacoplamento de nossas classes possue uma cobertura de testes boa e que verifica vários cenários:
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod][ExpectedException(typeof(AppErrorException))]
 public void Quando_LogError_Possui_Erro_LogMonitor_Deve_Lancar_Excecao(){
 var logReader = new Mock<ilogreader>();

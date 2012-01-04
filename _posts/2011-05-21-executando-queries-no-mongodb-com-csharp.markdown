@@ -22,7 +22,7 @@ tags:
   autoslug: consultas-no-mongodb-com-c#
 ---
 [![](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/trees-567-300x225.jpg "trees-567")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/trees-567.jpg)Agora que já vimos como [instalar e executar o MongoDB](http://viniciusquaiato.com/blog/primeiros-passos-com-mongodb/) e [interagir com o MongoDB no C#](http://viniciusquaiato.com/blog/mongodb-com-csharp/) está na hora de começar a executar algumas consultas, afinal de nada adianta ter documentos(grafos de objetos) armazenados se não vamos consulta-los.Nós estamos trabalhando com o [driver oficial do MongoDB para C#](https://github.com/mongodb/mongo-csharp-driver) então por enquanto vamos nos limitar aos tipos de query que podemos executar e a forma de executa-las com este driver. [Outros drivers](http://www.mongodb.org/display/DOCS/CSharp+Community+Projects) podem fornecer outras maneiras de executar suas consultas.Vamos usar estas classes para nossos exemplos:
-{% highlight c# %}
+{% highlight csharp %}
 class Post{
 ublic ObjectId Id {
 et;
@@ -107,11 +107,11 @@ et;
 
 ## Recuperando todos os documentos de uma coleção do MongoDB
 Uma das formas de recuperarmos todos os documentos de uma collection no MongoDB é utilizando o método FindAll da collection:
-{% highlight c# %}
+{% highlight csharp %}
 var db = server.GetDatabase("blog");
 var posts = db.GetCollection<post>("posts");
 var todosPosts = posts.FindAll();
-    foreach(var post in todosPosts)Console.WriteLine("Titulo: {
+foreach(var post in todosPosts)Console.WriteLine("Titulo: {
 }
  - por: {
 }
@@ -126,7 +126,7 @@ Abaixo podemos conferir o resultado deste programa:[caption id="attachment_3477"
 
 ## Utilizando Query.EQ no MongoDB com C#
 Para realizarmos este tipo de query vamos utilizar a classe Query que é um builder para montar uma query do tipo IMongoQuery.Para filtrarmos os posts com um determinado titulo vamos fazer como abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 var query = Query.EQ("Titulo", "Mais um post sobre MongoDB");
 var todosPosts = posts.Find(query);
     
@@ -135,7 +135,7 @@ O que estamos fazendo é criando uma query onde o queremos os documentos onde o 
 
 ## Executando queries and com Query.And no MongoDB com C#
 Para executarmos uma query com mais de um critério, ou seja utilizando uma cláusula and vamos utilizar o build Query.And passando as queries que queremos executar.Vejamos como selecionar posts que tenham um determinado título e o autor um determinado email:
-{% highlight c# %}
+{% highlight csharp %}
 var query = Query.And(                      Query.EQ("Titulo", "Mais um post sobre MongoDB"),                      Query.EQ("Autor.Email", "vquaiato@provedor.com"));
 var todosPosts = posts.Find(query);
     
@@ -144,7 +144,7 @@ Notem que criamos uma query do tipo and informando duas queries do tipo igual(EQ
 
 ## Executando queries do tipo or com Query.Or no MongoDB com C#
 Consultas deste tipo são bastante similares às anteriores, bastando mudar o método no nosso builder para Query.Or:
-{% highlight c# %}
+{% highlight csharp %}
 var query = Query.Or(                      Query.EQ("Titulo","Mais um post sobre MongoDB"),                      Query.EQ("Autor.Email","email2@provedor.com"));
 var todosPosts = posts.Find(query);
     
@@ -153,7 +153,7 @@ O que fazemos neste caso é trazer os documentos que possuam o Titulo informado 
 
 ## Executando queries do tipo In(range) com Query.In no MongoDB com C#
 É comum precisarmos obter informações dado um conjunto de valores. Por exemplo "obter os clientes que residam nas cidades A, B ou C".Vamos então criar uma query utilziando o builder Query.In informando um BsonArray:
-{% highlight c# %}
+{% highlight csharp %}
 var query = Query.In("Titulo", new BsonArray {
 FindAll no MongoDB", "Um terceiro post sobre MongoDB"}
 );

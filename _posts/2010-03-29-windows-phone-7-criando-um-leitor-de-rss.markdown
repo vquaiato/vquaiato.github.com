@@ -31,7 +31,7 @@ tags:
   autoslug: wp7
 ---
 Fala galera! Vamos criar agora nossa primeira aplicação em [Windows Phone 7](http://www.windowsphone7series.com/).Faremos um simples leitor de RSS exibindo as novidades no emulador do Windows Phone 7.Se você ainda não instalou o que é necessário, veja este post: [Preparando o ambiente para desenvolver para Windows Phone 7](http://viniciusquaiato.com/blog/windows-phone-7-preparando-ambiente-para-desenvolver/).Vamos lá o resultado final do nosso aplicativo será este:[caption id="attachment_782" align="aligncenter" width="155" caption="Windows Phone 7 - Feed Reader"][![Windows Phone 7 - Feed Reader](http://viniciusquaiato.com/blog/wp-content/uploads/2010/03/Final-155x300.jpg "Windows Phone 7 - Feed Reader")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/03/Final.jpg)[/caption]Vamos começar criando uma aplicação para Windows Phone 7 no [Visual Studio 2010 Express](http://developer.windowsphone.com/windows-phone-7-series/):[caption id="attachment_778" align="aligncenter" width="300" caption="Criando projeto para Windows Phone 7"][![Criando projeto para Windows Phone 7](http://viniciusquaiato.com/blog/wp-content/uploads/2010/03/Criando-projeto-300x190.jpg "Criando projeto para Windows Phone 7")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/03/Criando-projeto.jpg)[/caption]Nossa tela será a tela do Windows Phone 7. Vamos então abrir o código XAML e substituir todo código por este:
-{% highlight c# %}
+{% highlight csharp %}
 <phonenavigation:phoneapplicationpage x:class="PrimeiroWP7App.MainPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:phonenavigation="clr-namespace:Microsoft.Phone.Controls;
     assembly=Microsoft.Phone.Controls.Navigation" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:ignorable="d" d:designwidth="480" d:designheight="800" fontfamily="{
 taticResource PhoneFontFamilyNormal}
@@ -52,7 +52,7 @@ inding Resumo}
 " textwrapping="Wrap" fontsize="18" />                            </stackpanel>                        </datatemplate>                    </listbox.itemtemplate>                </listbox>            </stackpanel>        </grid>    
 {% endhighlight %}
 Eu não sou especialista em XAML, nem de longe, então talvez eu esteja cometendo alguns erros e algumas "gafes", sintam-se à vontade para me corrigir.O código acima não tem nada específico. Não vou detalhar pois não é o escopo deste post explicar como trabalhar com XAML. Talvez a única diferença esteja na **_linha 1_** onde é criada uma phoneNavigation:PhoneApplicationPage. Como o Visual Studio cria isso automaticamente, não vamos nos preocupar.Agora vamos para o código C#, presisone F7 para ir para o codebehinde, e então digite o seguinte código:
-{% highlight c# %}
+{% highlight csharp %}
 
 public partial class MainPage : PhoneApplicationPage{    
 
@@ -66,7 +66,8 @@ var uri = new Uri(                            this.txtUrl.Text == string.Empty ?
     client.DownloadStringCompleted += new DownloadStringCompletedEventHandler(client_DownloadStringCompleted);
     client.DownloadStringAsync(uri);
     }
-void client_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)    {        if (e.Error == null)        {
+void client_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)    {
+if(e.Error == null)        {
 var xml = XElement.Parse(e.Result);
 var feedItems = from item in xml.Descendants("channel").Descendants("item")                            select new FeedItem { Title = item.Element("title").Value, Resumo = item.Element("description").Value }
 ;

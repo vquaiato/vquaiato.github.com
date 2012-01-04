@@ -42,12 +42,12 @@ Vamos listar os databases existentes no nosso servidor:
 
 ### Listando databases no MongoDB
 
-{% highlight c# %}
+{% highlight csharp %}
 show dbs;
     
 {% endhighlight %}
 A saída deve ser parecida com esta:
-{% highlight c# %}
+{% highlight csharp %}
 > show dbs;
     admin(empty)local(empty)
 {% endhighlight %}
@@ -55,7 +55,7 @@ A saída deve ser parecida com esta:
 
 ### Criando um novo database no MongoDB
 Para criar um novo database vamos executar simplesmente o comando use:
-{% highlight c# %}
+{% highlight csharp %}
 > use meu_novo_database;
     switched to db meu_novo_database
 {% endhighlight %}
@@ -63,7 +63,7 @@ Pronto! Database criado.
 
 ### Adicionando documentos em uma collection no MongoDB
 Vamos então criar alguns documentos em uma collection chamada Pessoas:
-{% highlight c# %}
+{% highlight csharp %}
 > db.Pessoas.insert({
 ome: "vinicius", idade: 25}
 );
@@ -76,12 +76,12 @@ Acima inserimos dois documentos na collection Pessoas.
 
 ### Recuperando documentos de uma collection no MongoDB
 Vamos então selecionar nossos documentos:
-{% highlight c# %}
+{% highlight csharp %}
 > db.Pessos.find();
     
 {% endhighlight %}
 Este comando vai nos retornar um cursor para os elementos da nossa collection. Neste caso veremos a seguinte saída no terminal:
-{% highlight c# %}
+{% highlight csharp %}
 > db.Pessoas.find();
     { "_id" : ObjectId("4dcec4b993d74e78121d4312"), "nome" : "vinicius", "idade" : 25 }
 { "_id" : ObjectId("4dcec57e93d74e78121d4313"), "nome" : "willy wonka", "idade" : "?" }
@@ -91,7 +91,7 @@ Este comando vai nos retornar um cursor para os elementos da nossa collection. N
 
 ### Filtrando documentos em uma collection no MongoDB
 Para selecionarmos apenas um documento filtrando por alguma de suas propriedades:
-{% highlight c# %}
+{% highlight csharp %}
 > db.Pessoas.find({
 dade:25}
 );

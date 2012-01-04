@@ -37,7 +37,7 @@ Com este modo configurado o session state pode apenas ser lido. Quaisquer altera
 
 ## SessionStateBehavior.Required
 Acesso total de escrita e leitura. Esta configuração irá sobrescrever outras configurações que possam ter sido feitar para o request.Vamos ver um pequeno exemplo (retirado do Release Notes do ASP.NET MVC 3 RC):
-{% highlight c# %}
+{% highlight csharp %}
 [ControllerSessionState(SessionStateBehavior.Disabled)]
 public class CoolController : Controller {    
 
@@ -47,7 +47,7 @@ public ActionResult Index()     {        object o = Session["Key"];
 
 {% endhighlight %}
 Como podemos ver na linha 1 este controller está com session state desabilitado, desta forma ao tentar acessar a Session receberemos uma exception. Em outras palavras: Este controller é Sessionless, não possui sessão!Abaixo vemos um controller que só pode ler a Session e não pode colocar dados na mesma:
-{% highlight c# %}
+{% highlight csharp %}
 [ControllerSessionState(SessionStateBehavior.ReadOnly)]
 public class CoolController : Controller {    
 

@@ -53,23 +53,24 @@ Após criar a solution, clique com o botão direito no projeto, e vá em propert
 [caption id="attachment_1129" align="aligncenter" width="300" caption="Habilitando Code Contracts no projeto"][![Habilitando Code Contracts no projeto](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/Habilitando-300x237.jpg "Habilitando Code Contracts no projeto")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/Habilitando.jpg)[/caption]
 Caso você não possua essa opção, faça o download e instale a ferramenta [neste link](http://msdn.microsoft.com/en-us/devlabs/dd491992.aspx) (utilize a versão premium).
 Após estar com o Code Contracts habilitado, vamos para a classe de testes e vamos escrever um método:
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void Deve_Realizar_Uma_Divisao(){    Dividir(10, 0);
     }
-float Dividir(float valor, float divisor){    return valor / divisor;
+float Dividir(float valor, float divisor){
+return valor / divisor;
     }
 
 {% endhighlight %}
 Como sabemos, não podemos dividir um número por zero, desta forma vamos usar o Code Contracts para garantir isso:
-{% highlight c# %}
+{% highlight csharp %}
 float Dividir(float valor, float divisor){    Contract.Requires(divisor > 0);
-    return valor / divisor;
+return valor / divisor;
     }
 
 {% endhighlight %}
 Podemos ver na **_linha 3_** que estamos realizando uma chamada para o método estático _[Requires](http://msdn.microsoft.com/en-us/library/system.diagnostics.contracts.contract.requires.aspx)_. É com este método que garantimos pré-condições. Ou seja, neste caso é uma pré-condição que o parâmetro divisor seja maior que 0. Agora, qual a diferença com relação a um _if(divisor < 0) throw new ArgumentExceptio_n? Repare na imagem abaixo:[caption id="attachment_1132" align="aligncenter" width="300" caption="Verificações esdtáticas com Code Contracts"][![Verificações esdtáticas com Code Contracts](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/Code-Contracts-cheking-300x94.jpg "Verificações esdtáticas com Code Contracts")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/Code-Contracts-cheking.jpg)[/caption] Veja que o compilador nos alerta que um contrato foi violado. Isto não pode ser feito com ifs.Vamos criar um método para ver como funciona a pós-condição.Verificamos uma pós-condição utilizando o método [Ensures](http://msdn.microsoft.com/en-us/library/system.diagnostics.contracts.contract.ensures.aspx). Para isso vou utilizar o seguinte código:
-{% highlight c# %}
+{% highlight csharp %}
 class Compra{    
 
 public List<Tuple<int, float>> QuantidadeValorProdutos = new List<Tuple<int, float>>();
@@ -85,7 +86,7 @@ public void CalcularTotalComDesconto()    {        Contract.Requires(QuantidadeV
 
 {% endhighlight %}
 E o método de teste:
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void Deve_Calcular_Total_Da_Compra_Com_Descontos(){
 var compra = new Compra();
@@ -95,7 +96,7 @@ var compra = new Compra();
 
 {% endhighlight %}
 E o resultado será o seguinte:[caption id="attachment_1134" align="aligncenter" width="300" caption="Pós-condição falhando com Code Contracts"][![Pós-condição falhando com Code Contracts](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/poscondition-failed-300x139.jpg "Pós-condição falhando com Code Contracts")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/poscondition-failed.jpg)[/caption]Haverá uma falha pois dissemos que quando o método terminasse de executar a propriedade _TotalComDesconto _deveria ser maior que 0.Vamos alterar o método de cálculo para que satisfaça a pós-condição:
-{% highlight c# %}
+{% highlight csharp %}
 
 public void CalcularTotalComDesconto(){    Contract.Requires(QuantidadeValorProdutos.Count > 0);
     Contract.Ensures(this.TotalComDesconto > 0);
@@ -104,7 +105,7 @@ public void CalcularTotalComDesconto(){    Contract.Requires(QuantidadeValorProd
 
 {% endhighlight %}
 Isso faz com que a propriedade _TotalComDesconto _receba um valor. Ainda assim essa pós-condição pode falhar. Portanto é muito importante termos consciência de como definir nossas classes e regras de negócios. Entendendo muito bem como elas devem se comportar.E para finalizar, vamos dar uma olhada em como funcionam as invariantes.
-{% highlight c# %}
+{% highlight csharp %}
 class Usuario{    
 
 public string Login { get;
@@ -124,7 +125,7 @@ private void ObjectInvariant()    {        Contract.Invariant(this.Senha != null
 
 {% endhighlight %}
 Uma invariante é uma condição que deve ser satisfeita ao longo de toda a vida de um objeto. Desta forma Marcamos o método com um atributo _[ContractInvariantMethod](http://msdn.microsoft.com/en-us/library/system.diagnostics.contracts.contractinvariantmethodattribute.aspx)_ e dentro deste método definimos o contrato chamando o método [Invariant](http://msdn.microsoft.com/en-us/library/system.diagnostics.contracts.contract.invariant.aspx). No exemplo acima está definido que um objeto do tipo Usuario nunca poderá ter uma senha nula.Se executarmos o teste abaixo teremos um erro:
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void Deve_alterar_Senha(){
 var usuario = new Ususario();

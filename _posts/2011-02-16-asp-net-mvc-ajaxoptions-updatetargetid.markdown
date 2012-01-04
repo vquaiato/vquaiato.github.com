@@ -25,20 +25,20 @@ tags:
   autoslug: ajaxoptions
 ---
 Trabalhar com forms e ajax no ASP.NET MVC é algo relativamente bastante simples, seja escrevendo o código diretamente com [JQuery](http://viniciusquaiato.com/blog/tag/jquery/) ou então utilizando o [Ajax helper](http://msdn.microsoft.com/en-us/library/system.web.mvc.ajaxhelper.aspx).Estes posts sobre o AjaxHelper serão bem simples e diretos. Trabalharemos com [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3/).Vou assumir também que você já incluiu o JQuery e o JQuery Unobtrusive:
-{% highlight c# %}
+{% highlight csharp %}
 
 {% endhighlight %}
 
 
 ## Criando o formulário na View
 Nosso formulário será criado com a utilização do helper BeginForm:
-{% highlight c# %}
+{% highlight csharp %}
 @using (Ajax.BeginForm("AjaxAction",    new AjaxOptions { UpdateTargetId = "div_nome" }
 )){    @Html.TextBox("nome")<br />    @Html.TextBox("sobrenome")    <input type="submit" value="ajax" />}
 
 {% endhighlight %}
 Notem que criamos o form passando o nome da action e um objeto do tipo [AjaxOptions](http://msdn.microsoft.com/en-us/library/system.web.mvc.ajax.ajaxoptions.aspx). AjaxOptions possui uma série de propriedades, e neste caso estamos utilizando apenas [UpdateTargetId](http://msdn.microsoft.com/en-us/library/system.web.mvc.ajax.ajaxoptions.updatetargetid.aspx).Isto que dizer que o resultado da execução desta operação ajax deve ser colocado no elemento com id "div_nome".Nossa action AjaxAction está assim:
-{% highlight c# %}
+{% highlight csharp %}
 
 public ActionResult AjaxAction(string nome, string sobrenome){
 var ti = new CultureInfo("pt-BR").TextInfo;
@@ -47,7 +47,7 @@ var nomeFormatado = string.Format("{
  {
 }
 ", ti.ToTitleCase(nome), ti.ToTitleCase(sobrenome));
-    return PartialView("PartialNomes", nomeFormatado);
+return PartialView("PartialNomes", nomeFormatado);
     }
 
 {% endhighlight %}

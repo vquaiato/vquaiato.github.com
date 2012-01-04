@@ -42,11 +42,11 @@ Continuando a falar sobre o Windows Phone 7, vou demonstrar de forma simples com
     fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object>
 [TouchScreen no Windows Phone 7 Series](http://vimeo.com/10672357) from [vinicius quaiato](http://vimeo.com/user2557055) on [Vimeo](http://vimeo.com).
 Tudo que precisaremos para que isto funcione é adicionar o seguinte avento ManipulationDelta ao TextBlock:
-{% highlight c# %}
+{% highlight csharp %}
 <textblock manipulationdelta="textBlockListTitle_ManipulationDelta" text="Click e arraste!" fontsize="100" />
 {% endhighlight %}
 E no Code behinde:
-{% highlight c# %}
+{% highlight csharp %}
 
 private void textBlockListTitle_ManipulationDelta(object sender, ManipulationDeltaEventArgs e){    Random random = new Random(DateTime.Now.Millisecond);
 var texto = sender as TextBlock;

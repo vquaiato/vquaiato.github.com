@@ -40,7 +40,7 @@ tags:
 
 ### Os exemplos
 Bem, abaixo segue uma série de exemplos de como utilizar a biblioteca. Não vou detalhar cada um dos testes, pois na verdade eles são muito explicativos. A leitura é bastante simples.
-{% highlight c# %}
+{% highlight csharp %}
 [TestClass]
 public class Dado_Um_Novo_Pedido{    [TestMethod]    
 public void Items_Deve_Conter_Zero_Elementos()    {
@@ -69,7 +69,7 @@ var bola = new Produto("Bola");
 
 {% endhighlight %}
 Veja que o código fica mais fluido e legível. Achei bastante interessante.Outra detalhe bacana é o trabalho com coleções, como pode ser visto no exemplo abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void Os5_primeiros_impares_devem_ser_1_3_5_7_9(){
 var impares = ObterImpares();
@@ -90,7 +90,7 @@ var primos = ObterPrimos();
 </int></int>
 {% endhighlight %}
 Vejam como é simples e interessante trabalhar com coleções. Verificar os valores que devem ou não estar presentes em uma coleção, etc.Outro exemplo de trabalho com coleções pode ser visto abaixo, onde verificamos que um valor deve estar presente e outro não:
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void Divisiveis_por_3_impares_menores_que_15(){
 var multiplos = ObterDivisiveisPor3ImparesMenoresQue15();

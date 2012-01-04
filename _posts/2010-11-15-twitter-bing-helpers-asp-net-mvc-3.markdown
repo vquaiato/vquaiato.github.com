@@ -40,14 +40,14 @@ Fala galera, é apenas uma dica rápida. Temos no [ASP.NET MVC 3](http://viniciu
 
 ## Adicionando as referências
 Vou adicionar uma referência para Microsoft.Web.Helpers com o NuGet:[caption id="attachment_2137" align="aligncenter" width="300" caption="Adicionando WebHelpers com NuGet ASP.NET MVC 3"][![Adicionando WebHelpers com NuGet ASP.NET MVC 3](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/Add-Library-Package-Reference_2010-11-15_13-42-18-300x200.png "Adicionando WebHelpers com NuGet ASP.NET MVC 3")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/Add-Library-Package-Reference_2010-11-15_13-42-18.png)[/caption]Ou com o Console do NuGet, digite:
-{% highlight c# %}
+{% highlight csharp %}
 Install-Package Microsoft-Web-Helpers
 {% endhighlight %}
 (o código acima é para a versão RC do MVC 3, com o Beta use [Add-Package](http://viniciusquaiato.com/blog/aprenda-os-comandos-para-adicionar-pacotes-com-nupack/)).
 
 ## Utilizando o WebHelper do Twitter no ASP.NET MVC 3
 Após adicionarmos o pacote com o NuGet, basta realizarmos a chamada para o helper.Na sua View Index coloque o seguinte código para realizar uma pesquisa no Twitter:
-{% highlight c# %}
+{% highlight csharp %}
 @{ Layout = "~/Views/Shared/_Layout.cshtml";
     }
 
@@ -61,7 +61,7 @@ E o resultado:[caption id="attachment_2138" align="aligncenter" width="273" capt
 
 ## Utilizando o WebHelper do Bing no ASP.NET MVC 3
 Também podemos disponibilizar em nossa página uma chamada para uma pesquisa utilizando o Bing de forma bastante simples, vejamos:
-{% highlight c# %}
+{% highlight csharp %}
 @{ Layout = "~/Views/Shared/_Layout.cshtml";
     }
 

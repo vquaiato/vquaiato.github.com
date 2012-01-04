@@ -25,13 +25,13 @@ E o [Razor](http://viniciusquaiato.com/blog/tag/razor/) não pára! Vários post
 
 ## Criando functions com Razor no ASP.NET MVC 3
 Uma function é exatamente isso: uma função. Sem muito mistério. Para criar uma function seguimos a seguinte sintaxe:
-{% highlight c# %}
+{% highlight csharp %}
 @functions{    tipo_retorno nome_da_function(parametros){        processamentos e operações        return algum retorno se houver    }
 }
 
 {% endhighlight %}
 Para exemplificar, vamos criar uma function que faz uma conta de soma, sei lá:
-{% highlight c# %}
+{% highlight csharp %}
 @functions {
 nt SomaDoisNumeros(int n1, int n2){
 eturn n1 + n2;
@@ -40,7 +40,7 @@ eturn n1 + n2;
 
 {% endhighlight %}
 Nenhum mistério né?Em um primeiro momento eu até pensei que este código seria renderizado na página, talvez como um JavaScript, mas não, este código ficará no servidor!E para utilizarmos:
-{% highlight c# %}
+{% highlight csharp %}
 <body>    <div>@functions {
 nt SomaDoisNumeros(int n1, int n2){
 eturn n1 + n2;

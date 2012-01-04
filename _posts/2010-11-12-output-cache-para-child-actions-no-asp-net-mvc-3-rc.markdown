@@ -31,14 +31,15 @@ O ASP.NET MVC já possuía output cache em suas versões anteriores, mas o cache
 
 ## Output cache no ASP.NET MVC 3 Release Candidate
 Agora no Release Candidate do ASP.NET MVC 3 foi disponibilizado um atributo para ser colocado nas actions que define se ela deve ser mantida no output cache.Vamos ver um exemplo:
-{% highlight c# %}
+{% highlight csharp %}
 [OutputCache(Duration = 30, VaryByParam = "none")]
-public DateTime ActionComCache(){    return DateTime.Now;
+public DateTime ActionComCache(){
+return DateTime.Now;
     }
 
 {% endhighlight %}
 O que estamos fazendo, primeiro, é marcando a action com o atributo OutputCache. Configuramos a duração do cache em segundo, usando o parâmetro Duration. Neste caso, 30 segundos.O parâmetro VaryByParam serve para dizer quais oa parâmetros influenciam na composição do cache, neste caso estamos dizendo que o cache não vai variar de acordo com parâmetros, até por que a action não recebe nada.Na minha view eu tenho:
-{% highlight c# %}
+{% highlight csharp %}
 @using System.Threading;
     <!DOCTYPE html SYSTEM><html><head>    <title>ActionComCache</title></head><body>    <div>        @for(int i=0;
     i<10;

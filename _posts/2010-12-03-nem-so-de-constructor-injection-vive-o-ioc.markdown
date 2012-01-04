@@ -49,7 +49,7 @@ Service Locator é um padrão. Que basicamente encapsula o processo de obtençã
 
 ## Service Locator para Setter Injection
 Se tirarmos dos construtores as dependências não obrigatórias isso significa que vamos injetá-las via setter, e somente no momento em que elas realmente forem utilizadas(se forem!).Com isso o Service Locator cumpre bem o papel de resolver estas dependências. E ainda que você diga: "Ah mas eu uso um container de IoC", meu amigo, você está usando um Service Locator no final das contas, veja:
-{% highlight c# %}
+{% highlight csharp %}
 //container de IoC 1objeto.DependenciaOpcional = meuContainer.Resolve<tipo>();
     //container de IoC 2objeto.DependenciaOpcional = meuContainer2.Get<tipo>();
     //service locatorobjeto.DependenciaOpcional = serviceLocator.DependenciaOpcional();

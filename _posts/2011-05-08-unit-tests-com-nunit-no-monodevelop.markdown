@@ -29,7 +29,7 @@ tags:
 ---
 [![](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/MonoDevelopLogo.png "MonoDevelop Logo")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/MonoDevelopLogo.png)Fala galera marvada, beleza? Continuando a falar das minhas [aventuras com o Mono, MonoDevelop e o Mac](http://viniciusquaiato.com/blog/asp-net-mvc-no-mono/) vou mostrar como trabalhar com [Unit Testing](http://en.wikipedia.org/wiki/Unit_testing) usando o [NUnit](http://www.nunit.org/) no [MonoDevelop](http://monodevelop.com/).Os exemplo serão bem simples apenas para mostrar o uso da ferramenta mesmo.# NUnit no MonoDevelop
 Vamos criar um projeto Class Library apenas para servir como nosso [SUT](http://en.wikipedia.org/wiki/System_Under_Test):[caption id="attachment_3357" align="aligncenter" width="300" caption="Criando Class Library para ser o SUT no MonoDevelop"][![Criando Class Library para ser o SUT no MonoDevelop](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/Screen-shot-2011-05-08-at-1.35.29-PM-300x235.png "Criando Class Library para ser o SUT no MonoDevelop")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/Screen-shot-2011-05-08-at-1.35.29-PM.png)[/caption]O código da minha classe [SUT](http://en.wikipedia.org/wiki/System_Under_Test) é bastante simples e "bobo":
-{% highlight c# %}
+{% highlight csharp %}
 
 public class Foo{
 ublic int Soma(int a, int b){
@@ -44,7 +44,7 @@ eturn a/b;
 
 {% endhighlight %}
 Agora vamos criar mais um projeto Class Library para servir como nosso projeto de testes usando o NUnit. Crie o projeto igual fizemos acima.Vamos então criar nossa classe de testes:
-{% highlight c# %}
+{% highlight csharp %}
 [TestFixture]
 public class FooTest{
 Test]

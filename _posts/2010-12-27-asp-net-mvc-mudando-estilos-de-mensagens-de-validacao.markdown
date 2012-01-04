@@ -22,7 +22,7 @@ tags:
   autoslug: validation-message-css
 ---
 Respondendo uma dúvida no gtalk hoje veio a idéia de escrever este post: como mudar os estilos que são usados para exibir as mensagens de erro pelo ASP.NET MVC?Bem a dúvida era sobre como formatar as mensagens de erros que são exibidas nos formulários. É simples. Se você fuçar no fonte do ASP.NET MVC verá esta classe: [http://aspnet.codeplex.com/SourceControl/changeset/view/61289#266468](http://aspnet.codeplex.com/SourceControl/changeset/view/61289#266468).Vejam que temos constantes para as classes(css) de erro a serem utilizadas:
-{% highlight c# %}
+{% highlight csharp %}
 
 public 
 static readonly string ValidationInputCssClassName = "input-validation-error";
@@ -35,7 +35,7 @@ static readonly string ValidationSummaryCssClassName = "validation-summary-error
     
 {% endhighlight %}
 Pois bem, são estes os estilos que precisamos configurar para que nossas mensagens de validação sejam exibidas com alguma formatação.O ASP.NET MVC já cria estes estilos no arquivo /Content/site.css:[caption id="attachment_2603" align="aligncenter" width="300" caption="Site.css criado pelo Visual Studio"][![Site.css criado pelo Visual Studio](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/site_css-300x280.png "Site.css criado pelo Visual Studio")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/site_css.png)[/caption]Se referenciarmos o arquivo de estilos(Site.css) em nossas views teremos uma mensagem de validação assim:[caption id="attachment_2605" align="aligncenter" width="300" caption="error field com estilo padrão"][![error field com estilo padrão](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/error-field-300x241.png "error field com estilo padrão")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/error-field.png)[/caption]Vamos alterar o estilo para algo assim:
-{% highlight c# %}
+{% highlight csharp %}
 .field-validation-error{    color: #000;
     font-size:16px;
     border:2px solid #000066;

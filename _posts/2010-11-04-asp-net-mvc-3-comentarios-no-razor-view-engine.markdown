@@ -22,7 +22,7 @@ Fala galera, essa é apenas uma dica simples e rápida.
 
 ## Comentando código no Razor
 Eu definitivamente não gosto de comentários no código, nem no HTML, mas se isso for útil para vocês:
-{% highlight c# %}
+{% highlight csharp %}
 <body>    <div>@*Isso não deve aparecer                        Nem isso                        Tampouco isso!*@Isso deve aparecer@{
 /isto não aparecerá!                        //é um comentário C# mesmo}
     </div></body>

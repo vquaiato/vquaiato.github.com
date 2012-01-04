@@ -31,7 +31,7 @@ Fala galera, [neste por aqui](http://viniciusquaiato.com/blog/asp-net-mvc-jquery
 
 ### O form html
 
-{% highlight c# %}
+{% highlight csharp %}
 @using (Html.BeginForm("SubmitForm", "Home", FormMethod.Post, new { id = "login" }
 )){    @Html.ValidationSummary(true)    <fieldset>        <legend>Fields</legend>        <div class="editor-label">            @Html.LabelFor(model => model.Usuario)        </div>        <div class="editor-field">            @Html.EditorFor(model => model.Usuario)        </div>        <div class="editor-label">            @Html.LabelFor(model => model.Senha)        </div>        <div class="editor-field">            @Html.EditorFor(model => model.Senha)        </div>        
                     
@@ -42,7 +42,7 @@ Bastante simples né?!Reparem apenas que para colocar um id no form eu passei al
 
 ### O código jquery
 Feito isso vamos criar o código JavaScript para dar o comportamento assíncrono:
-{% highlight c# %}
+{% highlight csharp %}
 $(function () {    $("#login").submit(function (e) {        e.preventDefault();
     $.post($(this).attr("action"), $(this).serialize(), function (retorno) {            $("#login")[0].reset();
     alert(retorno.Resultado);
@@ -58,11 +58,12 @@ Tudo que esse código faz é um post assíncrono para a action definida no form,
 
 ### A action MVC
 A grande sacada da brincadeira está na action no nosso controller:
-{% highlight c# %}
+{% highlight csharp %}
 [HttpPost]
-public ActionResult SubmitForm(Login login){    if (Request.IsAjaxRequest())        return Json(new { Resultado = "Você está logado!" }
+public ActionResult SubmitForm(Login login){
+if(Request.IsAjaxRequest())        return Json(new { Resultado = "Você está logado!" }
 );
-    return RedirectToAction("Index");
+return RedirectToAction("Index");
     }
 
 {% endhighlight %}

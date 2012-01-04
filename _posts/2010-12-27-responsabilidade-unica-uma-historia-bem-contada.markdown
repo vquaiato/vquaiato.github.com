@@ -31,20 +31,22 @@ Uma classe deve possuir um conjunto coeso de propriedades e métodos, que em um 
 
 ### Pequena metáfora para ilustrar
 Imagine ler um texto assim:<blockquote>Era uma linda manhã de domingo. O trânsito estava muito ruim em São Paulo. Era um sábado bastante tranquilo apesar de chuvoso. Enquanto tomava banho.</blockquote>Não há coesão alguma!Vamos ver um exemplo de código(utilizado com permissão de um sistema do Juan Lopes[não foi ele quem produziu este código!]):
-{% highlight c# %}
+{% highlight csharp %}
 
 public BalancaResponse GetWeight(){    BalancaResponse response = new BalancaResponse();
     response.Peso = -1d;
     Double peso = this.AbrePorta();
-    if (peso == 0d)        response.Message = "Não foi possível abri a porta " + Enum.GetName(typeof(Balanca.Port), _port);
+if(peso == 0d)        response.Message = "Não foi possível abri a porta " + Enum.GetName(typeof(Balanca.Port), _port);
     else    {        peso = this.LePeso();
-    if (peso == -9999)            response.Message = "Erro generico de comunicacao - caracteres nao numericos recebidos.";
-    else if (peso == -9997)            response.Message = "Nao conseguiu abrir a comunicacao com a porta serial.";
-    else if (peso == -9996)            response.Message = "Tempo de 2 segundos esgotado (time out).";
+if(peso == -9999)            response.Message = "Erro generico de comunicacao - caracteres nao numericos recebidos.";
+    else
+if(peso == -9997)            response.Message = "Nao conseguiu abrir a comunicacao com a porta serial.";
+    else
+if(peso == -9996)            response.Message = "Tempo de 2 segundos esgotado (time out).";
     else            response.Peso = peso;
     this.FechaPorta();
     }
-    return response;
+return response;
     }
 
 {% endhighlight %}

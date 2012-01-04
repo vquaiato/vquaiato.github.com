@@ -25,7 +25,7 @@ tags:
   autoslug: mvcscaffolding-connection-string
 ---
 Postei sobre o [MVCScaffolding](http://viniciusquaiato.com/blog/mvc-scaffolding/) e fiquei com a dúvida de como configurar a connection string que o contexto gerado pela MVCScaffolding utiliza. Cheguei a submeter para o Steven no blog dele a pergunta. Conversando com o "[stupied4ever](http://olhonobit.wordpress.com/2011/01/18/mvc-mvc-scaffolding/)" que deu uma fuçada no assunto aqui está a solução "mágica". Para configurar a connection string basta incluir no web.config uma connection string com o nome do contexto gerado:
-{% highlight c# %}
+{% highlight csharp %}
 <connectionstrings>    <add name="NomeDoContextoGerado" connectionstring="Data Source=DATA_SOURCE;
     Initial Catalog= BANCO;
     " providername="System.Data.SqlClient" /> </connectionstrings>

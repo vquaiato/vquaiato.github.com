@@ -30,13 +30,13 @@ tags:
 Continuando a [falar sobre os AjaxOptions](http://viniciusquaiato.com/blog/tag/ajaxoptions/) no [ASP.NET MVC](http://viniciusquaiato.com/blog/category/dotnet/asp-net-dotnet/asp-net-mvc/) desta vez vou abordar o [LoadingElementId](http://msdn.microsoft.com/en-us/library/system.web.mvc.ajax.ajaxoptions.loadingelementid.aspx).Já falamos sobre:- [UpdateTargetId](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-updatetargetid/)
 - [Confirm message](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-confirm-message/)
 A propriedade LoadingElementId configura um id de elemento DOM para ser exibido enquanto a requisição ajax está sendo executada. Ou seja, vamos mostrar uma imagem de progresso enquanto a requisição ajax não é finalizada.Vamos continuar usando o mesmo exemplo dos posts anteriores mas com pequenas mudanças. Nosso formulário ficará da seguinte maneira:
-{% highlight c# %}
+{% highlight csharp %}
 @using (Ajax.BeginForm("AjaxAction",    new AjaxOptions { UpdateTargetId = "div_nome", LoadingElementId = "div_loading" }
 )){    @Html.TextBox("nome")<br />    @Html.TextBox("sobrenome")    <input type="submit" value="ajax" />}
 
 {% endhighlight %}
 Vejam que na linha 2 passo o nome de uma div "div_loading" como valor desta propriedade do objeto AjaxOptions. Esta div possui uma imagem e está com estilo para não ser exibida:
-{% highlight c# %}
+{% highlight csharp %}
 <div id="div_loading" style="display:none;
     ">    <img src="@Url.Content("~/Content/loading.gif")" /></div>
 {% endhighlight %}

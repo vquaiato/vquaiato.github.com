@@ -20,7 +20,7 @@ tags:
 Fala galera, dando umas umas fuçadas no .NET achei o método [Except&lt;
     T&gt;
     ](http://msdn.microsoft.com/en-us/library/bb300779.aspx). Não é novidade do .NET 4, está presente no 3.5 SP1 se não me engano.Basicamente este método produz um novo set com as diferenças entre duas collections (dois IEnumerables).Imagine que você tem uma lista com valores, e uma outra lista com valores que você não quer. Para tirar estes valores da primeira, basta usar o Except. Confuso? Veja abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 var cores = new List<string> { "azul", "amarelo", "verde", "rosa"}
 ;
 var coresNaoOk = new List<string> { "rosa" }

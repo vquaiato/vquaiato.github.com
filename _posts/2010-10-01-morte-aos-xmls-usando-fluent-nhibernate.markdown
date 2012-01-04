@@ -40,12 +40,12 @@ Vamos adicionar as seguintes dlls ao nosso projeto:[![referencias para o NHibern
 
 ### Configurando a sessão do NHibernate com Fluent NHibernate
 Agora precisamos configurar a sessão do NHibernate para se conectar ao nosso banco de dados. É claro, não farei isso usando XML e sim o Fluent NH, como mostra o código abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 
 public 
 static ISession ObterSessao(){
 var session = Fluently.Configure()        .Database(MsSqlConfiguration                    .MsSql2008                    .ConnectionString(c => c.FromConnectionStringWithKey("ConexaoBanco")))        .Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))        .BuildSessionFactory()        .OpenSession();
-    return session;
+return session;
     }
 
 {% endhighlight %}
@@ -53,7 +53,7 @@ O código por si só fica explicado, não é mesmo? Na **_linha 3_** iniciamos n
 
 ### Mapeando as entidades e suas associações
 Imaginando que meu sistema faz vendas vou utilizar as seguintes entidades: 
-{% highlight c# %}
+{% highlight csharp %}
 
 public class Venda{    
 
@@ -92,7 +92,7 @@ public virtual int Quantidade { get;
 </linhavenda>
 {% endhighlight %}
 Bastante simples, nada que precise ser comentado.Agora o mapeamento feito com Fluent NHibernate utiliza uma classe que herda de [ClassMap<t />](http://wiki.fluentnhibernate.org/Fluent_mapping#ClassMap). Para cada classe que queremos mapear, precisamos criar uma classe que herda de ClassMap, veja abaixo o mapeamento para nossas 3 entidades:
-{% highlight c# %}
+{% highlight csharp %}
 
 public class VendaMap : ClassMap<venda>{    
 
@@ -117,7 +117,7 @@ O código de mapeamento fluente praticamente nos diz exatamente o que ele faz, m
 
 ### Utilizando
 Feito isso podemos executar nosso programa e brincar um pouco. Eu utilizei o seguinte código abaixo para criar uma venda com 3 linhas de venda:
-{% highlight c# %}
+{% highlight csharp %}
 
 static void Main(string[] args){
 var session = SessaoNHibernate.ObterSessao();
@@ -150,12 +150,12 @@ Esse código criará uma Venda, e suas respectivas LinhaVenda, fará a inserçã
 
 ### Gerando o script do Banco de Dados
 Se você quiser que seus mapeamentos sejam transformados em script para o banco de dados e já executado contra o database, altere o código da listagem de configuração para este código abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 
 public 
 static ISession ObterSessao(){
 var session = Fluently.Configure()        .Database(MsSqlConfiguration                    .MsSql2008                    .ConnectionString(c => c.FromConnectionStringWithKey("conexaopadrao")))        .Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))        .ExposeConfiguration(cfg =>                            new SchemaExport(cfg).Create(true, true))        .BuildSessionFactory()        .OpenSession();
-    return session;
+return session;
     }
 
 {% endhighlight %}

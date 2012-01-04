@@ -52,14 +52,16 @@ Eu não discordo da idéia de que o software precisa ter um código fonte bem es
 
 ### As alterações e o Caos
 Quando seu sistema não possui uma boa cobertura de testes, ou seja, quando você não sabe como o seu sistema se comporta, a introdução de uma pequena mudança pode ter efeitos catastróficos, aleatórios e completamente desconhecidos. E o pior, estes efeitos podem ocorrer na outra extremidade que não aquela onde a mudança foi realizada, isto torna claro que não basta conhecer bem o ponto do software onde está realizando a mudança, seria necessário conhecer todo e cada caminho que o software pode tomar, o que é impossível apenas no plano mental.Vocês podem não concordar, mas vejamos um exemplo bem simples:
-{% highlight c# %}
+{% highlight csharp %}
 
 internal class SistemaQualquer{    
 
 static void Autenticar(string login, string senha)    {
 var usuario = Usuarios.ObterPor(login, senha);
-    if(usuario!=null)        {            if(usuario.SenhaEstaExpirada)                throw new SenhaExpiradaException("Senha está expirada");
-    else if(usuario.SenhaEstaBloqueada)                throw new SenhaBloqueadaException("Senha está bloqueada.");
+if(usuario!=null)        {
+if(usuario.SenhaEstaExpirada)                throw new SenhaExpiradaException("Senha está expirada");
+    else
+if(usuario.SenhaEstaBloqueada)                throw new SenhaBloqueadaException("Senha está bloqueada.");
     RegistrarTentativaLogin.ComSucesso(login, senha);
     }
         else        {            RegistrarTentativaLogin.ComFalha(login, senha);

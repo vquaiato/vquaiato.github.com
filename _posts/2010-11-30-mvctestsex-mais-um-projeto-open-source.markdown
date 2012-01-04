@@ -31,25 +31,25 @@ tags:
   autoslug: mvctestsex
 ---
 Fala galera.Quem me conhece provavelmente já me ouviu dizer que "em ASP.NET MVC tudo é testável". Sendo assim nossos controllers também são testáveis. [Postei muito sobre isso aqui](http://viniciusquaiato.com/blog/mvc-tdd/).A verdade é que testar os results dos controllers começa a ficar um pouco chato. Quando o controller retorna um [ActionResult](http://msdn.microsoft.com/en-us/library/system.web.mvc.actionresult(VS.98).aspx) é chato verificar se a view retornada é a correta:
-{% highlight c# %}
+{% highlight csharp %}
 var result = controller.Action();
     Assert.AreEqual("Nome",(result as ViewResult).ViewName);
     
 {% endhighlight %}
 Esse cast me incomoda.E fica pior quando queremos verificar alguma coisa no model desse ActionResult:
-{% highlight c# %}
+{% highlight csharp %}
 var result = controller.Action();
 var model = ((result as ViewResult).ViewData.Model as TipoDoModel);
     //algum assert
 {% endhighlight %}
 Ficou pior ainda né?!Pensando nisso decidi criar um projeto com alguns helpers para [testar controllers no ASP.NET MVC: MVCTestsEx](https://github.com/vquaiato/MVCTestsEx).A idéia é um projeto simples que encapsule algumas operações de testes. Não quero criar um framework de testes! E é por isso que estou usando o NUnit por debaixo dos panos nesse projeto. Quero escrever algo como:
-{% highlight c# %}
+{% highlight csharp %}
 var result = controller.Action();
     result.AssertViewName("SomeName");
     
 {% endhighlight %}
 Isso independente de ser um ActionResult ou um ViewResult.Uma interface fluent também pode surgir, como sugeriu o Juan Lopes:
-{% highlight c# %}
+{% highlight csharp %}
 var result = controller.Action();
     result.Should().Be.View("SomeName");
     

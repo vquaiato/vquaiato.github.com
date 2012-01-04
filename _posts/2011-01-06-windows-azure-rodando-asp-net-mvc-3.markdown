@@ -28,20 +28,21 @@ Para criar uma aplicação utilizando o [ASP.NET MVC 3](http://viniciusquaiato.c
 
 ## Configurando o ASP.NET MVC 3 como um Web Role
 Agora precisamos fazer com que nosso projeto ASP.NET MVC 3 se torne um Web Role do Windows Azure. Isso é extremamente simples.Precisamos adicionar algumas referências do Windows Azure no projeto ASP.NET MVC 3:[caption id="attachment_2729" align="aligncenter" width="300" caption="Adicionando referencias do Azure no projeto ASP.NET MVC 3"][![Adicionando referencias do Azure no projeto ASP.NET MVC 3](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Adicionando-referencias-do-Azure-no-projeto-MVC-3-300x172.png "Adicionando referencias do Azure no projeto ASP.NET MVC 3")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Adicionando-referencias-do-Azure-no-projeto-MVC-3.png)[/caption]Além de adicionar estas referências precisamos criar uma classe que herde de [RoleEntryPoint](http://msdn.microsoft.com/en-us/library/microsoft.windowsazure.serviceruntime.roleentrypoint.aspx) para sinalizar que este projeto é um Web Role. Esta classe é bastante simples e pode ser criada com o seguinte código:
-{% highlight c# %}
+{% highlight csharp %}
 using Microsoft.WindowsAzure.ServiceRuntime;
     namespace SiteMVC3{    
 
 public class WebRole : RoleEntryPoint    {        
 
-public override bool OnStart()        {            // For information on handling configuration changes            // see the MSDN topic at http://go.microsoft.com/fwlink/?LinkId=166357.            return base.OnStart();
+public override bool OnStart()        {            // For information on handling configuration changes            // see the MSDN topic at http://go.microsoft.com/fwlink/?LinkId=166357.
+return base.OnStart();
     }
     }
 }
 
 {% endhighlight %}
 Pronto! Vamos então adicionar nossa aplicação como um Web Role no projeto Azure:Agora vamos criar um controller e uma view utilizando Razor!
-{% highlight c# %}
+{% highlight csharp %}
 using System.Web.Mvc;
     namespace SiteMVC3.Controllers{    
 
@@ -55,7 +56,7 @@ public ActionResult Index()        {            return View(new[] { "ASP.NET MVC
 
 {% endhighlight %}
 E a View:
-{% highlight c# %}
+{% highlight csharp %}
 @model string[]<!DOCTYPE html SYSTEM><html><head>    <title>Index</title></head><body>    <div>        # @Model[0]
         
 

@@ -31,7 +31,7 @@ Uma amiga ([@lekaverta](http://twitter.com/lekaverta)) me perguntou se havia uma
 
 ### Juntando duas List com AddRange
 
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void Deve_Juntar_Duas_Listas_Com_AddRange(){
 var lista1 = new List<string> { "a", "b", "c" }
@@ -47,7 +47,7 @@ Acima adicionamos a lista2 inteira dentro da lista1. Nos certificamos disso na l
 
 ### Juntando duas List com Union
 
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void Deve_Juntar_Duas_Listas_Com_Union(){
 var lista1 = new List<string> { "a", "b", "c" }
@@ -61,7 +61,7 @@ var merged = lista1.Union(lista2).ToList();
 </string></string>
 {% endhighlight %}
 Union, do Linq, nos permite fazer a união de duas listas, resultando em um novo IEnumerable. Desta vez eu verifico que as duas listas são um subset desta nova lista gerada.É importante ressaltar que o Union não duplica elementos iguais presentes nas duas listas, como vemos abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void Deve_Juntar_Duas_Listas_Com_Union(){
 var lista1 = new List<string> { "a", "b", "c" }
@@ -79,7 +79,7 @@ No código acima o elemento "b" está presente nas duas listas, mas na linha 12 
 
 ### Juntando duas List com Concat
 
-{% highlight c# %}
+{% highlight csharp %}
 [TestMethod]
 public void Deve_Juntar_Duas_Listas_Com_Concat(){
 var lista1 = new List<string> { "a", "b", "c" }

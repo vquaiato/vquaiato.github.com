@@ -31,7 +31,7 @@ tags:
   autoslug: eager-loading
 ---
 Tem se falado bastante sobre uma das novas funcionalidades do Entity Framework 4.0, o [Lazy Loading](http://viniciusquaiato.com/blog/lazy-loading-no-entity-framework-4-0/).Com o Lazy Loading habilitado conseguimos com que as propriedades de navegação para outras entidades nos nossos objetos sejam carregadas apenas no momento em que forem chamadas.Dado o seguinte modelo de entidades:[caption id="attachment_867" align="aligncenter" width="300" caption="Modelo Entidades Entity Framework eager loading"][![Modelo Entidades Entity Framework eager loading](http://viniciusquaiato.com/blog/wp-content/uploads/2010/04/modelo-300x211.jpg "Modelo Entidades Entity Framework eager loading")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/04/modelo.jpg)[/caption]Com a opção de Lazy Loading habilitada no EF4 quando eu trouxer um objeto Lista do meu contexto(banco de dados) a propriedade Itens estará vazia, e só será preenchida no momento em que eu acessar a mesma.Por exemplo:
-{% highlight c# %}
+{% highlight csharp %}
 var ctx = new EF4Contexto();
 var lista = ctx.Listas.First();
     //neste momento a propriedade Itens ainda está vazia, nem foi carregadavar nome = lista.Nome;
@@ -42,7 +42,7 @@ Este é o comportamento padrão do EF4. O que acontece se desligarmos o Lazy Loa
 
 ### Eager Loading
 Eager Loading, ou "carga prematura", diz respeito a carregar todas as relações de uma entidade no mesmo momento em que esta entidade é carregada. É o contrário do [Lazy Loading](http://viniciusquaiato.com/blog/lazy-loading-no-entity-framework-4-0/).Para trazer as propriedades de navegação(associação com outras entidades) que quisermos ao carregar a raiz, precisamos utilizar o método _[Include](http://msdn.microsoft.com/en-us/library/bb738708.aspx)_.Veja o exemplo:
-{% highlight c# %}
+{% highlight csharp %}
 var ctx = new EF4Contexto();
     ctx.ContextOptions.LazyLoadingEnabled = false;
 var lista = ctx.Listas.First();
@@ -50,7 +50,7 @@ var lista = ctx.Listas.First();
     
 {% endhighlight %}
  Agora utilizando Include:
-{% highlight c# %}
+{% highlight csharp %}
 var ctx = new EF4Contexto();
     ctx.ContextOptions.LazyLoadingEnabled = false;
 var lista = ctx.Listas.Include("Itens").First();

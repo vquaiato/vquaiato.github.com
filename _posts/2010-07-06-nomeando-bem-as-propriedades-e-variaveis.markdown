@@ -25,7 +25,7 @@ tags:
   autoslug: propriedades
 ---
 [![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/07/060babyL_468x523-268x300.jpg "Você vai me chamar de que?!")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/07/060babyL_468x523.jpg)Engraçado, comecei a escrever esta série antes mesmo de comprar o livro [Clean Code](http://viniciusquaiato.com/blog/dica-de-leitura-clean-code/). E algumas das minhas certezas sobre o que é um bom código, agora estão um pouco mais embasadas na opinião e experiência de diversos profissionais.Uma das primeiras coisas que "aprendemos" quando começamos a programar é o "quão legal é brincar com o nome das variáveis".Eu fiz um curso técnico há 4 anos, e achava o máximo chamar minhas variáveis em C++ com os nomes mais bizarros. Tinha um amigo que fazia coisas como:
-{% highlight c# %}
+{% highlight csharp %}
 int bozo;
     char vovo_mafalda;
     float chapeuzinho_vermelho;
@@ -35,7 +35,7 @@ E o mais engraçado é que hoje em dia eu vejo ainda coisas parecidas com isso. 
 
 ### Dê preferência para nomes completos
 Vejamos abaixo. O código é simples, mas poderia ser melhor. Quando estas variáveis estiverem dentro de métodos, o entendimento vai começar a ficar complicado. Será necessário maior esforço em sua tradução, afinal sabemos que nomeEmpr é na verdade nomeEmpresa e razSoc é na verdade razaoSocial, mas quando isso se mistura com várias outras linhas de código, a compreensão começa a ficar comprometida, a visualização já não é tão clara e simples.
-{% highlight c# %}
+{% highlight csharp %}
 class Empresa{
 int codEmp;
 string nomeEmpr;
@@ -44,7 +44,7 @@ string razSoc;
 
 {% endhighlight %}
 Desta forma, vamos tornar as coisas simples, claras e mais diretas sempre que pudermos:
-{% highlight c# %}
+{% highlight csharp %}
 class Empresa{
 int codigoEmpresa;
 string nomeEmpresa;
@@ -56,12 +56,14 @@ string razaoSocial;
 
 ### Nomes genéricos
 Existem alguns conceitos genéricos que sempre estão presentes nos sistemas. Por exemplo, quando queremos saber se uma determinada condição foi atingida e posteriormente utilizarmos este conhecimento, criamos uma "flag":
-{% highlight c# %}
+{% highlight csharp %}
 void FazerPedido(Empresa empresa, IList<produto> produtos){    //faz algumas validações
 bool flag = false;
-    foreach (var produto in produtos)    {        if (!produto.TemNoEstoque)            flag = true;
+foreach(var produto in produtos)    {
+if(!produto.TemNoEstoque)            flag = true;
     }
-    //faz algumas coisas    if(flag)    {        //faz alguma coisa    }
+    //faz algumas coisas
+if(flag)    {        //faz alguma coisa    }
 }
 </produto>
 {% endhighlight %}
@@ -69,7 +71,7 @@ O conceito da flag é importante e bastante utilizado, no entando não precisamo
 
 ### Evite nomes de uma letra
 O único caso em que acho válido utilizar variáveis de uma letra é em laços for, e ainda assim tenho evitado usar em algumas situações. Fora destes casos acho completamente inválido, perigoso e nociso.Há alguns meses peguei um código como o abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 int a,b;
 int c,d;
     
@@ -78,7 +80,7 @@ Meu Deus! Eu nem sei explicar o que esse código fazia, era um método chamado e
 
 ### Evite "reuso"
 Como assim?! Evitar reuso?! Explico.Às vezes, não sei bem por que, acabamos reaproveitando algumas variáveis em um mesmo contexto para coisas distintas, ou às vezes não tão distintas, por exemplo:
-{% highlight c# %}
+{% highlight csharp %}
 void SalvarArquivo(HttpPostedFile arquivo, string nomeArquivo){
 string nome = arquivo.FileName;
     nome = nome.Split(new string[]{
@@ -89,7 +91,7 @@ string nome = arquivo.FileName;
 
 {% endhighlight %}
 Não estou dizendo que o código acima está correto, etc. Apenas quero atentar ao fato de uma mesma variável estar sendo usada em vários lugares. Na verdade não vejo problemas nisso, vejo problemas no fato de que ela significa coisas diferentes em cada lugar.Primeiro ela é o nome completo do arquivo postado. Depois ela é apenas a última parte do nome do arquivo. E depois é o novo nome do arquivo.Não é difícil ver isso acontecer em vários métodos.Eu transformaria o código desta forma:
-{% highlight c# %}
+{% highlight csharp %}
 void SalvarArquivo(HttpPostedFile arquivo, string nomeArquivo){
 string nomeCompletoArquivoPostado = arquivo.FileName;
 string nomeArquivoPostado = nomeCompletoArquivoPostado                                .Split(new string[] { "\\" }

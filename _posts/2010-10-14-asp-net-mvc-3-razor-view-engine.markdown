@@ -31,13 +31,13 @@ tags:
 
 ### Qual objetivo do Razor?
 A idéia principal é a simplicidade. A idéia é diminuir o ruído entre o código HTML e o código C# (ou VB) em nossas views. Os caracteres de controle causam muita poluição, e a necessidade de muita digitação.Hoje para exibir uma data por exemplo em uma view é necessário fazer algo como:
-{% highlight c# %}
+{% highlight csharp %}
 
 <%= DateTime.Now %>
 
 {% endhighlight %}
 Com Razor faremos algo como:
-{% highlight c# %}
+{% highlight csharp %}
 
 @DateTime.Now
 
@@ -49,7 +49,7 @@ Não! Razor não é uma nova linguagem. É apenas uma forma diferente de escreve
 
 ### Razor é inteligente!
 Razor realmente é muito podereso. Seu parser é muito inteligente, ele conhece C#, conhece VB, e é claro conhece HTML. Desta forma podemos escrever um código como este:
-{% highlight c# %}
+{% highlight csharp %}
 <div>            @foreach(var pessoa in Model){
  @pessoa.Nome (@pessoa.Sexo) - @pessoa.Idade anos
 }
@@ -67,7 +67,7 @@ Vamos criar um novo projeto ASP.NET MVC 3:[caption id="attachment_1809" align="a
 
 ## Criando um controller
 Vamos criar um controller bem simples, como pode ser visto abaixo:
-{% highlight c# %}
+{% highlight csharp %}
 
 public class HomeController : Controller{    
 
@@ -75,7 +75,7 @@ public ActionResult Index()    {
 var viewModel = new SimpleViewModel                            {                                DataQualquer = DateTime.Now.AddDays(3),                                Nome = "Quaiato ASP.NET MVC Razor",                                ListaInteiros = new[] { 1, 1, 2, 3, 5, 8 }
                             }
 ;
-    return View(viewModel);
+return View(viewModel);
     }
 }
 
@@ -86,7 +86,7 @@ Apenas criei uma classe com as propriedades acima, para servir como meu "view mo
 
 ## Criando a view com Razor
 Abaixo temos a view de exemplo:
-{% highlight c# %}
+{% highlight csharp %}
 <head><title>Index</title></head><body># Olá @Model.Nome
 <div>
 Você foi cadastrado em: @Model.DataQualquer.ToString("dd/MMM/yyyy")

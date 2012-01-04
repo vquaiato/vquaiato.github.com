@@ -25,7 +25,7 @@ Para navigarmos entre páginas em nossas aplicações no Windows Phone fazemos u
 
 ## Navegando entre páginas no Windows Phone
 Chega de blá blá blá... Vamos criar uma aplicação para Windows Phone e criar uma interface parecida com esta:[caption id="attachment_3912" align="aligncenter" width="165" caption="Windows Phone NavigationService"][![Windows Phone NavigationService exemplo](http://viniciusquaiato.com/blog/wp-content/uploads/2011/08/Windows-Phone-NavigationService-exemplo-165x300.png "Windows Phone NavigationService exemplo")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/08/Windows-Phone-NavigationService-exemplo.png)[/caption]Esta página contém simplesmente um TextBlock com o evento Tap configurado da seguinte forma:
-{% highlight c# %}
+{% highlight csharp %}
 
 private void TextBlock_Tap(object sender, GestureEventArgs e){    NavigationService.Navigate(new Uri("/PageFoo.xaml", UriKind.Relative));
     }

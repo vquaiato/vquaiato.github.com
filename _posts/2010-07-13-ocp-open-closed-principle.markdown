@@ -34,7 +34,7 @@ A motivação por detrás do OCP é justamente prover software reutilizável, ro
 
 ### O exemplo
 Confuso? Vamos ver um pequeno exemplo:
-{% highlight c# %}
+{% highlight csharp %}
 enum TipoDePagamento { A_VISTA, PARCELADO }
 class ItemDeCompra{    
 
@@ -58,7 +58,8 @@ private IList<itemdecompra> itensDeCompra { get;
     set;
     }
     
-public IEnumerable<itemdecompra> Itens    {        get { return this.itensDeCompra;
+public IEnumerable<itemdecompra> Itens    {        get {
+return this.itensDeCompra;
     }
     }
     
@@ -71,7 +72,7 @@ decimal valorDoDesconto = 0;
     break;
     case TipoDePagamento.PARCELADO:                break;
     }
-        return valorDoDesconto;
+return valorDoDesconto;
     }
 }
 </itemdecompra></itemdecompra>
@@ -80,14 +81,15 @@ O código acima retrata uma classe Compra, em um sistema qualquer de compras. O 
 
 ### Adequando ao OCP
 Observando um pouco nossas classes e as necessidades de negócio, e o modelo que fizemos e temos em mãos, podemos chegar a um desenho de classes parecido com este:
-{% highlight c# %}
+{% highlight csharp %}
 abstract class CompraBase{    
 
 protected IList<itemdecompra> itensDeCompra { get;
     set;
     }
     
-public IEnumerable<itemdecompra> Itens    {        get { return this.itensDeCompra;
+public IEnumerable<itemdecompra> Itens    {        get {
+return this.itensDeCompra;
     }
     }
     
@@ -98,12 +100,14 @@ public abstract decimal ValorDoDesconto();
     }
 class CompraParcelada : CompraBase{    
 
-public override decimal ValorDoDesconto()    {        return 0;
+public override decimal ValorDoDesconto()    {
+return 0;
     }
 }
 class CompraAVista : CompraBase{    
 
-public override decimal ValorDoDesconto()    {        return 0.15m * this.itensDeCompra.Sum(item => item.Quantidade*item.ValorUnitario);
+public override decimal ValorDoDesconto()    {
+return 0.15m * this.itensDeCompra.Sum(item => item.Quantidade*item.ValorUnitario);
     }
 }
 </itemdecompra></itemdecompra>

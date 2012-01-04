@@ -47,7 +47,7 @@ Vamos lá, antes de codificar, eu adiciono um arquivo de recursos no projeto de 
 
 ### O código de testes
 
-{% highlight c# %}
+{% highlight csharp %}
 
 public void Deve_Salvar_Uma_Imagem_Que_Foi_Postada(){    //Arrange
 var controllerFotos = new ControllerFotos();
@@ -73,12 +73,13 @@ var context = new Mock<httpcontextbase>();
 
 ### Explicando o teste
 O teste em si é bastante simples.Nas **_linhas 6, 7 e 8_** o que fazemos é pegar a imagem do arquivo de resources e jogamos para um MemoryStream. Fazemos isso pois é desta forma que o PostedFile trabalha, com um Stream._ArquivosPostados_ é o nome do meu arquivo de resource, e _ImagemPostada_ é o nome da imagem que adicionei ao arquivo.Nas **_linhas 10 e 11_** criamos um mock para [HttpPostedFileBase](http://msdn.microsoft.com/en-us/library/system.web.httppostedfilebase.aspx), que é o tipo a ser retornado pela lista de PostedFiles no nosso controller. E configuramos ele para retornar nossa imagem que está no memory stream.Nas **_linhas 13 e 14_** configuramos a coleção de arquivos mockando o [HttpFileCollectionBase](http://msdn.microsoft.com/en-us/library/system.web.httpfilecollectionbase.aspx). Dizemos que quando for acessado o índice zero desta coleção deve retornar nosso posted file mockado.Nas **_linhas 16 e 17_** criamos o mock do [HttpRequestBase](http://msdn.microsoft.com/en-us/library/system.web.httprequestbase.aspx), desta forma quando for solicitado a coleção de Files retornaremos nossa lista mockada.Nas **_linhas 19 e 20_** fazemos o mock do [HttpContextBase](http://msdn.microsoft.com/en-us/library/system.web.httpcontextbase.aspx), assim quando solicitarmos o Request retornaremos nosso request mockado.Para finalizar, nas **_linhas 22 e 23_** criamos um [ControllerContext](http://msdn.microsoft.com/en-us/library/system.web.mvc.controllercontext.aspx) usando nosso HttpContext mockado, e então colocamos este contexto no nosso controller.Isso tudo serve para que tenhamos controle total sobre todos os arquivos passados para nosso controller, sem haver nenhuma necessidade do upload manual, tornando assim o teste realmente automatizado.Na **_linha 26_** fazemos a chamada para a action, nesse caso chamada Upload.Na **_linha 29_** fazemos a verificação para saber se nossa action realmente salvou o arquivo que foi enviado.Abaixo temos o código do nosso controller:
-{% highlight c# %}
+{% highlight csharp %}
 
-public ViewResult Upload(){    if (Request.Files[0] != null)    {        Request.Files[0].SaveAs(string.Empty);
-    return View("UploadSucesso");
+public ViewResult Upload(){
+if(Request.Files[0] != null)    {        Request.Files[0].SaveAs(string.Empty);
+return View("UploadSucesso");
     }
-    return View();
+return View();
     }
 
 {% endhighlight %}

@@ -43,7 +43,7 @@ No Package Manager Console digite:_**Add-Package Nunit**_[caption id="attachment
 
 ### Gerenciando os pacotes
 Após adicionar uma referência para um pacote o NuPack cria um arquivo packages.config onde ele armazena o pacote e a versão que foi adicionada ao projeto. Ainda não testei isso, mas imagino que ele consiga ver a disponibilidade de uma versão mais recente para fazer um upgrade.
-{% highlight c# %}
+{% highlight csharp %}
 <?xml version="1.0" encoding="utf-8"?><packages>  <package id="NUnit" version="2.5.7.10213" /></packages>
 {% endhighlight %}
 

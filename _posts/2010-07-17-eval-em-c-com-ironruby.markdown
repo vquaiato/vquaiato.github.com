@@ -25,7 +25,7 @@ tags:
   autoslug: eval
 ---
 Fala galera, estava conversando com o [Bruno Kenj](http://www.brunokenj.net/) e ele estava com a necessidade realizar um Eval em C#.Bom, nem preciso dizer que minha resposta foi "Use IronRuby".Bom, segue abaixo o código que criei:
-{% highlight c# %}
+{% highlight csharp %}
 
 public 
 static class RubyEngineCreator{    
@@ -34,22 +34,25 @@ private
 static ScriptEngine ironRubyEngine = null;
     
 private 
-static ScriptEngine CreateEngine()    {        if (ironRubyEngine == null)            ironRubyEngine = Ruby.CreateEngine();
-    return ironRubyEngine;
+static ScriptEngine CreateEngine()    {
+if(ironRubyEngine == null)            ironRubyEngine = Ruby.CreateEngine();
+return ironRubyEngine;
     }
     
 public 
-static dynamic GetRubyObject(string script)    {        return CreateEngine().CreateScriptSourceFromString(script).Execute();
+static dynamic GetRubyObject(string script)    {
+return CreateEngine().CreateScriptSourceFromString(script).Execute();
     }
 }
 
 {% endhighlight %}
 Simples não?!Seguem alguns testes e um método Eval que criei pra facilitar:
-{% highlight c# %}
+{% highlight csharp %}
 [TestClass]
 public class UnitTest1{    
 
-private T Eval<t>(string s)    {        return (T)RubyEngineCreator.GetRubyObject(s);
+private T Eval<t>(string s)    {
+return (T)RubyEngineCreator.GetRubyObject(s);
     }
     [TestMethod]    
 public void Deve_Retornar_Somar_2_com_2_Retornar_4()    {
