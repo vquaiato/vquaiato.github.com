@@ -119,3 +119,7 @@ div.footer ul li{
 div.footer ul li.designed{
 	color:#848484;
 }
+div.footer ul li.feed{
+	background: url(/images/feed.png) no-repeat;
+	padding-left:25px;
+}
