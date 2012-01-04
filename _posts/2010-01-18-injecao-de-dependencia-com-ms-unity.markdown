@@ -63,7 +63,7 @@ public void EnviarEmail(string email, string mensagem)    {        //Envia email
 }
 
 {% endhighlight %}
-Adicione as seguintes referências ao seu projeto: _Microsoft.Practices.ObjectBuilder2.dll_ e _Microsoft.Practices.Unity.dll_ que se encontram na pasta que você "instalou" o Unity, como pode ser visto na figura abaixo:![Incluindo Dlls do Unity](http://viniciusquaiato.com/blog/wp-content/uploads/2010/01/Incluindo-Dlls.jpg "Incluindo Dlls do Unity")As classes acima são bem simples, no final das contas o que faremos é com que o Unity crie um EnviadorDeEmails com a dependência de ILogger injetada e resolvida, ou seja, que ele crie um EnviadorDeEmails passando para ele um SqlLogger. Para isso vamos "ensinar" ao Unity como resolver a interface ILogger, como pode ser visto no código abaixo:
+Adicione as seguintes referências ao seu projeto: _Microsoft.Practices.ObjectBuilder2.dll_ e _Microsoft.Practices.Unity.dll_ que se encontram na pasta que você "instalou" o Unity, como pode ser visto na figura abaixo:![Incluindo Dlls do Unity](http://viniciusquaiato.com/images_posts/Incluindo-Dlls.jpg "Incluindo Dlls do Unity")As classes acima são bem simples, no final das contas o que faremos é com que o Unity crie um EnviadorDeEmails com a dependência de ILogger injetada e resolvida, ou seja, que ele crie um EnviadorDeEmails passando para ele um SqlLogger. Para isso vamos "ensinar" ao Unity como resolver a interface ILogger, como pode ser visto no código abaixo:
 {% highlight csharp %}
 
 var unityContainer = new UnityContainer();

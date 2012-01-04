@@ -34,7 +34,7 @@ public
 static readonly string ValidationSummaryCssClassName = "validation-summary-errors";
     
 {% endhighlight %}
-Pois bem, são estes os estilos que precisamos configurar para que nossas mensagens de validação sejam exibidas com alguma formatação.O ASP.NET MVC já cria estes estilos no arquivo /Content/site.css:[caption id="attachment_2603" align="aligncenter" width="300" caption="Site.css criado pelo Visual Studio"][![Site.css criado pelo Visual Studio](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/site_css-300x280.png "Site.css criado pelo Visual Studio")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/site_css.png)[/caption]Se referenciarmos o arquivo de estilos(Site.css) em nossas views teremos uma mensagem de validação assim:[caption id="attachment_2605" align="aligncenter" width="300" caption="error field com estilo padrão"][![error field com estilo padrão](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/error-field-300x241.png "error field com estilo padrão")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/error-field.png)[/caption]Vamos alterar o estilo para algo assim:
+Pois bem, são estes os estilos que precisamos configurar para que nossas mensagens de validação sejam exibidas com alguma formatação.O ASP.NET MVC já cria estes estilos no arquivo /Content/site.css:[caption id="attachment_2603" align="aligncenter" width="300" caption="Site.css criado pelo Visual Studio"][![Site.css criado pelo Visual Studio](http://viniciusquaiato.com/images_posts/site_css-300x280.png "Site.css criado pelo Visual Studio")](http://viniciusquaiato.com/images_posts/site_css.png)[/caption]Se referenciarmos o arquivo de estilos(Site.css) em nossas views teremos uma mensagem de validação assim:[caption id="attachment_2605" align="aligncenter" width="300" caption="error field com estilo padrão"][![error field com estilo padrão](http://viniciusquaiato.com/images_posts/error-field-300x241.png "error field com estilo padrão")](http://viniciusquaiato.com/images_posts/error-field.png)[/caption]Vamos alterar o estilo para algo assim:
 {% highlight csharp %}
 .field-validation-error{    color: #000;
     font-size:16px;
@@ -49,7 +49,7 @@ Pois bem, são estes os estilos que precisamos configurar para que nossas mensag
     }
 
 {% endhighlight %}
-Desta forma obteremos um resultado assim:[caption id="attachment_2615" align="aligncenter" width="300" caption="custom validation style"][![custom validation style](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/custom-validation-style1-300x167.png "custom validation style")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/custom-validation-style1.png)[/caption](notem que eu não sou bom com cores e estilos :P)É isso aê galera. Bastante simples.
+Desta forma obteremos um resultado assim:[caption id="attachment_2615" align="aligncenter" width="300" caption="custom validation style"][![custom validation style](http://viniciusquaiato.com/images_posts/custom-validation-style1-300x167.png "custom validation style")](http://viniciusquaiato.com/images_posts/custom-validation-style1.png)[/caption](notem que eu não sou bom com cores e estilos :P)É isso aê galera. Bastante simples.
 
 Abraços,
 Vinicius Quaiato.

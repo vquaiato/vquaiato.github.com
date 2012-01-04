@@ -39,11 +39,11 @@ tags:
   slug: controller-upload
   autoslug: controller-upload
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/CargaPesada-150x150.jpg "Testando Uploads")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/CargaPesada.jpg)Fala galera, neste terceiro post sobre ASP.NET MVC e testes([post I](http://viniciusquaiato.com/blog/asp-net-mvc-testando-controllers-parte-i/) e [post II](http://viniciusquaiato.com/blog/asp-net-mvc-testando-controllers-parte-ii/)) vou mostrar como testar a action de um controller que realiza upload de arquivos.# Testar um controller que realiza upload de arquivos
+[![](http://viniciusquaiato.com/images_posts/CargaPesada-150x150.jpg "Testando Uploads")](http://viniciusquaiato.com/images_posts/CargaPesada.jpg)Fala galera, neste terceiro post sobre ASP.NET MVC e testes([post I](http://viniciusquaiato.com/blog/asp-net-mvc-testando-controllers-parte-i/) e [post II](http://viniciusquaiato.com/blog/asp-net-mvc-testando-controllers-parte-ii/)) vou mostrar como testar a action de um controller que realiza upload de arquivos.# Testar um controller que realiza upload de arquivos
 Este não é o teste mais simples, mas também não é complexo. A particularidade aqui é que estou utilizando o Moq, e com ele não consigo dar "bypass" nas propriedades que eu não quero mockar, ou seja, preciso mockar toda a cadeia da chamada (se vocês tiverem uma forma mais simples, é só mandar).
 
 ### Configurando arquivo Resources
-Vamos lá, antes de codificar, eu adiciono um arquivo de recursos no projeto de testes e adiciono uma foto como resource:[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/arquivo-resource-300x193.png "Adicionando arquivo resource")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/arquivo-resource.png)[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/adicionando-imagem-como-resource-300x194.png "Adicionando imagem como resource")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/adicionando-imagem-como-resource.png)
+Vamos lá, antes de codificar, eu adiciono um arquivo de recursos no projeto de testes e adiciono uma foto como resource:[![](http://viniciusquaiato.com/images_posts/arquivo-resource-300x193.png "Adicionando arquivo resource")](http://viniciusquaiato.com/images_posts/arquivo-resource.png)[![](http://viniciusquaiato.com/images_posts/adicionando-imagem-como-resource-300x194.png "Adicionando imagem como resource")](http://viniciusquaiato.com/images_posts/adicionando-imagem-como-resource.png)
 
 ### O código de testes
 

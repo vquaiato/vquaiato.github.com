@@ -27,7 +27,7 @@ tags:
   slug: controller
   autoslug: controller
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/sopa-de-letras-150x150.jpg "sopa de letras")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/sopa-de-letras.jpg)Eu não imaginava que existissem tantas dúvidas sobre o que cada uma das "letrinhas" do MVC significam e fazem. Mas essa pergunta apareceu na minha timeline semana passada e também na lista .NET Architects, e em ambos os locais eu vi respostas, digamos, estranhas.
+[![](http://viniciusquaiato.com/images_posts/sopa-de-letras-150x150.jpg "sopa de letras")](http://viniciusquaiato.com/images_posts/sopa-de-letras.jpg)Eu não imaginava que existissem tantas dúvidas sobre o que cada uma das "letrinhas" do MVC significam e fazem. Mas essa pergunta apareceu na minha timeline semana passada e também na lista .NET Architects, e em ambos os locais eu vi respostas, digamos, estranhas.
 
 ## O padrão de arquitetura
 O padrão MVC é um padrão de arquitetura pois está em um "patamar" acima de outros padrões de design. Quando digo acima não quero dizer melhor, mas sim que ele é aplicado em nível de aplicação e não em nível de classes.
@@ -45,7 +45,7 @@ A View no MVC nada mais é do que uma representação gráfica/visual do modelo 
 Os Controllers são responsáveis por receber as interações entre os usuários e o Modelo. Ele recebe os inputs faz as manipulações necessárias no Modelo e decide como a View deve ser atualizada.Isto não quer dizer que o Controller faz um monte de coisas: não!Quando algo precisa ser feito no Model o Controller deve simplesmente delegar isso ao Model, ou seja, delegar isso para os repositórios, entidades, serviços, etc. O Controller deve ser simples, claro e coeso. 
 
 ## Os diagramas
-Vejo diversos diagramas sobre o padrão MVC na internet, em livros, etc. Confesso que não gosto da maioria deles. Eles dão a impressão de que a View conhece o Controller, que o Model conhece a View: é confuso!Acho que a representação que eu mais gosto é esta aqui obtida do [Patterns & Practices](http://msdn.microsoft.com/en-us/library/ff649643.aspx):[caption id="attachment_2788" align="aligncenter" width="318" caption="Representação MVC"][![Representação MVC](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Diagrama.gif "Representação MVC")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Diagrama.gif)[/caption]Eu gosto deste diagrama pois:- A View só conhece o Model;
+Vejo diversos diagramas sobre o padrão MVC na internet, em livros, etc. Confesso que não gosto da maioria deles. Eles dão a impressão de que a View conhece o Controller, que o Model conhece a View: é confuso!Acho que a representação que eu mais gosto é esta aqui obtida do [Patterns & Practices](http://msdn.microsoft.com/en-us/library/ff649643.aspx):[caption id="attachment_2788" align="aligncenter" width="318" caption="Representação MVC"][![Representação MVC](http://viniciusquaiato.com/images_posts/Diagrama.gif "Representação MVC")](http://viniciusquaiato.com/images_posts/Diagrama.gif)[/caption]Eu gosto deste diagrama pois:- A View só conhece o Model;
     - O Controller conhece a View e o Model;
     - O Model é totalmente ignorante da View e o Controller
 Este desenho é apenas uma ilustração do padrão. Não é um diagrama de sequência, interação, etc. Pense nele como uma visualização(uma View) do Modelo(o padrão).

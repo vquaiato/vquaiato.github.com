@@ -64,7 +64,7 @@ onsole.WriteLine("\nTipo: {
     }
 
 {% endhighlight %}
-Agora vamos brincar um pouco criando, alterando e deletando um arquivo no nosso diretório enquanto a aplicação estiver executando:[caption id="attachment_3686" align="aligncenter" width="300" caption="FileSystemWatcher em ação"][![FileSystemWatcher em ação](http://viniciusquaiato.com/blog/wp-content/uploads/2011/06/Screen-shot-2011-06-12-at-10.05.42-PM-300x195.png "FileSystemWatcher em ação")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/06/Screen-shot-2011-06-12-at-10.05.42-PM.png)[/caption](reparem que estou rodando no Mono :D)[Apenas a ação de Raname que não funcionou como o esperado. Na verdade um evento de deleção e um de criação foram disparados. Talvez isso seja particularidade do unix. Alguém sabe se no Windows o comportamento é o mesmo?]É isso galera, espero que seja útil.
+Agora vamos brincar um pouco criando, alterando e deletando um arquivo no nosso diretório enquanto a aplicação estiver executando:[caption id="attachment_3686" align="aligncenter" width="300" caption="FileSystemWatcher em ação"][![FileSystemWatcher em ação](http://viniciusquaiato.com/images_posts/Screen-shot-2011-06-12-at-10.05.42-PM-300x195.png "FileSystemWatcher em ação")](http://viniciusquaiato.com/images_posts/Screen-shot-2011-06-12-at-10.05.42-PM.png)[/caption](reparem que estou rodando no Mono :D)[Apenas a ação de Raname que não funcionou como o esperado. Na verdade um evento de deleção e um de criação foram disparados. Talvez isso seja particularidade do unix. Alguém sabe se no Windows o comportamento é o mesmo?]É isso galera, espero que seja útil.
 
 Abraços,
 Vinicius Quaiato.

@@ -51,7 +51,7 @@ return PartialView("PartialNomes", nomeFormatado);
     }
 
 {% endhighlight %}
-Não existe nenhum segredo nessa action. Ela recebe 2 parâmetros e tudo que faz é renderizar uma Partial View com os parâmetros em capital case.Como resultado teremos uma página com um form que será executado com ajax:[caption id="attachment_3171" align="aligncenter" width="300" caption="ASP.NET MVC Ajax.BeginForm"][![ASP.NET MVC Ajax.BeginForm](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-BeginForm-300x243.png "ASP.NET MVC Ajax.BeginForm")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/Ajax-BeginForm.png)[/caption]É isso galera, essa é uma das maneiras de carregar dados do servidor em uma div específica utilizando o helper Ajax.BeginForm do ASP.NET MVC em conjunto com o JQuery.
+Não existe nenhum segredo nessa action. Ela recebe 2 parâmetros e tudo que faz é renderizar uma Partial View com os parâmetros em capital case.Como resultado teremos uma página com um form que será executado com ajax:[caption id="attachment_3171" align="aligncenter" width="300" caption="ASP.NET MVC Ajax.BeginForm"][![ASP.NET MVC Ajax.BeginForm](http://viniciusquaiato.com/images_posts/Ajax-BeginForm-300x243.png "ASP.NET MVC Ajax.BeginForm")](http://viniciusquaiato.com/images_posts/Ajax-BeginForm.png)[/caption]É isso galera, essa é uma das maneiras de carregar dados do servidor em uma div específica utilizando o helper Ajax.BeginForm do ASP.NET MVC em conjunto com o JQuery.
 
 ### Código fonte
 O fonte deste e outros exemplos estão no Github: [https://github.com/vquaiato/ajaxhelpersamples](https://github.com/vquaiato/ajaxhelpersamples)Abraços,Vinicius Quaiato.

@@ -15,7 +15,7 @@ tags:
   slug: gonow-tecnologia
   autoslug: gonow-tecnologia
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/IMG_0126-300x225.jpg "IMG_0126")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/IMG_0126.jpg)Faz um tempo que estou devendo este post. Há cerca de 2 meses eu saí do SDC da Stefanini após ser convidado pelo [Fábio Akita](http://akitaonrails.com.br) para iniciar um time de .NET na [Gonow Tecnologia](http://gonow.com.br).
+[![](http://viniciusquaiato.com/images_posts/IMG_0126-300x225.jpg "IMG_0126")](http://viniciusquaiato.com/images_posts/IMG_0126.jpg)Faz um tempo que estou devendo este post. Há cerca de 2 meses eu saí do SDC da Stefanini após ser convidado pelo [Fábio Akita](http://akitaonrails.com.br) para iniciar um time de .NET na [Gonow Tecnologia](http://gonow.com.br).
 
 ## Quem é a Gonow?
 A [Gonow](http://gonow.com.br/empresa-gonow-tecnologia) é uma empresa relativamente nova. Como conhecemos e vemos hoje possui apenas 4 anos.A empresa respira tecnologia e informação: as pessoas, o local, as idéias, as práticas.Hoje a Gonow possui clientes no Brasil e no exterior e está crescendo bastante dentro do mercado brasileiro pois começou a prestar serviços aqui neste ano de 2010! 

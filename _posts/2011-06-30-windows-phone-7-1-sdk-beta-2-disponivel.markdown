@@ -24,7 +24,7 @@ tags:
   slug: windows-phone-7-1-beta-2
   autoslug: windows-phone-7.1-beta-2
 ---
-Fala galera!Para quem anda(ou não anda) acompanhando ou bisbilhotando o [Windows Phone 7](http://viniciusquaiato.com/blog/category/windows-phone-7/) acabam de ser lançadas as ferramentas(SDK) para o Windows Phone 7.1 beta 2 - Mango.A instalação não poderia ser mais simples: Web Platform Installer:[caption id="attachment_3707" align="aligncenter" width="300" caption="Windows Phone 7.1 tools beta 2"][![Windows Phone 7.1 tools beta 2](http://viniciusquaiato.com/blog/wp-content/uploads/2011/06/Windows-Phone-7.1-tools-beta-2-300x231.png "Windows Phone 7.1 tools beta 2")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/06/Windows-Phone-7.1-tools-beta-2.png)[/caption]
+Fala galera!Para quem anda(ou não anda) acompanhando ou bisbilhotando o [Windows Phone 7](http://viniciusquaiato.com/blog/category/windows-phone-7/) acabam de ser lançadas as ferramentas(SDK) para o Windows Phone 7.1 beta 2 - Mango.A instalação não poderia ser mais simples: Web Platform Installer:[caption id="attachment_3707" align="aligncenter" width="300" caption="Windows Phone 7.1 tools beta 2"][![Windows Phone 7.1 tools beta 2](http://viniciusquaiato.com/images_posts/Windows-Phone-7.1-tools-beta-2-300x231.png "Windows Phone 7.1 tools beta 2")](http://viniciusquaiato.com/images_posts/Windows-Phone-7.1-tools-beta-2.png)[/caption]
 
 ### Novidas das versão 7.1 beta 2 do SDK para Windows Phone
 Uma tabela com as novidades desta versão pode ser encontrada aqui: [http://msdn.microsoft.com/en-us/library/ff637516.aspx](http://msdn.microsoft.com/en-us/library/ff637516.aspx).Há um descritivo bem detalhado sobre o que há de novo, vale a pena ler.

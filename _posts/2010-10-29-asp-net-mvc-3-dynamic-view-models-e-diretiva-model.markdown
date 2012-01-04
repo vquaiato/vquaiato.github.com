@@ -27,7 +27,7 @@ tags:
   slug: diretiva-model
   autoslug: diretiva-@model
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/vortex-150x150.jpg "vortex")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/vortex.jpg)Passar um model dynamic para a view não é uma novidade do [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3/). Já na versão 2 podíamos fazer isso, afinal [dynamic](http://viniciusquaiato.com/blog/tag/dynamic/) é uma funcionalidade do [.NET 4](http://msdn.microsoft.com/en-us/library/w0x726c2.aspx).
+[![](http://viniciusquaiato.com/images_posts/vortex-150x150.jpg "vortex")](http://viniciusquaiato.com/images_posts/vortex.jpg)Passar um model dynamic para a view não é uma novidade do [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3/). Já na versão 2 podíamos fazer isso, afinal [dynamic](http://viniciusquaiato.com/blog/tag/dynamic/) é uma funcionalidade do [.NET 4](http://msdn.microsoft.com/en-us/library/w0x726c2.aspx).
 
 ## Especificando models no MVC2
 No ASP.NET MVC 2 para especificar o model de uma view nós utilizamos algo parecido com:

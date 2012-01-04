@@ -46,7 +46,7 @@ Para executarmos este script de build e então obtermos a solução compilada e 
 {% highlight csharp %}
 msbuild build.proj
 {% endhighlight %}
-Onde estou na pasta contendo o msbuild e o script de build chama-se build.proj.Teremos um output como este:[caption id="attachment_3033" align="aligncenter" width="300" caption="Build gerando pacote NuGet"][![Build gerando pacote NuGet](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Build-gerando-pacote-NuGet-300x176.png "Build gerando pacote NuGet")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/Build-gerando-pacote-NuGet.png)[/caption]
+Onde estou na pasta contendo o msbuild e o script de build chama-se build.proj.Teremos um output como este:[caption id="attachment_3033" align="aligncenter" width="300" caption="Build gerando pacote NuGet"][![Build gerando pacote NuGet](http://viniciusquaiato.com/images_posts/Build-gerando-pacote-NuGet-300x176.png "Build gerando pacote NuGet")](http://viniciusquaiato.com/images_posts/Build-gerando-pacote-NuGet.png)[/caption]
 
 ## Resumo
 Esta é uma maneira muito simples de incluir a criação do pacote diretamente no build do nosso projeto. Também é possível fazer isso de dentro do Visual Studio, mas chega de fazer tudo da maneira mais chata né? Hehehe.Em um próximo post vou mostrar como além de gerar o pacote faremos o processo de build enviar o pacote gerado para a galeria online do NuGet, tudo de forma automática.Esta solução completa, com os códigos fontes, o arquivo de build e tudo o mais pode ser encontrado no github: [http://github.com/vquaiato/mvctestsex](http://github.com/vquaiato/mvctestsex).

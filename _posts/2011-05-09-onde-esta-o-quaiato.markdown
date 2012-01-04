@@ -18,7 +18,7 @@ tags:
   slug: apresentacoes
   autoslug: "apresenta\xC3\xA7\xC3\xB5es"
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/conheca-o-livro-onde-esta-o-wally.jpg "conheca-o-livro-onde-esta-o-wally")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/conheca-o-livro-onde-esta-o-wally.jpg)Fala galera, beleza?Bom eu ando um pouco afastado aqui do blog então resolvi mandar notícias de onde estou e por onde estarei.Este post é mais para escrever sobre os meus próximos passos de trabalho com a comunidade e tudo o mais. Eu achei que esse ano passaria em branco, sem dar palestras mas as coisas mudaram.Já se foram: - uma "palestra virtual" no Virtual Developer Day
+[![](http://viniciusquaiato.com/images_posts/conheca-o-livro-onde-esta-o-wally.jpg "conheca-o-livro-onde-esta-o-wally")](http://viniciusquaiato.com/images_posts/conheca-o-livro-onde-esta-o-wally.jpg)Fala galera, beleza?Bom eu ando um pouco afastado aqui do blog então resolvi mandar notícias de onde estou e por onde estarei.Este post é mais para escrever sobre os meus próximos passos de trabalho com a comunidade e tudo o mais. Eu achei que esse ano passaria em branco, sem dar palestras mas as coisas mudaram.Já se foram: - uma "palestra virtual" no Virtual Developer Day
 - 3 apresentações online no MVCSummit (evento que organizei)
 
 

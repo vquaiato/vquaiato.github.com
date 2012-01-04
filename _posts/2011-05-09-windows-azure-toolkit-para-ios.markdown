@@ -21,7 +21,7 @@ tags:
   slug: iphone
   autoslug: iphone
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/09-azure-300x226.png "09-azure (fonte: MacMagazine)")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/09-azure.png)Fala galera foi anunciado hoje(ou dia 06.05) o [Windows Azure Toolkit para IOS](https://github.com/microsoft-dpe/watoolkitios-lib)(iPhone, iPad).O que há neste toolkit? ([de acordo com o post de divulgação no MSDN](http://blogs.msdn.com/b/windowsazure/archive/2011/05/09/title-now-available-windows-azure-toolkit-for-ios.aspx))- Uma biblioteca em Objective-C para trabalhar com os serviços do Windows Azure (push notification, authN/authZ, e storage)
+[![](http://viniciusquaiato.com/images_posts/09-azure-300x226.png "09-azure (fonte: MacMagazine)")](http://viniciusquaiato.com/images_posts/09-azure.png)Fala galera foi anunciado hoje(ou dia 06.05) o [Windows Azure Toolkit para IOS](https://github.com/microsoft-dpe/watoolkitios-lib)(iPhone, iPad).O que há neste toolkit? ([de acordo com o post de divulgação no MSDN](http://blogs.msdn.com/b/windowsazure/archive/2011/05/09/title-now-available-windows-azure-toolkit-for-ios.aspx))- Uma biblioteca em Objective-C para trabalhar com os serviços do Windows Azure (push notification, authN/authZ, e storage)
 - Código fonte completo desta biblioteca em Objective-C
 - Exemples de aplicação IOS demonstrando o uso do Windows Azure Storage com código fonte completo
 - Documentação

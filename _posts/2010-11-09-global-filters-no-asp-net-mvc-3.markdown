@@ -57,7 +57,7 @@ static void RegisterGlobalFilters(GlobalFilterCollection filters){    filters.Ad
     }
 
 {% endhighlight %}
-Bastante simples não?!E quando executarmos nossa aplicação:[caption id="attachment_2081" align="aligncenter" width="300" caption="executando aplicacao com globalfilters asp.net mvc 3"][![executando aplicacao com globalfilters asp.net mvc 3](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/executando-aplicacao-com-globalfilters-300x181.png "executando aplicacao com globalfilters asp.net mvc 3")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/11/executando-aplicacao-com-globalfilters.png)[/caption]
+Bastante simples não?!E quando executarmos nossa aplicação:[caption id="attachment_2081" align="aligncenter" width="300" caption="executando aplicacao com globalfilters asp.net mvc 3"][![executando aplicacao com globalfilters asp.net mvc 3](http://viniciusquaiato.com/images_posts/executando-aplicacao-com-globalfilters-300x181.png "executando aplicacao com globalfilters asp.net mvc 3")](http://viniciusquaiato.com/images_posts/executando-aplicacao-com-globalfilters.png)[/caption]
 
 ## Concluindo
 Os Global Filters são uma mão na roda para uma série de atividades, como logging, tracing, verificação de segurança e autorização (vou mostrar mais como trabalhar com isso), etc.É uma forma simples de configurar um comportamento comum em nossas aplicações.Veja mais em: [http://www.dotnetcurry.com/ShowArticle.aspx?ID=578](http://www.dotnetcurry.com/ShowArticle.aspx?ID=578)[http://weblogs.asp.net/gunnarpeipman/archive/2010/08/15/asp-net-mvc-3-global-action-filters.aspx](http://weblogs.asp.net/gunnarpeipman/archive/2010/08/15/asp-net-mvc-3-global-action-filters.aspx)Abraços,Vinicius Quaiato.

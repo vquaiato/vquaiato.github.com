@@ -27,7 +27,7 @@ Eu definitivamente não gosto de comentários no código, nem no HTML, mas se is
 /isto não aparecerá!                        //é um comentário C# mesmo}
     </div></body>
 {% endhighlight %}
-Resultado:[caption id="attachment_1999" align="aligncenter" width="300" caption="Resultado de view com Razor e comentarios"][![Resultado de view com Razor e comentarios](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Resultado-de-view-com-Razor-e-comentarios-300x173.png "Resultado de view com Razor e comentarios")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Resultado-de-view-com-Razor-e-comentarios.png)[/caption]Tá aí, uma dica simples.
+Resultado:[caption id="attachment_1999" align="aligncenter" width="300" caption="Resultado de view com Razor e comentarios"][![Resultado de view com Razor e comentarios](http://viniciusquaiato.com/images_posts/Resultado-de-view-com-Razor-e-comentarios-300x173.png "Resultado de view com Razor e comentarios")](http://viniciusquaiato.com/images_posts/Resultado-de-view-com-Razor-e-comentarios.png)[/caption]Tá aí, uma dica simples.
 
 Abraços,
 Vinicius Quaiato.

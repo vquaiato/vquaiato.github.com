@@ -55,7 +55,7 @@ if(string.IsNullOrWhiteSpace(Request.Form["Email"]))        ok = false;
     }
 
 {% endhighlight %}
-Resultados:[![MVC + Jquery submit form assíncrono](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/submit-assincrono-mvc-jquery-300x189.png "MVC + Jquery submit form assíncrono")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/submit-assincrono-mvc-jquery.png)[![MVC + Jquery submit form assíncrono](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/submit-assincrono-mvc-jquery-erro-300x189.png "MVC + Jquery submit form assíncrono")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/submit-assincrono-mvc-jquery-erro.png)[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/Firebug-300x191.png "Firebug")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/Firebug.png)Em outro post mostrarei como fazer com que o formulário funcione com ou sem JavaScript.
+Resultados:[![MVC + Jquery submit form assíncrono](http://viniciusquaiato.com/images_posts/submit-assincrono-mvc-jquery-300x189.png "MVC + Jquery submit form assíncrono")](http://viniciusquaiato.com/images_posts/submit-assincrono-mvc-jquery.png)[![MVC + Jquery submit form assíncrono](http://viniciusquaiato.com/images_posts/submit-assincrono-mvc-jquery-erro-300x189.png "MVC + Jquery submit form assíncrono")](http://viniciusquaiato.com/images_posts/submit-assincrono-mvc-jquery-erro.png)[![](http://viniciusquaiato.com/images_posts/Firebug-300x191.png "Firebug")](http://viniciusquaiato.com/images_posts/Firebug.png)Em outro post mostrarei como fazer com que o formulário funcione com ou sem JavaScript.
 
 Abraços,
 Vinicius Quaiato.

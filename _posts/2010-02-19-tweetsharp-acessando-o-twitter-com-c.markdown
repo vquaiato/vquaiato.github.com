@@ -21,7 +21,7 @@ tags:
   slug: midias-sociais
   autoslug: "m\xC3\xADdias-sociais"
 ---
-![twitter_bird](http://viniciusquaiato.com/blog/wp-content/uploads/2010/02/twitter_bird.jpg "twitter_bird")Fala galera, vou demonstrar como é simples acessar o Twitter utilizando a biblioteca TweetSharp e suas interfaces fluentes.Primeiramente baixe as dlls do Tweetsharp <del datetime="2010-07-03T17:56:57+00:00">[aqui](http://code.google.com/p/tweetsharp/)</del> [**aqui no Codeplex**](http://tweetsharp.codeplex.com/).O [TweetSharp](http://tweetsharp.com/) é uma api que fornece acesso de forma simplificada à API do Twitter.Vamos então criar um projeto utilizando o Visual Studio 2010 beta 2 porém estou utilizando a versão 3.5 para o projeto, pois existem alguns conflitos com o framework 4.Estou criando uma Console Application, para que possamos ver uma saída gráfica do nosso código.Vamos adicionar a referência para o TweetSharp em nosso projeto, como mostra a figura abaixo:[caption id="attachment_514" align="aligncenter" width="651" caption="Adicionando Referencias TweetSharp"]![Adicionando Referencias TweetSharp](http://viniciusquaiato.com/blog/wp-content/uploads/2010/02/Referencias-TweetSharp.jpg "Adicionando Referencias TweetSharp")[/caption]Feito isso vou criar 2 métodos. Um para para buscar os 10 últimos tweets da minha lista e o outro para exibir a lista de amigos.Primeiramente inclua estes 3 statements using:
+![twitter_bird](http://viniciusquaiato.com/images_posts/twitter_bird.jpg "twitter_bird")Fala galera, vou demonstrar como é simples acessar o Twitter utilizando a biblioteca TweetSharp e suas interfaces fluentes.Primeiramente baixe as dlls do Tweetsharp <del datetime="2010-07-03T17:56:57+00:00">[aqui](http://code.google.com/p/tweetsharp/)</del> [**aqui no Codeplex**](http://tweetsharp.codeplex.com/).O [TweetSharp](http://tweetsharp.com/) é uma api que fornece acesso de forma simplificada à API do Twitter.Vamos então criar um projeto utilizando o Visual Studio 2010 beta 2 porém estou utilizando a versão 3.5 para o projeto, pois existem alguns conflitos com o framework 4.Estou criando uma Console Application, para que possamos ver uma saída gráfica do nosso código.Vamos adicionar a referência para o TweetSharp em nosso projeto, como mostra a figura abaixo:[caption id="attachment_514" align="aligncenter" width="651" caption="Adicionando Referencias TweetSharp"]![Adicionando Referencias TweetSharp](http://viniciusquaiato.com/images_posts/Referencias-TweetSharp.jpg "Adicionando Referencias TweetSharp")[/caption]Feito isso vou criar 2 métodos. Um para para buscar os 10 últimos tweets da minha lista e o outro para exibir a lista de amigos.Primeiramente inclua estes 3 statements using:
 {% highlight csharp %}
 using Dimebrain.TweetSharp.Model;
     using Dimebrain.TweetSharp.Fluent;
@@ -54,7 +54,7 @@ foreach(var tweet in tweets)    {        Console.WriteLine("@{
     }
 
 {% endhighlight %}
-Este método é bem simples, apenas itera os elementos retornados pelo método anterior. As propriedades do objeto TwitterStatus podem ser conferidas com ajuda do intellisense ou então pressionado F12 sobre a classe.O resultado pode ser visto na imagem abaixo:[caption id="attachment_536" align="aligncenter" width="677" caption="10 Últimos Tweets com TweetSharp"]![10 Últimos Tweets com TweetSharp](http://viniciusquaiato.com/blog/wp-content/uploads/2010/02/10UltimosTweets.jpg "10 Últimos Tweets com TweetSharp")[/caption]Para exibir a lista de amigos vou utilizar o método abaixo:
+Este método é bem simples, apenas itera os elementos retornados pelo método anterior. As propriedades do objeto TwitterStatus podem ser conferidas com ajuda do intellisense ou então pressionado F12 sobre a classe.O resultado pode ser visto na imagem abaixo:[caption id="attachment_536" align="aligncenter" width="677" caption="10 Últimos Tweets com TweetSharp"]![10 Últimos Tweets com TweetSharp](http://viniciusquaiato.com/images_posts/10UltimosTweets.jpg "10 Últimos Tweets com TweetSharp")[/caption]Para exibir a lista de amigos vou utilizar o método abaixo:
 {% highlight csharp %}
 
 public 
@@ -87,7 +87,7 @@ foreach(var amigo in amigos)    {        Console.WriteLine("@{
     }
 
 {% endhighlight %}
-O resultado pode ser conferido na imagem abaixo:[caption id="attachment_535" align="aligncenter" width="677" caption="Lista de amigos com TweetSharp"]![Lista de amigos com TweetSharp](http://viniciusquaiato.com/blog/wp-content/uploads/2010/02/lista-de-amigos.jpg "Lista de amigos com TweetSharp")[/caption]Bom pessoal, é basicamente isso. A biblioteca TweetSharp oferece ainda diversos outros recursos, tudo que é necessário para se fazer um bom trabalho com o twitter.Dúvidas, sugestões, reclamações: os comentários estão aí pra isso.
+O resultado pode ser conferido na imagem abaixo:[caption id="attachment_535" align="aligncenter" width="677" caption="Lista de amigos com TweetSharp"]![Lista de amigos com TweetSharp](http://viniciusquaiato.com/images_posts/lista-de-amigos.jpg "Lista de amigos com TweetSharp")[/caption]Bom pessoal, é basicamente isso. A biblioteca TweetSharp oferece ainda diversos outros recursos, tudo que é necessário para se fazer um bom trabalho com o twitter.Dúvidas, sugestões, reclamações: os comentários estão aí pra isso.
 
 Att,
 Vinicius Quaiato.

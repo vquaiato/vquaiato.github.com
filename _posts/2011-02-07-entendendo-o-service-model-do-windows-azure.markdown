@@ -21,7 +21,7 @@ tags:
   slug: service-configuration
   autoslug: service-configuration
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/CloudPowerDark_3.png "Cloud Power")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/CloudPowerDark_3.png)Já falamos batsante sobre alguns pontos e algumas caracteristicas do Windows Azure (configura aqui a lista completa de posts sobre Azure).Hoje vamos falar um pouco sobre o Service Model do Windows Azure.
+[![](http://viniciusquaiato.com/images_posts/CloudPowerDark_3.png "Cloud Power")](http://viniciusquaiato.com/images_posts/CloudPowerDark_3.png)Já falamos batsante sobre alguns pontos e algumas caracteristicas do Windows Azure (configura aqui a lista completa de posts sobre Azure).Hoje vamos falar um pouco sobre o Service Model do Windows Azure.
 
 ## O que é o Service Model?
 A grosso modo podemos entender que o service model do Windows Azure são as defnições sobre o serviço que será executado. O service model possui informações que descrevem instâncias, máquinas, disponibilidade, e algumas outras informações.Para o Fabric Controller o service model é de vital importância pois é ele quem informa como e o que deve ser feito pelo FC.O service model define também algumas coisas como [fault domains](http://social.msdn.microsoft.com/Forums/en/windowsazure/thread/74283295-16f4-4fd9-8126-06d6f804f6d9) e [update domains](http://blogs.msdn.com/b/gonzalorc/archive/2010/01/19/update-and-upgrade-domains.aspx)  (que abordaremos em outros posts).O service model do Windows Azure está composto de duas partes cada uma delas representada por um arquivo:- Arquivo de definição (ServiceDefinition.csdef)

@@ -24,7 +24,7 @@ tags:
   slug: ef4-poco
   autoslug: ef4-poco
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/capa_net74_G.jpg ".NET Magazine Entity Framework 4")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/capa_net74_G.jpg)Fala galera, até esqueci de mencionar aqui, mas mais um artigo meu foi publicado na .NET Magazine, edição 74.Desta vez eu falei sobre a utilização de POCOs com Entity Framework 4, ou apenas EF4.Uma prévia do artigo pode ser conferida aqui: [http://www.devmedia.com.br/post-17166-Entity-Framework-passo-a-passo--Net-Magazine-74.html](http://www.devmedia.com.br/post-17166-Entity-Framework-passo-a-passo--Net-Magazine-74.html)Tá aí, retroativo, mas divulgado.
+[![](http://viniciusquaiato.com/images_posts/capa_net74_G.jpg ".NET Magazine Entity Framework 4")](http://viniciusquaiato.com/images_posts/capa_net74_G.jpg)Fala galera, até esqueci de mencionar aqui, mas mais um artigo meu foi publicado na .NET Magazine, edição 74.Desta vez eu falei sobre a utilização de POCOs com Entity Framework 4, ou apenas EF4.Uma prévia do artigo pode ser conferida aqui: [http://www.devmedia.com.br/post-17166-Entity-Framework-passo-a-passo--Net-Magazine-74.html](http://www.devmedia.com.br/post-17166-Entity-Framework-passo-a-passo--Net-Magazine-74.html)Tá aí, retroativo, mas divulgado.
 
 Abraços,
 Vinicius Quaiato.

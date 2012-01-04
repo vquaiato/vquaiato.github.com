@@ -70,10 +70,10 @@ return RedirectToAction("Index");
 A action verifica se a requisição é uma requisição ajax utilizando o método IsAjaxRequest do objeto de Request.Caso seja uma requisição ajax o comportamento e o fluxo são diferentes de uma requisição comum. Neste caso apenas retornamos um Json com uma mensagem.Quando não é uma requisição ajax fazemos um redirecionamento para uma action. Desta forma nosso formulário funciona tanto quando o cliente possui javascript habilitado como quando não está.
 
 ### Com Javascript habilitado
-[caption id="attachment_2406" align="aligncenter" width="300" caption="ASP.NET MVC form submit com jquery"][![ASP.NET MVC form submit com jquery](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/com-jquery-300x189.png "ASP.NET MVC form submit com jquery")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/com-jquery.png)[/caption]
+[caption id="attachment_2406" align="aligncenter" width="300" caption="ASP.NET MVC form submit com jquery"][![ASP.NET MVC form submit com jquery](http://viniciusquaiato.com/images_posts/com-jquery-300x189.png "ASP.NET MVC form submit com jquery")](http://viniciusquaiato.com/images_posts/com-jquery.png)[/caption]
 
 ### Sem Javascript habilitado
-[caption id="attachment_2407" align="aligncenter" width="300" caption="ASP.NET MVC form submit sem jquery"][![ASP.NET MVC form submit sem jquery](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/sem-jquery-300x190.png "ASP.NET MVC form submit sem jquery")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/sem-jquery.png)[/caption]
+[caption id="attachment_2407" align="aligncenter" width="300" caption="ASP.NET MVC form submit sem jquery"][![ASP.NET MVC form submit sem jquery](http://viniciusquaiato.com/images_posts/sem-jquery-300x190.png "ASP.NET MVC form submit sem jquery")](http://viniciusquaiato.com/images_posts/sem-jquery.png)[/caption]
 
 ### Quem não teria javascript habilitado?
 Simples: muitos dispositivos mobile tem um péssimo suporte a javascript. E hoje é muito comum acessar a internet com browser limitado destes dispositivos.

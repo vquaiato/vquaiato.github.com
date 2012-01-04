@@ -30,7 +30,7 @@ tags:
   slug: decorator
   autoslug: decorator
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/08/2_duplo_lego_bricks-150x150.jpg "Lego Bricks")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/08/2_duplo_lego_bricks.jpg)O padrão Decorator é um dos padrões mais simples e ao mesmo tempo bastante interessante.Ele nos permite facilmente seguir e manter o [OCP - Open Closed Principle](http://viniciusquaiato.com/blog/ocp-open-closed-principle/).
+[![](http://viniciusquaiato.com/images_posts/2_duplo_lego_bricks-150x150.jpg "Lego Bricks")](http://viniciusquaiato.com/images_posts/2_duplo_lego_bricks.jpg)O padrão Decorator é um dos padrões mais simples e ao mesmo tempo bastante interessante.Ele nos permite facilmente seguir e manter o [OCP - Open Closed Principle](http://viniciusquaiato.com/blog/ocp-open-closed-principle/).
 
 ### O padrão Decorator
 A idéia principal do [Pattern Decorator](http://en.wikipedia.org/wiki/Decorator_pattern) é prover comportamento adicional a um objeto específico e não a uma classe inteira. Desta forma decoramos um objeto com um comportamento novo, sem alterar as classes já existentes.A idéia aqui não é apenas mostrar um "[Design Pattern](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)" mas deixar claro que o conhecimento de técnicas e padrões podem nos ajudar a obter design e software mais extensível, coeso e claro. Quero mostrar apenas uma forma simples de trabalhar com abstrações, patterns e manter princípios [SOLID](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) sem criar uma estrutura rebuscada e complicada de manter ou evoluir.

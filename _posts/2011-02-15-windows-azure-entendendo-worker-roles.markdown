@@ -21,7 +21,7 @@ tags:
   slug: azure-worker-roles
   autoslug: azure-worker-roles
 ---
-[![gears](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/gears-150x150.jpg "gears")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/gears.jpg)Muito falamos sobre sites e aplicações na nuvem com [Windows Azure](http://viniciusquaiato.com/blog/category/windows-azure/). No entanto não se fala muito sobre Worker Roles. Talvez isso ocorra pois é "difícil" mostrar o que são e para que servem(em virtude de não terem interface gráfica :P).# Worker Roles
+[![gears](http://viniciusquaiato.com/images_posts/gears-150x150.jpg "gears")](http://viniciusquaiato.com/images_posts/gears.jpg)Muito falamos sobre sites e aplicações na nuvem com [Windows Azure](http://viniciusquaiato.com/blog/category/windows-azure/). No entanto não se fala muito sobre Worker Roles. Talvez isso ocorra pois é "difícil" mostrar o que são e para que servem(em virtude de não terem interface gráfica :P).# Worker Roles
 Para começarmos a falar de Worker Roles precisamos entender primeiro o problema/situação ao qual eles são destinados. Neste início então vamos entender um pouco das razões e usos dos Worker Roles para depois entendermos como implementar e conhecer os detalhes técnicos.
 
 ### Processamento em background

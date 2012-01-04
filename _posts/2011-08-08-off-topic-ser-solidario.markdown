@@ -21,7 +21,7 @@ tags:
   slug: doacao-de-sangue
   autoslug: "doa\xC3\xA7\xC3\xA3o-de-sangue"
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2011/08/solidariedade1-300x207.jpg "solidariedade1")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/08/solidariedade1.jpg)Fala galera, este post estava travado há tempos. Pensei em mil formas de fazer/organizar isso, e acabei desistindo de fazer algo tão formal. Vamos deixar acontecer.
+[![](http://viniciusquaiato.com/images_posts/solidariedade1-300x207.jpg "solidariedade1")](http://viniciusquaiato.com/images_posts/solidariedade1.jpg)Fala galera, este post estava travado há tempos. Pensei em mil formas de fazer/organizar isso, e acabei desistindo de fazer algo tão formal. Vamos deixar acontecer.
 
 ## TI Solidário
 Tenho a certeza de que falta para muita gente no mercado de TI um pouco mais de solidariedade. Talvez falte para pessoas em toda e qualquer área. Minha idéia é começar, aos poucos, com algumas ações que façam bem para outras pessoas de forma totalmente "despropositada".Eu conversei com algumas pessoas e todas com as quais falei acharam a idéia incrivelmente bacana e necessária. Não é obrigação de ninguém ajudar: mas faz um bem danado.Tenho certeza de que com isso todos nós nos sentiremos bem.

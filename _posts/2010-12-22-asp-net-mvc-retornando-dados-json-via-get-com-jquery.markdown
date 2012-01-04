@@ -58,7 +58,7 @@ var url = '@Url.Action("DadosEmJson","Home")';
 Pronto! Estamos executando uma requisição GET para nossa action e obtendo dados em formato Json. Tudo isso é feito com a utilização da [função get do Jquery](http://api.jquery.com/jQuery.get/). Esta função nada mais é do que um atalho para a função ajax.
 
 ## O erro
-Por razões de segurança não é possível retornar de forma automática dados Json em requisições GET.[caption id="attachment_2488" align="aligncenter" width="300" caption="Ajax get retornando Json dá erro"][![Ajax get retornando Json dá erro](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/This-request-has-been-blocked-because-sensitive-information-could-be-disclosed-t_2010-12-22_13-14-24-300x174.png "Ajax get retornando Json dá erro")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/This-request-has-been-blocked-because-sensitive-information-could-be-disclosed-t_2010-12-22_13-14-24.png)[/caption]
+Por razões de segurança não é possível retornar de forma automática dados Json em requisições GET.[caption id="attachment_2488" align="aligncenter" width="300" caption="Ajax get retornando Json dá erro"][![Ajax get retornando Json dá erro](http://viniciusquaiato.com/images_posts/This-request-has-been-blocked-because-sensitive-information-could-be-disclosed-t_2010-12-22_13-14-24-300x174.png "Ajax get retornando Json dá erro")](http://viniciusquaiato.com/images_posts/This-request-has-been-blocked-because-sensitive-information-could-be-disclosed-t_2010-12-22_13-14-24.png)[/caption]
 
 ## Habilitando Json via GET
 Para contornar esse problema basta permitir o retorno de dados Json em requisições do tipo GET. Fazemos isso alterando nossa action conforme abaixo:
@@ -70,7 +70,7 @@ ome = "Vinicius", Twitter = "@vquaiato"}
     }
 
 {% endhighlight %}
-Pronto, agora tudo funciona![caption id="attachment_2491" align="aligncenter" width="283" caption="json com jquery get"][![json com jquery get](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/json-com-jquery-get-283x300.png "json com jquery get")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/json-com-jquery-get.png)[/caption]
+Pronto, agora tudo funciona![caption id="attachment_2491" align="aligncenter" width="283" caption="json com jquery get"][![json com jquery get](http://viniciusquaiato.com/images_posts/json-com-jquery-get-283x300.png "json com jquery get")](http://viniciusquaiato.com/images_posts/json-com-jquery-get.png)[/caption]
 
 ## Cuidado: Json hijacking!
 tudo está funcionando perfeitamente, o problema é que não é confiável e nem recomendável retornar dados Json via GET.Existe uma falha de segurança que pode ser explorada nesta situação: [Json Hijacking](http://haacked.com/archive/2009/06/25/json-hijacking.aspx).Estou mostrando como fazer, mas se possível evite esse tipo de uso para o Json.É possível retornar Json via POST normalmente e sem esses problemas todos.No geral esta é uma falha explorada quando se retornam coleções via Json. E ainda existe uma série de outros fatores que precisam ocorrer para que isso aconteça. Mas é bom não dar mole.Se você precisar mesmo retornar uma coleção via Json e precisar mesmo que ela seja retornada usando GET coloque seu conteúdo dentro de uma propriedade:

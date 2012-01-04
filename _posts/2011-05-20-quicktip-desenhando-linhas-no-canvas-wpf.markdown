@@ -28,7 +28,7 @@ Fala galera estou trabalhando em um projeto bem diferente do comum, e usando WPF
 {% highlight csharp %}
             <visualbrush.visual>                <grid>                    <rectangle width="1" height="0.02" fill="Black" horizontalalignment="Left" verticalalignment="Top" />                    <rectangle height="1" width="0.02" fill="Black" horizontalalignment="Left" verticalalignment="Top" />                </grid>            </visualbrush.visual>        </visualbrush>    </canvas.background></canvas>
 {% endhighlight %}
-O resultado será um canvas mais ou menos assim:[caption id="attachment_3467" align="aligncenter" width="300" caption="WPF Canvas"][![WPF Canvas](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/WPF-Canvas-300x182.png "WPF Canvas")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/05/WPF-Canvas.png)[/caption]Ou se preferirem usar um DrawingBrush:
+O resultado será um canvas mais ou menos assim:[caption id="attachment_3467" align="aligncenter" width="300" caption="WPF Canvas"][![WPF Canvas](http://viniciusquaiato.com/images_posts/WPF-Canvas-300x182.png "WPF Canvas")](http://viniciusquaiato.com/images_posts/WPF-Canvas.png)[/caption]Ou se preferirem usar um DrawingBrush:
 {% highlight csharp %}
                 <drawingbrush.drawing>                    <geometrydrawing geometry="M0,0 L0,1 0.03,1 0.03,0.03 1,0.03 1,0 Z" brush="Black" />                </drawingbrush.drawing>            </drawingbrush>        </canvas.background>    </canvas>
 {% endhighlight %}

@@ -56,7 +56,7 @@ var timesClassificados = times.Zip(classifica, (t, c) => Tuple.Create(t, c));
     
 {% endhighlight %}
 
-Na **_linha 3_** o que fizemos é chamar a extension Zip. Passamos então o IEnumerable classifica (1,2,3,4). O segundo argumento é uma Func que recebe 2 parâmetros. O primeiro deles vindo da coleção times, e o segundo vindo de classifica. Então o que fazemos é criar uma Tuple com eses dois valores.O objeto timesClassificados contém 4 items, como pode ser visto abaixo:[caption id="attachment_797" align="aligncenter" width="445" caption="Resultado da utilização do Zip"][![Resultado da utilização do Zip](http://viniciusquaiato.com/blog/wp-content/uploads/2010/03/Resultado1.jpg "Resultado da utilização do Zip")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/03/Resultado1.jpg)[/caption]Eu poderia não criar uma Tuple, poderia criar uma string simplesmente:
+Na **_linha 3_** o que fizemos é chamar a extension Zip. Passamos então o IEnumerable classifica (1,2,3,4). O segundo argumento é uma Func que recebe 2 parâmetros. O primeiro deles vindo da coleção times, e o segundo vindo de classifica. Então o que fazemos é criar uma Tuple com eses dois valores.O objeto timesClassificados contém 4 items, como pode ser visto abaixo:[caption id="attachment_797" align="aligncenter" width="445" caption="Resultado da utilização do Zip"][![Resultado da utilização do Zip](http://viniciusquaiato.com/images_posts/Resultado1.jpg "Resultado da utilização do Zip")](http://viniciusquaiato.com/images_posts/Resultado1.jpg)[/caption]Eu poderia não criar uma Tuple, poderia criar uma string simplesmente:
 
 {% highlight csharp %}
 

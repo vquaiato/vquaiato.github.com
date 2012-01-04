@@ -27,7 +27,7 @@ tags:
   slug: objeto-relacional
   autoslug: objeto-relacional
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/lago_com_cachoeira_25_facil-150x150.jpg "Cachoeira")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/lago_com_cachoeira_25_facil.jpg)Pois é, algumas coisas incomodam a vida de um desenvolvedor. Dentre elas podemos destacar XMLs de configuração.Não sei exatamente a razão de não gostarmos muito deles, mas fato é que quase ninguém gosta. Como alguns de vocês devem saber o [NHibernate](http://nhforge.org/Default.aspx) é uma das ferramentas mais poderosas no que se diz respeito a ORM na plataforma .NET.Além de podermos configurá-lo utilizando os cruéis arquivos XML, existe uma forma de fazer isso via código, com uma sintaxe mais próxima da que costumamos trabalhar diariamente: [Fluent NHibernate](http://fluentnhibernate.org/).
+[![](http://viniciusquaiato.com/images_posts/lago_com_cachoeira_25_facil-150x150.jpg "Cachoeira")](http://viniciusquaiato.com/images_posts/lago_com_cachoeira_25_facil.jpg)Pois é, algumas coisas incomodam a vida de um desenvolvedor. Dentre elas podemos destacar XMLs de configuração.Não sei exatamente a razão de não gostarmos muito deles, mas fato é que quase ninguém gosta. Como alguns de vocês devem saber o [NHibernate](http://nhforge.org/Default.aspx) é uma das ferramentas mais poderosas no que se diz respeito a ORM na plataforma .NET.Além de podermos configurá-lo utilizando os cruéis arquivos XML, existe uma forma de fazer isso via código, com uma sintaxe mais próxima da que costumamos trabalhar diariamente: [Fluent NHibernate](http://fluentnhibernate.org/).
 
 ### Fluent NHibernate
 Este não é um post que vai te ensinar a usar o [NHibernate](http://nhforge.org/Default.aspx). Este é um post que vai te ensinar, um pouco, a usar as configurações fluentes do NHibernate. A idéia é mostrar como configurar a conexão com a base de dados e um pouco de como mapear suas entidades e associações entre elas de uma forma mais simples e verificável, utilizando o Fluent NH.
@@ -36,7 +36,7 @@ Este não é um post que vai te ensinar a usar o [NHibernate](http://nhforge.org
 Dentro da página oficial do [Fluent NHibernate](http://fluentnhibernate.org/) temos uma seção de [Downloads](http://fluentnhibernate.org/downloads): Let's go!O download do Fluent NHibernate nos trará uma pasta com uma série de dlls, que são as dlls do NHibernate e as dlls do Fluent NHibernate.
 
 ### Referenciando o NHibernate e o Fluent NHibernate no projeto
-Vamos adicionar as seguintes dlls ao nosso projeto:[![referencias para o NHibernate e Fluent NHibernate](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/referencias_fluent_nhibernate-300x229.png "referencias para o NHibernate e Fluent NHibernate")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/09/referencias_fluent_nhibernate.png)
+Vamos adicionar as seguintes dlls ao nosso projeto:[![referencias para o NHibernate e Fluent NHibernate](http://viniciusquaiato.com/images_posts/referencias_fluent_nhibernate-300x229.png "referencias para o NHibernate e Fluent NHibernate")](http://viniciusquaiato.com/images_posts/referencias_fluent_nhibernate.png)
 
 ### Configurando a sessão do NHibernate com Fluent NHibernate
 Agora precisamos configurar a sessão do NHibernate para se conectar ao nosso banco de dados. É claro, não farei isso usando XML e sim o Fluent NH, como mostra o código abaixo:

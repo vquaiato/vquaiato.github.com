@@ -18,7 +18,7 @@ tags:
   slug: tell-dont-ask
   autoslug: tell-don't-ask
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/Kids-Whisper-150x150.jpg "Kids-Whisper")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/12/Kids-Whisper.jpg)Este não é para ser um daqueles posts teóricos e cheios de referências para outros artigos: vamos ser práticos e diretos(lembrando que isso nem sempre quer dizer toneladas de código).
+[![](http://viniciusquaiato.com/images_posts/Kids-Whisper-150x150.jpg "Kids-Whisper")](http://viniciusquaiato.com/images_posts/Kids-Whisper.jpg)Este não é para ser um daqueles posts teóricos e cheios de referências para outros artigos: vamos ser práticos e diretos(lembrando que isso nem sempre quer dizer toneladas de código).
 
 ## Diga, não peça!
 É isso mesmo. Este é o título do post e é tido também como um bom princípio de design para aplicações orientadas a objetos.É algo como **dizer a um objeto o que deve ser feito** e não pedir por partes dele.O "ask" acaba sendo tentador às vezes, mas no geral(nem sempre) é sinal de um design frágil, e por frágil podemos entender algo que pode ser quebrado com facilidade.

@@ -30,7 +30,7 @@ tags:
   slug: preconditions
   autoslug: preconditions
 ---
-![Code Contracts](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/dd491992.codecontracts_projecten-us-150x150.png "Code Contracts")
+![Code Contracts](http://viniciusquaiato.com/images_posts/dd491992.codecontracts_projecten-us-150x150.png "Code Contracts")
 [Code Contracts](http://msdn.microsoft.com/en-us/devlabs/dd491992.aspx) é o equivalente no .NET a [Design by Contract](http://en.wikipedia.org/wiki/Design_by_contract). Infelizmente o termo Design by Contract é uma marca registrada.
 
 Estes contratos nos permitem escrever software de uma forma verificável, onde podemos garantir pré-condições, pós-condições e invariantes.
@@ -50,7 +50,7 @@ Invariante diz respeito a um estado que deve ser mantido durante toda a vida de 
 Vamos iniciar um novo projeto de testes. 
 
 Após criar a solution, clique com o botão direito no projeto, e vá em properties. Na tela que abrirá, selecione a aba Code Contracts e habilite os campos conforme abaixo:
-[caption id="attachment_1129" align="aligncenter" width="300" caption="Habilitando Code Contracts no projeto"][![Habilitando Code Contracts no projeto](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/Habilitando-300x237.jpg "Habilitando Code Contracts no projeto")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/Habilitando.jpg)[/caption]
+[caption id="attachment_1129" align="aligncenter" width="300" caption="Habilitando Code Contracts no projeto"][![Habilitando Code Contracts no projeto](http://viniciusquaiato.com/images_posts/Habilitando-300x237.jpg "Habilitando Code Contracts no projeto")](http://viniciusquaiato.com/images_posts/Habilitando.jpg)[/caption]
 Caso você não possua essa opção, faça o download e instale a ferramenta [neste link](http://msdn.microsoft.com/en-us/devlabs/dd491992.aspx) (utilize a versão premium).
 Após estar com o Code Contracts habilitado, vamos para a classe de testes e vamos escrever um método:
 {% highlight csharp %}
@@ -69,7 +69,7 @@ return valor / divisor;
     }
 
 {% endhighlight %}
-Podemos ver na **_linha 3_** que estamos realizando uma chamada para o método estático _[Requires](http://msdn.microsoft.com/en-us/library/system.diagnostics.contracts.contract.requires.aspx)_. É com este método que garantimos pré-condições. Ou seja, neste caso é uma pré-condição que o parâmetro divisor seja maior que 0. Agora, qual a diferença com relação a um _if(divisor < 0) throw new ArgumentExceptio_n? Repare na imagem abaixo:[caption id="attachment_1132" align="aligncenter" width="300" caption="Verificações esdtáticas com Code Contracts"][![Verificações esdtáticas com Code Contracts](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/Code-Contracts-cheking-300x94.jpg "Verificações esdtáticas com Code Contracts")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/Code-Contracts-cheking.jpg)[/caption] Veja que o compilador nos alerta que um contrato foi violado. Isto não pode ser feito com ifs.Vamos criar um método para ver como funciona a pós-condição.Verificamos uma pós-condição utilizando o método [Ensures](http://msdn.microsoft.com/en-us/library/system.diagnostics.contracts.contract.ensures.aspx). Para isso vou utilizar o seguinte código:
+Podemos ver na **_linha 3_** que estamos realizando uma chamada para o método estático _[Requires](http://msdn.microsoft.com/en-us/library/system.diagnostics.contracts.contract.requires.aspx)_. É com este método que garantimos pré-condições. Ou seja, neste caso é uma pré-condição que o parâmetro divisor seja maior que 0. Agora, qual a diferença com relação a um _if(divisor < 0) throw new ArgumentExceptio_n? Repare na imagem abaixo:[caption id="attachment_1132" align="aligncenter" width="300" caption="Verificações esdtáticas com Code Contracts"][![Verificações esdtáticas com Code Contracts](http://viniciusquaiato.com/images_posts/Code-Contracts-cheking-300x94.jpg "Verificações esdtáticas com Code Contracts")](http://viniciusquaiato.com/images_posts/Code-Contracts-cheking.jpg)[/caption] Veja que o compilador nos alerta que um contrato foi violado. Isto não pode ser feito com ifs.Vamos criar um método para ver como funciona a pós-condição.Verificamos uma pós-condição utilizando o método [Ensures](http://msdn.microsoft.com/en-us/library/system.diagnostics.contracts.contract.ensures.aspx). Para isso vou utilizar o seguinte código:
 {% highlight csharp %}
 class Compra{    
 
@@ -95,7 +95,7 @@ var compra = new Compra();
     }
 
 {% endhighlight %}
-E o resultado será o seguinte:[caption id="attachment_1134" align="aligncenter" width="300" caption="Pós-condição falhando com Code Contracts"][![Pós-condição falhando com Code Contracts](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/poscondition-failed-300x139.jpg "Pós-condição falhando com Code Contracts")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/poscondition-failed.jpg)[/caption]Haverá uma falha pois dissemos que quando o método terminasse de executar a propriedade _TotalComDesconto _deveria ser maior que 0.Vamos alterar o método de cálculo para que satisfaça a pós-condição:
+E o resultado será o seguinte:[caption id="attachment_1134" align="aligncenter" width="300" caption="Pós-condição falhando com Code Contracts"][![Pós-condição falhando com Code Contracts](http://viniciusquaiato.com/images_posts/poscondition-failed-300x139.jpg "Pós-condição falhando com Code Contracts")](http://viniciusquaiato.com/images_posts/poscondition-failed.jpg)[/caption]Haverá uma falha pois dissemos que quando o método terminasse de executar a propriedade _TotalComDesconto _deveria ser maior que 0.Vamos alterar o método de cálculo para que satisfaça a pós-condição:
 {% highlight csharp %}
 
 public void CalcularTotalComDesconto(){    Contract.Requires(QuantidadeValorProdutos.Count > 0);
@@ -133,7 +133,7 @@ var usuario = new Ususario();
     }
 
 {% endhighlight %}
-E o resultado:[caption id="attachment_1136" align="aligncenter" width="300" caption="Invariante falhando com Code Contracts"][![Invariante falhando com Code Contracts](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/invariant-300x139.jpg "Invariante falhando com Code Contracts")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/invariant.jpg)[/caption]Existem outras funcionalidades presentes no Code Contracts ([veja manual do usuário](http://research.microsoft.com/en-us/projects/contracts/userdoc.pdf)), e vale bastante estudá-las e entender como podem nos auxiliar.Particularmente a clareza que temos no código, deixando bem separado o que são condicionais e o que são regras, é muito atraente pra mim.Há a possibilidade de gerar documentação com as informações dos contratos por exemplo.A possibilidade de checagem estática é muito válida, pois nos possibilita encontrar chamadas inválidas muito antes de que elas possam causar sérios problemas. Enfim, é uma ferramenta e tecnologia que devemos olhar com bastante atenção.
+E o resultado:[caption id="attachment_1136" align="aligncenter" width="300" caption="Invariante falhando com Code Contracts"][![Invariante falhando com Code Contracts](http://viniciusquaiato.com/images_posts/invariant-300x139.jpg "Invariante falhando com Code Contracts")](http://viniciusquaiato.com/images_posts/invariant.jpg)[/caption]Existem outras funcionalidades presentes no Code Contracts ([veja manual do usuário](http://research.microsoft.com/en-us/projects/contracts/userdoc.pdf)), e vale bastante estudá-las e entender como podem nos auxiliar.Particularmente a clareza que temos no código, deixando bem separado o que são condicionais e o que são regras, é muito atraente pra mim.Há a possibilidade de gerar documentação com as informações dos contratos por exemplo.A possibilidade de checagem estática é muito válida, pois nos possibilita encontrar chamadas inválidas muito antes de que elas possam causar sérios problemas. Enfim, é uma ferramenta e tecnologia que devemos olhar com bastante atenção.
 
 Abraços,
 Vinicius Quaiato.

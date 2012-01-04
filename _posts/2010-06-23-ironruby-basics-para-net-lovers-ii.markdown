@@ -15,7 +15,7 @@ tags:
   slug: ruby
   autoslug: ruby
 ---
-[![Ruby Ring](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/ruby-ring-150x150.jpg "Ruby => simplicidade e elegância")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/06/ruby-ring.jpg)Continuando a falar sobre Ruby/IronRuby para apaixonados por .net c# ou vb.net.Quando comecei a estudar Ruby eu senti uma grande resistência pois estava tentando, a todo momento, compará-la com C#. Esta é uma postura complicada, pois as duas linguagens seguem abordagens bem distintas. Então deixo a dica de estarem abertos ao estudo desta linguagem. Não é pecado estudar uma enquanto se trabalha com a outra.Uma das coisas que mais me chamou a atenção em Ruby é sua simplicidade. Um programa em Ruby pode ser feito com apenas uma linha, incrível.E desta forma, simples e clean, segue todo o trabalho com Ruby.
+[![Ruby Ring](http://viniciusquaiato.com/images_posts/ruby-ring-150x150.jpg "Ruby => simplicidade e elegância")](http://viniciusquaiato.com/images_posts/ruby-ring.jpg)Continuando a falar sobre Ruby/IronRuby para apaixonados por .net c# ou vb.net.Quando comecei a estudar Ruby eu senti uma grande resistência pois estava tentando, a todo momento, compará-la com C#. Esta é uma postura complicada, pois as duas linguagens seguem abordagens bem distintas. Então deixo a dica de estarem abertos ao estudo desta linguagem. Não é pecado estudar uma enquanto se trabalha com a outra.Uma das coisas que mais me chamou a atenção em Ruby é sua simplicidade. Um programa em Ruby pode ser feito com apenas uma linha, incrível.E desta forma, simples e clean, segue todo o trabalho com Ruby.
 
 ### :Array
 No nosso dia-a-dia com .Net trabalhamos muito com coleções. 

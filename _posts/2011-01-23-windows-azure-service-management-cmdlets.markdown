@@ -38,7 +38,7 @@ Feito isso os cmdlets estarão disponíveis, confira com:
 {% highlight csharp %}
 Get-Command -PSSnapIn AzureManagementToolsSnapIn
 {% endhighlight %}
-E assim veremos a listagem de comandos disponíveis:[caption id="attachment_2986" align="aligncenter" width="300" caption="Get-Command Azure Management Tools"][![Get-Command Azure Management Tools](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/get-command-300x157.png "Get-Command Azure Management Tools")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/get-command.png)[/caption]Em breve começarei a mostrar como fazer uso dos cmdlets para monitorar e manipular os serviços do Windows Azure.
+E assim veremos a listagem de comandos disponíveis:[caption id="attachment_2986" align="aligncenter" width="300" caption="Get-Command Azure Management Tools"][![Get-Command Azure Management Tools](http://viniciusquaiato.com/images_posts/get-command-300x157.png "Get-Command Azure Management Tools")](http://viniciusquaiato.com/images_posts/get-command.png)[/caption]Em breve começarei a mostrar como fazer uso dos cmdlets para monitorar e manipular os serviços do Windows Azure.
 
 Abraços,
 Vinicius Quaiato. 

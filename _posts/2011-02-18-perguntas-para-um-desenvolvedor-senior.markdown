@@ -24,7 +24,7 @@ tags:
   slug: senioridade
   autoslug: senioridade
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/pressure-150x150.jpg "pressure")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/02/pressure.jpg)Estas perguntas foram [publicadas pelo Scott Hanselman aqui](http://www.hanselman.com/blog/NewInterviewQuestionsForSeniorSoftwareEngineers.aspx), e estou copiando-as aqui, pois realmente são muito boas.Se você se acha mesmo um desenvolvedor senior, imagine-se numa entrevista sendo indagado sobre elas e respondendo sem gaguejar e sem googlar (como você deve estar fazendo agora):- What is SOLID?
+[![](http://viniciusquaiato.com/images_posts/pressure-150x150.jpg "pressure")](http://viniciusquaiato.com/images_posts/pressure.jpg)Estas perguntas foram [publicadas pelo Scott Hanselman aqui](http://www.hanselman.com/blog/NewInterviewQuestionsForSeniorSoftwareEngineers.aspx), e estou copiando-as aqui, pois realmente são muito boas.Se você se acha mesmo um desenvolvedor senior, imagine-se numa entrevista sendo indagado sobre elas e respondendo sem gaguejar e sem googlar (como você deve estar fazendo agora):- What is SOLID?
 - Why is the Single Responsibility Principle important?
 - What is Inversion of Control? How does that relate to dependency injection?
 - How does a 3 tier application differ from a 2 tier one?

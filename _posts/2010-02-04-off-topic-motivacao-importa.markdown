@@ -21,7 +21,7 @@ tags:
   slug: talentos
   autoslug: talentos
 ---
-![diamantes](http://viniciusquaiato.com/blog/wp-content/uploads/2010/02/diamantess.jpg "diamantes")Acredito que as empresas querem ter os melhores funcionários (colaboradores, parceiros, times, equipes, etc). Esta é minha crença.E o que mostra que um profissional é o melhor profissional? Conhecimento técnico? Comprometimento? Disponibilidade? Olhar crítico? Tudo isso. Porém acredito em algo mais: Motivação.Não basta contratar o profissional com o maior conhecimento técnico disponível no mercado. Este conhecimento técnico pode ser, e acredite que é, suprimido pela falta de motivação. E se você quer que sua empresa, time, equipe, etc, esteja entre os melhores:
+![diamantes](http://viniciusquaiato.com/images_posts/diamantess.jpg "diamantes")Acredito que as empresas querem ter os melhores funcionários (colaboradores, parceiros, times, equipes, etc). Esta é minha crença.E o que mostra que um profissional é o melhor profissional? Conhecimento técnico? Comprometimento? Disponibilidade? Olhar crítico? Tudo isso. Porém acredito em algo mais: Motivação.Não basta contratar o profissional com o maior conhecimento técnico disponível no mercado. Este conhecimento técnico pode ser, e acredite que é, suprimido pela falta de motivação. E se você quer que sua empresa, time, equipe, etc, esteja entre os melhores:
  
 - Conheça os anseios e desejos deste profissional - Entenda o que ele almeja, e ajude-o a conquistar
 - Dê a ele a chance de participar - Faça-o parte de um time

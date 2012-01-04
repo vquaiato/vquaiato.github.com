@@ -21,7 +21,7 @@ tags:
   slug: void-podcast
   autoslug: void-podcast
 ---
-[![Void Podcast - @vquaiato, @leandrodaniel e @elemarjr](http://viniciusquaiato.com/blog/wp-content/uploads/2011/09/IMG_0874-225x300.jpg "Void Podcast - @vquaiato, @leandrodaniel e @elemarjr")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/09/IMG_0874.jpg)Fala galera como alguns de vocês já devem saber há algum tempo eu e mais 2 senhores iniciamos um projeto de podcast: [Void Podcast](http://voidpodcast.com). E finalmente decidi escrever sobre ele.
+[![Void Podcast - @vquaiato, @leandrodaniel e @elemarjr](http://viniciusquaiato.com/images_posts/IMG_0874-225x300.jpg "Void Podcast - @vquaiato, @leandrodaniel e @elemarjr")](http://viniciusquaiato.com/images_posts/IMG_0874.jpg)Fala galera como alguns de vocês já devem saber há algum tempo eu e mais 2 senhores iniciamos um projeto de podcast: [Void Podcast](http://voidpodcast.com). E finalmente decidi escrever sobre ele.
 
 ### O nome
 O nome [Void Podcast](http://voidpodcast.com) surgiu dentre diversos nomes, discutidos via DM no twitter :P A idéia é ter um podcast "vazio e que não retorne valor". Isso quer dizer que não temos pretensões e não que somos ruins :P
@@ -54,7 +54,7 @@ Você pode se inscrever para receber diretamente pelo iTunes: [http://itunes.app
 ##
 
 ### Zune
-Dizem que dá para usar o Zune para gerenciar também. [![Void Podcast](http://viniciusquaiato.com/blog/wp-content/uploads/2011/09/Void-Podcast-300x139.jpg "Void Podcast")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/09/Void-Podcast.jpg)Bom galera é isso. Espero que curtam, espero que gostem. E se quiserem dar algum feedback o Eleonor os adora.
+Dizem que dá para usar o Zune para gerenciar também. [![Void Podcast](http://viniciusquaiato.com/images_posts/Void-Podcast-300x139.jpg "Void Podcast")](http://viniciusquaiato.com/images_posts/Void-Podcast.jpg)Bom galera é isso. Espero que curtam, espero que gostem. E se quiserem dar algum feedback o Eleonor os adora.
 
 Abraços,
 Vinicius Quaiato.

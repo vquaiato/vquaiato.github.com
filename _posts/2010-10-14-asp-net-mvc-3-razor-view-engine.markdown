@@ -27,7 +27,7 @@ tags:
   slug: razor-syntax
   autoslug: razor-syntax
 ---
-[![](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/razor-150x150.jpg "razor")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/razor.jpg)Razor é o nome (espero que definitivo) para a nova View Engine disponível para as aplicações ASP.NET MVC. O Razor não está somente no ASP.NET MVC, mas também em aplicações desenvolvidas com WebMatrix como mostrei [aqui](http://viniciusquaiato.com/blog/webmatrix-o-que-e-por-que-usar/).
+[![](http://viniciusquaiato.com/images_posts/razor-150x150.jpg "razor")](http://viniciusquaiato.com/images_posts/razor.jpg)Razor é o nome (espero que definitivo) para a nova View Engine disponível para as aplicações ASP.NET MVC. O Razor não está somente no ASP.NET MVC, mas também em aplicações desenvolvidas com WebMatrix como mostrei [aqui](http://viniciusquaiato.com/blog/webmatrix-o-que-e-por-que-usar/).
 
 ### Qual objetivo do Razor?
 A idéia principal é a simplicidade. A idéia é diminuir o ruído entre o código HTML e o código C# (ou VB) em nossas views. Os caracteres de controle causam muita poluição, e a necessidade de muita digitação.Hoje para exibir uma data por exemplo em uma view é necessário fazer algo como:
@@ -55,13 +55,13 @@ Razor realmente é muito podereso. Seu parser é muito inteligente, ele conhece 
 }
     </div>
 {% endhighlight %}
-E podemos ver que o resultado está correto:[caption id="attachment_1807" align="aligncenter" width="300" caption="Resultado do uso do Razor"][![Resultado do uso do Razor](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/syntax-result-300x116.png "Resultado do uso do Razor")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/syntax-result.png)[/caption]Ou seja: não há diferença no resultado final! O Razor se integra muito bem ao código HTML, você não fica com muito ruído no código.
+E podemos ver que o resultado está correto:[caption id="attachment_1807" align="aligncenter" width="300" caption="Resultado do uso do Razor"][![Resultado do uso do Razor](http://viniciusquaiato.com/images_posts/syntax-result-300x116.png "Resultado do uso do Razor")](http://viniciusquaiato.com/images_posts/syntax-result.png)[/caption]Ou seja: não há diferença no resultado final! O Razor se integra muito bem ao código HTML, você não fica com muito ruído no código.
 
 ### Ok, mas como utilizo o Razor?
 Uma das opções é trabalhando com o WebMatrix ([mostrei o WebMatrix aqui](http://viniciusquaiato.com/blog/webmatrix-o-que-e-por-que-usar/)), a outra é bem mais bacana: trabalhando com ASP.NET MVC 3 Beta ([veja como instalar aqui](http://viniciusquaiato.com/blog/asp-net-mvc-3/)).
 
 ### Criando um projeto ASP.NET MVC 3 Beta para usar Razor
-Vamos criar um novo projeto ASP.NET MVC 3:[caption id="attachment_1809" align="aligncenter" width="300" caption="Criando projeto ASP.NET MVC 3"][![Criando projeto ASP.NET MVC 3](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Criando-projeto-300x190.png "Criando projeto ASP.NET MVC 3")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/Criando-projeto.png)[/caption]Feito isso, na versão Beta do MVC 3 veremos a seguinte tela:[caption id="attachment_1810" align="aligncenter" width="300" caption="Nova janela projeto ASP.NET MVC 3 beta"][![Nova janela projeto ASP.NET MVC 3 beta](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/nova-janela-projeto-asp-net-mvc-3-beta-300x268.png "Nova janela projeto ASP.NET MVC 3 beta")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/nova-janela-projeto-asp-net-mvc-3-beta.png)[/caption]Teoricamente esta janela deveria definir a View Engine padrão para o nosso projeto. No entanto quando formos adicionar uma nova View veremos que por padrão ainda vem "ASPX (C#)" (um bug provavelmente).
+Vamos criar um novo projeto ASP.NET MVC 3:[caption id="attachment_1809" align="aligncenter" width="300" caption="Criando projeto ASP.NET MVC 3"][![Criando projeto ASP.NET MVC 3](http://viniciusquaiato.com/images_posts/Criando-projeto-300x190.png "Criando projeto ASP.NET MVC 3")](http://viniciusquaiato.com/images_posts/Criando-projeto.png)[/caption]Feito isso, na versão Beta do MVC 3 veremos a seguinte tela:[caption id="attachment_1810" align="aligncenter" width="300" caption="Nova janela projeto ASP.NET MVC 3 beta"][![Nova janela projeto ASP.NET MVC 3 beta](http://viniciusquaiato.com/images_posts/nova-janela-projeto-asp-net-mvc-3-beta-300x268.png "Nova janela projeto ASP.NET MVC 3 beta")](http://viniciusquaiato.com/images_posts/nova-janela-projeto-asp-net-mvc-3-beta.png)[/caption]Teoricamente esta janela deveria definir a View Engine padrão para o nosso projeto. No entanto quando formos adicionar uma nova View veremos que por padrão ainda vem "ASPX (C#)" (um bug provavelmente).
 
 ##
 
@@ -94,7 +94,7 @@ Sua sequência fibonacci é:@foreach(var num in Model.ListaInteiros){
 span>@num,</span>}
 </div></body></html>
 {% endhighlight %}
-O código da view é bastante simples. Reparem na **_linha 12_** que podemos formatar nossa data, assim como faríamos em um código C# mesmo. Este é o poder do Razor: simplicidade e flexibilidade, sem dores.E o resultado podemos conferir aqui:[caption id="attachment_1816" align="aligncenter" width="300" caption="Resultado da aplicacao ASP.NET MVC 3 com Razor"][![Resultado da aplicacao ASP.NET MVC 3 com Razor](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/resultado-da-aplicacao-MVC-3-com-Razor-300x171.png "Resultado da aplicacao ASP.NET MVC 3 com Razor")](http://viniciusquaiato.com/blog/wp-content/uploads/2010/10/resultado-da-aplicacao-MVC-3-com-Razor.png)[/caption]
+O código da view é bastante simples. Reparem na **_linha 12_** que podemos formatar nossa data, assim como faríamos em um código C# mesmo. Este é o poder do Razor: simplicidade e flexibilidade, sem dores.E o resultado podemos conferir aqui:[caption id="attachment_1816" align="aligncenter" width="300" caption="Resultado da aplicacao ASP.NET MVC 3 com Razor"][![Resultado da aplicacao ASP.NET MVC 3 com Razor](http://viniciusquaiato.com/images_posts/resultado-da-aplicacao-MVC-3-com-Razor-300x171.png "Resultado da aplicacao ASP.NET MVC 3 com Razor")](http://viniciusquaiato.com/images_posts/resultado-da-aplicacao-MVC-3-com-Razor.png)[/caption]
 
 ### Conclusão
 Com isso pudemos ver alguns princípios básicos do Razor. Em breve mostrarei mais funcionalidades, algumas coisas mais avançadas e interessantes.É nítido o ganho de produtividade que temos. Isso sem falar em como é bom nos sentirmos afastados do "asp 3". \o/Abraços galera, fiquem ligados.Vinicius Quaiato.

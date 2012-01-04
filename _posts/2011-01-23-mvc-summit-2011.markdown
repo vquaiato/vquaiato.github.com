@@ -18,7 +18,7 @@ tags:
   slug: asp-net-mvc-summit
   autoslug: asp.net-mvc-summit
 ---
-[![MVC Summit](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/mvcsummit_logo.png "MVC Summit")](http://viniciusquaiato.com/blog/wp-content/uploads/2011/01/mvcsummit_logo.png)Em dezembro comecei a organizar o primeiro evento focado em ASP.NET MVC do Brasil: [MVC Summit](http://www.mvcsummit.net/).A idéia era fazer um evento simples, online, contando com a presença da galera que tem se empenhado em divulgar o ASP.NET MVC.A empolgação foi tanta e o feedback está sendo tão positivo, que já há um planejamento para que o evento ocorra também em uma edição presencial.
+[![MVC Summit](http://viniciusquaiato.com/images_posts/mvcsummit_logo.png "MVC Summit")](http://viniciusquaiato.com/images_posts/mvcsummit_logo.png)Em dezembro comecei a organizar o primeiro evento focado em ASP.NET MVC do Brasil: [MVC Summit](http://www.mvcsummit.net/).A idéia era fazer um evento simples, online, contando com a presença da galera que tem se empenhado em divulgar o ASP.NET MVC.A empolgação foi tanta e o feedback está sendo tão positivo, que já há um planejamento para que o evento ocorra também em uma edição presencial.
 
 ### Palestrantes
 O evento conta hoje com [11 palestrantes](http://mvcsummit.net/2011/Palestrantes), alguns deles tidos como os caras que mais conhecem de ASP.NET MVC no país. Sendo 4 deles Microsoft MVPs.

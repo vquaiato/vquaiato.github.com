@@ -33,7 +33,7 @@ tags:
     ">verde</span>), mesmo que seja um código ruim. Então, após o teste passar melhoramos o código, com a finalidade de deixá-lo mais claro, coeso e simples (<span style="color: #333399;
     ">refactoring</span>).Tendo isso em mente, vamos para o nosso caso de uso em C#:<blockquote>Desenvolver uma aplicação bancária que controle saques, depósitos e transferências.</blockquote>Como eu disse o caso de uso é simples, para que foquemos no TDD.Vamos criar uma nova solution no Visual Studio. Aqui já começa a mudança de pensamento. Antes de criar o projeto da conta bancária, eu começo criando o projeto de testes da conta bancária. Eu gosto de pensar assim para ir me acostumando com a idéia do Test First.
 
-[caption id="attachment_33" align="aligncenter" width="630" caption="TDD - criando projeto de testes"]![TDD_criando_projeto_testes](http://viniciusquaiato.com/blog/wp-content/uploads/2009/10/TDD_criando_projeto_testes.jpg "TDD - criando projeto de testes")[/caption]Agora que estamos com o projeto criado, vamos escrever nosso primeiro teste. Vocês vão perceber que a prática do TDD nos leva a pensar melhor em nossas classes. Vamos ver.Bom, em nosso primeiro teste vamos nos assegurar de que quando uma conta seja criada ela obrigatóriamente necessite de um depósito inicial:
+[caption id="attachment_33" align="aligncenter" width="630" caption="TDD - criando projeto de testes"]![TDD_criando_projeto_testes](http://viniciusquaiato.com/images_posts/TDD_criando_projeto_testes.jpg "TDD - criando projeto de testes")[/caption]Agora que estamos com o projeto criado, vamos escrever nosso primeiro teste. Vocês vão perceber que a prática do TDD nos leva a pensar melhor em nossas classes. Vamos ver.Bom, em nosso primeiro teste vamos nos assegurar de que quando uma conta seja criada ela obrigatóriamente necessite de um depósito inicial:
 {% highlight csharp %}
 [TestMethod]
 public void Deve_Criar_Conta_Com_Deposito_Inicial(){    ContaBancaria conta = new ContaBancaria(50.0m);
@@ -54,7 +54,7 @@ public ContaBancaria(decimal depositoInicial) { }
 }
 
 {% endhighlight %}
-Assi podemos executar nosso teste. Eu gosto de utilizar dois atalhos CTRL + R + T (executa o teste corrente em modo debug) ou CTRL + R + A (executa todos os testes da solution em modo debug).Teremos o resultado como abaixo:[caption id="attachment_34" align="aligncenter" width="652" caption="TDD - executando primeiro teste"]![TDD - executando primeiro teste](http://viniciusquaiato.com/blog/wp-content/uploads/2009/10/TDD_executando_primeiro_teste.jpg "TDD - executando primeiro teste")[/caption]Este teste falhou. Ótimo! Obtemos um <span style="color: #ff0000;
+Assi podemos executar nosso teste. Eu gosto de utilizar dois atalhos CTRL + R + T (executa o teste corrente em modo debug) ou CTRL + R + A (executa todos os testes da solution em modo debug).Teremos o resultado como abaixo:[caption id="attachment_34" align="aligncenter" width="652" caption="TDD - executando primeiro teste"]![TDD - executando primeiro teste](http://viniciusquaiato.com/images_posts/TDD_executando_primeiro_teste.jpg "TDD - executando primeiro teste")[/caption]Este teste falhou. Ótimo! Obtemos um <span style="color: #ff0000;
     ">red</span> e sabemos que estamos no caminho certo. Aconteceu que estávamos esperando um saldo de 50 e o saldo obtido foi 0.Agora devemos voltar ao código e fazer o teste passar:
 {% highlight csharp %}
 
@@ -69,7 +69,7 @@ public ContaBancaria(decimal depositoInicial)    {        this.SaldoAtual += dep
 }
 
 {% endhighlight %}
-Neste caso nossa mudança é bem pequena. Agora vamos executar o mesmo teste e ver o que acontece:[caption id="attachment_35" align="aligncenter" width="655" caption="TDD - executando primeiro teste verde"]![TDD - executando primeiro teste verde](http://viniciusquaiato.com/blog/wp-content/uploads/2009/10/TDD_executando_primeiro_teste_verde.jpg "TDD - executando primeiro teste verde")[/caption]Pronto! Obtivemos um <span style="color: #008000;
+Neste caso nossa mudança é bem pequena. Agora vamos executar o mesmo teste e ver o que acontece:[caption id="attachment_35" align="aligncenter" width="655" caption="TDD - executando primeiro teste verde"]![TDD - executando primeiro teste verde](http://viniciusquaiato.com/images_posts/TDD_executando_primeiro_teste_verde.jpg "TDD - executando primeiro teste verde")[/caption]Pronto! Obtivemos um <span style="color: #008000;
     ">verde</span>, e isso quer dizer que podemos prosseguir, escrevendo os próximos testes. Antes disso acontecer, devemos lembrar do próximo passo: refactoring!Vamos voltar ao nosso código e entender o que pode ser refatorado.Me parece que a propriedade SaldoAtual não deveria ter um setter público, desta forma vamos torná-lo privado:
 {% highlight csharp %}
 
@@ -111,7 +111,7 @@ if(depositoInicial &lt;
     }
 
 {% endhighlight %}
-Agora já podemos executar nossos testes (sim, devemos executar todos os testes, para ter certeza que nada quebrou no meio do caminho). Pronto, temos um verde. Vamos para o refactoring. A validação dentro do construtor não ficou muito elegante. Afinal, no futuro podemos ter outros tipos de validações, desta forma vamos refatorar:[caption id="attachment_36" align="aligncenter" width="669" caption="TDD - refatorando"]![TDD - refatorando](http://viniciusquaiato.com/blog/wp-content/uploads/2009/10/TDD_refatorando.jpg "TDD - refatorando")[/caption]Assim o visual studio criará para nós um método, e ficaremos com a seguinte estrutura:
+Agora já podemos executar nossos testes (sim, devemos executar todos os testes, para ter certeza que nada quebrou no meio do caminho). Pronto, temos um verde. Vamos para o refactoring. A validação dentro do construtor não ficou muito elegante. Afinal, no futuro podemos ter outros tipos de validações, desta forma vamos refatorar:[caption id="attachment_36" align="aligncenter" width="669" caption="TDD - refatorando"]![TDD - refatorando](http://viniciusquaiato.com/images_posts/TDD_refatorando.jpg "TDD - refatorando")[/caption]Assim o visual studio criará para nós um método, e ficaremos com a seguinte estrutura:
 {% highlight csharp %}
 
 public ContaBancaria(decimal depositoInicial){    Validar(depositoInicial);

@@ -56,7 +56,7 @@ return View();
     }
 </expandoobject>
 {% endhighlight %}
-O código é bastante simples, cria apenas uma lista de ExpandoObjects e manda esta lista para a View([leia mais sobre ExpandoObjects aqui](http://viniciusquaiato.com/blog/expandoobject-dinamismo-dotnet-4/)).Agora crie uma pasta chamada Home dentro da pasta Views e então crie uma View chamada Index dentro da pasta Home, a solution deve ficar assim:[caption id="attachment_413" align="aligncenter" width="252" caption="Solution com View e Controller"]![Solution com View e Controller](http://viniciusquaiato.com/blog/wp-content/uploads/2009/12/Solution-com-View-e-Controller.jpg "Solution com View e Controller")[/caption]Vamos para o código .aspx da nossa View que deve ficar assim:
+O código é bastante simples, cria apenas uma lista de ExpandoObjects e manda esta lista para a View([leia mais sobre ExpandoObjects aqui](http://viniciusquaiato.com/blog/expandoobject-dinamismo-dotnet-4/)).Agora crie uma pasta chamada Home dentro da pasta Views e então crie uma View chamada Index dentro da pasta Home, a solution deve ficar assim:[caption id="attachment_413" align="aligncenter" width="252" caption="Solution com View e Controller"]![Solution com View e Controller](http://viniciusquaiato.com/images_posts/Solution-com-View-e-Controller.jpg "Solution com View e Controller")[/caption]Vamos para o código .aspx da nossa View que deve ficar assim:
 {% highlight csharp %}
             <thead>                <tr style="background-color:#aabbcc;
     color:#fff;
@@ -103,7 +103,7 @@ $(document).ready(function () {    $("#dataTable").dataTable();
 );
     
 {% endhighlight %}
-Este código irá aplicar o plugin na nossa tabela, e o resultado será como mostrado abaixo:[caption id="attachment_421" align="aligncenter" width="554" caption="table usando plugin DataTables"]![table usando plugin DataTables](http://viniciusquaiato.com/blog/wp-content/uploads/2009/12/table-usando-plugin-DataTables.jpg "table usando plugin DataTables")[/caption]Agora podemos filtrar, ordenar e paginar nossos dados, sem nenhum esforço adicional, veja um exemplo de filtro abaixo:[caption id="attachment_422" align="aligncenter" width="537" caption="plugin DataTable filtrando dados"]![plugin DataTable filtrando dados](http://viniciusquaiato.com/blog/wp-content/uploads/2009/12/plugin-DataTable-filtrando-dados.jpg "plugin DataTable filtrando dados")[/caption]Bom galera, é isso!O código fonte desta solução está disponível [aqui](http://viniciusquaiato.com/files/codesamples/MVC/mvcjquerysite.rar).Qualquer dúvida, email ou comentários.
+Este código irá aplicar o plugin na nossa tabela, e o resultado será como mostrado abaixo:[caption id="attachment_421" align="aligncenter" width="554" caption="table usando plugin DataTables"]![table usando plugin DataTables](http://viniciusquaiato.com/images_posts/table-usando-plugin-DataTables.jpg "table usando plugin DataTables")[/caption]Agora podemos filtrar, ordenar e paginar nossos dados, sem nenhum esforço adicional, veja um exemplo de filtro abaixo:[caption id="attachment_422" align="aligncenter" width="537" caption="plugin DataTable filtrando dados"]![plugin DataTable filtrando dados](http://viniciusquaiato.com/images_posts/plugin-DataTable-filtrando-dados.jpg "plugin DataTable filtrando dados")[/caption]Bom galera, é isso!O código fonte desta solução está disponível [aqui](http://viniciusquaiato.com/files/codesamples/MVC/mvcjquerysite.rar).Qualquer dúvida, email ou comentários.
 
 Abraços,
 Vinicius Quaiato.
