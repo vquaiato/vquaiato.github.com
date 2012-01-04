@@ -24,7 +24,7 @@ tags:
   slug: browser
   autoslug: browser
 ---
-Fala galera, beleza?Silverlight 4 - Capturando WebCam - [http://viniciusquaiato.com/blog/silverlight-4-capturando-webcam/](http://viniciusquaiato.com/blog/silverlight-4-capturando-webcam/)Vamos falar mais um pouco do silverlight 4 beta, desta vez vamos acessar arquivose pastas da máquina utilizando uma aplicação Silverlight rodando fora do browser (Out of Browser).Vamos abrir o Visual Studio 2010 beta 2 e criar uma nova aplicação Silverlight:[caption id="attachment_223" align="aligncenter" width="330" height="190"  caption="Criando projeto Silverlight (ampliar)"][![Criando projeto Silverlight](http://viniciusquaiato.com/images_posts/Criando-projeto-Silverlight.jpg "Criando projeto Silverlight")](http://viniciusquaiato.com/images_posts/Criando-projeto-Silverlight.jpg)[/caption]A interface utilizada será bem simples como mostra a imagem e o código XAML abaixo:[caption id="attachment_229" align="aligncenter" width="324" caption="Interface Silverlight"][![Interface Silverlight](http://viniciusquaiato.com/images_posts/Interface-Silverlight.jpg "Interface Silverlight")](http://viniciusquaiato.com/images_posts/Interface-Silverlight.jpg)[/caption]Código XAML:
+Fala galera, beleza? Silverlight 4 - Capturando WebCam - [http://viniciusquaiato.com/blog/silverlight-4-capturando-webcam/](http://viniciusquaiato.com/blog/silverlight-4-capturando-webcam/)Vamos falar mais um pouco do silverlight 4 beta, desta vez vamos acessar arquivose pastas da máquina utilizando uma aplicação Silverlight rodando fora do browser (Out of Browser).Vamos abrir o Visual Studio 2010 beta 2 e criar uma nova aplicação Silverlight:[caption id="attachment_223" align="aligncenter" width="330" height="190"  caption="Criando projeto Silverlight (ampliar)"][![Criando projeto Silverlight](http://viniciusquaiato.com/images_posts/Criando-projeto-Silverlight.jpg "Criando projeto Silverlight")](http://viniciusquaiato.com/images_posts/Criando-projeto-Silverlight.jpg)[/caption]A interface utilizada será bem simples como mostra a imagem e o código XAML abaixo:[caption id="attachment_229" align="aligncenter" width="324" caption="Interface Silverlight"][![Interface Silverlight](http://viniciusquaiato.com/images_posts/Interface-Silverlight.jpg "Interface Silverlight")](http://viniciusquaiato.com/images_posts/Interface-Silverlight.jpg)[/caption]Código XAML:
 {% highlight csharp %}
             <textbox height="80" horizontalalignment="Left" margin="12,175,0,0" name="txtConteudoArquivo" verticalalignment="Top" width="263" acceptsreturn="True" />            </button>
 {% endhighlight %}
@@ -37,7 +37,7 @@ foreach(var item in files)        this.listBox1.Items.Add(item);
     }
 
 {% endhighlight %}
-As linhas 3, 4 e 5 são as principais nesta listagem. Nelas estamos obtendo os nomes dos arquivos do diretório "Meus Documentos". Notem a utilização das classes Environment e Directory.Já nas linhas 7 e 8 estamos apenas adicionando os nomes dos arquivos à nossa ListBox.A listagem a seguir mostra como fazer a gravação de um arquivo texto também na pasta "Meus Documentos":
+As linhas 3, 4 e 5 são as principais nesta listagem. Nelas estamos obtendo os nomes dos arquivos do diretório "Meus Documentos". Notem a utilização das classes Environment e Directory. Já nas linhas 7 e 8 estamos apenas adicionando os nomes dos arquivos à nossa ListBox. A listagem a seguir mostra como fazer a gravação de um arquivo texto também na pasta "Meus Documentos":
 {% highlight csharp %}
 
 private void btnGravar_Click(object sender, RoutedEventArgs e){

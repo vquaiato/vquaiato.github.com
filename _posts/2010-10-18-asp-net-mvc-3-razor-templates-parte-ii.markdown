@@ -1,10 +1,10 @@
 --- 
 layout: post
-title: "ASP.NET MVC 3 \xE2\x80\x93 Razor templates parte II"
+title: "ASP. NET MVC 3 \xE2\x80\x93 Razor templates parte II"
 wordpress_id: 1833
 wordpress_url: http://viniciusquaiato.com/blog/?p=1833
 categories: 
-- title: ASP.NET MVC
+- title: ASP. NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
@@ -14,7 +14,7 @@ tags:
 - title: Razor
   slug: razor
   autoslug: razor
-- title: ASP.NET MVC 3
+- title: ASP. NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
 - title: MVC 3
@@ -33,7 +33,7 @@ tags:
   slug: rendersection
   autoslug: rendersection
 ---
-[Na primeira parte deste post](http://viniciusquaiato.com/blog/asp-net-mvc-3-razor-templates/) vimos como o [Razor](http://viniciusquaiato.com/blog/asp-net-mvc-3-razor-view-engine/) trabalha o conceito de MasterPages/Layout Pages, e o RenderBody, que é o método padrão para renderização do conteúdo customizado.Agora veremos como criar nossas proprias sections ou áreas dentro da nossas MasterPage utilizando o Razor.
+[Na primeira parte deste post](http://viniciusquaiato.com/blog/asp-net-mvc-3-razor-templates/) vimos como o [Razor](http://viniciusquaiato.com/blog/asp-net-mvc-3-razor-view-engine/) trabalha o conceito de MasterPages/Layout Pages, e o RenderBody, que é o método padrão para renderização do conteúdo customizado. Agora veremos como criar nossas proprias sections ou áreas dentro da nossas MasterPage utilizando o Razor.
 
 ### Criando nossas próprias sections com Razor
 a href="http://viniciusquaiato.com/blog/asp-net-mvc-3-razor-templates/">No post anterior nossa MasterPage tinha o seguinte conteúdo:
@@ -50,7 +50,7 @@ Com isto estamos dizendo que nossas páginas possuirão um section chamada "Supe
 Agora basta que em nossa View criemos as duas sections, como mostra o exemplo abaixo:
 {% highlight csharp %}
 @model dynamic@{
-iew.Title = "Index";
+iew. Title = "Index";
     Layout = "~/Views/Shared/_LayoutPage1.cshtml";
     }
 @section Superior{
@@ -67,17 +67,17 @@ div style="width:200px;
 {% endhighlight %}
 Reparem que fazemos isso utilizando a sintaxe do Razor: @section NomeSection{
 * conteúdo */}
-.É uma maneira bastante simples de trabalhar com as sections.Você deve estar se perguntando: "Ah ok. Bacana, mas eu sou obrigado a criar TODAS as sections?".
+.É uma maneira bastante simples de trabalhar com as sections. Você deve estar se perguntando: "Ah ok. Bacana, mas eu sou obrigado a criar TODAS as sections?".
 
 ### Trabalhando com sections opcionais no Razor
-A resposta para a pergunta acima é: não! Você pode trabalhar com sections opcionais. Ou seja, a definição da sections nas views passa a ser opcional.Voltando ao nosso exemplo, a section Gadget é candidata a ser uma section opcional, vamos então alterar nossa MasterPage Razor:
+A resposta para a pergunta acima é: não! Você pode trabalhar com sections opcionais. Ou seja, a definição da sections nas views passa a ser opcional. Voltando ao nosso exemplo, a section Gadget é candidata a ser uma section opcional, vamos então alterar nossa MasterPage Razor:
 {% highlight csharp %}
 @RenderSection("Gadget", required:false)
 {% endhighlight %}
 Desta forma estamos sinalizando que a presença desta section não é obrigatória, ela pode ou não ser definida.(observação: no Preview 1 do MVC 3 o parâmetro era _optional:true_).Assim podemos definir a mesma apenas nas views que quisermos. Caso não coloquemos o required:false e deixemos de definir a section teremos um erro em runtime.
 
 ### Em resumo
-A definição das sections dentro de uma MasterPage no Razor é algo bastante simples, e implementar estas sections é algo trivial também.Com isso vimos mais uma vez o poder e a versatilidade da sintaxe Razor: o código fica simples e legível. Não há ruído.Em um próximo post veremos como definir MasterPages de forma automatizada para todas as views de um diretório utilizando o Razor.
+A definição das sections dentro de uma MasterPage no Razor é algo bastante simples, e implementar estas sections é algo trivial também. Com isso vimos mais uma vez o poder e a versatilidade da sintaxe Razor: o código fica simples e legível. Não há ruído. Em um próximo post veremos como definir MasterPages de forma automatizada para todas as views de um diretório utilizando o Razor.
 
 Abraços,
 Vinicius Quaiato.

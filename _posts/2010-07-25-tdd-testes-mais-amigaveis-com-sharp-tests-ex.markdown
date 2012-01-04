@@ -33,10 +33,10 @@ tags:
   slug: testando-colecoes
   autoslug: "testando-cole\xC3\xA7\xC3\xB5es"
 ---
-[![](http://viniciusquaiato.com/images_posts/MonsterBook.jpg "MonsterBook")](http://viniciusquaiato.com/images_posts/MonsterBook.jpg)Código é código, seja ele código de produção, aquele que implementa o negócio a qual o software se propõe a atender, ou o código de testes. Tudo isso faz parte do software, e desta maneira deve ser tratado com carinho igual.Clareza no código, legibilidade, flexibilidade não devem ser considerados apenas em código de produção, devemos considerar com muito cuidado em nossos testes também. Testes são código executável, ou melhor, são documentações e especificações executáveis, sendo assim precisamos que eles sejam claros e simples, fácil de ler, entender e modificar. Deve ser um livro fácil de ler e entender.
+[![](http://viniciusquaiato.com/images_posts/MonsterBook.jpg "MonsterBook")](http://viniciusquaiato.com/images_posts/MonsterBook.jpg)Código é código, seja ele código de produção, aquele que implementa o negócio a qual o software se propõe a atender, ou o código de testes. Tudo isso faz parte do software, e desta maneira deve ser tratado com carinho igual. Clareza no código, legibilidade, flexibilidade não devem ser considerados apenas em código de produção, devemos considerar com muito cuidado em nossos testes também. Testes são código executável, ou melhor, são documentações e especificações executáveis, sendo assim precisamos que eles sejam claros e simples, fácil de ler, entender e modificar. Deve ser um livro fácil de ler e entender.
 
 ### Sharp Tests Ex
-[Sharp Tests Ex](http://sharptestex.codeplex.com/) são um conjunto de extensões que visam ajudar a escrever asserções simples, guiadas pelo intellisense do Visual Studio e provendo legibilidade.Vale dizer também que é perfeitamente extensível, ou seja, você pode escrever suas próprias extensões e integrá-las à biblioteca de forma simples e direta.Outro detalhe muito importante é o fato de poder utilizar o SharpTestEx com vários frameworks de testes, e não apenas o MsTests: [NUnit](http://www.nunit.org/), [MsTests](http://msdn.microsoft.com/en-us/library/ms243147(VS.80).aspx), [xUnit](http://xunit.codeplex.com/), [MbUnit](http://www.mbunit.com/).
+[Sharp Tests Ex](http://sharptestex.codeplex.com/) são um conjunto de extensões que visam ajudar a escrever asserções simples, guiadas pelo intellisense do Visual Studio e provendo legibilidade. Vale dizer também que é perfeitamente extensível, ou seja, você pode escrever suas próprias extensões e integrá-las à biblioteca de forma simples e direta. Outro detalhe muito importante é o fato de poder utilizar o SharpTestEx com vários frameworks de testes, e não apenas o MsTests: [NUnit](http://www.nunit.org/), [MsTests](http://msdn.microsoft.com/en-us/library/ms243147(VS.80).aspx), [xUnit](http://xunit.codeplex.com/), [MbUnit](http://www.mbunit.com/).
 
 ### Os exemplos
 Bem, abaixo segue uma série de exemplos de como utilizar a biblioteca. Não vou detalhar cada um dos testes, pois na verdade eles são muito explicativos. A leitura é bastante simples.
@@ -56,19 +56,19 @@ var pedido = new Pedido();
     [TestMethod]    
 public void EstaFaturado_Deve_Ser_Falso()    {
 var pedido = new Pedido();
-    pedido.EstaFaturado            .Should()            .Be            .False();
+    pedido. EstaFaturado            .Should()            .Be            .False();
     }
     [TestMethod]    
 public void Quando_Adiciono_Produto_Bola_Deve_Conter_Produto_Bola()    {
 var pedido = new Pedido();
 var bola = new Produto("Bola");
     pedido.AddItem(new ItemPedido(bola));
-    pedido.Produtos            .Should()            .Contain(bola);
+    pedido. Produtos            .Should()            .Contain(bola);
     }
 }
 
 {% endhighlight %}
-Veja que o código fica mais fluido e legível. Achei bastante interessante.Outra detalhe bacana é o trabalho com coleções, como pode ser visto no exemplo abaixo:
+Veja que o código fica mais fluido e legível. Achei bastante interessante. Outra detalhe bacana é o trabalho com coleções, como pode ser visto no exemplo abaixo:
 {% highlight csharp %}
 [TestMethod]
 public void Os5_primeiros_impares_devem_ser_1_3_5_7_9(){
@@ -89,7 +89,7 @@ var primos = ObterPrimos();
     }
 </int></int>
 {% endhighlight %}
-Vejam como é simples e interessante trabalhar com coleções. Verificar os valores que devem ou não estar presentes em uma coleção, etc.Outro exemplo de trabalho com coleções pode ser visto abaixo, onde verificamos que um valor deve estar presente e outro não:
+Vejam como é simples e interessante trabalhar com coleções. Verificar os valores que devem ou não estar presentes em uma coleção, etc. Outro exemplo de trabalho com coleções pode ser visto abaixo, onde verificamos que um valor deve estar presente e outro não:
 {% highlight csharp %}
 [TestMethod]
 public void Divisiveis_por_3_impares_menores_que_15(){

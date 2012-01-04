@@ -33,7 +33,7 @@ tags:
 Façam o Download do NuPack aqui: [http://nupack.codeplex.com/](http://nupack.codeplex.com/)
 
 ### Abrindo o Package Manager Console
-Após instalar, abra seu Visual Studio e digite: Ctrl + W, Ctrl + Z, ou vá ao menu View >> Other Windows >> Package Manager Console.Este console (é [Powershell](http://technet.microsoft.com/en-us/scriptcenter/powershell.aspx)!!!) é por onde você consegue instalar os pacotes. 
+Após instalar, abra seu Visual Studio e digite: Ctrl + W, Ctrl + Z, ou vá ao menu View >> Other Windows >> Package Manager Console. Este console (é [Powershell](http://technet.microsoft.com/en-us/scriptcenter/powershell.aspx)!!!) é por onde você consegue instalar os pacotes. 
 
 ### Listando os pacotes disponíveis no NuPack
 Para ver os pacotes disponíveis digite:_**List-Package**_[caption id="attachment_1734" align="aligncenter" width="300" caption="NuPack List-Package"][![NuPack List-Package](http://viniciusquaiato.com/images_posts/List-Package-300x111.png "NuPack List-Package")](http://viniciusquaiato.com/images_posts/List-Package.png)[/caption]
@@ -42,9 +42,9 @@ Para ver os pacotes disponíveis digite:_**List-Package**_[caption id="attachmen
 No Package Manager Console digite:_**Add-Package Nunit**_[caption id="attachment_1736" align="aligncenter" width="300" caption="NuPack Add-Package"][![NuPack Add-Package](http://viniciusquaiato.com/images_posts/Add-Package-300x300.png "NuPack Add-Package")](http://viniciusquaiato.com/images_posts/Add-Package.png)[/caption]Assim fará o download e adicionará referências para o NUnit em seu projeto. É muito simples!
 
 ### Gerenciando os pacotes
-Após adicionar uma referência para um pacote o NuPack cria um arquivo packages.config onde ele armazena o pacote e a versão que foi adicionada ao projeto. Ainda não testei isso, mas imagino que ele consiga ver a disponibilidade de uma versão mais recente para fazer um upgrade.
+Após adicionar uma referência para um pacote o NuPack cria um arquivo packages. config onde ele armazena o pacote e a versão que foi adicionada ao projeto. Ainda não testei isso, mas imagino que ele consiga ver a disponibilidade de uma versão mais recente para fazer um upgrade.
 {% highlight csharp %}
-<?xml version="1.0" encoding="utf-8"?><packages>  <package id="NUnit" version="2.5.7.10213" /></packages>
+<? xml version="1.0" encoding="utf-8"?><packages>  <package id="NUnit" version="2.5.7.10213" /></packages>
 {% endhighlight %}
 
 

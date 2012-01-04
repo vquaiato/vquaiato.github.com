@@ -30,7 +30,7 @@ tags:
   slug: codeplex
   autoslug: codeplex
 ---
-Fala galera, ontem o Rodrigo Vidal me pediu um timer para utilziar nos encontros de Dojo do [.Net Architects RJ](http://rj.dotnetarchitects.net/). Eu não tinha nenhum timer, estávamos usando meu celular nos [Dojos aqui em SP](http://dojo.dotnetarchitects.net).[caption id="attachment_977" align="aligncenter" width="381" caption="Timer para Dojo em C# e WPF"][![Timer para Dojo em C# e WPF](http://viniciusquaiato.com/images_posts/dojotimer.png "Timer para Dojo em C# e WPF")](http://viniciusquaiato.com/images_posts/dojotimer.png)[/caption]Em 10min. acabei fazendo algo bem simples, e o código não é dos melhores, mas é o que deu pra fazer em 10min.O projeto está no Codeplex [http://dojotimer.codeplex.com/](http://dojotimer.codeplex.com/) , e podemos ir evoluindo conforme as necessidades. O XAML do timer está abaixo:
+Fala galera, ontem o Rodrigo Vidal me pediu um timer para utilziar nos encontros de Dojo do [.Net Architects RJ](http://rj.dotnetarchitects.net/). Eu não tinha nenhum timer, estávamos usando meu celular nos [Dojos aqui em SP](http://dojo.dotnetarchitects.net).[caption id="attachment_977" align="aligncenter" width="381" caption="Timer para Dojo em C# e WPF"][![Timer para Dojo em C# e WPF](http://viniciusquaiato.com/images_posts/dojotimer.png "Timer para Dojo em C# e WPF")](http://viniciusquaiato.com/images_posts/dojotimer.png)[/caption]Em 10min. acabei fazendo algo bem simples, e o código não é dos melhores, mas é o que deu pra fazer em 10min. O projeto está no Codeplex [http://dojotimer.codeplex.com/](http://dojotimer.codeplex.com/) , e podemos ir evoluindo conforme as necessidades. O XAML do timer está abaixo:
 {% highlight csharp %}
                 Start            </button>            
 {% endhighlight %}
@@ -51,16 +51,16 @@ private void Button_Click(object sender, RoutedEventArgs e)    {        DefaultV
 , this.elapsed, 0, 1000);
     }
     
-private void DefaultValues()    {        tempo.Text = string.Format("00:00");
+private void DefaultValues()    {        tempo. Text = string.Format("00:00");
     elapsed = 0;
     alarme.Stop();
-    this.WindowState = System.Windows.WindowState.Minimized;
+    this. WindowState = System.Windows.WindowState.Minimized;
     }
     
 private void CalculateTime()    {        this.Dispatcher.Invoke(new TimerDispatcherDelegate(tempoCorrido =>        {
 if(tempoCorrido == tempoTotal)            {                alarme.Play();
-    this.WindowState = System.Windows.WindowState.Maximized;
-    this.Topmost = true;
+    this. WindowState = System.Windows.WindowState.Maximized;
+    this. Topmost = true;
     this.timer.Dispose();
     }
             else            {                PrintTime(tempoCorrido);
@@ -71,7 +71,7 @@ if(tempoCorrido == tempoTotal)            {                alarme.Play();
     
 private void PrintTime(int tempoCorrido)    {
 var timeSpan = new TimeSpan(0, 0, (tempoCorrido > 60 ? tempoCorrido / 60 : 0), tempoCorrido % 60);
-    tempo.Text = string.Format("{
+    tempo. Text = string.Format("{
 }
 :{
 }
@@ -80,4 +80,4 @@ var timeSpan = new TimeSpan(0, 0, (tempoCorrido > 60 ? tempoCorrido / 60 : 0), t
 }
 
 {% endhighlight %}
-Quando o timer é iniciado, ele é minimizado. Após os 5 minutos, ele é maximizado sobre todas as janelas, e então um som é disparado.Tá aí, quem quiser brincar: [http://dojotimer.codeplex.com/](http://dojotimer.codeplex.com/)
+Quando o timer é iniciado, ele é minimizado. Após os 5 minutos, ele é maximizado sobre todas as janelas, e então um som é disparado. Tá aí, quem quiser brincar: [http://dojotimer.codeplex.com/](http://dojotimer.codeplex.com/)

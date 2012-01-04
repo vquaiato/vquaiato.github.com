@@ -7,8 +7,7 @@ categories:
 - title: Visual Studio 2010
   slug: visual-studio-2010
   autoslug: visual-studio-2010
-- title: .NET 4.0
-  slug: net-4-0
+- title: .NET 4. 0   slug: net-4-0
   autoslug: .net-4.0
 tags: 
 - title: TechEd

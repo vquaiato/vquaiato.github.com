@@ -33,7 +33,7 @@ Os envolvidos neste projeto são: [Leandro Daniel](http://reverb.leandrodaniel.c
 O [Void Podcast](http://voidpodcast.com) nasceu de/para ser uma conversa entre amigos, em um clima descontraído, assim como fazemos em happy hours. Às vezes discutindo sobre tecnologia, outras vezes não. O [Void Podcast](http://voidpodcast.com) também nasceu sem pretensões: não esperamos ser um podcast famoso, não mantemos periodicidade, não definimos pautas, não convidamos outras pessoas... mas tudo isso não quer dizer que não podemos aspirar ser um podcast famoso, termos periodicidade, definirmos pautas e convidarmos outras pessoas.
 
 ### Os temas
-Geralmente falamos sobre temas agnósticos de tecnologia, ou seja, você não nos verá falando sobre GridView, ASP.NET MVC x WebForms, nem nada do tipo. Até o momento já falamos sobre comunidades, carreira, qualidade de vida, complexidade, etc. Já estamos no nosso 10º episódio, coisas bacanas já rolaram. Temos um backlog bem bacana com próximos temas <o/
+Geralmente falamos sobre temas agnósticos de tecnologia, ou seja, você não nos verá falando sobre GridView, ASP. NET MVC x WebForms, nem nada do tipo. Até o momento já falamos sobre comunidades, carreira, qualidade de vida, complexidade, etc. Já estamos no nosso 10º episódio, coisas bacanas já rolaram. Temos um backlog bem bacana com próximos temas <o/
 
 ### O convite
 Convido vocês então a escutar e ver o que acham. Geralmente adotamos um tom sarcástico, como se realmente estivéssemos em uma mesa de bar. O feedback que temos tido até o momento tem sido bastante positivo e cada vez mias pessoas estão escutando. Temos sido cada vez mais elogiamos pelas trilhas sonoras e edições do grande Leandro :P

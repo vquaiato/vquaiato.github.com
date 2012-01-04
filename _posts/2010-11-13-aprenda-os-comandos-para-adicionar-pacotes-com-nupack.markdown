@@ -18,7 +18,7 @@ tags:
 [![](http://viniciusquaiato.com/images_posts/pacotes-150x150.jpg "pacotes")](http://viniciusquaiato.com/images_posts/pacotes.jpg)Vimos anteriormente como utilizar os comandos e opções de listagens de pacotes utilizando o NuPack. (Se você não sabe o que é o NuPack dê uma olhada [aqui](http://viniciusquaiato.com/blog/aprenda-os-comandos-de-listagem-do-nupack/), [aqui](http://viniciusquaiato.com/blog/nupack-uma-das-melhores-invencoes-da-microsoft/) e [aqui](http://unplugged.giggio.net/unplugged/post/NuPack-porque-voce-deveria-se-importar.aspx)).Agora vamos ver os comandos e opções para adicionarmos pacotes utilizando o NuPack.
 
 ## Comandos para adicionar pacotes com NuPack
-Assim como os comandos de listagem os comandos para adicionar pacotes podem receber alguns parâmetros que interferem na forma como funcionam.Estes parâmetros têm por objetivo dar maior flexibilidade e poder ao NuPack e seus comandos.Para adicionar um pacote ao projeto o comando básico a ser utilizado é: 
+Assim como os comandos de listagem os comandos para adicionar pacotes podem receber alguns parâmetros que interferem na forma como funcionam. Estes parâmetros têm por objetivo dar maior flexibilidade e poder ao NuPack e seus comandos. Para adicionar um pacote ao projeto o comando básico a ser utilizado é: 
 {% highlight csharp %}
 Add-Package nome_pacote
 {% endhighlight %}
@@ -55,7 +55,7 @@ Add-Package NUnit -Project ProjetoDeTestes
 [caption id="attachment_2061" align="aligncenter" width="300" caption="add-package nupack argumento -project "][![add-package nupack argumento -project ](http://viniciusquaiato.com/images_posts/add-package_nupack_-project-300x177.png "add-package nupack argumento -project ")](http://viniciusquaiato.com/images_posts/add-package_nupack_-project.png)[/caption]
 
 ### Em resumo...
-O NuPack ([Já renomeado para "NuGet"](http://haacked.com/archive/2010/10/29/nupack-is-now-nuget.aspx)) possui comandos interessantes para adicionarmos os pacotes. Confesso que estou com problemas em alguns deles e por isso nem mencionei algumas funcionalidades.Ainda assim, e um produto lançado como alpha ainda, e vale muito olharmos para ele, vale!Ao que parece o pessoal está bastante aberto a aceitar contribuições, e já estão com issues cadastrados lá no [codeplex](http://nuget.codeplex.com/workitem/list/basic). Colaborar pode ser o simples ato de criar uma issue e dar um report lá.Já foi lançado também uma [versão 0.2 deste alpha do NuPack](http://nuget.codeplex.com/releases/view/54662), mas eu instalei e tive problemas com comandos simples como Add-Package Nunit. Então decidi nem mostrar nada ainda deste novo build.
+O NuPack ([Já renomeado para "NuGet"](http://haacked.com/archive/2010/10/29/nupack-is-now-nuget.aspx)) possui comandos interessantes para adicionarmos os pacotes. Confesso que estou com problemas em alguns deles e por isso nem mencionei algumas funcionalidades. Ainda assim, e um produto lançado como alpha ainda, e vale muito olharmos para ele, vale! Ao que parece o pessoal está bastante aberto a aceitar contribuições, e já estão com issues cadastrados lá no [codeplex](http://nuget.codeplex.com/workitem/list/basic). Colaborar pode ser o simples ato de criar uma issue e dar um report lá. Já foi lançado também uma [versão 0. 2 deste alpha do NuPack](http://nuget.codeplex.com/releases/view/54662), mas eu instalei e tive problemas com comandos simples como Add-Package Nunit. Então decidi nem mostrar nada ainda deste novo build.
 
 Abraços,
 Vinicius Quaiato.

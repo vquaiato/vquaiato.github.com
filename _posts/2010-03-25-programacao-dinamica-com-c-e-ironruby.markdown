@@ -4,8 +4,7 @@ title: "Programa\xC3\xA7\xC3\xA3o din\xC3\xA2mica com C# e IronRuby"
 wordpress_id: 731
 wordpress_url: http://viniciusquaiato.com/blog/?p=731
 categories: 
-- title: .NET 4.0
-  slug: net-4-0
+- title: .NET 4. 0   slug: net-4-0
   autoslug: .net-4.0
 - title: IronRuby
   slug: ironruby
@@ -24,7 +23,7 @@ tags:
   slug: script
   autoslug: script
 ---
-![](http://viniciusquaiato.com/images_posts/ruby-299x300.png "ruby")Que tal escrever um sistema em C#, com todas suas classes, camada de persistência, interface, etc e ainda assim permitir de uma maneira fácil escrever "plugins" e scripts que alterem alguns comportamentos do sistema?Pense que existe um ponto no seu sistema que pode sofrer constantes mudanças de regra: o cálculo de um desconto, o cálculo de um imposto, uma série de ações que podem ser feitas antes ou depois de alguma operação, etc.O esforço de alteração, build e deploy é tão grande que sentimos a necessidade de tornar nosso sistema mais maleável, e pronto para estas mudanças. Queremos que o usuário do sistema possa fazer isso sem ter de contar com mais desenvolvimento, build, deploy, etc.Neste primeiro artigo criarei uma simples calculadora em C#, só que ao invés de efetuar as contas dentro do código C# ela fará chamadas para uma classe [Ruby](http://www.ruby-lang.org/pt/) que conterá os métodos para cada uma das operações.Desta forma poderemos alterar o método no arquivo Ruby e pronto, nosso sistema está com um novo comportamento, sem deploy, sem recompilações, etc.Vamos ao código:
+![](http://viniciusquaiato.com/images_posts/ruby-299x300.png "ruby")Que tal escrever um sistema em C#, com todas suas classes, camada de persistência, interface, etc e ainda assim permitir de uma maneira fácil escrever "plugins" e scripts que alterem alguns comportamentos do sistema? Pense que existe um ponto no seu sistema que pode sofrer constantes mudanças de regra: o cálculo de um desconto, o cálculo de um imposto, uma série de ações que podem ser feitas antes ou depois de alguma operação, etc. O esforço de alteração, build e deploy é tão grande que sentimos a necessidade de tornar nosso sistema mais maleável, e pronto para estas mudanças. Queremos que o usuário do sistema possa fazer isso sem ter de contar com mais desenvolvimento, build, deploy, etc. Neste primeiro artigo criarei uma simples calculadora em C#, só que ao invés de efetuar as contas dentro do código C# ela fará chamadas para uma classe [Ruby](http://www.ruby-lang.org/pt/) que conterá os métodos para cada uma das operações.Desta forma poderemos alterar o método no arquivo Ruby e pronto, nosso sistema está com um novo comportamento, sem deploy, sem recompilações, etc. Vamos ao código:
 {% highlight csharp %}
 
 public 
@@ -52,7 +51,7 @@ return CreateEngine().Operations.CreateInstance(variable);
 }
 
 {% endhighlight %}
-O que fiz acima foi encapsular a criação de uma engine [IronRuby](http://ironruby.net/), e instanciar uma classe IronRuby. Se você não entendeu nada, leia este post [aqui](http://viniciusquaiato.com/blog/ironruby-rodando-ruby-dentro-do-net/), ele explica exatamente o que foi feito.Agora criarei minha classe Calculadora:
+O que fiz acima foi encapsular a criação de uma engine [IronRuby](http://ironruby.net/), e instanciar uma classe IronRuby. Se você não entendeu nada, leia este post [aqui](http://viniciusquaiato.com/blog/ironruby-rodando-ruby-dentro-do-net/), ele explica exatamente o que foi feito. Agora criarei minha classe Calculadora:
 {% highlight csharp %}
 
 public class Calculadora{    
@@ -105,12 +104,12 @@ return RubyObject.Potencia(num1, num2);
 }
 
 {% endhighlight %}
-Este código é ainda mais simples. Utilizando dynamic obtemos a instância da classe IronRuby e então chamamos os métodos contra este objeto dynamic. Se você não sabe o que [dynamic](http://www.hanselman.com/blog/C4AndTheDynamicKeywordWhirlwindTourAroundNET4AndVisualStudio2010Beta1.aspx) no .NET 4.0 dê uma olhada neste artigos: <a href="http://viniciusquaiato.com/blog/expandoobject-dinamismo-dotnet-4/" target+"_blank">aqui, [aqui](http://viniciusquaiato.com/blog/dynamicobject-dinamismo-no-net-4-0/) e [aqui](http://viniciusquaiato.com/blog/apresentacao-dynamic-types-no-net-4/).Aqui segue a classe Ruby/IronRuby que contém os métodos:
+Este código é ainda mais simples. Utilizando dynamic obtemos a instância da classe IronRuby e então chamamos os métodos contra este objeto dynamic. Se você não sabe o que [dynamic](http://www.hanselman.com/blog/C4AndTheDynamicKeywordWhirlwindTourAroundNET4AndVisualStudio2010Beta1.aspx) no .NET 4. 0 dê uma olhada neste artigos: <a href="http://viniciusquaiato.com/blog/expandoobject-dinamismo-dotnet-4/" target+"_blank">aqui, [aqui](http://viniciusquaiato.com/blog/dynamicobject-dinamismo-no-net-4-0/) e [aqui](http://viniciusquaiato.com/blog/apresentacao-dynamic-types-no-net-4/).Aqui segue a classe Ruby/IronRuby que contém os métodos:
 {% highlight csharp %}
 class Calculadora    def Somar(n1, n2)        n1 + n2    end    def Subtrair(n1, n2)        n1 - n2    end    def Dividir(n1, n2)        n1 / n2    end    def Multiplicar(n1, n2)        n1 * n2    end    def Fatorial(n)
 if(n > 0)            return n * Fatorial(n - 1)        end        return 1    end    def Potencia(n, p)        n**p    endend
 {% endhighlight %}
-Pronto! tudo que precisamos é que o arquivo Calculadora.rb esteja na pasta do nosso projeto(na pasta bin, neste caso).Abaixo segue o código que consome a calculadora, e uma imagem do resultado das operações:
+Pronto! tudo que precisamos é que o arquivo Calculadora. rb esteja na pasta do nosso projeto(na pasta bin, neste caso).Abaixo segue o código que consome a calculadora, e uma imagem do resultado das operações:
 {% highlight csharp %}
 
 static void Main(string[] args){    Console.WriteLine("Somando 2 + 2 = {
@@ -132,7 +131,7 @@ static void Main(string[] args){    Console.WriteLine("Somando 2 + 2 = {
     }
 
 {% endhighlight %}
-Resultado:[caption id="attachment_743" align="alignleft" width="677" caption="C# com Scripts IronRuby"][![C# com Scripts IronRuby](http://viniciusquaiato.com/images_posts/resultado.jpg "C# com Scripts IronRuby")](http://viniciusquaiato.com/images_posts/resultado.jpg)[/caption]Esta é uma situação bastante simples. Experimente alteraro arquivo Calculadora.rb. Troque as operações de Soma por substração, etc. Brinque com a classe Ruby, e abra o programa .exe gerado, para ver que dinamicamente o comportamento dele foi alterado, sem recompilar ou reescrever nada.Em um próximo post, darei um exemplo de como alterar/incrementar regras de negócio de forma dinâmica utilizando script IronRuby.Você pode baixar a solution da calculadora [aqui](http://viniciusquaiato.com/files/codesamples/dynamic/CalculadoraScriptRuby.zip).Qualquer dúvida, sugestão, crítica. Mande e-mail, mensagens no [twitter](http://twitter.com/vquaiato), gtalk, etc.
+Resultado:[caption id="attachment_743" align="alignleft" width="677" caption="C# com Scripts IronRuby"][![C# com Scripts IronRuby](http://viniciusquaiato.com/images_posts/resultado.jpg "C# com Scripts IronRuby")](http://viniciusquaiato.com/images_posts/resultado.jpg)[/caption]Esta é uma situação bastante simples. Experimente alteraro arquivo Calculadora.rb. Troque as operações de Soma por substração, etc. Brinque com a classe Ruby, e abra o programa .exe gerado, para ver que dinamicamente o comportamento dele foi alterado, sem recompilar ou reescrever nada. Em um próximo post, darei um exemplo de como alterar/incrementar regras de negócio de forma dinâmica utilizando script IronRuby. Você pode baixar a solution da calculadora [aqui](http://viniciusquaiato.com/files/codesamples/dynamic/CalculadoraScriptRuby.zip).Qualquer dúvida, sugestão, crítica. Mande e-mail, mensagens no [twitter](http://twitter.com/vquaiato), gtalk, etc.
 
 Att,
 Vinicius Quaiato.

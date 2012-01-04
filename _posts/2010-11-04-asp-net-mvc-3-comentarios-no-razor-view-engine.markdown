@@ -1,20 +1,20 @@
 --- 
 layout: post
-title: "ASP.NET MVC 3: coment\xC3\xA1rios no Razor View Engine"
+title: "ASP. NET MVC 3: coment\xC3\xA1rios no Razor View Engine"
 wordpress_id: 1998
 wordpress_url: http://viniciusquaiato.com/blog/?p=1998
 categories: 
-- title: ASP.NET MVC
+- title: ASP. NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
 - title: Razor
   slug: razor
   autoslug: razor
-- title: ASP.NET MVC 3
+- title: ASP. NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
-- title: ASP.NET MVC 3 Beta
+- title: ASP. NET MVC 3 Beta
   slug: asp-net-mvc-3-beta
   autoslug: asp.net-mvc-3-beta
 ---

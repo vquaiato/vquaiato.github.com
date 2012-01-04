@@ -27,7 +27,7 @@ tags:
   slug: justmock
   autoslug: justmock
 ---
-Estou experimentando o framework de Mocking da Telerik: [JustMock](http://www.telerik.com/products/mocking.aspx).O framework é bastante interessante, simples e fácil de utilizar. Não é verboso e permite fazer coisas como por exemplo mockar propriedades não virtuais (que não é possível com Rhino e Moq), classes sealed, métodos não virtuais, métodos estáticos, classes como DateTime, etc.Aqui fica apenas uma sintaxe e exemplo de uso, futuramente escreverei mais sobre como utilizar e as funcionalidades que ele oferece:
+Estou experimentando o framework de Mocking da Telerik: [JustMock](http://www.telerik.com/products/mocking.aspx).O framework é bastante interessante, simples e fácil de utilizar. Não é verboso e permite fazer coisas como por exemplo mockar propriedades não virtuais (que não é possível com Rhino e Moq), classes sealed, métodos não virtuais, métodos estáticos, classes como DateTime, etc. Aqui fica apenas uma sintaxe e exemplo de uso, futuramente escreverei mais sobre como utilizar e as funcionalidades que ele oferece:
 {% highlight csharp %}
 [TestMethod]
 public void TestMethod1(){

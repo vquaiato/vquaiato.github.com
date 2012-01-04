@@ -1,7 +1,6 @@
 --- 
 layout: post
-title: "Onde est\xC3\xA1 o Quaiato?"
-wordpress_id: 3371
+title: "Onde est\xC3\xA1 o Quaiato? " wordpress_id: 3371
 wordpress_url: http://viniciusquaiato.com/blog/?p=3371
 categories: 
 - title: "[Off - Topic]"
@@ -18,7 +17,7 @@ tags:
   slug: apresentacoes
   autoslug: "apresenta\xC3\xA7\xC3\xB5es"
 ---
-[![](http://viniciusquaiato.com/images_posts/conheca-o-livro-onde-esta-o-wally.jpg "conheca-o-livro-onde-esta-o-wally")](http://viniciusquaiato.com/images_posts/conheca-o-livro-onde-esta-o-wally.jpg)Fala galera, beleza?Bom eu ando um pouco afastado aqui do blog então resolvi mandar notícias de onde estou e por onde estarei.Este post é mais para escrever sobre os meus próximos passos de trabalho com a comunidade e tudo o mais. Eu achei que esse ano passaria em branco, sem dar palestras mas as coisas mudaram.Já se foram: - uma "palestra virtual" no Virtual Developer Day
+[![](http://viniciusquaiato.com/images_posts/conheca-o-livro-onde-esta-o-wally.jpg "conheca-o-livro-onde-esta-o-wally")](http://viniciusquaiato.com/images_posts/conheca-o-livro-onde-esta-o-wally.jpg)Fala galera, beleza? Bom eu ando um pouco afastado aqui do blog então resolvi mandar notícias de onde estou e por onde estarei. Este post é mais para escrever sobre os meus próximos passos de trabalho com a comunidade e tudo o mais. Eu achei que esse ano passaria em branco, sem dar palestras mas as coisas mudaram. Já se foram: - uma "palestra virtual" no Virtual Developer Day
 - 3 apresentações online no MVCSummit (evento que organizei)
 
 
@@ -34,7 +33,7 @@ tags:
 - **10.09.2011** - QConSP (onde sou host da track .NET)
 - **13 e 14.09.2011** - VII Seminário de Computação na UEL/PR
 - **17.09.2011** - DevDay Curtiba
-_**(se eu esqueci algum evento por favor me lembrem, hahaha)**_Eu acho que no momento é isso. Talvez surjam mais eventos vamos ver. Boa parte do meu esforço vai se concentrar na preparação de materiais e organização dos eventos nos quais estou participando.Aos poucos estou retomando o ritmo aqui no blog. Assim que eu estiver com uma descrição mais detalhada sobre os temas de cada palestra eu adiciono aqui, bem como o link para todos os eventos.
+_**(se eu esqueci algum evento por favor me lembrem, hahaha)**_Eu acho que no momento é isso. Talvez surjam mais eventos vamos ver. Boa parte do meu esforço vai se concentrar na preparação de materiais e organização dos eventos nos quais estou participando. Aos poucos estou retomando o ritmo aqui no blog. Assim que eu estiver com uma descrição mais detalhada sobre os temas de cada palestra eu adiciono aqui, bem como o link para todos os eventos.
 
 Abraços,
 Vinicius Quaiato.

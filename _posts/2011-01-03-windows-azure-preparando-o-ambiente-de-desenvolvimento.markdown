@@ -18,7 +18,7 @@ tags:
   slug: ambiente-desenvovlimento-azure
   autoslug: ambiente-desenvovlimento-azure
 ---
-[![](http://viniciusquaiato.com/images_posts/windows-azure-platform-headline.jpg "windows-azure-platform-headline")](http://viniciusquaiato.com/images_posts/windows-azure-platform-headline.jpg)Eu confesso que não tinha muita pretensão de falar sobre [Windows Azure](http://www.microsoft.com/windowsazure/) tão cedo. Realmente acreditei que ele fosse demorar um pouco para bater à porta.Fiz o [QuantoEh](http://viniciusquaiato.com/blog/quantoeh-calculadora-social-via-twitter/) utilizando Azure, mas foi uma brincadeira. Agora é diferente: preciso desenvolver uma aplicação utilizando Azure. Então decidi compartilhar um pouco com vocês essa minha primeira experiência em 2011.Quero compartilhar um pouco dos conceitos, estratégias e claro muito código à medida que eu mesmo for progredindo nos estudos e desenvolvimento. [![](http://viniciusquaiato.com/images_posts/banner_5.jpg "MS0974_Banners_111810")](http://viniciusquaiato.com/images_posts/banner_5.jpg)Para começar então vamos preparar nosso ambiente. Desenvolver para Windows Azure não requer muitas ferramentas e nem muita configuração, é bastante simples.Nos posts que virão vou explicar um pouco o que é e o que pode ser feito com o Windows Azure e então vamos começar a "brincar" de forma prática.
+[![](http://viniciusquaiato.com/images_posts/windows-azure-platform-headline.jpg "windows-azure-platform-headline")](http://viniciusquaiato.com/images_posts/windows-azure-platform-headline.jpg)Eu confesso que não tinha muita pretensão de falar sobre [Windows Azure](http://www.microsoft.com/windowsazure/) tão cedo. Realmente acreditei que ele fosse demorar um pouco para bater à porta. Fiz o [QuantoEh](http://viniciusquaiato.com/blog/quantoeh-calculadora-social-via-twitter/) utilizando Azure, mas foi uma brincadeira. Agora é diferente: preciso desenvolver uma aplicação utilizando Azure. Então decidi compartilhar um pouco com vocês essa minha primeira experiência em 2011. Quero compartilhar um pouco dos conceitos, estratégias e claro muito código à medida que eu mesmo for progredindo nos estudos e desenvolvimento. [![](http://viniciusquaiato.com/images_posts/banner_5.jpg "MS0974_Banners_111810")](http://viniciusquaiato.com/images_posts/banner_5.jpg)Para começar então vamos preparar nosso ambiente. Desenvolver para Windows Azure não requer muitas ferramentas e nem muita configuração, é bastante simples. Nos posts que virão vou explicar um pouco o que é e o que pode ser feito com o Windows Azure e então vamos começar a "brincar" de forma prática.
 
 ### Instalando as ferramentas de desenvolvimento do Windows Azure
 Antes de instalarmos as ferramentas de desenvolvimento do Windows Azure precisamos instalar alguns pré-requisitos para que tudo funcione corretamente. 
@@ -35,13 +35,13 @@ O [atual release do Windows Azure](http://msdn.microsoft.com/en-us/windowsazure/
 
 ##
 
-## Internet Information Services 7.0
-É necessário ter instalado e habilitado o IIS 7.0 ou superior com suporte para ASP.NET.[Confira aqui como habilitar o IIS 7](http://msdn.microsoft.com/en-us/library/gg465715.aspx#IIS).
+## Internet Information Services 7. 0 
+É necessário ter instalado e habilitado o IIS 7. 0 ou superior com suporte para ASP.NET.[Confira aqui como habilitar o IIS 7](http://msdn.microsoft.com/en-us/library/gg465715.aspx#IIS).
 
 ##
 
 ## Azure Tools & SDK for Visual Studio
-Agora vamos instalar as ferramentas do Azure para trabalharmos com Visual Studio e o SDK do Windows Azure.Faça o download direto [neste link aqui](http://care.dlservice.microsoft.com/dd/download/3/3/2/3321A9FA-64C3-463F-981A-4E17FC29B15B/VSCloudService.exe?lcid=1033&cprod=azurepd).Estas ferramentas instalarão os templates de projetos e outras tools necessárias ao desenvolvimento de aplicações para o Windows Azure utilizando o Visual Studio e também instalarão o SDK do Windows Azure.No momento é tudo que precisamos.
+Agora vamos instalar as ferramentas do Azure para trabalharmos com Visual Studio e o SDK do Windows Azure.Faça o download direto [neste link aqui](http://care.dlservice.microsoft.com/dd/download/3/3/2/3321A9FA-64C3-463F-981A-4E17FC29B15B/VSCloudService.exe?lcid=1033&cprod=azurepd).Estas ferramentas instalarão os templates de projetos e outras tools necessárias ao desenvolvimento de aplicações para o Windows Azure utilizando o Visual Studio e também instalarão o SDK do Windows Azure. No momento é tudo que precisamos.
 
 ##
 

@@ -4,10 +4,8 @@ title: Trabalhando com valores via POST no Nancy
 wordpress_id: 3287
 wordpress_url: http://viniciusquaiato.com/blog/?p=3287
 categories: 
-- title: ASP.NET
-  slug: asp-net-dotnet
-  autoslug: asp.net
-tags: 
+- title: ASP. NET   slug: asp-net-dotnet
+  autoslug: asp. net tags: 
 - title: Nancy
   slug: nancy
   autoslug: nancy

@@ -1,7 +1,6 @@
 --- 
 layout: post
-title: "Minicurso Testes em .NET na Globalcode: gratuito!"
-wordpress_id: 1944
+title: "Minicurso Testes em .NET na Globalcode: gratuito! " wordpress_id: 1944
 wordpress_url: http://viniciusquaiato.com/blog/?p=1944
 categories: 
 - title: TDD

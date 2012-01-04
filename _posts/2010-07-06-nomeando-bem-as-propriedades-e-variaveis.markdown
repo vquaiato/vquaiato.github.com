@@ -24,14 +24,14 @@ tags:
   slug: propriedades
   autoslug: propriedades
 ---
-[![](http://viniciusquaiato.com/images_posts/060babyL_468x523-268x300.jpg "Você vai me chamar de que?!")](http://viniciusquaiato.com/images_posts/060babyL_468x523.jpg)Engraçado, comecei a escrever esta série antes mesmo de comprar o livro [Clean Code](http://viniciusquaiato.com/blog/dica-de-leitura-clean-code/). E algumas das minhas certezas sobre o que é um bom código, agora estão um pouco mais embasadas na opinião e experiência de diversos profissionais.Uma das primeiras coisas que "aprendemos" quando começamos a programar é o "quão legal é brincar com o nome das variáveis".Eu fiz um curso técnico há 4 anos, e achava o máximo chamar minhas variáveis em C++ com os nomes mais bizarros. Tinha um amigo que fazia coisas como:
+[![](http://viniciusquaiato.com/images_posts/060babyL_468x523-268x300.jpg "Você vai me chamar de que?!")](http://viniciusquaiato.com/images_posts/060babyL_468x523.jpg)Engraçado, comecei a escrever esta série antes mesmo de comprar o livro [Clean Code](http://viniciusquaiato.com/blog/dica-de-leitura-clean-code/). E algumas das minhas certezas sobre o que é um bom código, agora estão um pouco mais embasadas na opinião e experiência de diversos profissionais. Uma das primeiras coisas que "aprendemos" quando começamos a programar é o "quão legal é brincar com o nome das variáveis". Eu fiz um curso técnico há 4 anos, e achava o máximo chamar minhas variáveis em C++ com os nomes mais bizarros. Tinha um amigo que fazia coisas como:
 {% highlight csharp %}
 int bozo;
     char vovo_mafalda;
     float chapeuzinho_vermelho;
     
 {% endhighlight %}
-E o mais engraçado é que hoje em dia eu vejo ainda coisas parecidas com isso. Claro que são nomes 'engraçados', mas também são extremamente perigosos.As variáveis, ao meu ver, são pequenas peças no quebra-cabeça de um sistema. Quando juntamos e encaixamos várias peças começamos a visualizar o sistema. Agora quando estes nomes não nos dizem nada é como montar o quebra-cabeças olhando o verso das peças.Eu tenho utilizado para minhas propriedades e variáveis internas o mesmo padrão, desta forma as "dicas" aqui contidas valem para ambas.
+E o mais engraçado é que hoje em dia eu vejo ainda coisas parecidas com isso. Claro que são nomes 'engraçados', mas também são extremamente perigosos. As variáveis, ao meu ver, são pequenas peças no quebra-cabeça de um sistema. Quando juntamos e encaixamos várias peças começamos a visualizar o sistema. Agora quando estes nomes não nos dizem nada é como montar o quebra-cabeças olhando o verso das peças.Eu tenho utilizado para minhas propriedades e variáveis internas o mesmo padrão, desta forma as "dicas" aqui contidas valem para ambas.
 
 ### Dê preferência para nomes completos
 Vejamos abaixo. O código é simples, mas poderia ser melhor. Quando estas variáveis estiverem dentro de métodos, o entendimento vai começar a ficar complicado. Será necessário maior esforço em sua tradução, afinal sabemos que nomeEmpr é na verdade nomeEmpresa e razSoc é na verdade razaoSocial, mas quando isso se mistura com várias outras linhas de código, a compreensão começa a ficar comprometida, a visualização já não é tão clara e simples.
@@ -70,7 +70,7 @@ if(flag)    {        //faz alguma coisa    }
 O conceito da flag é importante e bastante utilizado, no entando não precisamos chamar a variável de flag. O que esta flag significa? Qual informação ela contém? É bastante complicado entender isso. Neste caso seria muito simples para quem lê o código se a flag se chamasse "NemTodosProdutosEmEstoque".
 
 ### Evite nomes de uma letra
-O único caso em que acho válido utilizar variáveis de uma letra é em laços for, e ainda assim tenho evitado usar em algumas situações. Fora destes casos acho completamente inválido, perigoso e nociso.Há alguns meses peguei um código como o abaixo:
+O único caso em que acho válido utilizar variáveis de uma letra é em laços for, e ainda assim tenho evitado usar em algumas situações. Fora destes casos acho completamente inválido, perigoso e nociso. Há alguns meses peguei um código como o abaixo:
 {% highlight csharp %}
 int a,b;
 int c,d;
@@ -90,7 +90,7 @@ string nome = arquivo.FileName;
     }
 
 {% endhighlight %}
-Não estou dizendo que o código acima está correto, etc. Apenas quero atentar ao fato de uma mesma variável estar sendo usada em vários lugares. Na verdade não vejo problemas nisso, vejo problemas no fato de que ela significa coisas diferentes em cada lugar.Primeiro ela é o nome completo do arquivo postado. Depois ela é apenas a última parte do nome do arquivo. E depois é o novo nome do arquivo.Não é difícil ver isso acontecer em vários métodos.Eu transformaria o código desta forma:
+Não estou dizendo que o código acima está correto, etc. Apenas quero atentar ao fato de uma mesma variável estar sendo usada em vários lugares. Na verdade não vejo problemas nisso, vejo problemas no fato de que ela significa coisas diferentes em cada lugar. Primeiro ela é o nome completo do arquivo postado. Depois ela é apenas a última parte do nome do arquivo. E depois é o novo nome do arquivo.Não é difícil ver isso acontecer em vários métodos. Eu transformaria o código desta forma:
 {% highlight csharp %}
 void SalvarArquivo(HttpPostedFile arquivo, string nomeArquivo){
 string nomeCompletoArquivoPostado = arquivo.FileName;

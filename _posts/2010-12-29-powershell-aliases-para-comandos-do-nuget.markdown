@@ -29,7 +29,7 @@ Então por exemplo, se quero definir um alias para o comando [Test-Path](http://
 {% highlight csharp %}
 Set-Alias tp Test-Path
 {% endhighlight %}
-Pronto, agora podemos usar o alias tp ao invés de digitar Test-Path.Com o console do [NuGet](http://nuget.codeplex.com) podemos fazer a mesma coisa. O problema é que os aliases vão existir enquanto o powershell estiver aberto.Para manter manter o alias sempre que fecharmos e abrirmos o Powershell precisamos alterar o profile do Powershell (aqui vai um muito obrigado à [Sara Barbosa](http://sarajbarbosa.wordpress.com/) [[@Sarabarbosa](http://twitter.com/Sarabarbosa)]que é uma IT pro sabida dessas coisas).Vamos abrir o Visual Studio e o Package Manager Console. Este console é um console Powershell.Vamos então abrir o profile dele:
+Pronto, agora podemos usar o alias tp ao invés de digitar Test-Path.Com o console do [NuGet](http://nuget.codeplex.com) podemos fazer a mesma coisa. O problema é que os aliases vão existir enquanto o powershell estiver aberto. Para manter manter o alias sempre que fecharmos e abrirmos o Powershell precisamos alterar o profile do Powershell (aqui vai um muito obrigado à [Sara Barbosa](http://sarajbarbosa.wordpress.com/) [[@Sarabarbosa](http://twitter.com/Sarabarbosa)]que é uma IT pro sabida dessas coisas).Vamos abrir o Visual Studio e o Package Manager Console. Este console é um console Powershell. Vamos então abrir o profile dele:
 {% highlight csharp %}
 notepad $profile
 {% endhighlight %}

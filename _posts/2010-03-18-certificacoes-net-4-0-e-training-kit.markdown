@@ -1,14 +1,13 @@
 --- 
 layout: post
-title: "Certifica\xC3\xA7\xC3\xB5es .NET 4.0 e Training Kit"
+title: "Certifica\xC3\xA7\xC3\xB5es .NET 4. 0 e Training Kit"
 wordpress_id: 700
 wordpress_url: http://viniciusquaiato.com/blog/?p=700
 categories: 
 - title: Visual Studio 2010
   slug: visual-studio-2010
   autoslug: visual-studio-2010
-- title: .NET 4.0
-  slug: net-4-0
+- title: .NET 4. 0   slug: net-4-0
   autoslug: .net-4.0
 tags: 
 - title: "Certifica\xC3\xA7\xC3\xB5es"
@@ -25,7 +24,7 @@ Fala galera! A Microsoft liberou as provas beta para certificações do .NET 4.0
     &nbsp;
     &nbsp;
     &nbsp;
-    </th><th>PromoCode</th></thead><tbody><tr><td>71-511</td><td>511BC</td></tr><tr><td>71-515</td><td>515AA</td></tr><tr><td>71-513</td><td>513CD</td></tr><tr><td>71-516</td><td>516B1</td></tr><tr><td>71-518</td><td>518PE</td></tr><tr><td>71-519</td><td>519ZS</td></tr></tbody></table>Você pode marcar os exames diretamente no site da Prometric - [http://prometric.com](http://prometric.com).A Microsoft também disponibiliza um guia de estudos para o .NET 4.0 que pode ser baixado [aqui](http://www.microsoft.com/downloads/details.aspx?FamilyID=752CB725-969B-4732-A383-ED5740F02E93&displaylang=en).Este material possui uma série de informações como vídeos, ppts, demos, etc, sobre as novidades do Visual Studio 2010 e o .NET Framework 4.0.Marquem suas provas, estudem, e certifiquem-se!
+    </th><th>PromoCode</th></thead><tbody><tr><td>71-511</td><td>511BC</td></tr><tr><td>71-515</td><td>515AA</td></tr><tr><td>71-513</td><td>513CD</td></tr><tr><td>71-516</td><td>516B1</td></tr><tr><td>71-518</td><td>518PE</td></tr><tr><td>71-519</td><td>519ZS</td></tr></tbody></table>Você pode marcar os exames diretamente no site da Prometric - [http://prometric.com](http://prometric.com).A Microsoft também disponibiliza um guia de estudos para o .NET 4. 0 que pode ser baixado [aqui](http://www.microsoft.com/downloads/details.aspx?FamilyID=752CB725-969B-4732-A383-ED5740F02E93&displaylang=en).Este material possui uma série de informações como vídeos, ppts, demos, etc, sobre as novidades do Visual Studio 2010 e o .NET Framework 4.0.Marquem suas provas, estudem, e certifiquem-se!
 
 Att,
 Vinicius Quaiato.

@@ -1,7 +1,6 @@
 --- 
 layout: post
-title: "RubyConf 2010: eu vou!"
-wordpress_id: 1927
+title: "RubyConf 2010: eu vou! " wordpress_id: 1927
 wordpress_url: http://viniciusquaiato.com/blog/?p=1927
 categories: 
 - title: IronRuby

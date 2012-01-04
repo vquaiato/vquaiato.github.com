@@ -27,7 +27,7 @@ tags:
   slug: addrange
   autoslug: addrange
 ---
-Uma amiga ([@lekaverta](http://twitter.com/lekaverta)) me perguntou se havia uma maneira simples, em C#, de juntar o conteúdo de duas List<t> sem ficar fazendo foreach.Existem pelo menos umas três formas de fazer isso com pouco código, vamos ver alguns desses exemplos simples.
+Uma amiga ([@lekaverta](http://twitter.com/lekaverta)) me perguntou se havia uma maneira simples, em C#, de juntar o conteúdo de duas List<t> sem ficar fazendo foreach. Existem pelo menos umas três formas de fazer isso com pouco código, vamos ver alguns desses exemplos simples.
 
 ### Juntando duas List com AddRange
 
@@ -43,7 +43,7 @@ var lista2 = new List<string> { "e", "d", "f" }
     }
 </string></string>
 {% endhighlight %}
-Acima adicionamos a lista2 inteira dentro da lista1. Nos certificamos disso na linha 9, verificando que a lista2 é um subset da lista1, ou seja, a lista1 contém a lista2.Notem que AddRange é um membro da classe List<t> e não da interface IList<t>.
+Acima adicionamos a lista2 inteira dentro da lista1. Nos certificamos disso na linha 9, verificando que a lista2 é um subset da lista1, ou seja, a lista1 contém a lista2. Notem que AddRange é um membro da classe List<t> e não da interface IList<t>.
 
 ### Juntando duas List com Union
 

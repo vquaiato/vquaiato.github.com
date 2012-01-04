@@ -1,17 +1,17 @@
 --- 
 layout: post
-title: "ASP.NET MVC + Jquery: submit form ass\xC3\xADncrono"
+title: "ASP. NET MVC + Jquery: submit form ass\xC3\xADncrono"
 wordpress_id: 2311
 wordpress_url: http://viniciusquaiato.com/blog/?p=2311
 categories: 
-- title: ASP.NET MVC
+- title: ASP. NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
 - title: JQuery
   slug: jquery
   autoslug: jquery
-- title: ASP.NET MVC
+- title: ASP. NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 - title: MVC + Jquery
@@ -43,7 +43,7 @@ if(retorno.Ok) {                alert("Ok!");
 );
     
 {% endhighlight %}
-A mágica é que atachamos um evento submit ao formulário, **_linha 2_**. Na **_linha 3_** cancelamos o evento que normalmente seria disparado pelo input submit.Na **_linha 5_** tudo o que fazemos é uma requisição [post](http://api.jquery.com/jQuery.post/). Vejam como não utilizamos "magic strings" para os parâmetros da chamada post. Ao invés disso utilizamos os próprios valores já definidos no form: sua action, serializamos os campos como parâmetros da requisição.Pronto! Simples assim. Na action no servidor eu optei por trabalhar com o request mesmo:
+A mágica é que atachamos um evento submit ao formulário, **_linha 2_**. Na **_linha 3_** cancelamos o evento que normalmente seria disparado pelo input submit. Na **_linha 5_** tudo o que fazemos é uma requisição [post](http://api.jquery.com/jQuery.post/). Vejam como não utilizamos "magic strings" para os parâmetros da chamada post. Ao invés disso utilizamos os próprios valores já definidos no form: sua action, serializamos os campos como parâmetros da requisição.Pronto! Simples assim. Na action no servidor eu optei por trabalhar com o request mesmo:
 {% highlight csharp %}
 
 public ActionResult Cadastrar(){

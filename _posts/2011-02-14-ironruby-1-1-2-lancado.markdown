@@ -15,7 +15,7 @@ tags:
   slug: ironruby-1-1-2
   autoslug: ironruby-1.1.2
 ---
-Dia 07/02/2011 foi liberada a versão 1.1.2 do [IronRuby](http://ironruby.net/). Esta versão traz algumas melhorias e correções de bugs.Podemos conferir abaixo alguns destes itens, conforme detalhados no site do [IronRuby no Codeplex](http://ironruby.codeplex.com/):
+Dia 07/02/2011 foi liberada a versão 1.1.2 do [IronRuby](http://ironruby.net/). Esta versão traz algumas melhorias e correções de bugs. Podemos conferir abaixo alguns destes itens, conforme detalhados no site do [IronRuby no Codeplex](http://ironruby.codeplex.com/):
 
 ### Major Issues
 - problems that blocked Gem installation in certain cases
@@ -33,7 +33,7 @@ Dia 07/02/2011 foi liberada a versão 1.1.2 do [IronRuby](http://ironruby.net/).
 - 4132CLR strings are not the same as IronRuby strings as far as a Hash is concerned
 - 5572Exception while compiling rbconfig
 - 5050Implement String#encode (for JSON support)
-- 4356irw.exe
+- 4356irw. exe 
 - 5144Regex: Nested quantifier
 - 4433WP7 support
 - 5117Regexp not compat with MRI (failing REXML specs)
