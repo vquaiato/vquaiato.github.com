@@ -2781,7 +2781,7 @@ var ThemeAjax = {
 <li><a href="http://viniciusquaiato.com/blog/efeito-borboleta-e-o-software/" rel="bookmark" title="19/07/2010">Efeito Borboleta e o Software</a></li>
 
 <li><a href="http://viniciusquaiato.com/blog/asp-net-mvc-submit-com-ou-sem-ajax/" rel="bookmark" title="18/12/2010">ASP.NET MVC form submit com ou sem Ajax</a></li>
-</ul><!-- popular Posts took 8.712 ms --></li><li class="widget"><h4 class="widgettitle ">Tags</h4><div class="tagcloud"><a href='http://viniciusquaiato.com/blog/tag/net-4-0/' class='tag-link-36' title='15 topics' style='font-size: 15.945945945946pt;'>.NET 4.0</a>
+</ul><!-- popular Posts took 16.921 ms --></li><li class="widget"><h4 class="widgettitle ">Tags</h4><div class="tagcloud"><a href='http://viniciusquaiato.com/blog/tag/net-4-0/' class='tag-link-36' title='15 topics' style='font-size: 15.945945945946pt;'>.NET 4.0</a>
 <a href='http://viniciusquaiato.com/blog/tag/net-architects/' class='tag-link-20' title='13 topics' style='font-size: 15pt;'>.Net Architects</a>
 <a href='http://viniciusquaiato.com/blog/tag/net-magazine/' class='tag-link-43' title='7 topics' style='font-size: 10.27027027027pt;'>.NET Magazine</a>
 <a href='http://viniciusquaiato.com/blog/tag/ajax/' class='tag-link-47' title='10 topics' style='font-size: 12.918918918919pt;'>Ajax</a>
