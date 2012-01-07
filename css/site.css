@@ -1,7 +1,7 @@
 body{
 	background: url(/images/bg.png);
 	color: #333;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
 ul{
 	margin:0;
@@ -11,19 +11,22 @@ ul li{
 	list-style-type:none;
 }
 h2, h3 {
-	text-shadow: 1px 1px 1px #ababab;
+	text-shadow: 1px 1px 1px #CCC;
 }
 blockquote{
 	border-left: solid 4px #666;
 	padding-left: 5px;
 }
+hr {
+	margin-top: -15px;
+}
 section#title{
 	text-align: center;
 }
 h1.title, h1.title a, h1.title a:visited{
-	font-family: 'Open Sans', sans-serif;
+	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 	font-size:64px;
-	text-shadow: 2px 2px 2px #ababab;
+	text-shadow: 2px 2px 2px #ddd;
 	color:#333;
 	text-decoration:none;
 }
@@ -50,16 +53,16 @@ ul.posts li a, ul.posts li a:visited{
 ul.posts li p{
 	margin: 5px 0;
 	font-size: 20px;
-	text-shadow: 1px 1px 1px #ababab;
+	text-shadow: 1px 1px 1px #CCC;
 }
 ul.posts li p span.date{
 	color:#3168B3;
 }
 
 h2.post_title{
-	color:#3168B3;
-	text-shadow: 1px 1px 1px #ababab;
-	letter-spacing:1px;
+	color: #3168B3;
+	text-shadow: 1px 1px 1px #CCC;
+	font-size: 28px;
 }
 
 /*LISTA CATEGORIAS HOME*/
@@ -73,7 +76,6 @@ div#categories{
 	float:left;
 	width:170px;
 	margin-left:50px;
-	/*border:solid 1px red;*/
 }
 div#categories a, div#categories a:visited{
 	color:#333;
@@ -84,14 +86,10 @@ div#categories a, div#categories a:visited{
 div#post{
 	margin-bottom:30px;
 }
-/*div#post p{
-	margin-top: -10px;
-}*/
 div#post p.post-date{
-	margin-top:-10px;
-}
-div#post p span.date{
-	text-shadow: 1px 1px 1px #ababab;
+	margin: -5px 0 25px 0;
+	letter-spacing: 1px;
+	font-size: 11px;
 }
 
 /*FOOTER*/
