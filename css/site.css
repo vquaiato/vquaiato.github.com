@@ -16,6 +16,7 @@ h2, h3 {
 blockquote{
 	border-left: solid 4px #666;
 	padding-left: 5px;
+	font-style: italic;
 }
 hr {
 	margin-top: -15px;
