@@ -1,3 +1,0 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head xmlns="http://www.w3.org/1999/xhtml"><title>Object moved</title></head><body>
-<h2>Object moved to <a href="/Areas/Brand/Content/500.htm?aspxerrorpath=/en-us/library/system.n">here</a>.</h2>
-</body></html>
