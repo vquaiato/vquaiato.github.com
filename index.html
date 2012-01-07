@@ -6,7 +6,7 @@ title: Vinicius Quaiato
 {% assign p = site.posts.first %}
 <div id="post">
   <h2 class="post_title">{{ p.title}}</h2>
-  <p><span class="date">{{ p.date | date: "%d/%m/%Y" }}</span></p>
+  <p class="post-date"><span class="date">{{ p.date | date: "%d/%m/%Y" }}</span></p>
   <p><hr></p>
   {{ p.content }}
 </div>

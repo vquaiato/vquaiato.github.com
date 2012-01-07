@@ -1,6 +1,7 @@
 --- 
 layout: post
-title: "ALM Summit Brasil: voc\xC3\xAA vai perder? " wordpress_id: 2195
+title: "ALM Summit Brasil: voc\xC3\xAA vai perder?"
+wordpress_id: 2195
 wordpress_url: http://viniciusquaiato.com/blog/?p=2195
 categories: 
 - title: .NET

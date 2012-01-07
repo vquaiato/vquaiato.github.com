@@ -1,17 +1,17 @@
 --- 
 layout: post
-title: Html. LabelFor e Html. LabelForModel no ASP. NET MVC 3
+title: Html.LabelFor e Html.LabelForModel no ASP.NET MVC 3
 wordpress_id: 2161
 wordpress_url: http://viniciusquaiato.com/blog/?p=2161
 categories: 
-- title: ASP. NET MVC
+- title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
-- title: ASP. NET MVC
+- title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: ASP. NET MVC 3
+- title: ASP.NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
 - title: MVC 3
@@ -24,7 +24,7 @@ tags:
   slug: labelformodel
   autoslug: labelformodel
 ---
-Fala galera, só um "quick update" básico sobre [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3).Antes nossa única opção para trabalhar com Html. LabelFor era:
+Fala galera, só um "quick update" básico sobre [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3).Antes nossa única opção para trabalhar com Html.LabelFor era:
 {% highlight csharp %}
 @Html.LabelFor(m => m.Propriedade)
 {% endhighlight %}
@@ -40,7 +40,7 @@ E para o model:
 {% highlight csharp %}
 @Html.LabelForModel("Nome do Model")
 {% endhighlight %}
-Ficou mais simples e interessante. Ainda é possível fazer da maneira antiga, entenda qual é a melhor para você. Sem dúvidas, o ASP. NET MVC 3 está muito bom.
+Ficou mais simples e interessante.Ainda é possível fazer da maneira antiga, entenda qual é a melhor para você.Sem dúvidas, o ASP.NET MVC 3 está muito bom.
 
 Abraços,
 Vinicius Quaiato.

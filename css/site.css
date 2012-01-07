@@ -61,6 +61,7 @@ h2.post_title{
 	text-shadow: 1px 1px 1px #ababab;
 	letter-spacing:1px;
 }
+
 /*LISTA CATEGORIAS HOME*/
 div#categories ul {
 	padding-top:20px;
@@ -83,8 +84,11 @@ div#categories a, div#categories a:visited{
 div#post{
 	margin-bottom:30px;
 }
-div#post p{
+/*div#post p{
 	margin-top: -10px;
+}*/
+div#post p.post_date{
+	margin-top:-10px;
 }
 div#post p span.date{
 	text-shadow: 1px 1px 1px #ababab;

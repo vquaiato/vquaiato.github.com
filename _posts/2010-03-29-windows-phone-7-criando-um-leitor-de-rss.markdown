@@ -30,7 +30,15 @@ tags:
   slug: wp7
   autoslug: wp7
 ---
-Fala galera! Vamos criar agora nossa primeira aplicação em [Windows Phone 7](http://www.windowsphone7series.com/).Faremos um simples leitor de RSS exibindo as novidades no emulador do Windows Phone 7. Se você ainda não instalou o que é necessário, veja este post: [Preparando o ambiente para desenvolver para Windows Phone 7](http://viniciusquaiato.com/blog/windows-phone-7-preparando-ambiente-para-desenvolver/).Vamos lá o resultado final do nosso aplicativo será este:[caption id="attachment_782" align="aligncenter" width="155" caption="Windows Phone 7 - Feed Reader"][![Windows Phone 7 - Feed Reader](http://viniciusquaiato.com/images_posts/Final-155x300.jpg "Windows Phone 7 - Feed Reader")](http://viniciusquaiato.com/images_posts/Final.jpg)[/caption]Vamos começar criando uma aplicação para Windows Phone 7 no [Visual Studio 2010 Express](http://developer.windowsphone.com/windows-phone-7-series/):[caption id="attachment_778" align="aligncenter" width="300" caption="Criando projeto para Windows Phone 7"][![Criando projeto para Windows Phone 7](http://viniciusquaiato.com/images_posts/Criando-projeto-300x190.jpg "Criando projeto para Windows Phone 7")](http://viniciusquaiato.com/images_posts/Criando-projeto.jpg)[/caption]Nossa tela será a tela do Windows Phone 7. Vamos então abrir o código XAML e substituir todo código por este:
+
+
+Fala galera! Vamos criar agora nossa primeira aplicação em [Windows Phone 7](http://www.windowsphone7series.com/).Faremos um simples leitor de RSS exibindo as novidades no emulador do Windows Phone 7.Se você ainda não instalou o que é necessário, veja este post: [Preparando o ambiente para desenvolver para Windows Phone 7](http://viniciusquaiato.com/blog/windows-phone-7-preparando-ambiente-para-desenvolver/).Vamos lá o resultado final do nosso aplicativo será este:[![Windows Phone 7 - Feed Reader](http://viniciusquaiato.com/images_posts/Final-155x300.jpg "Windows Phone 7 - Feed Reader")](http://viniciusquaiato.com/images_posts/Final.jpg)
+
+
+
+Vamos começar criando uma aplicação para Windows Phone 7 no [Visual Studio 2010 Express](http://developer.windowsphone.com/windows-phone-7-series/):[![Criando projeto para Windows Phone 7](http://viniciusquaiato.com/images_posts/Criando-projeto-300x190.jpg "Criando projeto para Windows Phone 7")](http://viniciusquaiato.com/images_posts/Criando-projeto.jpg)
+
+Nossa tela será a tela do Windows Phone 7. Vamos então abrir o código XAML e substituir todo código por este:
 {% highlight csharp %}
 <phonenavigation:phoneapplicationpage x:class="PrimeiroWP7App.MainPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:phonenavigation="clr-namespace:Microsoft.Phone.Controls;
     assembly=Microsoft.Phone.Controls.Navigation" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:ignorable="d" d:designwidth="480" d:designheight="800" fontfamily="{
@@ -51,19 +59,19 @@ inding Title}
 inding Resumo}
 " textwrapping="Wrap" fontsize="18" />                            </stackpanel>                        </datatemplate>                    </listbox.itemtemplate>                </listbox>            </stackpanel>        </grid>    
 {% endhighlight %}
-Eu não sou especialista em XAML, nem de longe, então talvez eu esteja cometendo alguns erros e algumas "gafes", sintam-se à vontade para me corrigir. O código acima não tem nada específico. Não vou detalhar pois não é o escopo deste post explicar como trabalhar com XAML. Talvez a única diferença esteja na **_linha 1_** onde é criada uma phoneNavigation:PhoneApplicationPage. Como o Visual Studio cria isso automaticamente, não vamos nos preocupar. Agora vamos para o código C#, presisone F7 para ir para o codebehinde, e então digite o seguinte código:
+Eu não sou especialista em XAML, nem de longe, então talvez eu esteja cometendo alguns erros e algumas "gafes", sintam-se à vontade para me corrigir.O código acima não tem nada específico. Não vou detalhar pois não é o escopo deste post explicar como trabalhar com XAML. Talvez a única diferença esteja na **_linha 1_** onde é criada uma phoneNavigation:PhoneApplicationPage. Como o Visual Studio cria isso automaticamente, não vamos nos preocupar.Agora vamos para o código C#, presisone F7 para ir para o codebehinde, e então digite o seguinte código:
 {% highlight csharp %}
 
 public partial class MainPage : PhoneApplicationPage{    
 
 public MainPage()    {        InitializeComponent();
-    SupportedOrientations = SupportedPageOrientation. Portrait | SupportedPageOrientation.Landscape;
+    SupportedOrientations = SupportedPageOrientation.Portrait | SupportedPageOrientation.Landscape;
     }
     
 private void Button_Click(object sender, RoutedEventArgs e)    {
-var uri = new Uri(                            this.txtUrl.Text == string. Empty ?                            @"http://viniciusquaiato.com/blog/rss" :                            this.txtUrl.Text);
+var uri = new Uri(                            this.txtUrl.Text == string.Empty ?                            @"http://viniciusquaiato.com/blog/rss" :                            this.txtUrl.Text);
     WebClient client = new WebClient();
-    client. DownloadStringCompleted += new DownloadStringCompletedEventHandler(client_DownloadStringCompleted);
+    client.DownloadStringCompleted += new DownloadStringCompletedEventHandler(client_DownloadStringCompleted);
     client.DownloadStringAsync(uri);
     }
 void client_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)    {
@@ -89,7 +97,7 @@ public string Resumo { get;
 }
 
 {% endhighlight %}
-Na listagem acima também não existe nenhum código específico do Windows Phone 7. É exatamente o mesmo código que você usaria para qualquer outra aplicação Silverlight. Tudo que fazemos é uma requisição para a url informada e então utilizando o LinqToXml selecionamos os itens do feed e fazemos o bind no nosso listbox. Criei uma classe auxiliar para trabalhar com essas informações, contendo apenas 2 propriedades.É isso! É realmente simples trabalhar com o Windows Phone 7. Exatamente o mesmo Silverlight que você executa no browser é o Silverlight que você executa no dispositivo. Agora basta pressionar F5 e aguardar o emulador do dispositivo inicializar. digite uma URL válida que retorne um RSS e então os dados serão exibidos. Se você possuir uma tela touchscreen poderá tocar na tela do emulador, como se estivesse realmente utilizando o dispositivo. É um nível de experiência bem rica e interativa. A solução completa pode ser baixada [aqui](http://viniciusquaiato.com/files/codesamples/WindowsPhone7/RSSWindowsPhone7.zip).Qualquer dúvida estou às ordens pessoal. Já estou montando mais projetos e posts sobre o Windows Phone 7 e possivelmente montarei um screencast para mostrar alguma coisa.
+Na listagem acima também não existe nenhum código específico do Windows Phone 7. É exatamente o mesmo código que você usaria para qualquer outra aplicação Silverlight. Tudo que fazemos é uma requisição para a url informada e então utilizando o LinqToXml selecionamos os itens do feed e fazemos o bind no nosso listbox.Criei uma classe auxiliar para trabalhar com essas informações, contendo apenas 2 propriedades.É isso! É realmente simples trabalhar com o Windows Phone 7. Exatamente o mesmo Silverlight que você executa no browser é o Silverlight que você executa no dispositivo.Agora basta pressionar F5 e aguardar o emulador do dispositivo inicializar.digite uma URL válida que retorne um RSS e então os dados serão exibidos.Se você possuir uma tela touchscreen poderá tocar na tela do emulador, como se estivesse realmente utilizando o dispositivo. É um nível de experiência bem rica e interativa.A solução completa pode ser baixada [aqui](http://viniciusquaiato.com/files/codesamples/WindowsPhone7/RSSWindowsPhone7.zip).Qualquer dúvida estou às ordens pessoal. Já estou montando mais projetos e posts sobre o Windows Phone 7 e possivelmente montarei um screencast para mostrar alguma coisa.
 
 Att,
 Vinicius Quaiato.

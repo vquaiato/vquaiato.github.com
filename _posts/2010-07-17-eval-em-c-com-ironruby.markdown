@@ -4,7 +4,8 @@ title: Eval em C# com IronRuby
 wordpress_id: 1346
 wordpress_url: http://viniciusquaiato.com/blog/?p=1346
 categories: 
-- title: .NET 4. 0   slug: net-4-0
+- title: .NET 4.0
+  slug: net-4-0
   autoslug: .net-4.0
 - title: IronRuby
   slug: ironruby
@@ -45,7 +46,7 @@ return CreateEngine().CreateScriptSourceFromString(script).Execute();
 }
 
 {% endhighlight %}
-Simples não?! Seguem alguns testes e um método Eval que criei pra facilitar:
+Simples não?!Seguem alguns testes e um método Eval que criei pra facilitar:
 {% highlight csharp %}
 [TestClass]
 public class UnitTest1{    

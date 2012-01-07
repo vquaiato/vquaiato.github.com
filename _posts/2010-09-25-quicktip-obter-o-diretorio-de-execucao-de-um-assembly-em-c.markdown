@@ -27,7 +27,7 @@ tags:
   slug: directory
   autoslug: directory
 ---
-Essa necessidade surge bastante na escrita de testes: Como pegar o diretório de execução de um assembly? Para obter o diretório basta utilizar o fragmento de código abaixo:
+Essa necessidade surge bastante na escrita de testes: Como pegar o diretório de execução de um assembly?Para obter o diretório basta utilizar o fragmento de código abaixo:
 {% highlight csharp %}
 var diretorio = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
     

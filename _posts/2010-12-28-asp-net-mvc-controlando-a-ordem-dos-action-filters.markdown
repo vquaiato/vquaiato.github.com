@@ -1,14 +1,14 @@
 --- 
 layout: post
-title: ASP. NET MVC controlando a ordem dos action filters
+title: ASP.NET MVC controlando a ordem dos action filters
 wordpress_id: 2624
 wordpress_url: http://viniciusquaiato.com/blog/?p=2624
 categories: 
-- title: ASP. NET MVC
+- title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
-- title: ASP. NET MVC
+- title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 - title: Filters
@@ -41,7 +41,7 @@ return View();
 }
 
 {% endhighlight %}
-Pronto. Agora estamos explicitamente dizendo que o action filter AnotherFilter deve ser executado primeiro, e depois o action filter SomeFilter. Estes valores podem ser utilizados em ordem de grandeza ou seja poderiam ser utilizados os valores 5 e 6, 10 e 11, 3 e 4. Funcionaria da mesma maneira. Simples não? Tá aí a dica.
+Pronto. Agora estamos explicitamente dizendo que o action filter AnotherFilter deve ser executado primeiro, e depois o action filter SomeFilter.Estes valores podem ser utilizados em ordem de grandeza ou seja poderiam ser utilizados os valores 5 e 6, 10 e 11, 3 e 4. Funcionaria da mesma maneira.Simples não? Tá aí a dica.
 
 Att,
 Vinicius Quaiato.

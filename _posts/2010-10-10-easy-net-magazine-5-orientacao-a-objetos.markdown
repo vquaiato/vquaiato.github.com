@@ -33,4 +33,8 @@ tags:
   slug: easy-net-magazine
   autoslug: easy-.net-magazine
 ---
-[![Easy .NET Magazine 5](http://viniciusquaiato.com/images_posts/capa_easynet5_G.jpg "Easy .NET Magazine 5")](http://viniciusquaiato.com/images_posts/capa_easynet5_G.jpg)É com grande satisfação que vejo um artigo meu na Easy .NET magazine, edição 5. Este artigo aborda um pouco o tema "Orientação a Objetos" tentando passar alguns conceitos de forma bastante simples e direta. Nele eu transformo uma aplicação Windows Forms com lógica toda na interface em uam solução OO com estado e comportamento encapsulado em uma classe. Confiram aqui:[http://www.devmedia.com.br/resumo/default.asp?ed=5&site=59](http://www.devmedia.com.br/resumo/default.asp?ed=5&site=59)Abraços,Vinicius Quaiato.
+
+
+[![Easy .NET Magazine 5](http://viniciusquaiato.com/images_posts/capa_easynet5_G.jpg "Easy .NET Magazine 5")](http://viniciusquaiato.com/images_posts/capa_easynet5_G.jpg)
+
+É com grande satisfação que vejo um artigo meu na Easy .NET magazine, edição 5.Este artigo aborda um pouco o tema "Orientação a Objetos" tentando passar alguns conceitos de forma bastante simples e direta.Nele eu transformo uma aplicação Windows Forms com lógica toda na interface em uam solução OO com estado e comportamento encapsulado em uma classe.Confiram aqui:[http://www.devmedia.com.br/resumo/default.asp?ed=5&site=59](http://www.devmedia.com.br/resumo/default.asp?ed=5&site=59)Abraços,Vinicius Quaiato.

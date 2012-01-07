@@ -22,9 +22,13 @@ Dir.foreach("../_posts/") do |file|
 
     #image replace
     replace.gsub! /quaiato\.com\/blog\/wp-content\/\w+\/\d+\/\d+\//, "quaiato.com/images_posts/"
+    #caption replace
+    replace.gsub! /\[caption.*?\]\!?/,''
+    replace.gsub! /\[\/caption\]/,''
+    replace.gsub! /[!.*?\.(jpg|gif|png)\))/,"\n\n\\1\n\n"
 
     #dot space
-    replace.gsub! /(\s[\wáéíóäëiöúàèììùêô"]+\.|\!|\?)([\wáéíóäëiöúàèììùêô"]+)\s/, "\\1 \\2 "
+    # replace.gsub! /([\w\S]+[\.|\!])([\w\S]+[[:blank:]])/, "\\1 \\2"
 
     #syntax highlight
     replace.gsub! /<\/pre>/, "\n{% endhighlight %}\n"

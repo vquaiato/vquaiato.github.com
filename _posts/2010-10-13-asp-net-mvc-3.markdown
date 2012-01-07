@@ -1,17 +1,17 @@
 --- 
 layout: post
-title: ASP. NET MVC 3
+title: ASP.NET MVC 3
 wordpress_id: 1715
 wordpress_url: http://viniciusquaiato.com/blog/?p=1715
 categories: 
-- title: ASP. NET MVC
+- title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
 - title: Novidades
   slug: novidades
   autoslug: novidades
-- title: ASP. NET MVC 3
+- title: ASP.NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
 - title: MVC 3
@@ -20,15 +20,19 @@ tags:
 - title: MVC 3 Beta
   slug: mvc-3-beta
   autoslug: mvc-3-beta
-- title: ASP. NET MVC 3 Beta
+- title: ASP.NET MVC 3 Beta
   slug: asp-net-mvc-3-beta
   autoslug: asp.net-mvc-3-beta
 ---
-[![](http://viniciusquaiato.com/images_posts/images-150x150.jpg "ASP. NET MVC 3")](http://viniciusquaiato.com/images_posts/images.jpg)Um dos recentes anúncios da Microsoft é o lançamento do ASP. NET MVC 3 Beta. Com [ASP.NET MVC 3 Beta](http://www.asp.net/mvc/mvc3) já é possível colocar aplicações em produção utilizando as novidades desta nova versão. Não há nenhuma restrição quanto a isso. E como o [ASP.NET MVC 3](http://www.asp.net/mvc/mvc3) não roda em cima de uma versão particular do framework, basta fazer o deploy das DLLs do MVC 3 e tudo deverá rodar normalmente (lembre-se que apesar de ser uma versão beta, tudo leva a acreditar que ainda não está "feature complete", ou seja, pode ser que adicionem e removam funcionalidades até a versão final).Dentre as novidades presentes no [ASP.NET MVC 3](http://weblogs.asp.net/scottgu/archive/2010/10/06/announcing-nupack-asp-net-mvc-3-beta-and-webmatrix-beta-2.aspx) Beta podemos destacar:- [Razor View Engine](http://viniciusquaiato.com/blog/asp-net-mvc-3-razor-view-engine/)
+
+
+[![](http://viniciusquaiato.com/images_posts/images-150x150.jpg "ASP.NET MVC 3")](http://viniciusquaiato.com/images_posts/images.jpg)
+
+Um dos recentes anúncios da Microsoft é o lançamento do ASP.NET MVC 3 Beta.Com [ASP.NET MVC 3 Beta](http://www.asp.net/mvc/mvc3) já é possível colocar aplicações em produção utilizando as novidades desta nova versão. Não há nenhuma restrição quanto a isso. E como o [ASP.NET MVC 3](http://www.asp.net/mvc/mvc3) não roda em cima de uma versão particular do framework, basta fazer o deploy das DLLs do MVC 3 e tudo deverá rodar normalmente (lembre-se que apesar de ser uma versão beta, tudo leva a acreditar que ainda não está "feature complete", ou seja, pode ser que adicionem e removam funcionalidades até a versão final).Dentre as novidades presentes no [ASP.NET MVC 3](http://weblogs.asp.net/scottgu/archive/2010/10/06/announcing-nupack-asp-net-mvc-3-beta-and-webmatrix-beta-2.aspx) Beta podemos destacar:- [Razor View Engine](http://viniciusquaiato.com/blog/asp-net-mvc-3-razor-view-engine/)
 - Suporte aos Global Filters
 - [NuPack Package Manager](http://viniciusquaiato.com/blog/nupack-uma-das-melhores-invencoes-da-microsoft/)
 - Facilidade em especificar views fortemante tipadas com Razor
-- Suporte aos ASP. NET Web Page Helper Methods
+- Suporte aos ASP.NET Web Page Helper Methods
 - Suporte para Injeção de Dependências
 <ul>     <li>Controllers</li>    <li>Serviços</li>    <li>Views</li>        </ul>- Suporte para Jquery Ajax não obstrusivo
 - Suporte para validações com JQuery não obstrusivas
@@ -36,7 +40,7 @@ tags:
 - Razor agora suporta VBHTML
 - Dynamic ViewModels
 - Novos ActionResult types
-Há muitas novidades dentro de cada um destes tópicos, e aos poucos tentarei esclarecer e demonstrar todas elas de forma prática. Você pode fazer o [download do ASP. NET MVC 3 Beta aqui, utilizando o Web Platform Installer](http://www.microsoft.com/web/gallery/install.aspx?appid=MVC3).
+Há muitas novidades dentro de cada um destes tópicos, e aos poucos tentarei esclarecer e demonstrar todas elas de forma prática.Você pode fazer o [download do ASP.NET MVC 3 Beta aqui, utilizando o Web Platform Installer](http://www.microsoft.com/web/gallery/install.aspx?appid=MVC3).
 
 Abraços,
- e fiquem ligados! Vinicius Quaiato.
+ e fiquem ligados!Vinicius Quaiato.
