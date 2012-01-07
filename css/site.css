@@ -87,7 +87,7 @@ div#post{
 /*div#post p{
 	margin-top: -10px;
 }*/
-div#post p.post_date{
+div#post p.post-date{
 	margin-top:-10px;
 }
 div#post p span.date{
