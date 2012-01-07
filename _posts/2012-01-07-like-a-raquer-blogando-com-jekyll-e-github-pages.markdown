@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Testing the blog
+title: Like a Raquer: Blogando com Jekyll e Github Pages
 categories: 
 - title: Blog
   slug: blog
