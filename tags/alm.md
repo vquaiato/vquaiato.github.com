@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts tagged alm
-keywords: [alm]
+title: Posts tagged alm-summit-brasil
+keywords: [alm,alm-summit-brasil]
 ---
 <h2 class="category">ALM</h2>
 <ul class="posts">
