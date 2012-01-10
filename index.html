@@ -12,19 +12,20 @@ title: Vinicius Quaiato
   {{ p.content }}
 </div>
 <hr>
-<h3>Outros posts</h3>
+<h3>Posts recentes</h3>
   <ul class="posts">
-    {% for post in site.posts %}
-      {% unless forloop.first %}
+    {% for post in site.posts limit:5 offset:0 %}
+      <!-- {% unless forloop.first %} -->
         <li>
         	<p>
         		<span class="date">{{ post.date | date: "%d/%m/%Y" }}</span> &raquo; 
         		<a href="{{ post.url }}">{{ post.title }}</a>
         	</p>
         	</li>
-        {% endunless %}
+        <!-- {% endunless %} -->
     {% endfor %}
   </ul>
+  <h3>Ver todos os posts</h3>
 
   <div id="all_tags">
     <ul>

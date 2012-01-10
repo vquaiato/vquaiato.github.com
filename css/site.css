@@ -11,6 +11,7 @@ ul li{
 	list-style-type:none;
 }
 h2, h3 {
+	font-family: Helvetica, Arial, sans-serif;
 	text-shadow: 1px 1px 1px #CCC;
 }
 blockquote{
@@ -25,7 +26,7 @@ section#title{
 	text-align: center;
 }
 h1.title, h1.title a, h1.title a:visited{
-	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+	/*font-family: Georgia, Cambria, "Times New Roman", Times, serif;*/
 	font-size:64px;
 	text-shadow: 2px 2px 2px #ddd;
 	color:#333;
@@ -63,7 +64,7 @@ ul.posts li p span.date{
 h2.post_title{
 	color: #3168B3;
 	text-shadow: 1px 1px 1px #CCC;
-	font-size: 28px;
+	font-size: 34px;
 }
 
 /*LISTA CATEGORIAS HOME*/
@@ -118,6 +119,7 @@ section#footer div.footer {
    height:50px;
    width:100%;
    background:#333;
+   font-family: Helvetica, Arial, sans-serif;
 }
 div.footer .footer_content{
 	width: 940px;
