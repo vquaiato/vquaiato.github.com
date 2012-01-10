@@ -43,6 +43,12 @@ keywords: [asp-net-mvc]
 </li> 
 <li>
 <p>
+<span class="date">29/09/2010</span> &raquo; 
+<a href="/blog/testando-controllers-que-retornam-json">Testando controllers que retornam Json</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">04/10/2010</span> &raquo; 
 <a href="/blog/asp-net-mvc-rotas-de-actions-com-muitos-parametros">ASP.NET MVC: rotas de actions com muitos parâmetros</a>
 </p>
