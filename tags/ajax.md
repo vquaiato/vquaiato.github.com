@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Posts tagged ajax
+title: Posts tagged ajax-library
 keywords: [ajax]
 ---
 <h2 class="category">Ajax</h2>
@@ -33,6 +33,12 @@ keywords: [ajax]
 <p>
 <span class="date">19/12/2010</span> &raquo; 
 <a href="/blog/asp-net-mvc-jquery-ajax">ASP.NET MVC e Jquery Ajax</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">20/12/2010</span> &raquo; 
+<a href="/blog/asp-net-mvc-ajax-com-jquery-load">ASP.NET MVC e ajax com Jquery load</a>
 </p>
 </li> 
 <li>
