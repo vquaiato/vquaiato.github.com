@@ -26,3 +26,13 @@ title: Vinicius Quaiato
     {% endfor %}
   </ul>
 
+  <div id="all_tags">
+    <ul>
+      {% for tag in site.tags %}
+        <li>
+          <a href="/tags/{{ tag | first | map: 'to_liquid' | map: 'slug' }}.html">{{ tag | first | map: 'to_liquid' | map: 'title' }}</a>
+        </li>
+      {% endfor %} 
+    </ul>
+  </div>
+

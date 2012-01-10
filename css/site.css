@@ -43,7 +43,7 @@ section#blog_content{
 }
 div#posts_home{
 	float:left;
-	width:720px
+	/*width:720px*/
 }
 ul.posts li{
 	list-style-type:none;
@@ -79,6 +79,23 @@ div#categories{
 	margin-left:50px;
 }
 div#categories a, div#categories a:visited{
+	color:#333;
+	line-height:22px;
+}
+/*LISTA TAGS HOME*/
+div#all_tags ul {
+	/*padding-top:20px;*/
+}
+div#all_tags ul li{
+	display: inline;
+	font-size:10px;
+}
+div#all_tags{
+/*	float:left;
+	width:170px;
+	margin-left:50px;*/
+}
+div#all_tags a, div#all_tags a:visited{
 	color:#333;
 	line-height:22px;
 }

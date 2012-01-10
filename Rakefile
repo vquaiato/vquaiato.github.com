@@ -48,8 +48,8 @@ end
 
 namespace :categories do
   task :clean do
-    rm_rf "categories"
-    mkdir "categories"
+    rm_rf "tags"
+    mkdir "tags"
   end
  
   task :generate do
@@ -61,7 +61,7 @@ namespace :categories do
     options = Jekyll.configuration({})
     site = Jekyll::Site.new(options)
     site.read_posts('')
-    site.categories.each do |kategory, posts|
+    site.tags.each do |kategory, posts|
       category = kategory["slug"]
       keywords = aggregate_keywords(category, posts)
       html= <<-HTML
@@ -88,7 +88,7 @@ html << <<-HTML
 </ul>
 HTML
       p category
-      File.open("categories/#{clean(category)}.md", 'w+') do |file|
+      File.open("tags/#{clean(category)}.md", 'w+') do |file|
         file.puts html
       end
     end
