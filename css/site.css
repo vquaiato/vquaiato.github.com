@@ -72,3 +72,16 @@ div.footer ul li.feed{background: url(/images/feed.png) no-repeat;padding-left:2
 .csharp .sr { color: #a31515 } /* Literal.String.Regex */
 .csharp .s1 { color: #a31515 } /* Literal.String.Single */
 .csharp .ss { color: #a31515 } /* Literal.String.Symbol */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
