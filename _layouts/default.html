@@ -1,6 +1,8 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<title>{{ page.title }}</title>
 
 		<!-- blog style -->
@@ -10,7 +12,7 @@
    		<link rel="stylesheet" href="/css/syntax-default.css" type="text/css" />
 
    		<!-- title's font -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'/>
 
 		<script type="text/javascript">
 
@@ -23,56 +25,36 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-
+            var WRInitTime=(new Date()).getTime();
 		</script>
-
-		<!-- ClickTale Top part -->
-		<script type="text/javascript">
-		var WRInitTime=(new Date()).getTime();
-		</script>
-		<!-- ClickTale end of Top part -->
-
 	</head>
 
 	<body>
-		<section id="title">
-			<h1 class="title"><a href="/">Vinicius Quaiato</a></h1>
-			<p class="title_contents">
-				{tecnologia, conceitos, negócios, idéias, práticas, .NET, ruby, osx, ios e algo mais}
-			</p>
-		</section>
-		<section id="blog_content">
-			<div id="posts_home">
-				{{ content }}
+    <div id="title">
+      <a href="http://github.com/vquaiato/vquaiato.github.com"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/bec6c51521dcc8148146135149fe06a9cc737577/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"/></a>
+      <h1 class="title"><a href="/">Vinicius Quaiato</a></h1>
+      <p class="title_contents">
+        {tecnologia, conceitos, negócios, idéias, práticas, .NET, ruby, osx, ios e algo mais}
+      </p>
+    </div>
+    <div id="blog_content">
+  		<div id="posts_home">
+  			{{ content }}
+  		</div>
+    </div>
+		<div class="footer">
+			<div class="footer_content">
+				<ul>
+					<li><a href="http://crafters.com.br">crafters.com.br</a></li>
+					<li><a href="http://twitter.com/vquaiato">@vquaiato</a></li>
+					<li><a href="http://github.com/vquaiato">github</a></li>
+					<li><a href="https://gist.github.com/vquaiato">gists</a></li>
+					<li><a href="http://coderwall.com/vquaiato">coderwall</a></li>
+					<li class="designed" title="I don't always do design but when I do I do it like a boss">designed by @vquaiato</li>
+					<li class="feed"><a href="/atom.xml">Feed</a></li>
+				</ul>
 			</div>
-<!-- 		  <div id="categories">
-	      <ul>
-	        {% for category in site.categories %}
-	          <li>
-	            <a href="/categories/{{ category | first | map: 'to_liquid' | map: 'slug' }}.html">{{ category | first | map: 'to_liquid' | map: 'title' }}</a>
-	          </li>
-	        {% endfor %} 
-	      </ul>
-		  </div> -->
-		  <div style="clear:both;"></div>
-		</section>
-		<section id="footer">
-			<div class="footer">
-				<div class="footer_content">
-					<ul>
-						<li>email</li>
-						<li><a href="http://crafters.com.br">crafters.com.br</a></li>
-						<li><a href="http://twitter.com/vquaiato">@vquaiato</a></li>
-						<li><a href="http://github.com/vquaiato">github</a></li>
-						<li><a href="https://gist.github.com/vquaiato">gists</a></li>
-						<li><a href="http://coderwall.com/vquaiato">coderwall</a></li>
-						<li class="designed" title="I don't always do design but when I do I do it like a boss">designed by @vquaiato</li>
-						<li class="feed"><a href="/atom.xml">Feed</a>
-					</ul>
-
-				</div>
-			</div>
-		</section>
+		</div>
 		<!-- ClickTale Bottom part -->
 		<div id="ClickTaleDiv" style="display: none;"></div>
 		<script type="text/javascript">
@@ -83,6 +65,5 @@
 		if(typeof ClickTale=='function') ClickTale(3263,0.128,"www09");
 		</script>
 		<!-- ClickTale end of Bottom part -->
-		<a href="http://github.com/vquaiato/vquaiato.github.com"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/bec6c51521dcc8148146135149fe06a9cc737577/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
 	</body>
 </html>

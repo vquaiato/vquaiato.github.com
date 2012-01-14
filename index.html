@@ -6,13 +6,13 @@ title: Vinicius Quaiato
 {% assign p = site.posts.first %}
 <div id="post">
   <h2 class="post_title">{{ p.title}}</h2>
-  <hr>
+  <hr/>
   <p class="post-date"><span class="date">{{ p.date | date: "%d/%m/%Y" }}</span></p>
   <p class="post-date"></p>
   {{ p.content }}
   <h3><a href="{{ p.url }}#comments">Comentários</a></h3>
 </div>
-<hr>
+<hr/>
 <h3>Posts recentes</h3>
   <ul class="posts">
     {% for post in site.posts limit:5 offset:0 %}
