@@ -20,9 +20,9 @@ tags:
 - title: Refactoring
   slug: refactoring
   autoslug: refactoring
-- title: C#
-  slug: c
-  autoslug: c#
+- title: TDD
+  slug: tdd
+  autoslug: tdd
 ---
 [TDD - Test-driven Development - Parte I](http://viniciusquaiato.com/blog/tdd-test-driven-development-c/)[TDD - Test-driven Development - Parte III](http://viniciusquaiato.com/blog/tdd-test-drive…nt-c-parte-iii/)Após o que foi apresentado no [primeiro post da série](http://viniciusquaiato.com/blog/tdd-test-driven-development-c/), faremos nesta segunda parte um exemplo prático de TDD.Para efeito didático este será um exemplo bem simples e trivial, para que possamos focar nas práticas de TDD.Antes de começarmos gostaria de mencionar o "mantra do TDD":<blockquote># **"<span style="color: #ff0000;
     ">Red</span>, <span style="color: #008000;

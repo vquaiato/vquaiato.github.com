@@ -4,6 +4,10 @@ title: "Like a Raquer: Blogando com Jekyll e Github Pages"
 categories: 
 - title: Blog
   slug: blog
+tags:
+- title: Jekyll
+  slug: jekyll
+  autoslug: jekyll
 ---
 
 Fala galera! Ano novo, vida velha e **blog novo!**

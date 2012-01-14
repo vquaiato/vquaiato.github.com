@@ -14,15 +14,9 @@ categories:
   slug: net-4-0
   autoslug: .net-4.0
 tags: 
-- title: Visual Studio 2010
-  slug: visual-studio-2010
-  autoslug: visual-studio-2010
-- title: VS2010
-  slug: vs2010
-  autoslug: vs2010
-- title: Novidades
-  slug: novidades
-  autoslug: novidades
+- title: Visual Studio
+  slug: visual-studio
+  autoslug: visual-studio
 ---
 Fala Galera!Alguns de vocês já conheciam os as Parallels Extensions do .NET que eram distribuídas para testes.Agora no Visual Studo 2010 as Parallels Extensions estão disponívels no framework 4.0.Vejam abaixo como é simples realizar um laço for de maneira paralela, ou seja, cada iteração do laço será disparada paralelamente à outra:
 {% highlight csharp %}

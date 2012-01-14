@@ -17,12 +17,12 @@ tags:
 - title: Tests
   slug: tests
   autoslug: tests
-- title: C#
-  slug: c
-  autoslug: c#
-- title: Visual Studio 2010
-  slug: visual-studio-2010
-  autoslug: visual-studio-2010
+- title: TDD
+  slug: tdd
+  autoslug: tdd
+- title: Visual Studio
+  slug: visual-studio
+  autoslug: visual-studio
 ---
 Vamos lá galera, vamos continuar nossa série sobre [TDD](http://dojofloripa.wordpress.com/2007/09/10/tudo-sobre-tdd/) + C#.Para conferir os outros posts da série:Parte I - [http://viniciusquaiato.com/blog/tdd-test-driven-development-c/](http://viniciusquaiato.com/blog/tdd-test-driven-development-c/)Parte II - [http://viniciusquaiato.com/blog/tdd-test-driven-development-c-parte-ii/](http://viniciusquaiato.com/blog/tdd-test-driven-development-c-parte-ii/)Neste artigo abordaremos depósitos.A primeira coisa que precisamos fazer para realizar nosso depósito é escrever um teste:
 {% highlight csharp %}

@@ -14,21 +14,12 @@ categories:
   slug: silverlight
   autoslug: silverlight
 tags: 
-- title: Visual Studio 2010
-  slug: visual-studio-2010
-  autoslug: visual-studio-2010
-- title: VS2010
-  slug: vs2010
-  autoslug: vs2010
-- title: Novidades
-  slug: novidades
-  autoslug: novidades
-- title: Silverlight 4
-  slug: silverlight-4
-  autoslug: silverlight-4
-- title: "V\xC3\xADdeo"
-  slug: video
-  autoslug: "v\xC3\xADdeo"
+- title: Visual Studio
+  slug: visual-studio
+  autoslug: visual-studio
+- title: Silverlight
+  slug: silverlight
+  autoslug: silverlight
 - title: RIA
   slug: ria
   autoslug: ria

@@ -14,15 +14,12 @@ categories:
   slug: silverlight
   autoslug: silverlight
 tags: 
-- title: Silverlight 4
-  slug: silverlight-4
-  autoslug: silverlight-4
+- title: Silverlight
+  slug: silverlight
+  autoslug: silverlight
 - title: RIA
   slug: ria
   autoslug: ria
-- title: Browser
-  slug: browser
-  autoslug: browser
 ---
 
 

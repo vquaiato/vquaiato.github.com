@@ -11,6 +11,9 @@ tags:
 - title: Tests
   slug: tests
   autoslug: tests
+  - title: TDD
+  slug: tdd
+  autoslug: tdd
 ---
 Bom, estive pensando sobre como começar este novo espaço e decidi que nada melhor do que a prática que mais vem me fascinando nos últimos tempos TDD - Test-Driven Development.TDD - Test-driven Development - Parte II[http://viniciusquaiato.com/blog/tdd-test-driven-development-c-parte-ii/](http://viniciusquaiato.com/blog/tdd-test-driven-development-c-parte-ii/)TDD - Test-driven Development - Parte III[http://viniciusquaiato.com/blog/tdd-test-driven-development-c-parte-iii/](http://viniciusquaiato.com/blog/tdd-test-driven-development-c-parte-iii/)TDD - Test-driven Development - Parte IV[http://viniciusquaiato.com/blog/tdd-test-driven-development-c-parte-iv/](http://viniciusquaiato.com/blog/tdd-test-driven-development-c-parte-iv/)TDD não é algo novo, e nem específico para uma tecnologia. Podemos dizer que o mesmo surgiu, ou ficou conhecido, em meados de 2002, com a publicação do livro de [Kent Beck](http://www.threeriversinstitute.org/Kent%20Beck.htm "Kent Beck"), chamado [Test-driven Development by Example](http://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530 "TDD - Kent Beck").Basicamente o TDD significa:1. **Escreva um teste**, antes mesmo de escrever o código que este teste consome;
     2. **Faça o teste funcionar**, escrevendo o código do qual o teste depende, mesmo que seja um código ruim;

@@ -11,12 +11,15 @@ categories:
   slug: off-topic
   autoslug: "[off---topic]"
 tags: 
-- title: ruby
+- title: Ruby
   slug: ruby
   autoslug: ruby
+- title: [Off - Topic]
+  slug: off-topic
+  autoslug: off-topic
 - title: .NET
-  slug: net
-  autoslug: .net
+  slug: dotnet
+  autoslug: dotnet
 ---
 
 

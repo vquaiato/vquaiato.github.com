@@ -15,8 +15,8 @@ categories:
   autoslug: "boas-pr\xC3\xA1ticas"
 tags: 
 - title: C#
-  slug: c
-  autoslug: c#
+  slug: c-sharp
+  autoslug: c-sharp
 - title: Arquitetura
   slug: arquitetura
   autoslug: arquitetura

@@ -23,15 +23,15 @@ tags:
 - title: IoC
   slug: ioc
   autoslug: ioc
+- title: "Invers\xC3\xA3o de Controle"
+  slug: inversao-de-controle
+  autoslug: "invers\xC3\xA3o-de-controle"
 - title: Patterns
   slug: patterns
   autoslug: patterns
 - title: "Boas Pr\xC3\xA1ticas"
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
-- title: "Invers\xC3\xA3o de Controle"
-  slug: inversao-de-controle
-  autoslug: "invers\xC3\xA3o-de-controle"
 ---
 Fala galera, beleza?Escolhi falar de[ Inversão de Controle](http://pt.wikipedia.org/wiki/Invers%C3%A3o_de_controle) pois recentemente precisei utilizar este conceito em uma nova implementação no trabalho. E também percebi o quão necessário é que os desenvolvedores conheçam este conceito/padrão/técnica.Bom vamos lá. Inversão de Controle, como o próprio nome diz significa que o controle de execução do programa/código muda. Eu gosto de pensar também que o controle de conhecimento do código muda.Como isso?De uma forma bem simplista podemos dizer por exemplo que o controle que uma classe/método possui acaba sendo mudado, invertido, para algum outro ponto do código.Vamos ver um exemplo de código:
 {% highlight csharp %}

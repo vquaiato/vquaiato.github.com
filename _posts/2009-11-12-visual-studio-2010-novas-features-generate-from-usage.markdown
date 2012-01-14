@@ -14,15 +14,9 @@ categories:
   slug: net-4-0
   autoslug: .net-4.0
 tags: 
-- title: Visual Studio 2010
-  slug: visual-studio-2010
-  autoslug: visual-studio-2010
-- title: VS2010
-  slug: vs2010
-  autoslug: vs2010
-- title: Novidades
-  slug: novidades
-  autoslug: novidades
+- title: Visual Studio
+  slug: visual-studio
+  autoslug: visual-studio
 ---
 
 

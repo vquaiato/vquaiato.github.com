@@ -17,12 +17,12 @@ tags:
 - title: Tests
   slug: tests
   autoslug: tests
-- title: C#
-  slug: c
-  autoslug: c#
-- title: Visual Studio 2010
-  slug: visual-studio-2010
-  autoslug: visual-studio-2010
+- title: TDD
+  slug: tdd
+  autoslug: tdd
+- title: Visual Studio
+  slug: visual-studio
+  autoslug: visual-studio
 - title: Mocks
   slug: mocks
   autoslug: mocks
