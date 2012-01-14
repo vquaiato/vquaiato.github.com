@@ -11,9 +11,6 @@ tags:
 - title: Windows 8
   slug: windows-8
   autoslug: windows-8
-- title: features Windows 8
-  slug: features-windows-8
-  autoslug: features-windows-8
 ---
 Fala galera, beleza? Como mencionei eu estava [instalando o Windows 8](http://viniciusquaiato.com/blog/instalando-windows-8/) e agora parei para entender um pouco mais seu funcionamento e seu uso.Gostaria de compartilhar algumas coisas. Na verdade dizer o que estou gostando e o que não estou gostando até o momento. Vamos lá.
 

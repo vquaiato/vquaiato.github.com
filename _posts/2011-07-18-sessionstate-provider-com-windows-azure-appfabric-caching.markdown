@@ -11,15 +11,12 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Windows Azure AppFabric
-  slug: windows-azure-appfabric
-  autoslug: windows-azure-appfabric
-- title: Windows Azure AppFabric Caching
-  slug: windows-azure-appfabric-caching
-  autoslug: windows-azure-appfabric-caching
-- title: Windows Azure AppFabric Caching SessionState Provider
-  slug: windows-azure-appfabric-caching-sessionstate-provider
-  autoslug: windows-azure-appfabric-caching-sessionstate-provider
+- title: AppFabric
+  slug: appfabric
+  autoslug: appfabric
+- title: Caching
+  slug: caching
+  autoslug: caching
 ---
 Fala galera, depois de explicar como [habilitar o Windows Azure AppFabric Caching no portal do Windows Azure](http://viniciusquaiato.com/blog/windows-azure-appfabric-caching/) vamos tirar proveito dele para armazenar o estado de nossas sessões em aplicações ASP.NET no Windows Azure.
 

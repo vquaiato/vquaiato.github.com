@@ -11,12 +11,6 @@ tags:
 - title: Windows Phone 7
   slug: windows-phone-7
   autoslug: windows-phone-7
-- title: Windows Phone
-  slug: windows-phone
-  autoslug: windows-phone
-- title: NavigationService
-  slug: navigationservice
-  autoslug: navigationservice
 ---
 Fala galera, beleza? Voltando a falar um pouquinho sobre [Windows Phone](http://viniciusquaiato.com/blog/category/windows-phone-7/) vamos ver como funciona o sistema de navigação entre páginas nas nossas aplicações.
 

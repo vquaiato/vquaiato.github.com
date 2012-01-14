@@ -14,12 +14,6 @@ tags:
 - title: Windows Azure Diagnostics
   slug: windows-azure-diagnostics
   autoslug: windows-azure-diagnostics
-- title: Diagnostics
-  slug: diagnostics
-  autoslug: diagnostics
-- title: Windows Azure Logs
-  slug: windows-azure-logs
-  autoslug: windows-azure-logs
 ---
 Quando estamos trabalhando com [Windows Azure](http://viniciusquaiato.com/blog/category/windows-azure/) é muito comum(e muito útil) utilizarmos algum mecanismo de log de informações sobre diagnósticos para entender o que está acontecendo com a nossa aplicação.O Windows Azure possui uma infra e um mecanismo já preparado para isso.
 

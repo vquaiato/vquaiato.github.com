@@ -46,7 +46,7 @@ def clean(to_clean)
   str
 end
 
-namespace :categories do
+namespace :tags do
   task :clean do
     rm_rf "tags"
     mkdir "tags"

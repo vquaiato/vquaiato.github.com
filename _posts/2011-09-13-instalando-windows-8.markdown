@@ -11,18 +11,6 @@ tags:
 - title: Windows 8
   slug: windows-8
   autoslug: windows-8
-- title: instalar windows 8
-  slug: instalar-windows-8
-  autoslug: instalar-windows-8
-- title: instalando windows 8
-  slug: instalando-windows-8
-  autoslug: instalando-windows-8
-- title: preview windows 8
-  slug: preview-windows-8
-  autoslug: preview-windows-8
-- title: screenshots windows 8
-  slug: screenshots-windows-8
-  autoslug: screenshots-windows-8
 ---
 Fala galera! Acaba de ser liberado um Preview do Windows 8 para instalação e já estou concluindo o processo aqui.
 

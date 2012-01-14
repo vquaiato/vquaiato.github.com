@@ -17,12 +17,6 @@ tags:
 - title: DDD
   slug: ddd
   autoslug: ddd
-- title: "C\xC3\xB3digo"
-  slug: codigo
-  autoslug: "c\xC3\xB3digo"
-- title: "C\xC3\xB3digo Ingl\xC3\xAAs ou Portugu\xC3\xAAs"
-  slug: codigo-ingles-ou-portugues
-  autoslug: "c\xC3\xB3digo-ingl\xC3\xAAs-ou-portugu\xC3\xAAs"
 ---
 
 

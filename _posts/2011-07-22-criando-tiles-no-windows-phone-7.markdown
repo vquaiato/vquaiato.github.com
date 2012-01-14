@@ -11,15 +11,6 @@ tags:
 - title: Windows Phone 7
   slug: windows-phone-7
   autoslug: windows-phone-7
-- title: Windows Phone
-  slug: windows-phone
-  autoslug: windows-phone
-- title: Tiles
-  slug: tiles
-  autoslug: tiles
-- title: Live Tiles
-  slug: live-tiles
-  autoslug: live-tiles
 ---
 
 

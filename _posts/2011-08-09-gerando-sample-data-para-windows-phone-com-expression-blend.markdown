@@ -11,9 +11,6 @@ tags:
 - title: Windows Phone 7
   slug: windows-phone-7
   autoslug: windows-phone-7
-- title: Sample Data
-  slug: sample-data
-  autoslug: sample-data
 - title: Expression Blend
   slug: expression-blend
   autoslug: expression-blend

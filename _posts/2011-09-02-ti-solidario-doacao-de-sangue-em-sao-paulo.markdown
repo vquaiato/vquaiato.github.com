@@ -11,9 +11,6 @@ tags:
 - title: "TI Solid\xC3\xA1rio"
   slug: ti-solidario
   autoslug: "ti-solid\xC3\xA1rio"
-- title: "Doa\xC3\xA7\xC3\xA3o Sangue"
-  slug: doacao-sangue
-  autoslug: "doa\xC3\xA7\xC3\xA3o-sangue"
 ---
 Fala galera amanhã **03/09/2011** o pessoal do [.NET Architects](http://dotnetarchitects.net) vai se encontrar para doar sangue aqui em São Paulo(e em outras cidades também).A idéia é contribuir um pouco <o/Aqui em São Paulo faremos isso na [Fundação Pro-Sangue](http://www.prosangue.sp.gov.br/) na unidade Hospital das Clínicas.**Endereço: **_Av. Dr. Enéas Carvalho de Aguiar, 155 - 1º andar - Cerqueira César_De segunda a sexta-feira, das 7hs às 19h. Sábados, domingos e feriados, das 8h às 18h._* Estacionamento gratuito por até duas horas - Garagem Subterrânea Clínicas._<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;
     source=s_q&amp;

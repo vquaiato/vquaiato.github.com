@@ -14,12 +14,6 @@ tags:
 - title: Windows Phone 7
   slug: windows-phone-7
   autoslug: windows-phone-7
-- title: NagivationService
-  slug: nagivationservice
-  autoslug: nagivationservice
-- title: "par\xC3\xA2metros entre p\xC3\xA1ginas"
-  slug: parametros-entre-paginas
-  autoslug: "par\xC3\xA2metros-entre-p\xC3\xA1ginas"
 ---
 Fala galera, depois de vermos como realizar navegação entre páginas no Windows Phone usando NavigationService vamos ver agora como passar parâmetros para as páginas.
 

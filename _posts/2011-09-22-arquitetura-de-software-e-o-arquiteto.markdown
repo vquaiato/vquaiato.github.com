@@ -11,9 +11,6 @@ categories:
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
 tags: 
-- title: Arquitetura
-  slug: arquitetura
-  autoslug: arquitetura
 - title: Arquitetura de Software
   slug: arquitetura-de-software
   autoslug: arquitetura-de-software

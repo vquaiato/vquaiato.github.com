@@ -14,15 +14,6 @@ tags:
 - title: Node.js
   slug: node-js
   autoslug: node.js
-- title: Node.js on Windows Azure
-  slug: node-js-on-windows-azure
-  autoslug: node.js-on-windows-azure
-- title: Rodar Node.js no Azure
-  slug: rodar-node-js-no-azure
-  autoslug: rodar-node.js-no-azure
-- title: Rodar Node.js no Windows Azure
-  slug: rodar-node-js-no-windows-azure
-  autoslug: rodar-node.js-no-windows-azure
 ---
 
 

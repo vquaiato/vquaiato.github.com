@@ -11,15 +11,6 @@ tags:
 - title: "TI Solid\xC3\xA1rio"
   slug: ti-solidario
   autoslug: "ti-solid\xC3\xA1rio"
-- title: Solidariedade
-  slug: solidariedade
-  autoslug: solidariedade
-- title: Responsabilidade Social
-  slug: responsabilidade-social
-  autoslug: responsabilidade-social
-- title: "Doa\xC3\xA7\xC3\xA3o de Sangue"
-  slug: doacao-de-sangue
-  autoslug: "doa\xC3\xA7\xC3\xA3o-de-sangue"
 ---
 
 

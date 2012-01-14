@@ -11,15 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Windows Azure Tool agosto
-  slug: windows-azure-tool-agosto
-  autoslug: windows-azure-tool-agosto
-- title: Windows Azure MVC 3
-  slug: windows-azure-mvc-3
-  autoslug: windows-azure-mvc-3
-- title: Windows Azure profiling
-  slug: windows-azure-profiling
-  autoslug: windows-azure-profiling
 ---
 
 

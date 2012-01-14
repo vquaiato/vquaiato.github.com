@@ -11,18 +11,6 @@ tags:
 - title: Windows Phone 7
   slug: windows-phone-7
   autoslug: windows-phone-7
-- title: Windows Phone
-  slug: windows-phone
-  autoslug: windows-phone
-- title: Tiles
-  slug: tiles
-  autoslug: tiles
-- title: Back Tiles
-  slug: back-tiles
-  autoslug: back-tiles
-- title: Windows Phone tiles
-  slug: windows-phone-tiles
-  autoslug: windows-phone-tiles
 ---
 Fala galera, beleza? Aproveitando que mostrei como [Criar Tiles no Windows Phone 7](http://viniciusquaiato.com/blog/criando-tiles-no-windows-phone-7/) agora vou mostrar como criar "back tiles".Alguns tiles no [Windows Phone 7](http://viniciusquaiato.com/blog/category/windows-phone-7/) pode ficar "virando" e mostrando duas faces diferentes. É muito simples configurar seu tiles para comportar-se desta maneira.Primeiro configure seu tile como mostrado no artigo anterior. Agora precisamos setar mais 3 propriedades do objeto StandardTileData como mostrado abaixo:
 {% highlight csharp %}

@@ -20,9 +20,6 @@ categories:
   slug: patterns
   autoslug: patterns
 tags: 
-- title: parallel
-  slug: parallel
-  autoslug: parallel
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
@@ -38,6 +35,8 @@ tags:
 - title: Reactive Extensions
   slug: reactive-extensions
   autoslug: reactive-extensions
+- title: QConSP
+  slug: qconsp
 ---
 
 
