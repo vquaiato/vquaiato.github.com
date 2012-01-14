@@ -32,7 +32,7 @@ title: Vinicius Quaiato
     <ul>
       {% for tag in site.tags %}
         <li>
-          <a href="/tags/{{ tag | first | map: 'to_liquid' | map: 'slug' }}.html">{{ tag | first | map: 'to_liquid' | map: 'title' }}</a>
+          <a href="/tags/{{ tag | first | map: 'to_liquid' | map: 'slug' }}">{{ tag | first | map: 'to_liquid' | map: 'title' }}</a>
         </li>
       {% endfor %} 
     </ul>

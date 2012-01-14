@@ -11,21 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Azure
-  slug: azure
-  autoslug: azure
-- title: Storage
-  slug: storage
-  autoslug: storage
-- title: Azure Storage
-  slug: azure-storage
-  autoslug: azure-storage
-- title: Azure Storage Explorer
-  slug: azure-storage-explorer
-  autoslug: azure-storage-explorer
-- title: Tools Azure Storage
-  slug: tools-azure-storage
-  autoslug: tools-azure-storage
 ---
 Procurando boas ferramentas para acessar e manipular seus Storage Accounts no [Windows Azure](http://viniciusquaiato.com/blog/category/windows-azure/)? Algumas opções estão disponíveis já que até o momento não há nenhum tipo de interface disponibilizada pela Microsoft.
 

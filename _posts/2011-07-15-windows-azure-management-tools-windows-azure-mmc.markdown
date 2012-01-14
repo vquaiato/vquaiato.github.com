@@ -11,15 +11,9 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Azure
-  slug: azure
-  autoslug: azure
-- title: Windows Azure MMC
-  slug: windows-azure-mmc
-  autoslug: windows-azure-mmc
-- title: Windows Azure Management Tools
-  slug: windows-azure-management-tools
-  autoslug: windows-azure-management-tools
+- title: Management Tools
+  slug: management-tools
+  autoslug: management-tools
 ---
 Fala galera, beleza? Aproveitando as [dicas que já dei sobre como acessar o Storage Account do Windows Azure](http://viniciusquaiato.com/blog/azure-storage-explorer-e-cerebrata-cloud-storage-studio/) agora vou mostrar uma outra forma de fazer isso: utilizando o [Windows Azure Management Tools](http://wapmmc.codeplex.com/) ou [Windows Azure MMC](http://wapmmc.codeplex.com/).Com o Windows Azure Management Tools podemos gerenciar nossos roles, explorar nossa storage account, e outras coisas. Neste primeiro post mostrarei como instalar, e nos psots subsequentes veremos como utilziar algumas das features do Windows Azure Management Tools.
 

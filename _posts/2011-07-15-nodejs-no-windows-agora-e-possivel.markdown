@@ -8,15 +8,9 @@ categories:
   slug: dotnet
   autoslug: .net
 tags: 
-- title: NodeJs
-  slug: nodejs
-  autoslug: nodejs
-- title: Nodejs no Windows
-  slug: nodejs-no-windows
-  autoslug: nodejs-no-windows
-- title: node.exe
-  slug: node-exe
-  autoslug: node.exe
+- title: Node.Js
+  slug: node-js
+  autoslug: node.js
 ---
 Fala galera está disponível o primeiro release do [Nodejs](http://nodejs.org/) com suporte nativo para rodar no Windows.O post oficial no blog do [Nodejs](http://blog.nodejs.org/) pode ser conferido aqui: [http://blog.nodejs.org/2011/07/14/node-v0-5-1/](http://blog.nodejs.org/2011/07/14/node-v0-5-1/).Este post também traz o executável para o windows: node.exe. Exatamente como havia sido prometido há algum tempo pelo time do Node: [Porting Node to Windows with Microsoft's help](http://blog.nodejs.org/2011/06/23/porting-node-to-windows-with-microsoft%e2%80%99s-help/).
 

@@ -88,7 +88,9 @@ html << <<-HTML
 </ul>
 HTML
       p category
-      File.open("tags/#{clean(category)}.md", 'w+') do |file|
+      dir_name = "tags/#{clean(category)}"
+      Dir::mkdir dir_name unless FileTest::directory?(dir_name)
+      File.open("#{dir_name}/index.md", 'w+') do |file|
         file.puts html
       end
     end

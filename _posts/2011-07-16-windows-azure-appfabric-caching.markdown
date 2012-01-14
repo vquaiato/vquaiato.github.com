@@ -11,21 +11,12 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Azure
-  slug: azure
-  autoslug: azure
-- title: Windows Azure AppFabric
-  slug: windows-azure-appfabric
-  autoslug: windows-azure-appfabric
-- title: Windows Azure AppFabric Caching
-  slug: windows-azure-appfabric-caching
-  autoslug: windows-azure-appfabric-caching
-- title: Azure Caching
-  slug: azure-caching
-  autoslug: azure-caching
-- title: Azure AppFabric
-  slug: azure-appfabric
-  autoslug: azure-appfabric
+- title: AppFabric
+  slug: appfabric
+  autoslug: appfabric
+- title: Caching
+  slug: caching
+  autoslug: caching
 ---
 
 
