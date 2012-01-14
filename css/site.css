@@ -44,10 +44,7 @@ p.title_contents{
 /*LISTA POSTS HOME*/
 div#blog_content{
 	width: 940px;
-	margin:0 auto 50px auto;
-}
-div#posts_home{
-	float:left;
+	margin:0 auto 60px auto;
 }
 ul.posts li{
 	list-style-type:none;
