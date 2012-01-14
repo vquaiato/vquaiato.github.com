@@ -1,130 +1,74 @@
-h1, h2, h3{
-	margin: 0;
-	padding: 0;
-}
+h1, h2, h3 {margin: 0; padding: 0;}
+body{background: url(/images/bg.png);color: #333;font-family: Georgia, Cambria, "Times New Roman", Times, serif;}
+ul{margin:0;padding:0;}
+/*ul li{list-style-type:none;}*/
+h2, h3 {font-family: Helvetica, Arial, sans-serif;text-shadow: 1px 1px 1px #CCC;}
+blockquote{border-left: solid 4px #666;padding-left: 5px;font-style: italic;}
 
-body{
-	background: url(/images/bg.png);
-	color: #333;
-	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-}
-ul{
-	margin:0;
-	padding:0;	
-}
-ul li{
-	list-style-type:none;
-}
-h2, h3 {
-	font-family: Helvetica, Arial, sans-serif;
-	text-shadow: 1px 1px 1px #CCC;
-}
-blockquote{
-	border-left: solid 4px #666;
-	padding-left: 5px;
-	font-style: italic;
-}
-
-div#title{
-	text-align: center;
-}
-h1.title, h1.title a, h1.title a:visited{
-	font-size:64px;
-	text-shadow: 2px 2px 2px #ddd;
-	color:#333;
-	text-decoration:none;
-	text-align:center;
-}
-p.title_contents{
-	margin-top:0;
-	text-align:center;
-	text-shadow: 1px 1px 1px #CCC;
-}
+/*TITLE*/
+div#title{text-align: center;}
+h1.title, h1.title a, h1.title a:visited{font-size:64px;text-shadow: 2px 2px 2px #ddd;color:#333;text-decoration:none;text-align:center;}
+p.title_contents{margin-top:0;text-align:center;text-shadow: 1px 1px 1px #CCC;}
 
 /*LISTA POSTS HOME*/
-div#blog_content{
-	width: 940px;
-	margin:0 auto 60px auto;
-}
-ul.posts li{
-	list-style-type:none;
-}
-ul.posts li a, ul.posts li a:visited{
-	color: #333;
-}
-ul.posts li p{
-	margin: 5px 0;
-	font-size: 20px;
-	text-shadow: 1px 1px 1px #CCC;
-}
-ul.posts li p span.date{
-	color:#3168B3;
-}
-
-h2.post_title{
-	color: #3168B3;
-	text-shadow: 1px 1px 1px #CCC;
-	font-size: 34px;
-}
+div#blog_content{width: 940px;margin:0 auto 60px auto;}
+ul.posts li{list-style-type:none;}
+ul.posts li a, ul.posts li a:visited{color: #333;}
+ul.posts li p{margin: 5px 0;font-size: 20px;text-shadow: 1px 1px 1px #CCC;}
+ul.posts li p span.date{color:#3168B3;}
+h2.post_title{color: #3168B3;text-shadow: 1px 1px 1px #CCC;font-size: 34px;}
 
 /*LISTA TAGS HOME*/
-div#all_tags ul li{
-	display: inline;
-	font-size:11px;
-	font-style: italic;
-	margin:3px;
-}
-div#all_tags a, div#all_tags a:visited{
-	color:#333;
-	line-height:22px;
-}
+div#all_tags ul li{display: inline;font-size:11px;font-style: italic;margin:3px;}
+div#all_tags a, div#all_tags a:visited{color:#333;line-height:22px;}
 
 /*POSTS SINGLE*/
-div#post{
-	margin-bottom:30px;
-}
-div#post p.post-date{
-	margin: -5px 0 25px 0;
-	letter-spacing: 1px;
-	font-size: 11px;
-}
+div#post{margin-bottom:30px;}
+div#post p.post-date{margin: -5px 0 25px 0;letter-spacing: 1px;font-size: 11px;}
 
 /*TAGS*/
-div#all_tags{
-	margin-top:10px;
-}
+div#all_tags{margin-top:10px;}
 
 /*FOOTER*/
-div.footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:50px;
-   width:100%;
-   background:#333;
-   font-family: Helvetica, Arial, sans-serif;
-}
-div.footer .footer_content{
-	width: 940px;
-	margin: auto;
-}
-.footer_content a{
-	color:#fff;
-	text-decoration:none;
-}
-div.footer ul{
-	color: #fff;
-	padding:20px 0;
-}
-div.footer ul li{
-	list-style-type: none;
-	display: inline;
-	margin-right:30px;
-}
-div.footer ul li.designed{
-	color:#848484;
-}
-div.footer ul li.feed{
-	background: url(/images/feed.png) no-repeat;
-	padding-left:25px;
-}
+div.footer {position:fixed;left:0px;bottom:0px;height:50px;width:100%;background:#333;font-family: Helvetica, Arial, sans-serif;}
+div.footer .footer_content{width: 940px;margin: auto;}
+.footer_content a{color:#fff;text-decoration:none;}
+div.footer ul{color: #fff;padding:20px 0;}
+div.footer ul li{list-style-type: none;	display: inline;margin-right:30px;}
+div.footer ul li.designed{color:#848484;}
+div.footer ul li.feed{background: url(/images/feed.png) no-repeat;padding-left:25px;}
+
+/*C# SYNTAX*/
+.csharp .hll { background-color: #ffffcc }
+.csharp .c { color: #008000 } /* Comment */
+.csharp .err { border: 1px solid #FF0000 } /* Error */
+.csharp .k { color: #0000ff } /* Keyword */
+.csharp .cm { color: #008000 } /* Comment.Multiline */
+.csharp .cp { color: #0000ff } /* Comment.Preproc */
+.csharp .c1 { color: #008000 } /* Comment.Single */
+.csharp .cs { color: #008000 } /* Comment.Special */
+.csharp .ge { font-style: italic } /* Generic.Emph */
+.csharp .gh { font-weight: bold } /* Generic.Heading */
+.csharp .gp { font-weight: bold } /* Generic.Prompt */
+.csharp .gs { font-weight: bold } /* Generic.Strong */
+.csharp .gu { font-weight: bold } /* Generic.Subheading */
+.csharp .kc { color: #0000ff } /* Keyword.Constant */
+.csharp .kd { color: #0000ff } /* Keyword.Declaration */
+.csharp .kn { color: #0000ff } /* Keyword.Namespace */
+.csharp .kp { color: #0000ff } /* Keyword.Pseudo */
+.csharp .kr { color: #0000ff } /* Keyword.Reserved */
+.csharp .kt { color: #2b91af } /* Keyword.Type */
+.csharp .s { color: #a31515 } /* Literal.String */
+.csharp .nc { color: #2b91af } /* Name.Class */
+.csharp .ow { color: #0000ff } /* Operator.Word */
+.csharp .sb { color: #a31515 } /* Literal.String.Backtick */
+.csharp .sc { color: #a31515 } /* Literal.String.Char */
+.csharp .sd { color: #a31515 } /* Literal.String.Doc */
+.csharp .s2 { color: #a31515 } /* Literal.String.Double */
+.csharp .se { color: #a31515 } /* Literal.String.Escape */
+.csharp .sh { color: #a31515 } /* Literal.String.Heredoc */
+.csharp .si { color: #a31515 } /* Literal.String.Interpol */
+.csharp .sx { color: #a31515 } /* Literal.String.Other */
+.csharp .sr { color: #a31515 } /* Literal.String.Regex */
+.csharp .s1 { color: #a31515 } /* Literal.String.Single */
+.csharp .ss { color: #a31515 } /* Literal.String.Symbol */
