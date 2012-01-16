@@ -11,10 +11,4 @@ keywords: [dojo-na-caelum]
 <a href="/blog/coding-dojo-net-architects-dia-26-na-caelum">Coding Dojo .NET Architects dia 26 na Caelum</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">28/05/2011</span> &raquo; 
-<a href="/blog/coding-dojo-net-architects-na-caelum">Coding Dojo .NET Architects na Caleum - Resultado</a>
-</p>
-</li> 
 </ul>

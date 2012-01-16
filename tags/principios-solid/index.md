@@ -23,10 +23,4 @@ keywords: [principios-solid]
 <a href="/blog/palestra-orientacao-a-objetos-e-principios-solid-slides-e-demos">Palestra Orientação a Objetos e Princípios SOLID: slides e demos</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">28/05/2011</span> &raquo; 
-<a href="/blog/mstechday-orientacao-a-objetos-e-principios-solid-slides-e-demos">MSTechDay - Orientação a Objetos e Princípios SOLID slides e demos</a>
-</p>
-</li> 
 </ul>

@@ -181,8 +181,20 @@ keywords: [palestras]
 </li> 
 <li>
 <p>
+<span class="date">07/06/2011</span> &raquo; 
+<a href="/blog/mono-net-alem-do-windows-slides-e-demos">Mono - .NET além do Windows Slides e Demos</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">17/06/2011</span> &raquo; 
 <a href="/blog/yagni-no-dnad11-videos-da-palestra">YAGNI no DNAD11 vídeos da palestra</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">13/07/2011</span> &raquo; 
+<a href="/blog/tdc2011-palestra-sobre-windows-phone-e-windows-azure">TDC2011 palestra sobre Windows Phone e Windows Azure</a>
 </p>
 </li> 
 <li>

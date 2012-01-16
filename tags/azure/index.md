@@ -41,10 +41,4 @@ keywords: [azure]
 <a href="/blog/windows-azure-sdk-1-4">Windows Azure SDK 1.4 </a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">13/07/2011</span> &raquo; 
-<a href="/blog/tdc2011-palestra-sobre-windows-phone-e-windows-azure">TDC2011 palestra sobre Windows Phone e Windows Azure</a>
-</p>
-</li> 
 </ul>

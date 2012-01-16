@@ -23,4 +23,10 @@ keywords: [mono]
 <a href="/blog/mono-net-alem-do-windows-slides-e-demos">Mono - .NET além do Windows Slides e Demos</a>
 </p>
 </li> 
+<li>
+<p>
+<span class="date">12/06/2011</span> &raquo; 
+<a href="/blog/quicktip-a-classe-filesystemwatcher">QuickTip: a classe FileSystemWatcher</a>
+</p>
+</li> 
 </ul>
