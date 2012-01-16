@@ -7,8 +7,8 @@ keywords: [principios-solid]
 <ul class="posts">
 <li>
 <p>
-<span class="date">03/07/2010</span> &raquo; 
-<a href="/blog/srp-single-responsibility-principle">SRP - Single Responsibility Principle</a>
+<span class="date">22/09/2010</span> &raquo; 
+<a href="/blog/palestra-orientacao-a-objetos-e-principios-solid-slides-e-demos">Palestra Orientação a Objetos e Princípios SOLID: slides e demos</a>
 </p>
 </li> 
 <li>
@@ -19,8 +19,8 @@ keywords: [principios-solid]
 </li> 
 <li>
 <p>
-<span class="date">22/09/2010</span> &raquo; 
-<a href="/blog/palestra-orientacao-a-objetos-e-principios-solid-slides-e-demos">Palestra Orientação a Objetos e Princípios SOLID: slides e demos</a>
+<span class="date">03/07/2010</span> &raquo; 
+<a href="/blog/srp-single-responsibility-principle">SRP - Single Responsibility Principle</a>
 </p>
 </li> 
 </ul>

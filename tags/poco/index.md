@@ -7,14 +7,8 @@ keywords: [poco]
 <ul class="posts">
 <li>
 <p>
-<span class="date">01/03/2010</span> &raquo; 
-<a href="/blog/entity-framework-4-0-utilizando-many-to-many-com-pocos">Entity Framework 4.0: Utilizando many-to-many com POCOs</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">27/04/2010</span> &raquo; 
-<a href="/blog/o-que-sao-classes-poco">O que são classes POCO?</a>
+<span class="date">22/10/2010</span> &raquo; 
+<a href="/blog/pocos-com-entity-framework-4-passo-a-passo-net-magazine-74">POCOs com Entity Framework 4 .NET Magazine #74</a>
 </p>
 </li> 
 <li>
@@ -25,8 +19,14 @@ keywords: [poco]
 </li> 
 <li>
 <p>
-<span class="date">22/10/2010</span> &raquo; 
-<a href="/blog/pocos-com-entity-framework-4-passo-a-passo-net-magazine-74">POCOs com Entity Framework 4 .NET Magazine #74</a>
+<span class="date">27/04/2010</span> &raquo; 
+<a href="/blog/o-que-sao-classes-poco">O que são classes POCO?</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">01/03/2010</span> &raquo; 
+<a href="/blog/entity-framework-4-0-utilizando-many-to-many-com-pocos">Entity Framework 4.0: Utilizando many-to-many com POCOs</a>
 </p>
 </li> 
 </ul>

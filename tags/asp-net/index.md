@@ -7,8 +7,8 @@ keywords: [asp-net]
 <ul class="posts">
 <li>
 <p>
-<span class="date">25/01/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-jquery">ASP.NET MVC + JQuery</a>
+<span class="date">12/07/2010</span> &raquo; 
+<a href="/blog/webmatrix-o-que-e-por-que-usar">WebMatrix: O que é? Por que e quando usar?</a>
 </p>
 </li> 
 <li>
@@ -19,8 +19,8 @@ keywords: [asp-net]
 </li> 
 <li>
 <p>
-<span class="date">12/07/2010</span> &raquo; 
-<a href="/blog/webmatrix-o-que-e-por-que-usar">WebMatrix: O que é? Por que e quando usar?</a>
+<span class="date">25/01/2010</span> &raquo; 
+<a href="/blog/asp-net-mvc-jquery">ASP.NET MVC + JQuery</a>
 </p>
 </li> 
 </ul>

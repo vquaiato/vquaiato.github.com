@@ -7,14 +7,8 @@ keywords: [orm]
 <ul class="posts">
 <li>
 <p>
-<span class="date">27/01/2010</span> &raquo; 
-<a href="/blog/entity-framework-4-model-first-com-pocos">Entity Framework 4 - Model First com POCOs</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">01/03/2010</span> &raquo; 
-<a href="/blog/entity-framework-4-0-utilizando-many-to-many-com-pocos">Entity Framework 4.0: Utilizando many-to-many com POCOs</a>
+<span class="date">01/10/2010</span> &raquo; 
+<a href="/blog/morte-aos-xmls-usando-fluent-nhibernate">Morte aos XMLs: usando Fluent NHibernate</a>
 </p>
 </li> 
 <li>
@@ -25,8 +19,14 @@ keywords: [orm]
 </li> 
 <li>
 <p>
-<span class="date">01/10/2010</span> &raquo; 
-<a href="/blog/morte-aos-xmls-usando-fluent-nhibernate">Morte aos XMLs: usando Fluent NHibernate</a>
+<span class="date">01/03/2010</span> &raquo; 
+<a href="/blog/entity-framework-4-0-utilizando-many-to-many-com-pocos">Entity Framework 4.0: Utilizando many-to-many com POCOs</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">27/01/2010</span> &raquo; 
+<a href="/blog/entity-framework-4-model-first-com-pocos">Entity Framework 4 - Model First com POCOs</a>
 </p>
 </li> 
 </ul>

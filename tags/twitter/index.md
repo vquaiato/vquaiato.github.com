@@ -7,8 +7,8 @@ keywords: [twitter]
 <ul class="posts">
 <li>
 <p>
-<span class="date">19/02/2010</span> &raquo; 
-<a href="/blog/tweetsharp-acessando-o-twitter-com-c">TweetSharp: Acessando o Twitter com C#</a>
+<span class="date">02/11/2010</span> &raquo; 
+<a href="/blog/quantoeh-calculadora-social-via-twitter">@quantoeh: Calculadora social via twitter</a>
 </p>
 </li> 
 <li>
@@ -19,8 +19,8 @@ keywords: [twitter]
 </li> 
 <li>
 <p>
-<span class="date">02/11/2010</span> &raquo; 
-<a href="/blog/quantoeh-calculadora-social-via-twitter">@quantoeh: Calculadora social via twitter</a>
+<span class="date">19/02/2010</span> &raquo; 
+<a href="/blog/tweetsharp-acessando-o-twitter-com-c">TweetSharp: Acessando o Twitter com C#</a>
 </p>
 </li> 
 </ul>

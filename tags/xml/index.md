@@ -7,14 +7,14 @@ keywords: [xml]
 <ul class="posts">
 <li>
 <p>
-<span class="date">01/10/2010</span> &raquo; 
-<a href="/blog/morte-aos-xmls-usando-fluent-nhibernate">Morte aos XMLs: usando Fluent NHibernate</a>
+<span class="date">05/10/2010</span> &raquo; 
+<a href="/blog/quick-tip-testando-metodos-que-geram-xml">QuickTip: Testando métodos que geram XML</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">05/10/2010</span> &raquo; 
-<a href="/blog/quick-tip-testando-metodos-que-geram-xml">QuickTip: Testando métodos que geram XML</a>
+<span class="date">01/10/2010</span> &raquo; 
+<a href="/blog/morte-aos-xmls-usando-fluent-nhibernate">Morte aos XMLs: usando Fluent NHibernate</a>
 </p>
 </li> 
 </ul>

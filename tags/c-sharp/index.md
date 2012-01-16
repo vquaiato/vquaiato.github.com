@@ -7,14 +7,14 @@ keywords: [c-sharp]
 <ul class="posts">
 <li>
 <p>
-<span class="date">21/12/2009</span> &raquo; 
-<a href="/blog/injecao-de-dependencia">Injeção de Dependência no C#</a>
+<span class="date">23/12/2009</span> &raquo; 
+<a href="/blog/dynamicobject-dinamismo-no-net-4-0">DynamicObject: dinamismo no .NET 4.0</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">23/12/2009</span> &raquo; 
-<a href="/blog/dynamicobject-dinamismo-no-net-4-0">DynamicObject: dinamismo no .NET 4.0</a>
+<span class="date">21/12/2009</span> &raquo; 
+<a href="/blog/injecao-de-dependencia">Injeção de Dependência no C#</a>
 </p>
 </li> 
 </ul>

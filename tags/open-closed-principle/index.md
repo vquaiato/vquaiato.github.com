@@ -7,14 +7,14 @@ keywords: [open-closed-principle]
 <ul class="posts">
 <li>
 <p>
-<span class="date">13/07/2010</span> &raquo; 
-<a href="/blog/ocp-open-closed-principle">OCP - Open Closed Principle</a>
+<span class="date">04/08/2010</span> &raquo; 
+<a href="/blog/decorator-pattern">Decorator Pattern</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">04/08/2010</span> &raquo; 
-<a href="/blog/decorator-pattern">Decorator Pattern</a>
+<span class="date">13/07/2010</span> &raquo; 
+<a href="/blog/ocp-open-closed-principle">OCP - Open Closed Principle</a>
 </p>
 </li> 
 </ul>

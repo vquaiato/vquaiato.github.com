@@ -7,8 +7,8 @@ keywords: [monodevelop]
 <ul class="posts">
 <li>
 <p>
-<span class="date">03/05/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-no-mono">ASP.NET MVC no Mono</a>
+<span class="date">14/05/2011</span> &raquo; 
+<a href="/blog/trabalhando-com-boo-no-monodevelop">Trabalhando com Boo no MonoDevelop</a>
 </p>
 </li> 
 <li>
@@ -19,8 +19,8 @@ keywords: [monodevelop]
 </li> 
 <li>
 <p>
-<span class="date">14/05/2011</span> &raquo; 
-<a href="/blog/trabalhando-com-boo-no-monodevelop">Trabalhando com Boo no MonoDevelop</a>
+<span class="date">03/05/2011</span> &raquo; 
+<a href="/blog/asp-net-mvc-no-mono">ASP.NET MVC no Mono</a>
 </p>
 </li> 
 </ul>

@@ -7,8 +7,8 @@ keywords: [expandoobject]
 <ul class="posts">
 <li>
 <p>
-<span class="date">15/12/2009</span> &raquo; 
-<a href="/blog/expandoobject-dinamismo-dotnet-4">ExpandoObject: dinamismo no .NET 4.0</a>
+<span class="date">22/03/2010</span> &raquo; 
+<a href="/blog/apresentacao-dynamic-types-no-net-4">Apresentação Dynamic Types no .NET 4</a>
 </p>
 </li> 
 <li>
@@ -19,8 +19,8 @@ keywords: [expandoobject]
 </li> 
 <li>
 <p>
-<span class="date">22/03/2010</span> &raquo; 
-<a href="/blog/apresentacao-dynamic-types-no-net-4">Apresentação Dynamic Types no .NET 4</a>
+<span class="date">15/12/2009</span> &raquo; 
+<a href="/blog/expandoobject-dinamismo-dotnet-4">ExpandoObject: dinamismo no .NET 4.0</a>
 </p>
 </li> 
 </ul>

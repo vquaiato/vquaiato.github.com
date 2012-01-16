@@ -7,14 +7,14 @@ keywords: [asp-net-mvc-3-rc-2]
 <ul class="posts">
 <li>
 <p>
-<span class="date">10/12/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-rc-2-lancado">ASP.NET MVC 3 RC 2 lançado!</a>
+<span class="date">23/12/2010</span> &raquo; 
+<a href="/blog/asp-net-mvc-3-rc-2-mudancas">ASP.NET MVC 3 RC 2 mudanças!</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">23/12/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-rc-2-mudancas">ASP.NET MVC 3 RC 2 mudanças!</a>
+<span class="date">10/12/2010</span> &raquo; 
+<a href="/blog/asp-net-mvc-3-rc-2-lancado">ASP.NET MVC 3 RC 2 lançado!</a>
 </p>
 </li> 
 </ul>

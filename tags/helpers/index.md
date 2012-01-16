@@ -7,8 +7,8 @@ keywords: [helpers]
 <ul class="posts">
 <li>
 <p>
-<span class="date">05/11/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-criando-view-helpers-com-razor">ASP.NET MVC 3: Criando view helpers com Razor</a>
+<span class="date">02/12/2010</span> &raquo; 
+<a href="/blog/gravatar-web-helper-no-asp-net-mvc-3">Gravatar web helper no ASP.NET MVC 3</a>
 </p>
 </li> 
 <li>
@@ -19,8 +19,8 @@ keywords: [helpers]
 </li> 
 <li>
 <p>
-<span class="date">02/12/2010</span> &raquo; 
-<a href="/blog/gravatar-web-helper-no-asp-net-mvc-3">Gravatar web helper no ASP.NET MVC 3</a>
+<span class="date">05/11/2010</span> &raquo; 
+<a href="/blog/asp-net-mvc-3-criando-view-helpers-com-razor">ASP.NET MVC 3: Criando view helpers com Razor</a>
 </p>
 </li> 
 </ul>

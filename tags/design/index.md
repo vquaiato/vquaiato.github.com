@@ -7,14 +7,14 @@ keywords: [design]
 <ul class="posts">
 <li>
 <p>
-<span class="date">24/11/2009</span> &raquo; 
-<a href="/blog/podcast-principios-solid-net-architects">Podcast Princípios SOLID - .NET Architects</a>
+<span class="date">27/12/2010</span> &raquo; 
+<a href="/blog/tell-dont-ask">Tell don't ask!</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">27/12/2010</span> &raquo; 
-<a href="/blog/tell-dont-ask">Tell don't ask!</a>
+<span class="date">24/11/2009</span> &raquo; 
+<a href="/blog/podcast-principios-solid-net-architects">Podcast Princípios SOLID - .NET Architects</a>
 </p>
 </li> 
 </ul>

@@ -7,14 +7,14 @@ keywords: [model]
 <ul class="posts">
 <li>
 <p>
-<span class="date">29/10/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-dynamic-view-models-e-diretiva-model">ASP.NET MVC 3: dynamic view models e diretiva model</a>
+<span class="date">12/01/2011</span> &raquo; 
+<a href="/blog/entendendo-as-letrinhas-do-mvc">Entendendo as letrinhas do MVC</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">12/01/2011</span> &raquo; 
-<a href="/blog/entendendo-as-letrinhas-do-mvc">Entendendo as letrinhas do MVC</a>
+<span class="date">29/10/2010</span> &raquo; 
+<a href="/blog/asp-net-mvc-3-dynamic-view-models-e-diretiva-model">ASP.NET MVC 3: dynamic view models e diretiva model</a>
 </p>
 </li> 
 </ul>

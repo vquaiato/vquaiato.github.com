@@ -7,8 +7,8 @@ keywords: [clean-code]
 <ul class="posts">
 <li>
 <p>
-<span class="date">02/07/2010</span> &raquo; 
-<a href="/blog/dica-de-leitura-clean-code">Dica de Leitura: Clean Code</a>
+<span class="date">01/10/2011</span> &raquo; 
+<a href="/blog/escrever-codigo-em-ingles-ou-portugues">Escrever código em inglês ou português?</a>
 </p>
 </li> 
 <li>
@@ -19,8 +19,8 @@ keywords: [clean-code]
 </li> 
 <li>
 <p>
-<span class="date">01/10/2011</span> &raquo; 
-<a href="/blog/escrever-codigo-em-ingles-ou-portugues">Escrever código em inglês ou português?</a>
+<span class="date">02/07/2010</span> &raquo; 
+<a href="/blog/dica-de-leitura-clean-code">Dica de Leitura: Clean Code</a>
 </p>
 </li> 
 </ul>

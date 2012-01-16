@@ -7,8 +7,8 @@ keywords: [dnad]
 <ul class="posts">
 <li>
 <p>
-<span class="date">12/04/2011</span> &raquo; 
-<a href="/blog/dnad11-net-architects-days-2011">#DNAD11 - .NET Architects Days 2011</a>
+<span class="date">17/06/2011</span> &raquo; 
+<a href="/blog/yagni-no-dnad11-videos-da-palestra">YAGNI no DNAD11 vídeos da palestra</a>
 </p>
 </li> 
 <li>
@@ -19,8 +19,8 @@ keywords: [dnad]
 </li> 
 <li>
 <p>
-<span class="date">17/06/2011</span> &raquo; 
-<a href="/blog/yagni-no-dnad11-videos-da-palestra">YAGNI no DNAD11 vídeos da palestra</a>
+<span class="date">12/04/2011</span> &raquo; 
+<a href="/blog/dnad11-net-architects-days-2011">#DNAD11 - .NET Architects Days 2011</a>
 </p>
 </li> 
 </ul>

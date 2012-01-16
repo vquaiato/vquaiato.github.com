@@ -7,8 +7,8 @@ keywords: [curso-asp-net-mvc-3]
 <ul class="posts">
 <li>
 <p>
-<span class="date">28/10/2010</span> &raquo; 
-<a href="/blog/minicurso-asp-net-mvc-3-na-globalcode-gratuito">Minicurso ASP.NET MVC 3 na Globalcode: gratuito!</a>
+<span class="date">18/01/2011</span> &raquo; 
+<a href="/blog/online-training-asp-net-mvc-3">Online Training ASP.NET MVC 3 </a>
 </p>
 </li> 
 <li>
@@ -19,8 +19,8 @@ keywords: [curso-asp-net-mvc-3]
 </li> 
 <li>
 <p>
-<span class="date">18/01/2011</span> &raquo; 
-<a href="/blog/online-training-asp-net-mvc-3">Online Training ASP.NET MVC 3 </a>
+<span class="date">28/10/2010</span> &raquo; 
+<a href="/blog/minicurso-asp-net-mvc-3-na-globalcode-gratuito">Minicurso ASP.NET MVC 3 na Globalcode: gratuito!</a>
 </p>
 </li> 
 </ul>

@@ -7,32 +7,20 @@ keywords: [testes-unitarios]
 <ul class="posts">
 <li>
 <p>
-<span class="date">19/07/2010</span> &raquo; 
-<a href="/blog/efeito-borboleta-e-o-software">Efeito Borboleta e o Software</a>
+<span class="date">14/05/2011</span> &raquo; 
+<a href="/blog/trabalhando-com-boo-no-monodevelop">Trabalhando com Boo no MonoDevelop</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">21/07/2010</span> &raquo; 
-<a href="/blog/tdd-mock-objects-usando-moq">TDD: mock objects usando Moq</a>
+<span class="date">08/05/2011</span> &raquo; 
+<a href="/blog/unit-tests-com-nunit-no-monodevelop">Unit Tests com NUnit no MonoDevelop</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">22/07/2010</span> &raquo; 
-<a href="/blog/tdd-mock-objects-com-rhino-mocks">TDD: mock objects com Rhino Mocks</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">23/07/2010</span> &raquo; 
-<a href="/blog/testando-com-nunit">Testando com NUnit</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">25/07/2010</span> &raquo; 
-<a href="/blog/tdd-testes-mais-amigaveis-com-sharp-tests-ex">TDD: Testes mais amigáveis com Sharp Tests Ex</a>
+<span class="date">02/09/2010</span> &raquo; 
+<a href="/blog/asp-net-mvc-testando-controllers-parte-iii">ASP.NET MVC: Testando controllers parte III</a>
 </p>
 </li> 
 <li>
@@ -49,20 +37,32 @@ keywords: [testes-unitarios]
 </li> 
 <li>
 <p>
-<span class="date">02/09/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-testando-controllers-parte-iii">ASP.NET MVC: Testando controllers parte III</a>
+<span class="date">25/07/2010</span> &raquo; 
+<a href="/blog/tdd-testes-mais-amigaveis-com-sharp-tests-ex">TDD: Testes mais amigáveis com Sharp Tests Ex</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">08/05/2011</span> &raquo; 
-<a href="/blog/unit-tests-com-nunit-no-monodevelop">Unit Tests com NUnit no MonoDevelop</a>
+<span class="date">23/07/2010</span> &raquo; 
+<a href="/blog/testando-com-nunit">Testando com NUnit</a>
 </p>
 </li> 
 <li>
 <p>
-<span class="date">14/05/2011</span> &raquo; 
-<a href="/blog/trabalhando-com-boo-no-monodevelop">Trabalhando com Boo no MonoDevelop</a>
+<span class="date">22/07/2010</span> &raquo; 
+<a href="/blog/tdd-mock-objects-com-rhino-mocks">TDD: mock objects com Rhino Mocks</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">21/07/2010</span> &raquo; 
+<a href="/blog/tdd-mock-objects-usando-moq">TDD: mock objects usando Moq</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">19/07/2010</span> &raquo; 
+<a href="/blog/efeito-borboleta-e-o-software">Efeito Borboleta e o Software</a>
 </p>
 </li> 
 </ul>

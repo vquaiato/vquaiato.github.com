@@ -63,7 +63,8 @@ namespace :tags do
     site.read_posts('')
     site.tags.each do |kategory, posts|
       category = kategory["slug"]
-      keywords = aggregate_keywords(category, posts)
+      ordered_posts = posts.sort_by{|p| p.to_liquid["date"]}.reverse
+      keywords = aggregate_keywords(category, ordered_posts)
       html= <<-HTML
 ---
 layout: default
@@ -73,7 +74,7 @@ keywords: [#{keywords}]
 <h2 class="category">#{kategory["title"]}</h2>
 <ul class="posts">
 HTML
-posts.each do |post|
+ordered_posts.each do |post|
 post_data = post.to_liquid
 html << <<-HTML
 <li>
