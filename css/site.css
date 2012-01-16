@@ -24,6 +24,7 @@ div#all_tags a, div#all_tags a:visited{color:#333;line-height:22px;}
 /*POSTS SINGLE*/
 div#post{margin-bottom:30px;}
 div#post p.post-date{margin: -5px 0 25px 0;letter-spacing: 1px;font-size: 11px;}
+div#post pre{background-color: #fff;padding:3px;}
 
 /*FOOTER*/
 div.footer {position:fixed;left:0px;bottom:0px;height:50px;width:100%;background:#333;font-family: Helvetica, Arial, sans-serif;}
