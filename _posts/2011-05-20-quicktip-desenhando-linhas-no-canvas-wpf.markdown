@@ -11,18 +11,6 @@ tags:
 - title: Wpf
   slug: wpf
   autoslug: wpf
-- title: Grid lines
-  slug: grid-lines
-  autoslug: grid-lines
-- title: Canvas Grid Lines
-  slug: canvas-grid-lines
-  autoslug: canvas-grid-lines
-- title: WPF Canvas tilling
-  slug: wpf-canvas-tilling
-  autoslug: wpf-canvas-tilling
-- title: Desenhar linhas canvas wpf
-  slug: desenhar-linhas-canvas-wpf
-  autoslug: desenhar-linhas-canvas-wpf
 ---
 
 

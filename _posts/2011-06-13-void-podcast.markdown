@@ -14,12 +14,6 @@ tags:
 - title: Void Podcast
   slug: void-podcast
   autoslug: void-podcast
-- title: Void
-  slug: void
-  autoslug: void
-- title: VoidPodcast
-  slug: voidpodcast
-  autoslug: voidpodcast
 ---
 
 

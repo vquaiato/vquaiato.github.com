@@ -11,15 +11,6 @@ tags:
 - title: MongoDB
   slug: mongodb
   autoslug: mongodb
-- title: Queries
-  slug: queries
-  autoslug: queries
-- title: Select MongoDB C#
-  slug: select-mongodb-c
-  autoslug: select-mongodb-c#
-- title: Consultas no MongoDB com C#
-  slug: consultas-no-mongodb-com-c
-  autoslug: consultas-no-mongodb-com-c#
 ---
 
 

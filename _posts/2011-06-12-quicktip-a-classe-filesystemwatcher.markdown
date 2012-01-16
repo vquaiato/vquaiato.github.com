@@ -17,12 +17,9 @@ tags:
 - title: FileSystemWatcher
   slug: filesystemwatcher
   autoslug: filesystemwatcher
-- title: monitorar arquivos
-  slug: monitorar-arquivos
-  autoslug: monitorar-arquivos
-- title: "monitorar diret\xC3\xB3rios"
-  slug: monitorar-diretorios
-  autoslug: "monitorar-diret\xC3\xB3rios"
+- title: Mono
+  slug: mono
+  autoslug: mono
 ---
 Fala galera, estava eu um dia destes sem nada para fazer e comecei a brincar com a classe [FileSystemWatcher](http://msdn.microsoft.com/en-US/library/system.io.filesystemwatcher.aspx).Basicamente o que esta classe faz é ficar escutando por alterações em uma pasta ou arquivos em uma pasta.Com a classe FileSystemWatcher é possível monitorar mudanças de nome em arquivos e pastas, adição ou criação de arquivos, deleções, etc.A classe possui eventos que podem ser assinados e então serão disparados de acordo com as alterações/ações que ocorrerem ao diretório monitorado, vejamos abaixo:
 {% highlight csharp %}

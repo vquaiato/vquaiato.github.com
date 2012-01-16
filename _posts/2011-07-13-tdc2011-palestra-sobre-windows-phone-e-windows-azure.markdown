@@ -14,21 +14,15 @@ tags:
 - title: Windows Phone 7
   slug: windows-phone-7
   autoslug: windows-phone-7
-- title: WP7
-  slug: wp7
-  autoslug: wp7
-- title: Windows Phone
-  slug: windows-phone
-  autoslug: windows-phone
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Azure
-  slug: azure
-  autoslug: azure
 - title: TDC2011
   slug: tdc2011
   autoslug: tdc2011
+- title: Palestras
+  slug: palestras
+  autoslug: palestras
 ---
 
 

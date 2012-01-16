@@ -14,15 +14,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Azure Storage
-  slug: azure-storage
-  autoslug: azure-storage
-- title: Azure Queues
-  slug: azure-queues
-  autoslug: azure-queues
-- title: Windows Azure Queues
-  slug: windows-azure-queues
-  autoslug: windows-azure-queues
 ---
 Fala galera, beleza? Esta dica rápida vai para um "problema" que eu estava tendo ao criar Queues no Windows Azure. Vejam abaixo o código com problemas:
 {% highlight csharp %}

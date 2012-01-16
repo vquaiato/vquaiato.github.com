@@ -11,18 +11,6 @@ tags:
 - title: Windows Phone 7
   slug: windows-phone-7
   autoslug: windows-phone-7
-- title: Windows Phone
-  slug: windows-phone
-  autoslug: windows-phone
-- title: Mango
-  slug: mango
-  autoslug: mango
-- title: Windows Phone 7.1
-  slug: windows-phone-7-1
-  autoslug: windows-phone-7.1
-- title: Windows Phone 7.1 beta 2
-  slug: windows-phone-7-1-beta-2
-  autoslug: windows-phone-7.1-beta-2
 ---
 
 

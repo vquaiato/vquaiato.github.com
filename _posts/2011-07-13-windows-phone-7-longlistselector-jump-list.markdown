@@ -11,18 +11,6 @@ tags:
 - title: Windows Phone 7
   slug: windows-phone-7
   autoslug: windows-phone-7
-- title: WP7
-  slug: wp7
-  autoslug: wp7
-- title: Windows Phone
-  slug: windows-phone
-  autoslug: windows-phone
-- title: Silverlight Toolkit
-  slug: silverlight-toolkit
-  autoslug: silverlight-toolkit
-- title: LongListSelector
-  slug: longlistselector
-  autoslug: longlistselector
 ---
 Fala galera, beleza? Recentemente [criei e apresentei uma aplicação](http://viniciusquaiato.com/blog/tdc2011-palestra-sobre-windows-phone-e-windows-azure/) para [Windows Phone 7](http://viniciusquaiato.com/blog/category/windows-phone-7/) que exibe a documentação do .NET Framework presente no MSDN.Imagine que o [.NET possui mais de 200 namespaces](http://msdn.microsoft.com/pt-br/library/ms229335.aspx): exibir tudo isso em uma lista fica complicado, principalmente se queremos encontrar algo facilmente.Aí entra o LongListSelector: um dos controles do [Silverlight Toolkit para Windows Phone 7](http://silverlight.codeplex.com/).Eu procurei bastante por algo nativo como um jump list mas não encontrei. Foi quando vi que no [Silverlight Toolkit para Windows Phone 7](http://silverlight.codeplex.com/) já há o LongListSelector. Neste primeiro post mostrarei como baixar, instalar e usar em um projeto. E em um próximo post mostrarei recursos como o agrupamento, que é o que de fato torna este controle interessante.
 

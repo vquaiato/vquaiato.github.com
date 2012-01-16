@@ -1,7 +1,5 @@
-h1, h2, h3 {margin: 0; padding: 0;}
+h1, h2, h3, ul {margin: 0; padding: 0;}
 body{background: url(/images/bg.png);color: #333;font-family: Georgia, Cambria, "Times New Roman", Times, serif;}
-ul{margin:0;padding:0;}
-/*ul li{list-style-type:none;}*/
 h2, h3 {font-family: Helvetica, Arial, sans-serif;text-shadow: 1px 1px 1px #CCC;}
 blockquote{border-left: solid 4px #666;padding-left: 5px;font-style: italic;}
 
@@ -18,16 +16,14 @@ ul.posts li p{margin: 5px 0;font-size: 20px;text-shadow: 1px 1px 1px #CCC;}
 ul.posts li p span.date{color:#3168B3;}
 h2.post_title{color: #3168B3;text-shadow: 1px 1px 1px #CCC;font-size: 34px;}
 
-/*LISTA TAGS HOME*/
+/*LISTA TAGS*/
+div#all_tags{margin-top:10px;}
 div#all_tags ul li{display: inline;font-size:11px;font-style: italic;margin:3px;}
 div#all_tags a, div#all_tags a:visited{color:#333;line-height:22px;}
 
 /*POSTS SINGLE*/
 div#post{margin-bottom:30px;}
 div#post p.post-date{margin: -5px 0 25px 0;letter-spacing: 1px;font-size: 11px;}
-
-/*TAGS*/
-div#all_tags{margin-top:10px;}
 
 /*FOOTER*/
 div.footer {position:fixed;left:0px;bottom:0px;height:50px;width:100%;background:#333;font-family: Helvetica, Arial, sans-serif;}
@@ -72,16 +68,3 @@ div.footer ul li.feed{background: url(/images/feed.png) no-repeat;padding-left:2
 .csharp .sr { color: #a31515 } /* Literal.String.Regex */
 .csharp .s1 { color: #a31515 } /* Literal.String.Single */
 .csharp .ss { color: #a31515 } /* Literal.String.Symbol */
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
-}
