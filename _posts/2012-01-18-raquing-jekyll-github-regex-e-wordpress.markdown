@@ -11,7 +11,7 @@ tags:
 ---
 Fala galera, beleza?
 
-Pois bem, depois de decidir sobre como funcionaria o meu novo blog eu tive que pesquisar um pouco sobre como colocar tudo isso para funcionar. 
+Pois bem, depois de decidir sobre como funcionaria o meu novo blog eu tive que pesquisar um pouco sobre como colocar tudo isso para funcionar. ([Veja mais na tag Jekyll][tag-jekyll])
 
 ##Migrando os posts do Wordpress para markdown
 A minha maior preocupação foi entender se era possível e como era possível migrar os posts do Wordpress para o Jekyll. 
@@ -117,7 +117,7 @@ rake tags:generate
 {% endhighlight %}
 
 E pronto! Minhas pastas e arquivos estão gerado, tudo estático :D
-Essa rake task pode ser encontrada aqui.
+[Essa rake task pode ser encontrada aqui][rakefile].
 
 ##Resumindo
 Desta forma fica bem claro como é simples fazer uma migração e algumas configurações para iniciar o uso do Jekyll a partir de um blog já existente.
@@ -127,3 +127,5 @@ Essa brincadeira toda de script e regex se torna bastante divertida quando estam
 [migrators]:https://github.com/mojombo/jekyll/wiki/blog-migrations
 [regex]:https://github.com/vquaiato/vquaiato.github.com/blob/master/_raquer_scripts/regex_raque.rb
 [pygments-list]:http://pygments.org/demo/
+[rakefile]:https://github.com/vquaiato/vquaiato.github.com/blob/master/Rakefile
+[tag-jekyll]:http://viniciusquaiato.com/tags/jekyll
