@@ -1,6 +1,7 @@
 h1, h2, h3, ul {margin: 0; padding: 0;}
 body{background: url(/images/bg.png);color: #333;font-family: Georgia, Cambria, "Times New Roman", Times, serif;}
 h2, h3 {font-family: Helvetica, Arial, sans-serif;text-shadow: 1px 1px 1px #CCC;}
+h3 a, h3 a:visited{color:#333;}
 blockquote{border-left: solid 4px #666;padding-left: 5px;font-style: italic;}
 
 /*TITLE*/
@@ -25,7 +26,8 @@ div#all_tags a, div#all_tags a:visited{color:#333;line-height:22px;}
 /*POSTS SINGLE*/
 div#post{margin-bottom:30px;}
 div#post p.post-date{margin: -5px 0 25px 0;letter-spacing: 1px;font-size: 11px;}
-div#post pre{background-color: #fff;padding:3px;}
+div#post pre{padding:5px;background-color:#f0f3f3;}
+div#post ul {margin-left: 40px}
 
 /*FOOTER*/
 div.footer {position:fixed;left:0px;bottom:0px;height:50px;width:100%;background:#333;font-family: Helvetica, Arial, sans-serif;}
@@ -37,7 +39,8 @@ div.footer ul li.designed{color:#848484;}
 div.footer ul li.feed{background: url(/images/feed.png) no-repeat;padding-left:25px;}
 
 /*C# SYNTAX*/
-.csharp .hll { background-color: #ffffcc }
+.csharp .hll { background-color: #f0f3f3 }
+.csharp  { background-color: #f0f3f3 }
 .csharp .c { color: #008000 } /* Comment */
 .csharp .err { border: 1px solid #FF0000 } /* Error */
 .csharp .k { color: #0000ff } /* Keyword */
@@ -70,3 +73,131 @@ div.footer ul li.feed{background: url(/images/feed.png) no-repeat;padding-left:2
 .csharp .sr { color: #a31515 } /* Literal.String.Regex */
 .csharp .s1 { color: #a31515 } /* Literal.String.Single */
 .csharp .ss { color: #a31515 } /* Literal.String.Symbol */
+
+/*BASH SYNTAX*/
+.sh .hll { background-color: #f0f3f3 }
+.sh  { background: #f0f3f3; }
+.sh .c { color: #0099FF; font-style: italic } /* Comment */
+.sh .err { color: #AA0000; background-color: #FFAAAA } /* Error */
+.sh .k { color: #006699; font-weight: bold } /* Keyword */
+.sh .o { color: #555555 } /* Operator */
+.sh .cm { color: #0099FF; font-style: italic } /* Comment.Multiline */
+.sh .cp { color: #009999 } /* Comment.Preproc */
+.sh .c1 { color: #0099FF; font-style: italic } /* Comment.Single */
+.sh .cs { color: #0099FF; font-weight: bold; font-style: italic } /* Comment.Special */
+.sh .gd { background-color: #FFCCCC; border: 1px solid #CC0000 } /* Generic.Deleted */
+.sh .ge { font-style: italic } /* Generic.Emph */
+.sh .gr { color: #FF0000 } /* Generic.Error */
+.sh .gh { color: #003300; font-weight: bold } /* Generic.Heading */
+.sh .gi { background-color: #CCFFCC; border: 1px solid #00CC00 } /* Generic.Inserted */
+.sh .go { color: #AAAAAA } /* Generic.Output */
+.sh .gp { color: #000099; font-weight: bold } /* Generic.Prompt */
+.sh .gs { font-weight: bold } /* Generic.Strong */
+.sh .gu { color: #003300; font-weight: bold } /* Generic.Subheading */
+.sh .gt { color: #99CC66 } /* Generic.Traceback */
+.sh .kc { color: #006699; font-weight: bold } /* Keyword.Constant */
+.sh .kd { color: #006699; font-weight: bold } /* Keyword.Declaration */
+.sh .kn { color: #006699; font-weight: bold } /* Keyword.Namespace */
+.sh .kp { color: #006699 } /* Keyword.Pseudo */
+.sh .kr { color: #006699; font-weight: bold } /* Keyword.Reserved */
+.sh .kt { color: #007788; font-weight: bold } /* Keyword.Type */
+.sh .m { color: #FF6600 } /* Literal.Number */
+.sh .s { color: #CC3300 } /* Literal.String */
+.sh .na { color: #330099 } /* Name.Attribute */
+.sh .nb { color: #336666 } /* Name.Builtin */
+.sh .nc { color: #00AA88; font-weight: bold } /* Name.Class */
+.sh .no { color: #336600 } /* Name.Constant */
+.sh .nd { color: #9999FF } /* Name.Decorator */
+.sh .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.sh .ne { color: #CC0000; font-weight: bold } /* Name.Exception */
+.sh .nf { color: #CC00FF } /* Name.Function */
+.sh .nl { color: #9999FF } /* Name.Label */
+.sh .nn { color: #00CCFF; font-weight: bold } /* Name.Namespace */
+.sh .nt { color: #330099; font-weight: bold } /* Name.Tag */
+.sh .nv { color: #003333 } /* Name.Variable */
+.sh .ow { color: #000000; font-weight: bold } /* Operator.Word */
+.sh .w { color: #bbbbbb } /* Text.Whitespace */
+.sh .mf { color: #FF6600 } /* Literal.Number.Float */
+.sh .mh { color: #FF6600 } /* Literal.Number.Hex */
+.sh .mi { color: #FF6600 } /* Literal.Number.Integer */
+.sh .mo { color: #FF6600 } /* Literal.Number.Oct */
+.sh .sb { color: #CC3300 } /* Literal.String.Backtick */
+.sh .sc { color: #CC3300 } /* Literal.String.Char */
+.sh .sd { color: #CC3300; font-style: italic } /* Literal.String.Doc */
+.sh .s2 { color: #CC3300 } /* Literal.String.Double */
+.sh .se { color: #CC3300; font-weight: bold } /* Literal.String.Escape */
+.sh .sh { color: #CC3300 } /* Literal.String.Heredoc */
+.sh .si { color: #AA0000 } /* Literal.String.Interpol */
+.sh .sx { color: #CC3300 } /* Literal.String.Other */
+.sh .sr { color: #33AAAA } /* Literal.String.Regex */
+.sh .s1 { color: #CC3300 } /* Literal.String.Single */
+.sh .ss { color: #FFCC33 } /* Literal.String.Symbol */
+.sh .bp { color: #336666 } /* Name.Builtin.Pseudo */
+.sh .vc { color: #003333 } /* Name.Variable.Class */
+.sh .vg { color: #003333 } /* Name.Variable.Global */
+.sh .vi { color: #003333 } /* Name.Variable.Instance */
+.sh .il { color: #FF6600 } /* Literal.Number.Integer.Long */
+
+/*RUBY SYNTAX*/
+.ruby .hll { background-color: #f0f3f3 }
+.ruby  { background: #f0f3f3; }
+.ruby .c { color: #0099FF; font-style: italic } /* Comment */
+.ruby .err { color: #AA0000; background-color: #FFAAAA } /* Error */
+.ruby .k { color: #006699; font-weight: bold } /* Keyword */
+.ruby .o { color: #555555 } /* Operator */
+.ruby .cm { color: #0099FF; font-style: italic } /* Comment.Multiline */
+.ruby .cp { color: #009999 } /* Comment.Preproc */
+.ruby .c1 { color: #0099FF; font-style: italic } /* Comment.Single */
+.ruby .cs { color: #0099FF; font-weight: bold; font-style: italic } /* Comment.Special */
+.ruby .gd { background-color: #FFCCCC; border: 1px solid #CC0000 } /* Generic.Deleted */
+.ruby .ge { font-style: italic } /* Generic.Emph */
+.ruby .gr { color: #FF0000 } /* Generic.Error */
+.ruby .gh { color: #003300; font-weight: bold } /* Generic.Heading */
+.ruby .gi { background-color: #CCFFCC; border: 1px solid #00CC00 } /* Generic.Inserted */
+.ruby .go { color: #AAAAAA } /* Generic.Output */
+.ruby .gp { color: #000099; font-weight: bold } /* Generic.Prompt */
+.ruby .gs { font-weight: bold } /* Generic.Strong */
+.ruby .gu { color: #003300; font-weight: bold } /* Generic.Subheading */
+.ruby .gt { color: #99CC66 } /* Generic.Traceback */
+.ruby .kc { color: #006699; font-weight: bold } /* Keyword.Constant */
+.ruby .kd { color: #006699; font-weight: bold } /* Keyword.Declaration */
+.ruby .kn { color: #006699; font-weight: bold } /* Keyword.Namespace */
+.ruby .kp { color: #006699 } /* Keyword.Pseudo */
+.ruby .kr { color: #006699; font-weight: bold } /* Keyword.Reserved */
+.ruby .kt { color: #007788; font-weight: bold } /* Keyword.Type */
+.ruby .m { color: #FF6600 } /* Literal.Number */
+.ruby .s { color: #CC3300 } /* Literal.String */
+.ruby .na { color: #330099 } /* Name.Attribute */
+.ruby .nb { color: #336666 } /* Name.Builtin */
+.ruby .nc { color: #00AA88; font-weight: bold } /* Name.Class */
+.ruby .no { color: #336600 } /* Name.Constant */
+.ruby .nd { color: #9999FF } /* Name.Decorator */
+.ruby .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.ruby .ne { color: #CC0000; font-weight: bold } /* Name.Exception */
+.ruby .nf { color: #CC00FF } /* Name.Function */
+.ruby .nl { color: #9999FF } /* Name.Label */
+.ruby .nn { color: #00CCFF; font-weight: bold } /* Name.Namespace */
+.ruby .nt { color: #330099; font-weight: bold } /* Name.Tag */
+.ruby .nv { color: #003333 } /* Name.Variable */
+.ruby .ow { color: #000000; font-weight: bold } /* Operator.Word */
+.ruby .w { color: #bbbbbb } /* Text.Whitespace */
+.ruby .mf { color: #FF6600 } /* Literal.Number.Float */
+.ruby .mh { color: #FF6600 } /* Literal.Number.Hex */
+.ruby .mi { color: #FF6600 } /* Literal.Number.Integer */
+.ruby .mo { color: #FF6600 } /* Literal.Number.Oct */
+.ruby .sb { color: #CC3300 } /* Literal.String.Backtick */
+.ruby .sc { color: #CC3300 } /* Literal.String.Char */
+.ruby .sd { color: #CC3300; font-style: italic } /* Literal.String.Doc */
+.ruby .s2 { color: #CC3300 } /* Literal.String.Double */
+.ruby .se { color: #CC3300; font-weight: bold } /* Literal.String.Escape */
+.ruby .sh { color: #CC3300 } /* Literal.String.Heredoc */
+.ruby .si { color: #AA0000 } /* Literal.String.Interpol */
+.ruby .sx { color: #CC3300 } /* Literal.String.Other */
+.ruby .sr { color: #33AAAA } /* Literal.String.Regex */
+.ruby .s1 { color: #CC3300 } /* Literal.String.Single */
+.ruby .ss { color: #FFCC33 } /* Literal.String.Symbol */
+.ruby .bp { color: #336666 } /* Name.Builtin.Pseudo */
+.ruby .vc { color: #003333 } /* Name.Variable.Class */
+.ruby .vg { color: #003333 } /* Name.Variable.Global */
+.ruby .vi { color: #003333 } /* Name.Variable.Instance */
+.ruby .il { color: #FF6600 } /* Literal.Number.Integer.Long */
