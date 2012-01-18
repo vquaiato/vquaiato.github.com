@@ -11,6 +11,9 @@ tags:
 - title: Retrospectiva
   slug: retrospectiva
   autoslug: retrospectiva
+- title: [Off - Topic]
+  slug: off-topic
+  autoslug: off-topic
 ---
 O ano de 2010 foi realmente bastante intenso. Não imaginava que seria tão bom quanto foi. Vou fazer apenas uma retrospectiva de alguns pontos relacionados a minha participação em comunidades.
 

@@ -14,9 +14,9 @@ tags:
 - title: .NET Magazine
   slug: net-magazine
   autoslug: .net-magazine
-- title: ASP.NET MVC 3
-  slug: asp-net-mvc-3
-  autoslug: asp.net-mvc-3
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 
 

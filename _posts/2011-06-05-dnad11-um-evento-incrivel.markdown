@@ -17,9 +17,9 @@ tags:
 - title: Palestras
   slug: palestras
   autoslug: palestras
-- title: DNAD11
-  slug: dnad11
-  autoslug: dnad11
+- title: DNAD
+  slug: dnad
+  autoslug: dnad
 ---
 
 

@@ -7,12 +7,6 @@ keywords: [curso-asp-net-mvc-3]
 <ul class="posts">
 <li>
 <p>
-<span class="date">18/01/2011</span> &raquo; 
-<a href="/blog/online-training-asp-net-mvc-3">Online Training ASP.NET MVC 3 </a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">12/11/2010</span> &raquo; 
 <a href="/blog/curso-asp-net-mvc-3-slides-e-demos">Curso ASP.NET MVC 3 slides e demos</a>
 </p>

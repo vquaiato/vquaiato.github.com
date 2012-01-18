@@ -11,18 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Fabric
-  slug: fabric
-  autoslug: fabric
-- title: Fabric Controller
-  slug: fabric-controller
-  autoslug: fabric-controller
-- title: Azure Fabric
-  slug: azure-fabric
-  autoslug: azure-fabric
-- title: Azure Fabric Controller
-  slug: azure-fabric-controller
-  autoslug: azure-fabric-controller
 ---
 
 

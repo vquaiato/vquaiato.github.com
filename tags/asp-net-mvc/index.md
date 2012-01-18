@@ -20,13 +20,13 @@ keywords: [asp-net-mvc]
 <li>
 <p>
 <span class="date">17/02/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-ajaxoptions-loadingelementid">ASP.NET MVC AjaxOptions: LoadingElementId</a>
+<a href="/blog/asp-net-mvc-ajaxoptions-onbegin-e-oncomplete">ASP.NET MVC AjaxOptions: OnBegin e OnComplete</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">17/02/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-ajaxoptions-onbegin-e-oncomplete">ASP.NET MVC AjaxOptions: OnBegin e OnComplete</a>
+<a href="/blog/asp-net-mvc-ajaxoptions-loadingelementid">ASP.NET MVC AjaxOptions: LoadingElementId</a>
 </p>
 </li> 
 <li>
@@ -67,6 +67,18 @@ keywords: [asp-net-mvc]
 </li> 
 <li>
 <p>
+<span class="date">02/02/2011</span> &raquo; 
+<a href="/blog/asp-net-mvc-3-e-dependencyresolver-com-ninject">ASP.NET MVC 3 e DependencyResolver com Ninject</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">01/02/2011</span> &raquo; 
+<a href="/blog/asp-net-mvc-3-e-o-dependencyresolver">ASP.NET MVC 3 e o DependencyResolver</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">23/01/2011</span> &raquo; 
 <a href="/blog/mvc-summit-2011">MVC Summit 2011</a>
 </p>
@@ -79,8 +91,38 @@ keywords: [asp-net-mvc]
 </li> 
 <li>
 <p>
+<span class="date">18/01/2011</span> &raquo; 
+<a href="/blog/online-training-asp-net-mvc-3">Online Training ASP.NET MVC 3 </a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">15/01/2011</span> &raquo; 
 <a href="/blog/mvc-scaffolding">MVC Scaffolding</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">13/01/2011</span> &raquo; 
+<a href="/blog/asp-net-mvc-3-rtm-lancado">ASP.NET MVC 3 RTM Lançado</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">06/01/2011</span> &raquo; 
+<a href="/blog/windows-azure-rodando-asp-net-mvc-3">Windows Azure: rodando ASP.NET MVC 3</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">06/01/2011</span> &raquo; 
+<a href="/blog/asp-net-mvc-3-na-capa-da-net-magazine-81">ASP.NET MVC 3 na capa da .NET Magazine #81</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">05/01/2011</span> &raquo; 
+<a href="/blog/windows-azure-criando-a-primeira-aplicacao-asp-net-mvc">Windows Azure: criando a primeira aplicação ASP.NET MVC</a>
 </p>
 </li> 
 <li>

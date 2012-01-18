@@ -11,18 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: "Inst\xC3\xA2ncias"
-  slug: instancias
-  autoslug: "inst\xC3\xA2ncias"
-- title: Instances
-  slug: instances
-  autoslug: instances
-- title: VMsize
-  slug: vmsize
-  autoslug: vmsize
-- title: role instances
-  slug: role-instances
-  autoslug: role-instances
 ---
 Já vimos [como configurar nosso ambiente Windows Azure](http://viniciusquaiato.com/blog/windows-azure-preparando-o-ambiente-de-desenvolvimento/) e [como criar uma aplicações ASP.NET MVC 2](http://viniciusquaiato.com/blog/windows-azure-criando-a-primeira-aplicacao-asp-net-mvc/) e [ASP.NET MVC 3 no Windows Azure](http://viniciusquaiato.com/blog/windows-azure-rodando-asp-net-mvc-3/).Agora vamos entender um pouco como configurarmos instâncias e máquinas no Windows Azure o que nos dará um pouco de base para depois falarmos de [Fabric e Fabric Controller](http://msdn.microsoft.com/en-us/library/gg433095.aspx#F).
 

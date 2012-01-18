@@ -14,9 +14,6 @@ tags:
 - title: Palestras
   slug: palestras
   autoslug: palestras
-- title: "Apresenta\xC3\xA7\xC3\xB5es"
-  slug: apresentacoes
-  autoslug: "apresenta\xC3\xA7\xC3\xB5es"
 ---
 
 

@@ -11,15 +11,6 @@ tags:
 - title: Nancy
   slug: nancy
   autoslug: nancy
-- title: Nancy framework
-  slug: nancy-framework
-  autoslug: nancy-framework
-- title: projeto Nancy
-  slug: projeto-nancy
-  autoslug: projeto-nancy
-- title: POST com Nancy
-  slug: post-com-nancy
-  autoslug: post-com-nancy
 ---
 
 

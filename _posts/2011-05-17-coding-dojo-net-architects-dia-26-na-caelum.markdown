@@ -8,21 +8,12 @@ categories:
   slug: dojos
   autoslug: dojos
 tags: 
-- title: Dojo
-  slug: dojo
-  autoslug: dojo
+- title: Coding Dojo
+  slug: coding-dojo
+  autoslug: coding-dojo
 - title: Boo
   slug: boo
   autoslug: boo
-- title: Dojo .NET Architects
-  slug: dojo-net-architects
-  autoslug: dojo-.net-architects
-- title: Dojo na Caelum
-  slug: dojo-na-caelum
-  autoslug: dojo-na-caelum
-- title: Caelum
-  slug: caelum
-  autoslug: caelum
 ---
 
 

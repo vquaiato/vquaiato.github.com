@@ -13,8 +13,9 @@ div#blog_content{width: 940px;margin:0 auto 60px auto;}
 ul.posts li{list-style-type:none;}
 ul.posts li a, ul.posts li a:visited{color: #333;}
 ul.posts li p{margin: 5px 0;font-size: 20px;text-shadow: 1px 1px 1px #CCC;}
-ul.posts li p span.date{color:#3168B3;}
-h2.post_title{color: #3168B3;text-shadow: 1px 1px 1px #CCC;font-size: 34px;}
+ul.posts li p span.date{color:#E8117F;}
+h2.post_title{color: #E8117F;text-shadow: 1px 1px 1px #CCC;font-size: 34px;}
+h2.post_title a, h2.post_title a:visited {text-decoration:none; color: #E8117F;}
 
 /*LISTA TAGS*/
 div#all_tags{margin-top:10px;}

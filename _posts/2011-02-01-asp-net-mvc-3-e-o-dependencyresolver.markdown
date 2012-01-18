@@ -11,21 +11,9 @@ tags:
 - title: "Inje\xC3\xA7\xC3\xA3o de Depend\xC3\xAAncia"
   slug: injecao-de-dependencia
   autoslug: "inje\xC3\xA7\xC3\xA3o-de-depend\xC3\xAAncia"
-- title: ASP.NET MVC 3
-  slug: asp-net-mvc-3
-  autoslug: asp.net-mvc-3
-- title: MVC 3
-  slug: mvc-3
-  autoslug: mvc-3
-- title: Service Locator
-  slug: service-locator
-  autoslug: service-locator
-- title: Dependency Injection
-  slug: dependency-injection
-  autoslug: dependency-injection
-- title: DependencyResolver
-  slug: dependencyresolver
-  autoslug: dependencyresolver
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 Na última semana vi várias dúvidas surgindo sobre [IoC e DI](http://viniciusquaiato.com/blog/wp-admin/edit-tags.php?action=edit&taxonomy=post_tag&post_type=post&tag_ID=27) no [ASP.NET MVC 3](http://viniciusquaiato.com/asp-net-mvc-3).O que poucas pessoas sabem é que no ASP.NET MVC 3 há uma forma bastante simples de resolvermos dependências.
 

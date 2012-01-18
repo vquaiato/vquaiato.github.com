@@ -14,18 +14,9 @@ tags:
 - title: MVC
   slug: mvc
   autoslug: mvc
-- title: View
-  slug: view
-  autoslug: view
-- title: Model
-  slug: model
-  autoslug: model
-- title: "Pap\xC3\xA9is MVC"
-  slug: papeis-mvc
-  autoslug: "pap\xC3\xA9is-mvc"
-- title: Controller
-  slug: controller
-  autoslug: controller
+- title: Patterns
+  slug: patterns
+  autoslug: patterns
 ---
 
 

@@ -14,9 +14,9 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: ASP.NET MVC Azure
-  slug: asp-net-mvc-azure
-  autoslug: asp.net-mvc-azure
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 Depois de vermos como [preparar o ambiente de desenvolvimento para Windows Azure](http://viniciusquaiato.com/blog/windows-azure-preparando-o-ambiente-de-desenvolvimento/) vamos criar nossa primeira aplicação ASP.NET MVC rodando no Azure e vamos então entender alguns de seus conceitos.Diversos artigos na internet descrevem em detalhes os muitos pontos importantes do Windows Azure. Nesta série de posts também veremos estes pontos, porém faremos isso de uma forma um pouco mais prática, entendendo-os à medida que isso for necessário.
 

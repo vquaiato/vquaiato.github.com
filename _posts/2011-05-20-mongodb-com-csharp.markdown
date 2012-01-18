@@ -14,15 +14,6 @@ tags:
 - title: MongoDB
   slug: mongodb
   autoslug: mongodb
-- title: Primeiros passos MongoDB
-  slug: primeiros-passos-mongodb
-  autoslug: primeiros-passos-mongodb
-- title: MongoDB com C#
-  slug: mongodb-com-c
-  autoslug: mongodb-com-c#
-- title: Conectando MongoDB C#
-  slug: conectando-mongodb-c
-  autoslug: conectando-mongodb-c#
 ---
 
 

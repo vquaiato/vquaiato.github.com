@@ -13,6 +13,12 @@ keywords: [dnad]
 </li> 
 <li>
 <p>
+<span class="date">05/06/2011</span> &raquo; 
+<a href="/blog/dnad11-um-evento-incrivel">DNAD11: Um evento incrível</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">04/06/2011</span> &raquo; 
 <a href="/blog/slides-palestra-yagni-kiss-e-over-patternization-no-dnad11">Slides palestra YAGNI, KISS e Over Patternization no DNAD11</a>
 </p>

@@ -14,9 +14,6 @@ tags:
 - title: MVC Summit
   slug: mvc-summit
   autoslug: mvc-summit
-- title: ASP.NET MVC Summit
-  slug: asp-net-mvc-summit
-  autoslug: asp.net-mvc-summit
 ---
 
 

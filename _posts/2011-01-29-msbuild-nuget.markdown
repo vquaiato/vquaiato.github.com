@@ -14,12 +14,6 @@ tags:
 - title: MSBuild
   slug: msbuild
   autoslug: msbuild
-- title: build automatizado
-  slug: build-automatizado
-  autoslug: build-automatizado
-- title: build task nuget
-  slug: build-task-nuget
-  autoslug: build-task-nuget
 ---
 Já vimos que [criar pacotes para o NuGet](http://viniciusquaiato.com/blog/criar-pacote-nuget/) é algo bastante simples.Fato é que devemos ser preguiçosos, devemos buscar isso. E ser preguiçoso na nossa área significa automaizar, dinamizar e tornar tarefas braçais o menos braçais possível. Isso não só está relacionado com uma economia direta de tempo, mas também uma economia de certa forma indireta. Indireta pois você acaba ganhando tempo evitando erros que seriam cometidos em um processo manual.Dito isso vamos incluir a criação de nosso pacote [NuGet](http://viniciusquaiato.com/blog/tag/nuget/) no nosso processo de build da aplicação, ou seja, quando gerarmos o build da aplicação um dos procedimentos que irá compor o build será gerar um pacote do NuGet.
 
@@ -42,14 +36,11 @@ Se você não entende nada de arquivos de build pode começar dando uma lidas [n
 Se vocês repararem a geração do pacote NuGet não é feita com o [NuGet.exe](http://nuget.codeplex.com/releases/view/57303) e uma chamada exec durante o build. Ao invés disso na **_linha 44_** utilizamos uma [build task](http://msdn.microsoft.com/en-us/library/microsoft.build.utilities.task.aspx) do NuGet.Esta build task eu encontrei no servidor de builds(ou de integração contínua para alguns) do NuGet: [http://ci.nuget.org:8080/viewType.html?buildTypeId=bt14&tab=buildTypeStatusDiv](http://ci.nuget.org:8080/viewType.html?buildTypeId=bt14&tab=buildTypeStatusDiv). Faça o login como guest, e baixe o arquivo MSBuild.NuGet.dll encontrado em "Artifacts".Esta build task nos permite com facilidade gerar um pacote NuGet diretamente do nosso build.
 
 ## Executando o build
-
-
 Para executarmos este script de build e então obtermos a solução compilada e o pacote do NuGet gerado precisamos executar o seguinte comando no terminal:
 {% highlight csharp %}
 msbuild build.proj
 {% endhighlight %}
 Onde estou na pasta contendo o msbuild e o script de build chama-se build.proj.Teremos um output como este:[![Build gerando pacote NuGet](http://viniciusquaiato.com/images_posts/Build-gerando-pacote-NuGet-300x176.png "Build gerando pacote NuGet")](http://viniciusquaiato.com/images_posts/Build-gerando-pacote-NuGet.png)
-
 
 
 ## Resumo

@@ -11,15 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Azure
-  slug: azure
-  autoslug: azure
-- title: Windows Azure SDK 1.4
-  slug: windows-azure-sdk-1-4
-  autoslug: windows-azure-sdk-1.4
-- title: Azure SDK 1.4
-  slug: azure-sdk-1-4
-  autoslug: azure-sdk-1.4
 ---
 Fala galera! dia 09/03 foi lançado o SDK 1.4 do Windows Azure :DO link para download é este: [http://bit.ly/azuresdk14](http://bit.ly/azuresdk14).Dentre as novidades, mudanças e correções podemos destacar:- Suporte para mais de um administrador através da interface do portal (Azure Connect)
 - Client UI melhorada com suporte a diagnósticos e notificações (Azure Connect)

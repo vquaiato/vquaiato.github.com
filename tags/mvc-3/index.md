@@ -7,18 +7,6 @@ keywords: [mvc-3]
 <ul class="posts">
 <li>
 <p>
-<span class="date">02/02/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-e-dependencyresolver-com-ninject">ASP.NET MVC 3 e DependencyResolver com Ninject</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">01/02/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-e-o-dependencyresolver">ASP.NET MVC 3 e o DependencyResolver</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">22/12/2010</span> &raquo; 
 <a href="/blog/instalando-asp-net-mvc-3-rc-2">Instalando ASP.NET MVC 3 RC 2</a>
 </p>

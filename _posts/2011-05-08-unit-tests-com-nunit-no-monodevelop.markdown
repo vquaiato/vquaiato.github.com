@@ -23,9 +23,6 @@ tags:
 - title: MonoDevelop
   slug: monodevelop
   autoslug: monodevelop
-- title: Unit Testing
-  slug: unit-testing
-  autoslug: unit-testing
 ---
 
 
@@ -40,14 +37,13 @@ O código da minha classe [SUT](http://en.wikipedia.org/wiki/System_Under_Test) 
 {% highlight csharp %}
 
 public class Foo{
-ublic int Soma(int a, int b){
-eturn a+b;
-    }
+  public int Soma(int a, int b){
+    return a+b;
+  }
 
-
-public double Divide(int a, int b){
-eturn a/b;
-    }
+  public double Divide(int a, int b){
+    return a/b;
+  }
 }
 
 {% endhighlight %}
@@ -55,31 +51,27 @@ Agora vamos criar mais um projeto Class Library para servir como nosso projeto d
 {% highlight csharp %}
 [TestFixture]
 public class FooTest{
-Test]
-public void sum_1_plus_1_should_return_2(){
-ssert.AreEqual(2,new Foo().Soma(1,1));
-    }
+  [Test]
+  public void sum_1_plus_1_should_return_2(){
+    Assert.AreEqual(2,new Foo().Soma(1,1));
+  }
 }
-
-
 
 {% endhighlight %}
 Antes de mais nada precisamos adicionar as referências do NUnit ao nosso projeto de testes.Vamos clicar com o botão direito em "references" no projeto -> "edit references":[![Adicionar referências no MonoDevelop](http://viniciusquaiato.com/images_posts/Screen-shot-2011-05-08-at-2.43.22-PM-300x187.png "Adicionar referências no MonoDevelop")](http://viniciusquaiato.com/images_posts/Screen-shot-2011-05-08-at-2.43.22-PM.png)
 
 
-
 Na janela que se abrirá vamos selecionar as referências do NUnit:[![Adicionando referências do NUnit no MonoDevelop](http://viniciusquaiato.com/images_posts/Screen-shot-2011-05-08-at-2.43.36-PM-300x280.png "Adicionando referências do NUnit no MonoDevelop")](http://viniciusquaiato.com/images_posts/Screen-shot-2011-05-08-at-2.43.36-PM.png)
-
 
 
 (adicione também a referência para o projeto SUT)Feito isso vamos compilar nosso projeto. Veremos que na aba "Unit Tests" que fica do lado esquerdo da IDE temos todos os nossos testes já identificados:[![Aba de Unit Tests no MonoDevelop](http://viniciusquaiato.com/images_posts/Screen-shot-2011-05-08-at-2.56.32-PM-300x179.png "Aba de Unit Tests no MonoDevelop")](http://viniciusquaiato.com/images_posts/Screen-shot-2011-05-08-at-2.56.32-PM.png)
 
 
-
 Agora podemos clicar no nossos testes e pedir para eles serem executados. Veremos uma janela com o resultado de cada teste também:[![Executando testes com NUnit no MonoDevelop](http://viniciusquaiato.com/images_posts/Screen-shot-2011-05-08-at-3.06.09-PM1-300x179.png "Executando testes com NUnit no MonoDevelop")](http://viniciusquaiato.com/images_posts/Screen-shot-2011-05-08-at-3.06.09-PM1.png)
 
-# Resumindo
+##Resumindo
 Bom galera como vimos é tudo bastante simples para criarmos e executarmos testes de unidade com NUnit no MonoDevelop.O runner de testes nativo da IDE já suporta o NUnit sem maiores problemas além das dlls do mesmo já estarem disponíveis para uso.Agora é só brincar.
 
 Abraços,
+
 Vinicius Quaiato.

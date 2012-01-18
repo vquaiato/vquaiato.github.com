@@ -14,12 +14,6 @@ tags:
 - title: MongoDB
   slug: mongodb
   autoslug: mongodb
-- title: Instalando MongoDB
-  slug: instalando-mongodb
-  autoslug: instalando-mongodb
-- title: Primeiros passos MongoDB
-  slug: primeiros-passos-mongodb
-  autoslug: primeiros-passos-mongodb
 ---
 
 

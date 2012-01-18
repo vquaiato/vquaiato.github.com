@@ -11,9 +11,6 @@ tags:
 - title: IronRuby
   slug: ironruby
   autoslug: ironruby
-- title: IronRuby 1.1.2
-  slug: ironruby-1-1-2
-  autoslug: ironruby-1.1.2
 ---
 Dia 07/02/2011 foi liberada a versão 1.1.2 do [IronRuby](http://ironruby.net/). Esta versão traz algumas melhorias e correções de bugs.Podemos conferir abaixo alguns destes itens, conforme detalhados no site do [IronRuby no Codeplex](http://ironruby.codeplex.com/):
 

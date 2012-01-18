@@ -11,15 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Local Storage
-  slug: local-storage
-  autoslug: local-storage
-- title: Storage
-  slug: storage
-  autoslug: storage
-- title: Azure Storage
-  slug: azure-storage
-  autoslug: azure-storage
 ---
 [![](http://viniciusquaiato.com/images_posts/Cumulus_clouds_in_fair_weather-150x150.jpg "Cumulus_clouds_in_fair_weather")](http://viniciusquaiato.com/images_posts/Cumulus_clouds_in_fair_weather.jpeg)Armazenamento de informações é algo bastante comum na maioria das aplicações.O [Windows Azure](http://viniciusquaiato.com/blog/category/windows-azure/) fornece algumas formas de armazenamento de dados(Tables, Queues e Blobs, conhecidos como Azure Storage Services, que abordaremos mais pra frente) e um Local Storage que veremos agora.
 

@@ -11,15 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Azure
-  slug: azure
-  autoslug: azure
-- title: Plataforma Azure
-  slug: plataforma-azure
-  autoslug: plataforma-azure
-- title: Sistem Azure
-  slug: sistem-azure
-  autoslug: sistem-azure
 ---
 
 

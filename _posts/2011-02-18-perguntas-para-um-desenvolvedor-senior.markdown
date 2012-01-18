@@ -14,15 +14,6 @@ tags:
 - title: "Boas Pr\xC3\xA1ticas"
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
-- title: Perguntas
-  slug: perguntas
-  autoslug: perguntas
-- title: Entrevistas
-  slug: entrevistas
-  autoslug: entrevistas
-- title: Senioridade
-  slug: senioridade
-  autoslug: senioridade
 ---
 
 

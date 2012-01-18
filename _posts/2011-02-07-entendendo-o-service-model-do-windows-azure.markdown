@@ -14,12 +14,6 @@ tags:
 - title: Azure
   slug: azure
   autoslug: azure
-- title: Service Definition
-  slug: service-definition
-  autoslug: service-definition
-- title: Service Configuration
-  slug: service-configuration
-  autoslug: service-configuration
 ---
 
 

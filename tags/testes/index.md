@@ -7,12 +7,6 @@ keywords: [testes]
 <ul class="posts">
 <li>
 <p>
-<span class="date">28/01/2011</span> &raquo; 
-<a href="/blog/webcast-sobre-testes-no-vdd">Webcast sobre testes no VDD</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">19/12/2010</span> &raquo; 
 <a href="/blog/testar-envio-email-dotnet">Testar envio de email .NET</a>
 </p>

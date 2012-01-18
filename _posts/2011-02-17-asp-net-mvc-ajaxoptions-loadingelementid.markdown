@@ -14,18 +14,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: BeginForm
-  slug: beginform
-  autoslug: beginform
-- title: AjaxOptions
-  slug: ajaxoptions
-  autoslug: ajaxoptions
-- title: LoadingMessage
-  slug: loadingmessage
-  autoslug: loadingmessage
-- title: LoadingMessageId
-  slug: loadingmessageid
-  autoslug: loadingmessageid
 ---
 Continuando a [falar sobre os AjaxOptions](http://viniciusquaiato.com/blog/tag/ajaxoptions/) no [ASP.NET MVC](http://viniciusquaiato.com/blog/category/dotnet/asp-net-dotnet/asp-net-mvc/) desta vez vou abordar o [LoadingElementId](http://msdn.microsoft.com/en-us/library/system.web.mvc.ajax.ajaxoptions.loadingelementid.aspx).Já falamos sobre:- [UpdateTargetId](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-updatetargetid/)
 - [Confirm message](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-confirm-message/)

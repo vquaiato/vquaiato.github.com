@@ -14,15 +14,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: BeginForm
-  slug: beginform
-  autoslug: beginform
-- title: Ajax.BeginForm
-  slug: ajax-beginform
-  autoslug: ajax.beginform
-- title: AjaxOptions
-  slug: ajaxoptions
-  autoslug: ajaxoptions
 ---
 Trabalhar com forms e ajax no ASP.NET MVC é algo relativamente bastante simples, seja escrevendo o código diretamente com [JQuery](http://viniciusquaiato.com/blog/tag/jquery/) ou então utilizando o [Ajax helper](http://msdn.microsoft.com/en-us/library/system.web.mvc.ajaxhelper.aspx).Estes posts sobre o AjaxHelper serão bem simples e diretos. Trabalharemos com [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3/).Vou assumir também que você já incluiu o JQuery e o JQuery Unobtrusive:
 {% highlight csharp %}

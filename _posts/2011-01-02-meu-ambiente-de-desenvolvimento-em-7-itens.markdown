@@ -8,9 +8,9 @@ categories:
   slug: off-topic
   autoslug: "[off---topic]"
 tags: 
-- title: Ambiente Desenvolvimento
-  slug: ambiente-desenvolvimento
-  autoslug: ambiente-desenvolvimento
+- title: [Off - Topic]
+  slug: off-topic
+  autoslug: off-topic
 ---
 Uma galera iniciou a "brincadeira" de postar sobre seus ambientes de desenvolvimento, e eu vou aqui postar sobre o meu, a convite do [Emerson Vinicius](http://blog.evinicius.com/1-meu-ambiente-de-desenvolvimento-em-7-itens)([@emersonvinicius](http://twitter.com/emersonvinicius)).
 

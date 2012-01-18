@@ -11,21 +11,6 @@ tags:
 - title: NuGet
   slug: nuget
   autoslug: nuget
-- title: Package
-  slug: package
-  autoslug: package
-- title: nuspec
-  slug: nuspec
-  autoslug: nuspec
-- title: nupkg
-  slug: nupkg
-  autoslug: nupkg
-- title: nuget pack
-  slug: nuget-pack
-  autoslug: nuget-pack
-- title: pacote NuGet
-  slug: pacote-nuget
-  autoslug: pacote-nuget
 ---
 Ok eu [falei bastante sobre o NuGet](http://viniciusquaiato.com/blog/tag/nuget/), [sobre seus comandos](http://viniciusquaiato.com/blog/aprenda-os-comandos-para-adicionar-pacotes-com-nupack/), sobre a [NuGet Gallery](http://viniciusquaiato.com/blog/nuget-gallery/) e dei até uma [palestra sobre ele(NuGet)](http://viniciusquaiato.com/blog/videos-pelestra-sobre-nuget-do-dnad-2010/). Mas como é que criamos um pacote para ele?
 

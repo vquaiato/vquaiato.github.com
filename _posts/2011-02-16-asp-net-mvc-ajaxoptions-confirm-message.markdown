@@ -14,15 +14,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: BeginForm
-  slug: beginform
-  autoslug: beginform
-- title: AjaxOptions
-  slug: ajaxoptions
-  autoslug: ajaxoptions
-- title: Confirm
-  slug: confirm
-  autoslug: confirm
 ---
 No [post anterior](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-e-updatetargetid/) mostrei como criar uma chamada ajax para carregar um pedaço específico da página utilizando o Ajax Helper com o AjaxOptions UpdateTargetId.Agora vou mostrar como podemos, de maneira bastante simples, exibir uma mensagem solicitando a confirmação da requisição a ser realizada.Vamos aproveitar todo [o código anterior](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-e-updatetargetid/) e apenas realizar uma modificação, como mostra o código abaixo:
 {% highlight csharp %}

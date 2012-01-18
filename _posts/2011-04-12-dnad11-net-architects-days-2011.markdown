@@ -17,9 +17,6 @@ tags:
 - title: Palestras
   slug: palestras
   autoslug: palestras
-- title: .NET Architects Day
-  slug: net-architects-day
-  autoslug: .net-architects-day
 - title: DNAD
   slug: dnad
   autoslug: dnad

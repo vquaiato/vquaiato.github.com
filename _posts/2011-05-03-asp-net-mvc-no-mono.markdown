@@ -17,15 +17,9 @@ tags:
 - title: Mono
   slug: mono
   autoslug: mono
-- title: Mono Project
-  slug: mono-project
-  autoslug: mono-project
 - title: MonoDevelop
   slug: monodevelop
   autoslug: monodevelop
-- title: Mono Mac
-  slug: mono-mac
-  autoslug: mono-mac
 ---
 [![](http://viniciusquaiato.com/images_posts/Mono-Project.jpeg "Mono Project")](http://viniciusquaiato.com/images_posts/Mono-Project.jpeg)Fala galera, faz algum tempo que estou sem postar e vou retomar falando um pouco do ASP.NET MVC rodando no [Mono](http://www.mono-project.com/Main_Page).Estou utilizando um Macbook e por isso vou começar a relatar algumas experiências com [Mono](http://www.mono-project.com/Main_Page).Não vou entrar em detalhes de implementação do Mono ou coisas do tipo. A princípio vou falar sobre como utilizar o Mono para criar projetos _quase_ como faria no Windows rodando o .NET.# Montando o ambiente
 

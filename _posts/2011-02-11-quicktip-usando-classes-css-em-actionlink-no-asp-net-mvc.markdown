@@ -14,12 +14,6 @@ tags:
 - title: quick tip
   slug: quick-tip
   autoslug: quick-tip
-- title: Html helper
-  slug: html-helper
-  autoslug: html-helper
-- title: css class
-  slug: css-class
-  autoslug: css-class
 ---
 
 

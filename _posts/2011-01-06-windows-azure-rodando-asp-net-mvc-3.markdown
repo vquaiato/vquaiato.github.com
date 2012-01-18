@@ -11,15 +11,12 @@ categories:
   slug: windows-azure
   autoslug: windows-azure
 tags: 
-- title: ASP.NET MVC 3
-  slug: asp-net-mvc-3
-  autoslug: asp.net-mvc-3
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: MVC 3 Azure
-  slug: mvc-3-azure
-  autoslug: mvc-3-azure
 ---
 
 

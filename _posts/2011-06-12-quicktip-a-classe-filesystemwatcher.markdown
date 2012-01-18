@@ -14,9 +14,6 @@ tags:
 - title: quick tip
   slug: quick-tip
   autoslug: quick-tip
-- title: FileSystemWatcher
-  slug: filesystemwatcher
-  autoslug: filesystemwatcher
 - title: Mono
   slug: mono
   autoslug: mono

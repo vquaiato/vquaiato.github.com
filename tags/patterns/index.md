@@ -31,6 +31,12 @@ keywords: [patterns]
 </li> 
 <li>
 <p>
+<span class="date">12/01/2011</span> &raquo; 
+<a href="/blog/entendendo-as-letrinhas-do-mvc">Entendendo as letrinhas do MVC</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">20/09/2010</span> &raquo; 
 <a href="/blog/palestra-sobre-design-patterns">Palestra sobre Design Patterns</a>
 </p>

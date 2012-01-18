@@ -7,36 +7,6 @@ keywords: [asp-net-mvc-3]
 <ul class="posts">
 <li>
 <p>
-<span class="date">02/02/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-e-dependencyresolver-com-ninject">ASP.NET MVC 3 e DependencyResolver com Ninject</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">01/02/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-e-o-dependencyresolver">ASP.NET MVC 3 e o DependencyResolver</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">18/01/2011</span> &raquo; 
-<a href="/blog/online-training-asp-net-mvc-3">Online Training ASP.NET MVC 3 </a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">06/01/2011</span> &raquo; 
-<a href="/blog/windows-azure-rodando-asp-net-mvc-3">Windows Azure: rodando ASP.NET MVC 3</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">06/01/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-na-capa-da-net-magazine-81">ASP.NET MVC 3 na capa da .NET Magazine #81</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">23/12/2010</span> &raquo; 
 <a href="/blog/asp-net-mvc-3-rc-2-mudancas">ASP.NET MVC 3 RC 2 mudanças!</a>
 </p>
@@ -92,13 +62,13 @@ keywords: [asp-net-mvc-3]
 <li>
 <p>
 <span class="date">12/11/2010</span> &raquo; 
-<a href="/blog/curso-asp-net-mvc-3-slides-e-demos">Curso ASP.NET MVC 3 slides e demos</a>
+<a href="/blog/output-cache-para-child-actions-no-asp-net-mvc-3-rc">Output Cache para child actions no ASP.NET MVC 3 RC</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">12/11/2010</span> &raquo; 
-<a href="/blog/output-cache-para-child-actions-no-asp-net-mvc-3-rc">Output Cache para child actions no ASP.NET MVC 3 RC</a>
+<a href="/blog/curso-asp-net-mvc-3-slides-e-demos">Curso ASP.NET MVC 3 slides e demos</a>
 </p>
 </li> 
 <li>
@@ -128,13 +98,13 @@ keywords: [asp-net-mvc-3]
 <li>
 <p>
 <span class="date">09/11/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-rc-download">ASP.NET MVC 3 RC Download</a>
+<a href="/blog/asp-net-mvc-3-rc-novidades">ASP.NET MVC 3 RC Novidades</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">09/11/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-rc-novidades">ASP.NET MVC 3 RC Novidades</a>
+<a href="/blog/asp-net-mvc-3-rc-download">ASP.NET MVC 3 RC Download</a>
 </p>
 </li> 
 <li>
@@ -170,13 +140,13 @@ keywords: [asp-net-mvc-3]
 <li>
 <p>
 <span class="date">18/10/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-razor-templates-parte-ii">ASP.NET MVC 3 – Razor templates parte II</a>
+<a href="/blog/asp-net-mvc-3-razor-syntax-highlighter">ASP.NET MVC 3: Razor Syntax Highlighter</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">18/10/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-razor-syntax-highlighter">ASP.NET MVC 3: Razor Syntax Highlighter</a>
+<a href="/blog/asp-net-mvc-3-razor-templates-parte-ii">ASP.NET MVC 3 – Razor templates parte II</a>
 </p>
 </li> 
 <li>

@@ -11,21 +11,9 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Azure
-  slug: azure
-  autoslug: azure
-- title: Azure powershell
-  slug: azure-powershell
-  autoslug: azure-powershell
-- title: Azure deploy
-  slug: azure-deploy
-  autoslug: azure-deploy
-- title: Azure deploy powershell
-  slug: azure-deploy-powershell
-  autoslug: azure-deploy-powershell
-- title: deploy azure automatizado
-  slug: deploy-azure-automatizado
-  autoslug: deploy-azure-automatizado
+- title: Powershell
+  slug: powershell
+  autoslug: powershell
 ---
 Fala galera. Quando procuramos maior produtividade e redução de problemas em nosso ambiente e processo de trabalho vamos nos deparar inevitavelmente com automação de algumas coisas.O processo de deploy do [Windows Azure](http://viniciusquaiato.com/blog/category/windows-azure/) pode ser feito de três maneiras, a saber:- Via Windows Azure portal
 - [Via Visual Studio](http://viniciusquaiato.com/blog/deploy-no-windows-azure-usando-visual-studio/)

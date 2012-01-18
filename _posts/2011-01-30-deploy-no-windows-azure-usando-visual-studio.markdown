@@ -11,15 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Windows Azure deploy
-  slug: windows-azure-deploy
-  autoslug: windows-azure-deploy
-- title: Windows Azure deploy VS2010
-  slug: windows-azure-deploy-vs2010
-  autoslug: windows-azure-deploy-vs2010
-- title: Windows Azure certificado
-  slug: windows-azure-certificado
-  autoslug: windows-azure-certificado
 ---
 Uma outra forma de realizar o [deploy de aplicações Windows Azure](http://viniciusquaiato.com/blog/deploy-no-windows-azure-portal/) é fazendo tudo diretamente de dentro do Visual Studio 2010.Este post não é, ou não deveria ser, uma cópia do [post do Lucas Romão](http://laromao.wordpress.com/2010/11/23/publicando-sua-app-no-azure-direto-do-visual-studio-2010/), estou apenas compartilhando minhas experiências na plataforma.Precisamos de alguns passos simples para realizar o deploy no Windows Azure diretamente do Visual Studio._É importante notar que isso só precisa ser feito uma única vez, e somente caso você não possua um certificado digital. Depois de configurado basta apertar "Publish" e pronto._
 

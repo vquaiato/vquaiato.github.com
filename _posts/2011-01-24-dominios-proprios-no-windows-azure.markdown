@@ -11,15 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: "Dom\xC3\xADnio"
-  slug: dominio
-  autoslug: "dom\xC3\xADnio"
-- title: "Dom\xC3\xADnio pr\xC3\xB3prio"
-  slug: dominio-proprio
-  autoslug: "dom\xC3\xADnio-pr\xC3\xB3prio"
-- title: "Windows Azure dom\xC3\xADnio pr\xC3\xB3prio"
-  slug: windows-azure-dominio-proprio
-  autoslug: "windows-azure-dom\xC3\xADnio-pr\xC3\xB3prio"
 ---
 Quando criamos uma aplicação no [Windows Azure](http://viniciusquaiato.com/blog/category/windows-azure/) a mesma é disponibilizada com uma URI do tipo: minhaaplicacao.cloudapp.net.Ok, não é uma URI tão feia mas não atende minhas necessidades de negócio, aifnal, quero que meu site/aplicação tenha um nome único e que o identifiquem no "mercado". Me faz lembrar dos hpg.com.br ou cjb.net.Quero poder configurar meu domínio próprio para minhas aplicações no Windows Azure.
 

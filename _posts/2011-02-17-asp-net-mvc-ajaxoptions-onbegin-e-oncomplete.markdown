@@ -14,21 +14,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: BeginForm
-  slug: beginform
-  autoslug: beginform
-- title: AjaxOptions
-  slug: ajaxoptions
-  autoslug: ajaxoptions
-- title: AjaxHelper
-  slug: ajaxhelper
-  autoslug: ajaxhelper
-- title: OnBegin
-  slug: onbegin
-  autoslug: onbegin
-- title: OnComplete
-  slug: oncomplete
-  autoslug: oncomplete
 ---
 Dando continuidade aos exemplos de manipulação do [AjaxOptions com o AjaxHelper](http://viniciusquaiato.com/blog/tag/ajaxoptions/) do ASP.NET MVC vamos agora falar sobre os eventos [OnBegin](http://msdn.microsoft.com/en-us/library/system.web.mvc.ajax.ajaxoptions.onbegin.aspx) e [OnComplete](http://msdn.microsoft.com/en-us/library/system.web.mvc.ajax.ajaxoptions.oncomplete.aspx).Confira os demais posts aqui:- [UpdateTargetId](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-updatetargetid/)
 - [Confirm message](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-confirm-message/)

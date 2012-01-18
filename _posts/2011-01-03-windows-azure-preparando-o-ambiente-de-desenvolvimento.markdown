@@ -11,12 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Ambiente Azure
-  slug: ambiente-azure
-  autoslug: ambiente-azure
-- title: Ambiente Desenvovlimento Azure
-  slug: ambiente-desenvovlimento-azure
-  autoslug: ambiente-desenvovlimento-azure
 ---
 
 

@@ -7,12 +7,6 @@ keywords: [dnad11]
 <ul class="posts">
 <li>
 <p>
-<span class="date">05/06/2011</span> &raquo; 
-<a href="/blog/dnad11-um-evento-incrivel">DNAD11: Um evento incrível</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">12/04/2011</span> &raquo; 
 <a href="/blog/dnad11-net-architects-days-2011">#DNAD11 - .NET Architects Days 2011</a>
 </p>

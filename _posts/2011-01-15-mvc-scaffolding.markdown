@@ -11,15 +11,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: MVCScaffolding
-  slug: mvcscaffolding
-  autoslug: mvcscaffolding
-- title: Scaffolding
-  slug: scaffolding
-  autoslug: scaffolding
-- title: MVC Scaffold
-  slug: mvc-scaffold
-  autoslug: mvc-scaffold
 ---
 
 

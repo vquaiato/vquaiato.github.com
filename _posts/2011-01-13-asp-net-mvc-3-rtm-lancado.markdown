@@ -8,15 +8,9 @@ categories:
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
-- title: ASP.NET MVC 3 RTM
-  slug: asp-net-mvc-3-rtm
-  autoslug: asp.net-mvc-3-rtm
-- title: ASP.NET MVC 3 RTM Download
-  slug: asp-net-mvc-3-rtm-download
-  autoslug: asp.net-mvc-3-rtm-download
-- title: "ASP.NET MVC 3 Lan\xC3\xA7ado"
-  slug: asp-net-mvc-3-lancado
-  autoslug: "asp.net-mvc-3-lan\xC3\xA7ado"
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 Fala galera, apenas para compartilhar está disponível para download o ASP.NET MVC 3 RTM: [http://www.microsoft.com/downloads/en/details.aspx?FamilyID=d2928bc1-f48c-4e95-a064-2a455a22c8f6](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=d2928bc1-f48c-4e95-a064-2a455a22c8f6)<del datetime="2011-01-13T15:16:38+00:00">Em breve eu publicarei sobre mudanças e novidades presentes no RTM.</del>
 

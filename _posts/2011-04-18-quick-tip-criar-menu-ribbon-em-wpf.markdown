@@ -14,12 +14,6 @@ tags:
 - title: Ribbon
   slug: ribbon
   autoslug: ribbon
-- title: Menu Ribbon
-  slug: menu-ribbon
-  autoslug: menu-ribbon
-- title: WPF Ribbon
-  slug: wpf-ribbon
-  autoslug: wpf-ribbon
 ---
 Fala galera, essa dica é bem rápida(talvez eu detalhe mais depois). Estou trabalhando em uma aplicação [WPF](http://windowsclient.net/wpf/default.aspx) e precisei criar um menu e optei por utilizar [Ribbon](http://en.wikipedia.org/wiki/Ribbon_(computing)).# Microsoft Ribbon for WPF
 A Microsoft disponibiliza uma biblioteca para criação de Ribbons no WPF - Microsoft Ribbon for WPF - e a mesma pode ser baixada [aqui](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=2bfc3187-74aa-4154-a670-76ef8bc2a0b4&displaylang=en).O código fonte também pode ser obtido no mesmo link.# Criando um menu Ribbon em WPF

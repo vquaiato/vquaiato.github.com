@@ -11,9 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Windows Azure Toolkit for IOS
-  slug: windows-azure-toolkit-for-ios
-  autoslug: windows-azure-toolkit-for-ios
 - title: IOS
   slug: ios
   autoslug: ios

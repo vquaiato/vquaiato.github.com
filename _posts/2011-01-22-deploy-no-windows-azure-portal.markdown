@@ -11,15 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: deploy
-  slug: deploy
-  autoslug: deploy
-- title: Azure portal
-  slug: azure-portal
-  autoslug: azure-portal
-- title: Deploying Windows Azure
-  slug: deploying-windows-azure
-  autoslug: deploying-windows-azure
 ---
 Fala galera, vamos falar mais um pouco de [Windows Azure](http://viniciusquaiato.com/blog/category/windows-azure/) (na boa a plataforma é muito legal).Para quem tem acompanhado estou organizando o MVC Summit, um evento totalmente focado em ASP.NET MVC. O que isso tem a ver com Azure? Simples: decidi migrar o site do Moca Host para o Azure.Neste post vou mostrar os passos necessários para realizar o deploy de uma aplicação no Windows Azure através do portal.
 

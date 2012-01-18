@@ -11,15 +11,9 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: cmdlets
-  slug: cmdlets
-  autoslug: cmdlets
-- title: Azure Management Tools
-  slug: azure-management-tools
-  autoslug: azure-management-tools
-- title: Azure powershell
-  slug: azure-powershell
-  autoslug: azure-powershell
+- title: Powershell
+  slug: powershell
+  autoslug: powershell
 ---
 Estão disponíveis uma série de cmdlets do Powershell que auxiliam o gerenciamento e diagnósticos de serviços Windows Azure através do Powershell.Com esses cmdlets fica muito simples criar scripts de deploy, manutenção, upgrade, realização de tarefas como escalar, etc.
 

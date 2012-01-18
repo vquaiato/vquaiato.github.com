@@ -8,21 +8,9 @@ categories:
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
-- title: ASP.NET MVC 3
-  slug: asp-net-mvc-3
-  autoslug: asp.net-mvc-3
-- title: MVC 3
-  slug: mvc-3
-  autoslug: mvc-3
-- title: DependencyResolver
-  slug: dependencyresolver
-  autoslug: dependencyresolver
-- title: Ninject
-  slug: ninject
-  autoslug: ninject
-- title: Ninject.MVC3
-  slug: ninject-mvc3
-  autoslug: ninject.mvc3
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 Fala galera [o post de ontem sobre DependencyResolver](http://viniciusquaiato.com/blog/asp-net-mvc-3-e-o-dependencyresolver/) foi um pouco mais pesado(e burro) não? Mostrei como criar um Service Locator **bem pobre** e o código ficou um pouco <del datetime="2011-02-02T16:14:00+00:00">pesado</del> ruim mesmo.A idéia é mostrar que não precisamos cair na tentação de resolver tudo por nós mesmos, que temos já boas soluções de mercado preparadas para nos auxiliar.
 
