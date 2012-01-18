@@ -7,12 +7,6 @@ keywords: [single-responsibility]
 <ul class="posts">
 <li>
 <p>
-<span class="date">27/12/2010</span> &raquo; 
-<a href="/blog/responsabilidade-unica-uma-historia-bem-contada">Responsabilidade Única - Uma história bem contada</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">13/07/2010</span> &raquo; 
 <a href="/blog/ocp-open-closed-principle">OCP - Open Closed Principle</a>
 </p>

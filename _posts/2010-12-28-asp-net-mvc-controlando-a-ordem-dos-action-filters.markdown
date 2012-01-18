@@ -11,15 +11,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: Filters
-  slug: filters
-  autoslug: filters
-- title: Action Filters
-  slug: action-filters
-  autoslug: action-filters
-- title: "ordem execu\xC3\xA7\xC3\xA3o filters"
-  slug: ordem-execucao-filters
-  autoslug: "ordem-execu\xC3\xA7\xC3\xA3o-filters"
 ---
 Fuçando na lista de discussões da [Caelum](http://www.caelum.com.br/) sobre o [Restfulie](http://restfulie.caelum.com.br/) comecei a me perguntar como definir a ordem em que os action filters são executados no [ASP.NET MVC](http://viniciusquaiato.com/blog/category/dotnet/asp-net-dotnet/asp-net-mvc/).Bom, é algo bastante simples e fácil, vejamos:
 {% highlight csharp %}

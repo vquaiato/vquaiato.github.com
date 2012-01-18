@@ -8,21 +8,9 @@ categories:
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
 tags: 
-- title: Domain Repository
-  slug: domain-repository
-  autoslug: domain-repository
-- title: Domain Driven Design
-  slug: domain-driven-design
-  autoslug: domain-driven-design
 - title: DDD
   slug: ddd
   autoslug: ddd
-- title: Repository
-  slug: repository
-  autoslug: repository
-- title: Domain
-  slug: domain
-  autoslug: domain
 ---
 (Este texto é um esboço para mim mesmo. Sinta-se livre para criticar, questionar, discordar e contribuir)Domain Driven Design não é algo que você conseguirá aprender lendo um post em um blog como este, então eu não vou tentar ensinar ou explicar DDD.
 

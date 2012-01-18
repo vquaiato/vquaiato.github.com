@@ -11,10 +11,4 @@ keywords: [domain-driven-design]
 <a href="/blog/escrever-codigo-em-ingles-ou-portugues">Escrever código em inglês ou português?</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">21/12/2010</span> &raquo; 
-<a href="/blog/domain-repository-pattern">Domain Repository pattern</a>
-</p>
-</li> 
 </ul>

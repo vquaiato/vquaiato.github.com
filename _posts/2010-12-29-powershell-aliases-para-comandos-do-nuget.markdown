@@ -14,12 +14,6 @@ tags:
 - title: Powershell
   slug: powershell
   autoslug: powershell
-- title: Powershell aliases
-  slug: powershell-aliases
-  autoslug: powershell-aliases
-- title: NuGet alias
-  slug: nuget-alias
-  autoslug: nuget-alias
 ---
 
 

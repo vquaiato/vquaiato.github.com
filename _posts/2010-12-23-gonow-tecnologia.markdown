@@ -8,12 +8,9 @@ categories:
   slug: off-topic
   autoslug: "[off---topic]"
 tags: 
-- title: Gonow
-  slug: gonow
-  autoslug: gonow
-- title: Gonow Tecnologia
-  slug: gonow-tecnologia
-  autoslug: gonow-tecnologia
+- title: "[Off - Topic]"
+  slug: off-topic
+  autoslug: "[off---topic]"
 ---
 
 

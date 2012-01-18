@@ -14,9 +14,6 @@ tags:
 - title: "Orienta\xC3\xA7\xC3\xA3o a Objetos"
   slug: orientacao-a-objetos
   autoslug: "orienta\xC3\xA7\xC3\xA3o-a-objetos"
-- title: Tell don't ask
-  slug: tell-dont-ask
-  autoslug: tell-don't-ask
 ---
 
 

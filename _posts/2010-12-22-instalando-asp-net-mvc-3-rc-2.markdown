@@ -8,18 +8,9 @@ categories:
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
-- title: ASP.NET MVC 3
-  slug: asp-net-mvc-3
-  autoslug: asp.net-mvc-3
-- title: MVC 3
-  slug: mvc-3
-  autoslug: mvc-3
-- title: MVC 3 RC 2
-  slug: mvc-3-rc-2
-  autoslug: mvc-3-rc-2
-- title: Instalar MVC 3 RC 2
-  slug: instalar-mvc-3-rc-2
-  autoslug: instalar-mvc-3-rc-2
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 
 

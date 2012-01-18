@@ -8,18 +8,9 @@ categories:
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
-- title: Validation message
-  slug: validation-message
-  autoslug: validation-message
-- title: validation styling
-  slug: validation-styling
-  autoslug: validation-styling
-- title: Validation message style
-  slug: validation-message-style
-  autoslug: validation-message-style
-- title: validation message css
-  slug: validation-message-css
-  autoslug: validation-message-css
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 Respondendo uma dúvida no gtalk hoje veio a idéia de escrever este post: como mudar os estilos que são usados para exibir as mensagens de erro pelo ASP.NET MVC?Bem a dúvida era sobre como formatar as mensagens de erros que são exibidas nos formulários. É simples. Se você fuçar no fonte do ASP.NET MVC verá esta classe: [http://aspnet.codeplex.com/SourceControl/changeset/view/61289#266468](http://aspnet.codeplex.com/SourceControl/changeset/view/61289#266468).Vejam que temos constantes para as classes(css) de erro a serem utilizadas:
 {% highlight csharp %}

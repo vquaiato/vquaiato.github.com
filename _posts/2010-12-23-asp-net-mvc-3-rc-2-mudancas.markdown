@@ -8,21 +8,9 @@ categories:
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
-- title: ASP.NET MVC 3
-  slug: asp-net-mvc-3
-  autoslug: asp.net-mvc-3
-- title: ASP.NET MVC 3 RC 2
-  slug: asp-net-mvc-3-rc-2
-  autoslug: asp.net-mvc-3-rc-2
-- title: MVC 3 RC 2
-  slug: mvc-3-rc-2
-  autoslug: mvc-3-rc-2
-- title: Novidades ASP.NET MVC 3 RC 2
-  slug: novidades-asp-net-mvc-3-rc-2
-  autoslug: novidades-asp.net-mvc-3-rc-2
-- title: "mudan\xC3\xA7as MVC 3 RC 2"
-  slug: mudancas-mvc-3-rc-2
-  autoslug: "mudan\xC3\xA7as-mvc-3-rc-2"
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 Fala galera, o time do [ASP.NET MVC](http://asp.net/mvc/mvc3) não dá tempo nem de nos acostumarmos com as novidades e já saem mais novidades.Neste post vou tentar resumir um pouco as mudanças no [RC 2 do ASP.NET MVC 3](http://viniciusquaiato.com/blog/instalando-asp-net-mvc-3-rc-2/). Vou apenas listar as mudanças, e as novidades virão em outro post.
 

@@ -128,13 +128,37 @@ keywords: [asp-net-mvc]
 <li>
 <p>
 <span class="date">28/12/2010</span> &raquo; 
-<a href="/blog/livros-asp-net-mvc-2-in-action">[Livros] ASP.NET MVC 2 in Action</a>
+<a href="/blog/asp-net-mvc-controlando-a-ordem-dos-action-filters">ASP.NET MVC controlando a ordem dos action filters</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">28/12/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-controlando-a-ordem-dos-action-filters">ASP.NET MVC controlando a ordem dos action filters</a>
+<a href="/blog/livros-asp-net-mvc-2-in-action">[Livros] ASP.NET MVC 2 in Action</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">27/12/2010</span> &raquo; 
+<a href="/blog/asp-net-mvc-mudando-estilos-de-mensagens-de-validacao">ASP.NET MVC mudando estilos de mensagens de validação</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">23/12/2010</span> &raquo; 
+<a href="/blog/asp-net-mvc-3-rc-2-mudancas">ASP.NET MVC 3 RC 2 mudanças!</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">22/12/2010</span> &raquo; 
+<a href="/blog/asp-net-mvc-retornando-dados-json-via-get-com-jquery">ASP.NET MVC retornando dados Json via Get com Jquery</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">22/12/2010</span> &raquo; 
+<a href="/blog/instalando-asp-net-mvc-3-rc-2">Instalando ASP.NET MVC 3 RC 2</a>
 </p>
 </li> 
 <li>

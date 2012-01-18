@@ -17,12 +17,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: Hijax
-  slug: hijax
-  autoslug: hijax
-- title: ASP.NET MVC Jquery
-  slug: asp-net-mvc-jquery
-  autoslug: asp.net-mvc-jquery
 ---
 Fala galera, [neste por aqui](http://viniciusquaiato.com/blog/asp-net-mvc-jquery-submit-form-assincrono/) eu mostrei como fazer o submit assíncrono de um formulário no [ASP.NET MVC](http://asp.net/mvc) usando [Jquery](http://jquery.com).Agora quero mostrar "quase" a mesma coisa, mas deixando o formulário funcional tanto com como sem JavaScript: **Hijax!**
 

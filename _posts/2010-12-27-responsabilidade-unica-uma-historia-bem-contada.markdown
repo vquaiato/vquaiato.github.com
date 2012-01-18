@@ -11,15 +11,6 @@ tags:
 - title: SOLID
   slug: solid
   autoslug: solid
-- title: SRP
-  slug: srp
-  autoslug: srp
-- title: Single Responsibility
-  slug: single-responsibility
-  autoslug: single-responsibility
-- title: "Responsabilidade \xC3\x9Anica"
-  slug: responsabilidade-unica
-  autoslug: "responsabilidade-\xC3\x9Anica"
 ---
 Responsabilidade única também é algo que parece ser simples mas que é negligenciado pela maioria dos desenvolveldores(eu estou incluso).Existem razões pelas quais as "boas práticas" são tidas como boas: elas ajudam!
 

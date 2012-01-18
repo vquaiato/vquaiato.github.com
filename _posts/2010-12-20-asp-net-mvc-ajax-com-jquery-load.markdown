@@ -14,15 +14,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: Load
-  slug: load
-  autoslug: load
-- title: ASP.NET MVC e Jquery
-  slug: asp-net-mvc-e-jquery
-  autoslug: asp.net-mvc-e-jquery
-- title: Jquery load
-  slug: jquery-load
-  autoslug: jquery-load
 ---
 
 

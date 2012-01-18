@@ -14,15 +14,6 @@ tags:
 - title: Powershell
   slug: powershell
   autoslug: powershell
-- title: Out-GridView
-  slug: out-gridview
-  autoslug: out-gridview
-- title: NuGet Grid
-  slug: nuget-grid
-  autoslug: nuget-grid
-- title: NuGet filtros
-  slug: nuget-filtros
-  autoslug: nuget-filtros
 ---
 Fala galera. Já falei sobre o [NuGet](http://nuget.codeplex.com/) antes, então confiram [aqui](http://viniciusquaiato.com/blog/videos-pelestra-sobre-nuget-do-dnad-2010/), [aqui](http://viniciusquaiato.com/blog/aprenda-os-comandos-para-adicionar-pacotes-com-nupack/), [aqui](http://viniciusquaiato.com/blog/aprenda-os-comandos-de-listagem-do-nupack/) e [aqui](http://viniciusquaiato.com/blog/nupack-uma-das-melhores-invencoes-da-microsoft/).Desta vez quero mostrar algo que pode ser útil para quem está procurando um pacote mas não sabe qual.
 

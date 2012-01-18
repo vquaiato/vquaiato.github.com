@@ -11,15 +11,9 @@ tags:
 - title: JQuery
   slug: jquery
   autoslug: jquery
-- title: ASP.NET MVC Json
-  slug: asp-net-mvc-json
-  autoslug: asp.net-mvc-json
-- title: Jquery get
-  slug: jquery-get
-  autoslug: jquery-get
-- title: get json
-  slug: get-json
-  autoslug: get-json
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 Se você não sabe o que é GET, POST, PUT, DELETE, entre outros dê um pulinho [aqui](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html).Quando trabalhamos com Ajax em nossas aplicações (sejam MVC ou não) precisamos decidir sobre qual o método HTTP será utilizado: GET ou POST.Resumidamente se nossa requisição **não** vai modificar nada no servidor então realizamos uma requisição do tipo GET.Em ASP.NET MVC esta tarefa é bastante simples, principalmente quando utilizamos também o [Jquery](http://jquery.com)(já falei dele [aqui](http://viniciusquaiato.com/blog/asp-net-mvc-ajax-com-jquery-load/), [aqui](http://viniciusquaiato.com/blog/asp-net-mvc-jquery-ajax/) e [aqui](http://viniciusquaiato.com/blog/asp-net-mvc-submit-com-ou-sem-ajax/)).Existem alguns detalhes importantes que devem ser levados em consideração e abordaremos.
 
