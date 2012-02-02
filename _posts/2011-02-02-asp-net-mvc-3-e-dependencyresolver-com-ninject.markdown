@@ -40,7 +40,8 @@ namespace ExemploDependencyResolver{
 			IKernel kernel = new StandardKernel();
     		// Register services with our Ninject DI Container            
     		RegisterServices(kernel);
-    		// Tell ASP.NET MVC 3 to use our Ninject DI Container             DependencyResolver.SetResolver(new NinjectServiceLocator(kernel));
+    		// Tell ASP.NET MVC 3 to use our Ninject DI Container             
+    		DependencyResolver.SetResolver(new NinjectServiceLocator(kernel));
     	}
     }
 }
