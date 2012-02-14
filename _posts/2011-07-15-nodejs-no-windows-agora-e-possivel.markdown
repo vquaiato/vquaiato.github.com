@@ -33,9 +33,13 @@ Isto criará um servidor na porta 1234 respondendo com "Hello World" para todos 
 .\node.exe windows.js
 {% endhighlight %}
 
-Você verá uma mensagem como a abaixo:[![rodando nodejs no windows](http://viniciusquaiato.com/images_posts/rodando-nodejs-no-windows-300x108.png "rodando nodejs no windows")](http://viniciusquaiato.com/images_posts/rodando-nodejs-no-windows.png)
+Você verá uma mensagem como a abaixo:
 
-E quando acessarmos esta url receberemos a resposta do servidor node:[![rodando nodejs no windows - browser](http://viniciusquaiato.com/images_posts/rodando-nodejs-no-windows-browser-300x138.png "rodando nodejs no windows - browser")](http://viniciusquaiato.com/images_posts/rodando-nodejs-no-windows-browser.png)
+[![rodando nodejs no windows](http://viniciusquaiato.com/images_posts/rodando-nodejs-no-windows-300x108.png "rodando nodejs no windows")](http://viniciusquaiato.com/images_posts/rodando-nodejs-no-windows.png)
+
+E quando acessarmos esta url receberemos a resposta do servidor node:
+
+[![rodando nodejs no windows - browser](http://viniciusquaiato.com/images_posts/rodando-nodejs-no-windows-browser-300x138.png "rodando nodejs no windows - browser")](http://viniciusquaiato.com/images_posts/rodando-nodejs-no-windows-browser.png)
 
 É isso aew galera. Agora já podemos rodar Nodejs em servidores Windows de forma nativa e sem nenhuma trabalho de instalação, um simples executável. Notem que isso já torna o Nodejs facimente executável no [Windows Azure](http://viniciusquaiato.com/blog/tag/windows-azure/). 
 
