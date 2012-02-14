@@ -14,12 +14,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: MVC + Jquery
-  slug: mvc-jquery
-  autoslug: mvc-+-jquery
-- title: "submit ass\xC3\xADncrono"
-  slug: submit-assincrono
-  autoslug: "submit-ass\xC3\xADncrono"
 ---
 Esta semana tivesse a necessidade de realizar o submit em um form de maneira assíncrona: [Hijax](http://domscripting.com/presentations/xtech2006/).Com [ASP.NET MVC](http://asp.net/mvc) e [JQuery](http://jquery.com) esta éuma tarefa bastante trivial. Então sem enrolar, vamos ao form:
 {% highlight csharp %}

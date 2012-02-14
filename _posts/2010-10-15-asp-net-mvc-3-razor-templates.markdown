@@ -14,21 +14,6 @@ tags:
 - title: ASP.NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
-- title: ASP.NET MVC 3 Beta
-  slug: asp-net-mvc-3-beta
-  autoslug: asp.net-mvc-3-beta
-- title: Razor View Engine
-  slug: razor-view-engine
-  autoslug: razor-view-engine
-- title: Razor syntax
-  slug: razor-syntax
-  autoslug: razor-syntax
-- title: Razor Layout Pages
-  slug: razor-layout-pages
-  autoslug: razor-layout-pages
-- title: Razor Master Pages
-  slug: razor-master-pages
-  autoslug: razor-master-pages
 ---
 Continuando a [falar sobre o Razor](http://viniciusquaiato.com/blog/asp-net-mvc-3-razor-view-engine/), a nova View Engine para o ASP.NET MVC, vou mostrar um pouco como podemos trabalhar com templates para nossas views.Desde o ASP.NET 2.0 podemos fazer isso com a utilização de Master Pages, e é aí que entram as Layout Pages do Razor, atuando como MasterPages.
 

@@ -7,18 +7,6 @@ keywords: [novidades]
 <ul class="posts">
 <li>
 <p>
-<span class="date">18/10/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-razor-templates-parte-ii">ASP.NET MVC 3 – Razor templates parte II</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">14/10/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-razor-view-engine">ASP.NET MVC 3 – Razor View Engine</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">13/10/2010</span> &raquo; 
 <a href="/blog/asp-net-mvc-3">ASP.NET MVC 3</a>
 </p>
@@ -56,13 +44,13 @@ keywords: [novidades]
 <li>
 <p>
 <span class="date">14/04/2010</span> &raquo; 
-<a href="/blog/ironruby-1-0-lancado">IronRuby 1.0 lançado!</a>
+<a href="/blog/net-4-lancado">.NET 4 lançado</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">14/04/2010</span> &raquo; 
-<a href="/blog/net-4-lancado">.NET 4 lançado</a>
+<a href="/blog/ironruby-1-0-lancado">IronRuby 1.0 lançado!</a>
 </p>
 </li> 
 <li>

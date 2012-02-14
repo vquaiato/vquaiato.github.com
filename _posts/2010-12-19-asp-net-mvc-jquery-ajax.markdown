@@ -17,9 +17,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: Jquery Ajax
-  slug: jquery-ajax
-  autoslug: jquery-ajax
 ---
 
 

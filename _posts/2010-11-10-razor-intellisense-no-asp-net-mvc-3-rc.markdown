@@ -14,15 +14,6 @@ tags:
 - title: ASP.NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
-- title: ASP.NET MVC 3 RC
-  slug: asp-net-mvc-3-rc
-  autoslug: asp.net-mvc-3-rc
-- title: Novidades ASP.NET MVC 3 RC
-  slug: novidades-asp-net-mvc-3-rc
-  autoslug: novidades-asp.net-mvc-3-rc
-- title: Razor Intellisense
-  slug: razor-intellisense
-  autoslug: razor-intellisense
 ---
 Fala galera, uma das novidades que vieram com o [ASP.NET MVC 3 Release CandidateC](http://viniciusquaiato.com/blog/asp-net-mvc-3-rc-novidades/) é o suporte a intellisense e colorização quando estamos trabalhando com [Razor](http://viniciusquaiato.com/blog/tag/razor/), que até então possuía apenas letras pretas em um fundo branco.
 

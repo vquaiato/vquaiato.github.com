@@ -17,10 +17,4 @@ keywords: [helpers]
 <a href="/blog/twitter-bing-helpers-asp-net-mvc-3">Twitter e Bing helpers ASP.NET MVC 3</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">05/11/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-criando-view-helpers-com-razor">ASP.NET MVC 3: Criando view helpers com Razor</a>
-</p>
-</li> 
 </ul>

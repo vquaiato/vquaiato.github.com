@@ -14,15 +14,6 @@ tags:
 - title: ASP.NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
-- title: ASP.NET MVC 3 Beta
-  slug: asp-net-mvc-3-beta
-  autoslug: asp.net-mvc-3-beta
-- title: Helpers
-  slug: helpers
-  autoslug: helpers
-- title: Razor helpers
-  slug: razor-helpers
-  autoslug: razor-helpers
 ---
 Fala galera, pois é, não canso de falar do [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3/), temos muitas novidades interessantes.Hoje quero mostrar mais uma delas, bastante interessante e simples: A criação de Helpers no [Razor](http://viniciusquaiato.com/blog/?s=razor&x=0&y=0).Agora é possível criar Helpers de forma mais simples utilizando Razor. Isso quer dizer que temos uma amneira fácil de criar helpers mesclando HTML e C#, afinal o Razor nos permite isso.Não precisamos mais criar uma classe puramente C# e ficar trabalhando com Response.Write. Já que a transição do código C# para o código HTML é simples, vamos utilizar isso.
 

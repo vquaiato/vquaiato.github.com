@@ -14,12 +14,6 @@ tags:
 - title: ASP.NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
-- title: ASP.NET MVC 3 Beta
-  slug: asp-net-mvc-3-beta
-  autoslug: asp.net-mvc-3-beta
-- title: functions Razor
-  slug: functions-razor
-  autoslug: functions-razor
 ---
 E o [Razor](http://viniciusquaiato.com/blog/tag/razor/) não pára! Vários posts sobre [ASP.NET MVC 3](http://viniciusquaiato.com/blog/tag/asp-net-mvc-3/), e olhe que ainda estamos no beta!Desta vez vou mostrar como criar functions no Razor. As functions são um pouco diferentes dos helpers pois elas possuem tipo de retorno, e não possuem saída HTML.
 

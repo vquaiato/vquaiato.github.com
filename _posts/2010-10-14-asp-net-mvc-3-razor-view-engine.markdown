@@ -8,24 +8,12 @@ categories:
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
-- title: Novidades
-  slug: novidades
-  autoslug: novidades
 - title: Razor
   slug: razor
   autoslug: razor
 - title: ASP.NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
-- title: ASP.NET MVC 3 Beta
-  slug: asp-net-mvc-3-beta
-  autoslug: asp.net-mvc-3-beta
-- title: Razor View Engine
-  slug: razor-view-engine
-  autoslug: razor-view-engine
-- title: Razor syntax
-  slug: razor-syntax
-  autoslug: razor-syntax
 ---
 
 

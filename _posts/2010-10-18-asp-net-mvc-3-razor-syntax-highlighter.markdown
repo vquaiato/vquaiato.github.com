@@ -14,12 +14,6 @@ tags:
 - title: ASP.NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
-- title: Razor View Engine
-  slug: razor-view-engine
-  autoslug: razor-view-engine
-- title: Razor syntax
-  slug: razor-syntax
-  autoslug: razor-syntax
 ---
 
 

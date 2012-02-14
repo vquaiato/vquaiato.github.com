@@ -14,15 +14,6 @@ tags:
 - title: Razor
   slug: razor
   autoslug: razor
-- title: Cores
-  slug: cores
-  autoslug: cores
-- title: Estilos
-  slug: estilos
-  autoslug: estilos
-- title: Temas Visual Studio
-  slug: temas-visual-studio
-  autoslug: temas-visual-studio
 ---
 
 

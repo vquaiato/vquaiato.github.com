@@ -14,12 +14,6 @@ tags:
 - title: ASP.NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
-- title: Html.RenderAction
-  slug: html-renderaction
-  autoslug: html.renderaction
-- title: Html.Action
-  slug: html-action
-  autoslug: html.action
 ---
 
 

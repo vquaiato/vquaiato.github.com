@@ -8,30 +8,12 @@ categories:
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
-- title: Novidades
-  slug: novidades
-  autoslug: novidades
 - title: Razor
   slug: razor
   autoslug: razor
 - title: ASP.NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
-- title: MVC 3
-  slug: mvc-3
-  autoslug: mvc-3
-- title: Razor View Engine
-  slug: razor-view-engine
-  autoslug: razor-view-engine
-- title: Razor syntax
-  slug: razor-syntax
-  autoslug: razor-syntax
-- title: Razor section
-  slug: razor-section
-  autoslug: razor-section
-- title: RenderSection
-  slug: rendersection
-  autoslug: rendersection
 ---
 [Na primeira parte deste post](http://viniciusquaiato.com/blog/asp-net-mvc-3-razor-templates/) vimos como o [Razor](http://viniciusquaiato.com/blog/asp-net-mvc-3-razor-view-engine/) trabalha o conceito de MasterPages/Layout Pages, e o RenderBody, que é o método padrão para renderização do conteúdo customizado.Agora veremos como criar nossas proprias sections ou áreas dentro da nossas MasterPage utilizando o Razor.
 

@@ -14,9 +14,6 @@ tags:
 - title: ASP.NET MVC 3
   slug: asp-net-mvc-3
   autoslug: asp.net-mvc-3
-- title: ASP.NET MVC 3 Beta
-  slug: asp-net-mvc-3-beta
-  autoslug: asp.net-mvc-3-beta
 ---
 Fala galera, essa é apenas uma dica simples e rápida.
 
