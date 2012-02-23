@@ -4,6 +4,8 @@ title: 'about: me'
 keywords: [about, vinicius quaiato]
 ---
 
+<img src="/images_posts/vinicius_quaiato.jpg" class="about_me" />
+
 Sou um desenvolvedor de software. Eu realmente gosto do que eu faço e passo uma boa parte do meu tempo fazendo isso.
 
 Além de programar eu gosto de estudar. Sobre muitas coisas. Sou um eterno aprendiz neste sentido.
@@ -16,3 +18,5 @@ Desenvolvo software profissionalmente há uns 5 ou 6 anos (juro que não sei ao 
 Passei a programar diariamente em tecnologias como: Ruby/Rails, Java/Groovy/Grails, MongoDB, Postgres, Sinatra. Passei a me interessar muito por html e css de uma maneira responsável. E por um bom tempo sequer liguei uma máquina virtual para iniciar o Windows :D
 
 Hoje eu dedico meu tempo escrevendo códigos na Crafters. Trabalhando para criar um ambiente bacana para as pessoas trabalharem: adaptando técnicas, métodos e buscando formas de tornar o trabalho mais divertido, produtivo e eficiente.
+
+Além de tudo isso sou um fanático torcedor do Santos FC, pai de uma linda guria de 1.5 anos, vegetariano e casado.

@@ -38,6 +38,16 @@ div.footer ul li{list-style-type: none;	display: inline;margin-right:27px;}
 div.footer ul li.designed{color:#848484;}
 div.footer ul li.feed{background: url(/images/feed.png) no-repeat;padding-left:25px;}
 
+img.about_me{
+  width: 150px;
+  box-shadow: 1px 1px 13px #666;
+  -webkit-box-shadow: 1px 1px 13px #666;
+  -moz-box-shadow: 1px 1px 13px #666;
+  float: left;
+  margin: 0 15px 10px 0;
+  border: solid 6px white;
+}
+
 /*C# SYNTAX*/
 .csharp .hll { background-color: #f0f3f3 }
 .csharp  { background-color: #f0f3f3 }
