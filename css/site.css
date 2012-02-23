@@ -31,10 +31,10 @@ div#post ul {margin-left: 40px}
 
 /*FOOTER*/
 div.footer {position:fixed;left:0px;bottom:0px;height:50px;width:100%;background:#333;font-family: Helvetica, Arial, sans-serif;}
-div.footer .footer_content{width: 810px;margin: auto;}
+div.footer .footer_content{width: 840px;margin: auto;}
 .footer_content a{color:#fff;text-decoration:none;}
 div.footer ul{color: #fff;padding:20px 0;}
-div.footer ul li{list-style-type: none;	display: inline;margin-right:30px;}
+div.footer ul li{list-style-type: none;	display: inline;margin-right:27px;}
 div.footer ul li.designed{color:#848484;}
 div.footer ul li.feed{background: url(/images/feed.png) no-repeat;padding-left:25px;}
 
