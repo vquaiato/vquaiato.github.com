@@ -61,3 +61,4 @@ Elegant Code Maker: [http://github.com/ldaniel/ElegantCodeMaker][maker-repo]
 [ubber-repo]:http://github.com/vquaiato/ubberelegant
 [elegant-repo]:http://github.com/juanplopes/elegant
 [maker-repo]:http://github.com/ldaniel/ElegantCodeMaker
+[sinatra]:http://www.sinatrarb.com/
