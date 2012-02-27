@@ -14,15 +14,6 @@ tags:
 - title: ALM
   slug: alm
   autoslug: alm
-- title: ALM Summit
-  slug: alm-summit
-  autoslug: alm-summit
-- title: ALM Summit Brasil
-  slug: alm-summit-brasil
-  autoslug: alm-summit-brasil
-- title: ALM Summit BR
-  slug: alm-summit-br
-  autoslug: alm-summit-br
 ---
 <div style="padding-top:15px;
     ">![](http://www.almsummitbrasil.com.br/Images/logos/Microsoft_Logo.png "Microsoft ALM Summit Brasil")</div>![](http://www.almsummitbrasil.com.br/Images/logos/Lambda3_Logo.png "Lambda3 ALM Summit Brasil")<div style="clear:both;

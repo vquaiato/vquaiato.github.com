@@ -7,6 +7,12 @@ keywords: [tdd]
 <ul class="posts">
 <li>
 <p>
+<span class="date">18/02/2012</span> &raquo; 
+<a href="/blog/usando_test_case_com_nunit">Usando TestCase com NUnit</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">06/08/2011</span> &raquo; 
 <a href="/blog/slides-palestra-testes-e-tdd-no-mstechday-de-sao-paulo">Slides palestra Testes e TDD no MSTechDay de São Paulo</a>
 </p>
@@ -15,6 +21,12 @@ keywords: [tdd]
 <p>
 <span class="date">28/01/2011</span> &raquo; 
 <a href="/blog/webcast-sobre-testes-no-vdd">Webcast sobre testes no VDD</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">16/01/2011</span> &raquo; 
+<a href="/blog/nuget-gallery">NuGet Gallery</a>
 </p>
 </li> 
 <li>
@@ -33,6 +45,12 @@ keywords: [tdd]
 <p>
 <span class="date">30/11/2010</span> &raquo; 
 <a href="/blog/mvctestsex-mais-um-projeto-open-source">MVCTestsEx mais um projeto open source</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">27/11/2010</span> &raquo; 
+<a href="/blog/diferenca-entre-mocks-e-stubs">Diferença entre Mocks e Stubs</a>
 </p>
 </li> 
 <li>

@@ -19,6 +19,12 @@ keywords: [livros]
 </li> 
 <li>
 <p>
+<span class="date">04/12/2010</span> &raquo; 
+<a href="/blog/livro-the-art-of-unit-testing">[Livro] The Art of Unit Testing</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">02/07/2010</span> &raquo; 
 <a href="/blog/dica-de-leitura-clean-code">Dica de Leitura: Clean Code</a>
 </p>

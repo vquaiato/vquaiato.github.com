@@ -11,9 +11,6 @@ tags:
 - title: Windows Azure
   slug: windows-azure
   autoslug: windows-azure
-- title: Worker Roles
-  slug: worker-roles
-  autoslug: worker-roles
 ---
 
 

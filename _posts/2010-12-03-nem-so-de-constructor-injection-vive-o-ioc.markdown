@@ -11,21 +11,15 @@ categories:
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
 tags: 
-- title: IoC
-  slug: ioc
-  autoslug: ioc
-- title: "Invers\xC3\xA3o de Controle"
-  slug: inversao-de-controle
-  autoslug: "invers\xC3\xA3o-de-controle"
+- title: Patterns
+  slug: patterns
+  autoslug: patterns
+- title: "Boas Pr\xC3\xA1ticas"
+  slug: boas-praticas
+  autoslug: "boas-pr\xC3\xA1ticas"
 - title: "Inje\xC3\xA7\xC3\xA3o de Depend\xC3\xAAncia"
   slug: injecao-de-dependencia
   autoslug: "inje\xC3\xA7\xC3\xA3o-de-depend\xC3\xAAncia"
-- title: Service Locator
-  slug: service-locator
-  autoslug: service-locator
-- title: Dependency Injection
-  slug: dependency-injection
-  autoslug: dependency-injection
 ---
 
 

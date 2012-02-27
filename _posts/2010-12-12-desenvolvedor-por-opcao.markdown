@@ -7,7 +7,10 @@ categories:
 - title: "[Off - Topic]"
   slug: off-topic
   autoslug: "[off---topic]"
-tags: []
+tags:
+- title: "[Off - Topic]"
+  slug: off-topic
+  autoslug: "[off---topic]"
 
 ---
 

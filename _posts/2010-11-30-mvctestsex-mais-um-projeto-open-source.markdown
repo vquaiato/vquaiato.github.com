@@ -23,12 +23,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: Unit Test
-  slug: unit-test
-  autoslug: unit-test
-- title: MVCTestsEx
-  slug: mvctestsex
-  autoslug: mvctestsex
 ---
 Fala galera.Quem me conhece provavelmente já me ouviu dizer que "em ASP.NET MVC tudo é testável". Sendo assim nossos controllers também são testáveis. [Postei muito sobre isso aqui](http://viniciusquaiato.com/blog/mvc-tdd/).A verdade é que testar os results dos controllers começa a ficar um pouco chato. Quando o controller retorna um [ActionResult](http://msdn.microsoft.com/en-us/library/system.web.mvc.actionresult(VS.98).aspx) é chato verificar se a view retornada é a correta:
 {% highlight csharp %}

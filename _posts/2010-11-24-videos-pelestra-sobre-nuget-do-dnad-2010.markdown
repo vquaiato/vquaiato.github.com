@@ -11,12 +11,9 @@ tags:
 - title: Palestras
   slug: palestras
   autoslug: palestras
-- title: DNAD2010
-  slug: dnad2010
-  autoslug: dnad2010
-- title: NuPack
-  slug: nupack
-  autoslug: nupack
+- title: DNAD
+  slug: dnad
+  autoslug: dnad
 - title: NuGet
   slug: nuget
   autoslug: nuget

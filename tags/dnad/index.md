@@ -29,4 +29,16 @@ keywords: [dnad]
 <a href="/blog/dnad11-net-architects-days-2011">#DNAD11 - .NET Architects Days 2011</a>
 </p>
 </li> 
+<li>
+<p>
+<span class="date">24/11/2010</span> &raquo; 
+<a href="/blog/videos-pelestra-sobre-nuget-do-dnad-2010">Vídeos pelestra sobre NuGet do DNAD 2010</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">21/11/2010</span> &raquo; 
+<a href="/blog/nuget-slides-palestra-dnad2010">NuGet: Slides palestra DNAD2010</a>
+</p>
+</li> 
 </ul>

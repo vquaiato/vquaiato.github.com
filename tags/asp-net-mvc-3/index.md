@@ -7,30 +7,6 @@ keywords: [asp-net-mvc-3]
 <ul class="posts">
 <li>
 <p>
-<span class="date">10/12/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-rc-2-lancado">ASP.NET MVC 3 RC 2 lançado!</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">06/12/2010</span> &raquo; 
-<a href="/blog/livro-asp-net-web-pages-with-razor-syntax">Livro: ASP.NET Web Pages with Razor Syntax</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">02/12/2010</span> &raquo; 
-<a href="/blog/gravatar-web-helper-no-asp-net-mvc-3">Gravatar web helper no ASP.NET MVC 3</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">24/11/2010</span> &raquo; 
-<a href="/blog/slides-palestra-desvendando-asp-net-mvc">Slides palestra: Desvendando ASP.NET MVC</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">19/11/2010</span> &raquo; 
 <a href="/blog/html-labelfor-html-labelformodel-no-asp-net-mvc-3">Html.LabelFor e Html.LabelForModel no ASP.NET MVC 3</a>
 </p>
@@ -50,13 +26,13 @@ keywords: [asp-net-mvc-3]
 <li>
 <p>
 <span class="date">12/11/2010</span> &raquo; 
-<a href="/blog/curso-asp-net-mvc-3-slides-e-demos">Curso ASP.NET MVC 3 slides e demos</a>
+<a href="/blog/output-cache-para-child-actions-no-asp-net-mvc-3-rc">Output Cache para child actions no ASP.NET MVC 3 RC</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">12/11/2010</span> &raquo; 
-<a href="/blog/output-cache-para-child-actions-no-asp-net-mvc-3-rc">Output Cache para child actions no ASP.NET MVC 3 RC</a>
+<a href="/blog/curso-asp-net-mvc-3-slides-e-demos">Curso ASP.NET MVC 3 slides e demos</a>
 </p>
 </li> 
 <li>
@@ -80,7 +56,7 @@ keywords: [asp-net-mvc-3]
 <li>
 <p>
 <span class="date">09/11/2010</span> &raquo; 
-<a href="/blog/global-filters-no-asp-net-mvc-3">Global Filters no ASP.NET MVC 3</a>
+<a href="/blog/asp-net-mvc-3-rc-download">ASP.NET MVC 3 RC Download</a>
 </p>
 </li> 
 <li>
@@ -92,7 +68,7 @@ keywords: [asp-net-mvc-3]
 <li>
 <p>
 <span class="date">09/11/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-3-rc-download">ASP.NET MVC 3 RC Download</a>
+<a href="/blog/global-filters-no-asp-net-mvc-3">Global Filters no ASP.NET MVC 3</a>
 </p>
 </li> 
 <li>

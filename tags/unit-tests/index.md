@@ -7,18 +7,6 @@ keywords: [unit-tests]
 <ul class="posts">
 <li>
 <p>
-<span class="date">28/01/2011</span> &raquo; 
-<a href="/blog/webcast-sobre-testes-no-vdd">Webcast sobre testes no VDD</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">04/12/2010</span> &raquo; 
-<a href="/blog/livro-the-art-of-unit-testing">[Livro] The Art of Unit Testing</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">05/11/2010</span> &raquo; 
 <a href="/blog/slides-e-demos-minicursos-testes-em-net">Slides e demos minicursos Testes em .NET</a>
 </p>
@@ -32,13 +20,13 @@ keywords: [unit-tests]
 <li>
 <p>
 <span class="date">30/08/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-testando-controllers-parte-ii">ASP.NET MVC: Testando Controllers parte II</a>
+<a href="/blog/testar-metodos-privados">Testar métodos privados</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">30/08/2010</span> &raquo; 
-<a href="/blog/testar-metodos-privados">Testar métodos privados</a>
+<a href="/blog/asp-net-mvc-testando-controllers-parte-ii">ASP.NET MVC: Testando Controllers parte II</a>
 </p>
 </li> 
 <li>

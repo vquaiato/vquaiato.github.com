@@ -14,9 +14,6 @@ tags:
 - title: Palestras
   slug: palestras
   autoslug: palestras
-- title: Unit Tests
-  slug: unit-tests
-  autoslug: unit-tests
 - title: TDD
   slug: tdd
   autoslug: tdd

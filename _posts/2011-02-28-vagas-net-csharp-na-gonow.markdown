@@ -7,19 +7,6 @@ categories:
 - title: "[Off - Topic]"
   slug: off-topic
   autoslug: "[off---topic]"
-tags: 
-- title: Vagas Desenvolvedor C#
-  slug: vagas-desenvolvedor-c
-  autoslug: vagas-desenvolvedor-c#
-- title: Vagas Windows Azure
-  slug: vagas-windows-azure
-  autoslug: vagas-windows-azure
-- title: Vagas WPF
-  slug: vagas-wpf
-  autoslug: vagas-wpf
-- title: Vagas Gonow
-  slug: vagas-gonow
-  autoslug: vagas-gonow
 ---
 
 

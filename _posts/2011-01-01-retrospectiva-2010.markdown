@@ -8,9 +8,6 @@ categories:
   slug: off-topic
   autoslug: "[off---topic]"
 tags: 
-- title: Retrospectiva
-  slug: retrospectiva
-  autoslug: retrospectiva
 - title: [Off - Topic]
   slug: off-topic
   autoslug: off-topic

@@ -17,15 +17,6 @@ tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: AjaxOptions
-  slug: ajaxoptions
-  autoslug: ajaxoptions
-- title: AjaxHelper
-  slug: ajaxhelper
-  autoslug: ajaxhelper
-- title: InsertionMode
-  slug: insertionmode
-  autoslug: insertionmode
 ---
 Para acompanhar os outros posts sobre [AjaxOptions](http://viniciusquaiato.com/blog/tag/ajaxoptions/):- [UpdateTargetId](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-updatetargetid/)
 - [Confirm message](http://viniciusquaiato.com/blog/asp-net-mvc-ajaxoptions-confirm-message/)

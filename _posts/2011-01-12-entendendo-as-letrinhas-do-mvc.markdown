@@ -11,9 +11,9 @@ categories:
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
 tags: 
-- title: MVC
-  slug: mvc
-  autoslug: mvc
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 - title: Patterns
   slug: patterns
   autoslug: patterns

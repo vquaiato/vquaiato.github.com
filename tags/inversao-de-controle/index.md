@@ -7,12 +7,6 @@ keywords: [inversao-de-controle]
 <ul class="posts">
 <li>
 <p>
-<span class="date">03/12/2010</span> &raquo; 
-<a href="/blog/nem-so-de-constructor-injection-vive-o-ioc">Nem só de Constructor Injection vive o IoC</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">18/01/2010</span> &raquo; 
 <a href="/blog/injecao-de-dependencia-com-ms-unity">Injeção de Dependência com MS Unity</a>
 </p>

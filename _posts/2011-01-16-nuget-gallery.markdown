@@ -11,9 +11,9 @@ tags:
 - title: NuGet
   slug: nuget
   autoslug: nuget
-- title: MVCTestsEx
-  slug: mvctestsex
-  autoslug: mvctestsex
+- title: TDD
+  slug: tdd
+  autoslug: tdd
 ---
 Fala galera, não sei se todos acompanharam mas a [NuGet Gallery](http://nuget.org) está disponível já em um site: [http://nuget.org](http://nuget.org).Se você não sabe ainda o que é NuGet [confira estes posts sobre o NuGet](http://viniciusquaiato.com/blog/tag/nuget/).
 

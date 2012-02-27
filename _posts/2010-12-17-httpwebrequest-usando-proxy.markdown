@@ -8,21 +8,9 @@ categories:
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
-- title: HttpWebRequest
-  slug: httpwebrequest
-  autoslug: httpwebrequest
-- title: Proxy
-  slug: proxy
-  autoslug: proxy
-- title: WebRequest
-  slug: webrequest
-  autoslug: webrequest
-- title: WebProxy
-  slug: webproxy
-  autoslug: webproxy
-- title: WebProxy C#
-  slug: webproxy-c
-  autoslug: webproxy-c#
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 Estes dias fiz uma pequena aplicação [ASP.NET MVC](http://viniciusquaiato.com/blog/category/dotnet/asp-net-dotnet/asp-net-mvc/) e uma das features era fazer um parser simples de uma página da Bovespa para obter o valor de uma cotação. A saída simples foi realizar um [HttpWebRequest](http://msdn.microsoft.com/pt-br/library/system.net.httpwebrequest.aspx) e tratar o resultado. 
 

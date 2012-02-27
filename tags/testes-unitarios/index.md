@@ -7,18 +7,6 @@ keywords: [testes-unitarios]
 <ul class="posts">
 <li>
 <p>
-<span class="date">14/05/2011</span> &raquo; 
-<a href="/blog/trabalhando-com-boo-no-monodevelop">Trabalhando com Boo no MonoDevelop</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">08/05/2011</span> &raquo; 
-<a href="/blog/unit-tests-com-nunit-no-monodevelop">Unit Tests com NUnit no MonoDevelop</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">02/09/2010</span> &raquo; 
 <a href="/blog/asp-net-mvc-testando-controllers-parte-iii">ASP.NET MVC: Testando controllers parte III</a>
 </p>
@@ -26,13 +14,13 @@ keywords: [testes-unitarios]
 <li>
 <p>
 <span class="date">30/08/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-testando-controllers-parte-ii">ASP.NET MVC: Testando Controllers parte II</a>
+<a href="/blog/testar-metodos-privados">Testar métodos privados</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">30/08/2010</span> &raquo; 
-<a href="/blog/testar-metodos-privados">Testar métodos privados</a>
+<a href="/blog/asp-net-mvc-testando-controllers-parte-ii">ASP.NET MVC: Testando Controllers parte II</a>
 </p>
 </li> 
 <li>

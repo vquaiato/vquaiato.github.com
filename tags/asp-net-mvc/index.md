@@ -32,13 +32,13 @@ keywords: [asp-net-mvc]
 <li>
 <p>
 <span class="date">16/02/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-ajaxoptions-updatetargetid">ASP.NET MVC AjaxOptions: UpdateTargetId</a>
+<a href="/blog/asp-net-mvc-ajaxoptions-confirm-message">ASP.NET MVC AjaxOptions: Confirm message</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">16/02/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-ajaxoptions-confirm-message">ASP.NET MVC AjaxOptions: Confirm message</a>
+<a href="/blog/asp-net-mvc-ajaxoptions-updatetargetid">ASP.NET MVC AjaxOptions: UpdateTargetId</a>
 </p>
 </li> 
 <li>
@@ -109,6 +109,12 @@ keywords: [asp-net-mvc]
 </li> 
 <li>
 <p>
+<span class="date">12/01/2011</span> &raquo; 
+<a href="/blog/entendendo-as-letrinhas-do-mvc">Entendendo as letrinhas do MVC</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">06/01/2011</span> &raquo; 
 <a href="/blog/windows-azure-rodando-asp-net-mvc-3">Windows Azure: rodando ASP.NET MVC 3</a>
 </p>
@@ -128,13 +134,13 @@ keywords: [asp-net-mvc]
 <li>
 <p>
 <span class="date">28/12/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-controlando-a-ordem-dos-action-filters">ASP.NET MVC controlando a ordem dos action filters</a>
+<a href="/blog/livros-asp-net-mvc-2-in-action">[Livros] ASP.NET MVC 2 in Action</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">28/12/2010</span> &raquo; 
-<a href="/blog/livros-asp-net-mvc-2-in-action">[Livros] ASP.NET MVC 2 in Action</a>
+<a href="/blog/asp-net-mvc-controlando-a-ordem-dos-action-filters">ASP.NET MVC controlando a ordem dos action filters</a>
 </p>
 </li> 
 <li>
@@ -152,13 +158,13 @@ keywords: [asp-net-mvc]
 <li>
 <p>
 <span class="date">22/12/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-retornando-dados-json-via-get-com-jquery">ASP.NET MVC retornando dados Json via Get com Jquery</a>
+<a href="/blog/instalando-asp-net-mvc-3-rc-2">Instalando ASP.NET MVC 3 RC 2</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">22/12/2010</span> &raquo; 
-<a href="/blog/instalando-asp-net-mvc-3-rc-2">Instalando ASP.NET MVC 3 RC 2</a>
+<a href="/blog/asp-net-mvc-retornando-dados-json-via-get-com-jquery">ASP.NET MVC retornando dados Json via Get com Jquery</a>
 </p>
 </li> 
 <li>
@@ -181,6 +187,12 @@ keywords: [asp-net-mvc]
 </li> 
 <li>
 <p>
+<span class="date">17/12/2010</span> &raquo; 
+<a href="/blog/httpwebrequest-usando-proxy">HttpWebRequest usando proxy</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">15/12/2010</span> &raquo; 
 <a href="/blog/asp-net-mvc-servindo-paginas-html">ASP.NET MVC servindo páginas HTML</a>
 </p>
@@ -193,6 +205,24 @@ keywords: [asp-net-mvc]
 </li> 
 <li>
 <p>
+<span class="date">10/12/2010</span> &raquo; 
+<a href="/blog/asp-net-mvc-3-rc-2-lancado">ASP.NET MVC 3 RC 2 lançado!</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">06/12/2010</span> &raquo; 
+<a href="/blog/livro-asp-net-web-pages-with-razor-syntax">Livro: ASP.NET Web Pages with Razor Syntax</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">02/12/2010</span> &raquo; 
+<a href="/blog/gravatar-web-helper-no-asp-net-mvc-3">Gravatar web helper no ASP.NET MVC 3</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">30/11/2010</span> &raquo; 
 <a href="/blog/mvctestsex-mais-um-projeto-open-source">MVCTestsEx mais um projeto open source</a>
 </p>
@@ -201,6 +231,12 @@ keywords: [asp-net-mvc]
 <p>
 <span class="date">24/11/2010</span> &raquo; 
 <a href="/blog/slides-palestra-desvendando-asp-net-mvc">Slides palestra: Desvendando ASP.NET MVC</a>
+</p>
+</li> 
+<li>
+<p>
+<span class="date">22/11/2010</span> &raquo; 
+<a href="/blog/esquema-de-cores-visual-studio-e-razor">Esquema de cores Visual Studio e Razor</a>
 </p>
 </li> 
 <li>

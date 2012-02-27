@@ -8,21 +8,9 @@ categories:
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 tags: 
-- title: ASP.NET MVC 3
-  slug: asp-net-mvc-3
-  autoslug: asp.net-mvc-3
-- title: Helpers
-  slug: helpers
-  autoslug: helpers
-- title: Gravatar
-  slug: gravatar
-  autoslug: gravatar
-- title: Microsoft.Web.Helpers
-  slug: microsoft-web-helpers
-  autoslug: microsoft.web.helpers
-- title: Gravatar helper
-  slug: gravatar-helper
-  autoslug: gravatar-helper
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 Fala galera, esta é uma feature bem legal disponível através de um web helper no [ASP.NET MVC 3](http://viniciusquaiato.com/blog/asp-net-mvc-3): Exibir a imagem do [Gravatar](http://pt.gravatar.com/).Primeiro você precisa baixar o pacote Microsoft.Web.Helpers com o [NuGet](http://viniciusquaiato.com/blog/tag/nuget/):
 {% highlight csharp %}

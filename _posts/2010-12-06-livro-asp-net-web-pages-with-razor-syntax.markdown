@@ -11,9 +11,9 @@ tags:
 - title: Razor
   slug: razor
   autoslug: razor
-- title: ASP.NET MVC 3
-  slug: asp-net-mvc-3
-  autoslug: asp.net-mvc-3
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 ---
 Fala galera, está disponível para download do livro: [ASP.NET Web Pages with Razor Syntax](http://www.microsoft.com/download/en/details.aspx?id=15979). Pelo que vi está sendo disponibilizado pela própria Microsoft, e contém algumas informações bacanas sobre a criação de páginas utilizando [Razor](http://viniciusquaiato.com/tags/dicas-razor/). Já são mais de 280 páginas, 18 capítulos e muito conteúdo. O livro mostra sintaxe, dicas e muito mais sobre o uso do Razor.
 

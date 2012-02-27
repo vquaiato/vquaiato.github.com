@@ -11,9 +11,9 @@ categories:
   slug: mono
   autoslug: mono
 tags: 
-- title: "Testes Unit\xC3\xA1rios"
-  slug: testes-unitarios
-  autoslug: "testes-unit\xC3\xA1rios"
+- title: Testes
+  slug: testes
+  autoslug: testes
 - title: NUnit
   slug: nunit
   autoslug: nunit

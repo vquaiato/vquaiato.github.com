@@ -11,18 +11,15 @@ categories:
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
 tags: 
-- title: Mocks
-  slug: mocks
-  autoslug: mocks
-- title: DNAD2010
-  slug: dnad2010
-  autoslug: dnad2010
-- title: Stubs
-  slug: stubs
-  autoslug: stubs
-- title: "Diferen\xC3\xA7a"
-  slug: diferenca
-  autoslug: "diferen\xC3\xA7a"
+- title: TDD
+  slug: tdd
+  autoslug: tdd
+- title: DNAD
+  slug: dnad
+  autoslug: dnad
+  - title: "Boas Pr\xC3\xA1ticas"
+  slug: boas-praticas
+  autoslug: "boas-pr\xC3\xA1ticas"
 ---
 Há algum tempo eu estava com este post "engavetado". Então tive a idéia de submeter este tema para um Lightning Talk no DNAD 2010.Antes de ler o texto, veja o vídeo da minha apresentação pois servirá como base para o que segue:<object width="640" height="390"><param name="movie" value="http://www.youtube.com/v/gMkiKtxrvx8&hl=pt_BR&feature=player_embedded&version=3" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://www.youtube.com/v/gMkiKtxrvx8&hl=pt_BR&feature=player_embedded&version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="390"></embed></object>(Este vídeo foi feito pelo equipe da [Gonow Tecnologia](http://www.gonow.com.br), e disponibilizado originalmente no [Blog da Gonow](http://www.gonow.com.br/blog/2010/11/20/gonow-tecnologia-no-net-architects-day-2010/))
 

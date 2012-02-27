@@ -20,9 +20,6 @@ tags:
 - title: DNAD
   slug: dnad
   autoslug: dnad
-- title: DNAD11
-  slug: dnad11
-  autoslug: dnad11
 ---
 
 

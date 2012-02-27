@@ -19,12 +19,6 @@ keywords: [tests]
 </li> 
 <li>
 <p>
-<span class="date">04/12/2010</span> &raquo; 
-<a href="/blog/livro-the-art-of-unit-testing">[Livro] The Art of Unit Testing</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">27/09/2010</span> &raquo; 
 <a href="/blog/mocking-com-justmock">Mocking com JustMock</a>
 </p>
