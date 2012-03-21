@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: TDD na .Net Magazine 69
 wordpress_id: 333
 wordpress_url: http://viniciusquaiato.com/blog/?p=333
-categories: 
+categories:
 - title: TDD
   slug: tdd
   autoslug: tdd
@@ -16,10 +16,7 @@ categories:
 - title: "Publica\xC3\xA7\xC3\xB5es"
   slug: publicacoes
   autoslug: "publica\xC3\xA7\xC3\xB5es"
-tags: 
-- title: .NET Magazine
-  slug: net-magazine
-  autoslug: .net-magazine
+tags:
 - title: Artigos
   slug: artigos
   autoslug: artigos

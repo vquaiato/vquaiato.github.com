@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: ASP.NET MVC + JQuery
 wordpress_id: 269
 wordpress_url: http://viniciusquaiato.com/blog/?p=269
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
@@ -16,19 +16,13 @@ categories:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-tags: 
-- title: MVC
-  slug: mvc
-  autoslug: mvc
-- title: ASP.NET
-  slug: asp-net
-  autoslug: asp.net
+tags:
+- title: ASP.NET MVC
+  slug: asp-net-mvc
+  autoslug: asp.net-mvc
 - title: JQuery
   slug: jquery
   autoslug: jquery
-- title: WEB
-  slug: web
-  autoslug: web
 - title: Ajax
   slug: ajax
   autoslug: ajax
@@ -101,7 +95,7 @@ Pronto! Agora já temos uma tabela capaz de excluir itens usando Ajax e ainda te
 $(document).ready(function () {    $("#dataTable").dataTable();
     }
 );
-    
+
 {% endhighlight %}
 Este código irá aplicar o plugin na nossa tabela, e o resultado será como mostrado abaixo:[table usando plugin DataTables](http://viniciusquaiato.com/images_posts/table-usando-plugin-DataTables.jpg "table usando plugin DataTables")Agora podemos filtrar, ordenar e paginar nossos dados, sem nenhum esforço adicional, veja um exemplo de filtro abaixo:[plugin DataTable filtrando dados](http://viniciusquaiato.com/images_posts/plugin-DataTable-filtrando-dados.jpg "plugin DataTable filtrando dados")Bom galera, é isso!O código fonte desta solução está disponível [aqui](http://viniciusquaiato.com/files/codesamples/MVC/mvcjquerysite.rar).Qualquer dúvida, email ou comentários.
 

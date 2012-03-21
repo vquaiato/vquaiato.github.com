@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: "Dynamic Types na .Net Magazine #71"
 wordpress_id: 668
 wordpress_url: http://viniciusquaiato.com/blog/?p=668
-categories: 
+categories:
 - title: Visual Studio 2010
   slug: visual-studio-2010
   autoslug: visual-studio-2010
@@ -13,16 +13,7 @@ categories:
 - title: "Publica\xC3\xA7\xC3\xB5es"
   slug: publicacoes
   autoslug: "publica\xC3\xA7\xC3\xB5es"
-tags: 
-- title: Visual Studio 2010
-  slug: visual-studio-2010
-  autoslug: visual-studio-2010
-- title: dynamic
-  slug: dynamic
-  autoslug: dynamic
-- title: .NET Magazine
-  slug: net-magazine
-  autoslug: .net-magazine
+tags:
 - title: Artigos
   slug: artigos
   autoslug: artigos

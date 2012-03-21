@@ -203,10 +203,4 @@ keywords: [palestras]
 <a href="/blog/site-community-launch-sp-faca-sua-inscricao">Site Community Launch SP - Faça sua inscrição!</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">11/03/2010</span> &raquo; 
-<a href="/blog/microsoft-community-launch-2010-sao-paulo-sp">Microsoft Community Launch 2010 - São Paulo - SP</a>
-</p>
-</li> 
 </ul>

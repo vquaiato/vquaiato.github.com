@@ -65,10 +65,4 @@ keywords: [patterns]
 <a href="/blog/inversao-de-controle-inversion-of-control-ioc">Inversão de Controle (Inversion of Control / IoC)</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">24/11/2009</span> &raquo; 
-<a href="/blog/podcast-principios-solid-net-architects">Podcast Princípios SOLID - .NET Architects</a>
-</p>
-</li> 
 </ul>

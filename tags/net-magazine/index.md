@@ -35,16 +35,4 @@ keywords: [net-magazine]
 <a href="/blog/net-magazine-73-asp-net-ajax-library-e-windows-phone-7">.Net Magazine 73 - Asp.Net Ajax Library e Windows Phone 7</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">08/03/2010</span> &raquo; 
-<a href="/blog/dynamic-types-na-net-magazine-71">Dynamic Types na .Net Magazine #71</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">07/01/2010</span> &raquo; 
-<a href="/blog/tdd-na-net-magazine-69">TDD na .Net Magazine 69</a>
-</p>
-</li> 
 </ul>

@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: "DynamicObject: dinamismo no .NET 4.0"
 wordpress_id: 286
 wordpress_url: http://viniciusquaiato.com/blog/?p=286
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
@@ -13,16 +13,7 @@ categories:
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
-- title: dynamic
-  slug: dynamic
-  autoslug: dynamic
-- title: ExpandoObject
-  slug: expandoobject
-  autoslug: expandoobject
-- title: .NET
-  slug: dotnet
-  autoslug: .net
+tags:
 - title: C#
   slug: c-sharp
   autoslug: c-sharp
@@ -39,14 +30,14 @@ public void Deve_Criar_Uma_Propriedade_Nome_No_Objeto_Dinamico(){    dynamic ses
 E a classe _SessaoDinamica_:
 {% highlight csharp %}
 
-public class SessaoDinamica : DynamicObject{    
+public class SessaoDinamica : DynamicObject{
 
 private Dictionary<string, object> sessionItems = new Dictionary<string, object>();
-    
+
 public override bool TrySetMember(SetMemberBinder binder, object value)    {        sessionItems[binder.Name.ToLower()] = value;
 return true;
     }
-    
+
 public override bool TryGetMember(GetMemberBinder binder, out object result)    {
 return sessionItems.TryGetValue(binder.Name.ToLower(), out result);
     }

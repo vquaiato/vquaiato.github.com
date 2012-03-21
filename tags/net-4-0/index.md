@@ -26,13 +26,13 @@ keywords: [net-4-0]
 <li>
 <p>
 <span class="date">14/04/2010</span> &raquo; 
-<a href="/blog/net-4-lancado">.NET 4 lançado</a>
+<a href="/blog/ironruby-1-0-lancado">IronRuby 1.0 lançado!</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">14/04/2010</span> &raquo; 
-<a href="/blog/ironruby-1-0-lancado">IronRuby 1.0 lançado!</a>
+<a href="/blog/net-4-lancado">.NET 4 lançado</a>
 </p>
 </li> 
 <li>
@@ -57,30 +57,6 @@ keywords: [net-4-0]
 <p>
 <span class="date">16/03/2010</span> &raquo; 
 <a href="/blog/site-community-launch-sp-faca-sua-inscricao">Site Community Launch SP - Faça sua inscrição!</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">11/03/2010</span> &raquo; 
-<a href="/blog/microsoft-community-launch-2010-sao-paulo-sp">Microsoft Community Launch 2010 - São Paulo - SP</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">26/02/2010</span> &raquo; 
-<a href="/blog/asp-net-ajax-library-nova-biblioteca-do-asp-net-4-0">Asp.Net Ajax Library: Nova biblioteca do Asp.Net 4.0</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">24/02/2010</span> &raquo; 
-<a href="/blog/plinq-paralelismo-no-net-4-com-parallel-linq">PLINQ: Paralelismo no .Net 4 com Parallel LINQ</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">21/01/2010</span> &raquo; 
-<a href="/blog/ironruby-rodando-ruby-dentro-do-net">IronRuby: Rodando Ruby dentro do .NET</a>
 </p>
 </li> 
 </ul>

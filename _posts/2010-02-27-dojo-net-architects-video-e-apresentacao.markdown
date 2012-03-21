@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: "Dojo .Net Architects: V\xC3\xADdeo e Apresenta\xC3\xA7\xC3\xA3o"
 wordpress_id: 630
 wordpress_url: http://viniciusquaiato.com/blog/?p=630
-categories: 
+categories:
 - title: TDD
   slug: tdd
   autoslug: tdd
@@ -19,13 +19,10 @@ categories:
 - title: Dojos
   slug: dojos
   autoslug: dojos
-tags: 
+tags:
 - title: .Net Architects
   slug: net-architects
   autoslug: .net-architects
-- title: DNA
-  slug: dna
-  autoslug: dna
 - title: Coding Dojo
   slug: coding-dojo
   autoslug: coding-dojo

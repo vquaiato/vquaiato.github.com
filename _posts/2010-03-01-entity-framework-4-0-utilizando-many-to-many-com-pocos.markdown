@@ -1,31 +1,19 @@
---- 
+---
 layout: post
 title: "Entity Framework 4.0: Utilizando many-to-many com POCOs"
 wordpress_id: 493
 wordpress_url: http://viniciusquaiato.com/blog/?p=493
-categories: 
+categories:
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
 - title: Entity Framework
   slug: entity-framework
   autoslug: entity-framework
-tags: 
-- title: VS2010
-  slug: vs2010
-  autoslug: vs2010
-- title: ORM
-  slug: orm
-  autoslug: orm
+tags:
 - title: Entity Framework
   slug: entity-framework
   autoslug: entity-framework
-- title: POCO
-  slug: poco
-  autoslug: poco
-- title: Many-To-Many
-  slug: many-to-many
-  autoslug: many-to-many
 ---
 
 
@@ -42,22 +30,22 @@ Feito isso vamos criar uma associação entre nossas entidades, como pode ser vi
 Feito isso basta salvarmos nosso modelo e gerar o banco de dados. Lembrando de desmarcar a opção de geração de código no modelo ([veja aqui como fazer isso](http://viniciusquaiato.com/blog/entity-framework-4-model-first-com-pocos/)).Nossas classes ficarão simples, como não poderia deixar de ser.Abaixo vemos a classe Produto, que como pode-se notar não possui nenhuma dependência do entity Framework e nem conhece nada relacionado com banco de dados:
 {% highlight csharp %}
 
-public class Produto{    
+public class Produto{
 
 public virtual int Id { get;
     set;
     }
-    
+
 public virtual string Nome { get;
     set;
     }
-    
+
 public virtual decimal ValorSugerido { get;
     set;
     }
-    
+
 private IList<loja> lojasOndeVende = new List<loja>();
-    
+
 public virtual IList<loja> LojasOndeVende    {        get        {
 return this.lojasOndeVende;
     }
@@ -70,22 +58,22 @@ return this.lojasOndeVende;
 Abaixo temos a classe Loja:
 {% highlight csharp %}
 
-public class Loja{    
+public class Loja{
 
 public virtual int Id { get;
     set;
     }
-    
+
 public virtual string Nome { get;
     set;
     }
-    
+
 public virtual string Cidade { get;
     set;
     }
-    
+
 private IList<produto> produtosQueVende = new List<produto>();
-    
+
 public virtual IList<produto> ProdutosQueVende    {        get        {
 return this.produtosQueVende;
     }
@@ -99,20 +87,20 @@ return this.produtosQueVende;
 E aqui temos nossa classe de contexto do Entity Framework, que também criamos, de forma bastante simples:
 {% highlight csharp %}
 
-public class EF4Context : ObjectContext{    
+public class EF4Context : ObjectContext{
 
 public EF4Context()        : base("name=ModeloManyToManyContainer", "ModeloManyToManyContainer") { }
-    
+
 private IObjectSet<produto> produtos;
-    
+
 public IObjectSet<produto> Produtos    {        get        {
 if(produtos == null)                produtos = CreateObjectSet<produto>();
 return produtos;
     }
     }
-    
+
 private IObjectSet<loja> lojas;
-    
+
 public IObjectSet<loja> Lojas    {        get        {
 if(lojas == null)                lojas = CreateObjectSet<loja>();
 return lojas;
@@ -124,7 +112,7 @@ return lojas;
 E isto é tudo que precisamos. Já podemos trabalhar com nossas entidades de forma a terem a relação Many-to-Many feita e funcionando.Criei uma aplicação console para demonstrar isso. O método abaixo faz algumas inserções no banco, e o resultado da consulta pode ser visto na imagem a seguir:
 {% highlight csharp %}
 
-private 
+private
 static void InserirNovosProdutosELojas(){
 var contexto = new EF4Context();
 var produto = new Produto();

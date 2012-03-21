@@ -1,25 +1,16 @@
---- 
+---
 layout: post
 title: "PLINQ: Paralelismo no .Net 4 com Parallel LINQ"
 wordpress_id: 516
 wordpress_url: http://viniciusquaiato.com/blog/?p=516
-categories: 
+categories:
 - title: Visual Studio 2010
   slug: visual-studio-2010
   autoslug: visual-studio-2010
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
-- title: Novidades
-  slug: novidades
-  autoslug: novidades
-- title: .NET 4.0
-  slug: net-4-0
-  autoslug: .net-4.0
-- title: Paralelismo
-  slug: paralelismo
-  autoslug: paralelismo
+tags:
 - title: PLINQ
   slug: plinq
   autoslug: plinq
@@ -39,7 +30,7 @@ foreach(var dobro in dobrados)        Console.WriteLine(dobro);
     }
 
 
-private 
+private
 static int Dobro(int numero){    Thread.Sleep(500);
 return numero * 2;
     }
@@ -49,13 +40,13 @@ Como vemos na **_linha 5_** estamos chamando o método AsParallel na nossa cole�
 {% highlight csharp %}
 
 var dobrados = from n in numeros.AsParallel().WithDegreeOfParallelism(2)                   select Dobro(n);
-    
+
 {% endhighlight %}
 Na **_linha 5_** do nosso código adicionamos uma chamada para a extensão [WithDegreeOfParallelism](http://msdn.microsoft.com/en-us/library/dd383719%28VS.100%29.aspx) e passamos como parâmetro o total de processadores a ser utilizado. No mais o código permanece exatamente igual.Outro recurso bastante interessante é realizar o processamento paralelo e conseguir que o resultado seja ordenado. Isso é possível utilizando a extension [AsOrdered](http://msdn.microsoft.com/en-us/library/dd642142%28VS.100%29.aspx).No código anterior poderíamos utilziar AsParallel e continuar realizando o processamento de forma paralela mas mantendo a saída ordenada, como pode ser visto abaixo:
 {% highlight csharp %}
 
 var dobrados = from n in numeros.AsParallel().AsOrdered()                   select Dobro(n);
-    
+
 {% endhighlight %}
 A saída pode ser vista na imagem abaixo:[PLINQ usando AsParallel com AsOrdered](http://viniciusquaiato.com/images_posts/AsParallel-com-AsOrdered.jpg "PLINQ usando AsParallel com AsOrdered")Existem ainda diversos recursos no PLINQ. Em breve abordarei mais sobre eles aqui.Uma boa documentação está disponível no MSDN [aqui](http://msdn.microsoft.com/en-us/library/dd997425%28VS.100%29.aspx), [aqui](http://msdn.microsoft.com/en-us/library/dd537608%28VS.100%29.aspx) e [aqui](http://msdn.microsoft.com/pt-br/vstudio/dd441784%28en-us%29.aspx#Parallel).Comentários, críticas e sugestões, basta escrever.
 

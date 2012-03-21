@@ -1,31 +1,19 @@
---- 
+---
 layout: post
 title: "Asp.Net Ajax Library: Nova biblioteca do Asp.Net 4.0"
 wordpress_id: 511
 wordpress_url: http://viniciusquaiato.com/blog/?p=511
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
-- title: Novidades
-  slug: novidades
-  autoslug: novidades
+tags:
 - title: ASP.NET
   slug: asp-net
   autoslug: asp.net
-- title: .NET 4.0
-  slug: net-4-0
-  autoslug: .net-4.0
-- title: Ajax
-  slug: ajax
-  autoslug: ajax
-- title: Ajax Library
-  slug: ajax-library
-  autoslug: ajax-library
 ---
 
 

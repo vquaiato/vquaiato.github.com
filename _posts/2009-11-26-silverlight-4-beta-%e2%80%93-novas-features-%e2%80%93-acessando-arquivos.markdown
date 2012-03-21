@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: Silverlight 4 beta - Novas Features - Acessando Arquivos
 wordpress_id: 222
 wordpress_url: http://viniciusquaiato.com/blog/?p=222
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
@@ -13,13 +13,10 @@ categories:
 - title: Silverlight
   slug: silverlight
   autoslug: silverlight
-tags: 
+tags:
 - title: Silverlight
   slug: silverlight
   autoslug: silverlight
-- title: RIA
-  slug: ria
-  autoslug: ria
 ---
 
 

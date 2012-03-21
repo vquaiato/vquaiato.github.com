@@ -1,25 +1,19 @@
---- 
+---
 layout: post
 title: TDD - Test-driven Development + c# - Parte II
 wordpress_id: 18
 wordpress_url: http://viniciusquaiato.com/blog/?p=18
-categories: 
+categories:
 - title: TDD
   slug: tdd
   autoslug: tdd
 - title: .NET
   slug: dotnet
   autoslug: .net
-tags: 
+tags:
 - title: Tests
   slug: tests
   autoslug: tests
-- title: Visual Studio
-  slug: visual-studio
-  autoslug: visual-studio
-- title: Refactoring
-  slug: refactoring
-  autoslug: refactoring
 - title: TDD
   slug: tdd
   autoslug: tdd
@@ -44,12 +38,12 @@ public void Deve_Criar_Conta_Com_Deposito_Inicial(){    ContaBancaria conta = ne
 Como podemos ver, este teste nem irá compilar, afinal, estamos criando o teste antes mesmo de criarmos a classe ContaBancaria.
 {% highlight csharp %}
 
-public class ContaBancaria{    
+public class ContaBancaria{
 
 public decimal SaldoAtual { get;
     set;
     }
-    
+
 public ContaBancaria(decimal depositoInicial) { }
 }
 
@@ -58,12 +52,12 @@ Assi podemos executar nosso teste. Eu gosto de utilizar dois atalhos CTRL + R + 
     ">red</span> e sabemos que estamos no caminho certo. Aconteceu que estávamos esperando um saldo de 50 e o saldo obtido foi 0.Agora devemos voltar ao código e fazer o teste passar:
 {% highlight csharp %}
 
-public class ContaBancaria{    
+public class ContaBancaria{
 
 public decimal SaldoAtual { get;
     set;
     }
-    
+
 public ContaBancaria(decimal depositoInicial)    {        this.SaldoAtual += depositoInicial;
     }
 }
@@ -73,13 +67,13 @@ Neste caso nossa mudança é bem pequena. Agora vamos executar o mesmo teste e v
     ">verde</span>, e isso quer dizer que podemos prosseguir, escrevendo os próximos testes. Antes disso acontecer, devemos lembrar do próximo passo: refactoring!Vamos voltar ao nosso código e entender o que pode ser refatorado.Me parece que a propriedade SaldoAtual não deveria ter um setter público, desta forma vamos torná-lo privado:
 {% highlight csharp %}
 
-public class ContaBancaria{    
+public class ContaBancaria{
 
 public decimal SaldoAtual { get;
-    
+
 private set;
     }
-    
+
 public ContaBancaria(decimal depositoInicial)    {        this.SaldoAtual += depositoInicial;
     }
 }
@@ -95,7 +89,7 @@ public void Deve_Lancar_Excecao_Deposito_Inicial_Invalido(){    ContaBancaria co
 Para que este teste compile, vamos criar uma Exception:
 {% highlight csharp %}
 
-public class DepositoInicialInvalidoException : Exception{    
+public class DepositoInicialInvalidoException : Exception{
 
 public DepositoInicialInvalidoException()        : base("Depósito inicial deve ser um valor maior que 0(Zero)!") { }
 }

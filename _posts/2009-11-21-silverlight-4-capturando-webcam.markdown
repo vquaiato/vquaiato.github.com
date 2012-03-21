@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: Silverlight 4 beta - Novas Features - Capturando Webcam
 wordpress_id: 173
 wordpress_url: http://viniciusquaiato.com/blog/?p=173
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
@@ -13,16 +13,10 @@ categories:
 - title: Silverlight
   slug: silverlight
   autoslug: silverlight
-tags: 
-- title: Visual Studio
-  slug: visual-studio
-  autoslug: visual-studio
+tags:
 - title: Silverlight
   slug: silverlight
   autoslug: silverlight
-- title: RIA
-  slug: ria
-  autoslug: ria
 ---
 
 
@@ -43,7 +37,7 @@ Agora podemos abrir o projeto silverlight no Visual Studio 2010 para que possamo
 Agora vamos adicionar o código necessário para que nossa webcam seja capturada. Vamos abrir o arquivo MainPage.xaml.cs e então criar o seguinte código:
 {% highlight csharp %}
 CaptureSource captureSource = null;
-    
+
 private void Initialize(){
 var videoDevice = CaptureDeviceConfiguration.GetAvailableVideoCaptureDevices()[0];
 if(captureSource == null)        captureSource = new CaptureSource();

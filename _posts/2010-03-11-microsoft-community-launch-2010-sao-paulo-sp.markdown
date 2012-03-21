@@ -1,34 +1,25 @@
---- 
+---
 layout: post
 title: "Microsoft Community Launch 2010 - S\xC3\xA3o Paulo - SP"
 wordpress_id: 685
 wordpress_url: http://viniciusquaiato.com/blog/?p=685
-categories: 
+categories:
 - title: Visual Studio 2010
   slug: visual-studio-2010
   autoslug: visual-studio-2010
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
-- title: Visual Studio 2010
-  slug: visual-studio-2010
-  autoslug: visual-studio-2010
-- title: VS2010
-  slug: vs2010
-  autoslug: vs2010
-- title: .Net Architects
-  slug: net-architects
-  autoslug: .net-architects
-- title: .NET 4.0
-  slug: net-4-0
-  autoslug: .net-4.0
+tags:
 - title: Eventos
   slug: eventos
   autoslug: eventos
 - title: Palestras
   slug: palestras
   autoslug: palestras
+  - title: .Net Architects
+  slug: net-architects
+  autoslug: .net-architects
 ---
 Dia 20 de março, à partir das 09h, a Microsoft realizará um grande evento com o apoio da comunidade para divulgar e apresentar diversas tecnologias.O evento ocorrerá simultaneamente em diversas cidades do país. Em São Paulo, nós do .NET Architects participaremos do lançamento das seguintes tecnologias:
 

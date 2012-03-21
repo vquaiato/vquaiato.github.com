@@ -23,10 +23,4 @@ keywords: [podcast]
 <a href="/blog/podcast-net-architects-sobre-legado">Podcast .NET Architects sobre "Legado"</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">24/11/2009</span> &raquo; 
-<a href="/blog/podcast-principios-solid-net-architects">Podcast Princípios SOLID - .NET Architects</a>
-</p>
-</li> 
 </ul>

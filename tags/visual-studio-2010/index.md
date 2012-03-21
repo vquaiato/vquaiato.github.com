@@ -19,18 +19,6 @@ keywords: [visual-studio-2010]
 </li> 
 <li>
 <p>
-<span class="date">11/03/2010</span> &raquo; 
-<a href="/blog/microsoft-community-launch-2010-sao-paulo-sp">Microsoft Community Launch 2010 - São Paulo - SP</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">08/03/2010</span> &raquo; 
-<a href="/blog/dynamic-types-na-net-magazine-71">Dynamic Types na .Net Magazine #71</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">18/02/2010</span> &raquo; 
 <a href="/blog/visual-studio-2010-rc-lancado">Visual Studio 2010 RC lançado</a>
 </p>

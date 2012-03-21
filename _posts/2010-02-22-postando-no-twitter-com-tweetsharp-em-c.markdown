@@ -1,25 +1,19 @@
---- 
+---
 layout: post
 title: Postando no Twitter com TweetSharp em C#
 wordpress_id: 559
 wordpress_url: http://viniciusquaiato.com/blog/?p=559
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
 - title: Twitter
   slug: twitter
   autoslug: twitter
-tags: 
+tags:
 - title: Twitter
   slug: twitter
   autoslug: twitter
-- title: TweetSharp
-  slug: tweetsharp
-  autoslug: tweetsharp
-- title: "M\xC3\xADdias Sociais"
-  slug: midias-sociais
-  autoslug: "m\xC3\xADdias-sociais"
 ---
 
 
@@ -28,7 +22,7 @@ tags:
 Continuando a falar da API TweetSharp, neste post mostrarei como enviar tweets e retweetar mensagens.Novamente estamos utilizando as interfaces fluentes do TweetSharp, o que torna o trabalho bem simples e fácil, pois com a ajuda do intellisense podemos realizar todo trabalho simplesmente navegando através dos métodos, que possuem nomes bem definidos e claros.Bom vamos lá, continuaremos utilizando o código apresentado neste post [aqui](http://viniciusquaiato.com/blog/tweetsharp-acessando-o-twitter-com-c/).Abaixo estou criando o método que envia uma nova mensagem para o Twitter:
 {% highlight csharp %}
 
-public 
+public
 static void PostarMensagemTwitter(string mensagem){
 var request = FluentTwitter                   .CreateRequest()                   .AuthenticateAs("seuLogin", "suaSenha")                   .Statuses()                   .Update(mensagem);
 var result = request.Request();
@@ -53,7 +47,7 @@ foreach(var tweet in tweets)    {        Console.WriteLine("@{
 O resultado pode ser visto na imagem abaixo:[Postando mensagem Twitter com C# e Tweetsharp](http://viniciusquaiato.com/images_posts/Postando-mensagem-twitter.jpg "Postando mensagem Twitter com C# e Tweetsharp")Para fazer um retweet, ou seja, repassar uma mensagem que alguém enviou, utilizaremos o método abaixo:
 {% highlight csharp %}
 
-public 
+public
 static void Retweetar(TwitterStatus tweet){
 var request = FluentTwitter       .CreateRequest()       .AuthenticateAs("seuLogin", "suaSenha")       .Statuses()       .Retweet(tweet, RetweetMode.Prefix);
 var result = request.Request();

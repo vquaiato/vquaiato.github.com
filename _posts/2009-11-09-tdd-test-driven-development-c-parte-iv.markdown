@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: TDD - Test-driven Development + c# + Mocks - Parte IV
 wordpress_id: 76
 wordpress_url: http://viniciusquaiato.com/blog/?p=76
-categories: 
+categories:
 - title: TDD
   slug: tdd
   autoslug: tdd
@@ -13,16 +13,13 @@ categories:
 - title: "Boas Pr\xC3\xA1ticas"
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
-tags: 
+tags:
 - title: Tests
   slug: tests
   autoslug: tests
 - title: TDD
   slug: tdd
   autoslug: tdd
-- title: Visual Studio
-  slug: visual-studio
-  autoslug: visual-studio
 - title: Mocks
   slug: mocks
   autoslug: mocks
@@ -47,7 +44,7 @@ var conta = new ContaBancaria(10);
 Este teste por enquanto só está realizando o depósito, precisamos então garantir que o webservice seja chamado, e é utilizando um mock que faremos isso.Adicione a dll do Moq ao seu projeto:[Adicionar Dll Moq](http://viniciusquaiato.com/images_posts/Dll_Moq.jpg "Adicionar Dll Moq")Agora vamos criar nosso primeiro mock e também incluir a referência na classe de testes:
 {% highlight csharp %}
 using Moq;
-    
+
 {% endhighlight %}
 e
 {% highlight csharp %}
@@ -97,9 +94,9 @@ var conta = new ContaBancaria(10, mockWebService.Object);
 O que fizemos nas linhas 5 e 6 foi dizer ao mock **_"hey mock! Espero que o método RegistrarOperacaoEmConta seja chamado com os argumentos "Depósito" e 10"_**.Depois na linha 11 dizemos para ele **_"hey! Verifique se tudo o que eu configurei aconteceu aê!"_**.Desta forma nosso mock se comporta como se fosse o webservice, ele está imitando o comportamento do webservice através de sua interface IWebServiceContas, com a enorme vantagem de que temos total controle sobre o mock e não estamos dependentes do webservice e nem de uma implementação concreta para testar.Se rodarmos nossos testes teremos:[Executand teste com Mock do Moq](http://viniciusquaiato.com/images_posts/Moq_verificando_setup1.jpg "Executand teste com Mock do Moq")É bem simples o que aconteceu, configuramos nosso mock dizendo que o método RegistrarOperacaoEmConta seria chamado, no entanto esse método não foi chamado. Para isso precisamos alterar nossa classe conta, para que de fato ela chame o método do webservice (ou melhor, do objeto que implementa a interface do webservice).Porém quando passamos o parâmetro no construtor da nossa classe de ContaBancaria não armazenamos este objeto em um campo da classe. Vamos então criar uma propriedade privada deste tipo na classe conta bancária(linhas 5 e 9):
 {% highlight csharp %}
 
-public class ContaBancaria{    //outros membros da classe    
+public class ContaBancaria{    //outros membros da classe
 private IWebServiceContas webServiceContas = null;
-    
+
 public ContaBancaria(decimal depositoInicial, IWebServiceContas webservice)    {        this.webServiceContas = webservice;
     Validar(depositoInicial);
     this.SaldoAtual += depositoInicial;

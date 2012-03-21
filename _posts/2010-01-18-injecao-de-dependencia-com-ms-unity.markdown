@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: "Inje\xC3\xA7\xC3\xA3o de Depend\xC3\xAAncia com MS Unity"
 wordpress_id: 220
 wordpress_url: http://viniciusquaiato.com/blog/?p=220
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
@@ -13,7 +13,7 @@ categories:
 - title: "Boas Pr\xC3\xA1ticas"
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
-tags: 
+tags:
 - title: IoC
   slug: ioc
   autoslug: ioc
@@ -23,12 +23,6 @@ tags:
 - title: "Inje\xC3\xA7\xC3\xA3o de Depend\xC3\xAAncia"
   slug: injecao-de-dependencia
   autoslug: "inje\xC3\xA7\xC3\xA3o-de-depend\xC3\xAAncia"
-- title: DI
-  slug: di
-  autoslug: di
-- title: MS Unity
-  slug: ms-unity
-  autoslug: ms-unity
 ---
 Bom pessoal, pudemos ver os benefícios e alguns usos de Inversão de Controle e Injeção de Dependências [aqui](http://viniciusquaiato.com/blog/inversao-de-controle-inversion-of-control-ioc/) e [aqui](http://viniciusquaiato.com/blog/injecao-de-dependencia/).Uma das formas de obter excelentes ganhos com a inversão de controle é através da utilização de um contêiner de Injeção de Dependências.Um contêiner de injeção de dependências é capaz de criar objetos com todas suas dependências injetadas e totalmente pronto para uso. Em geral estes conteiners podem ser configurados manualmente(programaticamente) ou dinamicamente(através de arquivos de configuração por exemplo).Falaremos um pouco do [Unity](http://www.codeplex.com/unity/) que é um contêiner de Injeção de Dependência que faz parte dos [Application Blocks da Microsoft](http://msdn.microsoft.com/en-us/practices/default.aspx).Para que vejamos como o Unity funciona faça o download do mesmo [aqui](http://www.microsoft.com/downloads/details.aspx?FamilyId=2C8B79E7-AE56-4F90-822E-A1E43C49D12E&displaylang=en) e execute o setup, que irá apenas criar uma pasta com as DLLs do Unity.O Unity, como veremos nos exemplos, suporta 3 tipos de injeção de dependência:- Constructor Injection (injeção por construtor)
 - Property Injection (injeção de propriedade)
@@ -41,21 +35,21 @@ void RegistrarMensagem(string mensagem);
     }
 
 
-public class SqlLogger : ILogger{    
+public class SqlLogger : ILogger{
 
 public void RegistrarMensagem(string mensagem)    {        //abre conexão SQL        //Executa insert da mensagem    }
 }
 
 
-public class EnviadorDeEmails{    
+public class EnviadorDeEmails{
 
 public ILogger Logger { get;
     set;
     }
-    
+
 public EnviadorDeEmails(ILogger logger)    {        this.Logger = logger;
     }
-    
+
 public void EnviarEmail(string email, string mensagem)    {        //Envia email        //registra envio        this.Logger.RegistrarMensagem(string.Format("Email enviado para {
 }
 ", email));
@@ -68,7 +62,7 @@ Adicione as seguintes referências ao seu projeto: _Microsoft.Practices.ObjectBu
 
 var unityContainer = new UnityContainer();
     unityContainer.RegisterType<ILogger, SqlLogger>();
-    
+
 {% endhighlight %}
 Na _**linha 1**_ criamos uma instância do contêiner do Unity. Na _**linha 2**_ dizemos para o Unity que quando quisermos o tipo ILogger (interface) ele deve utilizar a classe concreta SqlLogger. Simples assim.
 
@@ -90,11 +84,11 @@ O grande segredo aí está na _**linha 7**_ onde dizemos para o Unity construir 
 Poderíamos dizer que a dependência não deve ser resolvida via construtor, mas sim diretamente na propriedade, para isso alteraríamos a classe EnviadorDeEmails assim:
 {% highlight csharp %}
 
-public class EnviadorDeEmails{    [Dependency]    
+public class EnviadorDeEmails{    [Dependency]
 public ILogger Logger { get;
     set;
     }
-    
+
 public void EnviarEmail(string email, string mensagem)    {        //Envia email        //registra envio        this.Logger.RegistrarMensagem(string.Format("Email enviado para {
 }
 ", email));
@@ -108,17 +102,17 @@ A única diferença aqui foi a utilização do DependencyAttribute na _**linha 3
 A outra forma que o Unity tem para injetar nossas dependências é através da chamada de um método. Por exemplo, imaginem que temos um método Initialize na nossa classe, que é responsável por criar os objetos que nossa classe precisa. Podemos fazer com que o Unity execute este método resolvendo todas as dependências.Vejamos o código da classe EnviadorDeEmails utilizando um Method Call Injection:
 {% highlight csharp %}
 
-public class EnviadorDeEmails{    
+public class EnviadorDeEmails{
 
 public ILogger Logger { get;
     set;
     }
-    
+
 public void EnviarEmail(string email, string mensagem)    {        //Envia email        //registra envio        this.Logger.RegistrarMensagem(string.Format("Email enviado para {
 }
 ", email));
     }
-    [InjectionMethod]    
+    [InjectionMethod]
 public void Inicializador(ILogger logger)    {        this.Logger = logger;
     }
 }

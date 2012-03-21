@@ -17,10 +17,4 @@ keywords: [asp-net]
 <a href="/blog/asp-net-ajax-library-nova-biblioteca-do-asp-net-4-0">Asp.Net Ajax Library: Nova biblioteca do Asp.Net 4.0</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">25/01/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-jquery">ASP.NET MVC + JQuery</a>
-</p>
-</li> 
 </ul>

@@ -23,16 +23,4 @@ keywords: [arquitetura]
 <a href="/blog/evento-codificando-net-2010-palestra">Evento Codificando .NET 2010: Palestra</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">21/12/2009</span> &raquo; 
-<a href="/blog/injecao-de-dependencia">Injeção de Dependência no C#</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">09/12/2009</span> &raquo; 
-<a href="/blog/inversao-de-controle-inversion-of-control-ioc">Inversão de Controle (Inversion of Control / IoC)</a>
-</p>
-</li> 
 </ul>

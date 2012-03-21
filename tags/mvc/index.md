@@ -29,10 +29,4 @@ keywords: [mvc]
 <a href="/blog/asp-net-mvc-testando-controllers-parte-i">ASP.NET MVC: Testando Controllers parte I</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">25/01/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-jquery">ASP.NET MVC + JQuery</a>
-</p>
-</li> 
 </ul>

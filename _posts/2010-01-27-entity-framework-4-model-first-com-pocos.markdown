@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: Entity Framework 4 - Model First com POCOs
 wordpress_id: 254
 wordpress_url: http://viniciusquaiato.com/blog/?p=254
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
@@ -19,13 +19,7 @@ categories:
 - title: Entity Framework
   slug: entity-framework
   autoslug: entity-framework
-tags: 
-- title: VS2010
-  slug: vs2010
-  autoslug: vs2010
-- title: ORM
-  slug: orm
-  autoslug: orm
+tags:
 - title: Entity Framework
   slug: entity-framework
   autoslug: entity-framework
@@ -49,14 +43,14 @@ E então clicamos na parte branca do design e abrimos a janela de propriedades p
 Estamos a meio caminho andado. Pode parecer muito trabalho a ser feito, mas isso não leva mais do que 2 minutos. É realmente simples e os resultados são muito bons.Agora vamos para a parte bacana, codificar nossas classes.Vamos iniciar codificando as classes Pedido e ItemPedido, que são classes realmente bastante simples:
 {% highlight csharp %}
 
-public class Pedido{    
+public class Pedido{
 
 public virtual int Id { get;
     set;
     }
-    
+
 private IList<itempedido> itens = new List<itempedido>();
-    
+
 public virtual IList<itempedido> Itens    {        get {
 return this.itens;
     }
@@ -66,20 +60,20 @@ return this.itens;
 }
 
 
-public class ItemPedido{    
+public class ItemPedido{
 
 public virtual int Id { get;
     set;
     }
-    
+
 public virtual string Produto { get;
     set;
     }
-    
+
 public virtual int Quantidade { get;
     set;
     }
-    
+
 public virtual Pedido Pedido { get;
     set;
     }
@@ -89,12 +83,12 @@ public virtual Pedido Pedido { get;
 Os virtuais que usamos nas nossas classes são para que o Entity Framework possa fazer o "tracking" dos nossos objetos. Internamente ele criará proxies para nossas classes. Em um primeiro momento basta colocarmos as propriedades como virtual e ele se encarregará de tudo, isso ainda ajudará no Lazy Loading.Agora, como desabilitamos a geração de código, precisamos também criar o nosso contexto do EF. Isso é bastante simples, e neste cenário nos obrigará a escrever apenas umas 10 linhas de código, como pode ser visto abaixo:
 {% highlight csharp %}
 
-public class EF4Context : ObjectContext{    
+public class EF4Context : ObjectContext{
 
 public EF4Context()        : base("name=EF4Container", "EF4Container") { }
-    
+
 private IObjectSet<pedido> pedidos;
-    
+
 public IObjectSet<pedido> Pedidos    {        get        {
 if(pedidos == null)                pedidos = CreateObjectSet<pedido>();
 return pedidos;

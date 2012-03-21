@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: "ExpandoObject: dinamismo no .NET 4.0"
 wordpress_id: 268
 wordpress_url: http://viniciusquaiato.com/blog/?p=268
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
@@ -13,19 +13,7 @@ categories:
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
-- title: Visual Studio
-  slug: visual-studio
-  autoslug: visual-studio
-- title: dynamic
-  slug: dynamic
-  autoslug: dynamic
-- title: ExpandoObject
-  slug: expandoobject
-  autoslug: expandoobject
-- title: .NET
-  slug: dotnet
-  autoslug: .net
+tags:
 - title: c#
   slug: c-sharp
   autoslug: c-sharp
@@ -34,7 +22,7 @@ Fala galera, hoje vamos falar um pouco sobre dynamic no [.NET 4.0](http://msdn.m
 {% highlight csharp %}
 using System;
     using System.Dynamic;
-    namespace ExpandoObjectApplication{    class Program    {        
+    namespace ExpandoObjectApplication{    class Program    {
 
 static void Main(string[] args)        {            dynamic objetoDinamico = new ExpandoObject();
     dynamic Sistema1 = new ExpandoObject();

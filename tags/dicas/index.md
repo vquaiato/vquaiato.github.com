@@ -17,10 +17,4 @@ keywords: [dicas]
 <a href="/blog/materiais-estudo-sobre-padrao-mvvm-no-silverlight">Materiais estudo sobre padrão MVVM no Silverlight</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">09/03/2010</span> &raquo; 
-<a href="/blog/code-snippet-para-testmethods-no-visualstudio">Code Snippet para TestMethods no VisualStudio</a>
-</p>
-</li> 
 </ul>

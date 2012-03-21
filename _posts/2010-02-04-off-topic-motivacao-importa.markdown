@@ -1,25 +1,16 @@
---- 
+---
 layout: post
 title: "[Off-Topic] Motiva\xC3\xA7\xC3\xA3o importa"
 wordpress_id: 496
 wordpress_url: http://viniciusquaiato.com/blog/?p=496
-categories: 
+categories:
 - title: "[Off - Topic]"
   slug: off-topic
   autoslug: "[off---topic]"
-tags: 
-- title: Carreira
-  slug: carreira
-  autoslug: carreira
-- title: "Motiva\xC3\xA7\xC3\xA3o"
-  slug: motivacao
-  autoslug: "motiva\xC3\xA7\xC3\xA3o"
-- title: Profissionais
-  slug: profissionais
-  autoslug: profissionais
-- title: Talentos
-  slug: talentos
-  autoslug: talentos
+tags:
+- title: "[Off - Topic]"
+  slug: off-topic
+  autoslug: "[off---topic]"
 ---
 ![diamantes](http://viniciusquaiato.com/images_posts/diamantess.jpg "diamantes")Acredito que as empresas querem ter os melhores funcionários (colaboradores, parceiros, times, equipes, etc). Esta é minha crença.E o que mostra que um profissional é o melhor profissional? Conhecimento técnico? Comprometimento? Disponibilidade? Olhar crítico? Tudo isso. Porém acredito em algo mais: Motivação.Não basta contratar o profissional com o maior conhecimento técnico disponível no mercado. Este conhecimento técnico pode ser, e acredite que é, suprimido pela falta de motivação. E se você quer que sua empresa, time, equipe, etc, esteja entre os melhores:
  

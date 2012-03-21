@@ -35,10 +35,4 @@ keywords: [wpf]
 <a href="/blog/mef-criando-aplicacoes-graficas-com-plugins-mef-wpf">MEF - Criando aplicações gráficas com plugins MEF + WPF</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">21/01/2010</span> &raquo; 
-<a href="/blog/ironruby-rodando-ruby-dentro-do-net">IronRuby: Rodando Ruby dentro do .NET</a>
-</p>
-</li> 
 </ul>

@@ -89,28 +89,4 @@ keywords: [novidades]
 <a href="/blog/site-community-launch-sp-faca-sua-inscricao">Site Community Launch SP - Faça sua inscrição!</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">26/02/2010</span> &raquo; 
-<a href="/blog/asp-net-ajax-library-nova-biblioteca-do-asp-net-4-0">Asp.Net Ajax Library: Nova biblioteca do Asp.Net 4.0</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">24/02/2010</span> &raquo; 
-<a href="/blog/plinq-paralelismo-no-net-4-com-parallel-linq">PLINQ: Paralelismo no .Net 4 com Parallel LINQ</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">18/02/2010</span> &raquo; 
-<a href="/blog/visual-studio-2010-rc-lancado">Visual Studio 2010 RC lançado</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">21/01/2010</span> &raquo; 
-<a href="/blog/ironruby-rodando-ruby-dentro-do-net">IronRuby: Rodando Ruby dentro do .NET</a>
-</p>
-</li> 
 </ul>

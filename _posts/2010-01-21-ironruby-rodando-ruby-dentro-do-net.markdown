@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: "IronRuby: Rodando Ruby dentro do .NET"
 wordpress_id: 374
 wordpress_url: http://viniciusquaiato.com/blog/?p=374
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
@@ -13,19 +13,10 @@ categories:
 - title: IronRuby
   slug: ironruby
   autoslug: ironruby
-tags: 
-- title: Novidades
-  slug: novidades
-  autoslug: novidades
-- title: .NET 4.0
-  slug: net-4-0
-  autoslug: .net-4.0
+tags:
 - title: IronRuby
   slug: ironruby
   autoslug: ironruby
-- title: Wpf
-  slug: wpf
-  autoslug: wpf
 ---
 
 

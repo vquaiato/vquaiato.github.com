@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: TDD - Test-driven Development + c# - parte III
 wordpress_id: 52
 wordpress_url: http://viniciusquaiato.com/blog/?p=52
-categories: 
+categories:
 - title: TDD
   slug: tdd
   autoslug: tdd
@@ -13,16 +13,13 @@ categories:
 - title: "Boas Pr\xC3\xA1ticas"
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
-tags: 
+tags:
 - title: Tests
   slug: tests
   autoslug: tests
 - title: TDD
   slug: tdd
   autoslug: tdd
-- title: Visual Studio
-  slug: visual-studio
-  autoslug: visual-studio
 ---
 Vamos lá galera, vamos continuar nossa série sobre [TDD](http://dojofloripa.wordpress.com/2007/09/10/tudo-sobre-tdd/) + C#.Para conferir os outros posts da série:Parte I - [http://viniciusquaiato.com/blog/tdd-test-driven-development-c/](http://viniciusquaiato.com/blog/tdd-test-driven-development-c/)Parte II - [http://viniciusquaiato.com/blog/tdd-test-driven-development-c-parte-ii/](http://viniciusquaiato.com/blog/tdd-test-driven-development-c-parte-ii/)Neste artigo abordaremos depósitos.A primeira coisa que precisamos fazer para realizar nosso depósito é escrever um teste:
 {% highlight csharp %}

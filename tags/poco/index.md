@@ -23,10 +23,4 @@ keywords: [poco]
 <a href="/blog/o-que-sao-classes-poco">O que são classes POCO?</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">01/03/2010</span> &raquo; 
-<a href="/blog/entity-framework-4-0-utilizando-many-to-many-com-pocos">Entity Framework 4.0: Utilizando many-to-many com POCOs</a>
-</p>
-</li> 
 </ul>
