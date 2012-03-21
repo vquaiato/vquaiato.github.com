@@ -1,25 +1,19 @@
---- 
+---
 layout: post
 title: "Site Community Launch SP - Fa\xC3\xA7a sua inscri\xC3\xA7\xC3\xA3o!"
 wordpress_id: 693
 wordpress_url: http://viniciusquaiato.com/blog/?p=693
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
 - title: Visual Studio 2010
   slug: visual-studio-2010
   autoslug: visual-studio-2010
-tags: 
-- title: Novidades
-  slug: novidades
-  autoslug: novidades
+tags:
 - title: .Net Architects
   slug: net-architects
   autoslug: .net-architects
-- title: .NET 4.0
-  slug: net-4-0
-  autoslug: .net-4.0
 - title: Eventos
   slug: eventos
   autoslug: eventos

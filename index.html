@@ -16,14 +16,12 @@ title: Vinicius Quaiato
 <h3>Posts recentes</h3>
   <ul class="posts">
     {% for post in site.posts limit:5 offset:0 %}
-      <!-- {% unless forloop.first %} -->
         <li>
         	<p>
-        		<span class="date">{{ post.date | date: "%d/%m/%Y" }}</span> &raquo; 
+        		<span class="date">{{ post.date | date: "%d/%m/%Y" }}</span> &raquo;
         		<a href="{{ post.url }}">{{ post.title }}</a>
         	</p>
         	</li>
-        <!-- {% endunless %} -->
     {% endfor %}
   </ul>
   <h3><a href="/posts/all">Ver todos os posts</a></h3>
@@ -34,7 +32,7 @@ title: Vinicius Quaiato
         <li>
           <a href="/tags/{{ tag | first | map: 'to_liquid' | map: 'slug' }}">{{ tag | first | map: 'to_liquid' | map: 'title' }}</a>
         </li>
-      {% endfor %} 
+      {% endfor %}
     </ul>
   </div>
 
