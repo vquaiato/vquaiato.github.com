@@ -26,13 +26,13 @@ keywords: [net-4-0]
 <li>
 <p>
 <span class="date">14/04/2010</span> &raquo; 
-<a href="/blog/ironruby-1-0-lancado">IronRuby 1.0 lançado!</a>
+<a href="/blog/net-4-lancado">.NET 4 lançado</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">14/04/2010</span> &raquo; 
-<a href="/blog/net-4-lancado">.NET 4 lançado</a>
+<a href="/blog/ironruby-1-0-lancado">IronRuby 1.0 lançado!</a>
 </p>
 </li> 
 <li>
@@ -51,12 +51,6 @@ keywords: [net-4-0]
 <p>
 <span class="date">21/03/2010</span> &raquo; 
 <a href="/blog/slides-e-demos-palestra-entity-framework-4-no-community-launch-sp">Slides e Demos palestra Entity Framework 4 no Community Launch SP</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">16/03/2010</span> &raquo; 
-<a href="/blog/site-community-launch-sp-faca-sua-inscricao">Site Community Launch SP - Faça sua inscrição!</a>
 </p>
 </li> 
 </ul>

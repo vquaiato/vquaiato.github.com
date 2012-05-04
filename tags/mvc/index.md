@@ -7,12 +7,6 @@ keywords: [mvc]
 <ul class="posts">
 <li>
 <p>
-<span class="date">04/10/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-rotas-de-actions-com-muitos-parametros">ASP.NET MVC: rotas de actions com muitos parâmetros</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">21/09/2010</span> &raquo; 
 <a href="/blog/asp-net-mvc-e-os-viewmodels-quando-usar">ASP.NET MVC e os ViewModels - Quando usar?</a>
 </p>

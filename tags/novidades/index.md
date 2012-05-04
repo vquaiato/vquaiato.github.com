@@ -83,10 +83,4 @@ keywords: [novidades]
 <a href="/blog/programacao-dinamica-com-c-e-ironruby">Programação dinâmica com C# e IronRuby</a>
 </p>
 </li> 
-<li>
-<p>
-<span class="date">16/03/2010</span> &raquo; 
-<a href="/blog/site-community-launch-sp-faca-sua-inscricao">Site Community Launch SP - Faça sua inscrição!</a>
-</p>
-</li> 
 </ul>

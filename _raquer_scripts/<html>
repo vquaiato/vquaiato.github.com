@@ -1,0 +1,13 @@
+<html>
+<head>
+<script href="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+function icones_descricoes(){
+    $(".icone-chat").mouseover(function(){
+        $("#descricao-chat").toggleClass('com-destaque');
+    });
+}
+</head>
+<body>
+
+</body>
+</html>

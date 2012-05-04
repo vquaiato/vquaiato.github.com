@@ -7,6 +7,12 @@ keywords: [asp-net-mvc]
 <ul class="posts">
 <li>
 <p>
+<span class="date">04/05/2012</span> &raquo; 
+<a href="/blog/upload-imagens-jcrop-resize-progressbar-assincrono">ASP.NET MVC upload de imagens + JCrop + Resize + progressbar + tudo assíncrono</a>
+</p>
+</li> 
+<li>
+<p>
 <span class="date">03/05/2011</span> &raquo; 
 <a href="/blog/asp-net-mvc-no-mono">ASP.NET MVC no Mono</a>
 </p>
@@ -32,13 +38,13 @@ keywords: [asp-net-mvc]
 <li>
 <p>
 <span class="date">16/02/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-ajaxoptions-confirm-message">ASP.NET MVC AjaxOptions: Confirm message</a>
+<a href="/blog/asp-net-mvc-ajaxoptions-updatetargetid">ASP.NET MVC AjaxOptions: UpdateTargetId</a>
 </p>
 </li> 
 <li>
 <p>
 <span class="date">16/02/2011</span> &raquo; 
-<a href="/blog/asp-net-mvc-ajaxoptions-updatetargetid">ASP.NET MVC AjaxOptions: UpdateTargetId</a>
+<a href="/blog/asp-net-mvc-ajaxoptions-confirm-message">ASP.NET MVC AjaxOptions: Confirm message</a>
 </p>
 </li> 
 <li>
