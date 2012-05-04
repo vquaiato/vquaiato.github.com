@@ -72,7 +72,7 @@ Na ***linha 9*** eu coloquei uma imagem escondida. Será nesta tag %lt;img que e
         $("#upload").click();
     });
 
-    $('form[name=upload]').ajaxForm({
+    $('form[name=imagem_original]').ajaxForm({
         dataType: 'json',
         beforeSend: function () {
             status.empty();
