@@ -71,11 +71,8 @@ Bora trocar figurinhas então.
 Abraços,
 
 Vinicius Quaiato.
-<<<<<<< HEAD
-[nao-troquei]:http://viniciusquaiato.com/blog/por-que-nao-troquei-o-net-pelo-ruby/
-=======
 
->>>>>>> b33b6c08e17e475c3d99fa192ae74dcb9c369a1b
+[nao-troquei]:http://viniciusquaiato.com/blog/por-que-nao-troquei-o-net-pelo-ruby/
 [objc]:http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html
 [monotouch]:http://xamarin.com/monotouch
 [cocoa]:https://developer.apple.com/technologies/ios/cocoa-touch.html
