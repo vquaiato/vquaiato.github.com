@@ -282,3 +282,66 @@ img.about_me{
 .html .vg { color: #bb60d5 } /* Name.Variable.Global */
 .html .vi { color: #bb60d5 } /* Name.Variable.Instance */
 .html .il { color: #40a070 } /* Literal.Number.Integer.Long */
+
+/*Objective-C*/
+.objc .hll { background-color: #ffffcc }
+/*.objc  { background: #ffffff; }*/
+.objc .c { color: #888888 } /* Comment */
+.objc .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.objc .k { color: #008800; font-weight: bold } /* Keyword */
+.objc .cm { color: #888888 } /* Comment.Multiline */
+.objc .cp { color: #cc0000; font-weight: bold } /* Comment.Preproc */
+.objc .c1 { color: #888888 } /* Comment.Single */
+.objc .cs { color: #cc0000; font-weight: bold; background-color: #fff0f0 } /* Comment.Special */
+.objc .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.objc .ge { font-style: italic } /* Generic.Emph */
+.objc .gr { color: #aa0000 } /* Generic.Error */
+.objc .gh { color: #303030 } /* Generic.Heading */
+.objc .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.objc .go { color: #888888 } /* Generic.Output */
+.objc .gp { color: #555555 } /* Generic.Prompt */
+.objc .gs { font-weight: bold } /* Generic.Strong */
+.objc .gu { color: #606060 } /* Generic.Subheading */
+.objc .gt { color: #aa0000 } /* Generic.Traceback */
+.objc .kc { color: #008800; font-weight: bold } /* Keyword.Constant */
+.objc .kd { color: #008800; font-weight: bold } /* Keyword.Declaration */
+.objc .kn { color: #008800; font-weight: bold } /* Keyword.Namespace */
+.objc .kp { color: #008800 } /* Keyword.Pseudo */
+.objc .kr { color: #008800; font-weight: bold } /* Keyword.Reserved */
+.objc .kt { color: #888888; font-weight: bold } /* Keyword.Type */
+.objc .m { color: #0000DD; font-weight: bold } /* Literal.Number */
+.objc .s { color: #dd2200; background-color: #fff0f0 } /* Literal.String */
+.objc .na { color: #336699 } /* Name.Attribute */
+.objc .nb { color: #003388 } /* Name.Builtin */
+.objc .nc { color: #bb0066; font-weight: bold } /* Name.Class */
+.objc .no { color: #003366; font-weight: bold } /* Name.Constant */
+.objc .nd { color: #555555 } /* Name.Decorator */
+.objc .ne { color: #bb0066; font-weight: bold } /* Name.Exception */
+.objc .nf { color: #0066bb; font-weight: bold } /* Name.Function */
+.objc .nl { color: #336699; font-style: italic } /* Name.Label */
+.objc .nn { color: #bb0066; font-weight: bold } /* Name.Namespace */
+.objc .py { color: #336699; font-weight: bold } /* Name.Property */
+.objc .nt { color: #bb0066; font-weight: bold } /* Name.Tag */
+.objc .nv { color: #336699 } /* Name.Variable */
+.objc .ow { color: #008800 } /* Operator.Word */
+.objc .w { color: #bbbbbb } /* Text.Whitespace */
+.objc .mf { color: #0000DD; font-weight: bold } /* Literal.Number.Float */
+.objc .mh { color: #0000DD; font-weight: bold } /* Literal.Number.Hex */
+.objc .mi { color: #0000DD; font-weight: bold } /* Literal.Number.Integer */
+.objc .mo { color: #0000DD; font-weight: bold } /* Literal.Number.Oct */
+.objc .sb { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Backtick */
+.objc .sc { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Char */
+.objc .sd { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Doc */
+.objc .s2 { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Double */
+.objc .se { color: #0044dd; background-color: #fff0f0 } /* Literal.String.Escape */
+.objc .sh { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Heredoc */
+.objc .si { color: #3333bb; background-color: #fff0f0 } /* Literal.String.Interpol */
+.objc .sx { color: #22bb22; background-color: #f0fff0 } /* Literal.String.Other */
+.objc .sr { color: #008800; background-color: #fff0ff } /* Literal.String.Regex */
+.objc .s1 { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Single */
+.objc .ss { color: #aa6600; background-color: #fff0f0 } /* Literal.String.Symbol */
+.objc .bp { color: #003388 } /* Name.Builtin.Pseudo */
+.objc .vc { color: #336699 } /* Name.Variable.Class */
+.objc .vg { color: #dd7700 } /* Name.Variable.Global */
+.objc .vi { color: #3333bb } /* Name.Variable.Instance */
+.objc .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */

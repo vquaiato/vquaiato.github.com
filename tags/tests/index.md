@@ -19,12 +19,6 @@ keywords: [tests]
 </li> 
 <li>
 <p>
-<span class="date">27/09/2010</span> &raquo; 
-<a href="/blog/mocking-com-justmock">Mocking com JustMock</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">30/08/2010</span> &raquo; 
 <a href="/blog/asp-net-mvc-testando-controllers-parte-ii">ASP.NET MVC: Testando Controllers parte II</a>
 </p>

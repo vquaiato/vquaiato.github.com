@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: "ASP.NET MVC: Testando controllers parte III"
 wordpress_id: 1556
 wordpress_url: http://viniciusquaiato.com/blog/?p=1556
-categories: 
+categories:
 - title: TDD
   slug: tdd
   autoslug: tdd
@@ -13,31 +13,16 @@ categories:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-tags: 
-- title: Testes upload
-  slug: testes-upload
-  autoslug: testes-upload
+tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: "Testes Unit\xC3\xA1rios"
-  slug: testes-unitarios
-  autoslug: "testes-unit\xC3\xA1rios"
 - title: testes
   slug: testes
   autoslug: testes
 - title: TDD
   slug: tdd
   autoslug: tdd
-- title: Unit Tests
-  slug: unit-tests
-  autoslug: unit-tests
-- title: Mocks
-  slug: mocks
-  autoslug: mocks
-- title: controller upload
-  slug: controller-upload
-  autoslug: controller-upload
 ---
 
 

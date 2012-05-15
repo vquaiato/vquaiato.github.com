@@ -25,12 +25,6 @@ keywords: [dnad]
 </li> 
 <li>
 <p>
-<span class="date">12/04/2011</span> &raquo; 
-<a href="/blog/dnad11-net-architects-days-2011">#DNAD11 - .NET Architects Days 2011</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">24/11/2010</span> &raquo; 
 <a href="/blog/videos-pelestra-sobre-nuget-do-dnad-2010">Vídeos pelestra sobre NuGet do DNAD 2010</a>
 </p>

@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Posts tagged ios
-keywords: [ios]
+title: Posts tagged iOS
+keywords: [iOS]
 ---
-<h2 class="category">IOS</h2>
+<h2 class="category">iOS</h2>
 <ul class="posts">
 <li>
 <p>
-<span class="date">09/05/2011</span> &raquo; 
-<a href="/blog/windows-azure-toolkit-para-ios">Windows Azure Toolkit para IOS</a>
+<span class="date">15/05/2012</span> &raquo; 
+<a href="/blog/ios-desenvolvimento-para-iphone-primeiros-passos">iOS desenvolvimento para iPhone: primeiros passos</a>
 </p>
 </li> 
 </ul>

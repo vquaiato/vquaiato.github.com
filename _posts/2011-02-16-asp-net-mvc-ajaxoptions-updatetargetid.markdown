@@ -1,16 +1,13 @@
---- 
+---
 layout: post
 title: "ASP.NET MVC AjaxOptions: UpdateTargetId"
 wordpress_id: 3164
 wordpress_url: http://viniciusquaiato.com/blog/?p=3164
-categories: 
+categories:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-tags: 
-- title: Ajax
-  slug: ajax
-  autoslug: ajax
+tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc

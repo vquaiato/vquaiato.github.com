@@ -1,7 +1,7 @@
---- 
+---
 layout: post
 title: "Por uma web melhor"
-categories: 
+categories:
 - title: Jekyll
   slug: jekyll
 tags:
@@ -14,9 +14,6 @@ tags:
 - title: CSS
   slug: css
   autoslug: css
-- title: Typography
-  slug: typography
-  autoslug: typography
 ---
 Fala galera, beleza?
 
@@ -70,7 +67,7 @@ Final de semana passado eu decidi abrir meu novo blog em diferentes browsers (at
 
 Tentando validar o site no W3C encontrei algumas inconsistências que de fato eram culpa minha: não bastava culpar o IE.
 
-Depois de corrigir os problemas as coisas magicamente passaram a funcionar nos IE 7, 8 e 9. E na real foram coisas bem simples, pequenos detalhes mesmo. 
+Depois de corrigir os problemas as coisas magicamente passaram a funcionar nos IE 7, 8 e 9. E na real foram coisas bem simples, pequenos detalhes mesmo.
 É claro que algumas coisas de não funcionam ainda no IE mas isso é detalhe, não quebra o layout (mas é importante saber o que o IE renderiza e o que não renderiza também).
 
 [W3C Validator][validator]
