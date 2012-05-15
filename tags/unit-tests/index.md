@@ -13,18 +13,6 @@ keywords: [unit-tests]
 </li> 
 <li>
 <p>
-<span class="date">02/09/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-testando-controllers-parte-iii">ASP.NET MVC: Testando controllers parte III</a>
-</p>
-</li> 
-<li>
-<p>
-<span class="date">30/08/2010</span> &raquo; 
-<a href="/blog/testar-metodos-privados">Testar métodos privados</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">30/08/2010</span> &raquo; 
 <a href="/blog/asp-net-mvc-testando-controllers-parte-ii">ASP.NET MVC: Testando Controllers parte II</a>
 </p>

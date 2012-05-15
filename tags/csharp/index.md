@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Posts tagged tips
-keywords: [tips]
+title: Posts tagged csharp
+keywords: [csharp]
 ---
-<h2 class="category">tips</h2>
+<h2 class="category">C#</h2>
 <ul class="posts">
 <li>
 <p>

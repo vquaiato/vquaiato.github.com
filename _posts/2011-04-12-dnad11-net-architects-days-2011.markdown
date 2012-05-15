@@ -1,13 +1,13 @@
---- 
+---
 layout: post
 title: "#DNAD11 - .NET Architects Days 2011"
 wordpress_id: 3308
 wordpress_url: http://viniciusquaiato.com/blog/?p=3308
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
-tags: 
+tags:
 - title: .Net Architects
   slug: net-architects
   autoslug: .net-architects
@@ -17,9 +17,6 @@ tags:
 - title: Palestras
   slug: palestras
   autoslug: palestras
-- title: DNAD
-  slug: dnad
-  autoslug: dnad
 ---
 
 

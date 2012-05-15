@@ -1,25 +1,22 @@
---- 
+---
 layout: post
 title: ASP.NET MVC no Mono
 wordpress_id: 3323
 wordpress_url: http://viniciusquaiato.com/blog/?p=3323
-categories: 
+categories:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 - title: Mono
   slug: mono
   autoslug: mono
-tags: 
+tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 - title: Mono
   slug: mono
   autoslug: mono
-- title: MonoDevelop
-  slug: monodevelop
-  autoslug: monodevelop
 ---
 [![](http://viniciusquaiato.com/images_posts/Mono-Project.jpeg "Mono Project")](http://viniciusquaiato.com/images_posts/Mono-Project.jpeg)Fala galera, faz algum tempo que estou sem postar e vou retomar falando um pouco do ASP.NET MVC rodando no [Mono](http://www.mono-project.com/Main_Page).Estou utilizando um Macbook e por isso vou começar a relatar algumas experiências com [Mono](http://www.mono-project.com/Main_Page).Não vou entrar em detalhes de implementação do Mono ou coisas do tipo. A princípio vou falar sobre como utilizar o Mono para criar projetos _quase_ como faria no Windows rodando o .NET.# Montando o ambiente
 
@@ -62,14 +59,14 @@ As views não possuem nada além do normal. Vou apenas mostrar a view Message.as
 <title></title></head><body><div># Hello Mono, seu lindo!
 
 
-## A Mensagem: <%= ViewData["message"].ToString() %> 
+## A Mensagem: <%= ViewData["message"].ToString() %>
 </div></body></html>
 {% endhighlight %}
 E adicionei as rotas no Global.asax também para trabalhar com nossos parâmetros:
 {% highlight csharp %}
 
 public class MvcApplication : System.Web.HttpApplication{
-ublic 
+ublic
 static void RegisterRoutes (RouteCollection routes){
 outes.IgnoreRoute ("{
 esource}

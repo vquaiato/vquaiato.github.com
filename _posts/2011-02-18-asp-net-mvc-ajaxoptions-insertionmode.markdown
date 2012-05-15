@@ -1,19 +1,16 @@
---- 
+---
 layout: post
 title: "ASP.NET MVC AjaxOptions: InsertionMode"
 wordpress_id: 3211
 wordpress_url: http://viniciusquaiato.com/blog/?p=3211
-categories: 
+categories:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-tags: 
+tags:
 - title: JQuery
   slug: jquery
   autoslug: jquery
-- title: Ajax
-  slug: ajax
-  autoslug: ajax
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
@@ -27,7 +24,7 @@ Para acompanhar os outros posts sobre [AjaxOptions](http://viniciusquaiato.com/b
 - InsertionMode.Replace
 Vamos utilizar o exemplo cru do primeiro artigo, e vamos apenas trabalhar alterando o valor da propriedade InsertionMode do objeto AjaxOptions.Vou utilizar também uma div com um conteúdo já existente, para demonstrar as diferenças:
 {% highlight csharp %}
-    
+
 Já existe conteúdo
 </div>
 {% endhighlight %}

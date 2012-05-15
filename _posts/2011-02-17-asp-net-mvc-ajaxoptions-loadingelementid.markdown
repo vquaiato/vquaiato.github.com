@@ -1,16 +1,13 @@
---- 
+---
 layout: post
 title: "ASP.NET MVC AjaxOptions: LoadingElementId"
 wordpress_id: 3191
 wordpress_url: http://viniciusquaiato.com/blog/?p=3191
-categories: 
+categories:
 - title: Uncategorized
   slug: uncategorized
   autoslug: uncategorized
-tags: 
-- title: Ajax
-  slug: ajax
-  autoslug: ajax
+tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc

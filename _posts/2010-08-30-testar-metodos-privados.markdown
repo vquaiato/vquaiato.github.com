@@ -1,34 +1,22 @@
---- 
+---
 layout: post
 title: "Testar m\xC3\xA9todos privados"
 wordpress_id: 1550
 wordpress_url: http://viniciusquaiato.com/blog/?p=1550
-categories: 
+categories:
 - title: TDD
   slug: tdd
   autoslug: tdd
 - title: .NET
   slug: dotnet
   autoslug: .net
-tags: 
-- title: Unit Tests
-  slug: unit-tests
-  autoslug: unit-tests
+tags:
 - title: TDD
   slug: tdd
   autoslug: tdd
 - title: testes
   slug: testes
   autoslug: testes
-- title: "Testes Unit\xC3\xA1rios"
-  slug: testes-unitarios
-  autoslug: "testes-unit\xC3\xA1rios"
-- title: "Testes m\xC3\xA9todos privados"
-  slug: testes-metodos-privados
-  autoslug: "testes-m\xC3\xA9todos-privados"
-- title: "m\xC3\xA9todos privados"
-  slug: metodos-privados
-  autoslug: "m\xC3\xA9todos-privados"
 ---
 
 
@@ -37,18 +25,18 @@ tags:
 Não sou fã de testar métodos privados. Na teoria deveríamos testar a interface pública de nossos objetos, porém em alguns casos é necessário testar a interface privada de um objeto.Em .NET isso está bastante simples coma a utilização da classe [PrivateObject](http://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.privateobject(VS.80).aspx).Vamos ver um exemplo de como isso funciona. Abaixo temos uma classe com 2 métodos e uma propriedade, todos privados:
 {% highlight csharp %}
 
-public class Privados{    
+public class Privados{
 
 private string Nome { get;
     set;
     }
-    
+
 private int Soma(int n1, int n2)    {
 return n1 + n2;
     }
-    
+
 private string HelloPrivateWorld()    {
-return "Hello 
+return "Hello
 private world";
     }
 }
@@ -64,7 +52,7 @@ var res = privateObj.Invoke("Soma", 2, 2);
 [TestMethod]
 public void HelloPrivateWorld_deve_retorar_string_Hello_Private_World(){    PrivateObject privateObj = new PrivateObject(new Privados());
 var res = privateObj.Invoke("HelloPrivateWorld");
-    Assert.AreEqual("Hello 
+    Assert.AreEqual("Hello
 private world", res);
     }
 [TestMethod]

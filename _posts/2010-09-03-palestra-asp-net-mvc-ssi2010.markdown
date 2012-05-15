@@ -1,19 +1,16 @@
---- 
+---
 layout: post
 title: Palestra ASP.NET MVC - SSI2010
 wordpress_id: 1572
 wordpress_url: http://viniciusquaiato.com/blog/?p=1572
-categories: 
+categories:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
 - title: "Boas Pr\xC3\xA1ticas"
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
-tags: 
-- title: MVC
-  slug: mvc
-  autoslug: mvc
+tags:
 - title: Palestras
   slug: palestras
   autoslug: palestras

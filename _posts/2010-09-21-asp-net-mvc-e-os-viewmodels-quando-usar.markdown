@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: ASP.NET MVC e os ViewModels - Quando usar?
 wordpress_id: 1583
 wordpress_url: http://viniciusquaiato.com/blog/?p=1583
-categories: 
+categories:
 - title: Patterns
   slug: patterns
   autoslug: patterns
@@ -13,22 +13,10 @@ categories:
 - title: "Boas Pr\xC3\xA1ticas"
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
-tags: 
-- title: MVC
-  slug: mvc
-  autoslug: mvc
+tags:
 - title: ASP.NET MVC
   slug: asp-net-mvc
   autoslug: asp.net-mvc
-- title: ViewModel
-  slug: viewmodel
-  autoslug: viewmodel
-- title: View
-  slug: view
-  autoslug: view
-- title: Models
-  slug: models
-  autoslug: models
 ---
 Durante o TechEd (ainda escreverei um post sobre o evento) comecei a desenvolver uma aplicação bem simples: MeuTechEd. A idéia desta aplicação era fornecer uma interface simples, onde fossem informados temas, palestras e palestrantes que você gostaria de ver no evento e não poderia (pois não foram convidados, etc).Algumas pessoas ficam temerosas sobre a utilização de ViewModels: acham desnecessários, duplicação de código, etc, etc. No entanto eu acredito que existem casos onde a utilização é realmente necessária, vejamos.
 
@@ -40,27 +28,27 @@ Para que tudo fosse simples, os campos seriam campos de texto e então os dados 
 Percebam que a idéia é que de forma simples se crie um "TechEd" pessoal.A questão aí é que essa View trabalha com uma forma diferente do model. A forma como um TechEd é representado no sistema é mais ou menos assim:
 {% highlight csharp %}
 
-public class MeuTechEd{    
+public class MeuTechEd{
 
 public virtual int Id { get;
     set;
     }
-    
+
 public virtual string[] Temas { get;
     set;
     }
-    
+
 public virtual string[] Palestrantes { get;
     set;
     }
-    
+
 public virtual string[] Palestras { get;
     set;
     }
 }
 
 {% endhighlight %}
-(tenho alguns métodos aí dentro, mas omiti para ser breve).Notem o fato de que o model não trabalha com strings separadas por vírgula, e sim com arrays de strings. Isso quer dizer que a visualização do meu modelo é diferente do modelo em si.  
+(tenho alguns métodos aí dentro, mas omiti para ser breve).Notem o fato de que o model não trabalha com strings separadas por vírgula, e sim com arrays de strings. Isso quer dizer que a visualização do meu modelo é diferente do modelo em si.
 
 ### Os ViewModels
 Este é o perfeito caso onde cabe a utilização de um ViewModel. Um ViewModel é uma representação de um modelo para um View. Em alguns casos é apenas uma cópia do model decorado com atributos de validação, em outros casos é a junção de dois ou mais partes de models diferentes. Em outros casos é uma representação de computações de um model, etc.
