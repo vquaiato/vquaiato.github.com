@@ -39,19 +39,19 @@ Desenvolvido utilizando Objective-C é possível trabalhar nele também com C ou
 
 ###XCode
 [XCode][xcode] é a IDE da Apple para o desenvolvimento para iOS e OSX. No XCode temos os SDKs necessário tanto para iOS quando para OSX.
-Tem simulador para iPad e iPhone e confesso que é uma IDE tão completa quanto as outras que existem por aí. No começo a gente estranha muita coisa, mas com o tempo vai se acostumando.
+Tem simulador para iPad e iPhone e confesso que é uma IDE tão completa quanto as outras que existem por aí(o que não quer dizer que eu ache que as IDEs que existem por aí maravilhosas). No começo a gente estranha muita coisa, mas com o tempo vai se acostumando, assim como tudo novo na vida.
 
-Para ser sincero é bem agradável ver os erros conforme vamos escrevendo o código, é uma IDE até que de bom gosto :P
+Para ser sincero é uma IDE bem agradável: a forma como os erros/alerts aparecem conforme vamos escrevendo o código, o "intellisense" funciona muito bem e assim como tudo no Mac/OSX é de muito bom gosto :P
 
 Para instalar o [XCode][xcode] basta entrar na App Store no seu mac:
 
-<img src="images_posts/xcode-appstore.png" class="post_img" />
+<img src="/images_posts/xcode-appstore.png" class="post_img" />
 
 ##Começando a estudar
 
-A Apple disponibiliza uma série de materiais e documentação acerca destes tópicos, e podemos conferir tudo aqui: [https://developer.apple.com/devcenter/ios/index.action][apple-docs].
+A Apple disponibiliza uma série de materiais e documentação acerca dos tópicos de desenvolvimento para suas plataformas, e podemos conferir tudo aqui: [https://developer.apple.com/devcenter/ios/index.action][apple-docs].
 
-Lá podemos encontrar artigos, códigos de exemplo, vídeos, guias, etc. Vale a pena dar uma conferida lá antes de iniciar suas aventuras.
+Lá podemos encontrar artigos, códigos de exemplo, vídeos, guias, etc. Vale a pena dar uma conferida antes de iniciar suas aventuras.
 
 Confira alguns links:
 
@@ -62,7 +62,7 @@ Confira alguns links:
 + [Tools workflow guide for iOS][workflow]
 
 ##Resumindo
-Bom estou começando a brincadeira e cá estarei compartilhando com vocês. Amanhã já começo a colocar os básicos para criar uma app.
+Estou começando a brincadeira e cá estarei compartilhando com vocês. Amanhã já começo a colocar os básicos para criar uma app (simples) e explicar alguns conceitos e paradigmas novos que temos pela frente.
 
 Uma série de amigos oriundos do mundo Microsoft/.NET está usando Mac agora (ao menos como uma segunda plataforma) então acho que vai ser bem útil para muita gente.
 
