@@ -345,3 +345,67 @@ img.about_me{
 .objc .vg { color: #dd7700 } /* Name.Variable.Global */
 .objc .vi { color: #3333bb } /* Name.Variable.Instance */
 .objc .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
+
+/*javascript*/
+.js .hll { background-color: #ffffcc }
+/*.js  { background: #f8f8f8; }*/
+.js .c { color: #008800; font-style: italic } /* Comment */
+.js .err { border: 1px solid #FF0000 } /* Error */
+.js .k { color: #AA22FF; font-weight: bold } /* Keyword */
+.js .o { color: #666666 } /* Operator */
+.js .cm { color: #008800; font-style: italic } /* Comment.Multiline */
+.js .cp { color: #008800 } /* Comment.Preproc */
+.js .c1 { color: #008800; font-style: italic } /* Comment.Single */
+.js .cs { color: #008800; font-weight: bold } /* Comment.Special */
+.js .gd { color: #A00000 } /* Generic.Deleted */
+.js .ge { font-style: italic } /* Generic.Emph */
+.js .gr { color: #FF0000 } /* Generic.Error */
+.js .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.js .gi { color: #00A000 } /* Generic.Inserted */
+.js .go { color: #808080 } /* Generic.Output */
+.js .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.js .gs { font-weight: bold } /* Generic.Strong */
+.js .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.js .gt { color: #0040D0 } /* Generic.Traceback */
+.js .kc { color: #AA22FF; font-weight: bold } /* Keyword.Constant */
+.js .kd { color: #AA22FF; font-weight: bold } /* Keyword.Declaration */
+.js .kn { color: #AA22FF; font-weight: bold } /* Keyword.Namespace */
+.js .kp { color: #AA22FF } /* Keyword.Pseudo */
+.js .kr { color: #AA22FF; font-weight: bold } /* Keyword.Reserved */
+.js .kt { color: #00BB00; font-weight: bold } /* Keyword.Type */
+.js .m { color: #666666 } /* Literal.Number */
+.js .s { color: #BB4444 } /* Literal.String */
+.js .na { color: #BB4444 } /* Name.Attribute */
+.js .nb { color: #AA22FF } /* Name.Builtin */
+.js .nc { color: #0000FF } /* Name.Class */
+.js .no { color: #880000 } /* Name.Constant */
+.js .nd { color: #AA22FF } /* Name.Decorator */
+.js .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.js .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.js .nf { color: #00A000 } /* Name.Function */
+.js .nl { color: #A0A000 } /* Name.Label */
+.js .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.js .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.js .nv { color: #B8860B } /* Name.Variable */
+.js .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.js .w { color: #bbbbbb } /* Text.Whitespace */
+.js .mf { color: #666666 } /* Literal.Number.Float */
+.js .mh { color: #666666 } /* Literal.Number.Hex */
+.js .mi { color: #666666 } /* Literal.Number.Integer */
+.js .mo { color: #666666 } /* Literal.Number.Oct */
+.js .sb { color: #BB4444 } /* Literal.String.Backtick */
+.js .sc { color: #BB4444 } /* Literal.String.Char */
+.js .sd { color: #BB4444; font-style: italic } /* Literal.String.Doc */
+.js .s2 { color: #BB4444 } /* Literal.String.Double */
+.js .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.js .sh { color: #BB4444 } /* Literal.String.Heredoc */
+.js .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.js .sx { color: #008000 } /* Literal.String.Other */
+.js .sr { color: #BB6688 } /* Literal.String.Regex */
+.js .s1 { color: #BB4444 } /* Literal.String.Single */
+.js .ss { color: #B8860B } /* Literal.String.Symbol */
+.js .bp { color: #AA22FF } /* Name.Builtin.Pseudo */
+.js .vc { color: #B8860B } /* Name.Variable.Class */
+.js .vg { color: #B8860B } /* Name.Variable.Global */
+.js .vi { color: #B8860B } /* Name.Variable.Instance */
+.js .il { color: #666666 } /* Literal.Number.Integer.Long */
