@@ -19,6 +19,8 @@ Assumo que você já instalou o XCode (no momento estou usando o 4.3.2). Abra o 
 
 Após termos o projeto criado vamos nos deparar com uma tela como esta:
 
+<img src="/images_posts/projeto-criado.png" class="post_img"/>
+
 Não se desespere. Nesta tela temos algumas informações sobre o projeto como por exemplo: *Supported Device Orientations* e outras. Futuramente investigaremos isso melhor.
 
 Do lado esquerdo temos os arquivos que fazem parte do nosso projeto e aqui já podemos perceber uma coisa: *para toda classe teremos 2 arquivos: um .h e um .m*
