@@ -56,7 +56,7 @@ O ponto principal aqui é o método abaixo (dentro de AppDelegate.m):
     return YES;
 }
 {% endhighlight %}
-Este método na ***linha 3*** está criando uma *window* para nossa aplicação. Na ***linha 6*** está criando um ViewController (que está na nossa lista de arquivos) e informando que a view deste ViewController.
+Este método na ***linha 3*** está criando uma *window* para nossa aplicação. Na ***linha 6*** está criando um ViewController (que está na nossa lista de arquivos) e informando que a view deste ViewController é uma view com o mesmo nome.
 Na ***linha 7*** é informado que o rootViewController é o ViewController que acabou de ser criado. E na ***linha 8*** tudo é exibido :D
 Este código todo foi gerado pelo template do XCode e com o tempo vamos compreender melhor cada um dos pontos aí.
 
@@ -80,11 +80,11 @@ Se observarmos lá do lado direito, na parte inferior temos uma lista com os con
 [Mais sobre Nib/.xib files veja aqui][nib-ref]
 
 ##Executando a aplicação
-Já podemos executar nossa aplicação, clique no botão ***Play*** ou ⌘+R. O simulador do iOS iniciará e veremos nossa primeira app rodando:
+Já podemos executar nossa aplicação, clique no botão ***Play/Run*** ou ⌘+R. O simulador do iOS iniciará e veremos nossa primeira app rodando:
 
 <img src="/images_posts/hello-world-ios.png" class="post_img"/>
 
-Se você reparou clicar no botão não faz nada, então vamos exibir um alerta quando o botão for tocado.
+Se você reparou clicar no botão não faz nada, então vamos exibir um alerta quando o botão for tocado (lembre que não são cliques e sim toques).
 
 ##Exibindo um alert no toque do botão
 Para isso vamos adicionar um método no nosso ViewController.h que ficará como abaixo:
