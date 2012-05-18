@@ -7,12 +7,6 @@ keywords: [ajax]
 <ul class="posts">
 <li>
 <p>
-<span class="date">19/12/2010</span> &raquo; 
-<a href="/blog/asp-net-mvc-jquery-ajax">ASP.NET MVC e Jquery Ajax</a>
-</p>
-</li> 
-<li>
-<p>
 <span class="date">18/12/2010</span> &raquo; 
 <a href="/blog/asp-net-mvc-submit-com-ou-sem-ajax">ASP.NET MVC form submit com ou sem Ajax</a>
 </p>

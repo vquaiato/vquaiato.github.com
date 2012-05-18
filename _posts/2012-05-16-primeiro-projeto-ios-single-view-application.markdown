@@ -1,6 +1,13 @@
 ---
 layout: post
-title: 'Primeiro projeto iOS: Single View Application'
+title: '- Primeiro projeto iOS: Single View Application'
+description: 'Veja como criar sua primeira aplicação iOS para iPhone e comece a entender os principais conceitos no desenvolvimento para a pltaforma da Apple'
+keywords:
+- iPhone
+- Single View Application
+- AppDelegate
+- ViewController
+- UIViewController
 tags:
 - title: iOS
   slug: iOS
