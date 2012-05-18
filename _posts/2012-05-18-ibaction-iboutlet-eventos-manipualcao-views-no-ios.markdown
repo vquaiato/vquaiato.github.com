@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '- IBAction e IBOutlets: eventos e manipulação de views no iOS'
+title: 'IBAction e IBOutlets: eventos e manipulação de views no iOS'
 description: 'Aprendendo a usar IBAction e IBOutlets desenvolvendo aplicações iOS. Entenda como conectar controles na interface gráfica com o Controller e como manipular a interface gráfica nos Controllers'
 keywords:
 - IBAction

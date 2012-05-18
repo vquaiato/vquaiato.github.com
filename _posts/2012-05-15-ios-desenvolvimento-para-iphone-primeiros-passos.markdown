@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '- iOS desenvolvimento para iPhone: primeiros passos'
+title: 'iOS desenvolvimento para iPhone: primeiros passos'
 description: 'Vamos iniciar o desenvolvimento para iPhone e iOS. Veremos os primeiros passos, o que é necessário e introdução ao assunto'
 keywords:
 - XCode
