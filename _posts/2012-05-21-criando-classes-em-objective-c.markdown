@@ -24,7 +24,7 @@ Criar uma classe em objective-c não é nada diferente do que já vimos aqui nos
 Para efeito de estudos vamos criar uma aplicação para computar os gastos que fazemos na rua (o cafezinho, o almoço, o jornal, etc, etc).
 
 Depois de criar um projeto(Single View Application mesmo), vamos adicionar um novo arquivo ao projeto, uma classe objective-c:
-<img src="images_posts/objc-class.jpg" class="post_img" />
+<img src="/images_posts/objc-class.jpg" class="post_img" />
 
 Essa nossa classe vai ser algo parecido com:
 {% highlight objc linenos %}
@@ -87,11 +87,11 @@ O que fazemos então é somar o floatValue de cada um dos elementos e retornamos
 ##Criando nossa interface
 A interface desta nossa app será bastante simples (iremos evoluí-la em posts futuros). Vamos criar algo parecido com isso:
 
-<img src="images_posts/interface-gastos-ios-app.png" class="post_img" />
+<img src="/images_posts/interface-gastos-ios-app.png" class="post_img" />
 
 Para que o botão fique parecido com isso selecione a propriedade *type* do nosso UIButton:
 
-<img src="images_posts/add-contact-button-ios.jpg" class="post_img" />
+<img src="/images_posts/add-contact-button-ios.jpg" class="post_img" />
 
 A implementação disso é bastante tranquila também, já que a lógica toda está na classe Gastos. Veja o .h do nosso ViewController como ficou:
 
@@ -159,9 +159,9 @@ Nas ***linhas 19 até 26*** temos nosso addConta onde realizamos toda lógica do
 
 Rodando nossa app teremos:
 
-<img src="images_posts/controle-gastos-rua-ios-app.png" class="post_img" />
+<img src="/images_posts/controle-gastos-rua-ios-app.png" class="post_img" />
 
-<img src="images_posts/controle-gastos-rua-ios-app-2.png" class="post_img" />
+<img src="/images_posts/controle-gastos-rua-ios-app-2.png" class="post_img" />
 
 ##Resumo
 Estamos avançando a bons passos no conhecimento do iOS. Com essa nossa classe já podemos imaginar implementar algum tipo de persistência para estes dados(Core Data, alguma API de serviço externo, etc) e com isso tornar nossa aplicação mais usável.
