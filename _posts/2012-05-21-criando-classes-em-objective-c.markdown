@@ -103,8 +103,8 @@ A implementação disso é bastante tranquila também, já que a lógica toda es
 
 -(IBAction)addGasto:(id)sender;
 
-@property (nonatomic,retain) IBOutlet UILabel* saldoGastos;
-@property (nonatomic,retain) IBOutlet UILabel* qtdGastos;
+@property (nonatomic,retain) IBOutlet UILabel* totalDosGastos;
+@property (nonatomic,retain) IBOutlet UILabel* numeroDeGastos;
 @property (nonatomic,retain) IBOutlet UITextField* valorDoGasto;
 @end
 {% endhighlight %}
@@ -121,9 +121,9 @@ E a implementação do nosso ViewController fica assim:
 
 @implementation ViewController
 
-@synthesize valorConta;
-@synthesize numeroDeContas;
-@synthesize totalContas;
+@synthesize valorDoGasto;
+@synthesize numeroDeGastos;
+@synthesize totalDosGastos;
 
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -131,13 +131,13 @@ E a implementação do nosso ViewController fica assim:
     gastos = [[Gastos alloc]init];
 }
 
--(void)addConta:(id)sender{
-    [gastos addGastoFromString: valorConta.text];
-    valorConta.text = @"";
+-(void)addGasto:(id)sender{
+    [gastos addGastoFromString: valorDoGasto.text];
+    valorDoGasto.text = @"";
 
-    numeroDeContas.text = [NSString stringWithFormat:@"%i", [gastos totalDeGastos]];
+    numeroDeGastos.text = [NSString stringWithFormat:@"%i", [gastos totalDeGastos]];
 
-    totalContas.text = [[gastos somaDosGastos] stringValue];
+    totalDosGastos.text = [[gastos somaDosGastos]stringValue];
 }
 
 //MÉTODOS GERADOS
