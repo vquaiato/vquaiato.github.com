@@ -14,6 +14,7 @@ tags:
 ---
 
 Na nossa [aplicação Hello World][post-hello-world], dentre as muitas coisas novas e diferentes que vimos uma das mais estranhas foi a vinculação de um método com o toque do botão.
+*[(confira todos os posts sobre iOS)][tag-ios]*
 
 ##IBAction e Target-Action
 Target-Action é o nome do "padrão" ou mecanismo que o iOS utiliza para lidar com eventos.
@@ -123,6 +124,7 @@ Abraços, e até a próxima.
 
 Vinicius Quaiato.
 
+[tag-ios]:http://viniciusquaiato.com/tags/ios/
 [post-hello-world]:http://viniciusquaiato.com/blog/primeiro-projeto-ios-single-view-application/
 [ibaction-void]:http://developer.apple.com/library/ios/#documentation/uikit/reference/UIKitConstantsReference/Reference/reference.html
 [iboutlet-builder]:http://developer.apple.com/library/ios/#documentation/uikit/reference/UIKitConstantsReference/Reference/reference.html

@@ -12,6 +12,7 @@ tags:
   autoslug: iOS
 ---
 Parte da minha [motivação em mudar meu mundo para OSX][nao-troquei] é a possibilidade de desenvolver para iOS (iPhone e também iPad). Apenas uma motivação curiosa: conhecer uma nova plataforma, nova linguagem, novo framework, etc, etc…
+*[(confira todos os posts sobre iOS)][tag-ios]*
 
 Há um ano eu comecei a brincar e estudar mas parei. E há uma semana retomei os estudos. Como eu acredito que escrevendo/compartilhando eu consigo absorver melhor as idéias cá estou.
 
@@ -77,6 +78,7 @@ Abraços,
 
 Vinicius Quaiato.
 
+[tag-ios]:http://viniciusquaiato.com/tags/ios/
 [nao-troquei]:http://viniciusquaiato.com/blog/por-que-nao-troquei-o-net-pelo-ruby/
 [objc]:http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html
 [monotouch]:http://xamarin.com/monotouch

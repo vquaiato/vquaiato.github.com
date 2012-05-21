@@ -14,6 +14,7 @@ tags:
   autoslug: iOS
 ---
 Antes de irmos para o próximo passo dentro do desenvolvimento iOS vamos começar a trabalhar um pouco o objective-c.
+*[(confira todos os posts sobre iOS)][tag-ios]*
 
 Vamos criar uma classe para servir como model para nossa aplicação.
 
@@ -22,7 +23,7 @@ Criar uma classe em objective-c não é nada diferente do que já vimos aqui nos
 
 Para efeito de estudos vamos criar uma aplicação para computar os gastos que fazemos na rua (o cafezinho, o almoço, o jornal, etc, etc).
 
-Criando um projeto, vamos adicionar um novo arquivo ao projeto, uma classe objective-c:
+Depois de criar um projeto(Single View Application mesmo), vamos adicionar um novo arquivo ao projeto, uma classe objective-c:
 <img src="images_posts/objc-class.jpg" class="post_img" />
 
 Essa nossa classe vai ser algo parecido com:
@@ -43,7 +44,9 @@ Essa nossa classe vai ser algo parecido com:
 
 O que essa classe vai fazer? Ela possui um array que nada mais é que um array dos valores dos gastos. Repare que este é um [NSMutableArray][nsmutable], ou seja conseguiremos adicionar valores independente do tamanho do array.
 
-Temos também 3 métodos um que iremos implementar:
+Reparem que assim como em .NET tudo "herda" de Object aqui nossa classe herda de [NSObject][nsobj]. Por ser a classe base da maioria das classes em objective-c ela provê uma série de comportamentos aos objetos (muito além do ToString, GetType e GetHashCode no .NET). [Confira a documentação de NSObject aqui][nsobj]. É de NSObject por exemplo que vem o método [alloc que utilizamos na maioria das nossas classes][alloc].
+
+Temos 3 métodos um que iremos implementar:
 Na ***linha 9*** é um método que irá adicionar um gasto a partir de uma string. Na ***linha 10*** é apenas um método para obtermos quantos gastos foram realizados e na ***linha 11*** uma soma dos gastos realizados.
 
 A implementação da nossa classe é bastante simples também:
@@ -175,6 +178,9 @@ O código deste projeto já está no github também: [https://github.com/vquaiat
 Abração,
 Vinicius Quaiato.
 
+[tag-ios]:http://viniciusquaiato.com/tags/ios/
+[nsobj]:https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/nsobject_Class/Reference/Reference.html
+[alloc]:https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/nsobject_Class/Reference/Reference.html#//apple_ref/doc/uid/20000050-alloc
 [nsmutable]:https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSMutableArray_Class/Reference/Reference.html
 [nsdecimal]:https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSDecimalNumber_Class/Reference/Reference.html
 [collection]:http://developer.apple.com/library/ios/#documentation/cocoa/conceptual/KeyValueCoding/Articles/CollectionOperators.html

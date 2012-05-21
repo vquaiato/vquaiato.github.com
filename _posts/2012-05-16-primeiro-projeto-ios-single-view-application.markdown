@@ -14,6 +14,7 @@ tags:
   autoslug: iOS
 ---
 Vamos começar e criar nossa primeira aplicação, como sempre um ***Hello World***. O bom é que conseguiremos ver diversas coisas novas com este *simples* exemplo e com isso vamos começar a nos acostumar/aprofundar no iOS.
+*[(confira todos os posts sobre iOS)][tag-ios]*
 
 ##Criando o projeto
 Assumo que você já instalou o XCode (no momento estou usando o 4.3.2). Abra o mesmo e crie um novo projeto. Para iniciarmos vamos começar um um dos templates que o XCode já fornece, neste caso o *Single View Application* para iOS.
@@ -148,7 +149,7 @@ Abraços e até o próximo.
 
 Vinicius Quaiato.
 
-
+[tag-ios]:http://viniciusquaiato.com/tags/ios/
 [app-delegate-ref]:https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIApplicationDelegate_Protocol/Reference/Reference.html
 [uiview-controller-ref]:http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIViewController_Class/Reference/Reference.html
 [ui-alert-ref]:http://developer.apple.com/library/ios/#documentation/uikit/reference/UIAlertView_Class/UIAlertView/UIAlertView.html
