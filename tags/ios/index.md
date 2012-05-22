@@ -1,10 +1,16 @@
 ---
 layout: default
 title: Posts tagged iOS
-keywords: [AppDelegate,Classes,Cocoa Touch,Collection operators,IBAction,IBOutlet,Model,NSDecimalNumber,NSMutableArray,Single View Application,UILabel,UITextField,UIViewController,ViewController,XCode,iOS,iPhone,objective-c]
+keywords: [AppDelegate,Classes,Cocoa Touch,Collection operators,IBAction,IBOutlet,Model,NSDecimalNumber,NSLocale,NSMutableArray,NSNumberFormatter,Single View Application,UILabel,UITextField,UIViewController,ViewController,XCode,iOS,iPhone,locales,objective-c,reais]
 ---
 <h2 class="category">iOS</h2>
 <ul class="posts">
+<li>
+<p>
+<span class="date">22/05/2012</span> &raquo; 
+<a href="/blog/formatacao-de-valores-em-reais-no-ios">Formatação de valores em Reais(R$) no iOS</a>
+</p>
+</li> 
 <li>
 <p>
 <span class="date">21/05/2012</span> &raquo; 
