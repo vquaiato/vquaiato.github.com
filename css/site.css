@@ -56,6 +56,22 @@ img.about_me{
   border: solid 6px white;
 }
 
+/*DISQUS*/
+#disqus_thread{
+  margin-bottom: 10px;
+  background:rgba(0, 0, 0, 0.1);
+  padding: 0px 5px;
+  border: solid 1px #ABABAB;
+  border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;
+  box-shadow: 0px 1px 6px #ABABAB;-webkit-box-shadow: 0px 1px 6px #ABABAB;-moz-box-shadow: 0px 1px 6px #ABABAB;
+}
+#dsq-account-dropdown a{
+    color: rgba(255,0,0,0.5);
+}
+#dsq-subscribe ul li a{
+  color: #333;
+}
+
 /*C# SYNTAX*/
 .csharp .hll { background-color: #f0f3f3 }
 .csharp  { background-color: #f0f3f3 }
