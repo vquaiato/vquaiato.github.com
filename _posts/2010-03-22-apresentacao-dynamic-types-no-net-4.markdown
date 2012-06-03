@@ -1,16 +1,16 @@
---- 
+---
 layout: post
-title: "Apresenta\xC3\xA7\xC3\xA3o Dynamic Types no .NET 4"
+title: "Apresentação Dynamic Types no .NET 4"
 wordpress_id: 717
 wordpress_url: http://viniciusquaiato.com/blog/?p=717
-categories: 
+categories:
 - title: IronRuby
   slug: ironruby
   autoslug: ironruby
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
+tags:
 - title: Visual Studio 2010
   slug: visual-studio-2010
   autoslug: visual-studio-2010

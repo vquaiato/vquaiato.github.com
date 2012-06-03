@@ -7,74 +7,80 @@ keywords: [tests]
 <ul class="posts">
 <li>
 <p>
-<span class="date">06/08/2011</span> &raquo; 
-<a href="/blog/slides-palestra-testes-e-tdd-no-mstechday-de-sao-paulo">Slides palestra Testes e TDD no MSTechDay de São Paulo</a>
+<span class="date">06/08/2011</span> &raquo;
+<a href="/blog/slides-palestra-testes-e-tdd-no-mstechday-de-sao-paulo">Slides palestra Testes e TDD no MSTechDay de SÃ£o Paulo</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">19/12/2010</span> &raquo; 
+<span class="date">19/12/2010</span> &raquo;
 <a href="/blog/testar-envio-email-dotnet">Testar envio de email .NET</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">30/08/2010</span> &raquo; 
+<span class="date">30/08/2010</span> &raquo;
 <a href="/blog/asp-net-mvc-testando-controllers-parte-ii">ASP.NET MVC: Testando Controllers parte II</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">29/08/2010</span> &raquo; 
+<span class="date">29/08/2010</span> &raquo;
 <a href="/blog/tagcloud-em-asp-net-mvc">TagCloud em ASP.NET MVC </a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">25/07/2010</span> &raquo; 
-<a href="/blog/tdd-testes-mais-amigaveis-com-sharp-tests-ex">TDD: Testes mais amigáveis com Sharp Tests Ex</a>
+<span class="date">25/07/2010</span> &raquo;
+<a href="/blog/tdd-testes-mais-amigaveis-com-sharp-tests-ex">TDD: Testes mais amigÃ¡veis com Sharp Tests Ex</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">23/07/2010</span> &raquo; 
+<span class="date">23/07/2010</span> &raquo;
 <a href="/blog/testando-com-nunit">Testando com NUnit</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">21/07/2010</span> &raquo; 
+<span class="date">21/07/2010</span> &raquo;
 <a href="/blog/tdd-mock-objects-usando-moq">TDD: mock objects usando Moq</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">19/07/2010</span> &raquo; 
+<span class="date">19/07/2010</span> &raquo;
 <a href="/blog/efeito-borboleta-e-o-software">Efeito Borboleta e o Software</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">23/03/2010</span> &raquo; 
+<span class="date">23/03/2010</span> &raquo;
 <a href="/blog/apresentacao-sobre-tdd-na-envision-tecnologia">Apresentação sobre TDD na Envision Tecnologia</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">09/11/2009</span> &raquo; 
+<span class="date">09/11/2009</span> &raquo;
 <a href="/blog/tdd-test-driven-development-c-parte-iv">TDD - Test-driven Development + c# + Mocks - Parte IV</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">02/11/2009</span> &raquo; 
+<span class="date">02/11/2009</span> &raquo;
 <a href="/blog/tdd-test-driven-development-c-parte-iii">TDD - Test-driven Development + c# - parte III</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">23/10/2009</span> &raquo; 
+<span class="date">23/10/2009</span> &raquo;
 <a href="/blog/tdd-test-driven-development-c-parte-ii">TDD - Test-driven Development + c# - Parte II</a>
 </p>
-</li> 
+</li>
+<li>
+<p>
+<span class="date">20/10/2009</span> &raquo;
+<a href="/blog/tdd-test-driven-development-c">TDD - Test-driven Development - Parte I</a>
+</p>
+</li>
 </ul>

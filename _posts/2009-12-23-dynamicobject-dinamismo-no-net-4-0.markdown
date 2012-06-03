@@ -15,8 +15,8 @@ categories:
   autoslug: .net-4.0
 tags:
 - title: C#
-  slug: c-sharp
-  autoslug: c-sharp
+  slug: csharp
+  autoslug: csharp
 ---
 Continuando a falar de [_dynamic_](http://msdn.microsoft.com/en-us/library/dd264736%28VS.100%29.aspx) no .NET 4.0, vamos falar um pouco sobre DynamicObject._[DynamicObject](http://msdn.microsoft.com/en-us/library/system.dynamic.dynamicobject%28VS.100%29.aspx)_ é uma classe abstrata que permite definir quais operações podem ser feitas em um objeto dynamic e como estas operações são realizadas.Falei um pouco sobre _ExpandoObject _[aqui](http://viniciusquaiato.com/blog/expandoobject-dinamismo-dotnet-4/), que é um tipo de objeto dynamic.Para não dizer que esta é uma das novas features e que ela é inútil, estou envolvido em um projeto e se esta feature já estivesse disponível em versão realease, eu já estaria utilizando a mesma por necessidades do projeto.Bom para dar um exemplo, vamos imaginar que estamos implementando um provider customizado para sessões em nossa aplicação.Muitas vezes não queremos ter que escrever algo como minhaSessao["Usuario"], afinal se sabemos que sempre haverá um Usuario na sessão ele poderia ser uma propriedade. Com _DynamicObject _podemos fazer isso (primeiro vou escrever os testes):
 {% highlight csharp %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dojo .Net Architects: V\xC3\xADdeo e Apresenta\xC3\xA7\xC3\xA3o"
+title: "Dojo .Net Architects: Vídeo e Apresentação"
 wordpress_id: 630
 wordpress_url: http://viniciusquaiato.com/blog/?p=630
 categories:

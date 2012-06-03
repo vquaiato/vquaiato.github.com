@@ -1,16 +1,16 @@
---- 
+---
 layout: post
-title: "Guia de boas pr\xC3\xA1ticas com Enterprise Library 5.0"
+title: "Guia de boas práticas com Enterprise Library 5.0"
 wordpress_id: 857
 wordpress_url: http://viniciusquaiato.com/blog/?p=857
-categories: 
+categories:
 - title: Patterns
   slug: patterns
   autoslug: patterns
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
+tags:
 - title: Novidades
   slug: novidades
   autoslug: novidades

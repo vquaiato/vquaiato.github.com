@@ -1,34 +1,20 @@
---- 
+---
 layout: post
 title: Windows Phone 7 - Criando um leitor de RSS
 wordpress_id: 773
 wordpress_url: http://viniciusquaiato.com/blog/?p=773
-categories: 
-- title: Visual Studio 2010
-  slug: visual-studio-2010
-  autoslug: visual-studio-2010
-- title: Silverlight
-  slug: silverlight
-  autoslug: silverlight
+categories:
+- Visual Studio 2010
+- Silverlight
+- Windows Phone 7
+- WP7
+- C#
+- Novidades
+- Silverlight 4
+tags:
 - title: Windows Phone 7
   slug: windows-phone-7
   autoslug: windows-phone-7
-tags: 
-- title: C#
-  slug: c
-  autoslug: c#
-- title: Novidades
-  slug: novidades
-  autoslug: novidades
-- title: Silverlight 4
-  slug: silverlight-4
-  autoslug: silverlight-4
-- title: Windows Phone 7
-  slug: windows-phone-7
-  autoslug: windows-phone-7
-- title: WP7
-  slug: wp7
-  autoslug: wp7
 ---
 
 
@@ -57,17 +43,17 @@ taticResource PhoneTextPageTitle2Style}
 inding Title}
 " textwrapping="Wrap" foreground="#FFC8AB14" fontsize="22" />                                <textblock text="{
 inding Resumo}
-" textwrapping="Wrap" fontsize="18" />                            </stackpanel>                        </datatemplate>                    </listbox.itemtemplate>                </listbox>            </stackpanel>        </grid>    
+" textwrapping="Wrap" fontsize="18" />                            </stackpanel>                        </datatemplate>                    </listbox.itemtemplate>                </listbox>            </stackpanel>        </grid>
 {% endhighlight %}
 Eu não sou especialista em XAML, nem de longe, então talvez eu esteja cometendo alguns erros e algumas "gafes", sintam-se à vontade para me corrigir.O código acima não tem nada específico. Não vou detalhar pois não é o escopo deste post explicar como trabalhar com XAML. Talvez a única diferença esteja na **_linha 1_** onde é criada uma phoneNavigation:PhoneApplicationPage. Como o Visual Studio cria isso automaticamente, não vamos nos preocupar.Agora vamos para o código C#, presisone F7 para ir para o codebehinde, e então digite o seguinte código:
 {% highlight csharp %}
 
-public partial class MainPage : PhoneApplicationPage{    
+public partial class MainPage : PhoneApplicationPage{
 
 public MainPage()    {        InitializeComponent();
     SupportedOrientations = SupportedPageOrientation.Portrait | SupportedPageOrientation.Landscape;
     }
-    
+
 private void Button_Click(object sender, RoutedEventArgs e)    {
 var uri = new Uri(                            this.txtUrl.Text == string.Empty ?                            @"http://viniciusquaiato.com/blog/rss" :                            this.txtUrl.Text);
     WebClient client = new WebClient();
@@ -85,12 +71,12 @@ var feedItems = from item in xml.Descendants("channel").Descendants("item")     
 }
 
 
-public class FeedItem{    
+public class FeedItem{
 
 public string Title { get;
     set;
     }
-    
+
 public string Resumo { get;
     set;
     }

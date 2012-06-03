@@ -3,18 +3,18 @@ layout: default
 title: Posts tagged lancamentos
 keywords: [lancamentos]
 ---
-<h2 class="category">lançamentos</h2>
+<h2 class="category">lanÃ§amentos</h2>
 <ul class="posts">
 <li>
 <p>
-<span class="date">22/04/2010</span> &raquo; 
+<span class="date">22/04/2010</span> &raquo;
 <a href="/blog/guia-de-boas-praticas-com-enterprise-library-5-0">Guia de boas práticas com Enterprise Library 5.0</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">22/04/2010</span> &raquo; 
+<span class="date">22/04/2010</span> &raquo;
 <a href="/blog/enterprise-library-5-0-lancada">Enterprise Library 5.0 - Lançada!</a>
 </p>
-</li> 
+</li>
 </ul>

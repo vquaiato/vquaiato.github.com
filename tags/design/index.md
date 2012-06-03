@@ -7,8 +7,8 @@ keywords: [design]
 <ul class="posts">
 <li>
 <p>
-<span class="date">27/12/2010</span> &raquo; 
+<span class="date">27/12/2010</span> &raquo;
 <a href="/blog/tell-dont-ask">Tell don't ask!</a>
 </p>
-</li> 
+</li>
 </ul>

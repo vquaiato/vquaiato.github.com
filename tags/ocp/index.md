@@ -7,8 +7,8 @@ keywords: [ocp]
 <ul class="posts">
 <li>
 <p>
-<span class="date">13/07/2010</span> &raquo; 
+<span class="date">13/07/2010</span> &raquo;
 <a href="/blog/ocp-open-closed-principle">OCP - Open Closed Principle</a>
 </p>
-</li> 
+</li>
 </ul>

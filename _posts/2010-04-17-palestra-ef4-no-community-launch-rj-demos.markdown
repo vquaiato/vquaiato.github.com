@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: Palestra EF4 no Community Launch RJ - Demos
 wordpress_id: 832
 wordpress_url: http://viniciusquaiato.com/blog/?p=832
-categories: 
+categories:
 - title: Visual Studio 2010
   slug: visual-studio-2010
   autoslug: visual-studio-2010
@@ -13,7 +13,7 @@ categories:
 - title: Entity Framework
   slug: entity-framework
   autoslug: entity-framework
-tags: 
+tags:
 - title: Entity Framework
   slug: entity-framework
   autoslug: entity-framework

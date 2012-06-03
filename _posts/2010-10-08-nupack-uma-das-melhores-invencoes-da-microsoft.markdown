@@ -1,28 +1,16 @@
---- 
+---
 layout: post
 title: "NuPack: Uma das melhores inven\xC3\xA7\xC3\xB5es da Microsoft"
 wordpress_id: 1733
 wordpress_url: http://viniciusquaiato.com/blog/?p=1733
-categories: 
-- title: .NET
-  slug: dotnet
-  autoslug: .net
-- title: Visual Studio 2010
-  slug: visual-studio-2010
-  autoslug: visual-studio-2010
-tags: 
-- title: NuPack
-  slug: nupack
-  autoslug: nupack
-- title: Pacotes
-  slug: pacotes
-  autoslug: pacotes
-- title: Gerenciador Pacotes
-  slug: gerenciador-pacotes
-  autoslug: gerenciador-pacotes
-- title: Package Manager Console
-  slug: package-manager-console
-  autoslug: package-manager-console
+keywords:
+- .NET
+- Visual Studio 2010
+- NuPack
+- Pacotes
+- Gerenciador Pacotes
+- Package Manager Console
+tags:
 - title: NuGet
   slug: nuget
   autoslug: nuget
@@ -37,7 +25,7 @@ Ontem (dia 06/10) foi anunciado o lançamento do [NuPack](http://nupack.codeplex
 Façam o Download do NuPack aqui: [http://nupack.codeplex.com/](http://nupack.codeplex.com/)
 
 ### Abrindo o Package Manager Console
-Após instalar, abra seu Visual Studio e digite: Ctrl + W, Ctrl + Z, ou vá ao menu View >> Other Windows >> Package Manager Console.Este console (é [Powershell](http://technet.microsoft.com/en-us/scriptcenter/powershell.aspx)!!!) é por onde você consegue instalar os pacotes. 
+Após instalar, abra seu Visual Studio e digite: Ctrl + W, Ctrl + Z, ou vá ao menu View >> Other Windows >> Package Manager Console.Este console (é [Powershell](http://technet.microsoft.com/en-us/scriptcenter/powershell.aspx)!!!) é por onde você consegue instalar os pacotes.
 
 ### Listando os pacotes disponíveis no NuPack
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Microsoft Community Launch 2010 - S\xC3\xA3o Paulo - SP"
+title: "Microsoft Community Launch 2010 - São Paulo - SP"
 wordpress_id: 685
 wordpress_url: http://viniciusquaiato.com/blog/?p=685
 categories:

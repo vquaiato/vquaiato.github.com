@@ -7,8 +7,8 @@ keywords: [legado]
 <ul class="posts">
 <li>
 <p>
-<span class="date">11/07/2010</span> &raquo; 
+<span class="date">11/07/2010</span> &raquo;
 <a href="/blog/podcast-net-architects-sobre-legado">Podcast .NET Architects sobre "Legado"</a>
 </p>
-</li> 
+</li>
 </ul>

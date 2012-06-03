@@ -7,8 +7,8 @@ keywords: [jquery]
 <ul class="posts">
 <li>
 <p>
-<span class="date">04/05/2012</span> &raquo; 
+<span class="date">04/05/2012</span> &raquo;
 <a href="/blog/upload-imagens-jcrop-resize-progressbar-assincrono">ASP.NET MVC upload de imagens + JCrop + Resize + progressbar + tudo assíncrono</a>
 </p>
-</li> 
+</li>
 </ul>

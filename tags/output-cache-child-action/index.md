@@ -7,8 +7,8 @@ keywords: [output-cache-child-action]
 <ul class="posts">
 <li>
 <p>
-<span class="date">12/11/2010</span> &raquo; 
+<span class="date">12/11/2010</span> &raquo;
 <a href="/blog/output-cache-para-child-actions-no-asp-net-mvc-3-rc">Output Cache para child actions no ASP.NET MVC 3 RC</a>
 </p>
-</li> 
+</li>
 </ul>

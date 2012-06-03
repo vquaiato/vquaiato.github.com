@@ -1,16 +1,16 @@
---- 
+---
 layout: post
-title: "MEF - Criando aplica\xC3\xA7\xC3\xB5es plug\xC3\xA1veis no .NET 4"
+title: "MEF - Criando aplicações plugáveis no .NET 4"
 wordpress_id: 913
 wordpress_url: http://viniciusquaiato.com/blog/?p=913
-categories: 
+categories:
 - title: Visual Studio 2010
   slug: visual-studio-2010
   autoslug: visual-studio-2010
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
+tags:
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
@@ -47,7 +47,7 @@ Criaremos agora uma outra solution, com o projeto que implementa um plugin. Adic
 Criaremos um primeiro plugin que faz log em arquivo texto:
 {% highlight csharp %}
 [Export(typeof(ILogPlugin))]
-public class LogEmArquivoPlugin : ILogPlugin{    
+public class LogEmArquivoPlugin : ILogPlugin{
 
 public void Registrar(string mensagem)    {        File.AppendAllText("C:\\logTEXTO.txt",mensagem);
     }
@@ -61,11 +61,11 @@ Notem que na **_linha 1_** estamos utilizando o atributo [Export](http://msdn.mi
 
 {% highlight csharp %}
 
-public class ClasseNegocio{    [Import]    
+public class ClasseNegocio{    [Import]
 private ILogPlugin logger { get;
     set;
     }
-    
+
 public void FazAlgumaCoisa()    {        //faz alguma coisa        logger.Registrar("fiz alguma coisa");
     }
 }

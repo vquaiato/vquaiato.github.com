@@ -7,8 +7,8 @@ keywords: [ruby-basics]
 <ul class="posts">
 <li>
 <p>
-<span class="date">22/06/2010</span> &raquo; 
+<span class="date">22/06/2010</span> &raquo;
 <a href="/blog/ironruby-basics-para-net-lovers-i">:IronRuby Basics para .Net Lovers => I</a>
 </p>
-</li> 
+</li>
 </ul>

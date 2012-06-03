@@ -1,16 +1,16 @@
---- 
+---
 layout: post
 title: Timer para Dojo em C# + WPF
 wordpress_id: 976
 wordpress_url: http://viniciusquaiato.com/blog/?p=976
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
 - title: Projetos
   slug: projetos
   autoslug: projetos
-tags: 
+tags:
 - title: .Net Architects
   slug: net-architects
   autoslug: .net-architects
@@ -36,31 +36,31 @@ Fala galera, ontem o Rodrigo Vidal me pediu um timer para utilziar nos encontros
 
 Em 10min. acabei fazendo algo bem simples, e o código não é dos melhores, mas é o que deu pra fazer em 10min.O projeto está no Codeplex [http://dojotimer.codeplex.com/](http://dojotimer.codeplex.com/) , e podemos ir evoluindo conforme as necessidades. O XAML do timer está abaixo:
 {% highlight csharp %}
-                Start            </button>            
+                Start            </button>
 {% endhighlight %}
 O código C# está aqui:
 {% highlight csharp %}
 delegate void TimerDispatcherDelegate(int elapsed);
-    
+
 public partial class DojoTimerWindow : Window{    Timer timer = null;
 int elapsed = 0;
 int tempoTotal = 300;
-    
+
 public DojoTimerWindow()    {        InitializeComponent();
     }
-    
+
 private void Button_Click(object sender, RoutedEventArgs e)    {        DefaultValues();
     timer = new Timer((obj) =>            {                CalculateTime();
     }
 , this.elapsed, 0, 1000);
     }
-    
+
 private void DefaultValues()    {        tempo.Text = string.Format("00:00");
     elapsed = 0;
     alarme.Stop();
     this.WindowState = System.Windows.WindowState.Minimized;
     }
-    
+
 private void CalculateTime()    {        this.Dispatcher.Invoke(new TimerDispatcherDelegate(tempoCorrido =>        {
 if(tempoCorrido == tempoTotal)            {                alarme.Play();
     this.WindowState = System.Windows.WindowState.Maximized;
@@ -72,7 +72,7 @@ if(tempoCorrido == tempoTotal)            {                alarme.Play();
         }
 ), this.elapsed++);
     }
-    
+
 private void PrintTime(int tempoCorrido)    {
 var timeSpan = new TimeSpan(0, 0, (tempoCorrido > 60 ? tempoCorrido / 60 : 0), tempoCorrido % 60);
     tempo.Text = string.Format("{

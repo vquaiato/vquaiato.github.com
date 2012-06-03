@@ -1,15 +1,13 @@
---- 
+---
 layout: post
-title: "Except&lt;
-    T&gt;
-    () m\xC3\xA9todo para obter a diferen\xC3\xA7a entre duas cole\xC3\xA7\xC3\xB5es"
+title: "Except<T>() método para obter a diferença entre duas coleções"
 wordpress_id: 969
 wordpress_url: http://viniciusquaiato.com/blog/?p=969
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
-tags: 
+tags:
 - title: Dicas
   slug: dicas
   autoslug: dicas

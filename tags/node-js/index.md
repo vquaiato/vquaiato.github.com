@@ -7,8 +7,8 @@ keywords: [node-js]
 <ul class="posts">
 <li>
 <p>
-<span class="date">19/07/2011</span> &raquo; 
-<a href="/blog/node-js-no-windows-azure-simples-e-facil">Node.js no Windows Azure - simples e fácil!</a>
+<span class="date">19/07/2011</span> &raquo;
+<a href="/blog/node-js-no-windows-azure-simples-e-facil">Node.js no Windows Azure - simples e fÃ¡cil!</a>
 </p>
-</li> 
+</li>
 </ul>

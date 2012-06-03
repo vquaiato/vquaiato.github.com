@@ -7,8 +7,8 @@ keywords: [ef4]
 <ul class="posts">
 <li>
 <p>
-<span class="date">22/10/2010</span> &raquo; 
+<span class="date">22/10/2010</span> &raquo;
 <a href="/blog/pocos-com-entity-framework-4-passo-a-passo-net-magazine-74">POCOs com Entity Framework 4 .NET Magazine #74</a>
 </p>
-</li> 
+</li>
 </ul>

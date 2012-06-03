@@ -7,14 +7,14 @@ keywords: [mvc-summit]
 <ul class="posts">
 <li>
 <p>
-<span class="date">04/02/2011</span> &raquo; 
-<a href="/blog/mvc-summit-inscricoes-liberadas">MVC Summit - inscrições liberadas</a>
+<span class="date">04/02/2011</span> &raquo;
+<a href="/blog/mvc-summit-inscricoes-liberadas">MVC Summit - inscriÃ§Ãµes liberadas</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">23/01/2011</span> &raquo; 
+<span class="date">23/01/2011</span> &raquo;
 <a href="/blog/mvc-summit-2011">MVC Summit 2011</a>
 </p>
-</li> 
+</li>
 </ul>

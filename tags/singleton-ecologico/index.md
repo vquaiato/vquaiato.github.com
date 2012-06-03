@@ -3,12 +3,12 @@ layout: default
 title: Posts tagged singleton-ecologico
 keywords: [singleton-ecologico]
 ---
-<h2 class="category">Singleton ecológico</h2>
+<h2 class="category">Singleton ecolÃ³gico</h2>
 <ul class="posts">
 <li>
 <p>
-<span class="date">24/10/2010</span> &raquo; 
-<a href="/blog/singletons-ecologicos">Singletons ecológicos</a>
+<span class="date">24/10/2010</span> &raquo;
+<a href="/blog/singletons-ecologicos">Singletons ecolÃ³gicos</a>
 </p>
-</li> 
+</li>
 </ul>

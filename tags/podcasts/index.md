@@ -7,8 +7,8 @@ keywords: [podcasts]
 <ul class="posts">
 <li>
 <p>
-<span class="date">24/11/2009</span> &raquo; 
+<span class="date">24/11/2009</span> &raquo;
 <a href="/blog/podcast-principios-solid-net-architects">Podcast Princípios SOLID - .NET Architects</a>
 </p>
-</li> 
+</li>
 </ul>

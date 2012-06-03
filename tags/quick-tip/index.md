@@ -7,8 +7,8 @@ keywords: [quick-tip]
 <ul class="posts">
 <li>
 <p>
-<span class="date">31/12/2010</span> &raquo; 
+<span class="date">31/12/2010</span> &raquo;
 <a href="/blog/web-application-toolkits">Web Application Toolkits</a>
 </p>
-</li> 
+</li>
 </ul>

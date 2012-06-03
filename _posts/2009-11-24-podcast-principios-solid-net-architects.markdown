@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Podcast Princ\xC3\xADpios SOLID - .NET Architects"
+title: "Podcast Princípios SOLID - .NET Architects"
 wordpress_id: 214
 wordpress_url: http://viniciusquaiato.com/blog/?p=214
 categories:

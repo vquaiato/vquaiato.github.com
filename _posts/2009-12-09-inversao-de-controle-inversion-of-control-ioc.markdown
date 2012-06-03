@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Invers\xC3\xA3o de Controle (Inversion of Control / IoC)"
+title: "Inversão de Controle (Inversion of Control / IoC)"
 wordpress_id: 260
 wordpress_url: http://viniciusquaiato.com/blog/?p=260
 categories:

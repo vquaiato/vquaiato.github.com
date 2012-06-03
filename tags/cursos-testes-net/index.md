@@ -7,8 +7,8 @@ keywords: [cursos-testes-net]
 <ul class="posts">
 <li>
 <p>
-<span class="date">28/10/2010</span> &raquo; 
+<span class="date">28/10/2010</span> &raquo;
 <a href="/blog/minicurso-testes-em-net-na-globalcode-gratuito">Minicurso Testes em .NET na Globalcode: gratuito!</a>
 </p>
-</li> 
+</li>
 </ul>

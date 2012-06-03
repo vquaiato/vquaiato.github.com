@@ -1,16 +1,16 @@
---- 
+---
 layout: post
-title: "Apresenta\xC3\xA7\xC3\xA3o sobre TDD na Envision Tecnologia"
+title: "Apresentação sobre TDD na Envision Tecnologia"
 wordpress_id: 725
 wordpress_url: http://viniciusquaiato.com/blog/?p=725
-categories: 
+categories:
 - title: TDD
   slug: tdd
   autoslug: tdd
 - title: "Boas Pr\xC3\xA1ticas"
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
-tags: 
+tags:
 - title: Tests
   slug: tests
   autoslug: tests

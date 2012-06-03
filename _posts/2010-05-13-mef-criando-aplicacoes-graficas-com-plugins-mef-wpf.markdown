@@ -1,16 +1,16 @@
---- 
+---
 layout: post
-title: "MEF - Criando aplica\xC3\xA7\xC3\xB5es gr\xC3\xA1ficas com plugins MEF + WPF"
+title: "MEF - Criando aplicações gráficas com plugins MEF + WPF"
 wordpress_id: 943
 wordpress_url: http://viniciusquaiato.com/blog/?p=943
-categories: 
+categories:
 - title: Visual Studio 2010
   slug: visual-studio-2010
   autoslug: visual-studio-2010
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
+tags:
 - title: Wpf
   slug: wpf
   autoslug: wpf
@@ -32,7 +32,7 @@ Mais [MEF](http://viniciusquaiato.com/blog/mef-managed-extensibility-framework-n
 
 O código da nossa janela segue abaixo:
 {% highlight csharp %}
-</tabitem>            </tabcontrol>        </stackpanel>    
+</tabitem>            </tabcontrol>        </stackpanel>
 {% endhighlight %}
 Não há nenhum mistério no código acima, e o resultado dele pode ser visto abaixo:[![Wpf com MEF window design](http://viniciusquaiato.com/images_posts/wpf-solution-design-300x295.jpg "Wpf com MEF window design")](http://viniciusquaiato.com/images_posts/wpf-solution-design.jpg)
 
@@ -47,7 +47,7 @@ A imagem dos UserControls criados pode ser vista abaixo, e como são bem simples
 O código para os 3 plugins está abaixo:
 {% highlight csharp %}
 [Export(typeof(UserControl))]
-public partial class UserControl1 : UserControl{    
+public partial class UserControl1 : UserControl{
 
 public UserControl1()    {        InitializeComponent();
     }
@@ -57,7 +57,7 @@ public UserControl1()    {        InitializeComponent();
 
 {% highlight csharp %}
 [Export(typeof(UserControl))]
-public partial class UserControl2 : UserControl{    
+public partial class UserControl2 : UserControl{
 
 public UserControl1()    {        InitializeComponent();
     }
@@ -67,7 +67,7 @@ public UserControl1()    {        InitializeComponent();
 
 {% highlight csharp %}
 [Export(typeof(TabItem))]
-public class TabPlugin1 : TabItem{    
+public class TabPlugin1 : TabItem{
 
 public TabPlugin1()    {         this.Header = "Tab Plugin com MEF";
     this.Content = "Content da tab carregada com MEF";
@@ -78,11 +78,11 @@ public TabPlugin1()    {         this.Header = "Tab Plugin com MEF";
 Notem na **_linha 1_** das 3 listagens acima que estamos utilizando o atributo Export, explicado [aqui neste post](http://viniciusquaiato.com/blog/mef-criando-aplicacoes-plugaveis-no-net-4/). As duas primeiras listagens criam UserControls que foram mostrados na figura acima. A terceira listagem cria um TabItem que é o tipo de objeto adicionado no TabControl, pois estamos criando uma tab em forma de plugin. Tudo muito simples.Agora para que tudo isso seja carregado na nossa aplicação, vamos compilar a solution dos plugins e copiar as DLLs para uma pasta na nossa aplicação WPF chamada plugins.Feito isso o código abaixo deve ser colocado no codebehinde da nossa janela wpf:
 {% highlight csharp %}
 
-public partial class MainWindow : Window{    [ImportMany]    
+public partial class MainWindow : Window{    [ImportMany]
 public List<usercontrol> pluginButtons;
-    [ImportMany]    
+    [ImportMany]
 public List<tabitem> tabPlugins;
-    
+
 public MainWindow()    {        InitializeComponent();
     Loaded += new RoutedEventHandler(MainWindow_Loaded);
     }

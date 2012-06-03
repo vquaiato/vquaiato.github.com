@@ -1,22 +1,13 @@
---- 
+---
 layout: post
 title: Aprenda os comandos de listagem do NuPack
 wordpress_id: 1836
 wordpress_url: http://viniciusquaiato.com/blog/?p=1836
-categories: 
+categories:
 - title: .NET
   slug: dotnet
   autoslug: .net
-tags: 
-- title: NuPack
-  slug: nupack
-  autoslug: nupack
-- title: Gerenciador Pacotes
-  slug: gerenciador-pacotes
-  autoslug: gerenciador-pacotes
-- title: Comandos NuPack
-  slug: comandos-nupack
-  autoslug: comandos-nupack
+tags:
 - title: NuGet
   slug: nuget
   autoslug: nuget
@@ -32,7 +23,7 @@ Listar os pacotes disponíveis no NuPack é algo simples, o comando é:
 {% highlight csharp %}
 List-Package
 {% endhighlight %}
-Apesar de termos este comando, podemos "brincar" com ele utilizando parâmetros ou trabalhando com sua saída. 
+Apesar de termos este comando, podemos "brincar" com ele utilizando parâmetros ou trabalhando com sua saída.
 
 ##
 

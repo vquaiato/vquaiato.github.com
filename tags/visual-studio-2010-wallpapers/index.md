@@ -7,8 +7,8 @@ keywords: [visual-studio-2010-wallpapers]
 <ul class="posts">
 <li>
 <p>
-<span class="date">02/10/2010</span> &raquo; 
+<span class="date">02/10/2010</span> &raquo;
 <a href="/blog/quicktip-visual-studio-2010-wallpapers">QuickTip: Visual Studio 2010 Wallpapers</a>
 </p>
-</li> 
+</li>
 </ul>

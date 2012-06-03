@@ -1,16 +1,16 @@
---- 
+---
 layout: post
-title: "Lazy<T> Novo tipo gen\xC3\xA9rico para lazy loading no .net 4"
+title: "Lazy<T> Novo tipo genérico para lazy loading no .net 4"
 wordpress_id: 964
 wordpress_url: http://viniciusquaiato.com/blog/?p=964
-categories: 
+categories:
 - title: Visual Studio 2010
   slug: visual-studio-2010
   autoslug: visual-studio-2010
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
+tags:
 - title: Novidades
   slug: novidades
   autoslug: novidades

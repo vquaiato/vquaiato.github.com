@@ -7,8 +7,8 @@ keywords: [touch-screen]
 <ul class="posts">
 <li>
 <p>
-<span class="date">04/04/2010</span> &raquo; 
+<span class="date">04/04/2010</span> &raquo;
 <a href="/blog/windows-phone-7-trabalhando-com-touchscreen">Windows Phone 7: trabalhando com touchscreen</a>
 </p>
-</li> 
+</li>
 </ul>

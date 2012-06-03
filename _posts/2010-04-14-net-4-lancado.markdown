@@ -1,13 +1,13 @@
---- 
+---
 layout: post
-title: ".NET 4 lan\xC3\xA7ado"
+title: ".NET 4 lançado"
 wordpress_id: 821
 wordpress_url: http://viniciusquaiato.com/blog/?p=821
-categories: 
+categories:
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
+tags:
 - title: Novidades
   slug: novidades
   autoslug: novidades

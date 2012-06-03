@@ -1,16 +1,16 @@
---- 
+---
 layout: post
-title: "Enterprise Library 5.0 - Lan\xC3\xA7ada!"
+title: "Enterprise Library 5.0 - Lançada!"
 wordpress_id: 846
 wordpress_url: http://viniciusquaiato.com/blog/?p=846
-categories: 
+categories:
 - title: Patterns
   slug: patterns
   autoslug: patterns
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
+tags:
 - title: Novidades
   slug: novidades
   autoslug: novidades

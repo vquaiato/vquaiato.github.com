@@ -7,8 +7,8 @@ keywords: [webmatrix]
 <ul class="posts">
 <li>
 <p>
-<span class="date">12/07/2010</span> &raquo; 
-<a href="/blog/webmatrix-o-que-e-por-que-usar">WebMatrix: O que é? Por que e quando usar?</a>
+<span class="date">12/07/2010</span> &raquo;
+<a href="/blog/webmatrix-o-que-e-por-que-usar">WebMatrix: O que Ã©? Por que e quando usar?</a>
 </p>
-</li> 
+</li>
 </ul>

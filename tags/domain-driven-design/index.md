@@ -7,8 +7,8 @@ keywords: [domain-driven-design]
 <ul class="posts">
 <li>
 <p>
-<span class="date">01/10/2011</span> &raquo; 
-<a href="/blog/escrever-codigo-em-ingles-ou-portugues">Escrever código em inglês ou português?</a>
+<span class="date">01/10/2011</span> &raquo;
+<a href="/blog/escrever-codigo-em-ingles-ou-portugues">Escrever cÃ³digo em inglÃªs ou portuguÃªs?</a>
 </p>
-</li> 
+</li>
 </ul>

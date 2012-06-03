@@ -7,8 +7,8 @@ keywords: [state-pattern]
 <ul class="posts">
 <li>
 <p>
-<span class="date">16/08/2010</span> &raquo; 
-<a href="/blog/evitando-ifs-e-switches-com-state-pattern-isso-e-oo">Evitando IFs e Switches com State Pattern: Isso é OO</a>
+<span class="date">16/08/2010</span> &raquo;
+<a href="/blog/evitando-ifs-e-switches-com-state-pattern-isso-e-oo">Evitando IFs e Switches com State Pattern: Isso Ã© OO</a>
 </p>
-</li> 
+</li>
 </ul>

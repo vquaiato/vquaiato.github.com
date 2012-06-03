@@ -1,13 +1,13 @@
---- 
+---
 layout: post
-title: "TDC 2010 - Eu vou, voc\xC3\xAA deveria ir!"
+title: "TDC 2010 - Eu vou, você deveria ir!"
 wordpress_id: 1483
 wordpress_url: http://viniciusquaiato.com/blog/?p=1483
-categories: 
+categories:
 - title: IronRuby
   slug: ironruby
   autoslug: ironruby
-tags: 
+tags:
 - title: noSQL
   slug: nosql
   autoslug: nosql

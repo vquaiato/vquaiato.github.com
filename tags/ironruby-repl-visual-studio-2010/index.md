@@ -7,8 +7,8 @@ keywords: [ironruby-repl-visual-studio-2010]
 <ul class="posts">
 <li>
 <p>
-<span class="date">02/11/2010</span> &raquo; 
+<span class="date">02/11/2010</span> &raquo;
 <a href="/blog/repl-ironruby-direto-no-visual-studio-2010">REPL IronRuby direto no Visual Studio 2010</a>
 </p>
-</li> 
+</li>
 </ul>

@@ -9,10 +9,11 @@ def aggregate_keywords(category,posts)
       end
     end
   end
-  return keywords.to_a.join(',')
-end 
 
-def clean(to_clean) 
+  return keywords.to_a.join(',')
+end
+
+def clean(to_clean)
       mapping = {
         'E' => [200,201,202,203],
         'e' => [232,233,234,235],
@@ -34,7 +35,7 @@ def clean(to_clean)
         'ae' => [346],
         'OE' => [188],
         'oe' => [189]
-      }   
+      }
   str = String.new(to_clean.gsub /\s+/,'-')
   str.gsub! /--+/,'-'
   str.downcase!
@@ -51,13 +52,13 @@ namespace :tags do
     rm_rf "tags"
     mkdir "tags"
   end
- 
+
   task :generate do
     puts 'Generating tags...'
     require 'rubygems'
     require 'jekyll'
     include Jekyll::Filters
- 
+
     options = Jekyll.configuration({})
     site = Jekyll::Site.new(options)
     site.read_posts('')
@@ -79,10 +80,10 @@ post_data = post.to_liquid
 html << <<-HTML
 <li>
 <p>
-<span class="date">#{post_data["date"].strftime("%d/%m/%Y")}</span> &raquo; 
+<span class="date">#{post_data["date"].strftime("%d/%m/%Y")}</span> &raquo;
 <a href="#{post_data["url"]}">#{post_data["title"]}</a>
 </p>
-</li> 
+</li>
 HTML
 end
 html << <<-HTML

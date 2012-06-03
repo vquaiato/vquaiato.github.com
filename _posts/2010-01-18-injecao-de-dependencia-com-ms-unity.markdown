@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Inje\xC3\xA7\xC3\xA3o de Depend\xC3\xAAncia com MS Unity"
+title: "Injeção de Dependência com MS Unity"
 wordpress_id: 220
 wordpress_url: http://viniciusquaiato.com/blog/?p=220
 categories:

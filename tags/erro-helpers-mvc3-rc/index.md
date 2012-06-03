@@ -7,8 +7,8 @@ keywords: [erro-helpers-mvc3-rc]
 <ul class="posts">
 <li>
 <p>
-<span class="date">11/11/2010</span> &raquo; 
+<span class="date">11/11/2010</span> &raquo;
 <a href="/blog/helpers-no-asp-net-mvc-3-rc">Helpers no ASP.NET MVC 3 RC</a>
 </p>
-</li> 
+</li>
 </ul>

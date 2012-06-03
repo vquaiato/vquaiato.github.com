@@ -7,8 +7,8 @@ keywords: [asp-net-mvc-testes]
 <ul class="posts">
 <li>
 <p>
-<span class="date">30/09/2010</span> &raquo; 
+<span class="date">30/09/2010</span> &raquo;
 <a href="/blog/asp-net-mvc-tdd">ASP.NET MVC TDD</a>
 </p>
-</li> 
+</li>
 </ul>

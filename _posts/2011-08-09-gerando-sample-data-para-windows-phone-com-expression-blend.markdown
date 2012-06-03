@@ -1,19 +1,15 @@
---- 
+---
 layout: post
 title: Gerando Sample Data para Windows Phone com Expression Blend
 wordpress_id: 3978
 wordpress_url: http://viniciusquaiato.com/blog/?p=3978
-categories: 
+keywords:
+- Windows Phone 7
+- Expression Blend
+tags:
 - title: Windows Phone 7
   slug: windows-phone-7
   autoslug: windows-phone-7
-tags: 
-- title: Windows Phone 7
-  slug: windows-phone-7
-  autoslug: windows-phone-7
-- title: Expression Blend
-  slug: expression-blend
-  autoslug: expression-blend
 ---
 Fala galera, beleza? É muito comum precisar de dados fictícios quando estamos trabalhando com aplicações para o Windows Phone. Muito disso se deve ao fato de que quando criamos controles com Bindings só poderemos conferir e visualizar os estilos destes controles quando eles possuírem dados vinculados.O Expression Blend nos permite facilmente criar dados de exemplo para utilizarmos em nossas aplicações. Estes dados funcionarão tanto em design time quanto em runtime.**_(no final do post há um pequeno vídeo mostrando o que os passos abaixo explicam)_**
 

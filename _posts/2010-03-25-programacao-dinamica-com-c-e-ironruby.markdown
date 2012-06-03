@@ -1,45 +1,37 @@
---- 
+---
 layout: post
-title: "Programa\xC3\xA7\xC3\xA3o din\xC3\xA2mica com C# e IronRuby"
+title: "Programação dinâmica com C# e IronRuby"
 wordpress_id: 731
 wordpress_url: http://viniciusquaiato.com/blog/?p=731
-categories: 
-- title: .NET 4.0
-  slug: net-4-0
-  autoslug: .net-4.0
-- title: IronRuby
-  slug: ironruby
-  autoslug: ironruby
-tags: 
-- title: Novidades
-  slug: novidades
-  autoslug: novidades
+keywords:
+- .NET 4.0
+- IronRuby
+- Novidades
+- script
+tags:
 - title: dynamic
   slug: dynamic
   autoslug: dynamic
 - title: IronRuby
   slug: ironruby
   autoslug: ironruby
-- title: script
-  slug: script
-  autoslug: script
 ---
 ![](http://viniciusquaiato.com/images_posts/ruby-299x300.png "ruby")Que tal escrever um sistema em C#, com todas suas classes, camada de persistência, interface, etc e ainda assim permitir de uma maneira fácil escrever "plugins" e scripts que alterem alguns comportamentos do sistema?Pense que existe um ponto no seu sistema que pode sofrer constantes mudanças de regra: o cálculo de um desconto, o cálculo de um imposto, uma série de ações que podem ser feitas antes ou depois de alguma operação, etc.O esforço de alteração, build e deploy é tão grande que sentimos a necessidade de tornar nosso sistema mais maleável, e pronto para estas mudanças. Queremos que o usuário do sistema possa fazer isso sem ter de contar com mais desenvolvimento, build, deploy, etc.Neste primeiro artigo criarei uma simples calculadora em C#, só que ao invés de efetuar as contas dentro do código C# ela fará chamadas para uma classe [Ruby](http://www.ruby-lang.org/pt/) que conterá os métodos para cada uma das operações.Desta forma poderemos alterar o método no arquivo Ruby e pronto, nosso sistema está com um novo comportamento, sem deploy, sem recompilações, etc.Vamos ao código:
 {% highlight csharp %}
 
-public 
-static class RubyEngineCreator{    
+public
+static class RubyEngineCreator{
 
-private 
+private
 static ScriptEngine ironRubyEngine = null;
-    
-private 
+
+private
 static ScriptEngine CreateEngine()    {
 if(ironRubyEngine == null)            ironRubyEngine = Ruby.CreateEngine();
 return ironRubyEngine;
     }
-    
-public 
+
+public
 static dynamic GetRubyObject(string rubyFileName, string rubyClassName)    {
 string binDebug = Path.GetDirectoryName(typeof(RubyEngineCreator).Assembly.Location);
 var path = Path.Combine(binDebug, string.Format("{
@@ -55,50 +47,50 @@ return CreateEngine().Operations.CreateInstance(variable);
 O que fiz acima foi encapsular a criação de uma engine [IronRuby](http://ironruby.net/), e instanciar uma classe IronRuby. Se você não entendeu nada, leia este post [aqui](http://viniciusquaiato.com/blog/ironruby-rodando-ruby-dentro-do-net/), ele explica exatamente o que foi feito.Agora criarei minha classe Calculadora:
 {% highlight csharp %}
 
-public class Calculadora{    
+public class Calculadora{
 
-private 
+private
 static string RUBY_FILE_NAME = "Calculadora";
-    
-private 
+
+private
 static string RUBY_CLASS_NAME = "Calculadora";
-    
-private 
+
+private
 static dynamic rubyObject = null;
-    
-private 
+
+private
 static dynamic RubyObject    {        get        {
 if(rubyObject == null)                rubyObject = RubyEngineCreator.GetRubyObject(RUBY_FILE_NAME, RUBY_CLASS_NAME);
 return rubyObject;
     }
     }
-    
-public 
+
+public
 static double Somar(float num1, float num2)    {
 return RubyObject.Somar(num1, num2);
     }
-    
-public 
+
+public
 static double Subtrair(float num1, float num2)    {
 return RubyObject.Subtrair(num1, num2);
     }
-    
-public 
+
+public
 static double Dividir(float num1, float num2)    {
 return RubyObject.Dividir(num1, num2);
     }
-    
-public 
+
+public
 static double Multiplicar(float num1, float num2)    {
 return RubyObject.Multiplicar(num1, num2);
     }
-    
-public 
+
+public
 static double Fatorial(float num1)    {
 return RubyObject.Fatorial(num1);
     }
-    
-public 
+
+public
 static double Potencia(float num1, float num2)    {
 return RubyObject.Potencia(num1, num2);
     }

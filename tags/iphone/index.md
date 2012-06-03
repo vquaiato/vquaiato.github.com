@@ -7,8 +7,8 @@ keywords: [iphone]
 <ul class="posts">
 <li>
 <p>
-<span class="date">09/05/2011</span> &raquo; 
+<span class="date">09/05/2011</span> &raquo;
 <a href="/blog/windows-azure-toolkit-para-ios">Windows Azure Toolkit para IOS</a>
 </p>
-</li> 
+</li>
 </ul>

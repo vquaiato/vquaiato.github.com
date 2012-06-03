@@ -1,13 +1,13 @@
---- 
+---
 layout: post
-title: "IronRuby 1.0 lan\xC3\xA7ado!"
+title: "IronRuby 1.0 lançado!"
 wordpress_id: 826
 wordpress_url: http://viniciusquaiato.com/blog/?p=826
-categories: 
+categories:
 - title: IronRuby
   slug: ironruby
   autoslug: ironruby
-tags: 
+tags:
 - title: Novidades
   slug: novidades
   autoslug: novidades

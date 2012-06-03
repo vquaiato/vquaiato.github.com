@@ -7,8 +7,8 @@ keywords: [dialogs]
 <ul class="posts">
 <li>
 <p>
-<span class="date">11/08/2010</span> &raquo; 
-<a href="/blog/ironruby-wpf-abrindo-janelas-de-dialogo">IronRuby + WPF: Abrindo janelas de diálogo</a>
+<span class="date">11/08/2010</span> &raquo;
+<a href="/blog/ironruby-wpf-abrindo-janelas-de-dialogo">IronRuby + WPF: Abrindo janelas de diÃ¡logo</a>
 </p>
-</li> 
+</li>
 </ul>

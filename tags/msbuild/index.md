@@ -7,8 +7,8 @@ keywords: [msbuild]
 <ul class="posts">
 <li>
 <p>
-<span class="date">29/01/2011</span> &raquo; 
+<span class="date">29/01/2011</span> &raquo;
 <a href="/blog/msbuild-nuget">MSBuild + Nuget</a>
 </p>
-</li> 
+</li>
 </ul>

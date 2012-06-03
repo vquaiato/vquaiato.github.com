@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Inje\xC3\xA7\xC3\xA3o de Depend\xC3\xAAncia no C#"
+title: "Injeção de Dependência no C#"
 wordpress_id: 289
 wordpress_url: http://viniciusquaiato.com/blog/?p=289
 categories:

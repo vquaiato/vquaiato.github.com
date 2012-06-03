@@ -7,8 +7,8 @@ keywords: [curso-testes-net]
 <ul class="posts">
 <li>
 <p>
-<span class="date">05/11/2010</span> &raquo; 
+<span class="date">05/11/2010</span> &raquo;
 <a href="/blog/slides-e-demos-minicursos-testes-em-net">Slides e demos minicursos Testes em .NET</a>
 </p>
-</li> 
+</li>
 </ul>

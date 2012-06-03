@@ -1,15 +1,13 @@
---- 
+---
 layout: post
-title: Zip&lt;
-    TFirst, TSecond, TResult&gt;
-    novo extension do LINQ
+title: "Zip<TFirst, TSecond, TResult> novo extension do LINQ"
 wordpress_id: 795
 wordpress_url: http://viniciusquaiato.com/blog/?p=795
-categories: 
+categories:
 - title: .NET 4.0
   slug: net-4-0
   autoslug: .net-4.0
-tags: 
+tags:
 - title: Novidades
   slug: novidades
   autoslug: novidades
@@ -27,7 +25,7 @@ O Linq no .NET 4 traz uma nova extension: Zip. Ao contrário do que possa parece
 
 
 
-public 
+public
 static IEnumerable<tresult> Zip<TFirst, TSecond, TResult>(this IEnumerable<tfirst> first,IEnumerable<tsecond> second,Func<TFirst, TSecond, TResult> resultSelector)
 
 {% endhighlight %}
@@ -41,7 +39,7 @@ string[] times = { "Santos", "Santo André", "Grêmio Prudente", "São Paulo", "
 ;
     int[] classifica = { 1, 2, 3, 4 }
 ;
-    
+
 {% endhighlight %}
 
 Queremos que os 4 primeiros times se classifiquem, e queremos obter a posição de cada um deles. Com o Zip podemos fazer algo assim:
@@ -53,7 +51,7 @@ string[] times = { "Santos", "Santo André", "Grêmio Prudente", "São Paulo", "
     int[] classifica = { 1, 2, 3, 4 }
 ;
 var timesClassificados = times.Zip(classifica, (t, c) => Tuple.Create(t, c));
-    
+
 {% endhighlight %}
 
 
@@ -69,7 +67,7 @@ var timesClassificados = times.Zip(classifica, (t, c) => string.Format("{
  - {
 }
 ", c, t));
-    
+
 {% endhighlight %}
 
 E teríamos o mesmo resultado.Ainda poderia usar Linq ao invés de extensions:
@@ -82,7 +80,7 @@ string[] times = { "Santos", "Santo André", "Grêmio Prudente", "São Paulo", "
 ;
 var timesClassificados = from item in times.Zip(classifica, (t, c) => new { Time = t, Posicao = c }
 )                         where item.Posicao <= 4                         select item;
-    
+
 {% endhighlight %}
 
 No exemplo acima, criamos 6 times e 6 posições. Chamamos a extension Zip na _**linha 4**_ e então criamos um tipo anônimo. Na _**linha 5**_ dizemos que queremos apenas os 4 primeiros times. E então temos o mesmo resultado anterior.Dá pra brincar bastante com o Zip. Não é nada sensacional, mas pra quem precisa fazer uns merges meio malucos com coleções, pode tirar proveito desta novidade.Mais informações podem ser obtidas [aqui no MSDN](http://msdn.microsoft.com/en-us/library/dd267698(VS.100).aspx), [aqui neste blog](http://bartdesmet.net/blogs/bart/archive/2008/11/03/c-4-0-feature-focus-part-3-intermezzo-linq-s-new-zip-operator.aspx) e [aqui neste outro blog](http://weblogs.thinktecture.com/cnagel/2010/02/linq-with-net-4-zip.html).É isso, abraços e se divirtam!

@@ -1,28 +1,18 @@
---- 
+---
 layout: post
 title: ":IronRuby Basics para .Net Lovers => III"
 wordpress_id: 1151
 wordpress_url: http://viniciusquaiato.com/blog/?p=1151
-categories: 
-- title: .NET 4.0
-  slug: net-4-0
-  autoslug: .net-4.0
+keywords:
+- .NET 4.0
+- IronRuby
+- Proc
+- delegate
+- block
+tags:
 - title: IronRuby
   slug: ironruby
   autoslug: ironruby
-tags: 
-- title: IronRuby
-  slug: ironruby
-  autoslug: ironruby
-- title: Proc
-  slug: proc
-  autoslug: proc
-- title: delegate
-  slug: delegate
-  autoslug: delegate
-- title: blocks
-  slug: blocks
-  autoslug: blocks
 ---
 
 
@@ -44,7 +34,7 @@ return "Lower -> " + s.ToLower();
 ;
     Console.WriteLine(impressorMinusculo("VINICIUS"));
     Console.WriteLine(impressorMaiusculo("vinicius"));
-    
+
 {% endhighlight %}
 Poderíamos ainda ter um método que recebe um delegate:
 {% highlight csharp %}
@@ -57,7 +47,7 @@ return reversed;
     }
 , "Vinicius");
     MetodoQueImprimeNoConsole(s => s.ToUpper(), "vinicius");
-    
+
 {% endhighlight %}
 Agora as coisas começam a ficar um pouco mais interessantes. O Ruby trabalha muito com [blocks, Procs e lambdas](http://www.robertsosinski.com/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/). Os conceitos são bastante semelhantes e a diferença está nos detalhes.
 

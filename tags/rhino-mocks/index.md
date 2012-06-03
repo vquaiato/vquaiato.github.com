@@ -7,8 +7,8 @@ keywords: [rhino-mocks]
 <ul class="posts">
 <li>
 <p>
-<span class="date">22/07/2010</span> &raquo; 
+<span class="date">22/07/2010</span> &raquo;
 <a href="/blog/tdd-mock-objects-com-rhino-mocks">TDD: mock objects com Rhino Mocks</a>
 </p>
-</li> 
+</li>
 </ul>

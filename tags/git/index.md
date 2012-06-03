@@ -7,8 +7,8 @@ keywords: [git]
 <ul class="posts">
 <li>
 <p>
-<span class="date">30/11/2010</span> &raquo; 
+<span class="date">30/11/2010</span> &raquo;
 <a href="/blog/usando-git-no-windows">Usando Git no Windows</a>
 </p>
-</li> 
+</li>
 </ul>

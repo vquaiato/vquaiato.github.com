@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Coding Dojo .NET Architects - 30/01/2010 - S\xC3\xA3o Paulo"
+title: "Coding Dojo .NET Architects - 30/01/2010 - São Paulo"
 wordpress_id: 480
 wordpress_url: http://viniciusquaiato.com/blog/?p=480
 categories:

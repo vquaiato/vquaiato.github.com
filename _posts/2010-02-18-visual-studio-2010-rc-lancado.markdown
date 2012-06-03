@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Visual Studio 2010 RC lan\xC3\xA7ado"
+title: "Visual Studio 2010 RC lançado"
 wordpress_id: 519
 wordpress_url: http://viniciusquaiato.com/blog/?p=519
 categories:

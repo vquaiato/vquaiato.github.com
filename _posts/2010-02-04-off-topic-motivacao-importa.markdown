@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Off-Topic] Motiva\xC3\xA7\xC3\xA3o importa"
+title: "[Off-Topic] Motivação importa"
 wordpress_id: 496
 wordpress_url: http://viniciusquaiato.com/blog/?p=496
 categories:

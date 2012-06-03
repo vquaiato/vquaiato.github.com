@@ -7,14 +7,14 @@ keywords: [singletons]
 <ul class="posts">
 <li>
 <p>
-<span class="date">24/10/2010</span> &raquo; 
-<a href="/blog/singletons-ecologicos">Singletons ecológicos</a>
+<span class="date">24/10/2010</span> &raquo;
+<a href="/blog/singletons-ecologicos">Singletons ecolÃ³gicos</a>
 </p>
-</li> 
+</li>
 <li>
 <p>
-<span class="date">22/10/2010</span> &raquo; 
-<a href="/blog/singletons-sao-um-problema-veja">Singletons são um problema, veja</a>
+<span class="date">22/10/2010</span> &raquo;
+<a href="/blog/singletons-sao-um-problema-veja">Singletons sÃ£o um problema, veja</a>
 </p>
-</li> 
+</li>
 </ul>

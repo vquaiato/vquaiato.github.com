@@ -7,8 +7,8 @@ keywords: [arquiteto-de-software]
 <ul class="posts">
 <li>
 <p>
-<span class="date">22/09/2011</span> &raquo; 
+<span class="date">22/09/2011</span> &raquo;
 <a href="/blog/arquitetura-de-software-e-o-arquiteto">Arquitetura de Software e O Arquiteto</a>
 </p>
-</li> 
+</li>
 </ul>

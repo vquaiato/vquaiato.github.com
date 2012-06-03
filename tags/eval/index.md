@@ -7,8 +7,8 @@ keywords: [eval]
 <ul class="posts">
 <li>
 <p>
-<span class="date">17/07/2010</span> &raquo; 
+<span class="date">17/07/2010</span> &raquo;
 <a href="/blog/eval-em-c-com-ironruby">Eval em C# com IronRuby</a>
 </p>
-</li> 
+</li>
 </ul>

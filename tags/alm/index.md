@@ -7,8 +7,8 @@ keywords: [alm]
 <ul class="posts">
 <li>
 <p>
-<span class="date">23/11/2010</span> &raquo; 
-<a href="/blog/alm-summit-brasil-voce-nao-pode-perder">ALM Summit Brasil: você vai perder?</a>
+<span class="date">23/11/2010</span> &raquo;
+<a href="/blog/alm-summit-brasil-voce-nao-pode-perder">ALM Summit Brasil: vocÃª vai perder?</a>
 </p>
-</li> 
+</li>
 </ul>

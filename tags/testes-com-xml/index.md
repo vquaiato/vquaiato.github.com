@@ -7,8 +7,8 @@ keywords: [testes-com-xml]
 <ul class="posts">
 <li>
 <p>
-<span class="date">05/10/2010</span> &raquo; 
-<a href="/blog/quick-tip-testando-metodos-que-geram-xml">QuickTip: Testando métodos que geram XML</a>
+<span class="date">05/10/2010</span> &raquo;
+<a href="/blog/quick-tip-testando-metodos-que-geram-xml">QuickTip: Testando mÃ©todos que geram XML</a>
 </p>
-</li> 
+</li>
 </ul>

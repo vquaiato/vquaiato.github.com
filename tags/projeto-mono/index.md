@@ -7,8 +7,8 @@ keywords: [projeto-mono]
 <ul class="posts">
 <li>
 <p>
-<span class="date">09/10/2010</span> &raquo; 
+<span class="date">09/10/2010</span> &raquo;
 <a href="/blog/c-repl-com-mono-no-windows">C# REPL com Mono no Windows</a>
 </p>
-</li> 
+</li>
 </ul>

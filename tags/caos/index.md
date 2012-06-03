@@ -7,8 +7,8 @@ keywords: [caos]
 <ul class="posts">
 <li>
 <p>
-<span class="date">19/07/2010</span> &raquo; 
+<span class="date">19/07/2010</span> &raquo;
 <a href="/blog/efeito-borboleta-e-o-software">Efeito Borboleta e o Software</a>
 </p>
-</li> 
+</li>
 </ul>

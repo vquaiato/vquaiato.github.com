@@ -7,8 +7,8 @@ keywords: [curso-mvc-3]
 <ul class="posts">
 <li>
 <p>
-<span class="date">12/11/2010</span> &raquo; 
+<span class="date">12/11/2010</span> &raquo;
 <a href="/blog/curso-asp-net-mvc-3-slides-e-demos">Curso ASP.NET MVC 3 slides e demos</a>
 </p>
-</li> 
+</li>
 </ul>

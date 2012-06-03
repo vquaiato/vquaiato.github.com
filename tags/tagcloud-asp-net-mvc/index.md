@@ -7,8 +7,8 @@ keywords: [tagcloud-asp-net-mvc]
 <ul class="posts">
 <li>
 <p>
-<span class="date">29/08/2010</span> &raquo; 
+<span class="date">29/08/2010</span> &raquo;
 <a href="/blog/tagcloud-em-asp-net-mvc">TagCloud em ASP.NET MVC </a>
 </p>
-</li> 
+</li>
 </ul>

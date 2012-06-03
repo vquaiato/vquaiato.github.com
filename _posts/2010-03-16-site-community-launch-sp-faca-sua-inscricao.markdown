@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Site Community Launch SP - Fa\xC3\xA7a sua inscri\xC3\xA7\xC3\xA3o!"
+title: "Site Community Launch SP - Faça sua inscrição!"
 wordpress_id: 693
 wordpress_url: http://viniciusquaiato.com/blog/?p=693
 categories:

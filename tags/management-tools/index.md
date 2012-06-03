@@ -7,8 +7,8 @@ keywords: [management-tools]
 <ul class="posts">
 <li>
 <p>
-<span class="date">15/07/2011</span> &raquo; 
+<span class="date">15/07/2011</span> &raquo;
 <a href="/blog/windows-azure-management-tools-windows-azure-mmc">Windows Azure Management Tools - Windows Azure MMC</a>
 </p>
-</li> 
+</li>
 </ul>

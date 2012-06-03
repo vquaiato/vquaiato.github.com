@@ -7,8 +7,8 @@ keywords: [model]
 <ul class="posts">
 <li>
 <p>
-<span class="date">29/10/2010</span> &raquo; 
+<span class="date">29/10/2010</span> &raquo;
 <a href="/blog/asp-net-mvc-3-dynamic-view-models-e-diretiva-model">ASP.NET MVC 3: dynamic view models e diretiva model</a>
 </p>
-</li> 
+</li>
 </ul>
