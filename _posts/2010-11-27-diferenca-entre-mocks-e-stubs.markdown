@@ -1,23 +1,23 @@
---- 
+---
 layout: post
 title: "Diferen\xC3\xA7a entre Mocks e Stubs"
 wordpress_id: 2042
 wordpress_url: http://viniciusquaiato.com/blog/?p=2042
-categories: 
+categories:
 - title: TDD
   slug: tdd
   autoslug: tdd
 - title: "Boas Pr\xC3\xA1ticas"
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
-tags: 
+tags:
 - title: TDD
   slug: tdd
   autoslug: tdd
 - title: DNAD
   slug: dnad
   autoslug: dnad
-  - title: "Boas Pr\xC3\xA1ticas"
+- title: "Boas Pr\xC3\xA1ticas"
   slug: boas-praticas
   autoslug: "boas-pr\xC3\xA1ticas"
 ---

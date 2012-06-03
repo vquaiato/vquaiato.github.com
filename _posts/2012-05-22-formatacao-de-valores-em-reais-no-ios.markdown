@@ -12,6 +12,7 @@ tags:
   slug: iOS
   autoslug: iOS
 ---
+
 Já que começamos a criar uma app que lida com valores monetários precisamos garantir que a nossa aplicação exiba corretamente os dados.
 *[(confira todos os posts sobre iOS)][tag-ios]*
 

@@ -17,7 +17,7 @@ tags:
 - title: Palestras
   slug: palestras
   autoslug: palestras
-  - title: .Net Architects
+- title: .Net Architects
   slug: net-architects
   autoslug: .net-architects
 ---
