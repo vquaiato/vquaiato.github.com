@@ -52,6 +52,10 @@ Este método diz que o UITextField deve responder ao click(tap) do botão *concl
 
 Esta mensagem diz para o textField que ele não é mais o firstResponder daquela janela, ou seja, ele não é mais quem está respondendo aos eventos (taps, touches, etc) que ocorrerem. E assim é que o teclado irá "sumir", pois o UITextField já não é mais esse responder.
 
+Como último passo vamos informar que o delegate do nosso UITextField é o nosso view controller. Você pode fazer isso direto na interface:
+
+<img src="/images_posts/vinculando_delegate_uitextfield_com_file_owner.png" class="post_img" />
+
 Feito isso quando rodarmos nossa aplicação e pressionarmos o botão "concluído" o teclado será fechado.
 
 ##UITapGestureRecognizer
