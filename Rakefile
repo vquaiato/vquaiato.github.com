@@ -103,9 +103,10 @@ HTML
 end
 
 desc "publica o site, gerando as categorias, commitando e dando push no github"
-task :publish => ["tags:generate"] do
+task :publish, [:arg1] => ["tags:generate"] do |t, args|
   puts "publicando"
-  message = ARGV.last
+  message = args[:arg1]
+
   %x{git add -A}
   %x{git commit -am "#{message}"}
   %x{git pp}
