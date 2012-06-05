@@ -37,11 +37,9 @@ $(function () {
     e.preventDefault();
 
     $.post($(this).attr("action"), $(this).serialize(), function (retorno) {
-      if(retorno.Ok) {
-        alert("Ok!");
-      }
+        alert(retorno.Ok);
     }, "json");
-    });
+  });
 });
 {% endhighlight %}
 
