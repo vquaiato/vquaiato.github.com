@@ -19,7 +19,7 @@ Esta semana tivesse a necessidade de realizar o submit em um form de maneira ass
 
 Então sem enrolar, vamos ao form:
 {% highlight html %}
-@using (Html.BeginForm("cadastrar", "home", FormMethod.Post, new { id = "cadastro" })) {
+@using (Html.BeginForm("cadastrar", "home", FormMethod.Post, new { id = "form_cadastro" })) {
   <label for="Nome" style="display:block;">Nome</label>
   @Html.TextBox("Nome")<br />
   <label for="Email" style="display:block;">Email</label>
@@ -33,7 +33,7 @@ Eu preciso que este formulário seja postado para o servidor de forma assíncron
 O código JavaScript ficou mais ou menos assim:
 {% highlight html %}
 $(function () {
-  $('#cadastrar').submit(function (e) {
+  $('#form_cadastro').submit(function (e) {
     e.preventDefault();
 
     $.post($(this).attr("action"), $(this).serialize(), function (retorno) {
