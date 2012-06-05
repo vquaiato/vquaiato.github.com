@@ -31,7 +31,7 @@ Então sem enrolar, vamos ao form:
 Eu preciso que este formulário seja postado para o servidor de forma assíncrona, em bizarrices no JavaScript (no projeto em que fiz isso este era um arquivo .html e não .cshtml). Para fazermos isso vamos utilizar jquery para submeter o formulário e serializar os dados a serem enviados, sem que precisemos ficar configurando tudo como parâmetros.
 
 O código JavaScript ficou mais ou menos assim:
-{% highlight html %}
+{% highlight js linenos %}
 $(function () {
   $('#form_cadastro').submit(function (e) {
     e.preventDefault();
@@ -49,7 +49,7 @@ A mágica é que atachamos um evento submit ao formulário, **_linha 2_**. Na **
 Na **_linha 5_** tudo o que fazemos é uma requisição [post](http://api.jquery.com/jQuery.post/). Vejam como não utilizamos "magic strings" para os parâmetros da chamada post. Ao invés disso utilizamos os próprios valores já definidos no form: sua action, e serializamos os campos como parâmetros da requisição.
 
 Pronto! Simples assim. Na action no servidor eu optei por trabalhar com o request mesmo:
-{% highlight csharp %}
+{% highlight csharp linenos %}
 public ActionResult Cadastrar(){
   var ok = true;
   if(string.IsNullOrWhiteSpace(Request.Form["Nome"]))
