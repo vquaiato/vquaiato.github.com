@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Posts tagged windows-azure
-keywords: [windows-azure]
+keywords: [Windows Azure,domains,domínios,windows-azure]
 ---
 <h2 class="category">Windows Azure</h2>
 <ul class="posts">
