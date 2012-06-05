@@ -19,12 +19,6 @@ keywords: [razor]
 </li>
 <li>
 <p>
-<span class="date">16/11/2010</span> &raquo;
-<a href="/blog/html-renderaction-erro-no-razor">Html.RenderAction erro no Razor</a>
-</p>
-</li>
-<li>
-<p>
 <span class="date">11/11/2010</span> &raquo;
 <a href="/blog/helpers-no-asp-net-mvc-3-rc">Helpers no ASP.NET MVC 3 RC</a>
 </p>

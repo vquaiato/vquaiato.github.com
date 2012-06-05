@@ -48,13 +48,16 @@ def clean(to_clean)
 end
 
 namespace :tags do
+  desc "remove todas as paginas de tags existentes"
   task :clean do
+    puts "removendo tags.."
     rm_rf "tags"
     mkdir "tags"
   end
 
-  task :generate do
-    puts 'Generating tags...'
+  desc "gera as paginas de tags"
+  task :generate => [:clean] do
+    puts 'gerando tags...'
     require 'rubygems'
     require 'jekyll'
     include Jekyll::Filters
@@ -89,7 +92,7 @@ end
 html << <<-HTML
 </ul>
 HTML
-      p category
+      # p category
       dir_name = "tags/#{clean(category)}"
       Dir::mkdir dir_name unless FileTest::directory?(dir_name)
       File.open("#{dir_name}/index.md", 'w+') do |file|
@@ -98,3 +101,15 @@ HTML
     end
   end
 end
+
+desc "publica o site, gerando as categorias, commitando e dando push no github"
+task :publish => ["tags:generate"] do
+  puts "publicando"
+
+  %x{git add -A}
+  %x{git commit -am "foo"}
+  %x{git pp}
+
+  puts "publicado"
+end
+
