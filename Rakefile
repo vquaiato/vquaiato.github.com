@@ -105,9 +105,9 @@ end
 desc "publica o site, gerando as categorias, commitando e dando push no github"
 task :publish => ["tags:generate"] do
   puts "publicando"
-
+  message = ARGV.last
   %x{git add -A}
-  %x{git commit -am "foo"}
+  %x{git commit -am "#{message}"}
   %x{git pp}
 
   puts "publicado"
