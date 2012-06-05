@@ -206,7 +206,7 @@ keywords: [asp-net-mvc]
 <li>
 <p>
 <span class="date">14/12/2010</span> &raquo;
-<a href="/blog/asp-net-mvc-jquery-submit-form-assincrono">ASP.NET MVC + Jquery: submit form assÃ­ncrono</a>
+<a href="/blog/asp-net-mvc-jquery-submit-form-assincrono">ASP.NET MVC + Jquery: submit form assíncrono</a>
 </p>
 </li>
 <li>
