@@ -62,19 +62,13 @@ keywords: [razor]
 <li>
 <p>
 <span class="date">18/10/2010</span> &raquo;
-<a href="/blog/asp-net-mvc-3-razor-syntax-highlighter">ASP.NET MVC 3: Razor Syntax Highlighter</a>
-</p>
-</li>
-<li>
-<p>
-<span class="date">18/10/2010</span> &raquo;
 <a href="/blog/asp-net-mvc-3-razor-templates-parte-ii">ASP.NET MVC 3 â Razor templates parte II</a>
 </p>
 </li>
 <li>
 <p>
-<span class="date">15/10/2010</span> &raquo;
-<a href="/blog/asp-net-mvc-3-razor-templates">ASP.NET MVC 3 â Razor templates</a>
+<span class="date">18/10/2010</span> &raquo;
+<a href="/blog/asp-net-mvc-3-razor-syntax-highlighter">ASP.NET MVC 3: Razor Syntax Highlighter</a>
 </p>
 </li>
 <li>

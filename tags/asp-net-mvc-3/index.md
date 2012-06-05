@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Posts tagged asp-net-mvc-3
-keywords: [asp-net-mvc-3]
+keywords: [ASP.NET MVC,Razor,Templates,asp-net-mvc-3]
 ---
 <h2 class="category">ASP.NET MVC 3</h2>
 <ul class="posts">
@@ -116,7 +116,7 @@ keywords: [asp-net-mvc-3]
 <li>
 <p>
 <span class="date">15/10/2010</span> &raquo;
-<a href="/blog/asp-net-mvc-3-razor-templates">ASP.NET MVC 3 â Razor templates</a>
+<a href="/blog/asp-net-mvc-3-razor-templates">ASP.NET MVC 3 - Razor templates</a>
 </p>
 </li>
 <li>
