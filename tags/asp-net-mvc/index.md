@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Posts tagged asp-net-mvc
-keywords: [ASP.NET MVC 3,DependencyResolver,asp-net-mvc]
+keywords: [ASP.NET MVC,ASP.NET MVC 3,Boas Pr\xC3\xA1ticas,DependencyResolver,Patterns,ViewModel,asp-net-mvc]
 ---
 <h2 class="category">ASP.NET MVC</h2>
 <ul class="posts">
