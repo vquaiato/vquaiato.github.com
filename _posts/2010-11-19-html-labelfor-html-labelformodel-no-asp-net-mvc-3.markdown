@@ -3,7 +3,7 @@ layout: post
 title: Html.LabelFor e Html.LabelForModel no ASP.NET MVC 3
 wordpress_id: 2161
 wordpress_url: http://viniciusquaiato.com/blog/?p=2161
-categories:
+keywords:
 - ASP.NET MVC
 - ASP.NET MVC 3
 - MVC 3

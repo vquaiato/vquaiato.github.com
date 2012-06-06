@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Posts tagged entity-framework
-keywords: [entity-framework]
+keywords: [.NET 4.0,Entity Framework,Entity Framework 4,ORM,Visual Studio 2010,eager loading,early loading,ef 4.0,entity-framework]
 ---
 <h2 class="category">Entity Framework</h2>
 <ul class="posts">

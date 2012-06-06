@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Eager Loading no Entity Framework 4.0 "
-categories:
+keywords:
 - Visual Studio 2010
 - .NET 4.0
 - Entity Framework
