@@ -13,12 +13,6 @@ keywords: [ef-4-0]
 </li>
 <li>
 <p>
-<span class="date">27/04/2010</span> &raquo;
-<a href="/blog/eager-loading-no-entity-framework-4-0">Eager Loading no Entity Framework 4.0 </a>
-</p>
-</li>
-<li>
-<p>
 <span class="date">26/04/2010</span> &raquo;
 <a href="/blog/lazy-loading-no-entity-framework-4-0">Lazy Loading no Entity Framework 4.0</a>
 </p>

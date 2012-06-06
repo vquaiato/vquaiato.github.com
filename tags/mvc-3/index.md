@@ -7,12 +7,6 @@ keywords: [mvc-3]
 <ul class="posts">
 <li>
 <p>
-<span class="date">19/11/2010</span> &raquo;
-<a href="/blog/html-labelfor-html-labelformodel-no-asp-net-mvc-3">Html.LabelFor e Html.LabelForModel no ASP.NET MVC 3</a>
-</p>
-</li>
-<li>
-<p>
 <span class="date">12/11/2010</span> &raquo;
 <a href="/blog/curso-asp-net-mvc-3-slides-e-demos">Curso ASP.NET MVC 3 slides e demos</a>
 </p>
