@@ -1,10 +1,16 @@
 ---
 layout: default
 title: Posts tagged iOS
-keywords: [AppDelegate,Classes,Cocoa Touch,Collection operators,IBAction,IBOutlet,Keyboard,Model,NSDecimalNumber,NSLocale,NSMutableArray,NSNumberFormatter,Single View Application,UILabel,UITapGestureRecognizer,UITextField,UITextFieldDelegateProtocol,UIViewController,ViewController,XCode,iOS,iPhone,locales,objective-c,reais,resignFirstResponder,touchesBegan]
+keywords: [AppDelegate,Classes,Cocoa Touch,Collection operators,IBAction,IBOutlet,Keyboard,Model,NSDecimalNumber,NSLocale,NSMutableArray,NSNumberFormatter,Single View Application,UILabel,UITableView,UITableViewDataSource,UITableViewDelegate,UITapGestureRecognizer,UITextField,UITextFieldDelegateProtocol,UIViewController,ViewController,XCode,iOS,iPhone,locales,objective-c,presentViewController,reais,resignFirstResponder,touchesBegan]
 ---
 <h2 class="category">iOS</h2>
 <ul class="posts">
+<li>
+<p>
+<span class="date">07/06/2012</span> &raquo;
+<a href="/blog/usando-uitableview-em-apps-ios">Usando UITableView em apps iOS</a>
+</p>
+</li>
 <li>
 <p>
 <span class="date">02/06/2012</span> &raquo;
