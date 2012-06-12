@@ -69,6 +69,7 @@ namespace :tags do
       category = kategory["slug"]
       ordered_posts = posts.sort_by{|p| p.to_liquid["date"]}.reverse
       keywords = aggregate_keywords(category, ordered_posts)
+
       html= <<-HTML
 ---
 layout: default
@@ -92,7 +93,6 @@ end
 html << <<-HTML
 </ul>
 HTML
-      # p category
       dir_name = "tags/#{clean(category)}"
       Dir::mkdir dir_name unless FileTest::directory?(dir_name)
       File.open("#{dir_name}/index.md", 'w+') do |file|

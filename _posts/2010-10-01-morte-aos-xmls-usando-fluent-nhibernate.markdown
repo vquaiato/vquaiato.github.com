@@ -1,10 +1,7 @@
 ---
 layout: post
 title: "Morte aos XMLs: usando Fluent NHibernate"
-wordpress_id: 1607
-wordpress_url: http://viniciusquaiato.com/blog/?p=1607
-categories:
-- .NET
+keywords:
 - Fluent NHibernate
 - XML
 - Mapeamento
@@ -12,6 +9,7 @@ categories:
 - ORM
 tags:
 - title: NHibernate
+  slug: nhibernate
 ---
 [<img src="http://viniciusquaiato.com/images_posts/lago_com_cachoeira_25_facil-150x150.jpg" style="float:left; margin-right: 10px; margin-bottom:10px;" />](http://viniciusquaiato.com/images_posts/lago_com_cachoeira_25_facil.jpg)
 
