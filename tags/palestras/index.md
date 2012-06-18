@@ -68,7 +68,7 @@ keywords: [palestras]
 <li>
 <p>
 <span class="date">09/05/2011</span> &raquo;
-<a href="/blog/onde-esta-o-quaiato">Onde estÃ¡ o Quaiato?</a>
+<a href="/blog/onde-esta-o-quaiato">Onde está o Quaiato?</a>
 </p>
 </li>
 <li>

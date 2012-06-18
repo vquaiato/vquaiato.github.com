@@ -19,12 +19,6 @@ keywords: [eventos]
 </li>
 <li>
 <p>
-<span class="date">09/05/2011</span> &raquo;
-<a href="/blog/onde-esta-o-quaiato">Onde estÃ¡ o Quaiato?</a>
-</p>
-</li>
-<li>
-<p>
 <span class="date">12/04/2011</span> &raquo;
 <a href="/blog/dnad11-net-architects-days-2011">#DNAD11 - .NET Architects Days 2011</a>
 </p>
