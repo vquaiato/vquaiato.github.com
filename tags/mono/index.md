@@ -1,10 +1,16 @@
 ---
 layout: default
 title: Posts tagged mono
-keywords: [mono]
+keywords: [Mono,Monotouch,Nuget,mono]
 ---
 <h2 class="category">Mono</h2>
 <ul class="posts">
+<li>
+<p>
+<span class="date">20/07/2012</span> &raquo;
+<a href="/blog/usando-nuget-com-mono">Rodando Nuget no Mono</a>
+</p>
+</li>
 <li>
 <p>
 <span class="date">12/06/2011</span> &raquo;
