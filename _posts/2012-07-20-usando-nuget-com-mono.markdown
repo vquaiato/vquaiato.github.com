@@ -74,7 +74,7 @@ Eu assumo que você já possui uma versão do Mono(e do Git) instalada. Então v
 {% highlight bash %}
 git clone git://github.com/mono/mono.git
 cd mono
-./autogen.sh --prefix=/minha-versao-mono
+./autogen.sh --prefix=/local-para-instalar-sua-versao-do-mono
 make
 {% endhighlight %}
 
