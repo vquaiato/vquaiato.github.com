@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Posts tagged boas-praticas
-keywords: [boas-praticas]
+keywords: [.NET,Boas Prá1ticas,Injeção de Dependência,Inversão de Controle,Patterns,boas-praticas]
 ---
 <h2 class="category">Boas PrÃ¡ticas</h2>
 <ul class="posts">

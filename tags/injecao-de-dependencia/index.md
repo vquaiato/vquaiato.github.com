@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Posts tagged injecao-de-dependencia
-keywords: [ASP.NET MVC 3,DependencyResolver,injecao-de-dependencia]
+keywords: [.NET,ASP.NET MVC 3,Boas Prá1ticas,DependencyResolver,Injeção de Dependência,Inversão de Controle,Patterns,injecao-de-dependencia]
 ---
 <h2 class="category">InjeÃ§Ã£o de DependÃªncia</h2>
 <ul class="posts">

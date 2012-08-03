@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Posts tagged inversao-de-controle
-keywords: [inversao-de-controle]
+keywords: [.NET,Boas Prá1ticas,Injeção de Dependência,Inversão de Controle,Patterns,inversao-de-controle]
 ---
 <h2 class="category">InversÃ£o de Controle</h2>
 <ul class="posts">

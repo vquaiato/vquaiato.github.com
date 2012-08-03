@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Posts tagged nuget
-keywords: [Mono,Monotouch,Nuget,nuget]
+keywords: [Mono,Monodevelop,Nuget,nuget]
 ---
 <h2 class="category">Nuget</h2>
 <ul class="posts">

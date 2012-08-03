@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Posts tagged ioc
-keywords: [ioc]
+keywords: [.NET,Boas Prá1ticas,Injeção de Dependência,Inversão de Controle,Patterns,ioc]
 ---
 <h2 class="category">IoC</h2>
 <ul class="posts">
