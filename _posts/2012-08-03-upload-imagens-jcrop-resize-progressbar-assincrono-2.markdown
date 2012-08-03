@@ -17,7 +17,8 @@ tags:
   autoslug: jquery
 ---
 #Colocando o JCrop para funcionar
-Vamos fazer o download do [JCrop][jcrop] e referenciá-lo em nossa view.
+Dando continuidado ao post de [Upload + Progressbar + JCrop assíncrono][post1] agora nós
+vamos fazer o download do [JCrop][jcrop] e referenciá-lo em nossa view.
 Descompacte o zip e referencie estes arquivos um javascript:
 {% highlight html %}
 <script src='@Url.Content("~/Scripts/jquery.Jcrop.min.js")' type="text/javascript"></script>
