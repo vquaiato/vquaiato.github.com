@@ -1,10 +1,16 @@
 ---
 layout: default
 title: Posts tagged asp-net-mvc
-keywords: [ASP.NET MVC,ASP.NET MVC 3,Boas Pr\xC3\xA1ticas,DependencyResolver,LabelFor,LabelForModel,MVC 3,Patterns,ViewModel,asp-net-mvc]
+keywords: [ASP.NET MVC,ASP.NET MVC 3,Assíncrono,Boas Pr\xC3\xA1ticas,DependencyResolver,JCrop,Jquery,LabelFor,LabelForModel,MVC 3,Patterns,Upload,ViewModel,asp-net-mvc]
 ---
 <h2 class="category">ASP.NET MVC</h2>
 <ul class="posts">
+<li>
+<p>
+<span class="date">03/08/2012</span> &raquo;
+<a href="/blog/upload-imagens-jcrop-resize-progressbar-assincrono-2">ASP.NET MVC upload de imagens + JCrop + Resize + progressbar + tudo assíncrono 2</a>
+</p>
+</li>
 <li>
 <p>
 <span class="date">04/05/2012</span> &raquo;
@@ -26,13 +32,13 @@ keywords: [ASP.NET MVC,ASP.NET MVC 3,Boas Pr\xC3\xA1ticas,DependencyResolver,Lab
 <li>
 <p>
 <span class="date">17/02/2011</span> &raquo;
-<a href="/blog/asp-net-mvc-ajaxoptions-onbegin-e-oncomplete">ASP.NET MVC AjaxOptions: OnBegin e OnComplete</a>
+<a href="/blog/asp-net-mvc-ajaxoptions-loadingelementid">ASP.NET MVC AjaxOptions: LoadingElementId</a>
 </p>
 </li>
 <li>
 <p>
 <span class="date">17/02/2011</span> &raquo;
-<a href="/blog/asp-net-mvc-ajaxoptions-loadingelementid">ASP.NET MVC AjaxOptions: LoadingElementId</a>
+<a href="/blog/asp-net-mvc-ajaxoptions-onbegin-e-oncomplete">ASP.NET MVC AjaxOptions: OnBegin e OnComplete</a>
 </p>
 </li>
 <li>
@@ -122,13 +128,13 @@ keywords: [ASP.NET MVC,ASP.NET MVC 3,Boas Pr\xC3\xA1ticas,DependencyResolver,Lab
 <li>
 <p>
 <span class="date">06/01/2011</span> &raquo;
-<a href="/blog/windows-azure-rodando-asp-net-mvc-3">Windows Azure: rodando ASP.NET MVC 3</a>
+<a href="/blog/asp-net-mvc-3-na-capa-da-net-magazine-81">ASP.NET MVC 3 na capa da .NET Magazine #81</a>
 </p>
 </li>
 <li>
 <p>
 <span class="date">06/01/2011</span> &raquo;
-<a href="/blog/asp-net-mvc-3-na-capa-da-net-magazine-81">ASP.NET MVC 3 na capa da .NET Magazine #81</a>
+<a href="/blog/windows-azure-rodando-asp-net-mvc-3">Windows Azure: rodando ASP.NET MVC 3</a>
 </p>
 </li>
 <li>
@@ -164,13 +170,13 @@ keywords: [ASP.NET MVC,ASP.NET MVC 3,Boas Pr\xC3\xA1ticas,DependencyResolver,Lab
 <li>
 <p>
 <span class="date">22/12/2010</span> &raquo;
-<a href="/blog/instalando-asp-net-mvc-3-rc-2">Instalando ASP.NET MVC 3 RC 2</a>
+<a href="/blog/asp-net-mvc-retornando-dados-json-via-get-com-jquery">ASP.NET MVC retornando dados Json via Get com Jquery</a>
 </p>
 </li>
 <li>
 <p>
 <span class="date">22/12/2010</span> &raquo;
-<a href="/blog/asp-net-mvc-retornando-dados-json-via-get-com-jquery">ASP.NET MVC retornando dados Json via Get com Jquery</a>
+<a href="/blog/instalando-asp-net-mvc-3-rc-2">Instalando ASP.NET MVC 3 RC 2</a>
 </p>
 </li>
 <li>

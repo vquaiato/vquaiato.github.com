@@ -126,8 +126,8 @@ Nada anormal (removi uma série de tratamentos, validações, etc, para manter o
 
 Feito tudo isso devemos ter uma página capaz de realizar um upload assíncrono, com barra de progresso e exibindo o resultado do upload em uma tag &lt;img mais ou menos como a imagem abaixo:
 
-<img src="/images_posts/upload-progressbar-assincrono-1.png" class="post_img" alt="ubber elegant"/>
-<img src="/images_posts/upload-progressbar-assincrono-2.png" class="post_img" alt="ubber elegant"/>
+<img src="/images_posts/upload-progressbar-assincrono-3.png" class="post_img"/>
+<img src="/images_posts/upload-progressbar-assincrono-4.png" class="post_img"/>
 
 #Resumindo
 No próximo post mostrarei como colocarmos o JCrop para funcionar e realizar o upload das informações para recortar a imagem no server side.
